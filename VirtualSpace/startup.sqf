@@ -1,0 +1,1 @@
+IVCS_VirtualSpace_Controller = [true] call IVCS_VirtualSpace_createController;

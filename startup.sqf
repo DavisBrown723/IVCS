@@ -1,0 +1,1 @@
+call compile preprocessFileLineNumbers "IVCS\VirtualSpace\startup.sqf";
