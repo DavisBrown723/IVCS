@@ -2,9 +2,7 @@ params ["_unitClasses", "_side", "_faction", ["_position", [0,0,0]]];
 
 switch (true) do {
     case (_unitClasses isequaltype configNull): {
-        private _groupConfig = _unitClasses;
-        private _groupUnitSubClasses = _groupConfig call BIS_fnc_getCfgSubClasses;
-        _unitClasses = _groupUnitSubClasses apply { getText (_groupConfig  >> _x >> "vehicle") };
+        _unitClasses = [_unitClasses] call IVCS_Common_getUnitClassesFromGroupConfig;
     };
     // case (_unitClasses isequaltype ""): {
     //     private _configSide = if (_side == "GUER") then {"INDEP"} else {_side};
@@ -20,11 +18,17 @@ switch (true) do {
 
 private _units = [];
 private _vehicleEntities = [];
+private _nextUnitIDNum = 0;
 {
     private _unitClass = _x;
 
     if (_unitClass iskindof "Man") then {
         private _unit = [_unitClass] call IVCS_VirtualSpace_createEntityUnit;
+
+        private _unitID = format ["u_%1", _nextUnitIDNum];
+        _nextUnitIDNum = _nextUnitIDNum + 1;
+
+        _unit setvariable ["id", _unitID];
 
         _units pushback _unit;
     } else {
@@ -40,6 +44,10 @@ private _vehicleEntities = [];
 private "_groupEntity";
 if (count _units > 0) then {
     _groupEntity = [_side, _faction, _position, _units] call IVCS_VirtualSpace_createGroupEntity;
+    
+    {
+        [_groupEntity,_x] call IVCS_VirtualSpace_Infantry_assignVehicle;
+    } foreach _vehicleEntities;
 };
 
 if (!isnil "_groupEntity") then {

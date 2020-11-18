@@ -52,8 +52,10 @@ if (!isnil "_entity") then {
                 };
 
                 _entity setvariable ["currentWaypoint", _currentWaypoint];
+                _entity setvariable ["movePoints", []];
             };
         } foreach _waypoints;
+
 
     };
 };

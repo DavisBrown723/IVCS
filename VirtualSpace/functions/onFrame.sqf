@@ -7,7 +7,7 @@ private _allEntities = _entities getvariable "all";
 // refresh simulation queue
 
 if (_entitiesToSimulate isequalto []) then {
-    _entitiesToSimulate append (allvariables _allEntities);
+    _entitiesToSimulate append ((allvariables _allEntities) select { !isnil {_allEntities getvariable _x} });
 };
 
 // simulate limited number of entities each frame
@@ -31,8 +31,6 @@ private _spawnAnchor = getpos player;
 
                 private _despawnFunc = missionnamespace getvariable (_entity getvariable "despawn");
                 [_entity] call _despawnFunc;
-
-                _entity setvariable ["active", false];
             };
         } else {
             if (_inSpawnRange) then {
@@ -40,8 +38,6 @@ private _spawnAnchor = getpos player;
 
                 private _spawnFunc = missionnamespace getvariable (_entity getvariable "spawn");
                 [_entity] call _spawnFunc;
-
-                _entity setvariable ["active", true];
             }
         };
 

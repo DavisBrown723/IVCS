@@ -32,4 +32,7 @@ if (_vehicleDebugMarker != "") then {
     _vehicleDebugMarker setMarkerColor _entitySideColor;
 };
 
+[_entity] call IVCS_VirtualSpace_Infantry_calculateSpeed;
+[_entity] call IVCS_VirtualSpace_Infantry_determinePathfindingStrategy;
+
 true

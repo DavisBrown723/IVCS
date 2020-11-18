@@ -27,7 +27,7 @@ private _sidePrefix = switch (_entitySide) do {
 };
 
 switch (_entityType) do {
-    case "infantry": {
+    case "group": {
         _marker setMarkerType (format ["%1_inf", _sidePrefix]);
         _marker setMarkerSize [0.7, 0.7];
     };
@@ -69,6 +69,8 @@ switch (_entityType) do {
         };
     };
 };
+
+_marker setmarkertext (_entity getvariable "id");
 
 if (_active) then {
     _marker setMarkerAlpha 0.75;

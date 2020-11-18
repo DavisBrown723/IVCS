@@ -31,3 +31,5 @@ if (_debug) then {
     private _debugMarker = _entity getvariable "debugMarker";
     _debugMarker setMarkerAlpha 0.35;
 };
+
+_entity setvariable ["active", false];

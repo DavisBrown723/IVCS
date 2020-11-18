@@ -8,7 +8,6 @@ params [
 // states
 
 private _initState = [{
-    systemchat format ["init %1", time];
     private _entityID = _this getvariable "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 

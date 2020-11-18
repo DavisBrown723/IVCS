@@ -1,12 +1,15 @@
-params ["_entity","_unit"];
+params ["_entity","_unitID"];
 
-private _entityUnits = _entity getvariable "units";
-
-if (_unit isequaltype locationNull) then {
-    _unit = _unit getvariable "id";
+if (_unitID isequaltype locationNull) then {
+    _unitID = _unitID getvariable "id";
 };
 
-private _unitToDeleteIndex = _entityUnits findIf {(_x getvariable "id") == _unit};
+private _entityUnits = _entity getvariable "units";
+private _unitToDeleteIndex = _entityUnits findIf {(_x getvariable "id") == _unitID};
+private _unit = _entityUnits select _unitToDeleteIndex;
+
+[_entity, _unit] call IVCS_VirtualSpace_onUnitLeaveVehicle;
+
 (_entityUnits select _unitToDeleteIndex) call CBA_fnc_deleteNamespace;
 _entityUnits deleteat _unitToDeleteIndex;
 

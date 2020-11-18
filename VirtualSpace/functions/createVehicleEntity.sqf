@@ -4,7 +4,12 @@ if (_vehicleClass iskindof "Man") exitwith {
     diag_log format ["IVCS: createVehicleEntity - Cannot create vehicle entity from non-vehicle class"];
 };
 
+private _vehicleConfig = configfile >> "CfgVehicles" >> _vehicleClass;
+
 private _vehicleType = [_vehicleClass] call IVCS_Common_findUnitType;
+private _maxSpeed = getnumber (_vehicleConfig >> "maxSpeed");
+
+private _hitpoints = [_vehicleConfig >> "HitPoints", 0] call BIS_fnc_returnChildren;
 
 private _vehicleEntity = [] call CBA_fnc_createNamespace;
 _vehicleEntity setvariable ["timeLastUpdate", diag_tickTime];
@@ -12,8 +17,14 @@ _vehicleEntity setvariable ["active", false];
 _vehicleEntity setvariable ["class", _vehicleClass];
 _vehicleEntity setvariable ["vehicleType", _vehicleType];
 _vehicleEntity setvariable ["position", _position];
+
 _vehicleEntity setvariable ["assignedEntity", ""];
+_vehicleEntity setvariable ["commandingEntity", ""];
+_VehicleEntity setvariable ["entitiesInCargo", []];
+
 _vehicleEntity setvariable ["object", objNull];
+_vehicleEntity setvariable ["speedPerSecond", round (_maxSpeed * 0.15)];
+_vehicleEntity setvariable ["hitpoints", _hitpoints apply {[configname _x, 0]}];
 
 private _seatCount = 0;
 private _vehicleSeats = [_vehicleClass] call IVCS_Common_findVehicleSeats;
