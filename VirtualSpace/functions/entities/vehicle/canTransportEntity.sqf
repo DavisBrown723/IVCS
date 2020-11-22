@@ -1,6 +1,6 @@
 params ["_vehicleEntity","_groupEntity"];
 
-private _groupEntityAssignedVehicles = _groupEntity getvariable "assignedVehicles";
+private _groupEntityAssignedVehicles = _groupEntity getvariable "vehiclesInCommandOf";
 if !(_groupEntityAssignedVehicles isequalto []) exitwith { false };
 
 private _emptySeats = [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_getEmptySeats;

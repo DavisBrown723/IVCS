@@ -15,11 +15,17 @@ private _attachedVehicle = _entityWaypoint getvariable "attachedVehicle";
 
 _position set [2, 0];
 
-
 private _waypoint = _group addWaypoint [_position, 0];
 _waypoint setWaypointName _name;
 _waypoint setWaypointDescription _description;
-_waypoint setWaypointType _type;
+
+if (_type == "LAND") then {
+    _waypoint setWaypointType "SCRIPTED";
+    _waypoint setWaypointScript "A3\functions_f\waypoints\fn_wpLand.sqf";
+} else {
+    _waypoint setWaypointType _type;
+};
+
 _waypoint setWaypointSpeed _speed;
 _waypoint setWaypointCompletionRadius _completionRadius;
 if (count _timeout > 0) then {

@@ -8,7 +8,7 @@ private _WpToDeleteIndex = _waypoints findIf {(_x getvariable "name") == _WpToDe
 _waypoints deleteat _WpToDeleteIndex;
 
 private _maxWaypoint = _entity getvariable "maxWaypoint";
-if (_WpToDeleteIndex == _maxWaypoint) then {
+if (_WpToDeleteIndex == _maxWaypoint && _maxWaypoint > 0) then {
     _entity setvariable ["maxWaypoint", _maxWaypoint - 1];
 } else {
     if (_WpToDeleteIndex < _maxWaypoint) then {

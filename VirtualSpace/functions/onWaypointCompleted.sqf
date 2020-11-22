@@ -47,15 +47,28 @@ if (!isnil "_entity") then {
                 } else {
                     _currentWaypoint = _currentWaypoint + 1;
                     if (_currentWaypoint >= count _waypoints) then {
-                        _currentWaypoint = -1;
+                        _currentWaypoint = 0;
                     };
                 };
 
                 _entity setvariable ["currentWaypoint", _currentWaypoint];
                 _entity setvariable ["movePoints", []];
+
+                private _active = _entity getvariable "active";
+                if (!_active) then {
+                    private _waypointType = _waypoint getvariable "type";
+                    if (_waypointType == "LAND") then {
+                        private _vehiclesInCommandOf = _entity getvariable "vehiclesInCommandOf";
+                        {
+                            private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
+                            private _vehicleEntityPosition = _vehicleEntity getvariable "position";
+                            
+                            _vehicleEntity setvariable ["engineOn", false];
+                            _vehicleEntityPosition set [2, 0.5];
+                        } foreach _vehiclesInCommandOf;
+                    };
+                };
             };
         } foreach _waypoints;
-
-
     };
 };

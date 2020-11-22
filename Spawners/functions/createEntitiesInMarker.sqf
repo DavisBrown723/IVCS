@@ -1,13 +1,19 @@
-params ["_marker","_side","_faction","_groups"];
+params ["_marker","_forceComposition"];
 
-private _spawnPositions = [_marker, count _groups] call IVCS_Common_findRandomPositionsInMarker;
+_forceComposition params ["_side","_faction","_totalGroupCount","_groupData"];
+
+private _spawnPositions = [_marker, _totalGroupCount] call IVCS_Common_findRandomPositionsInMarker;
 private _createdEntities = [];
 {
-    private _unitClasses = _x;
-    private _spawnPos = _spawnPositions deleteat 0;
+    _x params ["_unitType","_groupCount","_groups"];
 
-    _createdEntities pushback ([_unitClasses, _side, _faction, _spawnPos] call IVCS_VirtualSpace_createEntity);
-} foreach _groups;
+    {
+        private _unitClasses = _x;
+        private _spawnPos = _spawnPositions deleteat 0;
+
+        _createdEntities pushback ([_unitClasses, _side, _faction, _spawnPos] call IVCS_VirtualSpace_createEntity);
+    } foreach _groups;
+} foreach _groupData;
 
 _marker setmarkeralpha 0;
 

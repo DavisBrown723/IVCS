@@ -2,6 +2,7 @@ params ["_side","_faction","_position","_units"];
 
 private _groupEntity = [] call CBA_fnc_createNamespace;
 _groupEntity setvariable ["timeLastUpdate", diag_tickTime];
+_groupEntity setvariable ["delayedInitComplete", false];
 _groupEntity setvariable ["entityType", "group"];
 _groupENtity setvariable ["entity", "group"];
 _groupEntity setvariable ["active", false];
@@ -10,12 +11,12 @@ _groupEntity setvariable ["side", _side];
 _groupEntity setvariable ["faction", _faction];
 _groupEntity setvariable ["units", _units];
 _groupEntity setvariable ["group", grpNull];
-_groupEntity setvariable ["assignedVehicles", []];
 _groupEntity setvariable ["vehiclesInCommandOf", []];
 _groupEntity setvariable ["vehiclesInCargoOf", []];
 _groupEntity setvariable ["moveSpeedPerSecond", 4.3];
 
 _groupEntity setvariable ["movePoints", []];
+_groupEntity setvariable ["pathGenInProgress", false];
 _groupEntity setvariable ["waypoints", []];
 _groupEntity setvariable ["currentWaypoint", -1];
 _groupEntity setvariable ["minWaypoint", 0];

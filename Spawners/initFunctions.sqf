@@ -1,2 +1,3 @@
 IVCS_Spawners_createEntitiesInMarker = compile preprocessFileLineNumbers "IVCS\Spawners\functions\createEntitiesInMarker.sqf";
 IVCS_Spawners_createEntitiesAtLocation = compile preprocessFileLineNumbers "IVCS\Spawners\functions\createEntitiesAtLocation.sqf";
+IVCS_Spawners_createEntitiesAtLocations = compile preprocessFileLineNumbers "IVCS\Spawners\functions\createEntitiesAtLocations.sqf";

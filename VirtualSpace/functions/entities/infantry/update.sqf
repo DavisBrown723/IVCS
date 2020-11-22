@@ -28,35 +28,64 @@ if (_active) then {
     if (_waypointCount > 0) then {
         private _currentWaypoint = _entity getvariable "currentWaypoint";
 
-        if (_currentWaypoint <= _waypointCount) then {
+        if (_currentWaypoint < _waypointCount) then {
             private _waypoint = _waypoints select _currentWaypoint;
 
             private _movePoints = _entity getvariable "movePoints";
             if (_movePoints isequalto []) then {
-                // this is the first time we're simulating this waypoint
-                // calculate path from entity position to waypoint destination
+                private _pathGenInProgress = _entity getvariable "pathGenInProgress";
+                if (!_pathGenInProgress) then {
+                    // this is the first time we're simulating this waypoint
+                    // calculate path from entity position to waypoint destination
 
-                //params ["_pathType","_behavior","_startPos","_endPos","_callback"];
-                private _strategy = _entity getvariable "pathfindingStrategy";
-                private _waypointPos = _waypoint getvariable "position";
-                private _entityID = _entity getvariable "id";
+                    //["_pathType","_behavior","_startPos","_endPos","_callback"];
+                    private _strategy = _entity getvariable "pathfindingStrategy";
+                    private _waypointPos = _waypoint getvariable "position";
+                    private _entityID = _entity getvariable "id";
 
-                [_strategy, "SAFE", _entityPos, _waypointPos, [_entityID], {
-                    params ["_entityID","_path"];
-
-                    private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
-                    private _movePoints = _entity getvariable "movePoints";
-                    if (_movePoints isequalto []) then {
-                        {
-                            private _marker = createmarker [str random 100000, _x];
-                            _marker setmarkertype "mil_dot";
-                            _marker setMarkerSize [0.5, 0.5];
-                        } foreach _path;
-
-                        _entity setvariable ["movePoints", _path];
+                    if (isnil "_waypointPos") then {
+                        systemchat format ["WPs: %1 -- Curr: %2", _waypoints, _currentWaypoint];
                     };
-                }] call IVCS_Paths_generatePath;
+
+                    [_strategy, "SAFE", _entityPos, _waypointPos, [_entityID], {
+                        params ["_entityID","_path"];
+
+                        private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
+                        private _movePoints = _entity getvariable "movePoints";
+                        if (_movePoints isequalto []) then {
+                            {
+                                private _marker = createmarker [str random 100000, _x];
+                                _marker setmarkertype "mil_dot";
+                                _marker setMarkerSize [0.5, 0.5];
+                            } foreach _path;
+
+                            _entity setvariable ["movePoints", _path];
+                            _entity setvariable ["pathGenInProgress", false];
+                        };
+                    }] call IVCS_Paths_generatePath;
+                    _entity setvariable ["pathGenInProgress", true];
+
+                    private _waypointType = _waypoint getvariable "type";
+                    if (_waypointType != "LAND") then {
+                        private _vehiclesInCommandOf = _entity getvariable "vehiclesInCommandOf";
+                        {
+                            private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
+                            _vehicleEntity setvariable ["engineOn", true];
+
+                            private _vehicleEntityType = _vehicleEntity getvariable "vehicleType";
+                            if (_vehicleEntityType in ["helicopter","plane"]) then {
+                                private _vehicleEntityPosition = _vehicleEntity getvariable "position";
+                                if (_vehicleEntityPosition select 2 < 5) then {
+                                    _vehicleEntityPosition set [2, 50];
+                                };
+                            };
+                        } foreach _vehiclesInCommandOf;
+                    };
+                };
             } else {
+                // path has been generated
+                // lets start moving
+
                 private _waypointMoveSpeed = _waypoint getvariable "speed";
                 private _isCycleWp = false;
 
@@ -72,12 +101,14 @@ if (_active) then {
                 private _nextMovePoint = _movePoints select 0;
 
                 switch (_waypointType) do {
+                    case "LAND";
                     case "MOVE": {
                         private _distRemaining = _entityPos distance _nextMovePoint;
                         private _moveDir = _entityPos getdir _nextMovePoint;
                         private _moveDist = (_entityMoveSpeed * _deltaTime) min _distRemaining;
                         private _endPos = _entityPos getPos [_moveDist, _moveDir];
 
+                        _endPos set [2, _entityPos select 2];
                         _entity setvariable ["position", _endPos];
                     };
                     case "CYCLE": {
@@ -90,13 +121,13 @@ if (_active) then {
 
                 // check wp completion
 
-                private _distToMovepoint = _entityPos distance _nextMovePoint;
+                private _distToMovepoint = _entityPos distance2D _nextMovePoint;
                 if (_distToMovepoint < 5) then {
                     _movePoints deleteat 0;
                 };
 
                 private _waypointPos = _waypoint getvariable "position";
-                private _distRemaining = _entityPos distance _waypointPos;
+                private _distRemaining = _entityPos distance2D _waypointPos;
                 private _waypointCompletionRadius = _waypoint getvariable "completionRadius";
                 if (_movePoints isequalto [] || { _distRemaining <= (_waypointCompletionRadius min 7) }) then {
                     [_entity getvariable "id", _waypoint getvariable "name"] call IVCS_VirtualSpace_onWaypointCompleted;
@@ -104,10 +135,6 @@ if (_active) then {
             };
         };
     };
-
-    private _entitySide = _entity getvariable "side";
-    private _sidesEnemy = ([_entitySide] call IVCS_Common_getSideAllegiances) select 1;
-    private _nearEntities = [_entityPos, 500, ["group"]] call IVCS_VirtualSpace_getNearEntities;
 };
 
 private _debug = IVCS_VirtualSpace_Controller getvariable "debug";

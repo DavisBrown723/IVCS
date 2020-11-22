@@ -1,0 +1,567 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-57.20932;
+		Top=-286.62787;
+		Right=32.79068;
+		Bottom=-236.62791;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="Init";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=1;
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=4314;
+		BasicText="";
+		Left=-297.55814;
+		Top=-290.37698;
+		Right=-207.55814;
+		Bottom=-240.377;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="has" \n "rendezvous" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=2;
+			};
+		};
+	};
+	class Item2
+	{
+		Flags=218;
+		BasicText="";
+		Left=-58.16272;
+		Top=-209.5993;
+		Right=31.83728;
+		Bottom=-159.5993;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="no" \n "rendezvous" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=3;
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=250;
+		BasicText="";
+		Left=-430.10733;
+		Top=-290.49976;
+		Right=-340.1073;
+		Bottom=-240.49976;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="move to" \n "rendezvous" \n "point";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=4;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=250;
+		BasicText="";
+		Left=126.97412;
+		Top=38.300766;
+		Right=216.97412;
+		Bottom=88.300812;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="move to" \n "vehicle";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=5;
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=218;
+		BasicText="";
+		Left=-54.085304;
+		Top=141.79659;
+		Right=35.914703;
+		Bottom=191.7966;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="in range" \n "of vehicle";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=9;
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=-55.878662;
+		Top=214.23514;
+		Right=34.121368;
+		Bottom=264.23511;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="get in vehicle";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=10;
+			};
+		};
+	};
+	class Item7
+	{
+		Flags=218;
+		BasicText="";
+		Left=-430.04428;
+		Top=-40.487282;
+		Right=-340.04428;
+		Bottom=9.5127258;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="vehicle is near";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=11;
+			};
+		};
+	};
+	class Item8
+	{
+		Flags=250;
+		BasicText="";
+		Left=-432.44272;
+		Top=52.515686;
+		Right=-342.44272;
+		Bottom=102.51569;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="signal vehicle" \n "if necessary" \n "(smoke, ir strobe)";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=12;
+			};
+		};
+	};
+	class Item9
+	{
+		Flags=218;
+		BasicText="";
+		Left=-264.54199;
+		Top=-128.37154;
+		Right=-174.54199;
+		Bottom=-78.371521;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="vehicle at" \n "rendezvous" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=13;
+			};
+		};
+	};
+	class Item10
+	{
+		Flags=250;
+		BasicText="";
+		Left=-58.116333;
+		Top=-129.99173;
+		Right=31.883682;
+		Bottom=-79.99173;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="empty" \n "state";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=16;
+			};
+		};
+	};
+	class Item11
+	{
+		Flags=218;
+		BasicText="";
+		Left=124.97388;
+		Top=-36.332985;
+		Right=214.97388;
+		Bottom=13.667015;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="vehicle not" \n "in range";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=18;
+			};
+		};
+	};
+	class Item12
+	{
+		Flags=218;
+		BasicText="";
+		Left=-425.38309;
+		Top=-202.57565;
+		Right=-335.38309;
+		Bottom=-152.57565;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="at" \n "rendezvous" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=19;
+			};
+		};
+	};
+	class Item13
+	{
+		Flags=250;
+		BasicText="";
+		Left=-427.61316;
+		Top=-123.91562;
+		Right=-337.61313;
+		Bottom=-73.915619;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="wait" \n "for" \n "vehicle";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=20;
+			};
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=0;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=1;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=2;
+		To=10;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link4
+	{
+		From=3;
+		To=12;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link5
+	{
+		From=4;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link6
+	{
+		From=5;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link7
+	{
+		From=7;
+		To=8;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link8
+	{
+		From=8;
+		To=9;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link9
+	{
+		From=9;
+		To=10;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link10
+	{
+		From=10;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link11
+	{
+		From=10;
+		To=11;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link12
+	{
+		From=11;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link13
+	{
+		From=12;
+		To=13;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link14
+	{
+		From=13;
+		To=7;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	NextGroupID=1;
+	NextID=21;
+	FSMName="getIn";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkColorFromSelected=6316287;
+	DefaultLinkColorToSelected=6356832;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-810.31036;
+	PZoomRight=423.91187;
+	PZoomBottom=316.39764;
+	PZoomTop=-385.62665;
+	Clxs=1032;
+	Clys=587;
+	Aspect=1;
+};
+class Window
+{
+	Flags=0;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-32000;
+	MinPosY=-32000;
+	Left=182;
+	Top=182;
+	Right=1622;
+	Bottom=941;
+	ShowCmd=1;
+	SplitPos=1050;
+};

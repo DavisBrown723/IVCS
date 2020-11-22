@@ -50,4 +50,7 @@ _vehicleEntitiesInCargo pushback _groupEntityID;
 
 _vehiclesInCargoOf pushback _vehicleEntityID;
 
+private _vehicleEntityPosition = _vehicleEntity getvariable "position";
+_groupEntity setvariable ["position", _vehicleEntityPosition];
+
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;

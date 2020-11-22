@@ -1,0 +1,300 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-43.100616;
+		Top=-283.80615;
+		Right=46.899384;
+		Bottom=-233.80617;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="Init";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=1;
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=218;
+		BasicText="";
+		Left=-41.472427;
+		Top=-205.58719;
+		Right=48.52758;
+		Bottom=-155.58719;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="at" \n "landing" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=2;
+			};
+		};
+	};
+	class Item2
+	{
+		Flags=250;
+		BasicText="";
+		Left=-43.118896;
+		Top=-3.3665619;
+		Right=46.881134;
+		Bottom=46.633423;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="end";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=19;
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=218;
+		BasicText="";
+		Left=235.99971;
+		Top=-282.715;
+		Right=325.99973;
+		Bottom=-232.71503;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="not at" \n "landing" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=20;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=250;
+		BasicText="";
+		Left=235.29388;
+		Top=-204.65143;
+		Right=325.29388;
+		Bottom=-154.65141;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="move to" \n "landing point";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=21;
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=218;
+		BasicText="";
+		Left=234.35333;
+		Top=-124.70182;
+		Right=324.35333;
+		Bottom=-74.70182;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="near" \n "landing" \n "point";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=22;
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=236.2345;
+		Top=-40.049377;
+		Right=326.2345;
+		Bottom=9.9506226;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="create" \n "helipad";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=23;
+			};
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=0;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=1;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=3;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link4
+	{
+		From=4;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link5
+	{
+		From=5;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link6
+	{
+		From=6;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	NextGroupID=1;
+	NextID=27;
+	FSMName="land";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkColorFromSelected=6316287;
+	DefaultLinkColorToSelected=6356832;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-548.36005;
+	PZoomRight=422.32196;
+	PZoomBottom=266.18506;
+	PZoomTop=-285.93732;
+	Clxs=1032;
+	Clys=587;
+	Aspect=1;
+};
+class Window
+{
+	Flags=0;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-32000;
+	MinPosY=-32000;
+	Left=104;
+	Top=104;
+	Right=1544;
+	Bottom=863;
+	ShowCmd=1;
+	SplitPos=1050;
+};

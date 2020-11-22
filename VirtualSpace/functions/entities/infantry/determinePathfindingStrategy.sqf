@@ -1,6 +1,6 @@
 params ["_entity"];
 
-private _assignedVehicles = _entity getvariable "assignedVehicles";
+private _assignedVehicles = _entity getvariable "vehiclesInCommandOf";
 if (_assignedVehicles isequalto []) exitwith {
     "man";
 };

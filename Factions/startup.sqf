@@ -1,0 +1,1 @@
+IVCS_Factions_Compositions = [] call CBA_fnc_createNamespace;

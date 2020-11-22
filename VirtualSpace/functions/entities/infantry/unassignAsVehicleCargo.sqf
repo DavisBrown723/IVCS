@@ -30,4 +30,7 @@ _vehiclesInCargoOf deleteat (_vehiclesInCargoOf find _vehicleEntityID);
 private _entitiesInCargo = _vehicleEntity getvariable "entitiesInCargo";
 _entitiesInCargo deleteat (_entitiesInCargo find _groupEntityID);
 
+private _vehicleEntityPosition = _vehicleEntity getvariable "position";
+_groupEntity setvariable ["position", _vehicleEntityPosition];
+
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;

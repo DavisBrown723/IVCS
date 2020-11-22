@@ -5,8 +5,23 @@ private _entityID = _entity getvariable "id";
 private _entityHitpoints = _entity getvariable "hitpoints";
 
 private _vehicleClass = _entity getvariable "class";
-private _vehicleObject = createVehicle [_vehicleClass, _position];
+private _engineOn = _entity getvariable "engineOn";
+private _vehicleType = _entity getvariable "vehicleType";
+
+private _special = "NONE";
+if (_engineOn && ((_position select 2) > 20) && { _vehicleType in ["helicopter","plane"] }) then {
+    _special = "FLY";
+};
+
+private _vehicleObject = createVehicle [_vehicleClass, _position, [], 0, _special];
+_vehicleObject allowdamage false;
+[_vehicleObject] spawn {
+    sleep 1;
+    (_this select 0) allowdamage true;
+};
 _vehicleObject setvariable ["entityID", _entityID];
+
+_vehicleObject engineOn _engineOn;
 
 {
     _x params ["_hitpoint","_damage"];

@@ -17,7 +17,10 @@ private _IVCSWaypointCount = {
 {
     private _object = _x getvariable "object";
 
+    private _unitWeapons = [_object] call IVCS_Common_getUnitObjectLoadoutInfo;
+
     _x setvariable ["object", objnull];
+    _x setvariable ["weapons", _unitWeapons];
     _x setvariable ["damage", damage _object];
 
     deletevehicle _object;

@@ -11,6 +11,9 @@ private _locations = [];
 {
     private _markerName = _x;
     if (count _markerName > 3 && {(_markerName select [0,3]) == "loc"}) then {
+        // loc_civ
+        // loc_mil
+        // loc_mil_airfield
         private _locationInfo = _markerName splitString "_";
         private _locationType = _locationInfo select 1;
         private _locationPosition = markerPos _x;

@@ -1,4 +1,4 @@
-params ["_entity","_entityWaypoint"];
+ params ["_entity","_entityWaypoint"];
 
 private _waypoints = _entity getvariable "waypoints";
 _waypoints pushback _entityWaypoint;

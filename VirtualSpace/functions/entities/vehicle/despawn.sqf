@@ -10,6 +10,11 @@ private _hitpoints = _entity getvariable "hitpoints";
     _x set [1, _hitpointDamage];
 } foreach _hitpoints;
 
+private _waypoints = _entity getvariable "waypoints";
+if (_waypoints isequalto []) then {
+    _entity setvariable ["engineOn", isEngineOn _vehicleObject];
+};
+
 deletevehicle _vehicleObject;
 
 _entity setvariable ["object", objNull];

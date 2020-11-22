@@ -1,14 +1,19 @@
 params ["_entity"];
 
 private _entityID = _entity getvariable "id";
+private _entityType = _entity getvariable "entityType";
 private _entityPosition = _entity getvariable "position";
-private _entitySide = _entity getvariable ["side", "CIV"];
+private _entitySide = _entity getvariable "side";
+
+private _sideMarkerColor = _entitySide;
+if (_entityType in ["vehicle","uav"]) then {
+    _sideMarkerColor = "NONE";
+};
 
 private _marker = createMarker [format ["%1_debug", _entityID], _entityPosition];
 _marker setMarkerShape "ICON";
-_marker setMarkerColor ([_entitySide] call IVCS_Common_sideStringToColor);
+_marker setMarkerColor ([_sideMarkerColor] call IVCS_Common_sideStringToColor);
 
-private _entityType = _entity getvariable "entityType";
 private _active = _entity getvariable "active";
 
 private _sidePrefix = switch (_entitySide) do {
@@ -73,9 +78,9 @@ switch (_entityType) do {
 _marker setmarkertext (_entity getvariable "id");
 
 if (_active) then {
-    _marker setMarkerAlpha 0.75;
+    _marker setMarkerAlpha 0.8;
 } else {
-    _marker setMarkerAlpha 0.35;
+    _marker setMarkerAlpha 0.45;
 };
 
 _marker

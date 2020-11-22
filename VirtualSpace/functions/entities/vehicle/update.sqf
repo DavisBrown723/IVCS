@@ -14,7 +14,7 @@ if (_active) then {
         _debugMarker setMarkerPos _entityPos;
     };
 } else {
-    private _commandingEntityID = _entity getvariable "";
+    private _commandingEntityID = _entity getvariable "commandingEntity";
     if (_commandingEntityID != "") then {
         private _commandingEntity = [_commandingEntityID] call IVCS_VirtualSpace_getEntity;
         private _commandingEntityPos = _commandingEntity getvariable "position";

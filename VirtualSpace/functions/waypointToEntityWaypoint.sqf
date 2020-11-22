@@ -11,7 +11,6 @@ _entityWaypoint setvariable ["behavior", waypointBehaviour _waypoint];
 _entityWaypoint setvariable ["statements", ((waypointStatements _waypoint) select 1) splitString ";"];
 _entityWaypoint setvariable ["timeout", waypointTimeout _waypoint];
 _entityWaypoint setvariable ["attachedVehicle", ""];
-_entityWaypoint setvariable ["name", ""];
 _entityWaypoint setvariable ["name", waypointName _waypoint];
 _entityWaypoint setvariable ["description", waypointDescription _waypoint];
 

@@ -20,6 +20,7 @@ private _loadout = [];
 {
     private _weaponClass = _x;
     private _weaponInfo = [_weaponClass] call IVCS_Common_getWeaponInfo;
+    private _weaponCompatibleMags = _weaponInfo select 2;
 
     private _compatibleMagsInLoadout = [];
 

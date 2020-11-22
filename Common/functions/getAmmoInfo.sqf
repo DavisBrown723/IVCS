@@ -4,16 +4,15 @@ private _cachedAmmoInfo = IVCS_Common_AmmoInfo getvariable _ammo;
 if (!isnil "_cachedAmmoInfo") exitwith { _cachedAmmoInfo };
 
 private _ammoConfig = configfile >> "CfgAmmo" >> _ammo;
-
 private _ammoUses = [];
 
 private _ammoUsageFlags = getnumber (_ammoConfig >> "aiAmmoUsageFlags");
 if (_ammoUsageFlags != 0) then {
-    private _ammoUses = (_ammoUsageFlags call BIS_fnc_bitflagsToArray) apply {
+    _ammoUses = (_ammoUsageFlags call BIS_fnc_bitflagsToArray) apply {
         switch (_x) do {
-            case 1: { "Light" };
-            case 2: { "Marking" };
-            case 4: { "Concealment" };
+            case 1: { "light" };
+            case 2: { "marking" };
+            case 4: { "concealment" };
             case 8: { "countermeasures" };
             case 16: { "mine" };
             case 32: { "underwater" };
@@ -33,11 +32,9 @@ if (_ammoUsageFlags != 0) then {
 };
 
 // only let laser lock - capable ammo be used on lasers, etc
-private _irLock = getnumber (_ammoConfig >> "irLock");
-private _laserLock = getnumber (_ammoConfig >> "laserLock");
+// private _irLock = getnumber (_ammoConfig >> "irLock");
+// private _laserLock = getnumber (_ammoConfig >> "laserLock");
 
-private _ammoInfo = [_ammo, _ammoUses];
+IVCS_Common_AmmoInfo setvariable [_ammo, _ammoUses];
 
-IVCS_Common_AmmoInfo setvariable [_ammo, _ammoInfo];
-
-_ammoInfo
+_ammoUses

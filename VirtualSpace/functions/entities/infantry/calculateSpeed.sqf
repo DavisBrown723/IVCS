@@ -14,8 +14,9 @@ private _allMounted = true;
 private _speed = if (!_allMounted) then {
     4.3
 } else {
-    private _assignedVehicles = _entity getvariable "assignedVehicles";
+    private _vehicesInCommandOf = _entity getvariable "vehiclesInCommandOf";
     private _slowestVehicle = 99999;
+    
     {
         private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
         private _vehicleSpeed = _vehicleEntity getvariable "speedPerSecond";
@@ -23,7 +24,7 @@ private _speed = if (!_allMounted) then {
         if (_vehicleSpeed < _slowestVehicle) then {
             _slowestVehicle = _vehicleSpeed;
         };
-    } foreach _assignedVehicles;
+    } foreach _vehicesInCommandOf;
 
     _slowestVehicle
 };

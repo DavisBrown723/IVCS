@@ -2,6 +2,7 @@ IVCS_Common_findUnitType = compile preprocessFileLineNumbers "IVCS\Common\functi
 IVCS_Common_sideStringToObject = compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToObject.sqf";
 IVCS_Common_sideObjectToString = compile preprocessFileLineNumbers "IVCS\Common\functions\sideObjectToString.sqf";
 IVCS_Common_sideNumToString= compile preprocessFileLineNumbers "IVCS\Common\functions\sideNumToString.sqf";
+IVCS_Common_sideStringToNum= compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToNum.sqf";
 IVCS_Common_sideStringToColor = compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToColor.sqf";
 IVCS_Common_findVehicleSeats = compile preprocessFileLineNumbers "IVCS\Common\functions\findVehicleSeats.sqf";
 
@@ -12,9 +13,16 @@ IVCS_Common_generateRandomPositionsInRadius = compile preprocessFileLineNumbers 
 IVCS_Common_getSideAllegiances = compile preprocessFileLineNumbers "IVCS\Common\functions\getSideAllegiances.sqf";
 IVCS_Common_getBackpackCargo = compile preprocessFileLineNumbers "IVCS\Common\functions\getBackpackCargo.sqf";
 IVCS_Common_getWeaponInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\getWeaponInfo.sqf";
+IVCS_Common_getMagazineInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\getMagazineInfo.sqf";
 IVCS_Common_getAmmoInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\getAmmoInfo.sqf";
+IVCS_Common_getUnitLoadoutInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\getUnitLoadoutInfo.sqf";
+IVCS_Common_getUnitObjectLoadoutInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\getUnitObjectLoadoutInfo.sqf";
 
 IVCS_Common_flattenArray = compile preprocessFileLineNumbers "IVCS\Common\functions\flattenArray.sqf";
 IVCS_Common_foreachArrays = compile preprocessFileLineNumbers "IVCS\Common\functions\foreachArrays.sqf";
+IVCS_Common_getFactionSide = compile preprocessFileLineNumbers "IVCS\Common\functions\getFactionSide.sqf";
+IVCS_Common_getVehicleSide = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehicleSide.sqf";
+
+IVCS_Common_findDisposableWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\findDisposableWeapons.sqf";
 
 IVCS_Common_onFrame = compile preprocessFileLineNumbers "IVCS\Common\functions\onFrame.sqf";

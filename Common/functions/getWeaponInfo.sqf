@@ -1,5 +1,7 @@
 params ["_weaponClass"];
 
+_weaponClass = IVCS_Common_WeaponAliases getvariable [_weaponClass, _weaponClass];
+
 private _cachedWeaponInfo = IVCS_Common_AmmoInfo getvariable _weaponClass;
 if (!isnil "_cachedWeaponInfo") exitwith { _cachedWeaponInfo };
 
@@ -8,14 +10,14 @@ private _compatibleMags = getarray (_weaponConfig >> "magazines");
 private _weaponLockSystem = getnumber (_weaponConfig >> "weaponLockSystem");
 
 private _magazineInfo = [];
-{
-    private _magazineConfig = configfile >> "CfgMagazines" >> _x;
-    private _magazineAmmo = gettext (_magazineConfig >> "ammo");
-    private _ammoInfo = [_magazineAmmo] call IVCS_Common_getAmmoInfo;
-    private _ammoUses = _ammoInfo select 1;
+// {
+//     private _magazineConfig = configfile >> "CfgMagazines" >> _x;
+//     private _magazineAmmo = gettext (_magazineConfig >> "ammo");
+//     private _ammoInfo = [_magazineAmmo] call IVCS_Common_getAmmoInfo;
+//     private _ammoUses = _ammoInfo select 1;
 
-    _magazineInfo pushback [_x, _ammoUses];
-} foreach _compatibleMags;
+//     _magazineInfo pushback [_x, _ammoUses];
+// } foreach _compatibleMags;
 
 private _targetingSystems = [];
 if (_weaponLockSystem != 0) then {
@@ -30,7 +32,7 @@ if (_weaponLockSystem != 0) then {
     };
 };
 
-private _weaponInfo = [_weaponClass, _targetingSystems, _magazineInfo];
+private _weaponInfo = [_weaponClass, _targetingSystems, _compatibleMags];
 
 IVCS_Common_WeaponInfo setvariable [_weaponClass, _weaponInfo];
 

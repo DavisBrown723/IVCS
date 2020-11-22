@@ -17,7 +17,7 @@ private _inRange = [];
     if (!isnil "_entity") then {
         private _entityPosition = _entity getvariable "position";
         if (isnil "_entityPosition") then {
-            systemchat format ["Bad entity: %1", _entityID];
+            systemchat format ["getnearentities: Bad entity: %1", _entityID];
         };
 
         if (_entityPosition distance _position <= _radius) then {

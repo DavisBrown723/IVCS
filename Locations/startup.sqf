@@ -1,0 +1,1 @@
+IVCS_Locations_CurrentMapData = [];

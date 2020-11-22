@@ -19,10 +19,26 @@ private _position = _entity getvariable "position";
     private _class = _x getvariable "class";
     private _damage = _x getvariable "damage";
     private _vehicleAssignment = _x getvariable "vehicleAssignment";
+    private _weapons = _x getvariable "weapons";
 
     private _unit = _group createUnit [_class, _position, [], 0, "NONE"];
     _unit setpos (formationPosition _unit);
     _unit setdamage _damage;
+
+    removeAllWeapons _unit;
+    {_unit removeMagazine _x} forEach magazines _unit;
+
+    {
+        _x params ["_weaponClass","_magazines"];
+
+        {
+            _x params ["_magazineClass","_ammoCount"];
+  
+            _unit addMagazine [_magazineClass, _ammoCount];
+        } foreach _magazines;
+
+        _unit addWeapon _weaponClass;
+    } foreach _weapons;
 
     if !(_vehicleAssignment isequalto []) then {
         _vehicleAssignment params ["_vehicleEntityID","_seat"];

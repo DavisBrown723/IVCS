@@ -10,13 +10,17 @@ private _vehicleType = [_vehicleClass] call IVCS_Common_findUnitType;
 private _maxSpeed = getnumber (_vehicleConfig >> "maxSpeed");
 
 private _hitpoints = [_vehicleConfig >> "HitPoints", 0] call BIS_fnc_returnChildren;
+private _side = [_vehicleClass] call IVCS_Common_getVehicleSide;
 
 private _vehicleEntity = [] call CBA_fnc_createNamespace;
 _vehicleEntity setvariable ["timeLastUpdate", diag_tickTime];
+_vehicleEntity setvariable ["delayedInitComplete", false];
 _vehicleEntity setvariable ["active", false];
 _vehicleEntity setvariable ["class", _vehicleClass];
 _vehicleEntity setvariable ["vehicleType", _vehicleType];
 _vehicleEntity setvariable ["position", _position];
+_vehicleEntity setvariable ["side", _side];
+_vehicleEntity setvariable ["engineOn", false];
 
 _vehicleEntity setvariable ["assignedEntity", ""];
 _vehicleEntity setvariable ["commandingEntity", ""];
