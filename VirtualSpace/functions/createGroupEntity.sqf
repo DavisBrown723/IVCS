@@ -4,6 +4,7 @@ private _groupEntity = [] call CBA_fnc_createNamespace;
 _groupEntity setvariable ["timeLastUpdate", diag_tickTime];
 _groupEntity setvariable ["delayedInitComplete", false];
 _groupEntity setvariable ["entityType", "group"];
+_groupEntity setvariable ["vehicleType", "group"];
 _groupENtity setvariable ["entity", "group"];
 _groupEntity setvariable ["active", false];
 _groupEntity setvariable ["position", _position];
@@ -14,9 +15,11 @@ _groupEntity setvariable ["group", grpNull];
 _groupEntity setvariable ["vehiclesInCommandOf", []];
 _groupEntity setvariable ["vehiclesInCargoOf", []];
 _groupEntity setvariable ["moveSpeedPerSecond", 4.3];
+_groupEntity setvariable ["sightRange", 400];
 
 _groupEntity setvariable ["movePoints", []];
 _groupEntity setvariable ["pathGenInProgress", false];
+_groupEntity setvariable ["currentWaypointPathGenerated", false];
 _groupEntity setvariable ["waypoints", []];
 _groupEntity setvariable ["currentWaypoint", -1];
 _groupEntity setvariable ["minWaypoint", 0];
@@ -24,7 +27,11 @@ _groupEntity setvariable ["maxWaypoint", 0];
 _groupEntity setvariable ["ignoreWpCallback", ""];
 _groupEntity setvariable ["tasks", []];
 
+_groupEntity setvariable ["currentEngagementTask", ""];
+
 _groupEntity setvariable ["pathfindingStrategy", "man"];
+
+_groupEntity setvariable ["reactToContact", "IVCS_VirtualSpace_Infantry_onContactSimple"];
 
 _groupEntity setvariable ["update", "IVCS_VirtualSpace_Infantry_update"];
 _groupEntity setvariable ["spawn", "IVCS_VirtualSpace_Infantry_spawn"];

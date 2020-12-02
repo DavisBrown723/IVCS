@@ -1,5 +1,8 @@
 params ["_entity"];
 
+private _active = _entity getvariable "active";
+if (_active) exitwith {};
+
 private _units = _entity getvariable "units";
 
 // create group

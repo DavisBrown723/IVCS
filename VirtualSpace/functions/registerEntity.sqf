@@ -13,4 +13,7 @@ _allEntities setvariable [_entityID, _entity];
 
 _entity setvariable ["id", _entityID];
 
+private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller getvariable "entitiesSpacialGrid";
+[_entitiesSpacialGrid, [[_entity getvariable "position", _entity]]] call IVCS_SpacialGrid_insert;
+
 _entityID

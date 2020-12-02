@@ -1,7 +1,8 @@
 private _requestQueue = IVCS_Paths_Generator getvariable "requestQueue";
 private _currentRequest = IVCS_Paths_Generator getvariable "currentRequest";
+private _pathGenerationInProgress = !(_currentRequest isequalto []);
 
-if (_currentRequest isequalto [] && {!(_requestQueue isequalto [])}) then {
+if (!_pathGenerationInProgress && {!(_requestQueue isequalto [])}) then {
     private _request = _requestQueue deleteat 0;
     private _props = IVCS_Paths_Generator getvariable "props";
 
@@ -25,8 +26,16 @@ if (_currentRequest isequalto [] && {!(_requestQueue isequalto [])}) then {
             _vehicleProp engineOn false;
         };
     } else {
-
+        [objNull, [_endPos]] call IVCS_Paths_onPathGenerated;
     };
 
+    _request set [6, diag_tickTime];
     IVCS_Paths_Generator setvariable ["currentRequest", _request];
+} else {
+    if (_pathGenerationInProgress) then {
+        private _timeStarted = _currentRequest select 6;
+        if (diag_tickTime - _timeStarted > 10) then {
+            [objNull, []] call IVCS_Paths_onPathGenerated;
+        };
+    };
 };

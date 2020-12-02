@@ -32,6 +32,9 @@ private _loadout = [];
     private _i = 0;
     private _magsLeft = count _magazines;
     while {_i < _magsLeft} do {
+        if (isnil {_magazines select _i}) then {
+            systemchat format ["Select %1 from %2", _i, count _magazines];
+        };
         private _magazineClass = _magazines select _i;
         
         if (_magazineClass in _weaponCompatibleMags) then {
@@ -41,6 +44,7 @@ private _loadout = [];
 
             _compatibleMagsInLoadout pushback [_magazineClass,_magazineSize,_magazineUses];
             _magazines deleteat _i;
+            _magsLeft = _magsLeft - 1;
         } else {
             _i = _i + 1;
         };

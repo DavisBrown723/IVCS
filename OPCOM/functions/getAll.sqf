@@ -1,0 +1,1 @@
+(allvariables IVCS_OPCOMs) apply { IVCS_OPCOMs getvariable _x }

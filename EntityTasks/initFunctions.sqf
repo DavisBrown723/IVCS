@@ -4,6 +4,7 @@ IVCS_EntityTasks_createTaskStateCondition = compile preprocessFileLineNumbers "I
 IVCS_EntityTasks_deleteTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\deleteTask.sqf";
 IVCS_EntityTasks_addOutgoingConditions = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\addOutgoingConditions.sqf";
 IVCS_EntityTasks_processTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\processTask.sqf";
+IVCS_EntityTasks_setCallback = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\setCallback.sqf";
 
 IVCS_EntityTasks_createMoveTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\tasks\createMoveTask.sqf";
 IVCS_EntityTasks_createGetinTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\tasks\createGetinTask.sqf";

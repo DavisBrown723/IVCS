@@ -8,3 +8,8 @@ if (_append) then {
     _entityTasks = [_task] + _entityTasks;
     _entity setvariable ["tasks", _entityTasks];
 };
+
+private _taskID = format ["%1_%2", diag_tickTime, count _entityTasks];
+_task setvariable ["id", _taskID];
+
+_taskID

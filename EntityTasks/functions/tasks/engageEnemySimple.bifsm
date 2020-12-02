@@ -33,9 +33,9 @@ class GraphItems
 		Flags=218;
 		BasicText="";
 		Left=-46.644012;
-		Top=-200.62973;
+		Top=-191.18729;
 		Right=43.355988;
-		Bottom=-150.62973;
+		Bottom=-141.18729;
 		BgColor=65535;
 		class ItemInfo
 		{
@@ -82,26 +82,27 @@ class GraphItems
 	};
 	class Item3
 	{
-		Flags=250;
+		Flags=218;
 		BasicText="";
-		Left=-194.89023;
-		Top=-200.62973;
-		Right=-104.89021;
-		Bottom=-150.62973;
-		BgColor=16777215;
+		Left=140.31677;
+		Top=-96.762482;
+		Right=230.31677;
+		Bottom=-46.762482;
+		BgColor=65535;
 		class ItemInfo
 		{
-			Text="determine" \n "how to" \n "engage";
+			Text="enemy" \n "defeated";
 			lStyle=-842150451;
+			Shape=2;
 			Group=-842150451;
 			FontFace="Arial";
 			FontHeight=10;
 			FontWeight=0;
 			FontCharSet=0;
-			ItemType=2;
+			ItemType=4;
 			class ItemInfo
 			{
-				Id=29;
+				Id=34;
 			};
 		};
 	};
@@ -109,14 +110,14 @@ class GraphItems
 	{
 		Flags=218;
 		BasicText="";
-		Left=-341.24792;
-		Top=-201.57346;
-		Right=-251.24792;
-		Bottom=-151.57346;
+		Left=-47.587532;
+		Top=-2.3381348;
+		Right=42.412476;
+		Bottom=47.661865;
 		BgColor=65535;
 		class ItemInfo
 		{
-			Text="need" \n "to" \n "move";
+			Text="detect" \n "impending" \n "defeat";
 			lStyle=-842150451;
 			Shape=2;
 			Group=-842150451;
@@ -127,63 +128,11 @@ class GraphItems
 			ItemType=4;
 			class ItemInfo
 			{
-				Id=30;
+				Id=35;
 			};
 		};
 	};
 	class Item5
-	{
-		Flags=218;
-		BasicText="";
-		Left=-344.08066;
-		Top=-100.53949;
-		Right=-254.08066;
-		Bottom=-50.53949;
-		BgColor=65535;
-		class ItemInfo
-		{
-			Text="need" \n "to" \n "wait";
-			lStyle=-842150451;
-			Shape=2;
-			Group=-842150451;
-			FontFace="Arial";
-			FontHeight=10;
-			FontWeight=0;
-			FontCharSet=0;
-			ItemType=4;
-			class ItemInfo
-			{
-				Id=31;
-			};
-		};
-	};
-	class Item6
-	{
-		Flags=218;
-		BasicText="";
-		Left=-197.72299;
-		Top=-95.818237;
-		Right=-107.72299;
-		Bottom=-45.818237;
-		BgColor=65535;
-		class ItemInfo
-		{
-			Text="ready" \n "to" \n "engage";
-			lStyle=-842150451;
-			Shape=2;
-			Group=-842150451;
-			FontFace="Arial";
-			FontHeight=10;
-			FontWeight=0;
-			FontCharSet=0;
-			ItemType=4;
-			class ItemInfo
-			{
-				Id=32;
-			};
-		};
-	};
-	class Item7
 	{
 		Flags=250;
 		BasicText="";
@@ -205,6 +154,32 @@ class GraphItems
 			class ItemInfo
 			{
 				Id=33;
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=-44.754887;
+		Top=92.086151;
+		Right=45.245148;
+		Bottom=142.08614;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="retreat";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=36;
 			};
 		};
 	};
@@ -236,7 +211,7 @@ class GraphLinks
 	class Link2
 	{
 		From=1;
-		To=3;
+		To=5;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -247,7 +222,7 @@ class GraphLinks
 	class Link3
 	{
 		From=3;
-		To=4;
+		To=2;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -257,8 +232,8 @@ class GraphLinks
 	};
 	class Link4
 	{
-		From=3;
-		To=5;
+		From=4;
+		To=6;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -268,8 +243,8 @@ class GraphLinks
 	};
 	class Link5
 	{
-		From=3;
-		To=6;
+		From=5;
+		To=3;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -279,19 +254,8 @@ class GraphLinks
 	};
 	class Link6
 	{
-		From=6;
-		To=7;
-		Color=6316128;
-		Flags=2;
-		class Extra
-		{
-			ArrowSize=0;
-		};
-	};
-	class Link7
-	{
-		From=7;
-		To=1;
+		From=5;
+		To=4;
 		Color=6316128;
 		Flags=2;
 		class Extra
@@ -303,7 +267,7 @@ class GraphLinks
 class Globals
 {
 	NextGroupID=1;
-	NextID=34;
+	NextID=37;
 	FSMName="engageEnemy";
 	class DefaultLink
 	{
@@ -326,12 +290,12 @@ class Window
 	Flags=0;
 	MaxPosX=-1;
 	MaxPosY=-1;
-	MinPosX=-1;
-	MinPosY=-1;
-	Left=32;
-	Top=32;
-	Right=1472;
-	Bottom=791;
+	MinPosX=-32000;
+	MinPosY=-32000;
+	Left=224;
+	Top=224;
+	Right=1664;
+	Bottom=983;
 	ShowCmd=1;
 	SplitPos=1050;
 };

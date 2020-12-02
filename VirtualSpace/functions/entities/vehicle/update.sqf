@@ -5,7 +5,7 @@ if (_active) then {
     private _vehicleObject = _entity getvariable "object";
 
     private _newEntityPos = getpos _vehicleObject;
-    _entity setvariable ["position", _newEntityPos];
+    [_entity, _newEntityPos] call IVCS_VirtualSpace_setEntityPosition;
 
     private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
     if (_debug) then {
@@ -19,7 +19,7 @@ if (_active) then {
         private _commandingEntity = [_commandingEntityID] call IVCS_VirtualSpace_getEntity;
         private _commandingEntityPos = _commandingEntity getvariable "position";
 
-        _entity setvariable ["position", _commandingEntityPos];
+        [_entity, _commandingEntityPos] call IVCS_VirtualSpace_setEntityPosition;
 
         private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
         if (_debug) then {

@@ -22,17 +22,17 @@ if (true) then {
 
         private _type = if (true) then {
             scopename "possibleArty";
-            if (_unitClass isKindOf "Car") then {
-                "car" breakout "possibleArty";
-            };
             if (_unitClass isKindOf "Tank") then {
                 "tank" breakout "possibleArty";
             };
-            if (_unitClass isKindOf "Armored") then {
+            if (_unitClass isKindOf "Armored" || _unitClass isKindOf "Wheeled_APC_F") then {
                 "armored" breakout "possibleArty";
             };
-            if (_unitClass isKindOf "Truck") then {
+            if (_unitClass isKindOf "Truck" || _unitClass isKindOf "Truck_F") then {
                 "truck" breakout "possibleArty";
+            };
+            if (_unitClass isKindOf "Car") then {
+                "car" breakout "possibleArty";
             };
         };
 

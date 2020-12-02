@@ -23,6 +23,13 @@ IVCS_Common_foreachArrays = compile preprocessFileLineNumbers "IVCS\Common\funct
 IVCS_Common_getFactionSide = compile preprocessFileLineNumbers "IVCS\Common\functions\getFactionSide.sqf";
 IVCS_Common_getVehicleSide = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehicleSide.sqf";
 
+IVCS_Common_findConvexHull = compile preprocessFileLineNumbers "IVCS\Common\functions\findConvexHull.sqf";
+IVCS_Common_findOffsetFromSegment = compile preprocessFileLineNumbers "IVCS\Common\functions\findOffsetFromSegment.sqf";
+IVCS_Common_findMidpoint = compile preprocessFileLineNumbers "IVCS\Common\functions\findMidpoint.sqf";
+IVCS_Common_isPointInsideShape = compile preprocessFileLineNumbers "IVCS\Common\functions\isPointInsideShape.sqf";
+IVCS_Common_doSegmentsIntersect = compile preprocessFileLineNumbers "IVCS\Common\functions\doSegmentsIntersect.sqf";
+IVCS_Common_pointDistanceFromSegment = compile preprocessFileLineNumbers "IVCS\Common\functions\pointDistanceFromSegment.sqf";
+
 IVCS_Common_findDisposableWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\findDisposableWeapons.sqf";
 
 IVCS_Common_onFrame = compile preprocessFileLineNumbers "IVCS\Common\functions\onFrame.sqf";

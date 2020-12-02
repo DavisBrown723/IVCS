@@ -1,5 +1,8 @@
 params ["_entity"];
 
+private _active = _entity getvariable "active";
+if (!_active) exitwith {};
+
 private _units = _entity getvariable "units";
 private _group = _entity getvariable "group";
 
@@ -27,7 +30,7 @@ private _IVCSWaypointCount = {
 } foreach _units;
 
 deleteGroup _group;
-_entity setvariable ["group", groupNull];
+_entity setvariable ["group", grpNull];
 
 private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
 if (_debug) then {
@@ -35,4 +38,21 @@ if (_debug) then {
     _debugMarker setMarkerAlpha 0.35;
 };
 
+_entity setvariable ["currentWaypointPathGenerated", false];
+_entity setvariable ["pathGenInProgress", false];
+_entity setvariable ["movePoints", []];
+
 _entity setvariable ["active", false];
+
+// despawn any connected vehicles
+
+private _vehiclesInCommandOf = _entity getvariable "vehiclesInCommandOf";
+private _vehiclesInCargoOf = _entity getvariable "vehiclesInCargoOf";
+{
+    private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
+    private _vehicleEntityActive = _vehicleEntity getvariable "active";
+    if (_vehicleEntityActive) then {
+        private _despawnFunc = missionnamespace getvariable (_vehicleEntity getvariable "despawn");
+        [_vehicleEntity] call _despawnFunc;
+    };
+} foreach (_vehiclesInCommandOf + _vehiclesInCargoOf);

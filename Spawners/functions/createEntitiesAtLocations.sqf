@@ -2,6 +2,9 @@ params ["_locations","_forceComposition"];
 
 _forceComposition params ["_side","_faction","_totalGroupCount","_groupData"];
 
+// #TODO: sort by objective priority
+// so high prio areas get leftover units first
+// airfield -> base -> town -> settlement
 _locations = _locations call BIS_fnc_arrayShuffle;
 
 // figure out how many units of each type
@@ -9,8 +12,13 @@ _locations = _locations call BIS_fnc_arrayShuffle;
 
 private _locationCount = count _locations;
 private _locationGroupAssignments = _locations apply { [_x, []] };
+
 {
     _x params ["_unitType","_groupCount","_groups"];
+
+    // shuffle locations each time we switch unit type to avoid
+    // having the same objectives get unit leftovers each time
+    _locationGroupAssignments = _locationGroupAssignments call BIS_fnc_arrayShuffle;
 
     private _countPerLocation = floor (_groupCount / _locationCount) max 1;
 
@@ -33,6 +41,7 @@ private _locationGroupAssignments = _locations apply { [_x, []] };
     };
 } foreach _groupData;
 
+private _createdEntities = [];
 {
     _x params ["_location","_groupsToPlace"];
     private _locationPosition = _location getvariable "position";
@@ -40,6 +49,9 @@ private _locationGroupAssignments = _locations apply { [_x, []] };
     private _spawnPositions = [_locationPosition, _locationSize, count _groupsToPlace] call IVCS_Common_generateRandomPositionsInRadius;
 
     {
-        [_x,_side,_faction, _spawnPositions deleteat 0] call IVCS_VirtualSpace_createEntity;
+        private _entities = [_x,_side,_faction, _spawnPositions deleteat 0] call IVCS_VirtualSpace_createEntity;
+        _createdEntities pushback _entities;
     } foreach _groupsToPlace;
 } foreach _locationGroupAssignments;
+
+_createdEntities

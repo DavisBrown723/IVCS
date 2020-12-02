@@ -4,6 +4,7 @@ _forceComposition params ["_side","_faction","_totalGroupCount","_groupData"];
 
 private _spawnPositions = [_marker, _totalGroupCount] call IVCS_Common_findRandomPositionsInMarker;
 private _createdEntities = [];
+
 {
     _x params ["_unitType","_groupCount","_groups"];
 

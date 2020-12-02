@@ -1,0 +1,600 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-52.018738;
+		Top=-287.09973;
+		Right=37.981262;
+		Bottom=-237.09978;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="Init";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=1;
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=218;
+		BasicText="";
+		Left=-52.350357;
+		Top=-195.82515;
+		Right=37.649643;
+		Bottom=-145.82515;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Initialized";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=21;
+			};
+		};
+	};
+	class Item2
+	{
+		Flags=250;
+		BasicText="";
+		Left=-52.401749;
+		Top=-106.57658;
+		Right=37.598267;
+		Bottom=-56.576599;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="Decision" \n "Core";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=22;
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=210;
+		BasicText="";
+		Left=-316.25986;
+		Top=-13.764427;
+		Right=-308.25986;
+		Bottom=-5.7644272;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=60;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=218;
+		BasicText="";
+		Left=-357.14633;
+		Top=47.4505;
+		Right=-267.14633;
+		Bottom=97.4505;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Message" \n "Received";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=62;
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=210;
+		BasicText="";
+		Left=-11.388565;
+		Top=-13.913811;
+		Right=-3.3885651;
+		Bottom=-5.9138107;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=52;
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=-357.46469;
+		Top=133.1226;
+		Right=-267.46466;
+		Bottom=183.1226;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="Process" \n "Message";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=63;
+			};
+		};
+	};
+	class Item7
+	{
+		Flags=218;
+		BasicText="";
+		Left=-357.30267;
+		Top=227.36841;
+		Right=-267.30267;
+		Bottom=277.36841;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Message" \n "Processed";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=64;
+			};
+		};
+	};
+	class Item8
+	{
+		Flags=210;
+		BasicText="";
+		Left=-315.95358;
+		Top=330.43842;
+		Right=-307.95358;
+		Bottom=338.43842;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=65;
+			};
+		};
+	};
+	class Item9
+	{
+		Flags=210;
+		BasicText="";
+		Left=-486.14075;
+		Top=330.47195;
+		Right=-478.14075;
+		Bottom=338.47195;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=66;
+			};
+		};
+	};
+	class Item10
+	{
+		Flags=210;
+		BasicText="";
+		Left=-485.97546;
+		Top=-85.969131;
+		Right=-477.97546;
+		Bottom=-77.969131;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=67;
+			};
+		};
+	};
+	class Item11
+	{
+		Flags=218;
+		BasicText="";
+		Left=-52.314606;
+		Top=46.430008;
+		Right=37.685394;
+		Bottom=96.430008;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Orders To" \n "Process";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=68;
+			};
+		};
+	};
+	class Item12
+	{
+		Flags=250;
+		BasicText="";
+		Left=-52.57135;
+		Top=132.15221;
+		Right=37.428665;
+		Bottom=182.15221;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="Process Order";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=69;
+			};
+		};
+	};
+	class Item13
+	{
+		Flags=218;
+		BasicText="";
+		Left=-51.708656;
+		Top=229.64989;
+		Right=38.291351;
+		Bottom=279.64987;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Order" \n "Processed";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=70;
+			};
+		};
+	};
+	class Item14
+	{
+		Flags=210;
+		BasicText="";
+		Left=-11.381073;
+		Top=330.43854;
+		Right=-3.381073;
+		Bottom=338.43854;
+		BgColor=0;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=7;
+			class ItemInfo
+			{
+				Id=71;
+			};
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=1;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=2;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=3;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link4
+	{
+		From=4;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link5
+	{
+		From=5;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link6
+	{
+		From=5;
+		To=11;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link7
+	{
+		From=6;
+		To=7;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link8
+	{
+		From=7;
+		To=8;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link9
+	{
+		From=8;
+		To=9;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link10
+	{
+		From=9;
+		To=10;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link11
+	{
+		From=10;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link12
+	{
+		From=11;
+		To=12;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link13
+	{
+		From=12;
+		To=13;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link14
+	{
+		From=13;
+		To=14;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link15
+	{
+		From=14;
+		To=8;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	NextGroupID=1;
+	NextID=72;
+	FSMName="opcom";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkColorFromSelected=6316287;
+	DefaultLinkColorToSelected=6356832;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-524.39557;
+	PZoomRight=362.57471;
+	PZoomBottom=389.2485;
+	PZoomTop=-120.67314;
+	Clxs=1028;
+	Clys=591;
+	Aspect=1;
+};
+class Window
+{
+	Flags=0;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-32000;
+	MinPosY=-32000;
+	Left=219;
+	Top=142;
+	Right=1659;
+	Bottom=937;
+	ShowCmd=1;
+	SplitPos=1050;
+};

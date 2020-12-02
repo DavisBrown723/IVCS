@@ -53,6 +53,7 @@ if (!isnil "_entity") then {
 
                 _entity setvariable ["currentWaypoint", _currentWaypoint];
                 _entity setvariable ["movePoints", []];
+                _entity setvariable ["currentWaypointPathGenerated", false];
 
                 private _active = _entity getvariable "active";
                 if (!_active) then {

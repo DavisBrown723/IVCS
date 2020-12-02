@@ -25,8 +25,8 @@ private _initState = [{
 }] call IVCS_EntityTasks_createTaskState;
 
 
-private _destinationReachedState = [{systemchat 'dest reached'}, true] call IVCS_EntityTasks_CreateTaskState;
-private _entityKilledState = [{systemchat 'entity killed?'}, true] call IVCS_EntityTasks_CreateTaskState;
+private _destinationReachedState = [{}, true] call IVCS_EntityTasks_CreateTaskState;
+private _entityKilledState = [{}, true] call IVCS_EntityTasks_CreateTaskState;
 
 // conditions
 

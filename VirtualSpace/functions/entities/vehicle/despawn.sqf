@@ -1,5 +1,20 @@
 params ["_entity"];
 
+private _active = _entity getvariable "active";
+if (!_active) exitwith {};
+
+// despawn any connected entities first
+
+private _commandingEntityID = _entity getvariable "commandingEntity";
+private _entitiesInCargo = _entity getvariable "entitiesInCargo";
+{
+    private _entity = [_x] call IVCS_VirtualSpace_getEntity;
+    private _despawnFunc = missionnamespace getvariable (_entity getvariable "despawn");
+    [_entity] call _despawnFunc;
+} foreach (_entitiesInCargo + [_commandingEntityID]);
+
+// despawn this entity
+
 private _vehicleObject = _entity getvariable "object";
 
 private _hitpoints = _entity getvariable "hitpoints";

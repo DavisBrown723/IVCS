@@ -1,5 +1,8 @@
 params ["_entity"];
 
+private _active = _entity getvariable "active";
+if (_active) exitwith {};
+
 private _position = _entity getvariable "position";
 private _entityID = _entity getvariable "id";
 private _entityHitpoints = _entity getvariable "hitpoints";
@@ -13,8 +16,19 @@ if (_engineOn && ((_position select 2) > 20) && { _vehicleType in ["helicopter",
     _special = "FLY";
 };
 
+private _spawnDir = 0;
+private _commandingEntityID = _entity getvariable "commandingEntity";
+if (_commandingEntityID != "") then {
+    private _commandingEntity = [_commandingEntityID] call IVCS_VirtualSpace_getEntity;
+    private _movePoints = _commandingEntity getvariable "movePoints";
+    if (count _movePoints > 1) then {
+        _spawnDir = (_movePoints select 0) getDir (_movePoints select 1);
+    };
+};
+
 private _vehicleObject = createVehicle [_vehicleClass, _position, [], 0, _special];
 _vehicleObject allowdamage false;
+_vehicleObject setdir _spawnDir;
 [_vehicleObject] spawn {
     sleep 1;
     (_this select 0) allowdamage true;

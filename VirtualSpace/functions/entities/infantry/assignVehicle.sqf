@@ -50,6 +50,9 @@ _vehicleEntity setvariable ["commandingEntity", _groupEntityID];
 
 _vehiclesInCommandOf pushback _vehicleEntityID;
 
+private _vehicleType = _vehicleEntity getvariable "vehicleType";
+_groupEntity setvariable ["vehicleType", _vehicleType];
+
 [_groupEntity] call IVCS_VirtualSpace_Infantry_calculateSpeed;
 [_groupEntity] call IVCS_VirtualSpace_Infantry_determinePathfindingStrategy;
 

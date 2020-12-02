@@ -1,9 +1,12 @@
-IVCS_Common_OnFrame_LastIteration = diag_tickTime;
+IVCS_Common_OnFrame_LastIteration = -999;
 
 IVCS_Common_SideAllegiances = [] call CBA_fnc_createNamespace;
 IVCS_Common_SideAllegiances setvariable ["EAST", [[],[]]];
 IVCS_Common_SideAllegiances setvariable ["WEST", [[],[]]];
 IVCS_Common_SideAllegiances setvariable ["GUER", [[],[]]];
+
+private _frameEventHandler = addMissionEventHandler ["EachFrame", IVCS_Common_onFrame];
+IVCS_Common_OnFrameEH = _frameEventHandler;
 
 IVCS_Common_WeaponInfo = [] call CBA_fnc_createNamespace;
 IVCS_Common_MagazineInfo = [] call CBA_fnc_createNamespace;

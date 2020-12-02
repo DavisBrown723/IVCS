@@ -1,54 +1,29 @@
-private _entitiesToSimulate = IVCS_VirtualSpace_Controller getvariable "entitiesToSimulate";
-private _simulationChunkSize = IVCS_VirtualSpace_Controller getvariable "simulationChunkSize";
+[] call IVCS_VirtualSpace_simulateEntities;
 
-private _entities = IVCS_VirtualSpace_Controller getvariable "entities";
-private _allEntities = _entities getvariable "all";
+private _spawnerFSM = IVCS_VirtualSpace_Controller getvariable "spawnerFSM";
+[_spawnerFSM] call IVCS_FSM_execute;
 
-// refresh simulation queue
+if (diag_tickTime - IVCS_VirtualSpace_KnownEntityInfo_TimeLastUpdate > 60) then {
+    private _confidenceDegradation = 1 / 60;
 
-if (_entitiesToSimulate isequalto []) then {
-    _entitiesToSimulate append ((allvariables _allEntities) select { !isnil {_allEntities getvariable _x} });
-};
+    {
+        private _side = _x;
+        private _knownTargets = IVCS_VirtualSpace_KnownEntityInfo getvariable _side;
 
-// simulate limited number of entities each frame
+        {
+            private _targetInfo = _knownTargets getvariable _x;
+            if (!isnil "_targetInfo") then {
+                _targetInfo params ["_unitType","_confidence"];
 
-private _entitiesSimulateThisFrame = _entitiesToSimulate select [0, _simulationChunkSize];
-_entitiesToSimulate deleteRange [0, _simulationChunkSize];
-
-private _spawnAnchor = getpos player;
-
-{
-    private _entity = _allEntities getvariable _x;
-    if (!isnil "_entity") then {
-        private _isActive = _entity getvariable "active";
-        private _position = _entity getvariable "position";
-
-        private _inSpawnRange = _position distance _spawnAnchor < 1500;
-
-        if (_isActive) then {
-            if (!_inSpawnRange) then {
-                // despawn entity
-
-                private _despawnFunc = missionnamespace getvariable (_entity getvariable "despawn");
-                [_entity] call _despawnFunc;
+                private _newConfidence = _confidence - _confidenceDegradation;
+                if (_newConfidence <= 0) then {
+                    _knownTargets setvariable [_x, nil];
+                } else {
+                    _targetInfo set [1, _confidence - _confidenceDegradation];
+                };
             };
-        } else {
-            if (_inSpawnRange) then {
-                // spawn entity
+        } foreach (allvariables _knownTargets);
+    } foreach (allvariables IVCS_VirtualSpace_KnownEntityInfo);
 
-                private _spawnFunc = missionnamespace getvariable (_entity getvariable "spawn");
-                [_entity] call _spawnFunc;
-            }
-        };
-
-        // update
-
-        private _updateFunc = missionnamespace getvariable (_entity getvariable "update");
-        private _timeLastUpdate = _entity getvariable "timeLastUpdate";
-        private _timeElapsed = diag_tickTime - _timeLastUpdate;
-
-        [_entity, _timeElapsed] call _updateFunc;
-
-        _entity setvariable ["timeLastUpdate", diag_tickTime];
-    };
-} foreach _entitiesSimulateThisFrame;
+    IVCS_VirtualSpace_KnownEntityInfo_TimeLastUpdate = diag_tickTime;
+};
