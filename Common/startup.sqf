@@ -13,6 +13,9 @@ IVCS_Common_MagazineInfo = [] call CBA_fnc_createNamespace;
 IVCS_Common_AmmoInfo = [] call CBA_fnc_createNamespace;
 IVCS_Common_UnitInfo = [] call CBA_fnc_createNamespace;
 
+IVCS_Common_HardpointMagazines = [] call IVCS_Common_getAllHardpointMagazines;
+IVCS_Common_VehiclePylons = [] call IVCS_Common_getAllVehiclePylons;
+
 IVCS_Common_WeaponAliases = [] call CBA_fnc_createNamespace;
 IVCS_Common_WeaponAliases setvariable ['CUP_launch_FIM92Stinger', 'CUP_launch_FIM92Stinger_Loaded'];
 IVCS_Common_WeaponAliases setvariable ['CUP_launch_NLAW', 'CUP_launch_NLAW_Loaded'];

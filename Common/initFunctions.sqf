@@ -5,6 +5,7 @@ IVCS_Common_sideNumToString= compile preprocessFileLineNumbers "IVCS\Common\func
 IVCS_Common_sideStringToNum= compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToNum.sqf";
 IVCS_Common_sideStringToColor = compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToColor.sqf";
 IVCS_Common_findVehicleSeats = compile preprocessFileLineNumbers "IVCS\Common\functions\findVehicleSeats.sqf";
+IVCS_Common_normalizeDegrees = compile preprocessFileLineNumbers "IVCS\Common\functions\normalizeDegrees.sqf";
 
 IVCS_Common_findRandomPositionsInMarker = compile preprocessFileLineNumbers "IVCS\Common\functions\findRandomPositionsInMarker.sqf";
 IVCS_Common_getUnitClassesFromGroupConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\getUnitClassesFromGroupConfig.sqf";
@@ -31,5 +32,9 @@ IVCS_Common_doSegmentsIntersect = compile preprocessFileLineNumbers "IVCS\Common
 IVCS_Common_pointDistanceFromSegment = compile preprocessFileLineNumbers "IVCS\Common\functions\pointDistanceFromSegment.sqf";
 
 IVCS_Common_findDisposableWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\findDisposableWeapons.sqf";
+IVCS_Common_getAllHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\getAllHardpointMagazines.sqf";
+IVCS_Common_getAllVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common\functions\getAllVehiclePylons.sqf";
+IVCS_Common_getVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehiclePylons.sqf";
+IVCS_Common_getHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\getHardpointMagazines.sqf";
 
 IVCS_Common_onFrame = compile preprocessFileLineNumbers "IVCS\Common\functions\onFrame.sqf";

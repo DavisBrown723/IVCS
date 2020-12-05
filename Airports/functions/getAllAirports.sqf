@@ -1,0 +1,1 @@
+(allvariables IVCS_Airports) apply { IVCS_Airports getvariable _x } select { !isnil "_x" };

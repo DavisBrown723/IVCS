@@ -43,6 +43,14 @@ _vehicleObject engineOn _engineOn;
     _vehicleObject setHitPointDamage [_hitpoint,_damage, false];
 } foreach _entityHitpoints;
 
+private _pylons = _entity getvariable "pylons";
+{
+    _x params ["_pylonName","_pylonMagazine","_pylonAmmo"];
+
+    _vehicleObject setPylonLoadout [_pylonName, _pylonMagazine];
+    _vehicleObject setAmmoOnPylon [_pylonName, _pylonAmmo];
+} foreach _pylons;
+
 _vehicleObject addEventHandler ["GetOut", IVCS_VirtualSpace_Vehicle_onUnitGetOut];
 _vehicleObject addEventHandler ["Killed", IVCS_VirtualSpace_Vehicle_onVehicleDestroyed];
 

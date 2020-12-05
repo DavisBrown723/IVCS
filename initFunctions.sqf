@@ -1,5 +1,6 @@
 call compile preprocessFileLineNumbers "IVCS\VirtualSpace\initFunctions.sqf";
 call compile preprocessFileLineNumbers "IVCS\Common\initFunctions.sqf";
+call compile preprocessFileLineNumbers "IVCS\Airports\initFunctions.sqf";
 call compile preprocessFileLineNumbers "IVCS\FSM\initFunctions.sqf";
 call compile preprocessFileLineNumbers "IVCS\Grid\initFunctions.sqf";
 call compile preprocessFileLineNumbers "IVCS\SpacialGrid\initFunctions.sqf";
