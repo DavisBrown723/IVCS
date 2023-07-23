@@ -5,6 +5,7 @@ IVCS_Common_sideNumToString= compile preprocessFileLineNumbers "IVCS\Common\func
 IVCS_Common_sideStringToNum= compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToNum.sqf";
 IVCS_Common_sideStringToColor = compile preprocessFileLineNumbers "IVCS\Common\functions\sideStringToColor.sqf";
 IVCS_Common_findVehicleSeats = compile preprocessFileLineNumbers "IVCS\Common\functions\findVehicleSeats.sqf";
+IVCS_Common_getVehicleWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehicleWeapons.sqf";
 IVCS_Common_normalizeDegrees = compile preprocessFileLineNumbers "IVCS\Common\functions\normalizeDegrees.sqf";
 
 IVCS_Common_findRandomPositionsInMarker = compile preprocessFileLineNumbers "IVCS\Common\functions\findRandomPositionsInMarker.sqf";

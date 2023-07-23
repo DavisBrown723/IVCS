@@ -43,6 +43,30 @@ private _seatAssignments = _vehicleSeats apply {
 _vehicleEntity setvariable ["seatCount", _seatCount];
 _vehicleEntity setvariable ["seats", _seatAssignments];
 
+// get weapon info
+
+private _weapons = [_vehicleClass] call IVCS_Common_getVehicleWeapons;
+private _weaponsInfo = _weapons apply {
+    _x params ["_turretPath","_turretWeaponsInfo"];
+
+    _turretWeaponsInfo = _turretWeaponsInfo apply {
+        _x params ["_weapon","_weaponMagazines"];
+
+        _weaponMagazines = _weaponMagazines apply {
+            private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
+            private _magazineAmmoCount = _magazineInfo select 1;
+            [_x, _magazineAmmoCount]
+        };
+
+        [_weapon, _weaponMagazines]
+    };
+
+    [_turretPath, _turretWeaponsInfo]
+};
+_vehicleEntity setvariable ["weapons", _weaponsInfo];
+
+// get pylon info
+
 private _vehiclePylonInfo = [_vehicleClass] call IVCS_Common_getVehiclePylons;
 private _vehiclePylons = _vehiclePylonInfo apply {
     private _pylonName = _x select 0;
@@ -54,6 +78,8 @@ private _vehiclePylons = _vehiclePylonInfo apply {
     [_pylonName, _pylonMagazine, _magazineAmmoCount]
 };
 _vehicleEntity setvariable ["pylons", _vehiclePylons];
+
+// set type specific vars
 
 if (_vehicleType == "uav") then {
     _vehicleEntity setvariable ["entityType", "uav"];

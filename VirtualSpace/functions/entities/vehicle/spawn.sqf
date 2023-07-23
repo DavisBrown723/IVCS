@@ -39,9 +39,33 @@ _vehicleObject engineOn _engineOn;
 
 {
     _x params ["_hitpoint","_damage"];
-    
+
     _vehicleObject setHitPointDamage [_hitpoint,_damage, false];
 } foreach _entityHitpoints;
+
+// populate weapon magazines
+
+private _weapons = _entity getvariable "weapons";
+{
+    _x params ["_turretPath","_turretWeaponInfo"];
+
+    private _existingMagazines = _vehicleObject magazinesTurret _turretPath;
+    {
+        _vehicleObject removeMagazineTurret [_x, _turretPath];
+    } foreach _existingMagazines;
+
+    {
+        _x params ["_weapon","_weaponMagazines"];
+
+        {
+            _x params ["_magazine","_magazineAmmoCount"];
+
+            _vehicleObject addMagazineTurret [_magazine, _turretPath, _magazineAmmoCount];
+        } foreach _weaponMagazines;
+    } foreach _turretWeaponInfo;
+} foreach _weapons;
+
+// populate pylons
 
 private _pylons = _entity getvariable "pylons";
 {
