@@ -8,19 +8,19 @@ params [
 // states
 
 private _initState = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
     if (!isnil "_entity") then {
-        private _destinationPos = _this getvariable "destinationPos";
-        private _completionRadius = _this getvariable "completionRadius";
-        private _moveSpeed = _this getvariable "moveSpeed";
+        private _destinationPos = _this get "destinationPos";
+        private _completionRadius = _this get "completionRadius";
+        private _moveSpeed = _this get "moveSpeed";
 
         private _moveWaypoint = [_destinationPos, "MOVE", _moveSpeed] call IVCS_VirtualSpace_createEntityWaypoint;
         [_entity, _moveWaypoint] call IVCS_VirtualSpace_entityAddWaypoint;
 
-        private _moveWaypointID = _moveWaypoint getvariable "name";
-        _this setvariable ["moveWaypointID", _moveWaypointID];
+        private _moveWaypointID = _moveWaypoint get "name";
+        _this set ["moveWaypointID", _moveWaypointID];
     };
 }] call IVCS_EntityTasks_createTaskState;
 
@@ -31,13 +31,13 @@ private _entityKilledState = [{}, true] call IVCS_EntityTasks_CreateTaskState;
 // conditions
 
 private _destinationReachedCondition = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     if (isnil "_entity") exitwith {
         false
     };
 
-    private _moveWaypointID = _this getvariable "moveWaypointID";
+    private _moveWaypointID = _this get "moveWaypointID";
     private _moveWaypoint = [_entity,_moveWaypointID] call IVCS_VirtualSpace_getEntityWaypoint;
 
     isnil "_moveWaypoint"
@@ -45,7 +45,7 @@ private _destinationReachedCondition = [{
 
 
 private _entityKilledCondition = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
     isnil "_entity"
@@ -60,7 +60,7 @@ private _entityKilledCondition = [{
     "Move",
     _initState,
     [
-        ["entityID", _entity getvariable "id"],
+        ["entityID", _entity get "id"],
         ["destinationPos", _destinationPos],
         ["completionRadius", _completionRadius],
         ["moveSpeed", _moveSpeed]

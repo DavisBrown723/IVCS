@@ -1,17 +1,17 @@
 params ["_entity","_group","_entityWaypoint"];
 
-private _name = _entityWaypoint getvariable "name";
-private _description = _entityWaypoint getvariable "description";
-private _position = _entityWaypoint getvariable "position";
-private _type = _entityWaypoint getvariable "type";
-private _speed = _entityWaypoint getvariable "speed";
-private _completionRadius = _entityWaypoint getvariable "completionRadius";
-private _timeout = _entityWaypoint getvariable "timeout";
-private _formation = _entityWaypoint getvariable "formation";
-private _combatMode = _entityWaypoint getvariable "combatMode";
-private _behavior = _entityWaypoint getvariable "behavior";
-private _statements = _entityWaypoint getvariable "statements";
-private _attachedVehicle = _entityWaypoint getvariable "attachedVehicle";
+private _name = _entityWaypoint get "name";
+private _description = _entityWaypoint get "description";
+private _position = _entityWaypoint get "position";
+private _type = _entityWaypoint get "type";
+private _speed = _entityWaypoint get "speed";
+private _completionRadius = _entityWaypoint get "completionRadius";
+private _timeout = _entityWaypoint get "timeout";
+private _formation = _entityWaypoint get "formation";
+private _combatMode = _entityWaypoint get "combatMode";
+private _behavior = _entityWaypoint get "behavior";
+private _statements = _entityWaypoint get "statements";
+private _attachedVehicle = _entityWaypoint get "attachedVehicle";
 
 _position set [2, 0];
 
@@ -35,7 +35,7 @@ _waypoint setWaypointFormation _formation;
 _waypoint setWaypointCombatMode _combatMode;
 _waypoint setWaypointBehaviour _behavior;
 
-private _entityID = _entity getvariable "id";
+private _entityID = _entity get "id";
 _waypoint setWaypointStatements ["true", format ["['%1', '%2'] call IVCS_VirtualSpace_onWaypointCompleted", _entityID, _name]];
 
 if (_attachedVehicle != "") then {

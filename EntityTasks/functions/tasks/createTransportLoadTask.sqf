@@ -11,11 +11,11 @@ private _initState = [{}] call IVCS_EntityTasks_createTaskState;
 
 
 private _vehicleIsNear = [{
-    private _vehicleID = _this getvariable "vehicleID";
+    private _vehicleID = _this get "vehicleID";
     private _vehicleEntity = [_vehicleID] call IVCS_VirtualSpace_getEntity;
 
-    private _vehiclePosition = _vehicleEntity getvariable "position";
-    private _rendezvousPoint = _this getvariable "rendezvousPoint";
+    private _vehiclePosition = _vehicleEntity get "position";
+    private _rendezvousPoint = _this get "rendezvousPoint";
 
     _vehiclePosition distance _rendezvousPoint < 200
 }, {}, _signalVehicle] call IVCS_EntityTasks_createTaskStateCondition;
@@ -28,7 +28,7 @@ private _vehicleIsNear = [{
     "TransportLoad",
     _initState,
     [
-        ["entityID", _entity getvariable "id"],
-        ["entityToTransportID", _entityToTransport getvariable "id"]
+        ["entityID", _entity get "id"],
+        ["entityToTransportID", _entityToTransport get "id"]
     ]
 ] call IVCS_EntityTasks_createTask;

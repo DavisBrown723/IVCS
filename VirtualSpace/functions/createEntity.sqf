@@ -28,7 +28,7 @@ private _nextUnitIDNum = 0;
         private _unitID = format ["u_%1", _nextUnitIDNum];
         _nextUnitIDNum = _nextUnitIDNum + 1;
 
-        _unit setvariable ["id", _unitID];
+        _unit set ["id", _unitID];
 
         _units pushback _unit;
     } else {

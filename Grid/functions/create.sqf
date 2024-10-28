@@ -40,12 +40,13 @@ for "_y" from 0 to _gridCellLength - 1 do {
     };
 };
 
-private _grid = [] call CBA_fnc_createNamespace;
-_grid setvariable ["origin", _origin];
-_grid setvariable ["length", _gridSize];
-_grid setvariable ["cellSize", _cellSize];
-_grid setvariable ["cellsPerRow", _gridCellLength];
-_grid setvariable ["bounds", _gridBounds];
-_grid setvariable ["cells", _cells];
+private _grid = createHashMapFromArray [
+    ["origin", _origin],
+    ["length", _gridSize],
+    ["cellSize", _cellSize],
+    ["cellsPerRow", _gridCellLength],
+    ["bounds", _gridBounds],
+    ["cells", _cells]
+];
 
 _grid

@@ -5,8 +5,8 @@ params [
     "_countItemsToFind"
 ];
 
-private _cellsPerRow = _grid getvariable "cellsPerRow";
-private _cells = _grid getvariable "cells";
+private _cellsPerRow = _grid get "cellsPerRow";
+private _cells = _grid get "cells";
 
 private _dX = 1;
 private _dY = 0;

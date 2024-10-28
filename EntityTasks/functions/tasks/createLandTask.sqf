@@ -9,13 +9,13 @@ params [
 private _initState = [] call IVCS_EntityTasks_createTaskState;
 
 private _moveToLandingPoint = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-    private _landingPosition = _this getvariable "landingPosition";
+    private _landingPosition = _this get "landingPosition";
 
     private _moveWp = [_landingPosition] call IVCS_VirtualSpace_createEntityWaypoint;
-    _moveWp setvariable ["completionRadius", 20];
+    _moveWp set ["completionRadius", 20];
     [_entity, _moveWp] call IVCS_VirtualSpace_entityAddWaypoint;
 
     private _landWp = [_landingPosition,"LAND"] call IVCS_VirtualSpace_createEntityWaypoint;
@@ -23,15 +23,15 @@ private _moveToLandingPoint = [{
 }] call IVCS_EntityTasks_createTaskState;
 
 private _createHelipad = [{
-    private _landingPosition = _this getvariable "landingPosition";
+    private _landingPosition = _this get "landingPosition";
 
     private _helipad = "Land_HelipadEmpty_F" createVehicle _landingPosition;
 
-    _this setvariable ["helipadObject", _helipad];
+    _this set ["helipadObject", _helipad];
 }] call IVCS_EntityTasks_createTaskState;
 
 private _endState = [{
-    private _helipad = _this getvariable "helipadObject";
+    private _helipad = _this get "helipadObject";
     if !(isnull _helipad) then {
         // deleteVehicle _helipad;
         // deleting this seems to make the helicopter move away to a new landing point
@@ -43,33 +43,33 @@ private _endState = [{
 // conditions
 
 private _atLandingPoint = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-    private _landingPosition = _this getvariable "landingPosition";
+    private _landingPosition = _this get "landingPosition";
 
-    private _fnc_inLandRangeOfPosition = _this getvariable "fnc_inLandRangeOfPosition";
+    private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
 
     [_entity, _landingPosition] call _fnc_inLandRangeOfPosition
 }, {}, _endState] call IVCS_EntityTasks_createTaskStateCondition;
 
 private _notAtLandingPoint = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-    private _landingPosition = _this getvariable "landingPosition";
+    private _landingPosition = _this get "landingPosition";
 
-    private _fnc_inLandRangeOfPosition = _this getvariable "fnc_inLandRangeOfPosition";
+    private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
 
     !([_entity, _landingPosition] call _fnc_inLandRangeOfPosition)
 }, {}, _moveToLandingPoint] call IVCS_EntityTasks_createTaskStateCondition;
 
 private _nearLandingPoint = [{
-    private _entityID = _this getvariable "entityID";
+    private _entityID = _this get "entityID";
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-    private _entityPosition = _entity getvariable "position";
-    private _landingPosition = _this getvariable "landingPosition";
+    private _entityPosition = _entity get "position";
+    private _landingPosition = _this get "landingPosition";
 
     _entityPosition distance _landingPosition < 200
 }, {}, _createHelipad] call IVCS_EntityTasks_createTaskStateCondition;
@@ -83,7 +83,7 @@ private _nearLandingPoint = [{
 private _inLandRangeOfPosition = {
     params ["_entity","_landingPosition"];
 
-    private _entityPosition = _entity getvariable "position";
+    private _entityPosition = _entity get "position";
 
     (_entityPosition distance _landingPosition) < 25 && { (_entityPosition select 2) < 4 };
 };
@@ -92,7 +92,7 @@ private _inLandRangeOfPosition = {
     "Land",
     _initState,
     [
-        ["entityID", _entity getvariable "id"],
+        ["entityID", _entity get "id"],
         ["landingPosition", _landingPosition],
         ["landingType", _landingType],
         ["helipadObject", objNull],

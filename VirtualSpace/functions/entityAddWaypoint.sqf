@@ -1,11 +1,11 @@
  params ["_entity","_entityWaypoint"];
 
-private _waypoints = _entity getvariable "waypoints";
+private _waypoints = _entity get "waypoints";
 _waypoints pushback _entityWaypoint;
 
-private _active = _entity getvariable "active";
+private _active = _entity get "active";
 if (_active) then {
-    private _group = _entity getvariable "group";
+    private _group = _entity get "group";
 
     [_entity, _group, _entityWaypoint] call IVCS_VirtualSpace_entityWaypointToWaypoint;
 };
@@ -13,13 +13,13 @@ if (_active) then {
 // if cycle waypoint and no other cycle waypoints exist
 // calculate cycle loop
 
-private _wpType = _entityWaypoint getvariable "type";
-private _minWaypoint = _entity getvariable "minWaypoint";
+private _wpType = _entityWaypoint get "type";
+private _minWaypoint = _entity get "minWaypoint";
 if (_wpType == "CYCLE" && _minWaypoint == 0) then {
     [_entity] call IVCS_VirtualSpace_determineCycleWaypointLoop;
 };
 
-private _currentWaypoint = _entity getvariable "currentWaypoint";
+private _currentWaypoint = _entity get "currentWaypoint";
 if (_currentWaypoint == -1) then {
-    _entity setvariable ["currentWaypoint", 0];
+    _entity set ["currentWaypoint", 0];
 };

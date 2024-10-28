@@ -1,10 +1,10 @@
 params ["_entity","_entityUnit"];
 
-private _vehicleAssignment = _entityUnit getvariable "vehicleAssignment";
+private _vehicleAssignment = _entityUnit get "vehicleAssignment";
 _vehicleAssignment params ["_vehicleID","_seat"];
 
 _seat set [0, ""];
-_entityUnit setvariable ["vehicleAssignment", []];
+_entityUnit set ["vehicleAssignment", []];
 
 // perhaps we could shuffle unit assignments
 // so we don't drop vehicle assignments

@@ -12,23 +12,24 @@ private _maxSpeed = getnumber (_vehicleConfig >> "maxSpeed");
 private _hitpoints = [_vehicleConfig >> "HitPoints", 0] call BIS_fnc_returnChildren;
 private _side = [_vehicleClass] call IVCS_Common_getVehicleSide;
 
-private _vehicleEntity = [] call CBA_fnc_createNamespace;
-_vehicleEntity setvariable ["timeLastUpdate", diag_tickTime];
-_vehicleEntity setvariable ["delayedInitComplete", false];
-_vehicleEntity setvariable ["active", false];
-_vehicleEntity setvariable ["class", _vehicleClass];
-_vehicleEntity setvariable ["vehicleType", _vehicleType];
-_vehicleEntity setvariable ["position", _position];
-_vehicleEntity setvariable ["side", _side];
-_vehicleEntity setvariable ["engineOn", false];
+private _vehicleEntity = createHashMapFromArray [
+    ["timeLastUpdate", diag_tickTime],
+    ["delayedInitComplete", false],
+    ["active", false],
+    ["class", _vehicleClass],
+    ["vehicleType", _vehicleType],
+    ["position", _position],
+    ["side", _side],
+    ["engineOn", false],
 
-_vehicleEntity setvariable ["assignedEntity", ""];
-_vehicleEntity setvariable ["commandingEntity", ""];
-_VehicleEntity setvariable ["entitiesInCargo", []];
+    ["assignedEntity", ""],
+    ["commandingEntity", ""],
+    ["entitiesInCargo", []],
 
-_vehicleEntity setvariable ["object", objNull];
-_vehicleEntity setvariable ["speedPerSecond", round (_maxSpeed * 0.15)];
-_vehicleEntity setvariable ["hitpoints", _hitpoints apply {[configname _x, 0]}];
+    ["object", objNull],
+    ["speedPerSecond", round (_maxSpeed * 0.15)],
+    ["hitpoints", _hitpoints apply {[configname _x, 0]}]
+];
 
 private _seatCount = 0;
 private _vehicleSeats = [_vehicleClass] call IVCS_Common_findVehicleSeats;
@@ -40,8 +41,8 @@ private _seatAssignments = _vehicleSeats apply {
 
     [_seatType, _seatPaths]
 };
-_vehicleEntity setvariable ["seatCount", _seatCount];
-_vehicleEntity setvariable ["seats", _seatAssignments];
+_vehicleEntity set ["seatCount", _seatCount];
+_vehicleEntity set ["seats", _seatAssignments];
 
 // get weapon info
 
@@ -82,33 +83,33 @@ _vehicleEntity setvariable ["pylons", _vehiclePylons];
 // set type specific vars
 
 if (_vehicleType == "uav") then {
-    _vehicleEntity setvariable ["entityType", "uav"];
+    _vehicleEntity set ["entityType", "uav"];
 
-    // _vehicleEntity setvariable ["update", "IVCS_VirtualSpace_Uav_update"];
-    // _vehicleEntity setvariable ["spawn", "IVCS_VirtualSpace_Uav_spawn"];
-    // _vehicleEntity setvariable ["despawn", "IVCS_VirtualSpace_Uav_despawn"];
-    // _vehicleEntity setvariable ["unregister", "IVCS_VirtualSpace_Uav_unregister"];
-    _vehicleEntity setvariable ["update", "IVCS_VirtualSpace_Vehicle_update"];
-    _vehicleEntity setvariable ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
-    _vehicleEntity setvariable ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
-    _vehicleEntity setvariable ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
+    // _vehicleEntity set ["update", "IVCS_VirtualSpace_Uav_update"];
+    // _vehicleEntity set ["spawn", "IVCS_VirtualSpace_Uav_spawn"];
+    // _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Uav_despawn"];
+    // _vehicleEntity set ["unregister", "IVCS_VirtualSpace_Uav_unregister"];
+    _vehicleEntity set ["update", "IVCS_VirtualSpace_Vehicle_update"];
+    _vehicleEntity set ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
+    _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
+    _vehicleEntity set ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
 } else {
-    _vehicleEntity setvariable ["entityType", "vehicle"];
+    _vehicleEntity set ["entityType", "vehicle"];
 
-    _vehicleEntity setvariable ["update", "IVCS_VirtualSpace_Vehicle_update"];
-    _vehicleEntity setvariable ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
-    _vehicleEntity setvariable ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
-    _vehicleEntity setvariable ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
+    _vehicleEntity set ["update", "IVCS_VirtualSpace_Vehicle_update"];
+    _vehicleEntity set ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
+    _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
+    _vehicleEntity set ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
 };
 
 [_vehicleEntity] call IVCS_VirtualSpace_registerEntity;
 
-private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
+private _debug = IVCS_VirtualSpace_Controller get "debug";
 private _debugMarker = if (_debug) then {
     [_vehicleEntity] call IVCS_VirtualSpace_createEntityDebugMarker;
 } else {
     ""
 };
-_vehicleEntity setvariable ["debugMarker", _debugMarker];
+_vehicleEntity set ["debugMarker", _debugMarker];
 
 _vehicleEntity

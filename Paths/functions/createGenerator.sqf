@@ -1,4 +1,4 @@
-private _pathGenerator = [] call CBA_fnc_createNamespace;
+private _pathGenerator = createHashMap;
 
 // create props for path generation
 
@@ -17,22 +17,23 @@ _mechanizedProp hideobjectglobal true;
 _armoredProp hideobjectglobal true;
 _boatProp hideobjectglobal true;
 
-private _unitTypes = [] call CBA_fnc_createNamespace;
-_unitTypes setvariable ["man", _agentMan];
-_unitTypes setvariable ["car", _motorizedProp];
-_unitTypes setvariable ["truck", _motorizedProp];
-_unitTypes setvariable ["armored", _mechanizedProp];
-_unitTypes setvariable ["antiair", _mechanizedProp];
-_unitTypes setvariable ["tank", _armoredProp];
-_unitTypes setvariable ["artillery", _armoredProp];
-_unitTypes setvariable ["ship", _boatProp];
+private _unitTypes = createHashMapFromArray [
+	["man", _agentMan],
+	["car", _motorizedProp],
+	["truck", _motorizedProp],
+	["armored", _mechanizedProp],
+	["antiair", _mechanizedProp],
+	["tank", _armoredProp],
+	["artillery", _armoredProp],
+	["ship", _boatProp]
+];
 
-_pathGenerator setvariable ["props", _unitTypes];
+_pathGenerator set ["props", _unitTypes];
 
-_pathGenerator setvariable ["requestQueue", []];
-_pathGenerator setvariable ["currentRequest", []];
+_pathGenerator set ["requestQueue", []];
+_pathGenerator set ["currentRequest", []];
 
 private _frameEventHandler = addMissionEventHandler ["EachFrame", IVCS_Paths_onFrame];
-_pathGenerator setvariable ["onFrameHandlerID", _frameEventHandler];
+_pathGenerator set ["onFrameHandlerID", _frameEventHandler];
 
 _pathGenerator

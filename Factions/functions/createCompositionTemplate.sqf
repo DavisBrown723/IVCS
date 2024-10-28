@@ -1,35 +1,33 @@
-private _composition = [] call CBA_fnc_createNamespace;
+private _composition = createHashMapFromArray [
+	// settings
 
-// settings
+	["faction", ""],
+	["isAsymmetric", false],
 
-_composition setvariable ["faction", ""];
-_composition setvariable ["isAsymmetric", false];
+	// groups
 
-// groups
+	["infantry", []],
+	["reconInfantry", []],
 
-_composition setvariable ["infantry", []];
-_composition setvariable ["reconInfantry", []];
+	["motorized", []],
+	["mechanized", []],
+	["tanks", []],
+	["artillery", []],
+	["boats", []],
 
-_composition setvariable ["motorized", []];
-_composition setvariable ["mechanized", []];
-_composition setvariable ["tanks", []];
-_composition setvariable ["artillery", []];
-_composition setvariable ["boats", []];
+	["attackHelicopter", []],
+	["transportHelicopter", []],
 
-_composition setvariable ["attackHelicopter", []];
-_composition setvariable ["transportHelicopter", []];
+	["attackPlane", []],
+	["transportPlane", []],
 
-_composition setvariable ["attackPlane", []];
-_composition setvariable ["transportPlane", []];
+	["logistics_ammo", []],
+	["logistics_fuel", []],
+	["logistics_repair", []],
 
-_composition setvariable ["logistics_ammo", []];
-_composition setvariable ["logistics_fuel", []];
-_composition setvariable ["logistics_repair", []];
-
-_composition setvariable ["mobile_antiair", []];
-_composition setvariable ["sam", []];
-_composition setvariable ["radar", []];
-
-// objects
+	["mobile_antiair", []],
+	["sam", []],
+	["radar", []]
+];
 
 _composition

@@ -1,10 +1,10 @@
 params ["_entity"];
 
-private _active = _entity getvariable "active";
+private _active = _entity get "active";
 if (!_active) exitwith {};
 
-private _units = _entity getvariable "units";
-private _group = _entity getvariable "group";
+private _units = _entity get "units";
+private _group = _entity get "group";
 
 // store waypoints
 
@@ -18,41 +18,41 @@ private _IVCSWaypointCount = {
 // delete units
 
 {
-    private _object = _x getvariable "object";
+    private _object = _x get "object";
 
     private _unitWeapons = [_object] call IVCS_Common_getUnitObjectLoadoutInfo;
 
-    _x setvariable ["object", objnull];
-    _x setvariable ["weapons", _unitWeapons];
-    _x setvariable ["damage", damage _object];
+    _x set ["object", objnull];
+    _x set ["weapons", _unitWeapons];
+    _x set ["damage", damage _object];
 
     deletevehicle _object;
 } foreach _units;
 
 deleteGroup _group;
-_entity setvariable ["group", grpNull];
+_entity set ["group", grpNull];
 
-private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
+private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
-    private _debugMarker = _entity getvariable "debugMarker";
+    private _debugMarker = _entity get "debugMarker";
     _debugMarker setMarkerAlpha 0.35;
 };
 
-_entity setvariable ["currentWaypointPathGenerated", false];
-_entity setvariable ["pathGenInProgress", false];
-_entity setvariable ["movePoints", []];
+_entity set ["currentWaypointPathGenerated", false];
+_entity set ["pathGenInProgress", false];
+_entity set ["movePoints", []];
 
-_entity setvariable ["active", false];
+_entity set ["active", false];
 
 // despawn any connected vehicles
 
-private _vehiclesInCommandOf = _entity getvariable "vehiclesInCommandOf";
-private _vehiclesInCargoOf = _entity getvariable "vehiclesInCargoOf";
+private _vehiclesInCommandOf = _entity get "vehiclesInCommandOf";
+private _vehiclesInCargoOf = _entity get "vehiclesInCargoOf";
 {
     private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
-    private _vehicleEntityActive = _vehicleEntity getvariable "active";
+    private _vehicleEntityActive = _vehicleEntity get "active";
     if (_vehicleEntityActive) then {
-        private _despawnFunc = missionnamespace getvariable (_vehicleEntity getvariable "despawn");
+        private _despawnFunc = missionnamespace getvariable (_vehicleEntity get "despawn");
         [_vehicleEntity] call _despawnFunc;
     };
 } foreach (_vehiclesInCommandOf + _vehiclesInCargoOf);

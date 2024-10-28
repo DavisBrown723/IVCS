@@ -1,6 +1,6 @@
 params ["_entity"];
 
-private _assignedVehicles = _entity getvariable "vehiclesInCommandOf";
+private _assignedVehicles = _entity get "vehiclesInCommandOf";
 if (_assignedVehicles isequalto []) exitwith {
     "man";
 };
@@ -9,7 +9,7 @@ if (_assignedVehicles isequalto []) exitwith {
 
 private _vehicleTypes = _assignedVehicles apply {
     private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
-    private _vehicleType = _vehicleEntity getvariable "vehicleType";
+    private _vehicleType = _vehicleEntity get "vehicleType";
     _vehicleType
 };
 
@@ -20,6 +20,6 @@ private _strategy = {
     };
 } foreach _strategyOrder;
 
-_entity setvariable ["pathfindingStrategy", _strategy];
+_entity set ["pathfindingStrategy", _strategy];
 
 _strategy

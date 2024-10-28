@@ -1,23 +1,23 @@
 params ["_entity"];
 
-private _active = _entity getvariable "active";
+private _active = _entity get "active";
 if (!_active) exitwith {};
 
 // despawn any connected entities first
 
-private _commandingEntityID = _entity getvariable "commandingEntity";
-private _entitiesInCargo = _entity getvariable "entitiesInCargo";
+private _commandingEntityID = _entity get "commandingEntity";
+private _entitiesInCargo = _entity get "entitiesInCargo";
 {
     private _entity = [_x] call IVCS_VirtualSpace_getEntity;
-    private _despawnFunc = missionnamespace getvariable (_entity getvariable "despawn");
+    private _despawnFunc = missionnamespace get (_entity get "despawn");
     [_entity] call _despawnFunc;
 } foreach (_entitiesInCargo + [_commandingEntityID]);
 
 // despawn this entity
 
-private _vehicleObject = _entity getvariable "object";
+private _vehicleObject = _entity get "object";
 
-private _hitpoints = _entity getvariable "hitpoints";
+private _hitpoints = _entity get "hitpoints";
 {
     private _hitpoint = _x select 0;
 
@@ -25,7 +25,7 @@ private _hitpoints = _entity getvariable "hitpoints";
     _x set [1, _hitpointDamage];
 } foreach _hitpoints;
 
-private _pylons = _entity getvariable "pylons";
+private _pylons = _entity get "pylons";
 private _pylonMagazines = getPylonMagazines _vehicleObject;
 {
     private _pylon = _pylons select _foreachindex;
@@ -38,19 +38,19 @@ private _pylonMagazines = getPylonMagazines _vehicleObject;
     _pylon set [2, _magazineAmmo];
 } foreach _pylonMagazines;
 
-private _waypoints = _entity getvariable "waypoints";
+private _waypoints = _entity get "waypoints";
 if (_waypoints isequalto []) then {
-    _entity setvariable ["engineOn", isEngineOn _vehicleObject];
+    _entity set ["engineOn", isEngineOn _vehicleObject];
 };
 
 deletevehicle _vehicleObject;
 
-_entity setvariable ["object", objNull];
+_entity set ["object", objNull];
 
-private _debug = IVCS_VirtualSpace_Controller getvariable "debug";
+private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
-    private _debugMarker = _entity getvariable "debugMarker";
+    private _debugMarker = _entity get "debugMarker";
     _debugMarker setMarkerAlpha 0.35;
 };
 
-_entity setvariable ["active", false];
+_entity set ["active", false];

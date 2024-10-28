@@ -12,12 +12,12 @@ private _upperRight = [(_position select 0) + _radius, (_position select 1) + _r
 private _minCoords = [_grid, _lowerLeft, true] call IVCS_SpacialGrid_positionToCoords;
 private _maxCoords = [_grid, _upperRight, true] call IVCS_SpacialGrid_positionToCoords;
 
-private _cellsPerRow = _grid getvariable "cellsPerRow";
+private _cellsPerRow = _grid get "cellsPerRow";
 
 _minCoords = _minCoords apply {_x max 0};
 _maxCoords = _maxCoords apply {_x min (_cellsPerRow - 1)};
 
-private _cells = _grid getvariable "cells";
+private _cells = _grid get "cells";
 private _result = [];
 
 for "_y" from (_minCoords select 1) to (_maxCoords select 1) do {

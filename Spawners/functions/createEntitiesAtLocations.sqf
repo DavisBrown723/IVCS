@@ -44,8 +44,8 @@ private _locationGroupAssignments = _locations apply { [_x, []] };
 private _createdEntities = [];
 {
     _x params ["_location","_groupsToPlace"];
-    private _locationPosition = _location getvariable "position";
-    private _locationSize = _location getvariable "size";
+    private _locationPosition = _location get "position";
+    private _locationSize = _location get "size";
     private _spawnPositions = [_locationPosition, _locationSize, count _groupsToPlace] call IVCS_Common_generateRandomPositionsInRadius;
 
     {

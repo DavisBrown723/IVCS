@@ -11,22 +11,22 @@ _filters params [
     ["_faction", ""]
 ];
 
-private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller getvariable "entitiesSpacialGrid";
+private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
 private _entitiesInRange = [_entitiesSpacialGrid, _position, _radius, false] call IVCS_SpacialGrid_findInRange;
 if (_checkVisiblity) then {
     _entitiesInRange = _entitiesInRange select {
-        private _entityPosition = _x getvariable "position";
+        private _entityPosition = _x get "position";
         
         !(terrainIntersect [_position, [_entityPosition select 0, _entityPosition select 1, (_entityPosition select 2) + 2]])
     };
 };
 
-// private _entities = IVCS_VirtualSpace_Controller getvariable "entities";
-// private _allEntities = _entities getvariable "all";
+// private _entities = IVCS_VirtualSpace_Controller get "entities";
+// private _allEntities = _entities get "all";
 
-// private _inRange = (allvariables _allEntities) apply { _allEntities getvariable _x } select {
+// private _inRange = (keys _allEntities) apply { _allEntities get _x } select {
 //     if (!isnil "_x") then {
-//         private _entityPosition = _x getvariable "position";
+//         private _entityPosition = _x get "position";
 
 //         _entityPosition distance _position <= _radius &&
 //         (
@@ -38,20 +38,20 @@ if (_checkVisiblity) then {
 
 private _filter = "true";
 if (_type != "all") then {
-    _filter = _filter + format [" && { (_x getvariable 'entityType') == _type }"];
+    _filter = _filter + format [" && { (_x get 'entityType') == _type }"];
 };
 if !(_side isequalto "") then {
     if (_side isequaltype []) then {
-        _filter = _filter + format [" && { (_x getvariable 'side') in _side }"];
+        _filter = _filter + format [" && { (_x get 'side') in _side }"];
     } else {
-        _filter = _filter + format [" && { (_x getvariable 'side') == _side }"];
+        _filter = _filter + format [" && { (_x get 'side') == _side }"];
     };
 };
 if !(_faction isequalto "") then {
     if (_faction isequaltype []) then {
-        _filter = _filter + format [" && { (_x getvariable 'faction') in _faction }"];
+        _filter = _filter + format [" && { (_x get 'faction') in _faction }"];
     } else {
-        _filter = _filter + format [" && { (_x getvariable 'faction') == _faction }"];
+        _filter = _filter + format [" && { (_x get 'faction') == _faction }"];
     };
 };
 

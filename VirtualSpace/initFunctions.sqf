@@ -62,7 +62,7 @@ IVCS_VirtualSpace_Vehicle_canTransportEntity = compile preprocessFileLineNumbers
 IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\updateDebugMarkerColor.sqf";
 
 
-IVCS_VirtualSpace_Uav_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\update.sqf";
-IVCS_VirtualSpace_Uav_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\spawn.sqf";
-IVCS_VirtualSpace_Uav_despawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\despawn.sqf";
-IVCS_VirtualSpace_Uav_unregister = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\unregister.sqf";
+//IVCS_VirtualSpace_Uav_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\update.sqf";
+//IVCS_VirtualSpace_Uav_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\spawn.sqf";
+//IVCS_VirtualSpace_Uav_despawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\despawn.sqf";
+//IVCS_VirtualSpace_Uav_unregister = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\unregister.sqf";

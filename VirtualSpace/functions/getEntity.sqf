@@ -1,6 +1,6 @@
 params ["_entityID"];
 
-private _entities = IVCS_VirtualSpace_Controller getvariable "entities";
-private _allEntities = _entities getvariable "all";
+private _entities = IVCS_VirtualSpace_Controller get "entities";
+private _allEntities = _entities get "all";
 
-_allEntities getvariable _entityID;
+_allEntities get _entityID;

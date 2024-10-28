@@ -1,6 +1,6 @@
 params ["_ammo"];
 
-private _cachedAmmoInfo = IVCS_Common_AmmoInfo getvariable _ammo;
+private _cachedAmmoInfo = IVCS_Common_AmmoInfo get _ammo;
 if (!isnil "_cachedAmmoInfo") exitwith { _cachedAmmoInfo };
 
 private _ammoConfig = configfile >> "CfgAmmo" >> _ammo;
@@ -35,6 +35,6 @@ if (_ammoUsageFlags != 0) then {
 // private _irLock = getnumber (_ammoConfig >> "irLock");
 // private _laserLock = getnumber (_ammoConfig >> "laserLock");
 
-IVCS_Common_AmmoInfo setvariable [_ammo, _ammoUses];
+IVCS_Common_AmmoInfo set [_ammo, _ammoUses];
 
 _ammoUses

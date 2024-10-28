@@ -7,23 +7,19 @@ params [
     ["_callbackArgs", []]
 ];
 
-private _fsmVars = [] call CBA_fnc_createNamespace;
-{
-    _fsmVars setvariable _x;
-} foreach _args;
-
-private _nodeMap = [] call CBA_fnc_createNamespace;
-{
+private _fsmVars = createHashMapFromArray _args;
+private _nodeMap = createHashMapFromArray (_nodes apply {
     private _name = _x select 0;
-    _nodeMap setvariable [_name, _x];
-} foreach _nodes;
+    [_name, _x]
+});
 
-private _fsm = [] call CBA_fnc_createNamespace;
-_fsm setvariable ["name", _name];
-_fsm setvariable ["data", _fsmVars];
-_fsm setvariable ["currentState", _nodeMap getvariable _initStateName];
-_fsm setvariable ["nodes", _nodeMap];
-_fsm setvariable ["callback", _callback];
-_fsm setvariable ["callbackArgs", _callbackArgs];
+private _fsm = createHashMapFromArray [
+    ["name", _name],
+    ["data", _fsmVars],
+    ["currentState", _nodeMap get _initStateName],
+    ["nodes", _nodeMap],
+    ["callback", _callback],
+    ["callbackArgs", _callbackArgs]
+];
 
 _fsm

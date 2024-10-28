@@ -1,19 +1,19 @@
 params ["_entity"];
 
-private _entityType = _entity getvariable "entityType";
+private _entityType = _entity get "entityType";
 
-private _groups = IVCS_VirtualSpace_Controller getvariable "entities";
-private _allEntities = _groups getvariable "all";
+private _groups = IVCS_VirtualSpace_Controller get "entities";
+private _allEntities = _groups get "all";
 
-private _nextEntityIDNum = IVCS_VirtualSpace_Controller getvariable "nextEntityID";
-IVCS_VirtualSpace_Controller setvariable ["nextEntityID", _nextEntityIDNum + 1];
+private _nextEntityIDNum = IVCS_VirtualSpace_Controller get "nextEntityID";
+IVCS_VirtualSpace_Controller set ["nextEntityID", _nextEntityIDNum + 1];
 
 private _entityID = format ["e_%1", _nextEntityIDNum];
-_allEntities setvariable [_entityID, _entity];
+_allEntities set [_entityID, _entity];
 
-_entity setvariable ["id", _entityID];
+_entity set ["id", _entityID];
 
-private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller getvariable "entitiesSpacialGrid";
-[_entitiesSpacialGrid, [[_entity getvariable "position", _entity]]] call IVCS_SpacialGrid_insert;
+private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
+[_entitiesSpacialGrid, [[_entity get "position", _entity]]] call IVCS_SpacialGrid_insert;
 
 _entityID

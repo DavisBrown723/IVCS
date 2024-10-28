@@ -5,11 +5,11 @@ private _engagementCapabilities = [_entity] call IVCS_VirtualSpace_Infantry_getE
 
 private _canEngage = false;
 
-private _targetEntityType = _targetEntity getvariable "entityType";
+private _targetEntityType = _targetEntity get "entityType";
 if (_targetEntityType == "group") then {
     _canEngage = "infantry" in _engagementCapabilities;
 } else {
-    private _vehicleType = _targetEntity getvariable "vehicleType";
+    private _vehicleType = _targetEntity get "vehicleType";
     private _validEngagementTypes = switch (_vehicleType) do {
         case "car";
         case "truck": { ["infantry","vehicles"] };

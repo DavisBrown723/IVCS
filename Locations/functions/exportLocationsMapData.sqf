@@ -7,14 +7,14 @@ _exportString = _exportString + "private '_location';" + _newLine + _newLine;
 
 {
     private _location = _x;
-    private _type = _location getvariable "type";
-    private _position = _location getvariable "position";
-    private _size = _location getvariable "size";
+    private _type = _location get "type";
+    private _position = _location get "position";
+    private _size = _location get "size";
 
-    private _createLocStr = "_location = [] call CBA_fnc_createNamespace;" + _newLine;
-    _createLocStr = _createLocStr + (format ["_location setvariable ['type', '%1'];", _type]) + _newLine;
-    _createLocStr = _createLocStr + (format ["_location setvariable ['position', %1];", _position]) + _newLine;
-    _createLocStr = _createLocStr + (format ["_location setvariable ['size', %1];", _size]) + _newLine;
+    private _createLocStr = "_location = createHashMap;" + _newLine;
+    _createLocStr = _createLocStr + (format ["_location set ['type', '%1'];", _type]) + _newLine;
+    _createLocStr = _createLocStr + (format ["_location set ['position', %1];", _position]) + _newLine;
+    _createLocStr = _createLocStr + (format ["_location set ['size', %1];", _size]) + _newLine;
     _createLocStr = _createLocStr + "_locations pushback _location;" + _newLine;
 
     _exportString = _exportString + _createLocStr + _newLine;

@@ -2,15 +2,15 @@ params ["_entity"];
 
 private _capabilities = [];
 
-// private _vehiclesInCommandOf = _entity getvariable "vehiclesInCommandOf";
+// private _vehiclesInCommandOf = _entity get "vehiclesInCommandOf";
 // {
 //     private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
-//     private _vehicleClass = _vehicleEntity getvariable "class";
+//     private _vehicleClass = _vehicleEntity get "class";
 // } foreach _vehiclesInCommandOf;
 
-private _units = _entity getvariable "units";
+private _units = _entity get "units";
 {
-    private _weapons = _x getvariable "weapons";
+    private _weapons = _x get "weapons";
 
     {
         _x params ["_weapon","_magazines"];

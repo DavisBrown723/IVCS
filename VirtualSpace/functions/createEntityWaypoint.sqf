@@ -12,21 +12,22 @@ params [
     ["_description", ""]
 ];
 
-private _waypointIDNum = IVCS_VirtualSpace_Controller getvariable "nextWaypointId";
-IVCS_VirtualSpace_Controller setvariable ["nextWaypointId", _waypointIDNum + 1];
+private _waypointIDNum = IVCS_VirtualSpace_Controller get "nextWaypointId";
+IVCS_VirtualSpace_Controller set ["nextWaypointId", _waypointIDNum + 1];
 
-private _waypoint = [] call CBA_fnc_createNamespace;
-_waypoint setvariable ["position", _position];
-_waypoint setvariable ["type", toupper _type];
-_waypoint setvariable ["speed", toupper _speed];
-_waypoint setvariable ["completionRadius", _completionRadius];
-_waypoint setvariable ["behaviour", toupper _behaviour];
-_waypoint setvariable ["formation", toupper _formation];
-_waypoint setvariable ["combatMode", toupper _combatMode];
-_waypoint setvariable ["statements", _statements];
-_waypoint setvariable ["attachedVehicle", _attachVehicle];
-_waypoint setvariable ["timeout", _timeout];
-_waypoint setvariable ["name", format ["wp_%1", _waypointIDNum]];
-_waypoint setvariable ["description", _description];
+private _waypoint = createHashMapFromArray [
+    ["position", _position],
+    ["type", toupper _type],
+    ["speed", toupper _speed],
+    ["completionRadius", _completionRadius],
+    ["behaviour", toupper _behaviour],
+    ["formation", toupper _formation],
+    ["combatMode", toupper _combatMode],
+    ["statements", _statements],
+    ["attachedVehicle", _attachVehicle],
+    ["timeout", _timeout],
+    ["name", format ["wp_%1", _waypointIDNum]],
+    ["description", _description]
+];
 
 _waypoint

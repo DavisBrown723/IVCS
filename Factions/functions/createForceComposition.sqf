@@ -43,7 +43,7 @@ private _totalGroups = 0;
 
     private _groups = [];
     if (!isnil "_factionComposition") then {
-        private _factionGroupsForType = _factionComposition getvariable _unitType;
+        private _factionGroupsForType = _factionComposition get _unitType;
 
         for "_i" from 0 to _realCount - 1 do {
             _groups pushback (selectrandom _factionGroupsForType);

@@ -1,11 +1,11 @@
 params ["_vehicleEntity","_groupEntity"];
 
-private _groupEntityAssignedVehicles = _groupEntity getvariable "vehiclesInCommandOf";
+private _groupEntityAssignedVehicles = _groupEntity get "vehiclesInCommandOf";
 if !(_groupEntityAssignedVehicles isequalto []) exitwith { false };
 
 private _emptySeats = [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_getEmptySeats;
 
-private _groupEntityUnitCount = count (_groupEntity getvariable "units");
+private _groupEntityUnitCount = count (_groupEntity get "units");
 private _emptyCargoSeats = [_emptySeats apply {
     if ((_x select 0) != "Driver") then {
         _x select 1

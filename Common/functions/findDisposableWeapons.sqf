@@ -53,7 +53,7 @@ private _newLine = toString [13,10];
 {
     _x params ["_initialWeapon","_postWeapon"];
 
-    _stringRet = _stringRet + (format ["IVCS_Common_WeaponAliases setvariable ['%1', '%2'];", _initialWeapon, _postWeapon]) + _newLine;
+    _stringRet = _stringRet + (format ["IVCS_Common_WeaponAliases set [""%1"", ""%2""];", _initialWeapon, _postWeapon]) + _newLine;
 } foreach _transformedWeapons;
 
 copyToClipboard _stringRet;

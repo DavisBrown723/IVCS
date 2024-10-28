@@ -9,9 +9,10 @@ params ["_type","_position","_size"];
     base
 */
 
-private _location = [] call CBA_fnc_createNamespace;
-_location setvariable ["type", _type];
-_location setvariable ["position", _position];
-_location setvariable ["size", _size];
+private _location = createHashMapFromArray [
+    ["type", _type],
+    ["position", _position],
+    ["size", _size]
+];
 
 _location

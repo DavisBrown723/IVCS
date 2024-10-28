@@ -1,6 +1,6 @@
 params ["_vehicleEntity",["_cargoOnly", false]];
 
-private _vehicleSeats = _vehicleEntity getvariable "seats";
+private _vehicleSeats = _vehicleEntity get "seats";
 private _allEmptySeats = [];
 {
     _x params ["_seatType","_seats"];

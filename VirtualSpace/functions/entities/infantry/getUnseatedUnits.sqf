@@ -1,5 +1,5 @@
 params ["_entity"];
 
-private _units = _entity getvariable "units";
+private _units = _entity get "units";
 
-_units select { (_x getvariable "vehicleAssignment") isequalto [] }
+_units select { (_x get "vehicleAssignment") isequalto [] }

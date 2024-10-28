@@ -8,8 +8,8 @@ params [
 private _initState = [{}] call IVCS_EntityTasks_createTaskState;
 
 private _engage = [{
-    private _entityID = _this getvariable "entityID";
-    private _targetID = _this getvariable "targetID";
+    private _entityID = _this get "entityID";
+    private _targetID = _this get "targetID";
 
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
@@ -21,8 +21,8 @@ private _defeat = [{}, true] call IVCS_EntityTasks_createTaskState;
 // conditions
 
 private _canEngageEnemy = [{
-    private _entityID = _this getvariable "entityID";
-    private _targetID = _this getvariable "targetID";
+    private _entityID = _this get "entityID";
+    private _targetID = _this get "targetID";
 
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
@@ -31,8 +31,8 @@ private _canEngageEnemy = [{
 }, {}, _engage] call IVCS_EntityTasks_createTaskStateCondition;
 
 private _senseDefeat = [{
-    private _entityID = _this getvariable "entityID";
-    private _targetID = _this getvariable "targetID";
+    private _entityID = _this get "entityID";
+    private _targetID = _this get "targetID";
 
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
@@ -41,7 +41,7 @@ private _senseDefeat = [{
 }, {}, _defeat] call IVCS_EntityTasks_createTaskStateCondition;
 
 private _enemyDefeated = [{
-    private _targetID = _this getvariable "targetID";
+    private _targetID = _this get "targetID";
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
 
     true
@@ -56,7 +56,7 @@ private _enemyDefeated = [{
     "TransportLoad",
     _initState,
     [
-        ["entityID", _entity getvariable "id"],
-        ["targetID", _target getvariable "id"]
+        ["entityID", _entity get "id"],
+        ["targetID", _target get "id"]
     ]
 ] call IVCS_EntityTasks_createTask;

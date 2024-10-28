@@ -2,7 +2,7 @@ params ["_unitClass"];
 
 private _cfgVehicles = configfile >> "CfgVehicles";
 
-private _cachedUnitInfo = IVCS_Common_AmmoInfo getvariable _unitClass;
+private _cachedUnitInfo = IVCS_Common_AmmoInfo get _unitClass;
 if (!isnil "_cachedUnitInfo") exitwith { _cachedUnitInfo };
 
 private _unitConfig = _cfgVehicles >> _unitClass;
@@ -53,6 +53,6 @@ private _loadout = [];
     _loadout pushback [_weaponClass, _compatibleMagsInLoadout];
 } foreach _weapons;
 
-IVCS_Common_UnitInfo setvariable [_unitClass, _loadout];
+IVCS_Common_UnitInfo set [_unitClass, _loadout];
 
 _loadout
