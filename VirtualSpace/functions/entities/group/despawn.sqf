@@ -6,15 +6,6 @@ if (!_active) exitwith {};
 private _units = _entity get "units";
 private _group = _entity get "group";
 
-// store waypoints
-
-private _waypoints = waypoints _group;
-private _waypointCount = count _waypoints - 1;
-private _IVCSWaypointCount = {
-    private _name = waypointName _x;
-    _name find "wp_" != -1
-} count _waypoints;
-
 // delete units
 
 {
@@ -38,9 +29,11 @@ if (_debug) then {
     _debugMarker setMarkerAlpha 0.35;
 };
 
-_entity set ["currentWaypointPathGenerated", false];
-_entity set ["pathGenInProgress", false];
-_entity set ["movePoints", []];
+private _currentWaypoint = [_entity] call IVCS_VirtualSpace_getEntityCurrentWaypoint;
+if (!isnil "_currentWaypoint") then {
+    _currentWaypoint set ["movePoints", []];
+    _currentWaypoint set ["pathGenerationStarted", false];
+};
 
 _entity set ["active", false];
 

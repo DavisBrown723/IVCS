@@ -14,10 +14,10 @@ _entityUnit set ["vehicleAssignment", []];
 private _vehicleEntity = [_vehicleID] call IVCS_VirtualSpace_getEntity;
 private _remainingAssignedUnits = [_entity,_vehicleEntity] call IVCS_VirtualSpace_countUnitsAssignedToVehicle;
 if (_remainingAssignedUnits == 0) then {
-    private _assignmentType = [_entity, _vehicleEntity] call IVCS_VirtualSpace_Infantry_getVehicleAssignmentType;
+    private _assignmentType = [_entity, _vehicleEntity] call IVCS_VirtualSpace_Group_getVehicleAssignmentType;
     if (_assignmentType == "command") then {
-        [_entity,_vehicleEntity] call IVCS_VirtualSpace_Infantry_unassignVehicle;
+        [_entity,_vehicleEntity] call IVCS_VirtualSpace_Group_unassignVehicle;
     } else {
-        [_entity,_vehicleEntity] call IVCS_VirtualSpace_Infantry_unassignAsVehicleCargo;
+        [_entity,_vehicleEntity] call IVCS_VirtualSpace_Group_unassignAsVehicleCargo;
     };
 };

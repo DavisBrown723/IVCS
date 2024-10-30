@@ -1,4 +1,4 @@
-private _vehicles = [] call CBA_fnc_createNamespace;
+private _vehicles = createHashMap;
 
 // find which magazines can fit to which hardpoints
 // this also builds our full list of usable hardpoints
@@ -24,7 +24,7 @@ for "_i" from 0 to (count _cfgVehicles - 1) do {
                 };
             };
 
-            _vehicles setvariable [_vehicleName, _pylonsInfo];
+            _vehicles set [_vehicleName, _pylonsInfo];
         };
 	};
 };

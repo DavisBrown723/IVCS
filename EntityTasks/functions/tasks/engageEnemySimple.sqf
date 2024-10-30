@@ -27,7 +27,7 @@ private _canEngageEnemy = [{
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
 
-    [_entity, _target] call IVCS_VirtualSpace_Infantry_canEngageEntity
+    [_entity, _target] call IVCS_VirtualSpace_Group_canEngageEntity
 }, {}, _engage] call IVCS_EntityTasks_createTaskStateCondition;
 
 private _senseDefeat = [{

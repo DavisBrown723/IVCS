@@ -14,10 +14,6 @@ private _moveToLandingPoint = [{
 
     private _landingPosition = _this get "landingPosition";
 
-    private _moveWp = [_landingPosition] call IVCS_VirtualSpace_createEntityWaypoint;
-    _moveWp set ["completionRadius", 20];
-    [_entity, _moveWp] call IVCS_VirtualSpace_entityAddWaypoint;
-
     private _landWp = [_landingPosition,"LAND"] call IVCS_VirtualSpace_createEntityWaypoint;
     [_entity, _landWp] call IVCS_VirtualSpace_entityAddWaypoint;
 }] call IVCS_EntityTasks_createTaskState;
@@ -49,7 +45,6 @@ private _atLandingPoint = [{
     private _landingPosition = _this get "landingPosition";
 
     private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
-
     [_entity, _landingPosition] call _fnc_inLandRangeOfPosition
 }, {}, _endState] call IVCS_EntityTasks_createTaskStateCondition;
 

@@ -42,7 +42,7 @@ if (_vehiclesInCommandOf isequalto []) then {
 
 _vehicleEntity set ["commandingEntity", ""];
 
-[_groupEntity] call IVCS_VirtualSpace_Infantry_calculateSpeed;
-[_groupEntity] call IVCS_VirtualSpace_Infantry_determinePathfindingStrategy;
+[_groupEntity] call IVCS_VirtualSpace_Group_calculateSpeed;
+[_groupEntity] call IVCS_VirtualSpace_Group_determinePathfindingStrategy;
 
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;

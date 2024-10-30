@@ -6,7 +6,7 @@ params [
 ];
 
 _filters params [
-    ["_type", "all"],
+    ["_type", "ALL"],
     ["_side",""],
     ["_faction", ""]
 ];
@@ -22,7 +22,7 @@ if (_checkVisiblity) then {
 };
 
 // private _entities = IVCS_VirtualSpace_Controller get "entities";
-// private _allEntities = _entities get "all";
+// private _allEntities = _entities get "ALL";
 
 // private _inRange = (keys _allEntities) apply { _allEntities get _x } select {
 //     if (!isnil "_x") then {
@@ -37,7 +37,7 @@ if (_checkVisiblity) then {
 // };
 
 private _filter = "true";
-if (_type != "all") then {
+if (_type != "ALL") then {
     _filter = _filter + format [" && { (_x get 'entityType') == _type }"];
 };
 if !(_side isequalto "") then {

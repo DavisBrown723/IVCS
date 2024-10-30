@@ -19,7 +19,12 @@ if (_active) then {
         private _commandingEntity = [_commandingEntityID] call IVCS_VirtualSpace_getEntity;
         private _commandingEntityPos = _commandingEntity get "position";
 
-        [_entity, _commandingEntityPos] call IVCS_VirtualSpace_setEntityPosition;
+        private _entityHeight = (_entity get "position") select 2;
+
+        private _heightAdjustedPosition = _commandingEntityPos select [0,2];
+        _heightAdjustedPosition pushback _entityHeight;
+
+        [_entity, _heightAdjustedPosition] call IVCS_VirtualSpace_setEntityPosition;
 
         private _debug = IVCS_VirtualSpace_Controller get "debug";
         if (_debug) then {

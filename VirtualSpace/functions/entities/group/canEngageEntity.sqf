@@ -1,7 +1,7 @@
 params ["_entity","_targetEntity"];
 
 // capabilities: infantry, vehicles, armor, air, mine, concealment, underwater, countermeasures, marking, light
-private _engagementCapabilities = [_entity] call IVCS_VirtualSpace_Infantry_getEngagementCapabilities;
+private _engagementCapabilities = [_entity] call IVCS_VirtualSpace_Group_getEngagementCapabilities;
 
 private _canEngage = false;
 

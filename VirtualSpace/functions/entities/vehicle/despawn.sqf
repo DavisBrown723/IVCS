@@ -9,7 +9,7 @@ private _commandingEntityID = _entity get "commandingEntity";
 private _entitiesInCargo = _entity get "entitiesInCargo";
 {
     private _entity = [_x] call IVCS_VirtualSpace_getEntity;
-    private _despawnFunc = missionnamespace get (_entity get "despawn");
+    private _despawnFunc = missionnamespace getvariable (_entity get "despawn");
     [_entity] call _despawnFunc;
 } foreach (_entitiesInCargo + [_commandingEntityID]);
 

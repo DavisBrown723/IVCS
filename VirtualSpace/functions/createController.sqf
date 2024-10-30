@@ -6,7 +6,7 @@ private _activeEntityIDs = [];
 private _inactiveEntityIDs = [];
 
 private _virtualGroups = createHashMapFromArray [
-    ["all", createHashMap],
+    ["ALL", createHashMap],
     ["EAST", []],
     ["WEST", []],
     ["GUER", []],
