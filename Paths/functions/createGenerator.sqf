@@ -25,15 +25,23 @@ private _unitTypes = createHashMapFromArray [
 	["antiair", _mechanizedProp],
 	["tank", _armoredProp],
 	["artillery", _armoredProp],
-	["ship", _boatProp]
+	["ship", _boatProp],
+
+	["helicopter", objnull],
+	["plane", objnull]
 ];
-
-_pathGenerator set ["props", _unitTypes];
-
-_pathGenerator set ["requestQueue", []];
-_pathGenerator set ["currentRequest", []];
 
 private _frameEventHandler = addMissionEventHandler ["EachFrame", IVCS_Paths_onFrame];
 _pathGenerator set ["onFrameHandlerID", _frameEventHandler];
+
+private _pathGenerator = createHashMapFromArray [
+	["props", _unitTypes],
+
+	["nextRequestIDNum", 0],
+	["requestQueue", []],
+	["currentRequest", []],
+
+	["onFrameHandlerID", _frameEventHandler]
+];
 
 _pathGenerator

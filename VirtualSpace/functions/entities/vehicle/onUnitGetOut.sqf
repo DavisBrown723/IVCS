@@ -1,7 +1,7 @@
 params ["_vehicle", "_role", "_unit", "_turret"];
 
-private _unitID = _unit get "unitID";
-private _entityID = _unit get "entityID";
+private _unitID = _unit getvariable "unitID";
+private _entityID = _unit getvariable "entityID";
 
 private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 private _entityUnit = [_entity, _unitID] call IVCS_VirtualSpace_getEntityUnit;
@@ -11,7 +11,7 @@ if (_unitVehicleAssignment isequalto []) exitwith {};
 
 _unitVehicleAssignment params ["_assignedVehEntityID","_seat"];
 
-private _vehicleEntityID = _vehicle get "entityID";
+private _vehicleEntityID = _vehicle getvariable "entityID";
 
 if (_vehicleEntityID == _assignedVehEntityID && {!((assignedVehicle _unit) isequalto _vehicle)}) then {
     [_entity, _entityUnit] call IVCS_VirtualSpace_onUnitLeaveVehicle;

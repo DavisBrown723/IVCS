@@ -1,11 +1,11 @@
 params ["_groupEntity","_vehicleEntity", ["_fullGarrison", true]];
 
-private _vehiclesInCommandOf = _groupEntity get "vehiclesInCommandOf";
+private _vehiclesInCargoOf = _groupEntity get "vehiclesInCargoOf";
 private _vehicleEntityID = _vehicleEntity get "id";
-if (_vehicleEntityID in (_vehiclesInCommandOf)) exitwith { false };
+if (_vehicleEntityID in (_vehiclesInCargoOf)) exitwith { false };
 
-private _unSeatedUnits = [_groupEntity] call IVCS_VirtualSpace_Infantry_getUnseatedUnits;
-private _emptySeats = [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_getEmptySeats;
+private _unSeatedUnits = [_groupEntity] call IVCS_VirtualSpace_Group_getUnseatedUnits;
+private _emptyCargoSeats = [_vehicleEntity, true] call IVCS_VirtualSpace_Vehicle_getEmptySeats;
 
 private _active = (_groupEntity get "active") && (_vehicleEntity get "active");
 private _vehicleObject = _vehicleEntity get "object";
@@ -31,7 +31,6 @@ scopename "main";
         if (_active) then {
             private _unitObject = _unitToSeat get "object";
             switch (_seatType) do {
-                case "Driver": { _unitObject assignAsDriver _vehicleObject };
                 case "Turrets": { _unitObject assignAsTurret [_vehicleObject, _seatPath] };
                 case "Cargo": { _unitObject assignAsCargoIndex [_vehicleObject, _seatPath] };
             };
@@ -39,21 +38,19 @@ scopename "main";
             _assignedUnits pushback _unitObject;
         };
     } foreach _seats;
-} foreach _emptySeats;
+} foreach _emptyCargoSeats;
 
 if (_active) then {
     _assignedUnits orderGetIn true;
 };
 
 private _groupEntityID = _groupEntity get "id";
-_vehicleEntity set ["commandingEntity", _groupEntityID];
+private _vehicleEntitiesInCargo = _vehicleEntity get "entitiesInCargo";
+_vehicleEntitiesInCargo pushback _groupEntityID;
 
-_vehiclesInCommandOf pushback _vehicleEntityID;
+_vehiclesInCargoOf pushback _vehicleEntityID;
 
-private _vehicleType = _vehicleEntity get "vehicleType";
-_groupEntity set ["vehicleType", _vehicleType];
-
-[_groupEntity] call IVCS_VirtualSpace_Infantry_calculateSpeed;
-[_groupEntity] call IVCS_VirtualSpace_Infantry_determinePathfindingStrategy;
+private _vehicleEntityPosition = _vehicleEntity get "position";
+[_groupEntity,_vehicleEntityPosition] call IVCS_VirtualSpace_setEntityPosition;
 
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;

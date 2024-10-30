@@ -20,9 +20,12 @@ private _spawnDir = 0;
 private _commandingEntityID = _entity get "commandingEntity";
 if (_commandingEntityID != "") then {
     private _commandingEntity = [_commandingEntityID] call IVCS_VirtualSpace_getEntity;
-    private _movePoints = _commandingEntity get "movePoints";
-    if (count _movePoints > 1) then {
-        _spawnDir = (_movePoints select 0) getDir (_movePoints select 1);
+    private _currentWaypoint = [_commandingEntity] call IVCS_VirtualSpace_getEntityCurrentWaypoint;
+    if (!isnil "_currentWaypoint") then {
+        private _movePoints = _currentWaypoint get "movePoints";
+        if (_movePoints isnotequalto []) then {
+            _spawnDir = _position getDir (_movePoints select 0);
+        };
     };
 };
 
@@ -45,7 +48,7 @@ _vehicleObject engineOn _engineOn;
 
 // populate weapon magazines
 
-private _weapons = _entity getvariable "weapons";
+private _weapons = _entity get "weapons";
 {
     _x params ["_turretPath","_turretWeaponInfo"];
 
@@ -67,7 +70,7 @@ private _weapons = _entity getvariable "weapons";
 
 // populate pylons
 
-private _pylons = _entity getvariable "pylons";
+private _pylons = _entity get "pylons";
 {
     _x params ["_pylonName","_pylonMagazine","_pylonAmmo"];
 

@@ -14,12 +14,12 @@ if (_active) then {
 // calculate cycle loop
 
 private _wpType = _entityWaypoint get "type";
-private _minWaypoint = _entity get "minWaypoint";
-if (_wpType == "CYCLE" && _minWaypoint == 0) then {
+private _minWaypointIndex = _entity get "minWaypointIndex";
+if (_wpType == "CYCLE" && _minWaypointIndex == -1) then {
     [_entity] call IVCS_VirtualSpace_determineCycleWaypointLoop;
 };
 
-private _currentWaypoint = _entity get "currentWaypoint";
-if (_currentWaypoint == -1) then {
-    _entity set ["currentWaypoint", 0];
+private _currentWaypointIndex = _entity get "currentWaypointIndex";
+if (_currentWaypointIndex == -1) then {
+    _entity set ["currentWaypointIndex", 0];
 };

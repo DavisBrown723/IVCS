@@ -27,7 +27,12 @@ private _waypoint = createHashMapFromArray [
     ["attachedVehicle", _attachVehicle],
     ["timeout", _timeout],
     ["name", format ["wp_%1", _waypointIDNum]],
-    ["description", _description]
+    ["description", _description],
+
+    ["initialized", false],
+
+    ["movePoints", []],
+    ["pathGenerationRequestID", ""]
 ];
 
 _waypoint

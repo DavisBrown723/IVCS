@@ -23,12 +23,10 @@ private _nextUnitIDNum = 0;
     private _unitClass = _x;
 
     if (_unitClass iskindof "Man") then {
-        private _unit = [_unitClass] call IVCS_VirtualSpace_createEntityUnit;
-
         private _unitID = format ["u_%1", _nextUnitIDNum];
         _nextUnitIDNum = _nextUnitIDNum + 1;
 
-        _unit set ["id", _unitID];
+        private _unit = [_unitClass, _unitID] call IVCS_VirtualSpace_createEntityUnit;
 
         _units pushback _unit;
     } else {
@@ -46,12 +44,11 @@ if (count _units > 0) then {
     _groupEntity = [_side, _faction, _position, _units] call IVCS_VirtualSpace_createGroupEntity;
     
     {
-        [_groupEntity,_x] call IVCS_VirtualSpace_Infantry_assignVehicle;
+        [_groupEntity,_x] call IVCS_VirtualSpace_Group_assignVehicle;
     } foreach _vehicleEntities;
 };
 
-if (!isnil "_groupEntity") then {
-    [_groupEntity, _vehicleEntities];
-} else {
-    [objNull, _vehicleEntities];
-}
+createHashMapFromArray [
+    ["group", _groupEntity],
+    ["vehicles", _vehicleEntities]
+]

@@ -7,7 +7,7 @@ params ["_entity","_nearEnemies"];
 //     }] call BIS_fnc_sortBy;
 
 //     private _closestEngageableEnemy = _enemiesByDistance findIf {
-//         [_entity, _x] call IVCS_VirtualSpace_Infantry_canEngageEntity
+//         [_entity, _x] call IVCS_VirtualSpace_Group_canEngageEntity
 //     };
 //     if (_closestEngageableEnemy != -1) then {
 //         _entity set ["currentEngagementTask", "true"]; // REMOVE
