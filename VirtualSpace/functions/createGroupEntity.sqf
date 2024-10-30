@@ -17,13 +17,10 @@ private _groupEntity = createHashMapFromArray [
     ["moveSpeedPerSecond", 4.3],
     ["sightRange", 400],
 
-    ["movePoints", []],
-    ["pathGenInProgress", false],
-    ["currentWaypointPathGenerated", false],
     ["waypoints", []],
-    ["currentWaypoint", -1],
-    ["minWaypoint", 0],
-    ["maxWaypoint", 0],
+    ["currentWaypointIndex", -1],
+    ["minWaypointIndex", -1],
+    ["maxWaypointIndex", -1],
     ["ignoreWpCallback", ""],
     ["tasks", []],
 

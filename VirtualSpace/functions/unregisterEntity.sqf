@@ -11,7 +11,7 @@ private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacial
 [_entitiesSpacialGrid, [_entity get "position", _entity]] call IVCS_SpacialGrid_remove;
 
 private _entities = IVCS_VirtualSpace_Controller get "entities";
-private _allEntities = _entities get "all";
+private _allEntities = _entities get "ALL";
 _allEntities set [_entityID, nil];
 
 // cleanup entity data

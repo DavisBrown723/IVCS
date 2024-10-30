@@ -64,7 +64,7 @@ private _weaponsInfo = _weapons apply {
 
     [_turretPath, _turretWeaponsInfo]
 };
-_vehicleEntity setvariable ["weapons", _weaponsInfo];
+_vehicleEntity set ["weapons", _weaponsInfo];
 
 // get pylon info
 
@@ -78,7 +78,7 @@ private _vehiclePylons = _vehiclePylonInfo apply {
 
     [_pylonName, _pylonMagazine, _magazineAmmoCount]
 };
-_vehicleEntity setvariable ["pylons", _vehiclePylons];
+_vehicleEntity set ["pylons", _vehiclePylons];
 
 // set type specific vars
 

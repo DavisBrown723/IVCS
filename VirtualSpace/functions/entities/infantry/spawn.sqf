@@ -79,27 +79,37 @@ private _position = _entity get "position";
 // restore waypoints
 
 private _waypoints = _entity get "waypoints";
-private _currentWaypoint = _entity get "currentWaypoint";
+private _currentWaypointIndex = _entity get "currentWaypointIndex";
+
+// newly created groups in arma automatically have a waypoint created at their starting position
+// delete it so it doesn't interfere with our indexes
+deleteWaypoint [_group, 0];
 
 {
     [_entity, _group, _x] call IVCS_VirtualSpace_entityWaypointToWaypoint;
+
+    [_x] call IVCS_VirtualSpace_resetEntityWaypoint;
 } foreach _waypoints;
 
-if (_currentWaypoint != -1) then {
+if (_currentWaypointIndex > 0) then {
     // setting current waypoint sets previous waypoint as completed
-    // so lets temporarily ignore its callbacks to counter this
+    // so lets temporarily ignore its callback to counter this
     // since we havent set current waypoint yet, wp_0 will always be the one we ignore
-    if (_currentWaypoint > 0) then {
-        _entity set ["ignoreWpCallback", "wp_0"];
-    };
 
-    _group setCurrentWaypoint [_group, _currentWaypoint + 1];
+    _entity set ["ignoreWpCallback", "wp_0"];
+
+    _group setCurrentWaypoint [_group, _currentWaypointIndex];
 };
 
 private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
     private _debugMarker = _entity get "debugMarker";
     _debugMarker setMarkerAlpha 0.75;
+};
+
+private _any = _waypoints findif { (_x get "pathGenerationRequestID") != "" };
+if (_any != -1) then {
+    hint "WE GOT ONE";
 };
 
 _entity set ["active", true];

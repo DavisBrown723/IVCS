@@ -2,8 +2,8 @@ params ["_entity"];
 
 private _entityType = _entity get "entityType";
 
-private _groups = IVCS_VirtualSpace_Controller get "entities";
-private _allEntities = _groups get "all";
+private _entities = IVCS_VirtualSpace_Controller get "entities";
+private _allEntities = _entities get "ALL";
 
 private _nextEntityIDNum = IVCS_VirtualSpace_Controller get "nextEntityID";
 IVCS_VirtualSpace_Controller set ["nextEntityID", _nextEntityIDNum + 1];

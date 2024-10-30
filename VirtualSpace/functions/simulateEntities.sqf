@@ -2,7 +2,7 @@ private _entitiesToSimulate = IVCS_VirtualSpace_Controller get "entitiesToSimula
 private _simulationChunkSize = IVCS_VirtualSpace_Controller get "simulationChunkSize";
 
 private _entities = IVCS_VirtualSpace_Controller get "entities";
-private _allEntities = _entities get "all";
+private _allEntities = _entities get "ALL";
 
 // refresh simulation queue
 
@@ -21,7 +21,7 @@ private _currTickTime = diag_ticktime;
     if (!isnil "_entity") then {
         private _updateFunc = missionnamespace getvariable (_entity get "update");
         private _timeLastUpdate = _entity get "timeLastUpdate";
-        private _timeElapsed = _currTickTime - _timeLastUpdate;
+        private _timeElapsed = (_currTickTime - _timeLastUpdate) * accTime;
 
         [_entity, _timeElapsed] call _updateFunc;
 

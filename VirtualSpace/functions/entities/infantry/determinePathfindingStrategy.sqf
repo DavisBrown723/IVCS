@@ -13,7 +13,7 @@ private _vehicleTypes = _assignedVehicles apply {
     _vehicleType
 };
 
-private _strategyOrder = ["tank","artillery","armored","antiair","car","truck","ship"];
+private _strategyOrder = ["tank","artillery","armored","antiair","car","truck","ship","helicopter","plane"];
 private _strategy = {
     if (_vehicleTypes find _x != -1) exitwith {
         _x
