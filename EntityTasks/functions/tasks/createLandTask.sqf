@@ -45,7 +45,6 @@ private _atLandingPoint = [{
     private _landingPosition = _this get "landingPosition";
 
     private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
-
     [_entity, _landingPosition] call _fnc_inLandRangeOfPosition
 }, {}, _endState] call IVCS_EntityTasks_createTaskStateCondition;
 

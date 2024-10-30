@@ -29,7 +29,7 @@ private _getInVehicle = [{
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
     private _vehicleEntity = [_vehicleID] call IVCS_VirtualSpace_getEntity;
 
-    [_entity,_vehicleEntity] call IVCS_VirtualSpace_Infantry_assignAsVehicleCargo;
+    [_entity,_vehicleEntity] call IVCS_VirtualSpace_Group_assignAsVehicleCargo;
 }, true] call IVCS_EntityTasks_createTaskState;
 
 private _moveToRendezvousPoint = [{

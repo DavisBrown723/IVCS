@@ -11,7 +11,7 @@ if (!_pathGenerationInProgress) then {
 
         _request params ["_requestID","_pathType","_behavior","_startPos","_endPos","_callbackArgs","_callback"];
 
-        if (_startPos distance _endPos < 7 && { _pathType in ["helicopter","plane"] }) exitwith {
+        if (_startPos distance _endPos < 7|| { _pathType in ["helicopter","plane"] }) exitwith {
             [objNull, [_endPos]] call IVCS_Paths_onPathGenerated;
         };
 

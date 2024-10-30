@@ -2,6 +2,7 @@ params ["_entity","_waypoint"];
 
 private _waypointType = _waypoint get "type";
 switch (_waypointType) do {
+    case "LAND";
 	case "MOVE": {
         private _entityActive = _entity get "active";
         if (!_entityActive) then {

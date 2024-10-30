@@ -28,12 +28,12 @@ private _groupEntity = createHashMapFromArray [
 
     ["pathfindingStrategy", "man"],
 
-    ["reactToContact", "IVCS_VirtualSpace_Infantry_onContactSimple"],
+    ["reactToContact", "IVCS_VirtualSpace_Group_onContactSimple"],
 
-    ["update", "IVCS_VirtualSpace_Infantry_update"],
-    ["spawn", "IVCS_VirtualSpace_Infantry_spawn"],
-    ["despawn", "IVCS_VirtualSpace_Infantry_despawn"],
-    ["unregister", "IVCS_VirtualSpace_Infantry_unregister"],
+    ["update", "IVCS_VirtualSpace_Group_update"],
+    ["spawn", "IVCS_VirtualSpace_Group_spawn"],
+    ["despawn", "IVCS_VirtualSpace_Group_despawn"],
+    ["unregister", "IVCS_VirtualSpace_Group_unregister"],
 
     ["nextUnitIDNum", count _units]
 ];

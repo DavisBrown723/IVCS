@@ -35,11 +35,6 @@ if (!isnil "_currentWaypoint") then {
     _currentWaypoint set ["pathGenerationStarted", false];
 };
 
-private _waypoints = _entity get "waypoints";
-{
-    [_x] call IVCS_VirtualSpace_resetEntityWaypoint; // TODO: this should not be needed
-} foreach _waypoints;
-
 _entity set ["active", false];
 
 // despawn any connected vehicles

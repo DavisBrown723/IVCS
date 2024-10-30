@@ -44,7 +44,7 @@ if (count _units > 0) then {
     _groupEntity = [_side, _faction, _position, _units] call IVCS_VirtualSpace_createGroupEntity;
     
     {
-        [_groupEntity,_x] call IVCS_VirtualSpace_Infantry_assignVehicle;
+        [_groupEntity,_x] call IVCS_VirtualSpace_Group_assignVehicle;
     } foreach _vehicleEntities;
 };
 

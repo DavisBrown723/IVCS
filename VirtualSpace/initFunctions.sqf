@@ -40,24 +40,24 @@ IVCS_VirtualSpace_resetEntityWaypoint = compile preprocessFileLineNumbers "IVCS\
 
 // entity functions
 
-IVCS_VirtualSpace_Infantry_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\update.sqf";
-IVCS_VirtualSpace_Infantry_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\spawn.sqf";
-IVCS_VirtualSpace_Infantry_despawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\despawn.sqf";
-IVCS_VirtualSpace_Infantry_unregister = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\unregister.sqf";
-IVCS_VirtualSpace_Infantry_calculateSpeed = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\calculateSpeed.sqf";
-IVCS_VirtualSpace_Infantry_determinePathfindingStrategy = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\determinePathfindingStrategy.sqf";
-IVCS_VirtualSpace_Infantry_getUnitLoadout = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\getUnitLoadout.sqf";
-IVCS_VirtualSpace_Infantry_getUnseatedUnits = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\getUnseatedUnits.sqf";
-IVCS_VirtualSpace_Infantry_assignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\assignVehicle.sqf";
-IVCS_VirtualSpace_Infantry_assignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\assignAsVehicleCargo.sqf";
-IVCS_VirtualSpace_Infantry_unassignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\unassignVehicle.sqf";
-IVCS_VirtualSpace_Infantry_unassignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\unassignAsVehicleCargo.sqf";
-IVCS_VirtualSpace_Infantry_getVehicleAssignmentType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\getVehicleAssignmentType.sqf";
-IVCS_VirtualSpace_Infantry_canEngageEntity = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\canEngageEntity.sqf";
-IVCS_VirtualSpace_Infantry_getEngagementCapabilities = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\getEngagementCapabilities.sqf";
-IVCS_VirtualSpace_Infantry_getFunctionalEntityType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\getFunctionalEntityType.sqf";
-IVCS_VirtualSpace_Infantry_onContactSimple = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\onContactSimple.sqf";
-IVCS_VirtualSpace_Infantry_onWaypointPathGenerated = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\infantry\onWaypointPathGenerated.sqf";
+IVCS_VirtualSpace_Group_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\update.sqf";
+IVCS_VirtualSpace_Group_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\spawn.sqf";
+IVCS_VirtualSpace_Group_despawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\despawn.sqf";
+IVCS_VirtualSpace_Group_unregister = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\unregister.sqf";
+IVCS_VirtualSpace_Group_calculateSpeed = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\calculateSpeed.sqf";
+IVCS_VirtualSpace_Group_determinePathfindingStrategy = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\determinePathfindingStrategy.sqf";
+IVCS_VirtualSpace_Group_getUnitLoadout = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getUnitLoadout.sqf";
+IVCS_VirtualSpace_Group_getUnseatedUnits = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getUnseatedUnits.sqf";
+IVCS_VirtualSpace_Group_assignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\assignVehicle.sqf";
+IVCS_VirtualSpace_Group_assignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\assignAsVehicleCargo.sqf";
+IVCS_VirtualSpace_Group_unassignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\unassignVehicle.sqf";
+IVCS_VirtualSpace_Group_unassignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\unassignAsVehicleCargo.sqf";
+IVCS_VirtualSpace_Group_getVehicleAssignmentType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getVehicleAssignmentType.sqf";
+IVCS_VirtualSpace_Group_canEngageEntity = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\canEngageEntity.sqf";
+IVCS_VirtualSpace_Group_getEngagementCapabilities = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getEngagementCapabilities.sqf";
+IVCS_VirtualSpace_Group_getFunctionalEntityType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getFunctionalEntityType.sqf";
+IVCS_VirtualSpace_Group_onContactSimple = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\onContactSimple.sqf";
+IVCS_VirtualSpace_Group_onWaypointPathGenerated = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\onWaypointPathGenerated.sqf";
 
 IVCS_VirtualSpace_Vehicle_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\update.sqf";
 IVCS_VirtualSpace_Vehicle_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\spawn.sqf";

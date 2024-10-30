@@ -47,14 +47,14 @@ if (_active) then {
                 private _entityPos = _entity get "position";
                 private _entityID = _entity get "id";
 
-                private _requestID = [_strategy, "SAFE", _entityPos, _waypointPos, [_entityID,_waypointID], IVCS_VirtualSpace_Infantry_onWaypointPathGenerated] call IVCS_Paths_createPathRequest;
+                private _requestID = [_strategy, "SAFE", _entityPos, _waypointPos, [_entityID,_waypointID], IVCS_VirtualSpace_Group_onWaypointPathGenerated] call IVCS_Paths_createPathRequest;
                 _currentWaypoint set ["pathGenerationRequestID", _requestID];
             } else {
                 // waypoint is initialized and has a path
                 // we can start simulating it
 
                 private _movePoints = _currentWaypoint get "movePoints";
-                if !(_movePoints isequalto []) then {
+                if (_movePoints isnotequalto []) then {
                     private _waypointMoveSpeed = _currentWaypoint get "speed";
 
                     private _entityMoveSpeed = _entity get "moveSpeedPerSecond";
@@ -96,8 +96,8 @@ if (_active) then {
                     private _waypointPos = _currentWaypoint get "position";
                     private _distRemaining = _entityPos distance2D _waypointPos;
                     private _waypointCompletionRadius = _currentWaypoint get "completionRadius";
-                    if (_movePoints isequalto [] || { _distRemaining <= (_waypointCompletionRadius min 7) }) then {
-                        systemchat format ["Finishing waypoint: %1", _currentWaypoint get "name"];
+                    if (_movePoints isequalto [] || { _distRemaining <= (_waypointCompletionRadius max 7) }) then {
+                        systemchat format ["Finishing waypoint: %1 %2", _currentWaypoint get "name", [_movePoints isequalto [], _distRemaining <= (_waypointCompletionRadius max 7)]];
                         [_entity get "id", _currentWaypoint get "name"] call IVCS_VirtualSpace_onWaypointCompleted;
                     };
                 } else {

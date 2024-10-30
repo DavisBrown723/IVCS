@@ -25,7 +25,10 @@ private _unitTypes = createHashMapFromArray [
 	["antiair", _mechanizedProp],
 	["tank", _armoredProp],
 	["artillery", _armoredProp],
-	["ship", _boatProp]
+	["ship", _boatProp],
+
+	["helicopter", objnull],
+	["plane", objnull]
 ];
 
 private _frameEventHandler = addMissionEventHandler ["EachFrame", IVCS_Paths_onFrame];
