@@ -97,10 +97,10 @@ private _states = [
 // conditions
 
 private _conditions = [
-    ["SpawnSourcesEmpty", { (_this get "spawnSources") isequalto [] }, {}, "FillSpawnSources"] call IVCS_FSM_createCondition,
-    ["SpawnSourcesLeft", { !((_this get "spawnSources") isequalto []) }, {}, "CheckSpawnRadius"] call IVCS_FSM_createCondition,
-    ["LoopDone", { true }, {}, "ProcessQueues"] call IVCS_FSM_createCondition,
-    ["Finished", { true }, {}, "LoopStart"] call IVCS_FSM_createCondition
+    ["SpawnSourcesEmpty", { (_this get "spawnSources") isequalto [] }, {}, "FillSpawnSources"] call IVCS_FSM_createTransition,
+    ["SpawnSourcesLeft", { !((_this get "spawnSources") isequalto []) }, {}, "CheckSpawnRadius"] call IVCS_FSM_createTransition,
+    ["LoopDone", { true }, {}, "ProcessQueues"] call IVCS_FSM_createTransition,
+    ["Finished", { true }, {}, "LoopStart"] call IVCS_FSM_createTransition
 ];
 
 

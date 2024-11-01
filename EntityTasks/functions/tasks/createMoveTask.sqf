@@ -53,7 +53,7 @@ private _entityKilledCondition = [{
 
 // build fsm
 
-[_initState, [_destinationReachedCondition, _entityKilledCondition]] call IVCS_EntityTasks_addOutgoingConditions;
+[_initState, [_destinationReachedCondition, _entityKilledCondition]] call IVCS_EntityTasks_addTransitions;
 
 
 [

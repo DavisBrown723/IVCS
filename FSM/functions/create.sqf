@@ -15,7 +15,7 @@ private _nodeMap = createHashMapFromArray (_nodes apply {
 
 private _fsm = createHashMapFromArray [
     ["name", _name],
-    ["data", _fsmVars],
+    ["variables", _fsmVars],
     ["currentState", _nodeMap get _initStateName],
     ["nodes", _nodeMap],
     ["callback", _callback],

@@ -71,9 +71,9 @@ private _nearLandingPoint = [{
 
 // build fsm
 
-[_initState, [_atLandingPoint, _notAtLandingPoint]] call IVCS_EntityTasks_addOutgoingConditions;
-[_moveToLandingPoint, [_nearLandingPoint]] call IVCS_EntityTasks_addOutgoingConditions;
-[_createHelipad, [_atLandingPoint]] call IVCS_EntityTasks_addOutgoingConditions;
+[_initState, [_atLandingPoint, _notAtLandingPoint]] call IVCS_EntityTasks_addTransitions;
+[_moveToLandingPoint, [_nearLandingPoint]] call IVCS_EntityTasks_addTransitions;
+[_createHelipad, [_atLandingPoint]] call IVCS_EntityTasks_addTransitions;
 
 private _inLandRangeOfPosition = {
     params ["_entity","_landingPosition"];

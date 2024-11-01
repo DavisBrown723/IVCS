@@ -22,7 +22,7 @@ private _vehicleIsNear = [{
 
 // build fsm
 
-// [_initState, [_hasRendezvousCondition, _noRendezvousCondition]] call IVCS_EntityTasks_addOutgoingConditions;
+// [_initState, [_hasRendezvousCondition, _noRendezvousCondition]] call IVCS_EntityTasks_addTransitions;
 
 [
     "TransportLoad",

@@ -38,4 +38,6 @@ IVCS_Common_getAllVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common
 IVCS_Common_getVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehiclePylons.sqf";
 IVCS_Common_getHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\getHardpointMagazines.sqf";
 
+IVCS_Common_calculateFrameNumber = compile preprocessFileLineNumbers "IVCS\Common\functions\calculateFrameNumber.sqf";
+
 IVCS_Common_onFrame = compile preprocessFileLineNumbers "IVCS\Common\functions\onFrame.sqf";

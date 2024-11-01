@@ -32,9 +32,9 @@ private _states = [
 // conditions
 
 private _conditions = [
-    ["Initialized", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
-    ["MessageRecieved", { !((_this getvariable "messageQueue") isequalto []) }, {}, "ProcessMessage"] call IVCS_FSM_createCondition,
-    ["MessageProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["Initialized", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
+    ["MessageRecieved", { !((_this getvariable "messageQueue") isequalto []) }, {}, "ProcessMessage"] call IVCS_FSM_createTransition,
+    ["MessageProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["OrdersToProcess", {
         private _tacom = _this getvariable "tacom";
@@ -49,8 +49,8 @@ private _conditions = [
             private _validOrders = (allvariables _orders) select { !isnil {_orders getvariable _x}};
             _this setvariable ["ordersToProcess", _validOrders];
         };
-    }, "ProcessOrder"] call IVCS_FSM_createCondition,
-    ["OrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition
+    }, "ProcessOrder"] call IVCS_FSM_createTransition,
+    ["OrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition
 ];
 
 

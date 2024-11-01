@@ -122,13 +122,13 @@ private _vehicleAtRendezvous = [{
 
 // build fsm
 
-[_initState, [_hasRendezvousCondition, _noRendezvousCondition]] call IVCS_EntityTasks_addOutgoingConditions;
-[_emptyState, [_noRendVehicleInRange, _noRendVehicleNotInRange]] call IVCS_EntityTasks_addOutgoingConditions;
-[_moveToVehicle, [_noRendVehicleInRange]] call IVCS_EntityTasks_addOutgoingConditions;
+[_initState, [_hasRendezvousCondition, _noRendezvousCondition]] call IVCS_EntityTasks_addTransitions;
+[_emptyState, [_noRendVehicleInRange, _noRendVehicleNotInRange]] call IVCS_EntityTasks_addTransitions;
+[_moveToVehicle, [_noRendVehicleInRange]] call IVCS_EntityTasks_addTransitions;
 
-[_moveToRendezvousPoint, [_atRendezvousPoint]] call IVCS_EntityTasks_addOutgoingConditions;
-[_waitForVehicle, [_vehicleIsNear]] call IVCS_EntityTasks_addOutgoingConditions;
-[_signalVehicle, [_vehicleAtRendezvous]] call IVCS_EntityTasks_addOutgoingConditions;
+[_moveToRendezvousPoint, [_atRendezvousPoint]] call IVCS_EntityTasks_addTransitions;
+[_waitForVehicle, [_vehicleIsNear]] call IVCS_EntityTasks_addTransitions;
+[_signalVehicle, [_vehicleAtRendezvous]] call IVCS_EntityTasks_addTransitions;
 
 
 private _vehicleInRange = {

@@ -154,23 +154,23 @@ private _states = [
 // conditions
 
 private _conditions = [
-    ["Initialized", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["Initialized", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["MessageToProcess", {
         private _opcom = _this getvariable "opcom";
         !((_opcom getvariable "messageQueue") isequalto [])
-    }, {}, "ProcessMessage"] call IVCS_FSM_createCondition,
-    ["MessageProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    }, {}, "ProcessMessage"] call IVCS_FSM_createTransition,
+    ["MessageProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
-    ["PendingOrdersToProcess", { !((_this getvariable "pendingOrders") isequalto []) }, {}, "ProcessPendingOrder"] call IVCS_FSM_createCondition,
-    ["PendingOrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["PendingOrdersToProcess", { !((_this getvariable "pendingOrders") isequalto []) }, {}, "ProcessPendingOrder"] call IVCS_FSM_createTransition,
+    ["PendingOrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["PendingOrdersToProcess", {
         private _opcom = _this getvariable "opcom";
         private _pendingOrders = _opcom getvariable "pendingOrders";
         !(_pendingOrders isequalto [])
-    }, {}, "ProcessPendingOrder"] call IVCS_FSM_createCondition,
-    ["PendingOrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    }, {}, "ProcessPendingOrder"] call IVCS_FSM_createTransition,
+    ["PendingOrderProcessed", { true }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["NeedEntitySort", {
         private _opcom = _this getvariable "opcom";
@@ -182,9 +182,9 @@ private _conditions = [
         private _opcom = _this getvariable "opcom";
         private _entitiesToSort = _opcom getvariable "allEntities";
         _this setvariable ["entitiesToSort", _entitiesToSort];
-    }, "SortEntityBatch"] call IVCS_FSM_createCondition,
+    }, "SortEntityBatch"] call IVCS_FSM_createTransition,
 
-    ["AllEntitiesSorted", { (_this getvariable "entitiesToSort") isequalto [] }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["AllEntitiesSorted", { (_this getvariable "entitiesToSort") isequalto [] }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["NeedObjectiveSort", {
         private _opcom = _this getvariable "opcom";
@@ -195,27 +195,27 @@ private _conditions = [
         private _opcom = _this getvariable "opcom";
         private _objectives = _opcom getvariable "objectives";
         _this setvariable ["objectivesToPrepareForSort", allvariables _objectives];
-    }, "PrepareObjectiveBatch"] call IVCS_FSM_createCondition,
+    }, "PrepareObjectiveBatch"] call IVCS_FSM_createTransition,
 
-    ["AllObjectiveBatchesReady", { (_this getvariable "objectivesToPrepareForSort") isequalto [] }, {}, "SortObjectives"] call IVCS_FSM_createCondition,
-    ["ObjectiveSortComplete", { true }, { _this setvariable ["timeLastObjectiveSort", diag_tickTime] }, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["AllObjectiveBatchesReady", { (_this getvariable "objectivesToPrepareForSort") isequalto [] }, {}, "SortObjectives"] call IVCS_FSM_createTransition,
+    ["ObjectiveSortComplete", { true }, { _this setvariable ["timeLastObjectiveSort", diag_tickTime] }, "DecisionCore"] call IVCS_FSM_createTransition,
 
     ["NeedObjectiveScan", {
         private _timeLastScan = _this getvariable "timeLastObjectiveScan";
 
         diag_tickTime - _timeLastScan > 20
-    }, {}, "FindObjectivesToScan"] call IVCS_FSM_createCondition,
+    }, {}, "FindObjectivesToScan"] call IVCS_FSM_createTransition,
 
     ["NoObjectivesToScan", {
         _this setvariable ["timeLastObjectiveScan", diag_tickTime];
         (_this getvariable "objectivesToScan") isequalto []
-    }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
-    ["ObjectivesToScan", { !((_this getvariable "objectivesToScan") isequalto []) }, {}, "ScanObjective"] call IVCS_FSM_createCondition,
+    }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
+    ["ObjectivesToScan", { !((_this getvariable "objectivesToScan") isequalto []) }, {}, "ScanObjective"] call IVCS_FSM_createTransition,
 
-    ["ObjectiveScanResultsToProcess", { !((_this getvariable "objectiveScanResults") isequalto []) }, {}, "ProcessObjectiveScanResult"] call IVCS_FSM_createCondition,
-    ["NoObjectiveScanResultsToProcess", { (_this getvariable "objectiveScanResults") isequalto [] }, {}, "DecisionCore"] call IVCS_FSM_createCondition,
+    ["ObjectiveScanResultsToProcess", { !((_this getvariable "objectiveScanResults") isequalto []) }, {}, "ProcessObjectiveScanResult"] call IVCS_FSM_createTransition,
+    ["NoObjectiveScanResultsToProcess", { (_this getvariable "objectiveScanResults") isequalto [] }, {}, "DecisionCore"] call IVCS_FSM_createTransition,
 
-    ["ObjectiveProcessActionToTake", { ((_this getvariable "ProcessedScanAction") select 0) != "pass" }, {}, "DecisionCore"] call IVCS_FSM_createCondition
+    ["ObjectiveProcessActionToTake", { ((_this getvariable "ProcessedScanAction") select 0) != "pass" }, {}, "DecisionCore"] call IVCS_FSM_createTransition
 ];
 
 

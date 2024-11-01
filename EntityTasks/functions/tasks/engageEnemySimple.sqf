@@ -49,8 +49,8 @@ private _enemyDefeated = [{
 
 // build fsm
 
-[_initState, [_canEngageEnemy]] call IVCS_EntityTasks_addOutgoingConditions;
-[_engage, [_enemyDefeated, _senseDefeat]] call IVCS_EntityTasks_addOutgoingConditions;
+[_initState, [_canEngageEnemy]] call IVCS_EntityTasks_addTransitions;
+[_engage, [_enemyDefeated, _senseDefeat]] call IVCS_EntityTasks_addTransitions;
 
 [
     "TransportLoad",

@@ -1,3 +1,10 @@
+if (!isGamePaused) then {
+    IVCS_CurrentFrame = IVCS_CurrentFrame + 1;
+    if (IVCS_CurrentFrame > IVCS_FrameCap) then {
+        IVCS_CurrentFrame = 1;
+    };
+};
+
 if (diag_tickTime - IVCS_Common_OnFrame_LastIteration < 30) exitwith {};
 
 private _allSides = ["EAST","WEST","GUER"] apply { [_x, _x call IVCS_Common_sideStringToObject]};

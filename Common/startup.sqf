@@ -27,3 +27,6 @@ IVCS_Common_WeaponAliases = createHashMapFromArray [
 	["CUP_launch_M72A6", "CUP_launch_M72A6_Loaded"],
 	["CUP_launch_APILAS", "CUP_launch_APILAS_Loaded"]
 ];
+
+IVCS_CurrentFrame = 0;
+IVCS_FrameCap = 25920000;
