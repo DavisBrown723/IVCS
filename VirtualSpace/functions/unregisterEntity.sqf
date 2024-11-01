@@ -5,8 +5,6 @@ params ["_entity"];
 
 private _entityID = _entity get "id";
 
-["IVCS_VirtualSpace_entityUnregistered", _entity] call CBA_fnc_localEvent;
-
 private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
 [_entitiesSpacialGrid, [_entity get "position", _entity]] call IVCS_SpacialGrid_remove;
 
