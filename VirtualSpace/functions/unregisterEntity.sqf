@@ -10,8 +10,7 @@ private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacial
 
 private _entities = IVCS_VirtualSpace_Controller get "entities";
 private _allEntities = _entities get "ALL";
-_allEntities set [_entityID, nil];
-
+_allEntities deleteat _entityID;
 // cleanup entity data
 
 private _onUnregisterFunc = _entity get "unregister";

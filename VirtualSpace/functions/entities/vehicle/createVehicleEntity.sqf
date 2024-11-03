@@ -15,9 +15,11 @@ private _side = [_vehicleClass] call IVCS_Common_getVehicleSide;
 private _vehicleEntity = createHashMapFromArray [
     ["timeLastUpdate", diag_tickTime],
     ["delayedInitComplete", false],
-    ["active", false],
-    ["class", _vehicleClass],
+
+    ["entityType", "vehicle"],
     ["vehicleType", _vehicleType],
+    ["class", _vehicleClass],
+    ["active", false],
     ["position", _position],
     ["side", _side],
     ["engineOn", false],
@@ -26,9 +28,10 @@ private _vehicleEntity = createHashMapFromArray [
     ["commandingEntity", ""],
     ["entitiesInCargo", []],
 
-    ["object", objNull],
     ["speedPerSecond", round (_maxSpeed * 0.15)],
-    ["hitpoints", _hitpoints apply {[configname _x, 0]}]
+    ["hitpoints", _hitpoints apply {[configname _x, 0]}],
+
+    ["object", objNull]
 ];
 
 private _seatCount = 0;
@@ -41,6 +44,7 @@ private _seatAssignments = _vehicleSeats apply {
 
     [_seatType, _seatPaths]
 };
+
 _vehicleEntity set ["seatCount", _seatCount];
 _vehicleEntity set ["seats", _seatAssignments];
 
@@ -64,6 +68,7 @@ private _weaponsInfo = _weapons apply {
 
     [_turretPath, _turretWeaponsInfo]
 };
+
 _vehicleEntity set ["weapons", _weaponsInfo];
 
 // get pylon info
@@ -78,6 +83,7 @@ private _vehiclePylons = _vehiclePylonInfo apply {
 
     [_pylonName, _pylonMagazine, _magazineAmmoCount]
 };
+
 _vehicleEntity set ["pylons", _vehiclePylons];
 
 // set type specific vars
@@ -94,8 +100,6 @@ if (_vehicleType == "uav") then {
     _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
     _vehicleEntity set ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
 } else {
-    _vehicleEntity set ["entityType", "vehicle"];
-
     _vehicleEntity set ["update", "IVCS_VirtualSpace_Vehicle_update"];
     _vehicleEntity set ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
     _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];

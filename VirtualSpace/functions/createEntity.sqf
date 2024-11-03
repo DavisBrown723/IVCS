@@ -26,11 +26,11 @@ private _nextUnitIDNum = 0;
         private _unitID = format ["u_%1", _nextUnitIDNum];
         _nextUnitIDNum = _nextUnitIDNum + 1;
 
-        private _unit = [_unitClass, _unitID] call IVCS_VirtualSpace_createEntityUnit;
+        private _unit = [_unitClass, _unitID] call IVCS_VirtualSpace_Group_createUnit;
 
         _units pushback _unit;
     } else {
-        private _vehicleEntity = [_unitClass, _position] call IVCS_VirtualSpace_createVehicleEntity;
+        private _vehicleEntity = [_unitClass, _position] call IVCS_VirtualSpace_Vehicle_createEntity;
 
         _vehicleEntities pushback _vehicleEntity;
     };
@@ -41,7 +41,7 @@ private _nextUnitIDNum = 0;
 
 private "_groupEntity";
 if (count _units > 0) then {
-    _groupEntity = [_side, _faction, _position, _units] call IVCS_VirtualSpace_createGroupEntity;
+    _groupEntity = [_side, _faction, _position, _units] call IVCS_VirtualSpace_Group_createEntity;
     
     {
         [_groupEntity,_x] call IVCS_VirtualSpace_Group_assignVehicle;

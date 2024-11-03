@@ -3,9 +3,10 @@ params ["_side","_faction","_position","_units"];
 private _groupEntity = createHashMapFromArray [
     ["timeLastUpdate", diag_tickTime],
     ["delayedInitComplete", false],
+
     ["entityType", "group"],
     ["vehicleType", "group"],
-    ["entity", "group"],
+    ["class", ""],
     ["active", false],
     ["position", _position],
     ["side", _side],
@@ -22,10 +23,10 @@ private _groupEntity = createHashMapFromArray [
     ["minWaypointIndex", -1],
     ["maxWaypointIndex", -1],
     ["ignoreWpCallback", ""],
+
     ["tasks", []],
 
     ["currentEngagementTask", ""],
-
     ["pathfindingStrategy", "man"],
 
     ["reactToContact", "IVCS_VirtualSpace_Group_onContactSimple"],
