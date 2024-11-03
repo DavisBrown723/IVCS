@@ -49,6 +49,6 @@ if (count _units > 0) then {
 };
 
 createHashMapFromArray [
-    ["group", _groupEntity],
+    ["group", if (!isnil "_groupEntity") then {_groupEntity} else {nil}],
     ["vehicles", _vehicleEntities]
 ]
