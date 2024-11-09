@@ -14,11 +14,7 @@ for "_i" from 0 to (count _cfgMagazines - 1) do {
 
 		{
             private _hardpoint = _x;
-			private _hardpointMagazines = _hardpoints get _hardpoint;
-			if (isnil "_hardpointMagazines") then {
-				_hardpointMagazines = [];
-				_hardpoints set [_hardpoint, _hardpointMagazines];
-			};
+			private _hardpointMagazines = _hardpoints getOrDefault [_hardpoint, [], true];
 
 			_hardpointMagazines pushback _magazineName; 
 		} foreach _compatibleHardpoints;

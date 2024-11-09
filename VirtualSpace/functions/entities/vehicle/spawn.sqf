@@ -29,9 +29,13 @@ if (_commandingEntityID != "") then {
     };
 };
 
+systemchat format ["Position: %1", _position];
+
 private _vehicleObject = createVehicle [_vehicleClass, _position, [], 0, _special];
 _vehicleObject allowdamage false;
 _vehicleObject setdir _spawnDir;
+
+// TODO: use Executions module, wait for profile to be unlocked then allow damage
 [_vehicleObject] spawn {
     sleep 1;
     (_this select 0) allowdamage true;
@@ -39,6 +43,8 @@ _vehicleObject setdir _spawnDir;
 _vehicleObject setvariable ["entityID", _entityID];
 
 _vehicleObject engineOn _engineOn;
+
+// apply hitpoint damages
 
 {
     _x params ["_hitpoint","_damage"];
@@ -68,20 +74,28 @@ private _weapons = _entity get "weapons";
     } foreach _turretWeaponInfo;
 } foreach _weapons;
 
-// populate pylons
+// fill weapons
 
-private _pylons = _entity get "pylons";
+private _turrets = _entity get "turrets";
 {
-    _x params ["_pylonName","_pylonMagazine","_pylonAmmo"];
+    _x params ["_turretPath","_turretWeapons","_turretMagazines","_turretPylons"];
 
-    _vehicleObject setPylonLoadout [_pylonName, _pylonMagazine];
-    _vehicleObject setAmmoOnPylon [_pylonName, _pylonAmmo];
-} foreach _pylons;
+    {
+        _x params ["_magazine","_ammo"];
+
+        _vehicleObject addMagazineTurret [_magazine, _turretPath, _ammo];
+    } foreach _turretMagazines;
+
+    {
+        _x params ["_pylonName","_magazine","_ammo"];
+
+        _vehicleObject setPylonLoadout [_pylonName, _magazine];
+        _vehicleObject setAmmoOnPylon [_pylonName, _ammo];
+    } foreach _turretPylons;
+} foreach _turrets;
 
 _vehicleObject addEventHandler ["GetOut", IVCS_VirtualSpace_Vehicle_onUnitGetOut];
 _vehicleObject addEventHandler ["Killed", IVCS_VirtualSpace_Vehicle_onVehicleDestroyed];
-
-_entity set ["object", _vehicleObject];
 
 private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
@@ -89,4 +103,5 @@ if (_debug) then {
     _debugMarker setMarkerAlpha 0.75;
 };
 
+_entity set ["object", _vehicleObject];
 _entity set ["active", true];

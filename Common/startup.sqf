@@ -14,8 +14,9 @@ IVCS_Common_MagazineInfo = createHashMap;
 IVCS_Common_AmmoInfo = createHashMap;
 IVCS_Common_UnitInfo = createHashMap;
 
+
 IVCS_Common_HardpointMagazines = [] call IVCS_Common_getAllHardpointMagazines;
-IVCS_Common_VehiclePylons = [] call IVCS_Common_getAllVehiclePylons;
+IVCS_Common_VehicleTurrets = [] call IVCS_Common_getAllVehicleTurretsFromConfig;
 
 IVCS_Common_WeaponAliases = createHashMapFromArray [
 	["CUP_launch_FIM92Stinger", "CUP_launch_FIM92Stinger_Loaded"],

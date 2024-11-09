@@ -37,8 +37,8 @@ private _states = [
 
         //private _spawnRadius = 1500;
         //private _despawnRadius = 1700;
-        private _spawnRadius = 15;
-        private _despawnRadius = 15;
+        private _spawnRadius = 25;
+        private _despawnRadius = 25;
         private _nearEntities = [_spawnPosition, _despawnRadius] call IVCS_VirtualSpace_getNearEntities;
         {
             private _id = _x get "id";

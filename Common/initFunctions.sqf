@@ -35,9 +35,10 @@ IVCS_Common_pointDistanceFromSegment = compile preprocessFileLineNumbers "IVCS\C
 
 IVCS_Common_findDisposableWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\findDisposableWeapons.sqf";
 IVCS_Common_getAllHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\getAllHardpointMagazines.sqf";
-IVCS_Common_getAllVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common\functions\getAllVehiclePylons.sqf";
-IVCS_Common_getVehiclePylons = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehiclePylons.sqf";
+IVCS_Common_getVehicleTurrets = compile preprocessFileLineNumbers "IVCS\Common\functions\getVehicleTurrets.sqf";
+IVCS_Common_getPylonsFromVehicleConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\getPylonsFromVehicleConfig.sqf";
 IVCS_Common_getHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\getHardpointMagazines.sqf";
+IVCS_Common_getAllVehicleTurretsFromConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\getAllVehicleTurretsFromConfig.sqf";
 
 IVCS_Common_calculateFrameNumber = compile preprocessFileLineNumbers "IVCS\Common\functions\calculateFrameNumber.sqf";
 
