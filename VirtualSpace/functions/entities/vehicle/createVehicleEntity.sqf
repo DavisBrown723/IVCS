@@ -48,28 +48,35 @@ private _seatAssignments = _vehicleSeats apply {
 _vehicleEntity set ["seatCount", _seatCount];
 _vehicleEntity set ["seats", _seatAssignments];
 
+// get inventory info
+
+// private _cargoItems = getarray (_vehicleConfig >> "transportItems");
+// private _cargoMagazines = getarray (_vehicleConfig >> "transportMagazines");
+// private _cargoWeapons = getarray (_vehicleConfig >> "transportWeapons");
+// private _cargo = _cargoItems + _cargoMagazines + _cargoWeapons;
+
 // get weapon info
 
-private _weapons = [_vehicleClass] call IVCS_Common_getVehicleWeapons;
-private _weaponsInfo = _weapons apply {
-    _x params ["_turretPath","_turretWeaponsInfo"];
+// private _weapons = [_vehicleClass] call IVCS_Common_getVehicleWeapons;
+// private _weaponsInfo = _weapons apply {
+//     _x params ["_turretPath","_turretWeaponsInfo"];
 
-    _turretWeaponsInfo = _turretWeaponsInfo apply {
-        _x params ["_weapon","_weaponMagazines"];
+//     _turretWeaponsInfo = _turretWeaponsInfo apply {
+//         _x params ["_weapon","_weaponMagazines"];
 
-        _weaponMagazines = _weaponMagazines apply {
-            private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
-            private _magazineAmmoCount = _magazineInfo select 1;
-            [_x, _magazineAmmoCount]
-        };
+//         _weaponMagazines = _weaponMagazines apply {
+//             private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
+//             private _magazineAmmoCount = _magazineInfo select 1;
+//             [_x, _magazineAmmoCount]
+//         };
 
-        [_weapon, _weaponMagazines]
-    };
+//         [_weapon, _weaponMagazines]
+//     };
 
-    [_turretPath, _turretWeaponsInfo]
-};
+//     [_turretPath, _turretWeaponsInfo]
+// };
 
-_vehicleEntity set ["weapons", _weaponsInfo];
+// _vehicleEntity set ["weapons", _weaponsInfo];
 
 // get turret info
 

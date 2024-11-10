@@ -25,18 +25,20 @@ private _hitpoints = _entity get "hitpoints";
     _x set [1, _hitpointDamage];
 } foreach _hitpoints;
 
-private _pylons = _entity get "pylons";
-private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)
-{
-    private _pylon = _pylons select _foreachindex;
-    private _pylonName = _pylon select 0;
+// private _pylons = _entity get "pylons";
+// private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)
+// {
+//     private _pylon = _pylons select _foreachindex;
+//     private _pylonName = _pylon select 0;
 
-    private _magazineOnPylon = _x;
-    private _magazineAmmo = _vehicleObject ammoOnPylon _pylonName;
+//     private _magazineOnPylon = _x;
+//     private _magazineAmmo = _vehicleObject ammoOnPylon _pylonName;
 
-    _pylon set [1, _magazineOnPylon];
-    _pylon set [2, _magazineAmmo];
-} foreach _pylonMagazines;
+//     _pylon set [1, _magazineOnPylon];
+//     _pylon set [2, _magazineAmmo];
+// } foreach _pylonMagazines;
+
+// private _cargoMagazines = magazinesAmmoCargo _vehicleObject;
 
 _entity set ["engineOn", isEngineOn _vehicleObject];
 
