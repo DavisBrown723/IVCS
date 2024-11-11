@@ -48,12 +48,8 @@ private _seatAssignments = _vehicleSeats apply {
 _vehicleEntity set ["seatCount", _seatCount];
 _vehicleEntity set ["seats", _seatAssignments];
 
-// get inventory info
-
-// private _cargoItems = getarray (_vehicleConfig >> "transportItems");
-// private _cargoMagazines = getarray (_vehicleConfig >> "transportMagazines");
-// private _cargoWeapons = getarray (_vehicleConfig >> "transportWeapons");
-// private _cargo = _cargoItems + _cargoMagazines + _cargoWeapons;
+private _vehicleInventory = [_vehicleClass] call IVCS_Common_getVehicleInventoryFromConfig;
+_vehicleEntity set ["inventory", _vehicleInventory];
 
 // get weapon info
 

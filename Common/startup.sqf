@@ -15,6 +15,7 @@ IVCS_Common_AmmoInfo = createHashMap;
 IVCS_Common_UnitInfo = createHashMap;
 
 
+IVCS_Common_VehicleConfigInventories = createHashMap;
 IVCS_Common_HardpointMagazines = [] call IVCS_Common_getAllHardpointMagazines;
 IVCS_Common_VehicleTurrets = [] call IVCS_Common_getAllVehicleTurretsFromConfig;
 

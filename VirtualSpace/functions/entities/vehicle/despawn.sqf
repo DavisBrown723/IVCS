@@ -25,6 +25,13 @@ private _hitpoints = _entity get "hitpoints";
     _x set [1, _hitpointDamage];
 } foreach _hitpoints;
 
+// store inventory
+
+private _weaponCargo = getWeaponCargo _vehicleObject;
+private _magazineCargo = getMagazineCargo _vehicleObject;
+private _itemCargo = getItemCargo _vehicleObject;
+private _backpackCargo = getBackpackCargo _vehicleObject;
+
 // private _pylons = _entity get "pylons";
 // private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)
 // {

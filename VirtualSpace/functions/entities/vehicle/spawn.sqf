@@ -52,6 +52,20 @@ _vehicleObject engineOn _engineOn;
     _vehicleObject setHitPointDamage [_hitpoint,_damage, false];
 } foreach _entityHitpoints;
 
+// populate inventory
+
+private _inventory = _entity get "inventory";
+
+clearWeaponCargoGlobal _vehicleObject;
+clearMagazineCargoGlobal _vehicleObject;
+clearItemCargoGlobal _vehicleObject;
+clearBackpackCargoGlobal _vehicleObject;
+
+{ _vehicleObject addWeaponCargoGlobal _x } foreach (_inventory get "weapons");
+{ _vehicleObject addMagazineCargoGlobal _x } foreach (_inventory get "magazines");
+{ _vehicleObject addItemCargoGlobal _x } foreach (_inventory get "items");
+{ _vehicleObject addBackpackCargoGlobal _x } foreach (_inventory get "backpacks");
+
 // populate weapon magazines
 
 private _weapons = _entity get "weapons";
