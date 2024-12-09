@@ -27,10 +27,8 @@ private _hitpoints = _entity get "hitpoints";
 
 // store inventory
 
-private _weaponCargo = getWeaponCargo _vehicleObject;
-private _magazineCargo = getMagazineCargo _vehicleObject;
-private _itemCargo = getItemCargo _vehicleObject;
-private _backpackCargo = getBackpackCargo _vehicleObject;
+private _inventory = [_vehicleObject] call IVCS_Common_getContainerInventory;
+_entity set ["inventory", _inventory];
 
 // private _pylons = _entity get "pylons";
 // private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)

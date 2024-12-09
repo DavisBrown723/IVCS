@@ -49,8 +49,15 @@ IVCS_Common_getVehicleTurrets = compile preprocessFileLineNumbers "IVCS\Common\f
 IVCS_Common_getPylonsFromVehicleConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getPylonsFromVehicleConfig.sqf";
 IVCS_Common_getHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getHardpointMagazines.sqf";
 IVCS_Common_getAllVehicleTurretsFromConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getAllVehicleTurretsFromConfig.sqf";
-IVCS_Common_getVehicleInventoryFromConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getVehicleInventoryFromConfig.sqf";
 IVCS_Common_getVehicleWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getVehicleWeapons.sqf";
+
+// containers
+
+IVCS_Common_getContainerInventoryFromConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\containers\getContainerInventoryFromConfig.sqf";
+IVCS_Common_getContainerInventory = compile preprocessFileLineNumbers "IVCS\Common\functions\containers\getContainerInventory.sqf";
+IVCS_Common_applyContainerInventory = compile preprocessFileLineNumbers "IVCS\Common\functions\containers\applyContainerInventory.sqf";
+IVCS_Common_clearContainerInventory = compile preprocessFileLineNumbers "IVCS\Common\functions\containers\clearContainerInventory.sqf";
+IVCS_Common_getContainerType = compile preprocessFileLineNumbers "IVCS\Common\functions\containers\getContainerType.sqf";
 
 // internal
 

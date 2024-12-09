@@ -48,7 +48,7 @@ private _seatAssignments = _vehicleSeats apply {
 _vehicleEntity set ["seatCount", _seatCount];
 _vehicleEntity set ["seats", _seatAssignments];
 
-private _vehicleInventory = [_vehicleClass] call IVCS_Common_getVehicleInventoryFromConfig;
+private _vehicleInventory = [_vehicleClass] call IVCS_Common_getContainerInventoryFromConfig;
 _vehicleEntity set ["inventory", _vehicleInventory];
 
 // get weapon info

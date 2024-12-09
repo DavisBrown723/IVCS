@@ -55,16 +55,7 @@ _vehicleObject engineOn _engineOn;
 // populate inventory
 
 private _inventory = _entity get "inventory";
-
-clearWeaponCargoGlobal _vehicleObject;
-clearMagazineCargoGlobal _vehicleObject;
-clearItemCargoGlobal _vehicleObject;
-clearBackpackCargoGlobal _vehicleObject;
-
-{ _vehicleObject addWeaponCargoGlobal _x } foreach (_inventory get "weapons");
-{ _vehicleObject addMagazineCargoGlobal _x } foreach (_inventory get "magazines");
-{ _vehicleObject addItemCargoGlobal _x } foreach (_inventory get "items");
-{ _vehicleObject addBackpackCargoGlobal _x } foreach (_inventory get "backpacks");
+//[_vehicleObject, _inventory] call IVCS_Common_applyContainerInventory;
 
 // populate weapon magazines
 
