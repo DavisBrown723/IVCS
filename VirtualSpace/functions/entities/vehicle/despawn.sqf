@@ -30,6 +30,26 @@ private _hitpoints = _entity get "hitpoints";
 private _inventory = [_vehicleObject] call IVCS_Common_getContainerInventory;
 _entity set ["inventory", _inventory];
 
+// store turret weapons info
+
+private _pylonsMagazineInfo = [_vehicleObject] call IVCS_Common_getVehiclePylonsMagazineInfo;
+
+private _turrets = _entity get "turrets";
+{
+    _x params ["_turretPath","_turretWeapons","_turretMagazines","_turretPylons"];
+
+    
+
+    {
+        _x params ["_pylonName","_magazine","_ammo"];
+
+        (_pylonsMagazineInfo get _pylonName) params ["_pylonMagazine","_pylonMagazineAmmoCount"];
+
+        _x set [1, _pylonMagazine];
+        _x set [2, _pylonMagazineAmmoCount];
+    } foreach _turretPylons;
+} foreach _turrets;
+
 // private _pylons = _entity get "pylons";
 // private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)
 // {

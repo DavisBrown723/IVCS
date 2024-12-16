@@ -55,7 +55,7 @@ _vehicleObject engineOn _engineOn;
 // populate inventory
 
 private _inventory = _entity get "inventory";
-//[_vehicleObject, _inventory] call IVCS_Common_applyContainerInventory;
+[_vehicleObject, _inventory] call IVCS_Common_applyContainerInventory;
 
 // populate weapon magazines
 

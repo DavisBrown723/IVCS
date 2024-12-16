@@ -51,56 +51,7 @@ _vehicleEntity set ["seats", _seatAssignments];
 private _vehicleInventory = [_vehicleClass] call IVCS_Common_getContainerInventoryFromConfig;
 _vehicleEntity set ["inventory", _vehicleInventory];
 
-// get weapon info
-
-// private _weapons = [_vehicleClass] call IVCS_Common_getVehicleWeapons;
-// private _weaponsInfo = _weapons apply {
-//     _x params ["_turretPath","_turretWeaponsInfo"];
-
-//     _turretWeaponsInfo = _turretWeaponsInfo apply {
-//         _x params ["_weapon","_weaponMagazines"];
-
-//         _weaponMagazines = _weaponMagazines apply {
-//             private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
-//             private _magazineAmmoCount = _magazineInfo select 1;
-//             [_x, _magazineAmmoCount]
-//         };
-
-//         [_weapon, _weaponMagazines]
-//     };
-
-//     [_turretPath, _turretWeaponsInfo]
-// };
-
-// _vehicleEntity set ["weapons", _weaponsInfo];
-
-// get turret info
-
-private _vehicleTurretInfo = [_vehicleClass] call IVCS_Common_getVehicleTurrets;
-private _vehicleTurrets = _vehicleTurretInfo apply {
-    private _turretPath = _x;
-    
-    _y params ["_turretWeapons","_turretMagazines","_turretPylons"];
-
-    private _turretMagazinesLoadout = _turretMagazines apply {
-        private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
-        private _magazineAmmoCount = _magazineInfo select 1;
-
-        [_x, _magazineAmmoCount]
-    };
-
-    private _turretPylonLoadout = _turretPylons apply {
-        private _defaultMagazine = _y select 0;
-
-        private _defaultMagazineInfo = [_defaultMagazine] call IVCS_Common_getMagazineInfo;
-        private _defaultMagazineAmmoCount = _defaultMagazineInfo select 1;
-
-        [_x, _defaultMagazine, _defaultMagazineAmmoCount]
-    };
-
-    [_turretPath, _turretWeapons, _turretMagazinesLoadout, _turretPylonLoadout]
-};
-
+private _vehicleTurrets = [_vehicleClass] call IVCS_VirtualSpace_Vehicle_getTurretsLoadout;
 _vehicleEntity set ["turrets", _vehicleTurrets];
 
 // set type specific vars

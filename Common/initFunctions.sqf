@@ -50,6 +50,7 @@ IVCS_Common_getPylonsFromVehicleConfig = compile preprocessFileLineNumbers "IVCS
 IVCS_Common_getHardpointMagazines = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getHardpointMagazines.sqf";
 IVCS_Common_getAllVehicleTurretsFromConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getAllVehicleTurretsFromConfig.sqf";
 IVCS_Common_getVehicleWeapons = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getVehicleWeapons.sqf";
+IVCS_Common_getVehiclePylonsMagazineInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\vehicles\getVehiclePylonsMagazineInfo.sqf";
 
 // containers
 
