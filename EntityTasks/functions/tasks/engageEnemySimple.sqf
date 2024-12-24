@@ -28,7 +28,7 @@ private _canEngageEnemy = [{
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
 
     [_entity, _target] call IVCS_VirtualSpace_Group_canEngageEntity
-}, {}, _engage] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _engage] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _senseDefeat = [{
     private _entityID = _this get "entityID";
@@ -38,14 +38,14 @@ private _senseDefeat = [{
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
 
     false
-}, {}, _defeat] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _defeat] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _enemyDefeated = [{
     private _targetID = _this get "targetID";
     private _target = [_targetID] call IVCS_VirtualSpace_getEntity;
 
     true
-}, {}, _victory] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _victory] call IVCS_EntityTasks_createTaskStateTransition;
 
 // build fsm
 

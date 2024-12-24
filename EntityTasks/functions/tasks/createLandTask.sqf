@@ -46,7 +46,7 @@ private _atLandingPoint = [{
 
     private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
     [_entity, _landingPosition] call _fnc_inLandRangeOfPosition
-}, {}, _endState] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _endState] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _notAtLandingPoint = [{
     private _entityID = _this get "entityID";
@@ -57,7 +57,7 @@ private _notAtLandingPoint = [{
     private _fnc_inLandRangeOfPosition = _this get "fnc_inLandRangeOfPosition";
 
     !([_entity, _landingPosition] call _fnc_inLandRangeOfPosition)
-}, {}, _moveToLandingPoint] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _moveToLandingPoint] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _nearLandingPoint = [{
     private _entityID = _this get "entityID";
@@ -67,7 +67,7 @@ private _nearLandingPoint = [{
     private _landingPosition = _this get "landingPosition";
 
     _entityPosition distance _landingPosition < 200
-}, {}, _createHelipad] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _createHelipad] call IVCS_EntityTasks_createTaskStateTransition;
 
 // build fsm
 

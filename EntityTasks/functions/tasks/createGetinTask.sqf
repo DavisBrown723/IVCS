@@ -67,12 +67,12 @@ private _signalVehicle = [{
 private _hasRendezvousCondition = [{
     private _rendezvousPoint = _this get "rendezvousPoint";
     !(isnil "_rendezvousPoint")
-}, {}, _moveToRendezvousPoint] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _moveToRendezvousPoint] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _noRendezvousCondition = [{
     private _rendezvousPoint = _this get "rendezvousPoint";
     isnil "_rendezvousPoint"
-}, {}, _emptyState] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _emptyState] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _noRendVehicleInRange = [{
     private _entityID = _this get "entityID";
@@ -80,7 +80,7 @@ private _noRendVehicleInRange = [{
     private _fnc_vehicleInRange = _this get "fnc_vehicleInRange";
 
     [_entityID, _vehicleID] call _fnc_vehicleInRange
-}, {}, _getInVehicle] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _getInVehicle] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _noRendVehicleNotInRange = [{
     private _entityID = _this get "entityID";
@@ -88,7 +88,7 @@ private _noRendVehicleNotInRange = [{
     private _fnc_vehicleInRange = _this get "fnc_vehicleInRange";
 
     !([_entityID, _vehicleID] call _fnc_vehicleInRange)
-}, {}, _moveToVehicle] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _moveToVehicle] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _atRendezvousPoint = [{
     private _entityID = _this get "entityID";
@@ -98,7 +98,7 @@ private _atRendezvousPoint = [{
     private _entityWp = [_entity,_moveToRendezvousWp] call IVCS_VirtualSpace_getEntityWaypoint;
 
     isnil "_entityWp"
-}, {}, _waitForVehicle] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _waitForVehicle] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _vehicleIsNear = [{
     private _vehicleID = _this get "vehicleID";
@@ -108,7 +108,7 @@ private _vehicleIsNear = [{
     private _rendezvousPoint = _this get "rendezvousPoint";
 
     _vehiclePosition distance _rendezvousPoint < 200
-}, {}, _signalVehicle] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _signalVehicle] call IVCS_EntityTasks_createTaskStateTransition;
 
 private _vehicleAtRendezvous = [{
     private _vehicleID = _this get "vehicleID";
@@ -118,7 +118,7 @@ private _vehicleAtRendezvous = [{
     private _rendezvousPoint = _this get "rendezvousPoint";
 
     (_vehiclePosition select 2) < 2 && {_vehiclePosition distance _rendezvousPoint < 30}
-}, {}, _emptyState] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _emptyState] call IVCS_EntityTasks_createTaskStateTransition;
 
 // build fsm
 

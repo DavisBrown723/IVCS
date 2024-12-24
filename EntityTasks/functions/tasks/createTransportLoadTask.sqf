@@ -18,7 +18,7 @@ private _vehicleIsNear = [{
     private _rendezvousPoint = _this get "rendezvousPoint";
 
     _vehiclePosition distance _rendezvousPoint < 200
-}, {}, _signalVehicle] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _signalVehicle] call IVCS_EntityTasks_createTaskStateTransition;
 
 // build fsm
 
