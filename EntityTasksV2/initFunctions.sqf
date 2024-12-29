@@ -1,9 +1,6 @@
-IVCS_EntityTasks_createTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTask.sqf";
-IVCS_EntityTasks_createTaskState = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskState.sqf";
-IVCS_EntityTasks_createTaskStateTransition = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskStateTransition.sqf";
-IVCS_EntityTasks_addTransitions = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\addTransitions.sqf";
+IVCS_EntityTasks_createTaskTemplate = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskTemplate.sqf";
+IVCS_EntityTasks_createTaskInstance = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskInstance.sqf";
 IVCS_EntityTasks_processTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\processTask.sqf";
-IVCS_EntityTasks_setCallback = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\setCallback.sqf";
 
 IVCS_EntityTasks_createMoveTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\tasks\createMoveTask.sqf";
 IVCS_EntityTasks_createGetinTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\tasks\createGetinTask.sqf";
