@@ -1,6 +1,4 @@
-params ["_templateName", "_instanceInfo"];
-
-_instanceInfo params ["_arguments"];
+params ["_templateName", "_instanceContext"];
 
 private _template = IVCS_EntityTasks_TaskTemplates get _templateName;
 
@@ -10,7 +8,7 @@ private _template = IVCS_EntityTasks_TaskTemplates get _templateName;
 
 private _instance = createhashmapfromarray [
     ["template", _template],
-    ["arguments", _arguments],
+    ["context", _instanceContext],
     ["currentState", _template get "initState"],
     ["currentStatePhase", 0], // 0 = onEnter, 1 = onUpdate, 2 = onLeaving
     ["nextState", []]
