@@ -1,12 +1,6 @@
  params ["_entity","_entityWaypoint"];
 
-//private _waypoints = _entity get "waypoints";
-private _tasks = _entity get "tasks";
-if (_tasks isequalto []) exitwith {};
-
-private _currentTask = _tasks select 0;
-private _waypoints = _currentTask get "waypoints";
-
+private _waypoints = _entity get "waypoints";
 _waypoints pushback _entityWaypoint;
 
 private _active = _entity get "active";

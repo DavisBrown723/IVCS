@@ -4,6 +4,9 @@ private _context = _task get "context";
 private _currentStatePhase = _task get "currentStatePhase";
 
 if (_currentStatePhase == 0) then {
+    private _taskWaypoints = _task get "waypoints";
+    [_entity,"waypoints", _taskWaypoints];
+
     private _onEnter = _task get "onEnter";
     _context call _onEnter;
 
@@ -24,5 +27,7 @@ if (_currentStatePhase == 0) then {
         _task set ["currentState", _task get "nextState"];
         _task set ["nextState", []];
         _task set ["currentStatePhase", 0];
+
+        _entity set ["waypoints", []];
     };
 };
