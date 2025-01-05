@@ -1,5 +1,8 @@
 params ["_entity","_waypoint"];
 
+private _waypointStatements = ((waypointStatements _waypoint) select 1) splitString ";";
+_waypointStatements deleteat (_waypointStatements findIf { (_x find "IVCS_VirtualSpace_onWaypointCompleted") != -1 });
+
 private _entityWaypoint = createHashMapFromArray [
     ["position", waypointPosition _waypoint],
     ["type", waypointType _waypoint],
@@ -8,7 +11,7 @@ private _entityWaypoint = createHashMapFromArray [
     ["formation", waypointFormation _waypoint],
     ["combatMode", waypointCombatMode _waypoint],
     ["behavior", waypointBehaviour _waypoint],
-    ["statements", ((waypointStatements _waypoint) select 1) splitString ";"],
+    ["statements", _waypointStatements apply { [[], _x] }],
     ["timeout", waypointTimeout _waypoint],
     ["attachedVehicle", ""],
     ["name", waypointName _waypoint],

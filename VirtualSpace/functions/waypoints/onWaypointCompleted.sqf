@@ -22,7 +22,9 @@ if (!isnil "_entity") then {
 
                 private _waypointStatements = _waypoint get "statements";
                 {
-                    [_entity, _waypoint] call (compile _x);
+                    _x params ["_arguments","_code"];
+
+                    [_entity, _waypoint, _arguments] call (compile _code);
                 } foreach _waypointStatements;
 
                 // remove waypoint if not cycling

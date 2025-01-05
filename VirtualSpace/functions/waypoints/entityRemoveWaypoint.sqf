@@ -28,3 +28,5 @@ if (_active) then {
     
     deleteWaypoint [_group, _WpToDeleteIndex];
 };
+
+_entityWaypoint set ["entity", []];

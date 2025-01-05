@@ -31,6 +31,7 @@ IVCS_VirtualSpace_entityRemoveWaypoint = compile preprocessFileLineNumbers "IVCS
 IVCS_VirtualSpace_findEntityWaypointLoops = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\waypoints\findEntityWaypointLoops.sqf";
 IVCS_VirtualSpace_onWaypointStarted = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\waypoints\onWaypointStarted.sqf";
 IVCS_VirtualSpace_resetEntityWaypoint = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\waypoints\resetEntityWaypoint.sqf";
+IVCS_VirtualSpace_addWaypointCallback = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\waypoints\addWaypointCallback.sqf";
 
 // entity functions
 

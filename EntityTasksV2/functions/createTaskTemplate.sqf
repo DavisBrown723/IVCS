@@ -30,10 +30,9 @@ private _taskVars = createHashMapFromArray _variables;
 private _task = createHashMapFromArray [
     ["name", _name],
     ["priority", _priority],
-    ["data", _taskVars],
+    ["context", _taskVars],
     ["states", createHashMapFromArray _states],
-    ["initState", _stateMap get _initStateName],
-    ["waypoints", []]
+    ["initState", _stateMap get _initStateName]
 ];
 
 IVCS_EntityTasks_TaskTemplates set [_name, _task];

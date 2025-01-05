@@ -11,7 +11,12 @@
                 private _waypointParams = _this get "waypointParams";
                 
                 private _waypoint = [_destination,"MOVE", _waypointParams] call IVCS_VirtualSpace_createEntityWaypoint;
-                [_entity,_waypoint] call IVCS_VirtualSpace_addEntityWaypoint;
+                [_entity,_waypoint] call IVCS_VirtualSpace_entityAddWaypoint;
+                [_waypoint, _this, {
+                    params ["_entity","_waypoint","_taskContext"];
+
+                    _taskContext set ["waypointComplete", true];
+                }] call IVCS_VirtualSpace_addWaypointCallback;
 
                 _this set ["waypoint", _waypoint];
 
@@ -20,9 +25,16 @@
         ]],
         ["checkCompletion", [
             ["onUpdate", {
-                
+                private _waypointComplete = _this get "waypointComplete";
+
+                if (_waypointComplete) then {
+                    
+                };
             }]
         ]]
     ],
-    "start"
+    "start",
+    [
+        ["waypointComplete", false]
+    ]
 ] call IVCS_EntityTasks_createTaskTemplate

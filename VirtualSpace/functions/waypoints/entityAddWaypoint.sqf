@@ -3,6 +3,8 @@
 private _waypoints = _entity get "waypoints";
 _waypoints pushback _entityWaypoint;
 
+_entityWaypoint set ["entity", _entity];
+
 private _active = _entity get "active";
 if (_active) then {
     private _group = _entity get "group";

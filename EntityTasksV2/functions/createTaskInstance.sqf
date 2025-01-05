@@ -8,10 +8,11 @@ private _template = IVCS_EntityTasks_TaskTemplates get _templateName;
 
 private _instance = createhashmapfromarray [
     ["template", _template],
-    ["context", _instanceContext],
+    ["context", (template get "context") merge [_instanceContext, true]],
     ["currentState", _template get "initState"],
     ["currentStatePhase", 0], // 0 = onEnter, 1 = onUpdate, 2 = onLeaving
-    ["nextState", []]
+    ["nextState", []],
+    ["waypoints", []]
 ];
 
 _instance
