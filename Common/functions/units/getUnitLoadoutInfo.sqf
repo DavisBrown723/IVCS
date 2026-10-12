@@ -2,7 +2,7 @@ params ["_unitClass"];
 
 private _cfgVehicles = configfile >> "CfgVehicles";
 
-private _cachedUnitInfo = IVCS_Common_AmmoInfo get _unitClass;
+private _cachedUnitInfo = IVCS_Common_UnitInfo get _unitClass;
 if (!isnil "_cachedUnitInfo") exitwith { _cachedUnitInfo };
 
 private _unitConfig = _cfgVehicles >> _unitClass;
@@ -33,7 +33,7 @@ private _loadout = [];
     private _magsLeft = count _magazines;
     while {_i < _magsLeft} do {
         if (isnil {_magazines select _i}) then {
-            systemchat format ["Select %1 from %2", _i, count _magazines];
+            systemchat format ["getUnitLoadoutInfo: Select %1 from %2", _i, count _magazines];
         };
         private _magazineClass = _magazines select _i;
         

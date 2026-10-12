@@ -5,4 +5,4 @@ private _unitID = _unit getvariable "unitID";
 
 private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-[_entity, _unitID] call IVCS_VirtualSpace_entityRemoveUnit;
+[_entity, _unitID] call IVCS_VirtualSpace_Group_RemoveUnit;

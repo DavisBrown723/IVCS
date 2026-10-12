@@ -14,8 +14,10 @@ IVCS_Common_MagazineInfo = createHashMap;
 IVCS_Common_AmmoInfo = createHashMap;
 IVCS_Common_UnitInfo = createHashMap;
 
+
+IVCS_Common_VehicleConfigInventories = createHashMap;
 IVCS_Common_HardpointMagazines = [] call IVCS_Common_getAllHardpointMagazines;
-IVCS_Common_VehiclePylons = [] call IVCS_Common_getAllVehiclePylons;
+IVCS_Common_VehicleTurrets = [] call IVCS_Common_getAllVehicleTurretsFromConfig;
 
 IVCS_Common_WeaponAliases = createHashMapFromArray [
 	["CUP_launch_FIM92Stinger", "CUP_launch_FIM92Stinger_Loaded"],
@@ -27,3 +29,6 @@ IVCS_Common_WeaponAliases = createHashMapFromArray [
 	["CUP_launch_M72A6", "CUP_launch_M72A6_Loaded"],
 	["CUP_launch_APILAS", "CUP_launch_APILAS_Loaded"]
 ];
+
+IVCS_CurrentFrame = 0;
+IVCS_FrameCap = 25920000;

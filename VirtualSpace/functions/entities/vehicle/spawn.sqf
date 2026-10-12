@@ -29,9 +29,13 @@ if (_commandingEntityID != "") then {
     };
 };
 
+systemchat format ["Position: %1", _position];
+
 private _vehicleObject = createVehicle [_vehicleClass, _position, [], 0, _special];
 _vehicleObject allowdamage false;
 _vehicleObject setdir _spawnDir;
+
+// TODO: use Executions module, wait for profile to be unlocked then allow damage
 [_vehicleObject] spawn {
     sleep 1;
     (_this select 0) allowdamage true;
@@ -40,48 +44,21 @@ _vehicleObject setvariable ["entityID", _entityID];
 
 _vehicleObject engineOn _engineOn;
 
+// apply hitpoint damages
+
 {
     _x params ["_hitpoint","_damage"];
 
     _vehicleObject setHitPointDamage [_hitpoint,_damage, false];
 } foreach _entityHitpoints;
 
-// populate weapon magazines
+private _inventory = _entity get "inventory";
+[_vehicleObject, _inventory] call IVCS_Common_applyContainerInventory;
 
-private _weapons = _entity get "weapons";
-{
-    _x params ["_turretPath","_turretWeaponInfo"];
-
-    private _existingMagazines = _vehicleObject magazinesTurret _turretPath;
-    {
-        _vehicleObject removeMagazineTurret [_x, _turretPath];
-    } foreach _existingMagazines;
-
-    {
-        _x params ["_weapon","_weaponMagazines"];
-
-        {
-            _x params ["_magazine","_magazineAmmoCount"];
-
-            _vehicleObject addMagazineTurret [_magazine, _turretPath, _magazineAmmoCount];
-        } foreach _weaponMagazines;
-    } foreach _turretWeaponInfo;
-} foreach _weapons;
-
-// populate pylons
-
-private _pylons = _entity get "pylons";
-{
-    _x params ["_pylonName","_pylonMagazine","_pylonAmmo"];
-
-    _vehicleObject setPylonLoadout [_pylonName, _pylonMagazine];
-    _vehicleObject setAmmoOnPylon [_pylonName, _pylonAmmo];
-} foreach _pylons;
+[_entity] call IVCS_VirtualSpace_Vehicle_applyWeaponsToVehicleObject;
 
 _vehicleObject addEventHandler ["GetOut", IVCS_VirtualSpace_Vehicle_onUnitGetOut];
 _vehicleObject addEventHandler ["Killed", IVCS_VirtualSpace_Vehicle_onVehicleDestroyed];
-
-_entity set ["object", _vehicleObject];
 
 private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
@@ -89,4 +66,5 @@ if (_debug) then {
     _debugMarker setMarkerAlpha 0.75;
 };
 
+_entity set ["object", _vehicleObject];
 _entity set ["active", true];

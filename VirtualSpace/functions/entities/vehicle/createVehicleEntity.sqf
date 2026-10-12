@@ -15,9 +15,11 @@ private _side = [_vehicleClass] call IVCS_Common_getVehicleSide;
 private _vehicleEntity = createHashMapFromArray [
     ["timeLastUpdate", diag_tickTime],
     ["delayedInitComplete", false],
-    ["active", false],
-    ["class", _vehicleClass],
+
+    ["entityType", "vehicle"],
     ["vehicleType", _vehicleType],
+    ["class", _vehicleClass],
+    ["active", false],
     ["position", _position],
     ["side", _side],
     ["engineOn", false],
@@ -26,9 +28,10 @@ private _vehicleEntity = createHashMapFromArray [
     ["commandingEntity", ""],
     ["entitiesInCargo", []],
 
-    ["object", objNull],
     ["speedPerSecond", round (_maxSpeed * 0.15)],
-    ["hitpoints", _hitpoints apply {[configname _x, 0]}]
+    ["hitpoints", _hitpoints apply {[configname _x, 0]}],
+
+    ["object", objNull]
 ];
 
 private _seatCount = 0;
@@ -41,44 +44,15 @@ private _seatAssignments = _vehicleSeats apply {
 
     [_seatType, _seatPaths]
 };
+
 _vehicleEntity set ["seatCount", _seatCount];
 _vehicleEntity set ["seats", _seatAssignments];
 
-// get weapon info
+private _vehicleInventory = [_vehicleClass] call IVCS_Common_getContainerInventoryFromConfig;
+_vehicleEntity set ["inventory", _vehicleInventory];
 
-private _weapons = [_vehicleClass] call IVCS_Common_getVehicleWeapons;
-private _weaponsInfo = _weapons apply {
-    _x params ["_turretPath","_turretWeaponsInfo"];
-
-    _turretWeaponsInfo = _turretWeaponsInfo apply {
-        _x params ["_weapon","_weaponMagazines"];
-
-        _weaponMagazines = _weaponMagazines apply {
-            private _magazineInfo = [_x] call IVCS_Common_getMagazineInfo;
-            private _magazineAmmoCount = _magazineInfo select 1;
-            [_x, _magazineAmmoCount]
-        };
-
-        [_weapon, _weaponMagazines]
-    };
-
-    [_turretPath, _turretWeaponsInfo]
-};
-_vehicleEntity set ["weapons", _weaponsInfo];
-
-// get pylon info
-
-private _vehiclePylonInfo = [_vehicleClass] call IVCS_Common_getVehiclePylons;
-private _vehiclePylons = _vehiclePylonInfo apply {
-    private _pylonName = _x select 0;
-    private _pylonMagazine = _x select 1;
-
-    private _magazineInfo = [_pylonMagazine] call IVCS_Common_getMagazineInfo;
-    private _magazineAmmoCount = _magazineInfo select 1;
-
-    [_pylonName, _pylonMagazine, _magazineAmmoCount]
-};
-_vehicleEntity set ["pylons", _vehiclePylons];
+private _vehicleTurrets = [_vehicleClass] call IVCS_VirtualSpace_Vehicle_getTurretsLoadout;
+_vehicleEntity set ["turrets", _vehicleTurrets];
 
 // set type specific vars
 
@@ -94,8 +68,6 @@ if (_vehicleType == "uav") then {
     _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];
     _vehicleEntity set ["unregister", "IVCS_VirtualSpace_Vehicle_unregister"];
 } else {
-    _vehicleEntity set ["entityType", "vehicle"];
-
     _vehicleEntity set ["update", "IVCS_VirtualSpace_Vehicle_update"];
     _vehicleEntity set ["spawn", "IVCS_VirtualSpace_Vehicle_spawn"];
     _vehicleEntity set ["despawn", "IVCS_VirtualSpace_Vehicle_despawn"];

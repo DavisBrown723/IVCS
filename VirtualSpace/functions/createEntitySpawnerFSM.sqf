@@ -37,8 +37,8 @@ private _states = [
 
         //private _spawnRadius = 1500;
         //private _despawnRadius = 1700;
-        private _spawnRadius = 500;
-        private _despawnRadius = 700;
+        private _spawnRadius = 25;
+        private _despawnRadius = 25;
         private _nearEntities = [_spawnPosition, _despawnRadius] call IVCS_VirtualSpace_getNearEntities;
         {
             private _id = _x get "id";
@@ -97,10 +97,10 @@ private _states = [
 // conditions
 
 private _conditions = [
-    ["SpawnSourcesEmpty", { (_this get "spawnSources") isequalto [] }, {}, "FillSpawnSources"] call IVCS_FSM_createCondition,
-    ["SpawnSourcesLeft", { !((_this get "spawnSources") isequalto []) }, {}, "CheckSpawnRadius"] call IVCS_FSM_createCondition,
-    ["LoopDone", { true }, {}, "ProcessQueues"] call IVCS_FSM_createCondition,
-    ["Finished", { true }, {}, "LoopStart"] call IVCS_FSM_createCondition
+    ["SpawnSourcesEmpty", { (_this get "spawnSources") isequalto [] }, {}, "FillSpawnSources"] call IVCS_FSM_createTransition,
+    ["SpawnSourcesLeft", { !((_this get "spawnSources") isequalto []) }, {}, "CheckSpawnRadius"] call IVCS_FSM_createTransition,
+    ["LoopDone", { true }, {}, "ProcessQueues"] call IVCS_FSM_createTransition,
+    ["Finished", { true }, {}, "LoopStart"] call IVCS_FSM_createTransition
 ];
 
 

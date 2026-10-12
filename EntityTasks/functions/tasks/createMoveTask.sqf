@@ -41,7 +41,7 @@ private _destinationReachedCondition = [{
     private _moveWaypoint = [_entity,_moveWaypointID] call IVCS_VirtualSpace_getEntityWaypoint;
 
     isnil "_moveWaypoint"
-}, {}, _destinationReachedState] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _destinationReachedState] call IVCS_EntityTasks_createTaskStateTransition;
 
 
 private _entityKilledCondition = [{
@@ -49,11 +49,11 @@ private _entityKilledCondition = [{
     private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
     isnil "_entity"
-}, {}, _entityKilledState] call IVCS_EntityTasks_createTaskStateCondition;
+}, {}, _entityKilledState] call IVCS_EntityTasks_createTaskStateTransition;
 
 // build fsm
 
-[_initState, [_destinationReachedCondition, _entityKilledCondition]] call IVCS_EntityTasks_addOutgoingConditions;
+[_initState, [_destinationReachedCondition, _entityKilledCondition]] call IVCS_EntityTasks_addTransitions;
 
 
 [

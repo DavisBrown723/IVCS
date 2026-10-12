@@ -3,7 +3,7 @@ params ["_entity","_entityUnit"];
 private _vehicleAssignment = _entityUnit get "vehicleAssignment";
 _vehicleAssignment params ["_vehicleID","_seat"];
 
-_seat set [0, ""];
+_seat set [1, ""];
 _entityUnit set ["vehicleAssignment", []];
 
 // perhaps we could shuffle unit assignments

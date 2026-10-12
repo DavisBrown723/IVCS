@@ -59,7 +59,7 @@ private _conditions = [
         } foreach _assignedEntities;
 
         !_allAlive
-    }, { _this setvariable ["allAlive", false] }, "End"] call IVCS_FSM_createCondition
+    }, { _this setvariable ["allAlive", false] }, "End"] call IVCS_FSM_createTransition
 
     // ["AllEntitiesArrived", {
     //     private _moveTasks = _this getvariable "MoveTasks";
@@ -76,7 +76,7 @@ private _conditions = [
     //     _this setvariable ["MoveTasks", _moveTasks];
 
     //     _moveTasks isequalto []
-    // }, {}, "End"] call IVCS_FSM_createCondition
+    // }, {}, "End"] call IVCS_FSM_createTransition
 ];
 
 // build fsm

@@ -7,7 +7,7 @@ private _allEntities = _entities get "ALL";
 // refresh simulation queue
 
 if (_entitiesToSimulate isequalto []) then {
-    _entitiesToSimulate append ((keys _allEntities) select { !isnil {_allEntities get _x} });
+    _entitiesToSimulate append (keys _allEntities);
 };
 
 // simulate limited number of entities each frame
@@ -19,10 +19,10 @@ private _currTickTime = diag_ticktime;
 {
     private _entity = _allEntities get _x;
     if (!isnil "_entity") then {
-        private _updateFunc = missionnamespace getvariable (_entity get "update");
         private _timeLastUpdate = _entity get "timeLastUpdate";
         private _timeElapsed = (_currTickTime - _timeLastUpdate) * accTime;
 
+        private _updateFunc = missionnamespace getvariable (_entity get "update");
         [_entity, _timeElapsed] call _updateFunc;
 
         _entity set ["timeLastUpdate", _currTickTime];

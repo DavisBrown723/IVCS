@@ -1,7 +1,7 @@
 params ["_fsm"];
 
 private _fsmComplete = false;
-private _fsmStateData = _fsm get "data";
+private _fsmStateData = _fsm get "variables";
 private _fsmState = _fsm get "currentState";
 
 _fsmState params ["_stateName","_initFunc","_outgoingConditions","_isEndState","_isRepeatable","_hasExecuted"];
