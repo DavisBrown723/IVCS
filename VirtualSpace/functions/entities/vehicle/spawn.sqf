@@ -52,52 +52,10 @@ _vehicleObject engineOn _engineOn;
     _vehicleObject setHitPointDamage [_hitpoint,_damage, false];
 } foreach _entityHitpoints;
 
-// populate inventory
-
 private _inventory = _entity get "inventory";
 [_vehicleObject, _inventory] call IVCS_Common_applyContainerInventory;
 
-// populate weapon magazines
-
-private _weapons = _entity get "weapons";
-{
-    _x params ["_turretPath","_turretWeaponInfo"];
-
-    private _existingMagazines = _vehicleObject magazinesTurret _turretPath;
-    {
-        _vehicleObject removeMagazineTurret [_x, _turretPath];
-    } foreach _existingMagazines;
-
-    {
-        _x params ["_weapon","_weaponMagazines"];
-
-        {
-            _x params ["_magazine","_magazineAmmoCount"];
-
-            _vehicleObject addMagazineTurret [_magazine, _turretPath, _magazineAmmoCount];
-        } foreach _weaponMagazines;
-    } foreach _turretWeaponInfo;
-} foreach _weapons;
-
-// fill weapons
-
-private _turrets = _entity get "turrets";
-{
-    _x params ["_turretPath","_turretWeapons","_turretMagazines","_turretPylons"];
-
-    {
-        _x params ["_magazine","_ammo"];
-
-        _vehicleObject addMagazineTurret [_magazine, _turretPath, _ammo];
-    } foreach _turretMagazines;
-
-    {
-        _x params ["_pylonName","_magazine","_ammo"];
-
-        _vehicleObject setPylonLoadout [_pylonName, _magazine];
-        _vehicleObject setAmmoOnPylon [_pylonName, _ammo];
-    } foreach _turretPylons;
-} foreach _turrets;
+[_entity] call IVCS_VirtualSpace_Vehicle_applyWeaponsToVehicleObject;
 
 _vehicleObject addEventHandler ["GetOut", IVCS_VirtualSpace_Vehicle_onUnitGetOut];
 _vehicleObject addEventHandler ["Killed", IVCS_VirtualSpace_Vehicle_onVehicleDestroyed];

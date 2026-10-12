@@ -72,6 +72,8 @@ IVCS_VirtualSpace_Vehicle_getMannedTurrets = compile preprocessFileLineNumbers "
 IVCS_VirtualSpace_Vehicle_canTransportEntity = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\canTransportEntity.sqf";
 IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\updateDebugMarkerColor.sqf";
 IVCS_VirtualSpace_Vehicle_getTurretsLoadout = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\getTurretsLoadout.sqf";
+IVCS_VirtualSpace_Vehicle_applyWeaponsToVehicleObject = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\applyWeaponsToVehicleObject.sqf";
+IVCS_VirtualSpace_Vehicle_storeVehicleObjectWeapons = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\vehicle\storeVehicleObjectWeapons.sqf";
 
 //IVCS_VirtualSpace_Uav_update = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\update.sqf";
 //IVCS_VirtualSpace_Uav_spawn = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\uav\spawn.sqf";
