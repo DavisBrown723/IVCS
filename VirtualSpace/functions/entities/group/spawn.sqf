@@ -71,7 +71,7 @@ private _position = _entity get "position";
     _unit setvariable ["entityID", _entityID];
     _unit setvariable ["unitID", _x get "id"];
 
-    _unit addEventHandler ["Killed", IVCS_VirtualSpace_onUnitKilled];
+    _unit addEventHandler ["Killed", IVCS_VirtualSpace_Group_onUnitKilled];
 
     _x set ["object", _unit];
 } foreach _units;
