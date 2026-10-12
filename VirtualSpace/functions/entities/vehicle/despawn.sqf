@@ -25,45 +25,10 @@ private _hitpoints = _entity get "hitpoints";
     _x set [1, _hitpointDamage];
 } foreach _hitpoints;
 
-// store inventory
-
 private _inventory = [_vehicleObject] call IVCS_Common_getContainerInventory;
 _entity set ["inventory", _inventory];
 
-// store turret weapons info
-
-private _pylonsMagazineInfo = [_vehicleObject] call IVCS_Common_getVehiclePylonsMagazineInfo;
-
-private _turrets = _entity get "turrets";
-{
-    _x params ["_turretPath","_turretWeapons","_turretMagazines","_turretPylons"];
-
-    
-
-    {
-        _x params ["_pylonName","_magazine","_ammo"];
-
-        (_pylonsMagazineInfo get _pylonName) params ["_pylonMagazine","_pylonMagazineAmmoCount"];
-
-        _x set [1, _pylonMagazine];
-        _x set [2, _pylonMagazineAmmoCount];
-    } foreach _turretPylons;
-} foreach _turrets;
-
-// private _pylons = _entity get "pylons";
-// private _pylonMagazines = getPylonMagazines _vehicleObject; // TODO: getpylonmagazines (vehicle player)
-// {
-//     private _pylon = _pylons select _foreachindex;
-//     private _pylonName = _pylon select 0;
-
-//     private _magazineOnPylon = _x;
-//     private _magazineAmmo = _vehicleObject ammoOnPylon _pylonName;
-
-//     _pylon set [1, _magazineOnPylon];
-//     _pylon set [2, _magazineAmmo];
-// } foreach _pylonMagazines;
-
-// private _cargoMagazines = magazinesAmmoCargo _vehicleObject;
+[_entity] call IVCS_VirtualSpace_Vehicle_storeVehicleObjectWeapons;
 
 _entity set ["engineOn", isEngineOn _vehicleObject];
 
