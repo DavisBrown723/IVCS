@@ -4,7 +4,9 @@ private _unitID = _unit getvariable "unitID";
 private _entityID = _unit getvariable "entityID";
 
 private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
+if (isNil "_entity") exitWith {};
 private _entityUnit = [_entity, _unitID] call IVCS_VirtualSpace_Group_getUnit;
+if (isNil "_entityUnit" || { (_entityUnit get "object") isNotEqualTo _unit }) exitWith {};
 private _unitVehicleAssignment = _entityUnit get "vehicleAssignment";
 
 if (_unitVehicleAssignment isequalto []) exitwith {};

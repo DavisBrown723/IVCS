@@ -25,6 +25,11 @@ if (!isnil "_entity") then {
                     [_entity, _waypoint] call (compile _x);
                 } foreach _waypointStatements;
 
+                {
+                    _x params ["_arguments", "_code"];
+                    [_entity, _waypoint, _arguments] call _code;
+                } forEach (_waypoint getOrDefault ["callbacks", []]);
+
                 // remove waypoint if not cycling
 
                 private _minWaypointIndex = _entity get "minWaypointIndex";
@@ -65,9 +70,12 @@ if (!isnil "_entity") then {
                                 private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
                                 private _vehicleEntityPosition = _vehicleEntity get "position";
                                 
-                                _vehicleEntity set ["engineOn", false];
+                                _vehicleEntity set ["engineOn", (_waypoint getOrDefault ["landingType", "LAND"]) != "LAND"];
                                 _vehicleEntityPosition set [2, 0.2];
                             } foreach _vehiclesInCommandOf;
+                            private _groundPosition = +(_entity get "position");
+                            _groundPosition set [2, 0.2];
+                            [_entity, _groundPosition] call IVCS_VirtualSpace_setEntityPosition;
                         };
                     };
                 };

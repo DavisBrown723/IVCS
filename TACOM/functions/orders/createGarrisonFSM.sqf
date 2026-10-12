@@ -18,11 +18,14 @@ private _states = [
             {
                 private _entity = [_x] call IVCS_VirtualSpace_getEntity;
                 if (!isnil "_entity") then {
-                    private _entityPosition = _entity getvariable "position";
+                    private _entityPosition = _entity get "position";
 
                     if (_entityPosition distance _objectivePosition > _objectiveSize) then {
                         private _movePos = [_objectivePosition, _objectiveSize * 0.5, 1] call IVCS_Common_generateRandomPositionsInRadius;
-                        private _moveTask = [_entity, _movePos select 0] call IVCS_EntityTasks_createMoveTask;
+                        private _moveTask = ["MOVE", [
+                            ["destination", _movePos select 0],
+                            ["completionRadius", 50]
+                        ]] call IVCS_EntityTasks_createTaskInstance;
                         private _taskID = [_entity, _moveTask] call IVCS_VirtualSpace_entityAddTask;
 
                         _moveTasks pushback [_x, _taskID];

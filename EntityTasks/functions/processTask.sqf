@@ -1,39 +1,33 @@
-params ["_entity","_task"];
+params ["_entity", "_task"];
 
-private _tasks = _entity get "tasks";
-
-private _timeLastProcess = _task get "timeLastProcess";
-if (time - _timeLastProcess > 1) then {
-    private _taskStateData = _task get "data";
-    private _taskState = _task get "currentState";
-
-    _taskState params ["_initFunc","_isEndState","_isRepeatable","_hasExecuted","_outgoingConditions"];
-
-    if (!_hasExecuted) then {
-        _taskStateData call _initFunc;
-
-        if (_isEndState) then {
-            private _callback = _task get "callback";
-            private _callbackArgs = _task get "callbackArgs";
-            ([_task] + _callbackArgs) call _callback;
-            
-            _tasks deleteat 0;
-        } else {
-            _taskState set [3, true];
-        };
-    } else {
-        {
-            _x params ["_conditionFunc","_onChosenFunc","_nextState"];
-
-            if (_taskStateData call _conditionFunc) exitwith {
-                _taskStateData call _onChosenFunc;
-                _task set ["currentState", _nextState];
-            };
-        } foreach _outgoingConditions;
-        if (_isRepeatable) then {
-            _taskState set [1, false];
-        };
-    };
-
-    _task set ["timeLastProcess", time];
+if ((_task get "status") in ["completed", "failed", "cancelled"]) exitWith {};
+private _context = _task get "context";
+if ((_task get "status") == "pending") then {
+    _task set ["status", "running"];
 };
+
+private _states = (_task get "template") get "states";
+private _state = _states get (_task get "currentState");
+if !(_task get "stateEntered") then {
+    _task set ["stateEntered", true];
+    _context call (_state get "onEnter");
+};
+
+// State callbacks may cancel or replace their own task.
+if ((_task get "status") in ["completed", "failed", "cancelled"]) exitWith {};
+if (_state get "isEndState") exitWith {
+    [_entity, _task, _state get "result"] call IVCS_EntityTasks_finishTask;
+};
+
+private _nextState = _context call (_state get "onUpdate");
+if ((_task get "status") in ["completed", "failed", "cancelled"]) exitWith {};
+if (isNil "_nextState" || { _nextState isEqualTo "" }) exitWith {};
+if !(_nextState in _states) exitWith {
+    diag_log format ["IVCS EntityTasks: Unknown next state %1 in task %2", _nextState, _task get "name"];
+    [_entity, _task, "failed"] call IVCS_EntityTasks_finishTask;
+};
+
+_task set ["stateEntered", false];
+_context call (_state get "onLeaving");
+if ((_task get "status") in ["completed", "failed", "cancelled"]) exitWith {};
+_task set ["currentState", _nextState];

@@ -1,11 +1,16 @@
- params ["_entity","_entityWaypoint"];
+params ["_entity","_entityWaypoint"];
 
 private _waypoints = _entity get "waypoints";
 _waypoints pushback _entityWaypoint;
+_entityWaypoint set ["entity", _entity];
 
 private _active = _entity get "active";
 if (_active) then {
     private _group = _entity get "group";
+    if (_entity getOrDefault ["movementStopped", false]) then {
+        (units _group) doFollow (leader _group);
+        _entity set ["movementStopped", false];
+    };
 
     [_entity, _group, _entityWaypoint] call IVCS_VirtualSpace_entityWaypointToWaypoint;
 };

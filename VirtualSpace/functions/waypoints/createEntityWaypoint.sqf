@@ -1,38 +1,23 @@
-params [
-    "_position",
-    ["_type", "MOVE"],
-    ["_speed", "UNCHANGED"],
-    ["_completionRadius", -1],
-    ["_behaviour", "UNCHANGED"],
-    ["_formation", "NO CHANGE"],
-    ["_combatMode", "NO CHANGE"],
-    ["_statements", []],
-    ["_attachVehicle", ""],
-    ["_timeout", []],
-    ["_description", ""]
+// Options are named pairs. IDs, ownership, and path state belong to the runtime.
+params ["_position", ["_type", "MOVE"], ["_options", []]];
+
+private _waypoint = createHashMapFromArray [
+    ["speed", "UNCHANGED"], ["completionRadius", -1], ["behavior", "UNCHANGED"],
+    ["formation", "NO CHANGE"], ["combatMode", "NO CHANGE"],
+    ["statements", []], ["callbacks", []], ["attachedVehicle", ""],
+    ["timeout", []], ["description", ""]
 ];
+_waypoint merge [createHashMapFromArray _options, true];
+{ _waypoint set [_x, toUpper (_waypoint get _x)]; } forEach ["speed", "behavior", "formation", "combatMode"];
 
 private _waypointIDNum = IVCS_VirtualSpace_Controller get "nextWaypointId";
 IVCS_VirtualSpace_Controller set ["nextWaypointId", _waypointIDNum + 1];
-
-private _waypoint = createHashMapFromArray [
-    ["position", _position],
-    ["type", toupper _type],
-    ["speed", toupper _speed],
-    ["completionRadius", _completionRadius],
-    ["behaviour", toupper _behaviour],
-    ["formation", toupper _formation],
-    ["combatMode", toupper _combatMode],
-    ["statements", _statements],
-    ["attachedVehicle", _attachVehicle],
-    ["timeout", _timeout],
-    ["name", format ["wp_%1", _waypointIDNum]],
-    ["description", _description],
-
-    ["initialized", false],
-
-    ["movePoints", []],
-    ["pathGenerationRequestID", ""]
-];
+_waypoint set ["position", +_position];
+_waypoint set ["type", toUpper _type];
+_waypoint set ["name", format ["wp_%1", _waypointIDNum]];
+_waypoint set ["initialized", false];
+_waypoint set ["movePoints", []];
+_waypoint set ["pathGenerationRequestID", ""];
+_waypoint deleteAt "entity";
 
 _waypoint

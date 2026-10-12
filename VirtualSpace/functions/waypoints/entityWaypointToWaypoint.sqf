@@ -2,7 +2,7 @@ params ["_entity","_group","_entityWaypoint"];
 
 private _name = _entityWaypoint get "name";
 private _description = _entityWaypoint get "description";
-private _position = _entityWaypoint get "position";
+private _position = +(_entityWaypoint get "position");
 private _type = _entityWaypoint get "type";
 private _speed = _entityWaypoint get "speed";
 private _completionRadius = _entityWaypoint get "completionRadius";
@@ -19,11 +19,11 @@ private _waypoint = _group addWaypoint [_position, 0];
 _waypoint setWaypointName _name;
 _waypoint setWaypointDescription _description;
 
-if (_type == "LAND") then {
+if (_type == "LAND" && { _entityWaypoint getOrDefault ["scripted", true] }) then {
     _waypoint setWaypointType "SCRIPTED";
     _waypoint setWaypointScript "A3\functions_f\waypoints\fn_wpLand.sqf";
 } else {
-    _waypoint setWaypointType _type;
+    _waypoint setWaypointType (if (_type == "LAND") then { "MOVE" } else { _type });
 };
 
 _waypoint setWaypointSpeed _speed;

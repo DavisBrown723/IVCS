@@ -9,8 +9,10 @@ private _commandingEntityID = _entity get "commandingEntity";
 private _entitiesInCargo = _entity get "entitiesInCargo";
 {
     private _connectedEntity = [_x] call IVCS_VirtualSpace_getEntity;
-    private _despawnFunc = missionnamespace getvariable (_connectedEntity get "despawn");
-    [_connectedEntity] call _despawnFunc;
+    if (!isNil "_connectedEntity") then {
+        private _despawnFunc = missionnamespace getvariable (_connectedEntity get "despawn");
+        [_connectedEntity] call _despawnFunc;
+    };
 } foreach (_entitiesInCargo + [_commandingEntityID]);
 
 // despawn this entity

@@ -1,12 +1,14 @@
 params ["_entity","_entityWaypoint"];
 
-private _waypoints = _entity get "waypoints";\
+private _waypoints = _entity get "waypoints";
 private _WpToDeleteIndex = _waypoints find _entityWaypoint;
+if (_WpToDeleteIndex == -1) exitWith {};
 
 _waypoints deleteat _WpToDeleteIndex;
+_entityWaypoint deleteAt "entity";
 
 private _pathGenerationRequestID = _entityWaypoint get "pathGenerationRequestID";
-if (_pathGenerationRequestID != "") then {
+if (_pathGenerationRequestID != "" && { _pathGenerationRequestID != "COMPLETE" }) then {
     [_pathGenerationRequestID] call IVCS_Paths_removePathRequest;
 };
 

@@ -1,11 +1,17 @@
 params ["_entity"];
 
-// give tasks a chance to exit
-// process once to select next state
-// process again to execute next state
+// Snapshot the queue without copying instances, then detach it before callbacks.
+// The registry entry is already gone; callbacks cannot enqueue new owner work.
+private _tasks = (_entity get "tasks") select [0];
+(_entity get "tasks") resize 0;
+{
+    [_entity, _x, "failed"] call IVCS_EntityTasks_finishTask;
+} forEach _tasks;
 
-[_entity] call IVCS_EntityTasks_processTask;
-[_entity] call IVCS_EntityTasks_processTask;
+// Cancel remaining owner waypoints, including those created outside tasks.
+private _waypoints = _entity get "waypoints";
+while { _waypoints isNotEqualTo [] } do {
+    [_entity, _waypoints select 0] call IVCS_VirtualSpace_entityRemoveWaypoint;
+};
 
-private _debugMarker = _entity get "debugMarker";
-deleteMarker _debugMarker;
+deleteMarker (_entity get "debugMarker");

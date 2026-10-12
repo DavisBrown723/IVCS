@@ -1,6 +1,7 @@
 params ["_entity","_entityUnit"];
 
 private _vehicleAssignment = _entityUnit get "vehicleAssignment";
+if (_vehicleAssignment isEqualTo []) exitWith {};
 _vehicleAssignment params ["_vehicleID","_seat"];
 
 _seat set [1, ""];

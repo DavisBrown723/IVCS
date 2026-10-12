@@ -88,6 +88,7 @@ if (_active) then {
 
                     // check wp completion
 
+                    _entityPos = _entity get "position";
                     private _distToMovepoint = _entityPos distance2D _nextMovePoint;
                     if (_distToMovepoint < 5) then {
                         _movePoints deleteat 0;

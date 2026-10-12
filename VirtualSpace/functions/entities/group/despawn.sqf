@@ -22,6 +22,7 @@ private _group = _entity get "group";
 
 deleteGroup _group;
 _entity set ["group", grpNull];
+_entity set ["movementStopped", false];
 
 private _debug = IVCS_VirtualSpace_Controller get "debug";
 if (_debug) then {
@@ -31,8 +32,7 @@ if (_debug) then {
 
 private _currentWaypoint = [_entity] call IVCS_VirtualSpace_getEntityCurrentWaypoint;
 if (!isnil "_currentWaypoint") then {
-    _currentWaypoint set ["movePoints", []];
-    _currentWaypoint set ["pathGenerationStarted", false];
+    [_currentWaypoint] call IVCS_VirtualSpace_resetEntityWaypoint;
 };
 
 _entity set ["active", false];

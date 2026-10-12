@@ -14,4 +14,4 @@ _allEntities deleteat _entityID;
 // cleanup entity data
 
 private _onUnregisterFunc = _entity get "unregister";
-call (missionnamespace getvariable _onUnregisterFunc);
+[_entity] call (missionnamespace getvariable _onUnregisterFunc);

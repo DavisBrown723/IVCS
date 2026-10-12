@@ -1,1 +1,0 @@
-IVCS_EntityTasks_TaskTemplates = createhashmap;

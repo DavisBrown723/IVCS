@@ -1,0 +1,9 @@
+author="IVCS";
+onLoadName="IVCS Tasks tests";
+disabledAI=0;
+respawn=0;
+class Header {
+    gameType = "COOP";
+    minPlayers = 1;
+    maxPlayers = 1;
+};

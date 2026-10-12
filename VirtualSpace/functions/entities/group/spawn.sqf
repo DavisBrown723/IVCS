@@ -55,6 +55,7 @@ private _position = _entity get "position";
         private _vehicleObject = _vehicleEntity get "object";
         switch (true) do {
             case (_seatPath isequalto -1): {
+                _unit assignAsDriver _vehicleObject;
                 _unit moveInDriver _vehicleObject;
             };
             case (_seatPath isequaltype 0): {
