@@ -1,5 +1,6 @@
-if (isGamePaused) exitwith {};
-
+[] call IVCS_Combat_onFrame;
+[] call IVCS_Ammo_onFrame;
+if (IVCS_SimulationPaused) exitwith {};
 [] call IVCS_VirtualSpace_simulateEntities;
 
 private _spawnerFSM = IVCS_VirtualSpace_Controller get "spawnerFSM";

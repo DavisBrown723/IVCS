@@ -1,8 +1,22 @@
 params ["_entity"];
 
-private _active = _entity get "active";
-if (_active) exitwith {};
-
+// Claim spawning and flush recorded virtual time without scheduled-script interleaving.
+private _ready = false;
+isNil {
+    if (_entity get "active" || { _entity get "simulationTransition" }) exitWith {};
+    private _combatID = _entity get "combatID";
+    if (_combatID != "") then { [_entity] call IVCS_Combat_flushPending; };
+    // Preserve ordinary empty-group spawning; only a flush-deleted combatant is rejected.
+    if (_combatID != "" && { (_entity get "units") isEqualTo [] }) exitWith {};
+    [_entity] call IVCS_Ammo_cancelGroup;
+    _entity set ["simulationTransition",true];
+    _combatID = _entity get "combatID";
+    if (_combatID != "") then {
+        (((IVCS_VirtualSpace_Controller get "combat") get "engagements") get _combatID) set ["mode","spawning"];
+    };
+    _ready = true;
+};
+if (!_ready) exitWith {};
 private _units = _entity get "units";
 
 // create group
@@ -26,22 +40,57 @@ private _position = _entity get "position";
 
     private _unit = _group createUnit [_class, _position, [], 0, "NONE"];
     _unit setpos (formationPosition _unit);
-    _unit setdamage _damage;
+    private _equipment = _x get "equipment";
+    if (vest _unit != (_equipment select 0)) then {
+        removeVest _unit;
+        if ((_equipment select 0) != "") then { _unit addVest (_equipment select 0); };
+    };
+    if (headgear _unit != (_equipment select 1)) then {
+        removeHeadgear _unit;
+        if ((_equipment select 1) != "") then { _unit addHeadgear (_equipment select 1); };
+    };
+    _unit setDamage [_damage, false];
+    // Restore aggregate regions before their anatomical leaves.
+    private _profile = [_class] call IVCS_Combat_getUnitProfile;
+    private _orderedDamage = +(_x get "hitpoints");
+    _orderedDamage = _orderedDamage apply {
+        private _info = (_profile get "hitpoints") getOrDefault [toLower (_x select 0), [1, 1, "torso", "0"]];
+        [if ((_info select 3) in ["", "0"]) then { 1 } else { 0 }, _x select 0, _x select 1]
+    };
+    _orderedDamage sort true;
+    { _unit setHitPointDamage [_x select 1, _x select 2, false]; } forEach _orderedDamage;
+    // Keep an incompletely restored roster from taking untracked native damage.
+    _unit allowDamage false;
 
     removeAllWeapons _unit;
     {_unit removeMagazine _x} forEach magazines _unit;
 
+    private _spareMagazines = [];
     {
         _x params ["_weaponClass","_magazines"];
 
+        // Load one magazine before adding reserves. A launcher's loaded rocket
+        // must not temporarily require an extra slot in an already full backpack.
+        private _loadedIndices = [];
+        {
+            private _compatible = _x select 1;
+            private _index = _magazines findIf { (_x select 1) > 0 && { _compatible getOrDefault [_x select 0,false] } };
+            if (_index != -1 && { !(_index in _loadedIndices) }) then {
+                private _loaded = _magazines select _index;
+                _unit addMagazine [_loaded select 0,_loaded select 1];
+                _loadedIndices pushBack _index;
+            };
+        } forEach (([_weaponClass] call IVCS_Combat_getWeaponProfile) get "attackMuzzles");
+        _unit addWeapon _weaponClass;
         {
             _x params ["_magazineClass","_ammoCount"];
-  
-            _unit addMagazine [_magazineClass, _ammoCount];
-        } foreach _magazines;
-
-        _unit addWeapon _weaponClass;
+            if (!(_forEachIndex in _loadedIndices) && { _ammoCount > 0 }) then { _spareMagazines pushBack [_magazineClass,_ammoCount]; };
+        } forEach _magazines;
     } foreach _weapons;
+    { _unit addMagazine _x; } forEach _spareMagazines;
+
+    // Restore support ammunition and explosives without making them fireable.
+    { if ((_x select 1) > 0) then { _unit addMagazine [_x select 0, _x select 1]; }; } forEach (_x get "magazineCargo");
 
     if !(_vehicleAssignment isequalto []) then {
         _vehicleAssignment params ["_vehicleEntityID","_seat"];
@@ -93,11 +142,8 @@ deleteWaypoint [_group, 0];
 } foreach _waypoints;
 
 if (_currentWaypointIndex > 0) then {
-    // setting current waypoint sets previous waypoint as completed
-    // so lets temporarily ignore its callback to counter this
-    // since we havent set current waypoint yet, wp_0 will always be the one we ignore
-
-    _entity set ["ignoreWpCallback", "wp_0"];
+    // Native selection completes the first restored waypoint. IDs are global.
+    _entity set ["ignoreWpCallback", (_waypoints select 0) get "name"];
 
     _group setCurrentWaypoint [_group, _currentWaypointIndex];
 };
@@ -108,9 +154,12 @@ if (_debug) then {
     _debugMarker setMarkerAlpha 0.75;
 };
 
-private _any = _waypoints findif { (_x get "pathGenerationRequestID") != "" };
-if (_any != -1) then {
-    hint "WE GOT ONE";
+_entity set ["simulationTransition", false];
+[_entity, true] call IVCS_VirtualSpace_setEntityActive;
+{ (_x get "object") allowDamage true; } forEach _units;
+if ((_entity get "combatID") != "") then { [_entity] call IVCS_Combat_onSpawn; } else {
+    {
+        private _v=[_x] call IVCS_VirtualSpace_getEntity;
+        if ((_v get "vehicleType")=="helicopter") then {private _object=_v get "object";_object setDir (_v get "flightHeading");_object setVelocity (_v get "flightVelocity");_v set ["flightRestorePending",false]};
+    } forEach (_entity get "vehiclesInCommandOf");
 };
-
-_entity set ["active", true];

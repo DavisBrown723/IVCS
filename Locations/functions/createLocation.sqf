@@ -7,6 +7,10 @@ params ["_type","_position","_size"];
     power
     airfield
     base
+    radiotower
+    port
+    factory
+    hospital
 */
 
 private _location = createHashMapFromArray [

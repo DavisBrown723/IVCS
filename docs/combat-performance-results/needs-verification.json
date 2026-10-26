@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-13",
+  "suites": [
+    {
+      "name": "needs-scan",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d89f18ddb9af4ae08948757daa53c56c\\profile\\arma3server_x64_2026-10-13_14-09-44.rpt",
+      "passed": 28,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "sharing-work",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-4ca93b067bf243e7bee88cafc95ae85c\\profile\\arma3server_x64_2026-10-13_14-10-18.rpt",
+      "passed": 197,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "resumable-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b25dfafb07ee42498b61b686b8d3a145\\profile\\arma3server_x64_2026-10-13_14-10-42.rpt",
+      "passed": 21,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "ammo-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e6f989b78a674cf5a54367ac7b438338\\profile\\arma3server_x64_2026-10-13_14-11-05.rpt",
+      "passed": 45,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "arrival-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-c044224d36894a05a79f34e5c7c0f2c2\\profile\\arma3server_x64_2026-10-13_14-11-48.rpt",
+      "passed": 59,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "scheduling",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-9757d8ed4bc84bba84b427e4131e55c9\\profile\\arma3server_x64_2026-10-13_14-12-09.rpt",
+      "passed": 12,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "run",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ce555f79e42f40248517477f60357273\\profile\\arma3server_x64_2026-10-13_14-12-33.rpt",
+      "passed": 71,
+      "failed": 0,
+      "script_errors": false
+    }
+  ],
+  "passed": 433,
+  "failed": 0,
+  "seeded_outcomes_identical": true,
+  "golden_rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-90d63cc765d048438b816294cd584fc5\\profile\\arma3server_x64_2026-10-13_13-18-05.rpt",
+  "seeded_outcomes": {
+    "1": [
+      176.5,
+      1040,
+      58,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "2": [
+      110.5,
+      701,
+      40,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "3": [
+      178.5,
+      774,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "4": [
+      176.5,
+      801,
+      49,
+      11,
+      0,
+      5,
+      "finished"
+    ],
+    "5": [
+      134.5,
+      754,
+      44,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "6": [
+      202.5,
+      987,
+      54,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "7": [
+      140.5,
+      777,
+      44,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "8": [
+      242.5,
+      1327,
+      60,
+      12,
+      0,
+      4,
+      "finished"
+    ],
+    "9": [
+      132,
+      705,
+      46,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "10": [
+      176.5,
+      779,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "11": [
+      202.5,
+      1192,
+      57,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "12": [
+      161.5,
+      876,
+      48,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "13": [
+      132,
+      748,
+      44,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "14": [
+      202.5,
+      1142,
+      60,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "15": [
+      155.5,
+      770,
+      36,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "16": [
+      112.5,
+      743,
+      45,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "17": [
+      116.5,
+      717,
+      38,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "18": [
+      298,
+      1379,
+      61,
+      13,
+      3,
+      0,
+      "finished"
+    ],
+    "19": [
+      215,
+      1178,
+      62,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "20": [
+      142.5,
+      871,
+      51,
+      8,
+      0,
+      8,
+      "finished"
+    ]
+  },
+  "mean_engagement_seconds": 170.45,
+  "profiled_sources_match_final": true,
+  "source_hashes_sha256": {
+    "VirtualSpace/functions/ammo/updateGroup.sqf": "897760e631debd7d26f1825d6a83e89d905f4ba834665bc7c7547da5d301a1bc",
+    "VirtualSpace/functions/ammo/advanceSearch.sqf": "2d4b6047a79ca3a888c00c2f684819e9c09b5a50ff5df15bac6ede50135f5c9e",
+    "VirtualSpace/functions/ammo/getNeededWeapons.sqf": "fb7c23de268c3b18fd118b089ee21c5fb41700f7896f6c38b8f43f3b36a68174",
+    "VirtualSpace/functions/ammo/scanNeeds.sqf": "4abafaa6302ebdf1ece703fedfb0f19d953a063441de960523e7461ebd50828b",
+    "VirtualSpace/functions/ammo/createSettings.sqf": "d385f90b309a57231907fd5aa4f36ede730f29d80b1cc5c8a54638ea2a9e755f",
+    "VirtualSpace/ammoFunctions.sqf": "2f13e268591886b7b113594c4b6d667fd067d46411e95752dc953653e45bd725",
+    "tests/combat/context-scopes.sqf": "463ab6480a9be95e730c99f90e8fe652cc9e220db4ed73f85db55adec8e488a7",
+    "tests/combat/operation-scopes.sqf": "b4af4b7cdd52f083eba9a9c44c7aa19defe050ba97c824c890ebfded16fd0b7a",
+    "tests/combat/needs-scan.sqf": "fff27a6aa5157a03b073962ff666d81722cdf612482b4ccb679495aae9c5d134",
+    "tests/combat/resumable-sharing.sqf": "8de9426c070964b9d62ddb2f35c05fcdf013a0709a492cbce9edf9d61cd7e782",
+    "tests/combat/needs-performance.ps1": "1b01448db7f8ddb853fb728373a52fc0791446901f5d78be85f7a51a6066e342",
+    "tests/combat/sharing-performance.ps1": "4c9463098afaafc614816cb2dfc03d9f10e66a5fb69084986f16520d250a4ed6"
+  },
+  "baseline_directory": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\needs-before-20261013",
+  "baseline_hashes_sha256": {
+    "advanceSearch.sqf": "275e4f45dd40ca8b0638c021fb202e8ab4cfac04b91938d7c0f117947d3fcf1b",
+    "ammoFunctions.sqf": "f8ca6c70f2ce2ef069cf905988e3c3f9924a0682bb86a341cf037f7356325be8",
+    "approach.sqf": "2b48348be5a47292e6eb63057db14e4156637d0bcfc4d2007c34410a228e6f5c",
+    "cancelGroup.sqf": "abef4bc30d93c5e0a6b8a73ff8015c508f38623ce6ae73c74aeb7d09bb448830",
+    "createRequest.sqf": "6303dbfa0b072c3ebaa4de3c69cec6aac366367922613b05836296d8d397da14",
+    "createSettings.sqf": "27e75091479cd582a7b3d61f883d1ace1444d88c1e06d54aaaf8f434f7e348a2",
+    "getNeededWeapons.sqf": "e87dc6e47974a11a9a57285d2adb93ebb38e74e064efd87d29fddb5e91b77fe3",
+    "getReservedMagazine.sqf": "530b2191f7e24760702fcd07dc08e0de9e3c950982af249ce73125a32fa92603",
+    "getWeaponProfile.sqf": "c36901983a68d8a57b52aa9a0005aa4185deb9b95d4c5b870bfc4f3c02fc59bc",
+    "isEligible.sqf": "1e37233a05ddd6cfdf1bc91b16172d7c766c7a1a25ab61ca1cdcaa0334aebde1",
+    "onFrame.sqf": "bd9cb3ccc3cb1d9048faaca2d84d00d0e53d9352d085bc5cf7e8e2465a280b26",
+    "releaseRequest.sqf": "eb17698fb1680df322647ba6cf3af5a71474a6ace49b8bbdfff7f80cf2c90ab9",
+    "reloadRequest.sqf": "7b306323262015999d01c8f81f2dbc85bd235e182c00a0cb0ef65d771228ed06",
+    "sameToken.sqf": "aa74d76b40d0b983f4ed96db3ef5414dd92f6ccb5feb86f493cbbe68b92f5629",
+    "searchOnFrame.sqf": "d70f899e49ae6a9d97c5a3e28cdda15541cc29800bcfe9e5fc7b92166c91eb16",
+    "snapshot.sqf": "e0dd66479ee9f04c77a69d364bec706112f79eec515a627e105aa20f8659469b",
+    "surplus.sqf": "ac43e8bb5669dc0ddb08b4664145846aeecd9383967125d7ac6c73be29be6545",
+    "transfer.sqf": "83383ab886f94c7bebbdaea31e91102e3b1b3280701a8c148fe22698a7e03777",
+    "updateGroup.sqf": "5a993f4d8cbfcad1c8105f85ced33002b648eebc7f9a7433603fdb00a47a184d",
+    "updateRequests.sqf": "680573a8c038a648a242950bdc258500ae06edc1b3a494dc59da04aff787afd2"
+  },
+  "budgets_unchanged": {
+    "combat_ms": 3,
+    "search_ms": 1,
+    "donors_per_slice": 2,
+    "searches_per_frame": 8,
+    "engagements_per_frame": 8,
+    "scan_interval_seconds": 1
+  },
+  "new_work_chunk": {
+    "needs_units_per_slice": 4,
+    "synchronous_limit": -1
+  },
+  "capture_save_verified": {
+    "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-140255-36fa277d.tracy",
+    "bytes": 3770644,
+    "stderr_empty": true,
+    "saved_complete": true
+  },
+  "workload_checks": {
+    "normal_unprofiled": 20,
+    "pressure_unprofiled": 48,
+    "normal_profiled": 20
+  },
+  "review": [
+    "Shallow roster slicing preserves unit HashMap identity; inventories are never copied or cached.",
+    "Eligibility gates only shortage candidates; ineligible inventories may be read but no movement or transfer is issued.",
+    "Recipient membership, eligibility, need, compatible weapon, donor reserve and token freshness are revalidated before reservation/transfer.",
+    "Queued validation, scan and donor work are atomic per visit.",
+    "Current roster supplies stable recipient/donor ordering; removed actors are dropped and new actors enter the next needs cycle.",
+    "Primary priority and duplicate-primary behavior match baseline; native cache misses still resolve new classes.",
+    "Needs and donor profile blocks remain disjoint; discovery wrapper is inclusive.",
+    "Required cold-cache and queue-membership checks retained; no production assertion guards added.",
+    "All changed SQF uses CRLF."
+  ],
+  "rejected_or_corrected": [
+    "Prototype cloned HashMaps using unary +; replaced with shallow native array slicing.",
+    "An index variable was incorrectly used in apply; replaced with forEach indexing.",
+    "Initial split duplicated discovery adapter work and donor-state allocations for supplied groups; initial work now uses group validation and initializes donor state only for shortages.",
+    "Supplied eligibility calls and index-based traversal were replaced with shortage eligibility and sliced forEach traversal."
+  ],
+  "tradeoffs": [
+    "Complete synchronous stock supplied scan mean is 0.19469 ms before and 0.20531 ms after (+5.5%).",
+    "Mod-free normal 20-group mean increases 0.68672 to 0.74212 ms; coarse p99 remains about 4ms.",
+    "Precise scoped normal 20-group p99 falls 5.05061 to 4.45808 ms, with two matched windows per version.",
+    "Roster additions enter the next scan cycle; observed shortage candidates are revalidated before committing."
+  ],
+  "context_smoke_test": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-6c5979a5db46477394e7f0639ed999b5\\profile\\arma3server_x64_2026-10-13_14-16-33.rpt",
+    "passed": 5,
+    "failed": 0,
+    "method": "Existing 20-group ContextScopes/OperationScopes benchmark, 5-second window; transformed helpers compile and execute successfully."
+  }
+}

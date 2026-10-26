@@ -1,0 +1,1645 @@
+{
+  "beforeLocations": 278,
+  "afterLocations": 268,
+  "beforeTypes": {
+    "town": 108,
+    "base": 43,
+    "radiotower": 14,
+    "power": 55,
+    "port": 19,
+    "fuel": 9,
+    "factory": 29,
+    "hospital": 1
+  },
+  "afterTypes": {
+    "town": 109,
+    "base": 42,
+    "radiotower": 14,
+    "power": 52,
+    "port": 18,
+    "fuel": 8,
+    "factory": 24,
+    "hospital": 1
+  },
+  "changedSemanticLocationIds": [
+    "altis_power_0",
+    "altis_power_136",
+    "altis_power_207",
+    "altis_power_386",
+    "altis_power_1076",
+    "altis_power_1155",
+    "altis_airfield_169",
+    "altis_factory_1",
+    "altis_factory_26",
+    "altis_factory_73",
+    "altis_factory_123",
+    "altis_factory_190",
+    "altis_factory_452",
+    "altis_factory_470",
+    "altis_factory_477",
+    "altis_factory_506"
+  ],
+  "removedLocationIds": [
+    "altis_base_229",
+    "altis_base_313",
+    "altis_base_90",
+    "altis_factory_138",
+    "altis_factory_228",
+    "altis_factory_355",
+    "altis_factory_428",
+    "altis_factory_485",
+    "altis_factory_7",
+    "altis_fuel_76",
+    "altis_port_252",
+    "altis_power_1116",
+    "altis_power_1153",
+    "altis_power_33",
+    "altis_power_93"
+  ],
+  "addedLocationIds": [
+    "altis_base_146",
+    "altis_base_152",
+    "altis_factory_438",
+    "altis_power_39",
+    "altis_town_4"
+  ],
+  "preservedPreviousPrimaryComponents": 278,
+  "changes": [
+    {
+      "previousId": "altis_base_90",
+      "previousType": "base",
+      "previousObjects": 76.0,
+      "currentId": "altis_airfield_169",
+      "currentType": "base",
+      "currentObjects": 1602.0,
+      "area": "airbase",
+      "status": "absorbed",
+      "previousRoles": [
+        "air",
+        "base",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "currentRoles": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "position": [
+        14711.72851562,
+        16462.00390625,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_base_90": "altis_airfield_169",
+        "altis_power_358": "altis_airfield_169",
+        "altis_radiotower_24": "altis_airfield_169"
+      }
+    },
+    {
+      "previousId": "altis_base_229",
+      "previousType": "base",
+      "previousObjects": 69.0,
+      "currentId": "altis_factory_438",
+      "currentType": "factory",
+      "currentObjects": 69.0,
+      "area": "Pyrgos",
+      "status": "absorbed",
+      "previousRoles": [
+        "base",
+        "factory",
+        "heli",
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "heli",
+        "power",
+        "town"
+      ],
+      "position": [
+        17402.4765625,
+        13183.34082031,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_base_229": "altis_factory_438",
+        "altis_factory_438": "altis_factory_438",
+        "altis_power_1114": "altis_factory_438"
+      }
+    },
+    {
+      "previousId": "altis_base_313",
+      "previousType": "base",
+      "previousObjects": 36.0,
+      "currentId": "altis_factory_506",
+      "currentType": "factory",
+      "currentObjects": 105.0,
+      "area": "Agios Georgios",
+      "status": "absorbed",
+      "previousRoles": [
+        "base",
+        "power",
+        "radiotower"
+      ],
+      "currentRoles": [
+        "factory",
+        "port",
+        "power",
+        "radiotower",
+        "town"
+      ],
+      "position": [
+        20851.05078125,
+        19367.1328125,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_base_313": "altis_factory_506",
+        "altis_power_1378": "altis_factory_506",
+        "altis_radiotower_43": "altis_factory_506"
+      }
+    },
+    {
+      "previousId": "altis_power_0",
+      "previousType": "power",
+      "previousObjects": 39.0,
+      "currentId": "altis_power_0",
+      "currentType": "power",
+      "currentObjects": 32.0,
+      "area": "Fotia",
+      "status": "changed",
+      "previousRoles": [
+        "power",
+        "town"
+      ],
+      "currentRoles": [
+        "power"
+      ],
+      "position": [
+        3006.99316406,
+        18425.0,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_0": "altis_power_0",
+        "altis_town_4": "altis_town_4"
+      }
+    },
+    {
+      "previousId": "altis_power_33",
+      "previousType": "power",
+      "previousObjects": 2.0,
+      "currentId": "altis_factory_1",
+      "currentType": "factory",
+      "currentObjects": 8.0,
+      "area": "Kavala Pier",
+      "status": "absorbed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        3279.9987793,
+        12439.03710938,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_33": "altis_factory_1"
+      }
+    },
+    {
+      "previousId": "altis_power_93",
+      "previousType": "power",
+      "previousObjects": 21.0,
+      "currentId": "altis_factory_73",
+      "currentType": "factory",
+      "currentObjects": 61.0,
+      "area": "factory",
+      "status": "absorbed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power",
+        "town"
+      ],
+      "position": [
+        6231.75244141,
+        16247.55078125,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_93": "altis_factory_73"
+      }
+    },
+    {
+      "previousId": "altis_power_136",
+      "previousType": "power",
+      "previousObjects": 48.0,
+      "currentId": "altis_power_136",
+      "currentType": "power",
+      "currentObjects": 85.0,
+      "area": "Edessa",
+      "status": "changed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        8214.57519531,
+        10916.60546875,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_136": "altis_power_136"
+      }
+    },
+    {
+      "previousId": "altis_power_207",
+      "previousType": "power",
+      "previousObjects": 5.0,
+      "currentId": "altis_power_207",
+      "currentType": "power",
+      "currentObjects": 9.0,
+      "area": "Alikampos",
+      "status": "changed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        10248.05566406,
+        14829.91113281,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_207": "altis_power_207"
+      }
+    },
+    {
+      "previousId": "altis_power_386",
+      "previousType": "power",
+      "previousObjects": 685.0,
+      "currentId": "altis_power_386",
+      "currentType": "power",
+      "currentObjects": 632.0,
+      "area": "power plant",
+      "status": "changed",
+      "previousRoles": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radiotower"
+      ],
+      "currentRoles": [
+        "air",
+        "factory",
+        "power"
+      ],
+      "position": [
+        15461.0078125,
+        16317.79199219,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_base_146": "altis_base_146",
+        "altis_base_152": "altis_base_152",
+        "altis_factory_367": "altis_power_386",
+        "altis_factory_403": "altis_power_386",
+        "altis_power_386": "altis_power_386",
+        "altis_radiotower_26": "altis_base_146"
+      }
+    },
+    {
+      "previousId": "altis_power_1076",
+      "previousType": "power",
+      "previousObjects": 6.0,
+      "currentId": "altis_power_1076",
+      "currentType": "power",
+      "currentObjects": 20.0,
+      "area": "Anthrakia",
+      "status": "changed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "fuel",
+        "power"
+      ],
+      "position": [
+        16945.08203125,
+        15355.234375,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_1076": "altis_power_1076"
+      }
+    },
+    {
+      "previousId": "altis_power_1116",
+      "previousType": "power",
+      "previousObjects": 2.0,
+      "currentId": "altis_factory_452",
+      "currentType": "factory",
+      "currentObjects": 12.0,
+      "area": "storage",
+      "status": "absorbed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        18299.03515625,
+        15557.89257812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_1116": "altis_factory_452"
+      }
+    },
+    {
+      "previousId": "altis_power_1153",
+      "previousType": "power",
+      "previousObjects": 2.0,
+      "currentId": "altis_factory_477",
+      "currentType": "factory",
+      "currentObjects": 6.0,
+      "area": "Panagia",
+      "status": "absorbed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        20271.58203125,
+        8803.79882812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_1153": "altis_factory_477"
+      }
+    },
+    {
+      "previousId": "altis_power_1155",
+      "previousType": "power",
+      "previousObjects": 207.0,
+      "currentId": "altis_power_1155",
+      "currentType": "power",
+      "currentObjects": 245.0,
+      "area": "Kalochori",
+      "status": "changed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        20668.88476562,
+        15749.46484375,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_1155": "altis_power_1155"
+      }
+    },
+    {
+      "previousId": "altis_port_252",
+      "previousType": "port",
+      "previousObjects": 37.0,
+      "currentId": "altis_base_146",
+      "currentType": "base",
+      "currentObjects": 47.0,
+      "area": "power plant",
+      "status": "absorbed",
+      "previousRoles": [
+        "port"
+      ],
+      "currentRoles": [
+        "base",
+        "port",
+        "radiotower"
+      ],
+      "position": [
+        15402.98730469,
+        15813.14746094,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_port_252": "altis_base_146"
+      }
+    },
+    {
+      "previousId": "altis_airfield_169",
+      "previousType": "base",
+      "previousObjects": 1580.0,
+      "currentId": "altis_airfield_169",
+      "currentType": "base",
+      "currentObjects": 1602.0,
+      "area": "Terminal",
+      "status": "changed",
+      "previousRoles": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar"
+      ],
+      "currentRoles": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "position": [
+        14711.72851562,
+        16462.00390625,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_airfield_169": "altis_airfield_169",
+        "altis_base_129": "altis_airfield_169",
+        "altis_factory_306": "altis_airfield_169",
+        "altis_factory_350": "altis_airfield_169",
+        "altis_power_359": "altis_airfield_169",
+        "altis_power_366": "altis_airfield_169",
+        "altis_power_369": "altis_airfield_169",
+        "altis_power_372": "altis_airfield_169",
+        "altis_power_373": "altis_airfield_169",
+        "altis_power_374": "altis_airfield_169"
+      }
+    },
+    {
+      "previousId": "altis_fuel_76",
+      "previousType": "fuel",
+      "previousObjects": 7.0,
+      "currentId": "altis_power_1076",
+      "currentType": "power",
+      "currentObjects": 20.0,
+      "area": "Anthrakia",
+      "status": "absorbed",
+      "previousRoles": [
+        "fuel"
+      ],
+      "currentRoles": [
+        "factory",
+        "fuel",
+        "power"
+      ],
+      "position": [
+        16945.08203125,
+        15355.234375,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_fuel_76": "altis_power_1076"
+      }
+    },
+    {
+      "previousId": "altis_factory_1",
+      "previousType": "factory",
+      "previousObjects": 6.0,
+      "currentId": "altis_factory_1",
+      "currentType": "factory",
+      "currentObjects": 8.0,
+      "area": "Kavala Pier",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        3279.9987793,
+        12439.03710938,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_1": "altis_factory_1"
+      }
+    },
+    {
+      "previousId": "altis_factory_7",
+      "previousType": "factory",
+      "previousObjects": 13.0,
+      "currentId": "altis_power_39",
+      "currentType": "power",
+      "currentObjects": 13.0,
+      "area": "quarry",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory",
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        3806.65161133,
+        12384.078125,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_7": "altis_power_39",
+        "altis_power_39": "altis_power_39"
+      }
+    },
+    {
+      "previousId": "altis_factory_26",
+      "previousType": "factory",
+      "previousObjects": 5.0,
+      "currentId": "altis_factory_26",
+      "currentType": "factory",
+      "currentObjects": 6.0,
+      "area": "quarry",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        4203.94824219,
+        12833.56640625,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_26": "altis_factory_26"
+      }
+    },
+    {
+      "previousId": "altis_factory_73",
+      "previousType": "factory",
+      "previousObjects": 40.0,
+      "currentId": "altis_factory_73",
+      "currentType": "factory",
+      "currentObjects": 61.0,
+      "area": "factory",
+      "status": "changed",
+      "previousRoles": [
+        "factory",
+        "town"
+      ],
+      "currentRoles": [
+        "factory",
+        "power",
+        "town"
+      ],
+      "position": [
+        6231.75244141,
+        16247.55078125,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_base_22": "altis_factory_73",
+        "altis_factory_73": "altis_factory_73"
+      }
+    },
+    {
+      "previousId": "altis_factory_123",
+      "previousType": "factory",
+      "previousObjects": 4.0,
+      "currentId": "altis_factory_123",
+      "currentType": "factory",
+      "currentObjects": 5.0,
+      "area": "Topolia",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        6836.46826172,
+        15818.06152344,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_123": "altis_factory_123"
+      }
+    },
+    {
+      "previousId": "altis_factory_138",
+      "previousType": "factory",
+      "previousObjects": 37.0,
+      "currentId": "altis_power_136",
+      "currentType": "power",
+      "currentObjects": 85.0,
+      "area": "Edessa",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        8214.57519531,
+        10916.60546875,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_138": "altis_power_136"
+      }
+    },
+    {
+      "previousId": "altis_factory_190",
+      "previousType": "factory",
+      "previousObjects": 3.0,
+      "currentId": "altis_factory_190",
+      "currentType": "factory",
+      "currentObjects": 4.0,
+      "area": "Agios Dionysios",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        9224.41992188,
+        16012.0,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_190": "altis_factory_190"
+      }
+    },
+    {
+      "previousId": "altis_factory_228",
+      "previousType": "factory",
+      "previousObjects": 4.0,
+      "currentId": "altis_power_207",
+      "currentType": "power",
+      "currentObjects": 9.0,
+      "area": "Alikampos",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        10248.05566406,
+        14829.91113281,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_228": "altis_power_207"
+      }
+    },
+    {
+      "previousId": "altis_factory_355",
+      "previousType": "factory",
+      "previousObjects": 40.0,
+      "currentId": "altis_power_386",
+      "currentType": "power",
+      "currentObjects": 632.0,
+      "area": "power plant",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "air",
+        "factory",
+        "power"
+      ],
+      "position": [
+        15461.0078125,
+        16317.79199219,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_355": "altis_power_386"
+      }
+    },
+    {
+      "previousId": "altis_factory_428",
+      "previousType": "factory",
+      "previousObjects": 7.0,
+      "currentId": "altis_power_1076",
+      "currentType": "power",
+      "currentObjects": 20.0,
+      "area": "Anthrakia",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "fuel",
+        "power"
+      ],
+      "position": [
+        16945.08203125,
+        15355.234375,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_428": "altis_power_1076"
+      }
+    },
+    {
+      "previousId": "altis_factory_452",
+      "previousType": "factory",
+      "previousObjects": 9.0,
+      "currentId": "altis_factory_452",
+      "currentType": "factory",
+      "currentObjects": 12.0,
+      "area": "storage",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        18299.03515625,
+        15557.89257812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_452": "altis_factory_452"
+      }
+    },
+    {
+      "previousId": "altis_factory_470",
+      "previousType": "factory",
+      "previousObjects": 5.0,
+      "currentId": "altis_factory_470",
+      "currentType": "factory",
+      "currentObjects": 6.0,
+      "area": "Rodopoli",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        19318.70117188,
+        16529.90039062,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_470": "altis_factory_470"
+      }
+    },
+    {
+      "previousId": "altis_factory_477",
+      "previousType": "factory",
+      "previousObjects": 4.0,
+      "currentId": "altis_factory_477",
+      "currentType": "factory",
+      "currentObjects": 6.0,
+      "area": "Panagia",
+      "status": "changed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        20271.58203125,
+        8803.79882812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_477": "altis_factory_477"
+      }
+    },
+    {
+      "previousId": "altis_factory_485",
+      "previousType": "factory",
+      "previousObjects": 38.0,
+      "currentId": "altis_power_1155",
+      "currentType": "power",
+      "currentObjects": 245.0,
+      "area": "Kalochori",
+      "status": "absorbed",
+      "previousRoles": [
+        "factory"
+      ],
+      "currentRoles": [
+        "factory",
+        "power"
+      ],
+      "position": [
+        20668.88476562,
+        15749.46484375,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_485": "altis_power_1155"
+      }
+    },
+    {
+      "previousId": "altis_factory_506",
+      "previousType": "factory",
+      "previousObjects": 69.0,
+      "currentId": "altis_factory_506",
+      "currentType": "factory",
+      "currentObjects": 105.0,
+      "area": "Agios Georgios",
+      "status": "changed",
+      "previousRoles": [
+        "factory",
+        "port",
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "port",
+        "power",
+        "radiotower",
+        "town"
+      ],
+      "position": [
+        20851.05078125,
+        19367.1328125,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_506": "altis_factory_506",
+        "altis_port_426": "altis_factory_506",
+        "altis_power_1279": "altis_factory_506"
+      }
+    }
+  ],
+  "newSites": [
+    {
+      "id": "altis_town_4",
+      "type": "town",
+      "objects": 7.0,
+      "position": [
+        3009.88427734,
+        18502.515625,
+        0.0
+      ],
+      "area": "Fotia",
+      "previousOwner": "altis_power_0"
+    },
+    {
+      "id": "altis_base_146",
+      "type": "base",
+      "objects": 47.0,
+      "position": [
+        15402.98730469,
+        15813.14746094,
+        0.0
+      ],
+      "area": "power plant",
+      "previousOwner": "altis_power_386"
+    },
+    {
+      "id": "altis_base_152",
+      "type": "base",
+      "objects": 2.0,
+      "position": [
+        15352.15039062,
+        16214.34960938,
+        0.0
+      ],
+      "area": "power plant",
+      "previousOwner": "altis_power_386"
+    },
+    {
+      "id": "altis_power_39",
+      "type": "power",
+      "objects": 13.0,
+      "position": [
+        3806.65161133,
+        12384.078125,
+        0.0
+      ],
+      "area": "quarry",
+      "previousOwner": "altis_factory_7"
+    },
+    {
+      "id": "altis_factory_438",
+      "type": "factory",
+      "objects": 69.0,
+      "position": [
+        17402.4765625,
+        13183.34082031,
+        0.0
+      ],
+      "area": "Pyrgos",
+      "previousOwner": "altis_base_229"
+    }
+  ],
+  "airport": {
+    "before": {
+      "components": [
+        [
+          "altis_airfield_169",
+          "airfield",
+          1547.0
+        ],
+        [
+          "altis_base_129",
+          "base",
+          2.0
+        ],
+        [
+          "altis_factory_306",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_factory_350",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_power_359",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_366",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_369",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_372",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_373",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_374",
+          "power",
+          13.0
+        ]
+      ],
+      "footprint": [
+        "rectangle",
+        [
+          14647.68945312,
+          16551.49804688,
+          0.0
+        ],
+        [
+          385.31866455,
+          1065.75463867
+        ],
+        43.11985016
+      ],
+      "id": "altis_airfield_169",
+      "indexVariant": "adaptive-footprints-settlement-ports-v2",
+      "indexVersion": 7.0,
+      "militaryBuildingCounts": [
+        [
+          "barracks",
+          1.0
+        ],
+        [
+          "fortification",
+          0.0
+        ]
+      ],
+      "militaryBuildings": [
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14906.79980469,
+            17159.40039062,
+            0.0
+          ]
+        ]
+      ],
+      "models": [
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_curve_f.p3d",
+          31.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_square_f.p3d",
+          497.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_triangle_f.p3d",
+          12.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_green_f.p3d",
+          262.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_red_f.p3d",
+          84.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_yellow_f.p3d",
+          50.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight.p3d",
+          156.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight_3_f.p3d",
+          24.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight.p3d",
+          133.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight_blue_f.p3d",
+          267.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_2.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_3.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_4.p3d",
+          4.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_center_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_left_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_right_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_tower_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\hangar_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smallfactory_f.p3d",
+          4.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smalltank_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_transformer_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_big_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_small_f.p3d",
+          7.0
+        ],
+        [
+          "a3\\structures_f\\ind\\solarpowerplant\\spp_transformer_f.p3d",
+          12.0
+        ],
+        [
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\radar\\radar_small_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\tenthangar\\tenthangar_v1_f.p3d",
+          7.0
+        ]
+      ],
+      "objectCount": 1580.0,
+      "position": [
+        14718.07226562,
+        16463.9453125,
+        0.0
+      ],
+      "reviewed": false,
+      "size": 1190.08666992,
+      "source": "terrain-index",
+      "type": "base",
+      "typeCounts": [
+        [
+          "air",
+          1547.0
+        ],
+        [
+          "base",
+          1548.0
+        ],
+        [
+          "factory",
+          10.0
+        ],
+        [
+          "power",
+          20.0
+        ],
+        [
+          "radar",
+          2.0
+        ]
+      ],
+      "types": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar"
+      ],
+      "world": "Altis"
+    },
+    "after": {
+      "components": [
+        [
+          "altis_airfield_169",
+          "airfield",
+          1547.0
+        ],
+        [
+          "altis_base_129",
+          "base",
+          2.0
+        ],
+        [
+          "altis_base_90",
+          "base",
+          22.0
+        ],
+        [
+          "altis_factory_306",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_factory_350",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_power_358",
+          "power",
+          6.0
+        ],
+        [
+          "altis_power_359",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_366",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_369",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_372",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_373",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_374",
+          "power",
+          13.0
+        ],
+        [
+          "altis_radiotower_24",
+          "radiotower",
+          1.0
+        ]
+      ],
+      "footprint": [
+        "rectangle",
+        [
+          14647.68945312,
+          16551.5,
+          0.0
+        ],
+        [
+          385.31866455,
+          1065.75463867
+        ],
+        43.11985016
+      ],
+      "id": "altis_airfield_169",
+      "indexVariant": "spatial-compounds-v3",
+      "indexVersion": 8.0,
+      "militaryBuildingCounts": [
+        [
+          "barracks",
+          12.0
+        ],
+        [
+          "fortification",
+          2.0
+        ]
+      ],
+      "militaryBuildings": [
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14126.5,
+            16249.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14130.70019531,
+            16261.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14136.09960938,
+            16274.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14137.40039062,
+            16251.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.40039062,
+            16262.70019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.59960938,
+            16286.40039062,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14157.70019531,
+            16305.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14179.20019531,
+            16325.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14183.90039062,
+            16226.29980469,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14190.59960938,
+            16240.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14198.5,
+            16256.5,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14199.79980469,
+            16397.40039062,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14485.79980469,
+            16331.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14906.79980469,
+            17159.40039062,
+            0.0
+          ]
+        ]
+      ],
+      "models": [
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_curve_f.p3d",
+          31.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_square_f.p3d",
+          497.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_triangle_f.p3d",
+          12.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_green_f.p3d",
+          262.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_red_f.p3d",
+          84.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_yellow_f.p3d",
+          50.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight.p3d",
+          156.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight_3_f.p3d",
+          24.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight.p3d",
+          133.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight_blue_f.p3d",
+          267.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_2.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_3.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_4.p3d",
+          4.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_center_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_left_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_right_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_tower_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\hangar_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smallfactory_f.p3d",
+          5.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smalltank_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_transformer_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_big_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_small_f.p3d",
+          7.0
+        ],
+        [
+          "a3\\structures_f\\ind\\solarpowerplant\\spp_transformer_f.p3d",
+          16.0
+        ],
+        [
+          "a3\\structures_f\\ind\\transmitter_tower\\communication_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          10.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_hq_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\offices\\miloffices_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\radar\\radar_small_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\tenthangar\\tenthangar_v1_f.p3d",
+          7.0
+        ]
+      ],
+      "objectCount": 1602.0,
+      "position": [
+        14711.72851562,
+        16462.00390625,
+        0.0
+      ],
+      "reviewed": false,
+      "size": 1193.95092773,
+      "source": "terrain-index",
+      "type": "base",
+      "typeCounts": [
+        [
+          "air",
+          1547.0
+        ],
+        [
+          "base",
+          1564.0
+        ],
+        [
+          "factory",
+          10.0
+        ],
+        [
+          "power",
+          26.0
+        ],
+        [
+          "radar",
+          2.0
+        ],
+        [
+          "radiotower",
+          1.0
+        ]
+      ],
+      "types": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "world": "Altis"
+    },
+    "formerBaseOwners": {
+      "altis_base_90": "altis_airfield_169",
+      "altis_base_132": "altis_base_132"
+    }
+  },
+  "locationDatasetId": "f86c54200a6562fdecede38d92e40db4db86e9aa603dcd096709e5f9734c0338"
+}

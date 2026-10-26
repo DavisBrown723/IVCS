@@ -1,0 +1,14 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-diagnostic-20261025-192726-1ecff375.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-diagnostic-20261025-192726-1ecff375.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-diagnostic-20261025-192726-1ecff375.stderr.log",
+  "recorder_pid": 42512,
+  "server_pid": 49208,
+  "duration_seconds": 180,
+  "started_at": "2026-10-25T19:27:29.3090192-05:00",
+  "connected": true,
+  "status": "Saved",
+  "benchmark": "ivcs-tasks-44fc95d99ef741b1b99481aed50742e5",
+  "saved_bytes": 3578181,
+  "recorder_log": "Connecting to 127.0.0.1:8086...\r\nTimer resolution: 5 ns\r\n\r\nFrames: 4951\r\nTime span: 3:00.1\r\nZones: 532,766\r\nElapsed time: 3:00\r\nSaving trace... done!\r\nTrace size 3493.44 KB (24.40% ratio)\r\n"
+}

@@ -1,0 +1,186 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.tracy",
+  "source": "arrival-situations-summary.json",
+  "trial_versions": {
+    "1": "before",
+    "2": "after",
+    "3": "after",
+    "4": "before"
+  },
+  "limits": "Scoped diagnostics only. All 20-group windows pass; all 80-group windows fail progress under profiling. No whole-run production p99 improvement is inferred.",
+  "scope": "Inclusive PendingRequest; substage scopes are disjoint within this request.",
+  "comparisons": [
+    {
+      "groups": 20,
+      "case": "approaching_ready",
+      "before": {
+        "count": 40,
+        "mean_ms": 0.68752525,
+        "trial_p99_ms": [
+          1.4230092699999999,
+          1.6191388999999998
+        ],
+        "trial_max_ms": [
+          1.452472,
+          1.63238
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.22183902500000002,
+          "IVCS_OP_ReservedMagazine": 0.0,
+          "IVCS_OP_Surplus": 0.3465839,
+          "IVCS_OP_Transfer": 0.0,
+          "IVCS_OP_UnitAmmoNeed": 0.0
+        }
+      },
+      "after": {
+        "count": 41,
+        "mean_ms": 0.3310593658536585,
+        "trial_p99_ms": [
+          0.6246743799999999,
+          0.49599360000000003
+        ],
+        "trial_max_ms": [
+          0.633585,
+          0.502725
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.10257331707317073,
+          "IVCS_OP_ReservedMagazine": 0.0716701463414634,
+          "IVCS_OP_Surplus": 0.0,
+          "IVCS_OP_Transfer": 0.0,
+          "IVCS_OP_UnitAmmoNeed": 0.0885980243902439
+        }
+      },
+      "mean_reduction_percent": 51.847678924714614
+    },
+    {
+      "groups": 20,
+      "case": "collecting_ready",
+      "before": {
+        "count": 40,
+        "mean_ms": 0.671435725,
+        "trial_p99_ms": [
+          0.84462665,
+          0.93772902
+        ],
+        "trial_max_ms": [
+          0.846805,
+          0.939295
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.17768535000000002,
+          "IVCS_OP_ReservedMagazine": 0.0,
+          "IVCS_OP_Surplus": 0.337580175,
+          "IVCS_OP_Transfer": 0.02270885,
+          "IVCS_OP_UnitAmmoNeed": 0.0
+        }
+      },
+      "after": {
+        "count": 41,
+        "mean_ms": 0.39738378048780487,
+        "trial_p99_ms": [
+          1.877936299999998,
+          0.48203680000000004
+        ],
+        "trial_max_ms": [
+          2.179605,
+          0.490422
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.10361070731707318,
+          "IVCS_OP_ReservedMagazine": 0.08380470731707317,
+          "IVCS_OP_Surplus": 0.0,
+          "IVCS_OP_Transfer": 0.020550170731707316,
+          "IVCS_OP_UnitAmmoNeed": 0.09061424390243904
+        }
+      },
+      "mean_reduction_percent": 40.81581219292363
+    },
+    {
+      "groups": 80,
+      "case": "approaching_ready",
+      "before": {
+        "count": 158,
+        "mean_ms": 0.6354179367088607,
+        "trial_p99_ms": [
+          2.2416634899999948,
+          1.6662754000000004
+        ],
+        "trial_max_ms": [
+          2.940394,
+          1.755426
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.20826713924050633,
+          "IVCS_OP_ReservedMagazine": 0.0,
+          "IVCS_OP_Surplus": 0.3158851772151899,
+          "IVCS_OP_Transfer": 0.0,
+          "IVCS_OP_UnitAmmoNeed": 0.0
+        }
+      },
+      "after": {
+        "count": 159,
+        "mean_ms": 0.29664862264150943,
+        "trial_p99_ms": [
+          1.56259378,
+          0.45948623
+        ],
+        "trial_max_ms": [
+          1.616218,
+          0.461827
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.09222105031446541,
+          "IVCS_OP_ReservedMagazine": 0.06365145283018869,
+          "IVCS_OP_Surplus": 0.0,
+          "IVCS_OP_Transfer": 0.0,
+          "IVCS_OP_UnitAmmoNeed": 0.07842544025157233
+        }
+      },
+      "mean_reduction_percent": 53.314408438326865
+    },
+    {
+      "groups": 80,
+      "case": "collecting_ready",
+      "before": {
+        "count": 156,
+        "mean_ms": 0.6862256602564103,
+        "trial_p99_ms": [
+          1.3164095600000008,
+          3.003197820000001
+        ],
+        "trial_max_ms": [
+          1.4593,
+          3.167003
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.19810774358974362,
+          "IVCS_OP_ReservedMagazine": 0.0,
+          "IVCS_OP_Surplus": 0.32593567307692306,
+          "IVCS_OP_Transfer": 0.021811051282051283,
+          "IVCS_OP_UnitAmmoNeed": 0.0
+        }
+      },
+      "after": {
+        "count": 157,
+        "mean_ms": 0.35544891719745225,
+        "trial_p99_ms": [
+          1.1275838599999997,
+          0.6323498100000002
+        ],
+        "trial_max_ms": [
+          1.430078,
+          0.693216
+        ],
+        "stages_mean_ms": {
+          "IVCS_OP_InventorySnapshot": 0.09717470700636942,
+          "IVCS_OP_ReservedMagazine": 0.0665820127388535,
+          "IVCS_OP_Surplus": 0.0,
+          "IVCS_OP_Transfer": 0.018939923566878982,
+          "IVCS_OP_UnitAmmoNeed": 0.08328871974522294
+        }
+      },
+      "mean_reduction_percent": 48.202327924514265
+    }
+  ]
+}

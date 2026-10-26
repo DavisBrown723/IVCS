@@ -16,7 +16,7 @@
                 };
                 private _vehicle = _vehicles select _index;
                 _this set ["vehicleID", _vehicle get "id"];
-                _this set ["startedAt", time];
+                _this set ["startedAt", IVCS_SimulationTime];
                 if ((_vehicle get "position") distance2D _position <= 25 && { ((_vehicle get "position") select 2) < 4 }) exitWith {
                     _this set ["waypointComplete", true];
                 };
@@ -28,7 +28,7 @@
                 if (_this get "landingFailed") exitWith { "failed" };
                 private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
                 if (isNil "_vehicle") exitWith { "failed" };
-                if (time - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
+                if (IVCS_SimulationTime - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
                 if ((_this get "waypoints") findIf { _x getOrDefault ["pathFailed", false] } != -1) exitWith { "failed" };
                 private _position = _vehicle get "position";
                 private _native = _vehicle get "active";
@@ -45,6 +45,10 @@
                         unitReady _object && { (_this get "landingObject") isNotEqualTo _object } &&
                         { _position distance2D (_this get "landingPosition") > 25 }
                     }) then {
+                        // A priority landing may have left the helicopter grounded.
+                        // Release that landing order before resuming this approach.
+                        _object land "NONE";
+                        _object engineOn true;
                         _object doMove (_this get "landingPosition");
                         _this set ["approachObject", _object];
                     };
@@ -90,18 +94,8 @@
         ["helipad", objNull], ["approachObject", objNull], ["landingObject", objNull]
     ],
     {
-        private _object = _this get "approachObject";
-        if ((_this get "result") != "completed" && { !isNull _object }) then {
-            _object land "NONE";
-            private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
-            if (isNil "_entity" || { (_entity get "waypoints") isEqualTo [] }) then {
-                doStop driver _object;
-                if (!isNil "_entity") then { _entity set ["movementStopped", true]; };
-            };
-        };
-        if (!isNull (_this get "helipad")) then { deleteVehicle (_this get "helipad"); };
-        _this set ["helipad", objNull];
-        _this set ["approachObject", objNull];
-        _this set ["landingObject", objNull];
-    }
+        _this call IVCS_EntityTasks_releaseLanding;
+    },
+    {},
+    { _this call IVCS_EntityTasks_releaseLanding; }
 ] call IVCS_EntityTasks_createTaskTemplate;

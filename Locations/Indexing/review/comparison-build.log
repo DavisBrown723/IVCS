@@ -1,0 +1,131 @@
+{
+  "beforeLocations": 278,
+  "afterLocations": 268,
+  "beforeTypes": {
+    "town": 108,
+    "base": 43,
+    "radiotower": 14,
+    "power": 55,
+    "port": 19,
+    "fuel": 9,
+    "factory": 29,
+    "hospital": 1
+  },
+  "afterTypes": {
+    "town": 109,
+    "base": 42,
+    "radiotower": 14,
+    "power": 52,
+    "port": 18,
+    "fuel": 8,
+    "factory": 24,
+    "hospital": 1
+  },
+  "changedSemanticLocationIds": [
+    "altis_power_0",
+    "altis_power_136",
+    "altis_power_207",
+    "altis_power_386",
+    "altis_power_1076",
+    "altis_power_1155",
+    "altis_airfield_169",
+    "altis_factory_1",
+    "altis_factory_26",
+    "altis_factory_73",
+    "altis_factory_123",
+    "altis_factory_190",
+    "altis_factory_452",
+    "altis_factory_470",
+    "altis_factory_477",
+    "altis_factory_506"
+  ],
+  "removedLocationIds": [
+    "altis_base_229",
+    "altis_base_313",
+    "altis_base_90",
+    "altis_factory_138",
+    "altis_factory_228",
+    "altis_factory_355",
+    "altis_factory_428",
+    "altis_factory_485",
+    "altis_factory_7",
+    "altis_fuel_76",
+    "altis_port_252",
+    "altis_power_1116",
+    "altis_power_1153",
+    "altis_power_33",
+    "altis_power_93"
+  ],
+  "addedLocationIds": [
+    "altis_base_146",
+    "altis_base_152",
+    "altis_factory_438",
+    "altis_power_39",
+    "altis_town_4"
+  ],
+  "preservedPreviousPrimaryComponents": 278,
+  "newSites": [
+    {
+      "id": "altis_town_4",
+      "type": "town",
+      "objects": 7.0,
+      "position": [
+        3009.88427734,
+        18502.515625,
+        0.0
+      ],
+      "area": "Fotia",
+      "previousOwner": "altis_power_0"
+    },
+    {
+      "id": "altis_base_146",
+      "type": "base",
+      "objects": 47.0,
+      "position": [
+        15402.98730469,
+        15813.14746094,
+        0.0
+      ],
+      "area": "power plant",
+      "previousOwner": "altis_power_386"
+    },
+    {
+      "id": "altis_base_152",
+      "type": "base",
+      "objects": 2.0,
+      "position": [
+        15352.15039062,
+        16214.34960938,
+        0.0
+      ],
+      "area": "power plant",
+      "previousOwner": "altis_power_386"
+    },
+    {
+      "id": "altis_power_39",
+      "type": "power",
+      "objects": 13.0,
+      "position": [
+        3806.65161133,
+        12384.078125,
+        0.0
+      ],
+      "area": "quarry",
+      "previousOwner": "altis_factory_7"
+    },
+    {
+      "id": "altis_factory_438",
+      "type": "factory",
+      "objects": 69.0,
+      "position": [
+        17402.4765625,
+        13183.34082031,
+        0.0
+      ],
+      "area": "Pyrgos",
+      "previousOwner": "altis_base_229"
+    }
+  ],
+  "locationDatasetId": "f86c54200a6562fdecede38d92e40db4db86e9aa603dcd096709e5f9734c0338"
+}
+Airport: 1580.0 -> 1602.0 {'altis_base_90': 'altis_airfield_169', 'altis_base_132': 'altis_base_132'}

@@ -1,5 +1,8 @@
 params ["_entity","_waypoint"];
 
+private _airSettings = _entity get "airWaypointSettings";
+{private _value=_waypoint get (_x select 0); if (_value!=(_x select 1)) then {_airSettings set [_forEachIndex,_value]}} forEach [["combatMode","NO CHANGE"],["behavior","UNCHANGED"],["speed","UNCHANGED"]];
+_entity set ["airWaypointSettings",_airSettings];
 private _waypointType = _waypoint get "type";
 switch (_waypointType) do {
     case "LAND";

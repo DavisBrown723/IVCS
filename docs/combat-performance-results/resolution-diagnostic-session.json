@@ -1,0 +1,18 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-diagnostic-20261025-231234-2436eda9.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-diagnostic-20261025-231234-2436eda9.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-diagnostic-20261025-231234-2436eda9.stderr.log",
+  "recorderPid": 33988,
+  "serverPid": 57852,
+  "serverCommandLine": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ab6df2d1e8a54cf7b641767a6d34ebc3\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ab6df2d1e8a54cf7b641767a6d34ebc3\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "seconds": 150,
+  "benchmarkRoot": "C:/Users/spyde/AppData/Local/Temp/ivcs-tasks-ab6df2d1e8a54cf7b641767a6d34ebc3",
+  "connected": true,
+  "created": "2026-10-25T23:12:36.7937302-05:00",
+  "saved": true,
+  "file_bytes": 3289357,
+  "recorder_time_span_seconds": 150.2,
+  "timer_resolution_ns": 4,
+  "zone_count": 497640,
+  "elapsed_seconds": 150.1
+}

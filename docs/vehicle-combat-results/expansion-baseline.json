@@ -1,0 +1,11 @@
+{
+  "source": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-vehicle-expansion-before-gcdc3rur",
+  "date": "2026-10-24",
+  "durable_resolver_fixtures": {
+    "tests/combat/vehicle-baseline/damageVehicle.sqf": "6dd575e5a1f2c236e3b45b2ef30f683df4671fde56ab03e680865543423f7545",
+    "tests/combat/vehicle-baseline/getVehicleShot.sqf": "88d21aa5bfc77edd6608ad307a0867001945553aabef833c59caed98ed447466",
+    "tests/combat/vehicle-baseline/stepVehicle.sqf": "e287e31ef7cc305f2a5c65f7b6d0add1b114c42a829f9d5f0c0e80a9bab7347f",
+    "tests/combat/vehicle-baseline/update.sqf": "7aa247340ca6de9e0fc44865ada31b8378195ae62ba217f744d8923a6c1b4ed1"
+  },
+  "temporary_snapshot_still_available": true
+}

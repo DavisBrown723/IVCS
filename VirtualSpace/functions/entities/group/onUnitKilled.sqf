@@ -4,5 +4,6 @@ private _entityID = _unit getvariable "entityID";
 private _unitID = _unit getvariable "unitID";
 
 private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
+if (isNil "_entity") exitWith {};
 
 [_entity, _unitID] call IVCS_VirtualSpace_Group_RemoveUnit;

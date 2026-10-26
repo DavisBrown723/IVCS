@@ -1,0 +1,566 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-flight-diagnostic-20261025-223846-f9cc342f.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 4924402,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 167782622226,
+  "zone_types": 162,
+  "filter": "IVCS_FLIGHT_",
+  "matching_zone_types": 11,
+  "top_inclusive": [
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_remove",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 110695592,
+      "total_perc": 0.065976,
+      "counts": 2967,
+      "mean_ns": 37308,
+      "min_ns": 26177,
+      "max_ns": 264853,
+      "std_ns": 11058.747155
+    },
+    {
+      "name": "IVCS_FLIGHT_Health",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 91388954,
+      "total_perc": 0.054469,
+      "counts": 3402,
+      "mean_ns": 26863,
+      "min_ns": 17557,
+      "max_ns": 169242,
+      "std_ns": 7982.68612
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_insert",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 82550545,
+      "total_perc": 0.049201,
+      "counts": 2967,
+      "mean_ns": 27822,
+      "min_ns": 23900,
+      "max_ns": 193055,
+      "std_ns": 7264.93008
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 70684890,
+      "total_perc": 0.042129,
+      "counts": 5934,
+      "mean_ns": 11911,
+      "min_ns": 8896,
+      "max_ns": 117615,
+      "std_ns": 4173.610536
+    },
+    {
+      "name": "IVCS_FLIGHT_Integrate",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 43637280,
+      "total_perc": 0.026008,
+      "counts": 3402,
+      "mean_ns": 12826,
+      "min_ns": 8555,
+      "max_ns": 224391,
+      "std_ns": 5428.969447
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 37782647,
+      "total_perc": 0.022519,
+      "counts": 5934,
+      "mean_ns": 6367,
+      "min_ns": 5006,
+      "max_ns": 119566,
+      "std_ns": 2529.55827
+    },
+    {
+      "name": "IVCS_FLIGHT_Leash",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 22061896,
+      "total_perc": 0.013149,
+      "counts": 3402,
+      "mean_ns": 6484,
+      "min_ns": 1838,
+      "max_ns": 67930,
+      "std_ns": 2671.871347
+    },
+    {
+      "name": "IVCS_FLIGHT_AreaCheck",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 16445378,
+      "total_perc": 0.009802,
+      "counts": 3402,
+      "mean_ns": 4834,
+      "min_ns": 2884,
+      "max_ns": 29763,
+      "std_ns": 1597.140413
+    },
+    {
+      "name": "IVCS_FLIGHT_Evasion",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6014340,
+      "total_perc": 0.003585,
+      "counts": 3308,
+      "mean_ns": 1818,
+      "min_ns": 1242,
+      "max_ns": 36757,
+      "std_ns": 967.39191
+    },
+    {
+      "name": "IVCS_FLIGHT_GridFind",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3455105,
+      "total_perc": 0.002059,
+      "counts": 2967,
+      "mean_ns": 1164,
+      "min_ns": 578,
+      "max_ns": 11965,
+      "std_ns": 821.267094
+    },
+    {
+      "name": "IVCS_FLIGHT_Destination",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 1258690,
+      "total_perc": 0.00075,
+      "counts": 94,
+      "mean_ns": 13390,
+      "min_ns": 9942,
+      "max_ns": 22449,
+      "std_ns": 2249.170585
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_FLIGHT_Health",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 62886947,
+      "total_perc": 0.037481,
+      "counts": 3402,
+      "mean_ns": 18485,
+      "min_ns": 11625,
+      "max_ns": 121122,
+      "std_ns": 11573.239164
+    },
+    {
+      "name": "IVCS_FLIGHT_Integrate",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 43637280,
+      "total_perc": 0.026008,
+      "counts": 3402,
+      "mean_ns": 12826,
+      "min_ns": 8555,
+      "max_ns": 224391,
+      "std_ns": 5428.969447
+    },
+    {
+      "name": "IVCS_FLIGHT_Leash",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 22061896,
+      "total_perc": 0.013149,
+      "counts": 3402,
+      "mean_ns": 6484,
+      "min_ns": 1838,
+      "max_ns": 67930,
+      "std_ns": 2671.871347
+    },
+    {
+      "name": "IVCS_FLIGHT_AreaCheck",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 16445378,
+      "total_perc": 0.009802,
+      "counts": 3402,
+      "mean_ns": 4834,
+      "min_ns": 2884,
+      "max_ns": 29763,
+      "std_ns": 1597.140413
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 16441360,
+      "total_perc": 0.009799,
+      "counts": 5934,
+      "mean_ns": 2770,
+      "min_ns": 2137,
+      "max_ns": 22285,
+      "std_ns": 10050.196308
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 13086227,
+      "total_perc": 0.0078,
+      "counts": 5934,
+      "mean_ns": 2205,
+      "min_ns": 1806,
+      "max_ns": 49173,
+      "std_ns": 4870.836467
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_remove",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 7209380,
+      "total_perc": 0.004297,
+      "counts": 2967,
+      "mean_ns": 2429,
+      "min_ns": 1702,
+      "max_ns": 40472,
+      "std_ns": 36596.659848
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_insert",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6578393,
+      "total_perc": 0.003921,
+      "counts": 2967,
+      "mean_ns": 2217,
+      "min_ns": 1738,
+      "max_ns": 14592,
+      "std_ns": 26620.713637
+    },
+    {
+      "name": "IVCS_FLIGHT_Evasion",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6014340,
+      "total_perc": 0.003585,
+      "counts": 3308,
+      "mean_ns": 1818,
+      "min_ns": 1242,
+      "max_ns": 36757,
+      "std_ns": 967.39191
+    },
+    {
+      "name": "IVCS_FLIGHT_GridFind",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3455105,
+      "total_perc": 0.002059,
+      "counts": 2967,
+      "mean_ns": 1164,
+      "min_ns": 578,
+      "max_ns": 11965,
+      "std_ns": 821.267094
+    },
+    {
+      "name": "IVCS_FLIGHT_Destination",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 1258690,
+      "total_perc": 0.00075,
+      "counts": 94,
+      "mean_ns": 13390,
+      "min_ns": 9942,
+      "max_ns": 22449,
+      "std_ns": 2249.170585
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_remove",
+      "count": 2967,
+      "total_ns": 110695592,
+      "mean_ns": 37309,
+      "p50_ns": 38378,
+      "p90_ns": 44649,
+      "p95_ns": 50487,
+      "p99_ns": 81410,
+      "max_ns": 264853,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365641194,
+      "last_end_ns": 141155256936,
+      "observed_span_ns": 64789615742,
+      "span_occupancy_percent": 0.1709
+    },
+    {
+      "name": "IVCS_FLIGHT_Health",
+      "count": 3402,
+      "total_ns": 91388954,
+      "mean_ns": 26863,
+      "p50_ns": 26670,
+      "p90_ns": 32472,
+      "p95_ns": 39459,
+      "p99_ns": 57230,
+      "max_ns": 169242,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365411803,
+      "last_end_ns": 150879510301,
+      "observed_span_ns": 74514098498,
+      "span_occupancy_percent": 0.1226
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_insert",
+      "count": 2967,
+      "total_ns": 82550545,
+      "mean_ns": 27823,
+      "p50_ns": 26729,
+      "p90_ns": 29423,
+      "p95_ns": 34341,
+      "p99_ns": 54497,
+      "max_ns": 193055,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365690213,
+      "last_end_ns": 141155293315,
+      "observed_span_ns": 64789603102,
+      "span_occupancy_percent": 0.1274
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords",
+      "count": 5934,
+      "total_ns": 70684890,
+      "mean_ns": 11912,
+      "p50_ns": 10210,
+      "p90_ns": 15725,
+      "p95_ns": 16881,
+      "p99_ns": 27495,
+      "max_ns": 117615,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365647635,
+      "last_end_ns": 141155277239,
+      "observed_span_ns": 64789629604,
+      "span_occupancy_percent": 0.1091
+    },
+    {
+      "name": "IVCS_FLIGHT_Integrate",
+      "count": 3402,
+      "total_ns": 43637280,
+      "mean_ns": 12827,
+      "p50_ns": 12490,
+      "p90_ns": 15525,
+      "p95_ns": 17914,
+      "p99_ns": 29394,
+      "max_ns": 224391,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365603585,
+      "last_end_ns": 150879620536,
+      "observed_span_ns": 74514016951,
+      "span_occupancy_percent": 0.0586
+    },
+    {
+      "name": "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell",
+      "count": 5934,
+      "total_ns": 37782647,
+      "mean_ns": 6367,
+      "p50_ns": 5569,
+      "p90_ns": 7952,
+      "p95_ns": 8457,
+      "p99_ns": 13717,
+      "max_ns": 119566,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365666007,
+      "last_end_ns": 141155290459,
+      "observed_span_ns": 64789624452,
+      "span_occupancy_percent": 0.0583
+    },
+    {
+      "name": "IVCS_FLIGHT_Leash",
+      "count": 3402,
+      "total_ns": 22061896,
+      "mean_ns": 6485,
+      "p50_ns": 6370,
+      "p90_ns": 7732,
+      "p95_ns": 9218,
+      "p99_ns": 14394,
+      "max_ns": 67930,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365578186,
+      "last_end_ns": 150879607572,
+      "observed_span_ns": 74514029386,
+      "span_occupancy_percent": 0.0296
+    },
+    {
+      "name": "IVCS_FLIGHT_AreaCheck",
+      "count": 3402,
+      "total_ns": 16445378,
+      "mean_ns": 4834,
+      "p50_ns": 4406,
+      "p90_ns": 6231,
+      "p95_ns": 7035,
+      "p99_ns": 10756,
+      "max_ns": 29763,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365530865,
+      "last_end_ns": 150879584722,
+      "observed_span_ns": 74514053857,
+      "span_occupancy_percent": 0.0221
+    },
+    {
+      "name": "IVCS_FLIGHT_Evasion",
+      "count": 3308,
+      "total_ns": 6014340,
+      "mean_ns": 1818,
+      "p50_ns": 1672,
+      "p90_ns": 2196,
+      "p95_ns": 2603,
+      "p99_ns": 4186,
+      "max_ns": 36757,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 77351906279,
+      "last_end_ns": 150879548935,
+      "observed_span_ns": 73527642656,
+      "span_occupancy_percent": 0.0082
+    },
+    {
+      "name": "IVCS_FLIGHT_GridFind",
+      "count": 2967,
+      "total_ns": 3455105,
+      "mean_ns": 1165,
+      "p50_ns": 1019,
+      "p90_ns": 1601,
+      "p95_ns": 2000,
+      "p99_ns": 5499,
+      "max_ns": 11965,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365674878,
+      "last_end_ns": 141155252359,
+      "observed_span_ns": 64789577481,
+      "span_occupancy_percent": 0.0053
+    },
+    {
+      "name": "IVCS_FLIGHT_Destination",
+      "count": 94,
+      "total_ns": 1258690,
+      "mean_ns": 13390,
+      "p50_ns": 13860,
+      "p90_ns": 15329,
+      "p95_ns": 17344,
+      "p99_ns": 20405,
+      "max_ns": 22449,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 76365561124,
+      "last_end_ns": 114972024808,
+      "observed_span_ns": 38606463684,
+      "span_occupancy_percent": 0.0033
+    }
+  ],
+  "message_count": 3865,
+  "messages": [
+    {
+      "MessageName": "[IVCS TASK TEST] PASS workload contains exactly 20 groups including crews and supporting AA",
+      "total_ns": 76330798874
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=1 mode=heli-infantry-aa groups=20",
+      "total_ns": 78340277759
+    },
+    {
+      "MessageName": "[IVCS PERF] START [1,\"heli-infantry-aa\",20,85,5]",
+      "total_ns": 78340295925
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20259,\"e_12\",0.109001,[15046.1,16349.7,100],[15067.2,16204.7,100],146.512,[8.35428,-57.3952,0],false,false,true],[\"grid\",20259,10,0,[15046.1,16349.7,100]]]",
+      "total_ns": 78375670306
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20259,10,0,[15046.1,16349.7,100]],[\"move\",20259,\"e_6\",0.109001,[15051.7,16343.3,100],[15067.7,16206.1,100],138.108,[6.70135,-57.6116,0],false,false,true]]",
+      "total_ns": 78375679119
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20259,10,0,[15051.7,16343.3,100]],[\"grid\",20259,10,0,[15051.7,16343.3,100]]]",
+      "total_ns": 78375686099
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20260,\"e_24\",0.109001,[15044.5,16349.8,100],[15067.1,16204.3,100],147.238,[8.89088,-57.3145,0],false,false,true],[\"grid\",20260,10,0,[15044.5,16349.8,100]]]",
+      "total_ns": 78409771670
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20260,10,0,[15044.5,16349.8,100]]]",
+      "total_ns": 78409778135
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20261,\"e_18\",0.106995,[15048.6,16343.4,100],[15067.4,16205.2,100],139.482,[7.81419,-57.4712,0],false,false,true],[\"grid\",20261,10,0,[15048.6,16343.4,100]]]",
+      "total_ns": 78441014482
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20261,10,0,[15048.6,16343.4,100]],[\"move\",20261,\"e_0\",0.106995,[15054,16336.8,100],[15067.8,16206.5,100],131.054,[6.13021,-57.6751,0],false,false,true]]",
+      "total_ns": 78441024301
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20261,10,0,[15054,16336.8,100]],[\"grid\",20261,10,0,[15054,16336.8,100]]]",
+      "total_ns": 78441030560
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20262,\"e_12\",0.107002,[15047,16343.5,100],[15067.2,16204.7,100],140.19,[8.35445,-57.3951,0],false,false,true],[\"grid\",20262,10,0,[15047,16343.5,100]]]",
+      "total_ns": 78477054100
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20262,10,0,[15047,16343.5,100]],[\"move\",20262,\"e_6\",0.107002,[15052.5,16337,100],[15067.7,16206.1,100],131.786,[6.70133,-57.6116,0],false,false,true]]",
+      "total_ns": 78477063297
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20262,10,0,[15052.5,16337,100]],[\"grid\",20262,10,0,[15052.5,16337,100]]]",
+      "total_ns": 78477068924
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20263,\"e_24\",0.108002,[15045.5,16343.5,100],[15067.1,16204.3,100],140.917,[8.89101,-57.3145,0],false,false,true],[\"grid\",20263,10,0,[15045.5,16343.5,100]]]",
+      "total_ns": 78513881425
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20263,10,0,[15045.5,16343.5,100]]]",
+      "total_ns": 78513885793
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20264,\"e_18\",0.109001,[15049.4,16337.2,100],[15067.4,16205.2,100],133.276,[7.81426,-57.4712,0],false,false,true],[\"grid\",20264,10,0,[15049.4,16337.2,100]]]",
+      "total_ns": 78550398544
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20264,10,0,[15049.4,16337.2,100]],[\"move\",20264,\"e_0\",0.109001,[15054.6,16330.7,100],[15067.8,16206.5,100],124.849,[6.13005,-57.6751,0],false,false,true]]",
+      "total_ns": 78550407069
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"grid\",20264,10,0,[15054.6,16330.7,100]],[\"grid\",20264,10,0,[15054.6,16330.7,100]]]",
+      "total_ns": 78550412724
+    },
+    {
+      "MessageName": "IVCS FLIGHT WORK [[\"move\",20265,\"e_12\",0.108002,[15047.9,16337.3,100],[15067.2,16204.7,100],133.984,[8.35463,-57.3951,0],false,false,true],[\"grid\",20265,10,0,[15047.9,16337.3,100]]]",
+      "total_ns": 78584924223
+    }
+  ],
+  "message_parser_note": "Native message text contains unquoted commas; split at final comma. Use recorder span instead of aggregate percentage estimate."
+}

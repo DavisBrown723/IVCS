@@ -1,0 +1,30 @@
+{
+  "RecorderPath": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\107410\\1652506957\\tracy-capture.exe",
+  "Address": "127.0.0.1",
+  "Port": 8086,
+  "Seconds": 260,
+  "TracePath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.tracy",
+  "StdoutPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.stdout.log",
+  "StderrPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.stderr.log",
+  "SessionPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.session.json",
+  "Arguments": [
+    "-a",
+    "127.0.0.1",
+    "-p",
+    "8086",
+    "-s",
+    "260",
+    "-o",
+    "\"C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516.tracy\""
+  ],
+  "ProcessId": 11252,
+  "StartedAt": "2026-10-13T09:18:19.5996462-05:00",
+  "Status": "Connected",
+  "ServerProcessId": 159792,
+  "StartupStartedAt": "2026-10-13T09:18:19.1100181-05:00",
+  "LaunchDelaySeconds": 0.4896281,
+  "ConnectionObservedAt": "2026-10-13T09:18:20.2225757-05:00",
+  "StartupElapsedSeconds": 1.1194774,
+  "Stdout": "Connecting to 127.0.0.1:8086...",
+  "Stderr": null
+}

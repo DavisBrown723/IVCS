@@ -1,0 +1,2336 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-entity-diagnostic-20261025-220825-bac9e0ee.tracy",
+  "note": "Inclusive nested costs; helper metrics are restricted to entity frames and must not be summed with parents.",
+  "results": [
+    {
+      "trial": 1,
+      "mode": "heli-infantry-aa",
+      "frames": 966,
+      "entity": {
+        "count": 966,
+        "total_ms": 1179.6603859999998,
+        "mean_ms": 1.221180523809524,
+        "p50_ms": 1.180314,
+        "p90_ms": 1.471107,
+        "p95_ms": 1.572144,
+        "p99_ms": 1.8871742,
+        "max_ms": 2.445171,
+        "over_1ms": 901,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 1610,
+          "total_ms": 35.10756799999997,
+          "mean_ms": 0.02180594285714286,
+          "p50_ms": 0.0218135,
+          "p90_ms": 0.023754,
+          "p95_ms": 0.0258689,
+          "p99_ms": 0.037258580000000055,
+          "max_ms": 0.118392,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+          "count": 1610,
+          "total_ms": 50.162389000000076,
+          "mean_ms": 0.031156763354037265,
+          "p50_ms": 0.0321875,
+          "p90_ms": 0.0354873,
+          "p95_ms": 0.038176299999999996,
+          "p99_ms": 0.05720752000000002,
+          "max_ms": 0.129334,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+          "count": 1610,
+          "total_ms": 11.055159000000002,
+          "mean_ms": 0.0068665583850931675,
+          "p50_ms": 0.007089,
+          "p90_ms": 0.008118100000000001,
+          "p95_ms": 0.008820299999999998,
+          "p99_ms": 0.012027760000000004,
+          "max_ms": 0.036026,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+          "count": 7905,
+          "total_ms": 41.76178899999998,
+          "mean_ms": 0.005282958760278305,
+          "p50_ms": 0.004971,
+          "p90_ms": 0.005946600000000001,
+          "p95_ms": 0.007294,
+          "p99_ms": 0.00893976,
+          "max_ms": 0.03552,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+          "count": 1520,
+          "total_ms": 21.951878999999987,
+          "mean_ms": 0.014442025657894738,
+          "p50_ms": 0.014321500000000001,
+          "p90_ms": 0.016301600000000003,
+          "p95_ms": 0.01826295,
+          "p99_ms": 0.025633889999999996,
+          "max_ms": 0.097079,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+          "count": 6440,
+          "total_ms": 115.42362899999998,
+          "mean_ms": 0.017922923757763977,
+          "p50_ms": 0.016066999999999998,
+          "p90_ms": 0.0241731,
+          "p95_ms": 0.026394149999999998,
+          "p99_ms": 0.03515996999999994,
+          "max_ms": 0.1205,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+          "count": 1292,
+          "total_ms": 82.16001299999996,
+          "mean_ms": 0.06359134133126935,
+          "p50_ms": 0.0639205,
+          "p90_ms": 0.0742051,
+          "p95_ms": 0.08536910000000002,
+          "p99_ms": 0.11600192999999988,
+          "max_ms": 0.302703,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+          "count": 6440,
+          "total_ms": 949.2710249999967,
+          "mean_ms": 0.14740233307453415,
+          "p50_ms": 0.12198300000000001,
+          "p90_ms": 0.28207430000000006,
+          "p95_ms": 0.32280505,
+          "p99_ms": 0.3967874599999997,
+          "max_ms": 0.718194,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+          "count": 3220,
+          "total_ms": 123.48679299999996,
+          "mean_ms": 0.038349935714285716,
+          "p50_ms": 0.0334955,
+          "p90_ms": 0.050443199999999994,
+          "p95_ms": 0.07080904999999998,
+          "p99_ms": 0.10789787999999999,
+          "max_ms": 0.148682,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+          "count": 12880,
+          "total_ms": 47.01388300000025,
+          "mean_ms": 0.003650146195652174,
+          "p50_ms": 0.003335,
+          "p90_ms": 0.004794,
+          "p95_ms": 0.005432099999999999,
+          "p99_ms": 0.007126839999999997,
+          "max_ms": 0.130058,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+          "count": 13027,
+          "total_ms": 54.3272379999998,
+          "mean_ms": 0.0041703567974207415,
+          "p50_ms": 0.004012,
+          "p90_ms": 0.004484,
+          "p95_ms": 0.004993399999999998,
+          "p99_ms": 0.0068126199999999975,
+          "max_ms": 0.047364,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+          "count": 3220,
+          "total_ms": 18.611875,
+          "mean_ms": 0.005780085403726708,
+          "p50_ms": 0.005116,
+          "p90_ms": 0.007508,
+          "p95_ms": 0.007742149999999999,
+          "p99_ms": 0.010518049999999994,
+          "max_ms": 0.097969,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+          "count": 7960,
+          "total_ms": 130.95358600000014,
+          "mean_ms": 0.01645145552763819,
+          "p50_ms": 0.004482,
+          "p90_ms": 0.06928920000000001,
+          "p95_ms": 0.07984345,
+          "p99_ms": 0.09780340999999994,
+          "max_ms": 0.328701,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 465,
+          "total_ms": 91.61775199999992,
+          "mean_ms": 0.19702742365591397,
+          "p50_ms": 0.196371,
+          "p90_ms": 0.2074172,
+          "p95_ms": 0.21712399999999998,
+          "p99_ms": 0.2507496800000001,
+          "max_ms": 0.314928,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9660,
+          "total_ms": 84.32706400000006,
+          "mean_ms": 0.008729509730848862,
+          "p50_ms": 0.005111,
+          "p90_ms": 0.008821100000000002,
+          "p95_ms": 0.04565615,
+          "p99_ms": 0.06720677999999997,
+          "max_ms": 0.165514,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1610,
+          "total_ms": 19.915316999999995,
+          "mean_ms": 0.012369762111801243,
+          "p50_ms": 0.0124105,
+          "p90_ms": 0.0139521,
+          "p95_ms": 0.014803349999999998,
+          "p99_ms": 0.02225967000000003,
+          "max_ms": 0.063068,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6440,
+          "total_ms": 274.58192700000006,
+          "mean_ms": 0.04263694518633541,
+          "p50_ms": 0.004327,
+          "p90_ms": 0.13586400000000004,
+          "p95_ms": 0.2486880999999999,
+          "p99_ms": 0.28340082999999994,
+          "max_ms": 0.42434,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1610,
+          "total_ms": 305.03966600000024,
+          "mean_ms": 0.18946563105590064,
+          "p50_ms": 0.1834015,
+          "p90_ms": 0.23616140000000002,
+          "p95_ms": 0.30603309999999995,
+          "p99_ms": 0.34930353000000014,
+          "max_ms": 0.598447,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 87408835428,
+          "entity_ms": 2.445171,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.06992499999999999,
+              "max_ms": 0.038421
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.103691,
+              "max_ms": 0.057223
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.017858,
+              "max_ms": 0.009447
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.05117,
+              "max_ms": 0.025647
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.19378,
+              "max_ms": 0.038768
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 2,
+              "total_ms": 0.20902199999999999,
+              "max_ms": 0.111667
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 2.00222,
+              "max_ms": 0.425126
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.26244199999999995,
+              "max_ms": 0.115399
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.07865400000000002,
+              "max_ms": 0.008948
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 23,
+              "total_ms": 0.150608,
+              "max_ms": 0.008257
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.035599,
+              "max_ms": 0.011747
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.30782299999999996,
+              "max_ms": 0.137374
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.5405,
+              "max_ms": 0.101421
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.042203,
+              "max_ms": 0.022687
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.44163399999999997,
+              "max_ms": 0.215635
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.5973029999999999,
+              "max_ms": 0.320341
+            }
+          }
+        },
+        {
+          "start_ns": 87545072488,
+          "entity_ms": 2.306312,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.07333500000000001,
+              "max_ms": 0.040008
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.12226200000000001,
+              "max_ms": 0.065211
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.023981000000000002,
+              "max_ms": 0.012257
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 1,
+              "total_ms": 0.027717,
+              "max_ms": 0.027717
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 6,
+              "total_ms": 0.179562,
+              "max_ms": 0.038223
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 1,
+              "total_ms": 0.164292,
+              "max_ms": 0.164292
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 6,
+              "total_ms": 1.8193679999999999,
+              "max_ms": 0.616446
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 4,
+              "total_ms": 0.298779,
+              "max_ms": 0.120828
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 12,
+              "total_ms": 0.087671,
+              "max_ms": 0.018136
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 14,
+              "total_ms": 0.09162400000000001,
+              "max_ms": 0.00787
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.040323,
+              "max_ms": 0.013774
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.25339500000000004,
+              "max_ms": 0.18978
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.09587000000000001,
+              "max_ms": 0.015071
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.052483,
+              "max_ms": 0.029285
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.39651699999999995,
+              "max_ms": 0.357776
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.704204,
+              "max_ms": 0.37927
+            }
+          }
+        },
+        {
+          "start_ns": 87479334889,
+          "entity_ms": 2.279078,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 1,
+              "total_ms": 0.036243,
+              "max_ms": 0.036243
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 1,
+              "total_ms": 0.054272,
+              "max_ms": 0.054272
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 1,
+              "total_ms": 0.007775,
+              "max_ms": 0.007775
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.048204,
+              "max_ms": 0.025789
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.186977,
+              "max_ms": 0.037137
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 2,
+              "total_ms": 0.19554,
+              "max_ms": 0.108001
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.7453060000000002,
+              "max_ms": 0.445709
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.36090900000000004,
+              "max_ms": 0.129935
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.07590700000000002,
+              "max_ms": 0.008868
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 28,
+              "total_ms": 0.18113499999999996,
+              "max_ms": 0.00924
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 2,
+              "total_ms": 0.018792,
+              "max_ms": 0.010849
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 7,
+              "total_ms": 0.27545,
+              "max_ms": 0.128579
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.7047380000000001,
+              "max_ms": 0.099626
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.02229,
+              "max_ms": 0.02229
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.409658,
+              "max_ms": 0.200169
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.316697,
+              "max_ms": 0.316697
+            }
+          }
+        },
+        {
+          "start_ns": 77788714992,
+          "entity_ms": 2.147418,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.076461,
+              "max_ms": 0.039783
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.12495700000000001,
+              "max_ms": 0.066613
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.023386,
+              "max_ms": 0.012102
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.19810100000000003,
+              "max_ms": 0.037678
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 4,
+              "total_ms": 0.365323,
+              "max_ms": 0.118183
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.780872,
+              "max_ms": 0.718194
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.197628,
+              "max_ms": 0.082539
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.082542,
+              "max_ms": 0.009098
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 11,
+              "total_ms": 0.07422399999999998,
+              "max_ms": 0.007723
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.040573,
+              "max_ms": 0.013647
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 7,
+              "total_ms": 0.47041399999999994,
+              "max_ms": 0.143691
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.08812,
+              "max_ms": 0.011764
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.04546,
+              "max_ms": 0.024181
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.069898,
+              "max_ms": 0.015552
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 1.1015899999999998,
+              "max_ms": 0.598447
+            }
+          }
+        },
+        {
+          "start_ns": 92545626721,
+          "entity_ms": 1.943421,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.076846,
+              "max_ms": 0.042045
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.116784,
+              "max_ms": 0.067461
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.022093,
+              "max_ms": 0.012031
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.042536000000000004,
+              "max_ms": 0.025974
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.17847600000000002,
+              "max_ms": 0.032123
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 2,
+              "total_ms": 0.22229,
+              "max_ms": 0.112957
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.595383,
+              "max_ms": 0.4666
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.186195,
+              "max_ms": 0.070612
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.07150300000000001,
+              "max_ms": 0.007327
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 11,
+              "total_ms": 0.069177,
+              "max_ms": 0.007574
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.045959,
+              "max_ms": 0.017594
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.321942,
+              "max_ms": 0.139665
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07493899999999999,
+              "max_ms": 0.008461
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.042957999999999996,
+              "max_ms": 0.022993
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.43269199999999997,
+              "max_ms": 0.202571
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.6469130000000001,
+              "max_ms": 0.361535
+            }
+          }
+        },
+        {
+          "start_ns": 95789264553,
+          "entity_ms": 1.943149,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.069285,
+              "max_ms": 0.037316
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.105281,
+              "max_ms": 0.058495
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.024777,
+              "max_ms": 0.014715
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.050357,
+              "max_ms": 0.025538
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.168986,
+              "max_ms": 0.02793
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 2,
+              "total_ms": 0.199874,
+              "max_ms": 0.103898
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.5481079999999998,
+              "max_ms": 0.432106
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.20006000000000002,
+              "max_ms": 0.10575
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.06835299999999998,
+              "max_ms": 0.006859
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 11,
+              "total_ms": 0.07218300000000001,
+              "max_ms": 0.007206
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.0363,
+              "max_ms": 0.012249
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.30098900000000006,
+              "max_ms": 0.132239
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07728299999999999,
+              "max_ms": 0.009477
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.040477,
+              "max_ms": 0.022711
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.424346,
+              "max_ms": 0.208864
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.596835,
+              "max_ms": 0.327617
+            }
+          }
+        },
+        {
+          "start_ns": 105012189137,
+          "entity_ms": 1.896507,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.059621,
+              "max_ms": 0.039208
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.105181,
+              "max_ms": 0.062159
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.022882,
+              "max_ms": 0.011995
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 17,
+              "total_ms": 0.133556,
+              "max_ms": 0.012783
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 1,
+              "total_ms": 0.026082,
+              "max_ms": 0.026082
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 6,
+              "total_ms": 0.153185,
+              "max_ms": 0.037118
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 6,
+              "total_ms": 1.4977019999999999,
+              "max_ms": 0.52649
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 4,
+              "total_ms": 0.24196199999999998,
+              "max_ms": 0.087253
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 12,
+              "total_ms": 0.061549999999999994,
+              "max_ms": 0.008903
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 15,
+              "total_ms": 0.091087,
+              "max_ms": 0.006919
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.034705,
+              "max_ms": 0.013538
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.066,
+              "max_ms": 0.015236
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 1,
+              "total_ms": 0.310664,
+              "max_ms": 0.310664
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07925400000000002,
+              "max_ms": 0.009605
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.034610999999999996,
+              "max_ms": 0.022756
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.46189100000000005,
+              "max_ms": 0.42434
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.546056,
+              "max_ms": 0.332586
+            }
+          }
+        },
+        {
+          "start_ns": 105857790433,
+          "entity_ms": 1.892839,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.042821,
+              "max_ms": 0.02181
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.061359,
+              "max_ms": 0.03322
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.016454,
+              "max_ms": 0.009533
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 34,
+              "total_ms": 0.20493400000000003,
+              "max_ms": 0.027724
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.028888999999999998,
+              "max_ms": 0.014596
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.126921,
+              "max_ms": 0.023661
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.6186430000000003,
+              "max_ms": 0.415294
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.159744,
+              "max_ms": 0.072825
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.050688,
+              "max_ms": 0.005262
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 25,
+              "total_ms": 0.10714199999999999,
+              "max_ms": 0.006425
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.02302,
+              "max_ms": 0.00774
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.046539000000000004,
+              "max_ms": 0.006999
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.443883,
+              "max_ms": 0.254998
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.357629,
+              "max_ms": 0.068449
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.026332,
+              "max_ms": 0.014085
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.601978,
+              "max_ms": 0.327622
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.384526,
+              "max_ms": 0.208472
+            }
+          }
+        },
+        {
+          "start_ns": 106330208526,
+          "entity_ms": 1.889789,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.07283,
+              "max_ms": 0.037725
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.110574,
+              "max_ms": 0.056692
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.023758,
+              "max_ms": 0.011916
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 17,
+              "total_ms": 0.115152,
+              "max_ms": 0.009517
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 1,
+              "total_ms": 0.022061,
+              "max_ms": 0.022061
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 6,
+              "total_ms": 0.162004,
+              "max_ms": 0.03369
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 6,
+              "total_ms": 1.519385,
+              "max_ms": 0.435107
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 4,
+              "total_ms": 0.22187900000000002,
+              "max_ms": 0.072952
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 12,
+              "total_ms": 0.06529,
+              "max_ms": 0.007397
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 15,
+              "total_ms": 0.09197100000000001,
+              "max_ms": 0.007067
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.037291,
+              "max_ms": 0.011996
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.067301,
+              "max_ms": 0.011144
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 1,
+              "total_ms": 0.263059,
+              "max_ms": 0.263059
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07867500000000001,
+              "max_ms": 0.009194
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.042565,
+              "max_ms": 0.021689
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.38247,
+              "max_ms": 0.347225
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.632816,
+              "max_ms": 0.329296
+            }
+          }
+        },
+        {
+          "start_ns": 95135902819,
+          "entity_ms": 1.887494,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.046522999999999995,
+              "max_ms": 0.02598
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.21743400000000002,
+              "max_ms": 0.121902
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.024775,
+              "max_ms": 0.014734
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 2,
+              "total_ms": 0.042858999999999994,
+              "max_ms": 0.025806
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.20753400000000002,
+              "max_ms": 0.091039
+            },
+            "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+              "calls": 2,
+              "total_ms": 0.211341,
+              "max_ms": 0.124773
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.611295,
+              "max_ms": 0.425328
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.14608,
+              "max_ms": 0.076526
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.057075999999999995,
+              "max_ms": 0.006005
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 11,
+              "total_ms": 0.08105100000000001,
+              "max_ms": 0.028237
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.029531,
+              "max_ms": 0.013288
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 9,
+              "total_ms": 0.290088,
+              "max_ms": 0.151612
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.063809,
+              "max_ms": 0.008639
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.026947,
+              "max_ms": 0.014464
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.414153,
+              "max_ms": 0.241457
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.64698,
+              "max_ms": 0.332332
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "mode": "heli-infantry-aa",
+      "frames": 965,
+      "entity": {
+        "count": 965,
+        "total_ms": 1172.504903999999,
+        "mean_ms": 1.2150309886010362,
+        "p50_ms": 1.18681,
+        "p90_ms": 1.6501582,
+        "p95_ms": 1.7174205999999999,
+        "p99_ms": 1.9645609600000005,
+        "max_ms": 2.682656,
+        "over_1ms": 782,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 1608,
+          "total_ms": 35.45490500000011,
+          "mean_ms": 0.02204907027363184,
+          "p50_ms": 0.0220145,
+          "p90_ms": 0.024741799999999998,
+          "p95_ms": 0.02702244999999999,
+          "p99_ms": 0.03497505000000002,
+          "max_ms": 0.08658,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+          "count": 1608,
+          "total_ms": 51.31663299999996,
+          "mean_ms": 0.031913328980099506,
+          "p50_ms": 0.032869,
+          "p90_ms": 0.037728399999999995,
+          "p95_ms": 0.04207999999999998,
+          "p99_ms": 0.056387590000000105,
+          "max_ms": 0.111153,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+          "count": 1608,
+          "total_ms": 11.45903599999999,
+          "mean_ms": 0.007126266169154229,
+          "p50_ms": 0.00734,
+          "p90_ms": 0.0085736,
+          "p95_ms": 0.010505499999999985,
+          "p99_ms": 0.013075700000000006,
+          "max_ms": 0.049049,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+          "count": 7888,
+          "total_ms": 41.35013899999987,
+          "mean_ms": 0.005242157581135902,
+          "p50_ms": 0.004947,
+          "p90_ms": 0.005838,
+          "p95_ms": 0.0072635999999999985,
+          "p99_ms": 0.008758730000000003,
+          "max_ms": 0.028108,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+          "count": 1519,
+          "total_ms": 21.749369,
+          "mean_ms": 0.014318215273206057,
+          "p50_ms": 0.014842,
+          "p90_ms": 0.0163326,
+          "p95_ms": 0.017320099999999998,
+          "p99_ms": 0.02368549999999997,
+          "max_ms": 0.03606,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+          "count": 6434,
+          "total_ms": 113.5910840000003,
+          "mean_ms": 0.017654815666770282,
+          "p50_ms": 0.015693,
+          "p90_ms": 0.0249694,
+          "p95_ms": 0.02657584999999999,
+          "p99_ms": 0.0341158,
+          "max_ms": 0.059712,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": {
+          "count": 1302,
+          "total_ms": 78.62857599999998,
+          "mean_ms": 0.06039061136712749,
+          "p50_ms": 0.0632485,
+          "p90_ms": 0.0674869,
+          "p95_ms": 0.0719477,
+          "p99_ms": 0.08660182000000001,
+          "max_ms": 0.162603,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+          "count": 6434,
+          "total_ms": 947.9606870000024,
+          "mean_ms": 0.1473361341311781,
+          "p50_ms": 0.10608100000000001,
+          "p90_ms": 0.3016114,
+          "p95_ms": 0.3217354499999999,
+          "p99_ms": 0.40569605,
+          "max_ms": 0.652911,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+          "count": 3216,
+          "total_ms": 118.80768700000012,
+          "mean_ms": 0.036942688743781094,
+          "p50_ms": 0.032547,
+          "p90_ms": 0.0436165,
+          "p95_ms": 0.07007325,
+          "p99_ms": 0.08623399999999992,
+          "max_ms": 0.153963,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+          "count": 12868,
+          "total_ms": 45.89629499999997,
+          "mean_ms": 0.0035666999533727076,
+          "p50_ms": 0.003351,
+          "p90_ms": 0.004501600000000002,
+          "p95_ms": 0.005546,
+          "p99_ms": 0.0065913099999999995,
+          "max_ms": 0.02906,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+          "count": 13001,
+          "total_ms": 54.364814999999965,
+          "mean_ms": 0.004181587185601108,
+          "p50_ms": 0.004028,
+          "p90_ms": 0.00452,
+          "p95_ms": 0.005111,
+          "p99_ms": 0.006738,
+          "max_ms": 0.099534,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+          "count": 3216,
+          "total_ms": 19.011306000000026,
+          "mean_ms": 0.005911475746268657,
+          "p50_ms": 0.0052345,
+          "p90_ms": 0.0078145,
+          "p95_ms": 0.008136000000000001,
+          "p99_ms": 0.01155635,
+          "max_ms": 0.064552,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+          "count": 7951,
+          "total_ms": 126.62923600000079,
+          "mean_ms": 0.0159262024902528,
+          "p50_ms": 0.00453,
+          "p90_ms": 0.067347,
+          "p95_ms": 0.07721700000000001,
+          "p99_ms": 0.084437,
+          "max_ms": 0.179044,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 464,
+          "total_ms": 90.33394000000001,
+          "mean_ms": 0.19468521551724138,
+          "p50_ms": 0.194386,
+          "p90_ms": 0.20345059999999998,
+          "p95_ms": 0.21653569999999997,
+          "p99_ms": 0.27089652000000003,
+          "max_ms": 0.360407,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9650,
+          "total_ms": 83.32812200000012,
+          "mean_ms": 0.008635038549222797,
+          "p50_ms": 0.005051,
+          "p90_ms": 0.008826,
+          "p95_ms": 0.0450531,
+          "p99_ms": 0.05976569000000003,
+          "max_ms": 0.172286,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1608,
+          "total_ms": 20.504852000000014,
+          "mean_ms": 0.012751773631840796,
+          "p50_ms": 0.012838,
+          "p90_ms": 0.014740099999999999,
+          "p95_ms": 0.016595099999999998,
+          "p99_ms": 0.02203371000000003,
+          "max_ms": 0.040108,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6434,
+          "total_ms": 263.5363390000001,
+          "mean_ms": 0.040959953217283185,
+          "p50_ms": 0.0046155,
+          "p90_ms": 0.12263669999999999,
+          "p95_ms": 0.24548979999999995,
+          "p99_ms": 0.27020712,
+          "max_ms": 0.432764,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1608,
+          "total_ms": 316.0202910000003,
+          "mean_ms": 0.1965300317164179,
+          "p50_ms": 0.190436,
+          "p90_ms": 0.2485733,
+          "p95_ms": 0.30129114999999995,
+          "p99_ms": 0.35515123000000004,
+          "max_ms": 0.525867,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 147863822528,
+          "entity_ms": 2.682656,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.056173,
+              "max_ms": 0.034344
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.076529,
+              "max_ms": 0.041394
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.016848000000000002,
+              "max_ms": 0.00853
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.3095140000000001,
+              "max_ms": 0.012203
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.052513000000000004,
+              "max_ms": 0.021417
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.160274,
+              "max_ms": 0.038569
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 2.286055,
+              "max_ms": 0.568082
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.243404,
+              "max_ms": 0.113672
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.064029,
+              "max_ms": 0.008523
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.15198300000000003,
+              "max_ms": 0.007152
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.027985000000000003,
+              "max_ms": 0.008933
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.06734299999999999,
+              "max_ms": 0.01215
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.69661,
+              "max_ms": 0.307769
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.46780600000000006,
+              "max_ms": 0.091627
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.031487,
+              "max_ms": 0.01826
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.950011,
+              "max_ms": 0.405512
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.49511499999999997,
+              "max_ms": 0.284675
+            }
+          }
+        },
+        {
+          "start_ns": 142344096096,
+          "entity_ms": 2.209501,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.043911000000000006,
+              "max_ms": 0.024046
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.068206,
+              "max_ms": 0.039179
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.014428,
+              "max_ms": 0.007792
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.380233,
+              "max_ms": 0.014751
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.055055,
+              "max_ms": 0.024316
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.15454199999999998,
+              "max_ms": 0.032424
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.98798,
+              "max_ms": 0.509666
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.10170799999999999,
+              "max_ms": 0.03832
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.061005,
+              "max_ms": 0.007813
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 15,
+              "total_ms": 0.068489,
+              "max_ms": 0.007627
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.027274999999999997,
+              "max_ms": 0.011558
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.055159,
+              "max_ms": 0.008569
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.8775090000000001,
+              "max_ms": 0.360407
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.058658,
+              "max_ms": 0.009479
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.037564,
+              "max_ms": 0.026671
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 1.135495,
+              "max_ms": 0.432764
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.408938,
+              "max_ms": 0.243363
+            }
+          }
+        },
+        {
+          "start_ns": 144628357863,
+          "entity_ms": 2.101586,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.047805,
+              "max_ms": 0.024541
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.062736,
+              "max_ms": 0.034146
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.013679,
+              "max_ms": 0.007891
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.26356699999999994,
+              "max_ms": 0.008462
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.043006,
+              "max_ms": 0.015448
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.14606199999999997,
+              "max_ms": 0.04702
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.8295289999999997,
+              "max_ms": 0.366376
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.154001,
+              "max_ms": 0.071495
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.053627999999999995,
+              "max_ms": 0.00916
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.11269900000000001,
+              "max_ms": 0.006332
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.023108,
+              "max_ms": 0.007587
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.049669000000000005,
+              "max_ms": 0.006842
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.57209,
+              "max_ms": 0.195248
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.34643399999999996,
+              "max_ms": 0.062494
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.034565,
+              "max_ms": 0.02056
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.7734610000000002,
+              "max_ms": 0.258183
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.40828699999999996,
+              "max_ms": 0.222956
+            }
+          }
+        },
+        {
+          "start_ns": 143538884619,
+          "entity_ms": 2.081678,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.045455999999999996,
+              "max_ms": 0.024795
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.069942,
+              "max_ms": 0.040782
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.020499,
+              "max_ms": 0.013473
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.2611440000000001,
+              "max_ms": 0.008692
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.04111,
+              "max_ms": 0.016245
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.126684,
+              "max_ms": 0.02642
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.8162139999999998,
+              "max_ms": 0.383555
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.153012,
+              "max_ms": 0.071301
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.051543,
+              "max_ms": 0.006108
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.111054,
+              "max_ms": 0.005316
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.02541,
+              "max_ms": 0.008346
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.049467000000000004,
+              "max_ms": 0.007691
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.566171,
+              "max_ms": 0.197278
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.362629,
+              "max_ms": 0.069079
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.028895999999999998,
+              "max_ms": 0.01489
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.761379,
+              "max_ms": 0.263865
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.415119,
+              "max_ms": 0.240026
+            }
+          }
+        },
+        {
+          "start_ns": 146031631068,
+          "entity_ms": 2.034802,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.056574,
+              "max_ms": 0.035002
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.126163,
+              "max_ms": 0.063646
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.023673,
+              "max_ms": 0.014304
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.26400300000000004,
+              "max_ms": 0.008974
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.043896,
+              "max_ms": 0.018012
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.131583,
+              "max_ms": 0.030437
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.8206289999999998,
+              "max_ms": 0.493703
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.102739,
+              "max_ms": 0.039462
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.054322999999999996,
+              "max_ms": 0.00805
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 15,
+              "total_ms": 0.16864300000000002,
+              "max_ms": 0.099534
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.031908,
+              "max_ms": 0.014263
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.051185,
+              "max_ms": 0.007509
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.57476,
+              "max_ms": 0.202329
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.055983,
+              "max_ms": 0.007783
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.028612,
+              "max_ms": 0.016326
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.779083,
+              "max_ms": 0.273434
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.544111,
+              "max_ms": 0.296936
+            }
+          }
+        },
+        {
+          "start_ns": 140301000877,
+          "entity_ms": 2.028379,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.043778,
+              "max_ms": 0.02405
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.060337999999999996,
+              "max_ms": 0.033467
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.013379000000000002,
+              "max_ms": 0.007933
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.2665350000000001,
+              "max_ms": 0.00855
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.040268,
+              "max_ms": 0.016105
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.123121,
+              "max_ms": 0.024675
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.7784119999999999,
+              "max_ms": 0.361227
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.14663700000000002,
+              "max_ms": 0.069763
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.050219000000000014,
+              "max_ms": 0.005303
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.11066000000000002,
+              "max_ms": 0.004906
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.023246000000000003,
+              "max_ms": 0.007519
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.04699099999999999,
+              "max_ms": 0.006487
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.5791679999999999,
+              "max_ms": 0.19427
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.345635,
+              "max_ms": 0.060549
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.027353,
+              "max_ms": 0.0167
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.771588,
+              "max_ms": 0.258536
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.38861,
+              "max_ms": 0.233491
+            }
+          }
+        },
+        {
+          "start_ns": 142447913355,
+          "entity_ms": 2.020682,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.0464,
+              "max_ms": 0.025354
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.06507399999999999,
+              "max_ms": 0.036181
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.013453,
+              "max_ms": 0.007501
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.26796099999999995,
+              "max_ms": 0.008285
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.040730999999999996,
+              "max_ms": 0.015154
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.123167,
+              "max_ms": 0.024102
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.7586320000000002,
+              "max_ms": 0.375308
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.149978,
+              "max_ms": 0.070634
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.049285999999999996,
+              "max_ms": 0.005137
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.111864,
+              "max_ms": 0.005953
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.023337,
+              "max_ms": 0.007809
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.047444999999999994,
+              "max_ms": 0.006489
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.577808,
+              "max_ms": 0.210538
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.338181,
+              "max_ms": 0.058684
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.024984,
+              "max_ms": 0.013255
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.770392,
+              "max_ms": 0.271933
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.374232,
+              "max_ms": 0.20386
+            }
+          }
+        },
+        {
+          "start_ns": 141387493508,
+          "entity_ms": 2.011017,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.046120999999999995,
+              "max_ms": 0.026014
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.062886,
+              "max_ms": 0.034794
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.013762,
+              "max_ms": 0.007599
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.25764399999999993,
+              "max_ms": 0.008618
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.041605,
+              "max_ms": 0.015869
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.129985,
+              "max_ms": 0.025279
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.7471500000000002,
+              "max_ms": 0.36835
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.15110099999999999,
+              "max_ms": 0.071074
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.050119000000000004,
+              "max_ms": 0.00563
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.108863,
+              "max_ms": 0.004799
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.023354,
+              "max_ms": 0.007597
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.05050600000000001,
+              "max_ms": 0.006903
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.557507,
+              "max_ms": 0.195063
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.341828,
+              "max_ms": 0.062411
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.02484,
+              "max_ms": 0.013757
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.7544170000000001,
+              "max_ms": 0.260871
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.376084,
+              "max_ms": 0.210495
+            }
+          }
+        },
+        {
+          "start_ns": 145709620037,
+          "entity_ms": 1.984382,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.042866,
+              "max_ms": 0.022885
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.061714,
+              "max_ms": 0.035258
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.013677,
+              "max_ms": 0.008069
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.25982799999999995,
+              "max_ms": 0.008412
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.039719,
+              "max_ms": 0.015273
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.11968200000000002,
+              "max_ms": 0.024792
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.7203119999999998,
+              "max_ms": 0.359984
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.14686100000000002,
+              "max_ms": 0.069484
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.048867,
+              "max_ms": 0.005474
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.115824,
+              "max_ms": 0.011621
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.023364000000000003,
+              "max_ms": 0.008094
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.047368,
+              "max_ms": 0.007259
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.5577430000000001,
+              "max_ms": 0.19484
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.343623,
+              "max_ms": 0.060484
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.024338,
+              "max_ms": 0.013401
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.7457250000000001,
+              "max_ms": 0.257313
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.367004,
+              "max_ms": 0.210799
+            }
+          }
+        },
+        {
+          "start_ns": 148948732132,
+          "entity_ms": 1.983576,
+          "operations": {
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": {
+              "calls": 2,
+              "total_ms": 0.039574,
+              "max_ms": 0.019985
+            },
+            "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": {
+              "calls": 2,
+              "total_ms": 0.053806999999999994,
+              "max_ms": 0.027249
+            },
+            "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": {
+              "calls": 2,
+              "total_ms": 0.011040999999999999,
+              "max_ms": 0.006022
+            },
+            "IVCS_ENTITY_IVCS_Combat_getWeaponProfile": {
+              "calls": 51,
+              "total_ms": 0.267583,
+              "max_ms": 0.014405
+            },
+            "IVCS_ENTITY_IVCS_Combat_isInfantry": {
+              "calls": 3,
+              "total_ms": 0.034436,
+              "max_ms": 0.013226
+            },
+            "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask": {
+              "calls": 7,
+              "total_ms": 0.124029,
+              "max_ms": 0.024584
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Group_update": {
+              "calls": 7,
+              "total_ms": 1.724124,
+              "max_ms": 0.33977
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update": {
+              "calls": 3,
+              "total_ms": 0.1472,
+              "max_ms": 0.068728
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask": {
+              "calls": 14,
+              "total_ms": 0.04949799999999999,
+              "max_ms": 0.005523
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": {
+              "calls": 27,
+              "total_ms": 0.11228099999999999,
+              "max_ms": 0.005254
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": {
+              "calls": 4,
+              "total_ms": 0.021033999999999997,
+              "max_ms": 0.005854
+            },
+            "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": {
+              "calls": 10,
+              "total_ms": 0.048041999999999994,
+              "max_ms": 0.006973
+            },
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.56152,
+              "max_ms": 0.189039
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.34045899999999996,
+              "max_ms": 0.052129
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.021785,
+              "max_ms": 0.011328
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.748529,
+              "max_ms": 0.24556
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.346302,
+              "max_ms": 0.174244
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

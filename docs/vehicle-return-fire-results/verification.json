@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-25",
+  "scope": "Land-vehicle return fire against infantry",
+  "passed": 716,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "tests/combat/vehicle-return-fire.sqf",
+      "passed": 44,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-9884f9f2b11c4e6ca13e1d147d523fd7\\profile\\arma3server_x64_2026-10-25_01-08-03.rpt",
+      "rpt_sha256": "be9c6321bc5c09e2a5cadfd79167b5e5dcabae73bd2763f7e4ef6507def9c738",
+      "test_source_retained": true,
+      "test_source_matches_current": true,
+      "production_updated_after_suite": [],
+      "errors": [],
+      "production_match_count": 432,
+      "production_copy_missing_count": 0
+    },
+    {
+      "suite": "tests/combat/vehicles.sqf",
+      "passed": 58,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f1eec5e69df14dc6a71887d1a0fee31d\\profile\\arma3server_x64_2026-10-25_01-08-32.rpt",
+      "rpt_sha256": "67f6a69eb6cfb36f8d8140f4fb72fe2512c001a72371c5fd93b2abf497aeb698",
+      "test_source_retained": true,
+      "test_source_matches_current": true,
+      "production_updated_after_suite": [],
+      "errors": [],
+      "production_match_count": 432,
+      "production_copy_missing_count": 0
+    },
+    {
+      "suite": "tests/combat/vehicle-expansion.sqf",
+      "passed": 57,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-cfd7c01e6c8047f6adabd66f34d11a49\\profile\\arma3server_x64_2026-10-25_00-50-55.rpt",
+      "rpt_sha256": "e4d52636190a7618d03a66f8dae3c9e0446c81c16966776fb764b74d18bb66a6",
+      "test_source_retained": true,
+      "test_source_matches_current": true,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/findTarget.sqf",
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf",
+        "VirtualSpace/functions/combat/getReturnFireShot.sqf",
+        "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+        "VirtualSpace/functions/entities/vehicle/update.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 46,
+      "production_copy_missing_count": 381
+    },
+    {
+      "suite": "tests/combat/vehicle-calibration.sqf",
+      "passed": 228,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a3f66d02909542f8afda20c0b1422ee3\\profile\\arma3server_x64_2026-10-25_00-51-47.rpt",
+      "rpt_sha256": "b48ce3007b1f7a47b53498bd3bd6d915cc0df794b757676df761bb579ae0a34d",
+      "test_source_retained": true,
+      "test_source_matches_current": true,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/findTarget.sqf",
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf",
+        "VirtualSpace/functions/combat/getReturnFireShot.sqf",
+        "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+        "VirtualSpace/functions/entities/vehicle/update.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 46,
+      "production_copy_missing_count": 381
+    },
+    {
+      "suite": "tests/combat/run.sqf",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-5052bd22983144d3a27f4efcc1bd5a08\\profile\\arma3server_x64_2026-10-25_00-52-16.rpt",
+      "rpt_sha256": "9b488fceeaf24412609445ecc176895247048c825f1836f7b20a0a885538a811",
+      "test_source_retained": true,
+      "test_source_matches_current": true,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/findTarget.sqf",
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf",
+        "VirtualSpace/functions/combat/getReturnFireShot.sqf",
+        "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+        "VirtualSpace/functions/entities/vehicle/update.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 46,
+      "production_copy_missing_count": 381
+    },
+    {
+      "suite": "tests/virtualization/run.sqf",
+      "passed": 96,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f91f84c605584886a2e7a9648d708847\\profile\\arma3server_x64_2026-10-25_00-58-05.rpt",
+      "rpt_sha256": "38a3c4905bd6842bc07ae5d467849adf2533860eb8165a33eb5143676d0861f7",
+      "test_source_retained": false,
+      "test_source_matches_current": null,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 50,
+      "production_copy_missing_count": 381
+    },
+    {
+      "suite": "tests/combat/aggregation.sqf",
+      "passed": 109,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-1aee858b0cdb463cbe07555d1ab17483\\profile\\arma3server_x64_2026-10-25_00-53-55.rpt",
+      "rpt_sha256": "f3d5735a470e2ef85292b1c0ec3f1099cebdbd049008d03236965c2b3a8d030d",
+      "test_source_retained": false,
+      "test_source_matches_current": null,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/findTarget.sqf",
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf",
+        "VirtualSpace/functions/combat/getReturnFireShot.sqf",
+        "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+        "VirtualSpace/functions/entities/vehicle/update.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 46,
+      "production_copy_missing_count": 381
+    },
+    {
+      "suite": "tests/combat/handoff-ammo.sqf",
+      "passed": 53,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d3ac460f1a8e49c291259e6128248bf4\\profile\\arma3server_x64_2026-10-25_00-54-27.rpt",
+      "rpt_sha256": "942fa29a611d8affa55232a5419d2d2aeed78ddfda87d34fdd11dd5f5b895033",
+      "test_source_retained": false,
+      "test_source_matches_current": null,
+      "production_updated_after_suite": [
+        "VirtualSpace/functions/combat/findTarget.sqf",
+        "VirtualSpace/functions/combat/getAmmoProfile.sqf",
+        "VirtualSpace/functions/combat/getReturnFireShot.sqf",
+        "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+        "VirtualSpace/functions/entities/vehicle/update.sqf"
+      ],
+      "errors": [],
+      "production_match_count": 46,
+      "production_copy_missing_count": 381
+    }
+  ],
+  "note": "Latest passing run of each suite. Return-fire suite covers final GMG policy and discovery; vehicle integration is rechecked after the GMG fix. Other earlier suites precede the listed source edits. Missing temporary copies are unknown, not mismatches. Production hashes in source-hashes.json freeze the final files."
+}

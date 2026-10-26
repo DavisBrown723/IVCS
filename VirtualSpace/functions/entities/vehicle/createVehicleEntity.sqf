@@ -9,27 +9,38 @@ private _vehicleConfig = configfile >> "CfgVehicles" >> _vehicleClass;
 private _vehicleType = [_vehicleClass] call IVCS_Common_findUnitType;
 private _maxSpeed = getnumber (_vehicleConfig >> "maxSpeed");
 
-private _hitpoints = [_vehicleConfig >> "HitPoints", 0] call BIS_fnc_returnChildren;
+private _profile = [_vehicleClass] call IVCS_Combat_getVehicleProfile;
 private _side = [_vehicleClass] call IVCS_Common_getVehicleSide;
 
 private _vehicleEntity = createHashMapFromArray [
-    ["timeLastUpdate", diag_tickTime],
+    ["timeLastUpdate", IVCS_SimulationTime],
     ["delayedInitComplete", false],
 
     ["entityType", "vehicle"],
     ["vehicleType", _vehicleType],
     ["class", _vehicleClass],
     ["active", false],
+    ["simulationTransition", false],
+    ["combatID", ""],
+    ["nextCombatScan", 0],
+    ["combatStartedAt", 0],
+    ["damage", 0],
     ["position", _position],
     ["side", _side],
-    ["engineOn", false],
+    ["engineOn",_vehicleClass isKindOf "Air" && { (_position param [2,0]) > 20 }],
+    ["nativeCrew",[]],
+    ["turretFireDelays",createHashMap],
+    ["combatCooldowns",createHashMap],
+    ["airPassCrew",[]], ["airPassModes",[]], ["nativeAirTarget",objNull], ["nativeAirDestination",[]], ["airThreat",[]], ["airEvasionPoint",[]], ["airMovementOverride",false],
+    ["flightRestorePending",false], ["flightHeading",0], ["flightVelocity",[0,0,0]],
 
     ["assignedEntity", ""],
     ["commandingEntity", ""],
     ["entitiesInCargo", []],
 
     ["speedPerSecond", round (_maxSpeed * 0.15)],
-    ["hitpoints", _hitpoints apply {[configname _x, 0]}],
+    ["baseSpeedPerSecond",round (_maxSpeed * 0.15)],
+    ["hitpoints",(_profile get "names") apply {[_x,0]}],
 
     ["object", objNull]
 ];
@@ -53,10 +64,14 @@ _vehicleEntity set ["inventory", _vehicleInventory];
 
 private _vehicleTurrets = [_vehicleClass] call IVCS_VirtualSpace_Vehicle_getTurretsLoadout;
 _vehicleEntity set ["turrets", _vehicleTurrets];
+{
+    {[_x] call IVCS_Combat_getTurretWeaponProfile} forEach (_x select 1);
+    {if ((_x select 1)!="") then {[getText (configFile >> "CfgMagazines" >> (_x select 1) >> "pylonWeapon")] call IVCS_Combat_getTurretWeaponProfile}} forEach (_x select 3);
+} forEach _vehicleTurrets;
 
 // set type specific vars
 
-if (_vehicleType == "uav") then {
+if (getNumber (_vehicleConfig >> "isUav") > 0) then {
     _vehicleEntity set ["entityType", "uav"];
 
     // _vehicleEntity set ["update", "IVCS_VirtualSpace_Uav_update"];
@@ -75,6 +90,7 @@ if (_vehicleType == "uav") then {
 };
 
 [_vehicleEntity] call IVCS_VirtualSpace_registerEntity;
+if (_vehicleType=="helicopter") then {((IVCS_VirtualSpace_Controller get "combat") get "helicopters") set [_vehicleEntity get "id",_vehicleEntity]};
 
 private _debug = IVCS_VirtualSpace_Controller get "debug";
 private _debugMarker = if (_debug) then {

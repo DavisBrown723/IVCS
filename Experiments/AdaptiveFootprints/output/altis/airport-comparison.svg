@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="960" viewBox="0 0 1420 960">
+<rect x="0" y="0" width="1420" height="960" fill="#f7f8fa" stroke="#f7f8fa"/>
+<text x="40" y="54" fill="#263448" font-family="Segoe UI, sans-serif" font-size="30">Altis airport | adaptive footprint experiment</text>
+<text x="40" y="86" fill="#263448" font-family="Segoe UI, sans-serif" font-size="18">Generated coordinates at the same scale. Coloured outlines are site boundaries; dots identify nearby sites.</text>
+<text x="40" y="115" fill="#606b7a" font-family="Segoe UI, sans-serif" font-size="17">This is a geometry comparison without a terrain basemap. Review the in-game overlay before merging.</text>
+<text x="35" y="169" fill="#263448" font-family="Segoe UI, sans-serif" font-size="24">Current index: circles</text>
+<text x="35" y="197" fill="#566477" font-family="Segoe UI, sans-serif" font-size="17">1,125 m airport radius</text>
+<rect x="35" y="211" width="655.2" height="702" fill="#ffffff" stroke="#d9e0e8"/>
+<polyline points="46.70,913.00 46.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="163.70,913.00 163.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="280.70,913.00 280.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="397.70,913.00 397.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="514.70,913.00 514.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="631.70,913.00 631.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,913.00 690.20,913.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,796.00 690.20,796.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,679.00 690.20,679.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,562.00 690.20,562.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,445.00 690.20,445.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,328.00 690.20,328.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="35.00,211.00 690.20,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polygon points="594.88,570.44 594.52,556.66 593.44,542.93 591.64,529.27 589.13,515.72 585.91,502.33 582.00,489.12 577.40,476.13 572.13,463.40 566.20,450.97 559.62,438.86 552.43,427.11 544.62,415.76 536.24,404.83 527.29,394.35 517.80,384.36 507.81,374.88 497.33,365.93 486.40,357.54 475.05,349.74 463.30,342.54 451.20,335.97 438.76,330.04 426.03,324.76 413.05,320.17 399.84,316.25 386.44,313.04 372.89,310.53 359.24,308.73 345.50,307.65 331.73,307.29 317.96,307.65 304.22,308.73 290.56,310.53 277.02,313.04 263.62,316.25 250.41,320.17 237.42,324.76 224.70,330.04 212.26,335.97 200.15,342.54 188.41,349.74 177.05,357.54 166.12,365.93 155.65,374.88 145.65,384.36 136.17,394.35 127.22,404.83 118.84,415.76 111.03,427.11 103.83,438.86 97.26,450.97 91.33,463.40 86.06,476.13 81.46,489.12 77.55,502.33 74.33,515.72 71.82,529.27 70.02,542.93 68.94,556.66 68.58,570.44 68.94,584.21 70.02,597.94 71.82,611.60 74.33,625.15 77.55,638.55 81.46,651.75 86.06,664.74 91.33,677.47 97.26,689.90 103.83,702.01 111.03,713.76 118.84,725.11 127.22,736.04 136.17,746.52 145.65,756.51 155.65,766.00 166.12,774.94 177.05,783.33 188.41,791.13 200.15,798.33 212.26,804.91 224.70,810.84 237.42,816.11 250.41,820.71 263.62,824.62 277.02,827.84 290.56,830.35 304.22,832.15 317.96,833.23 331.73,833.59 345.50,833.23 359.24,832.15 372.89,830.35 386.44,827.84 399.84,824.62 413.05,820.71 426.03,816.11 438.76,810.84 451.20,804.91 463.30,798.33 475.05,791.13 486.40,783.33 497.33,774.94 507.81,766.00 517.80,756.51 527.29,746.52 536.24,736.04 544.62,725.11 552.43,713.76 559.62,702.01 566.20,689.90 572.13,677.47 577.40,664.74 582.00,651.75 585.91,638.55 589.13,625.15 591.64,611.60 593.44,597.94 594.52,584.21" fill="none" stroke="#b52d35" stroke-width="3"/>
+<polygon points="404.64,663.99 404.42,655.65 403.76,647.32 402.67,639.04 401.15,630.82 399.20,622.70 396.83,614.69 394.04,606.82 390.84,599.10 387.25,591.56 383.26,584.22 378.90,577.10 374.17,570.22 369.08,563.59 363.66,557.24 357.91,551.18 351.85,545.43 345.50,540.01 338.87,534.92 331.99,530.19 324.86,525.83 317.52,521.84 309.98,518.25 302.27,515.05 294.39,512.26 286.39,509.89 278.26,507.94 270.05,506.42 261.77,505.33 253.44,504.67 245.09,504.45 236.74,504.67 228.42,505.33 220.13,506.42 211.92,507.94 203.80,509.89 195.79,512.26 187.92,515.05 180.20,518.25 172.66,521.84 165.32,525.83 158.20,530.19 151.32,534.92 144.69,540.01 138.34,545.43 132.28,551.18 126.53,557.24 121.10,563.59 116.02,570.22 111.29,577.10 106.92,584.22 102.94,591.56 99.34,599.10 96.15,606.82 93.36,614.69 90.99,622.70 89.04,630.82 87.51,639.04 86.42,647.32 85.77,655.65 85.55,663.99 85.77,672.34 86.42,680.67 87.51,688.95 89.04,697.17 90.99,705.29 93.36,713.30 96.15,721.17 99.34,728.89 102.94,736.43 106.92,743.77 111.29,750.89 116.02,757.77 121.10,764.40 126.53,770.75 132.28,776.81 138.34,782.56 144.69,787.98 151.32,793.07 158.20,797.80 165.32,802.16 172.66,806.15 180.20,809.74 187.92,812.94 195.79,815.73 203.80,818.10 211.92,820.05 220.13,821.57 228.42,822.66 236.74,823.32 245.09,823.54 253.44,823.32 261.77,822.66 270.05,821.57 278.26,820.05 286.39,818.10 294.39,815.73 302.27,812.94 309.98,809.74 317.52,806.15 324.86,802.16 331.99,797.80 338.87,793.07 345.50,787.98 351.85,782.56 357.91,776.81 363.66,770.75 369.08,764.40 374.17,757.77 378.90,750.89 383.26,743.77 387.25,736.43 390.84,728.89 394.04,721.17 396.83,713.30 399.20,705.29 401.15,697.17 402.67,688.95 403.76,680.67 404.42,672.34" fill="none" stroke="#7051ad" stroke-width="3"/>
+<rect x="263.18880078007993" y="298.46659375" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="186.18880078007993" y="288.46659375" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Settlement</text>
+<rect x="250.1698085949201" y="503.2961171875" width="6.000000000000028" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="199.1698085949201" y="499.2961171875" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Radio</text>
+<rect x="201.92170507754017" y="548.7135976550803" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="156.92170507754017" y="567.7135976550803" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Fuel</text>
+<rect x="494.99367968750005" y="591.4588164050799" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="508.99367968750005" y="598.4588164050799" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Power</text>
+<rect x="489.88955468750004" y="722.7133925775402" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="503.88955468750004" y="741.7133925775402" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Port</text>
+<rect x="440.9524765625" y="370.69764062499996" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="453.9524765625" y="367.69764062499996" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">North base</text>
+<text x="175.09223828007993" y="725.9949785150402" fill="#7051ad" font-family="Segoe UI, sans-serif" font-size="17">Nearby base</text>
+<text x="175.09223828007993" y="747.9949785150402" fill="#7051ad" font-family="Segoe UI, sans-serif" font-size="16">246 objects</text>
+<text x="53" y="246" fill="#263448" font-family="Segoe UI, sans-serif" font-size="17">N</text>
+<polyline points="61.00,277.00 61.00,257.00" fill="none" stroke="#263448" stroke-width="2"/>
+<polyline points="56.00,262.00 61.00,257.00 66.00,262.00" fill="none" stroke="#263448" stroke-width="2"/>
+<polyline points="55.00,885.00 172.00,885.00" fill="none" stroke="#263448" stroke-width="3"/>
+<text x="55" y="871" fill="#263448" font-family="Segoe UI, sans-serif" font-size="16">500 m</text>
+<text x="730" y="169" fill="#263448" font-family="Segoe UI, sans-serif" font-size="24">Experiment: adaptive footprints</text>
+<text x="730" y="197" fill="#566477" font-family="Segoe UI, sans-serif" font-size="17">771 x 2,132 m airport rectangle | 43.1 deg</text>
+<rect x="730" y="211" width="655.2" height="702" fill="#ffffff" stroke="#d9e0e8"/>
+<polyline points="741.70,913.00 741.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="858.70,913.00 858.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="975.70,913.00 975.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="1092.70,913.00 1092.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="1209.70,913.00 1209.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="1326.70,913.00 1326.70,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,913.00 1385.20,913.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,796.00 1385.20,796.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,679.00 1385.20,679.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,562.00 1385.20,562.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,445.00 1385.20,445.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,328.00 1385.20,328.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polyline points="730.00,211.00 1385.20,211.00" fill="none" stroke="#e6ebf1" stroke-width="1"/>
+<polygon points="773.98,670.35 905.61,793.61 1246.54,429.55 1114.91,306.29" fill="none" stroke="#b52d35" stroke-width="3"/>
+<polygon points="864.90,591.71 891.84,661.13 1041.22,603.16 1014.28,533.74" fill="none" stroke="#7051ad" stroke-width="3"/>
+<rect x="958.1888007800799" y="298.46659375" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="881.1888007800799" y="288.46659375" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Settlement</text>
+<rect x="945.1698085949201" y="503.2961171875" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="894.1698085949201" y="499.2961171875" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Radio</text>
+<rect x="896.9217050775402" y="548.7135976550803" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="851.9217050775402" y="567.7135976550803" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Fuel</text>
+<rect x="1189.9936796875" y="591.4588164050799" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="1203.9936796875" y="598.4588164050799" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Power</text>
+<rect x="1184.8895546875" y="722.7133925775402" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="1198.8895546875" y="741.7133925775402" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">Port</text>
+<rect x="1135.9524765625001" y="370.69764062499996" width="6.0" height="6.0" fill="#277665" stroke="#277665"/>
+<text x="1148.9524765625001" y="367.69764062499996" fill="#236757" font-family="Segoe UI, sans-serif" font-size="16">North base</text>
+<text x="878.9627578125001" y="670.3230878900401" fill="#7051ad" font-family="Segoe UI, sans-serif" font-size="17">Nearby base</text>
+<text x="878.9627578125001" y="692.3230878900401" fill="#7051ad" font-family="Segoe UI, sans-serif" font-size="16">76 objects</text>
+<text x="748" y="246" fill="#263448" font-family="Segoe UI, sans-serif" font-size="17">N</text>
+<polyline points="756.00,277.00 756.00,257.00" fill="none" stroke="#263448" stroke-width="2"/>
+<polyline points="751.00,262.00 756.00,257.00 761.00,262.00" fill="none" stroke="#263448" stroke-width="2"/>
+<polyline points="750.00,885.00 867.00,885.00" fill="none" stroke="#263448" stroke-width="3"/>
+<text x="750" y="871" fill="#263448" font-family="Segoe UI, sans-serif" font-size="16">500 m</text>
+<text x="40" y="942" fill="#263448" font-family="Segoe UI, sans-serif" font-size="18">Airport: 59% less covered area. Objects: 1,580 -&gt; 1,580. Nearby site identities and ownership are compared in summary.json.</text>
+</svg>

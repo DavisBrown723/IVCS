@@ -1,0 +1,19 @@
+{
+  "functions": [
+    [
+      "updateHelicopter.sqf",
+      "IVCS_Combat_updateHelicopter"
+    ],
+    [
+      "getHelicopterPolicy.sqf",
+      "IVCS_Combat_getHelicopterPolicy"
+    ],
+    [
+      "getHelicopterAttackArea.sqf",
+      "IVCS_Combat_getHelicopterAttackArea"
+    ]
+  ],
+  "updateHelicopter.sqf": "f6713ffad6e103785b026d27c5e5b8a8900e047b189929f6ee0d34c2d4c2f5ed",
+  "getHelicopterPolicy.sqf": "3ab2d4ea46fade05c0b9b07c4d3b04190c484c783ff8c97c5c671b2ecdc7f311",
+  "getHelicopterAttackArea.sqf": "b77456fa8443b71edec33e9495861763632f79a880a232fffb7c29ceec53c271"
+}

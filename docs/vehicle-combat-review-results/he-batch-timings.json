@@ -1,0 +1,60 @@
+{
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-7378fbbfeaec44619c951825ee67044c\\profile\\arma3server_x64_2026-10-25_02-09-30.rpt",
+  "rows": [
+    [
+      1,
+      false,
+      300,
+      155.001
+    ],
+    [
+      1,
+      true,
+      300,
+      138
+    ],
+    [
+      2,
+      true,
+      300,
+      136.999
+    ],
+    [
+      2,
+      false,
+      300,
+      153
+    ],
+    [
+      3,
+      false,
+      300,
+      153.999
+    ],
+    [
+      3,
+      true,
+      300,
+      136.002
+    ],
+    [
+      4,
+      true,
+      300,
+      135.002
+    ],
+    [
+      4,
+      false,
+      300,
+      153
+    ]
+  ],
+  "before_mean_ms_per_call_including_reset": 0.5125,
+  "after_mean_ms_per_call_including_reset": 0.45500250000000003,
+  "reduction_percent": 11.21902439024389,
+  "counts_each": 1200,
+  "warmup_calls_per_batch": 20,
+  "seed_equivalence_cases": 32,
+  "note": "Paired batch throughput including identical fixture reset work, measured with diag_tickTime. Four trials reverse order; each batch is unscheduled. This is not a frame-p99 measurement."
+}

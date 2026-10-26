@@ -1,0 +1,167 @@
+{
+  "source": "aggregation-unprofiled-frames.csv",
+  "before_trials": [
+    1,
+    4
+  ],
+  "after_trials": [
+    2,
+    3
+  ],
+  "timer": "Arma diag_tickTime, approximately 1 ms resolution",
+  "note": "Quantized p99 is descriptive; no sub-millisecond precision is implied.",
+  "before": {
+    "step_seconds": 0.5,
+    "frames": 1673,
+    "steps": 1204,
+    "metrics": {
+      "ivcs_ms": {
+        "count": 1673,
+        "total_ms": 1248.0616400000044,
+        "mean_ms": 0.7460021757322175,
+        "p50_ms": 0.0,
+        "p90_ms": 1.9989,
+        "p95_ms": 3.00598,
+        "p99_ms": 3.9978,
+        "max_ms": 5.00488,
+        "over_1ms": 468,
+        "over_5ms": 2,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "combat_ms": {
+        "count": 1673,
+        "total_ms": 825.0194469999981,
+        "mean_ms": 0.4931377447698745,
+        "p50_ms": 0.0,
+        "p90_ms": 1.9989,
+        "p95_ms": 3.00598,
+        "p99_ms": 3.9978,
+        "max_ms": 4.98962,
+        "over_1ms": 298,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "ammo_queue_ms": {
+        "count": 1673,
+        "total_ms": 6.973266,
+        "mean_ms": 0.004168120741183503,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "max_ms": 1.00708,
+        "over_1ms": 1,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "entities_ms": {
+        "count": 1673,
+        "total_ms": 300.0564349999992,
+        "mean_ms": 0.1793523221757322,
+        "p50_ms": 0.0,
+        "p90_ms": 0.999451,
+        "p95_ms": 1.00708,
+        "p99_ms": 1.00708,
+        "max_ms": 2.01416,
+        "over_1ms": 125,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "spawner_ms": {
+        "count": 1673,
+        "total_ms": 83.9843710000001,
+        "mean_ms": 0.050199863120143455,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.3967283999998647,
+        "p99_ms": 1.00708,
+        "max_ms": 1.00708,
+        "over_1ms": 33,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  },
+  "after": {
+    "step_seconds": 1,
+    "frames": 1671,
+    "steps": 598,
+    "metrics": {
+      "ivcs_ms": {
+        "count": 1671,
+        "total_ms": 1138.5798709999954,
+        "mean_ms": 0.6813763441053261,
+        "p50_ms": 0.0,
+        "p90_ms": 1.9989,
+        "p95_ms": 3.00598,
+        "p99_ms": 3.9978,
+        "max_ms": 5.00488,
+        "over_1ms": 493,
+        "over_5ms": 2,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "combat_ms": {
+        "count": 1671,
+        "total_ms": 723.3425499999987,
+        "mean_ms": 0.43288004189108314,
+        "p50_ms": 0.0,
+        "p90_ms": 1.9989,
+        "p95_ms": 3.00598,
+        "p99_ms": 3.9978,
+        "max_ms": 3.9978,
+        "over_1ms": 273,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "ammo_queue_ms": {
+        "count": 1671,
+        "total_ms": 1.00708,
+        "mean_ms": 0.0006026810293237583,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "max_ms": 1.00708,
+        "over_1ms": 1,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "entities_ms": {
+        "count": 1671,
+        "total_ms": 288.101144999999,
+        "mean_ms": 0.1724124147217235,
+        "p50_ms": 0.0,
+        "p90_ms": 0.991821,
+        "p95_ms": 1.00708,
+        "p99_ms": 1.00708,
+        "max_ms": 1.9989,
+        "over_1ms": 161,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "spawner_ms": {
+        "count": 1671,
+        "total_ms": 103.11888000000013,
+        "mean_ms": 0.06171087971274685,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.991821,
+        "p99_ms": 1.00708,
+        "max_ms": 1.00708,
+        "over_1ms": 63,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  }
+}

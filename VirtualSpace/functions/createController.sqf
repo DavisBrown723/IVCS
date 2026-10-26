@@ -20,6 +20,7 @@ private _entitiesSpacialGrid = [_gridOrigin, worldSize + (2 * _mapOverlap), 600]
 
 private _controller = createHashMapFromArray [
    ["debug", _debug],
+    ["combat", [] call IVCS_Combat_createController],
     ["entities", _virtualGroups],
     ["nextEntityID", 0],
     ["entitiesToSimulate", []],

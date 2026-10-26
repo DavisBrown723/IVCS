@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "suites": [
+    {
+      "name": "arrival-policy",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b7eae5dca82b4ec6bacf8f4c361e8a14\\profile\\arma3server_x64_2026-10-13_09-09-02.rpt",
+      "passed": 55,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "native-and-virtual-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-bafaecbe3d1e4222b30f2051339a528c\\profile\\arma3server_x64_2026-10-13_09-10-37.rpt",
+      "passed": 45,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "resumable-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b7455b1d3a2543e893909e603690e228\\profile\\arma3server_x64_2026-10-13_09-11-13.rpt",
+      "passed": 21,
+      "failed": 0,
+      "script_errors": false
+    }
+  ],
+  "candidate_policy_comparisons": 576,
+  "baseline_updateRequests_sha256": "b6b1fc0d69eb7bedb99de5db577fb76394c0ab506d387486ff9dff953d4e24e9",
+  "changed_file_sha256": {
+    "VirtualSpace/ammoFunctions.sqf": "f8ca6c70f2ce2ef069cf905988e3c3f9924a0682bb86a341cf037f7356325be8",
+    "VirtualSpace/functions/ammo/updateRequests.sqf": "5ebda1b38a75d34db9679e7b69eebd66f12285218ca43315b06cbcbf241793af",
+    "VirtualSpace/functions/ammo/getReservedMagazine.sqf": "530b2191f7e24760702fcd07dc08e0de9e3c950982af249ce73125a32fa92603",
+    "tests/combat/operation-scopes.sqf": "cf314b1bbc77025052314f82672f42f8ca10c0b0fefa53ac763d96444427367e",
+    "tests/combat/arrival-performance.ps1": "4b125035878ef8a0c09d539c89062f35c5e7f3e5917adf8ecdde5ca9adb7a6ba",
+    "tests/combat/arrival-sharing.sqf": "d5aff9384393a3545bdfc19d1d168da3fced0eeb7c6a422ea5ce88d00a1c88a6",
+    "tests/combat/analyze-situations.py": "ae598892ceff6f74d827a60e015a8ef85e2eee1ab0fdebf9df28a2ee8020aa5b"
+  },
+  "sqf_crlf": true,
+  "review": [
+    "Reserved candidates preserve first-fullest tie order and overlapping compatibility pools.",
+    "Loaded and empty magazines are rejected before reserve checks.",
+    "Moved virtual records cannot authorize removal from an obsolete source.",
+    "Donor work is skipped once recipient has ammunition.",
+    "Inventory snapshots are reused only within the atomic update and invalidated for both units after transfers.",
+    "No assertion guards added; checks implement inventory ownership, ammunition need and reserve policy."
+  ],
+  "unprofiled_workload": {
+    "passed": 48,
+    "failed": 0,
+    "frames": 2284,
+    "summary": "arrival-unprofiled-summary.json",
+    "comparisons": "arrival-unprofiled-comparison.json"
+  },
+  "profiled_workload": {
+    "passed": 44,
+    "failed": 4,
+    "frames": 4551,
+    "diagnostic": true,
+    "limits": "All four failures are 80-group progress checks; every sharing check passes."
+  },
+  "baseline_updateRequests": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-091819-3671b516-before-updateRequests.sqf",
+  "comparison_scripts": {
+    "profiled": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-arrival-comparison-d82687072b904d03ad97aee0e923180a.sqf",
+    "unprofiled": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-arrival-comparison-8804189930854858883adb5c1f4879dd.sqf"
+  },
+  "excluded_fixture_attempts": [
+    "ivcs-tasks-dac503dc8d6d439db569ad7f90e7a44a: old source comments were not preprocessed before compile; excluded.",
+    "ivcs-tasks-e79967775c6740d3bf96c4a97a8217ca: disabled profiler block still required unknown mod commands; excluded.",
+    "ivcs-tasks-41a684ebd9404817bd5629e5407cbf95: profiler-removal anchor matched inline prefix rather than complete block; excluded."
+  ]
+}

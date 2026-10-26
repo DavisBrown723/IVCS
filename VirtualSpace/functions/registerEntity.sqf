@@ -12,6 +12,7 @@ private _entityID = format ["e_%1", _nextEntityIDNum];
 _allEntities set [_entityID, _entity];
 
 _entity set ["id", _entityID];
+(_entities get "inactive") pushBack _entityID;
 
 private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
 [_entitiesSpacialGrid, [[_entity get "position", _entity]]] call IVCS_SpacialGrid_insert;

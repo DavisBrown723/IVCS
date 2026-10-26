@@ -18,6 +18,7 @@ IVCS_Common_foreachArrays = compile preprocessFileLineNumbers "IVCS\Common\funct
 // units
 
 IVCS_Common_findUnitType = compile preprocessFileLineNumbers "IVCS\Common\functions\units\findUnitType.sqf";
+IVCS_Common_getUnitInventoryInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\units\getUnitInventoryInfo.sqf";
 IVCS_Common_getUnitLoadoutInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\units\getUnitLoadoutInfo.sqf";
 IVCS_Common_getUnitObjectLoadoutInfo = compile preprocessFileLineNumbers "IVCS\Common\functions\units\getUnitObjectLoadoutInfo.sqf";
 IVCS_Common_getUnitClassesFromGroupConfig = compile preprocessFileLineNumbers "IVCS\Common\functions\units\getUnitClassesFromGroupConfig.sqf";
@@ -64,3 +65,6 @@ IVCS_Common_getContainerType = compile preprocessFileLineNumbers "IVCS\Common\fu
 
 IVCS_Common_calculateFrameNumber = compile preprocessFileLineNumbers "IVCS\Common\functions\internal\calculateFrameNumber.sqf";
 IVCS_Common_onFrame = compile preprocessFileLineNumbers "IVCS\Common\functions\internal\onFrame.sqf";
+
+IVCS_Common_startSimulationClock = compile preprocessFileLineNumbers "IVCS\Common\functions\internal\startSimulationClock.sqf";
+IVCS_Common_updateSimulationTime = compile preprocessFileLineNumbers "IVCS\Common\functions\internal\updateSimulationTime.sqf";

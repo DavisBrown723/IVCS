@@ -1,48 +1,25 @@
-params ["_groupEntity","_vehicleEntity"];
+params ["_groupEntity", "_vehicleEntity"];
 
-private _commandingEntity = _vehicleEntity get "commandingEntity";
-private _groupEntityID = _groupEntity get "id";
-if (_commandingEntity != _groupEntityID) exitwith {};
+private _groupID = _groupEntity get "id";
+if ((_vehicleEntity get "commandingEntity") != _groupID) exitWith {};
 
-private _vehicleEntityID = _vehicleEntity get "id";
-
-private _active = _groupEntity get "active";
+private _vehicleID = _vehicleEntity get "id";
 private _vehicleObject = _vehicleEntity get "object";
-
-private _units = _groupEntity get "units";
-{
-    private _vehicleAssignment = _x get "vehicleAssignment";
-    if !(_vehicleAssignment isequalto []) then {
-        _vehicleAssignment params ["_assignedVehicleID","_seat"];
-
-        if (_assignedVehicleID == _vehicleEntityID) then {
-            if (_active) then {
-                private _unitObject = _x get "object";
-                _unitObject leaveVehicle _vehicleObject;
-            };
-
-            _seat set [1, ""];
-            _x set ["vehicleAssignment", []];
-        };
-    };
-} foreach _units;
-
-private _vehiclesInCommandOf = _groupEntity get "vehiclesInCommandOf";
-_vehiclesInCommandOf deleteat (_vehiclesInCommandOf find _vehicleEntityID);
-
-if (_vehiclesInCommandOf isequalto []) then {
-    _groupEntity set ["vehicleType", "group"];
-} else {
-    private _lastAddedVehicle = _vehiclesInCommandOf select ((count _vehiclesInCommandOf) - 1);
-    private _lastAddedVehicleEntity = [_lastAddedVehicle] call IVCS_VirtualSpace_getEntity;
-    private _lastAddedVehicleType = _lastAddedVehicleEntity get "vehicleType";
-
-    _groupEntity set ["vehicleType", _lastAddedVehicleType];
-};
-
+private _vehicles = _groupEntity get "vehiclesInCommandOf";
+_vehicles deleteAt (_vehicles find _vehicleID);
 _vehicleEntity set ["commandingEntity", ""];
 
+// Clear every reservation before native commands can deliver GetOut events.
+private _objects = [_groupEntity, _vehicleID] call IVCS_VirtualSpace_Group_releaseVehicleAssignments;
+_groupEntity set ["vehicleType", if (_vehicles isEqualTo []) then { "group" } else {
+    ([_vehicles select -1] call IVCS_VirtualSpace_getEntity) get "vehicleType"
+}];
+[_groupEntity, +(_vehicleEntity get "position")] call IVCS_VirtualSpace_setEntityPosition;
 [_groupEntity] call IVCS_VirtualSpace_Group_calculateSpeed;
 [_groupEntity] call IVCS_VirtualSpace_Group_determinePathfindingStrategy;
-
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;
+{
+    unassignVehicle _x;
+    [_x] orderGetIn false;
+    _x leaveVehicle _vehicleObject;
+} forEach _objects;

@@ -1,0 +1,1321 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-comparison-20261025-233246-b72b7651.tracy",
+  "diagnostic_only": false,
+  "frames": 3877,
+  "phase_updates": [
+    {
+      "trial": 1,
+      "mode": "before-heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4393,
+        "total_ms": 124.22692800000029,
+        "mean_ms": 0.028278381060778512,
+        "p50_ms": 0.02306,
+        "p90_ms": 0.0424978,
+        "p95_ms": 0.046164399999999994,
+        "p99_ms": 0.06588199999999997,
+        "max_ms": 0.299885,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 176,
+        "total_ms": 81.77258800000007,
+        "mean_ms": 0.46461697727272727,
+        "p50_ms": 0.46724750000000004,
+        "p90_ms": 0.513361,
+        "p95_ms": 0.53026375,
+        "p99_ms": 0.5688275,
+        "max_ms": 0.634045,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 2,
+      "mode": "after-heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4347,
+        "total_ms": 90.84195799999976,
+        "mean_ms": 0.020897620887968715,
+        "p50_ms": 0.016971,
+        "p90_ms": 0.0343652,
+        "p95_ms": 0.035587999999999995,
+        "p99_ms": 0.04586815999999998,
+        "max_ms": 0.058967,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 177,
+        "total_ms": 81.19870799999998,
+        "mean_ms": 0.4587497627118644,
+        "p50_ms": 0.46455,
+        "p90_ms": 0.5208444,
+        "p95_ms": 0.5475044,
+        "p99_ms": 0.5975933200000002,
+        "max_ms": 0.765581,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 3,
+      "mode": "after-heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4335,
+        "total_ms": 91.42424299999988,
+        "mean_ms": 0.021089790772779702,
+        "p50_ms": 0.017018,
+        "p90_ms": 0.0343038,
+        "p95_ms": 0.0364478,
+        "p99_ms": 0.04770739999999996,
+        "max_ms": 0.156637,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 175,
+        "total_ms": 79.37211900000001,
+        "mean_ms": 0.4535549657142857,
+        "p50_ms": 0.454234,
+        "p90_ms": 0.5087134,
+        "p95_ms": 0.5246948,
+        "p99_ms": 0.5674367799999998,
+        "max_ms": 0.6871,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 4,
+      "mode": "before-heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4295,
+        "total_ms": 119.68977500000005,
+        "mean_ms": 0.027867235157159487,
+        "p50_ms": 0.023008,
+        "p90_ms": 0.042488,
+        "p95_ms": 0.044932799999999995,
+        "p99_ms": 0.05966300000000034,
+        "max_ms": 0.198161,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 175,
+        "total_ms": 83.729065,
+        "mean_ms": 0.47845180000000004,
+        "p50_ms": 0.482169,
+        "p90_ms": 0.5280096,
+        "p95_ms": 0.5574704999999996,
+        "p99_ms": 0.64434226,
+        "max_ms": 0.686367,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  ],
+  "note": "Named inclusive helpers overlap. Context is for the entire frame, which may contain multiple exchanges.",
+  "combat_operations": {
+    "IVCS_HELI_IVCS_Combat_canSee": {
+      "count": 2812,
+      "total_ms": 55.26834599999993,
+      "mean_ms": 0.01965446159317212,
+      "p50_ms": 0.017147000000000003,
+      "p90_ms": 0.0283924,
+      "p95_ms": 0.029942949999999996,
+      "p99_ms": 0.04073665999999994,
+      "max_ms": 0.124658,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_damageCrew": {
+      "count": 3179,
+      "total_ms": 192.55953600000026,
+      "mean_ms": 0.06057236111984901,
+      "p50_ms": 0.061923,
+      "p90_ms": 0.09490820000000001,
+      "p95_ms": 0.10334979999999999,
+      "p99_ms": 0.11983151999999993,
+      "max_ms": 0.202358,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_damageVehicle": {
+      "count": 3179,
+      "total_ms": 348.90102099999916,
+      "mean_ms": 0.10975181535073923,
+      "p50_ms": 0.105739,
+      "p90_ms": 0.15080659999999999,
+      "p95_ms": 0.16734290000000002,
+      "p99_ms": 0.20473389999999989,
+      "max_ms": 0.314826,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+      "count": 1406,
+      "total_ms": 27.725869000000014,
+      "mean_ms": 0.019719679231863442,
+      "p50_ms": 0.018486,
+      "p90_ms": 0.0223745,
+      "p95_ms": 0.0232335,
+      "p99_ms": 0.031595550000000146,
+      "max_ms": 0.051369,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+      "count": 703,
+      "total_ms": 13.338147,
+      "mean_ms": 0.018973182076813654,
+      "p50_ms": 0.01873,
+      "p90_ms": 0.020933,
+      "p95_ms": 0.0228908,
+      "p99_ms": 0.03014844,
+      "max_ms": 0.041441,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+      "count": 1629,
+      "total_ms": 46.299568999999934,
+      "mean_ms": 0.028422080417434006,
+      "p50_ms": 0.026114,
+      "p90_ms": 0.0339036,
+      "p95_ms": 0.03528459999999999,
+      "p99_ms": 0.04821832000000001,
+      "max_ms": 0.097635,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+      "count": 1629,
+      "total_ms": 151.58878700000034,
+      "mean_ms": 0.09305634561080417,
+      "p50_ms": 0.103054,
+      "p90_ms": 0.1316606,
+      "p95_ms": 0.16592699999999985,
+      "p99_ms": 0.1944826,
+      "max_ms": 0.269932,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+      "count": 1629,
+      "total_ms": 130.00124599999992,
+      "mean_ms": 0.0798043253529773,
+      "p50_ms": 0.074619,
+      "p90_ms": 0.0953736,
+      "p95_ms": 0.0991778,
+      "p99_ms": 0.1299177200000001,
+      "max_ms": 0.180087,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+      "count": 6654,
+      "total_ms": 176.99242299999966,
+      "mean_ms": 0.026599402314397357,
+      "p50_ms": 0.023002500000000002,
+      "p90_ms": 0.044166699999999996,
+      "p95_ms": 0.0476127,
+      "p99_ms": 0.08545427000000001,
+      "max_ms": 0.216336,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+      "count": 703,
+      "total_ms": 1312.2310510000018,
+      "mean_ms": 1.8666160042674254,
+      "p50_ms": 1.804453,
+      "p90_ms": 2.3388302,
+      "p95_ms": 2.4938613999999997,
+      "p99_ms": 2.996370060000003,
+      "max_ms": 5.527711,
+      "over_1ms": 703,
+      "over_5ms": 1,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+      "count": 703,
+      "total_ms": 204.2302779999999,
+      "mean_ms": 0.2905124864864865,
+      "p50_ms": 0.280505,
+      "p90_ms": 0.3711796,
+      "p95_ms": 0.4230442,
+      "p99_ms": 0.45545315999999997,
+      "max_ms": 0.578006,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+      "count": 223,
+      "total_ms": 72.42600399999999,
+      "mean_ms": 0.3247802869955157,
+      "p50_ms": 0.332017,
+      "p90_ms": 0.3567966,
+      "p95_ms": 0.38800709999999994,
+      "p99_ms": 0.44595012,
+      "max_ms": 0.732786,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_stepVehicle": {
+      "count": 1406,
+      "total_ms": 679.631262,
+      "mean_ms": 0.4833792759601707,
+      "p50_ms": 0.5421435,
+      "p90_ms": 0.963999,
+      "p95_ms": 1.060402,
+      "p99_ms": 1.2071490000000002,
+      "max_ms": 2.641484,
+      "over_1ms": 109,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_HELI_IVCS_Combat_update": {
+      "count": 18073,
+      "total_ms": 2085.0225969999947,
+      "mean_ms": 0.11536671260997068,
+      "p50_ms": 0.021738,
+      "p90_ms": 0.0423276,
+      "p95_ms": 0.053510799999999976,
+      "p99_ms": 2.5822021599999996,
+      "max_ms": 6.118606,
+      "over_1ms": 703,
+      "over_5ms": 1,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "IVCS_PERF_Combat_Step": {
+      "count": 703,
+      "total_ms": 1332.7672130000003,
+      "mean_ms": 1.895828183499289,
+      "p50_ms": 1.833371,
+      "p90_ms": 2.3647882,
+      "p95_ms": 2.5220121,
+      "p99_ms": 3.0323688600000027,
+      "max_ms": 5.562464,
+      "over_1ms": 703,
+      "over_5ms": 1,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    }
+  },
+  "updates_with_steps": {
+    "count": 703,
+    "total_ms": 1658.839693000001,
+    "mean_ms": 2.3596581692745375,
+    "p50_ms": 2.299085,
+    "p90_ms": 2.8653706,
+    "p95_ms": 3.0179624999999994,
+    "p99_ms": 3.5125439800000025,
+    "max_ms": 6.118606,
+    "over_1ms": 703,
+    "over_5ms": 1,
+    "over_10ms": 0,
+    "over_16_67ms": 0
+  },
+  "updates_without_steps": {
+    "count": 17370,
+    "total_ms": 426.18290400000154,
+    "mean_ms": 0.02453557305699482,
+    "p50_ms": 0.0215725,
+    "p90_ms": 0.040917100000000005,
+    "p95_ms": 0.042943550000000004,
+    "p99_ms": 0.05449377000000009,
+    "max_ms": 0.299885,
+    "over_1ms": 0,
+    "over_5ms": 0,
+    "over_10ms": 0,
+    "over_16_67ms": 0
+  },
+  "outside_step_in_due_updates": {
+    "count": 703,
+    "total_ms": 326.07248000000044,
+    "mean_ms": 0.4638299857752489,
+    "p50_ms": 0.468334,
+    "p90_ms": 0.5185906,
+    "p95_ms": 0.5386523,
+    "p99_ms": 0.62037396,
+    "max_ms": 0.765581,
+    "over_1ms": 0,
+    "over_5ms": 0,
+    "over_10ms": 0,
+    "over_16_67ms": 0
+  },
+  "turret_selection": {
+    "calls": 0,
+    "weapons": 0,
+    "records": 0,
+    "preparation_misses": 0,
+    "negative_records": 0,
+    "selected": []
+  },
+  "vehicle_damage": [],
+  "worst_exchanges": [
+    {
+      "start_ns": 120813384593,
+      "ms": 5.562464,
+      "frame": {
+        "start_ns": 120812588107,
+        "costs_ms": {
+          "full": 7.608505,
+          "combat": 6.793377,
+          "IVCS_PERF_AmmoQueue_Frame": 0.012411,
+          "IVCS_PERF_Entities_Frame": 0.731985,
+          "IVCS_PERF_Spawner_Frame": 0.035879,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 6.793377,
+          "frame_other": 0.034853
+        },
+        "steps": 1,
+        "largest_exchange_ms": 5.562464,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.137561,
+          "max_ms": 0.052692
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 8,
+          "total_ms": 0.521325,
+          "max_ms": 0.106209
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 8,
+          "total_ms": 1.0786719999999999,
+          "max_ms": 0.19386
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.080073,
+          "max_ms": 0.046819
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.041441,
+          "max_ms": 0.041441
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.20902500000000002,
+          "max_ms": 0.097635
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.603013,
+          "max_ms": 0.269932
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.500193,
+          "max_ms": 0.180087
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.766566,
+          "max_ms": 0.216336
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 5.527711,
+          "max_ms": 5.527711
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.578006,
+          "max_ms": 0.578006
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.732786,
+          "max_ms": 0.732786
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 3.7657360000000004,
+          "max_ms": 2.641484
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 120848946692,
+      "ms": 3.786902,
+      "frame": {
+        "start_ns": 120848727730,
+        "costs_ms": {
+          "full": 5.216701,
+          "combat": 4.372634,
+          "IVCS_PERF_AmmoQueue_Frame": 0.010936,
+          "IVCS_PERF_Entities_Frame": 0.780244,
+          "IVCS_PERF_Spawner_Frame": 0.017581,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 4.372634,
+          "frame_other": 0.035306
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.786902,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.086113,
+          "max_ms": 0.033453
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 6,
+          "total_ms": 0.457154,
+          "max_ms": 0.13531
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 6,
+          "total_ms": 0.856509,
+          "max_ms": 0.205159
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.057798,
+          "max_ms": 0.037991
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.020933,
+          "max_ms": 0.020933
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.116349,
+          "max_ms": 0.062324
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.355251,
+          "max_ms": 0.137256
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.35053599999999996,
+          "max_ms": 0.162396
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.661424,
+          "max_ms": 0.203921
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.740351,
+          "max_ms": 3.740351
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.491995,
+          "max_ms": 0.491995
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.356135,
+          "max_ms": 0.356135
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 2.330087,
+          "max_ms": 1.625089
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 195815817943,
+      "ms": 3.264875,
+      "frame": {
+        "start_ns": 195815566132,
+        "costs_ms": {
+          "full": 4.796334,
+          "combat": 3.889458,
+          "IVCS_PERF_AmmoQueue_Frame": 0.01063,
+          "IVCS_PERF_Entities_Frame": 0.837316,
+          "IVCS_PERF_Spawner_Frame": 0.024108,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 3.889458,
+          "frame_other": 0.034822
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.264875,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.08612,
+          "max_ms": 0.035638
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 6,
+          "total_ms": 0.276372,
+          "max_ms": 0.064699
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 6,
+          "total_ms": 0.570978,
+          "max_ms": 0.107918
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.039722999999999994,
+          "max_ms": 0.021664
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.019716,
+          "max_ms": 0.019716
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.08583199999999999,
+          "max_ms": 0.034665
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.32391499999999995,
+          "max_ms": 0.12493
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.297336,
+          "max_ms": 0.149588
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.7070959999999998,
+          "max_ms": 0.192883
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.213618,
+          "max_ms": 3.213618
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.453328,
+          "max_ms": 0.453328
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.345161,
+          "max_ms": 0.345161
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.994993,
+          "max_ms": 1.254715
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 150738023132,
+      "ms": 3.221808,
+      "frame": {
+        "start_ns": 150737765145,
+        "costs_ms": {
+          "full": 4.645541,
+          "combat": 3.856688,
+          "IVCS_PERF_AmmoQueue_Frame": 0.012429,
+          "IVCS_PERF_Entities_Frame": 0.708292,
+          "IVCS_PERF_Spawner_Frame": 0.028125,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 3.856688,
+          "frame_other": 0.040007
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.221808,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.080372,
+          "max_ms": 0.032507
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 7,
+          "total_ms": 0.405273,
+          "max_ms": 0.089478
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 7,
+          "total_ms": 0.874526,
+          "max_ms": 0.235876
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.041298,
+          "max_ms": 0.022376
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.019573,
+          "max_ms": 0.019573
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.088784,
+          "max_ms": 0.036763
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.243853,
+          "max_ms": 0.133687
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.26197200000000004,
+          "max_ms": 0.105797
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.43727999999999995,
+          "max_ms": 0.110887
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.151231,
+          "max_ms": 3.151231
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.3238,
+          "max_ms": 0.3238
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.292623,
+          "max_ms": 0.292623
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.7564509999999998,
+          "max_ms": 1.095295
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 194797652238,
+      "ms": 3.110806,
+      "frame": {
+        "start_ns": 194797331647,
+        "costs_ms": {
+          "full": 4.533478,
+          "combat": 3.803618,
+          "IVCS_PERF_AmmoQueue_Frame": 0.01137,
+          "IVCS_PERF_Entities_Frame": 0.652285,
+          "IVCS_PERF_Spawner_Frame": 0.028076,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 3.803618,
+          "frame_other": 0.038129
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.110806,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.089246,
+          "max_ms": 0.033299
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 4,
+          "total_ms": 0.36840700000000004,
+          "max_ms": 0.112711
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 4,
+          "total_ms": 0.550454,
+          "max_ms": 0.154813
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.0593,
+          "max_ms": 0.040503
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.020314,
+          "max_ms": 0.020314
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.11765600000000001,
+          "max_ms": 0.064726
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.357155,
+          "max_ms": 0.155436
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.35493399999999997,
+          "max_ms": 0.156633
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 9,
+          "total_ms": 0.53517,
+          "max_ms": 0.080352
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.053033,
+          "max_ms": 3.053033
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.488187,
+          "max_ms": 0.488187
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.347125,
+          "max_ms": 0.347125
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.821777,
+          "max_ms": 1.556964
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 83225203520,
+      "ms": 3.059143,
+      "frame": {
+        "start_ns": 83224559753,
+        "costs_ms": {
+          "full": 5.078592,
+          "combat": 4.027692,
+          "IVCS_PERF_AmmoQueue_Frame": 0.009956,
+          "IVCS_PERF_Entities_Frame": 0.986955,
+          "IVCS_PERF_Spawner_Frame": 0.023287,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 4.027692,
+          "frame_other": 0.030702
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.059143,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.051793000000000006,
+          "max_ms": 0.017885
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 8,
+          "total_ms": 0.529211,
+          "max_ms": 0.10411
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 8,
+          "total_ms": 0.934869,
+          "max_ms": 0.185662
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.040413000000000004,
+          "max_ms": 0.022464
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.019372,
+          "max_ms": 0.019372
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.105697,
+          "max_ms": 0.047065
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.29291500000000004,
+          "max_ms": 0.122118
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.234665,
+          "max_ms": 0.090492
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.536226,
+          "max_ms": 0.101168
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.029706,
+          "max_ms": 3.029706
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.273462,
+          "max_ms": 0.273462
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.373895,
+          "max_ms": 0.373895
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.783277,
+          "max_ms": 1.376978
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 135782669553,
+      "ms": 3.048461,
+      "frame": {
+        "start_ns": 135781663693,
+        "costs_ms": {
+          "full": 5.896669,
+          "combat": 4.649706,
+          "IVCS_PERF_AmmoQueue_Frame": 0.01682,
+          "IVCS_PERF_Entities_Frame": 1.131288,
+          "IVCS_PERF_Spawner_Frame": 0.045522,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 4.649706,
+          "frame_other": 0.053333
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.048461,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.088193,
+          "max_ms": 0.0313
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 6,
+          "total_ms": 0.568363,
+          "max_ms": 0.158306
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 6,
+          "total_ms": 1.01536,
+          "max_ms": 0.2561
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.060443,
+          "max_ms": 0.036323
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.033622,
+          "max_ms": 0.033622
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 2,
+          "total_ms": 0.102609,
+          "max_ms": 0.059142
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 2,
+          "total_ms": 0.311974,
+          "max_ms": 0.208196
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 2,
+          "total_ms": 0.28452500000000003,
+          "max_ms": 0.160941
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 9,
+          "total_ms": 0.25273700000000004,
+          "max_ms": 0.039848
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 2.999185,
+          "max_ms": 2.999185
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.510222,
+          "max_ms": 0.510222
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.24765,
+          "max_ms": 1.024603
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 164355159516,
+      "ms": 3.035341,
+      "frame": {
+        "start_ns": 164354934557,
+        "costs_ms": {
+          "full": 4.694517,
+          "combat": 3.646327,
+          "IVCS_PERF_AmmoQueue_Frame": 0.011597,
+          "IVCS_PERF_Entities_Frame": 0.967971,
+          "IVCS_PERF_Spawner_Frame": 0.026089,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 3.646327,
+          "frame_other": 0.042533
+        },
+        "steps": 1,
+        "largest_exchange_ms": 3.035341,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.090864,
+          "max_ms": 0.05599
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 9,
+          "total_ms": 0.53447,
+          "max_ms": 0.129338
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 9,
+          "total_ms": 1.1114760000000001,
+          "max_ms": 0.203742
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.057548,
+          "max_ms": 0.03194
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.035738,
+          "max_ms": 0.035738
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 2,
+          "total_ms": 0.07822799999999999,
+          "max_ms": 0.040705
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 2,
+          "total_ms": 0.21956499999999998,
+          "max_ms": 0.164985
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 2,
+          "total_ms": 0.18313400000000002,
+          "max_ms": 0.096682
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.40131500000000003,
+          "max_ms": 0.119935
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 3.003974,
+          "max_ms": 3.003974
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.328713,
+          "max_ms": 0.328713
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.369627,
+          "max_ms": 0.992813
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 83189048799,
+      "ms": 2.886734,
+      "frame": {
+        "start_ns": 83188864503,
+        "costs_ms": {
+          "full": 7.066225,
+          "combat": 6.291138,
+          "IVCS_PERF_AmmoQueue_Frame": 0.011277,
+          "IVCS_PERF_Entities_Frame": 0.708309,
+          "IVCS_PERF_Spawner_Frame": 0.027232,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 6.291138,
+          "frame_other": 0.028269
+        },
+        "steps": 2,
+        "largest_exchange_ms": 2.886734,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.052279,
+          "max_ms": 0.017832
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 6,
+          "total_ms": 0.39984800000000004,
+          "max_ms": 0.076711
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 6,
+          "total_ms": 0.75787,
+          "max_ms": 0.178754
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.040445999999999996,
+          "max_ms": 0.02267
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.020389,
+          "max_ms": 0.020389
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.08343,
+          "max_ms": 0.034488
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.302643,
+          "max_ms": 0.136944
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.240116,
+          "max_ms": 0.096651
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.531318,
+          "max_ms": 0.103467
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 2.858438,
+          "max_ms": 2.858438
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.275626,
+          "max_ms": 0.275626
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.345358,
+          "max_ms": 0.345358
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.830313,
+          "max_ms": 1.394617
+        }
+      },
+      "whole_frame_context": []
+    },
+    {
+      "start_ns": 113178988299,
+      "ms": 2.839758,
+      "frame": {
+        "start_ns": 113178807745,
+        "costs_ms": {
+          "full": 4.203406,
+          "combat": 3.364046,
+          "IVCS_PERF_AmmoQueue_Frame": 0.00992,
+          "IVCS_PERF_Entities_Frame": 0.782407,
+          "IVCS_PERF_Spawner_Frame": 0.018471,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 3.364046,
+          "frame_other": 0.028562
+        },
+        "steps": 1,
+        "largest_exchange_ms": 2.839758,
+        "largest_donor_slice_ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "calls": 3,
+          "total_ms": 0.051879999999999996,
+          "max_ms": 0.017761
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "calls": 7,
+          "total_ms": 0.432612,
+          "max_ms": 0.087964
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "calls": 7,
+          "total_ms": 0.8721129999999999,
+          "max_ms": 0.226504
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "calls": 2,
+          "total_ms": 0.038646,
+          "max_ms": 0.020699
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "calls": 1,
+          "total_ms": 0.019599,
+          "max_ms": 0.019599
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "calls": 3,
+          "total_ms": 0.084416,
+          "max_ms": 0.033407
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 3,
+          "total_ms": 0.272523,
+          "max_ms": 0.146109
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 3,
+          "total_ms": 0.260003,
+          "max_ms": 0.097207
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "calls": 12,
+          "total_ms": 0.3831009999999999,
+          "max_ms": 0.052055
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "calls": 1,
+          "total_ms": 2.800782,
+          "max_ms": 2.800782
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "calls": 1,
+          "total_ms": 0.306792,
+          "max_ms": 0.306792
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "calls": 1,
+          "total_ms": 0.280187,
+          "max_ms": 0.280187
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "calls": 2,
+          "total_ms": 1.492313,
+          "max_ms": 1.111508
+        }
+      },
+      "whole_frame_context": []
+    }
+  ]
+}

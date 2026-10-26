@@ -1,0 +1,181 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\vehicle-return-fire-20261025-010103.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 3084637,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 107400000000,
+  "zone_types": 2385,
+  "filter": "IVCS_PERF_VirtualSpace_Frame",
+  "matching_zone_types": 1,
+  "top_inclusive": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 4810847801,
+      "total_perc": 2.656481,
+      "counts": 3094,
+      "mean_ns": 1554895,
+      "min_ns": 398699,
+      "max_ns": 5960856,
+      "std_ns": 1260432.601648
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 52060530,
+      "total_perc": 0.028747,
+      "counts": 3094,
+      "mean_ns": 16826,
+      "min_ns": 10900,
+      "max_ns": 62036,
+      "std_ns": 1988746.864354
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "count": 3094,
+      "total_ns": 4810847801,
+      "mean_ns": 1554896,
+      "p50_ns": 830216,
+      "p90_ns": 3945384,
+      "p95_ns": 4329959,
+      "p99_ns": 4908825,
+      "max_ns": 5960856,
+      "over_1ms": 1048,
+      "over_5ms": 22,
+      "over_10ms": 0,
+      "first_start_ns": 49072223708,
+      "last_end_ns": 166637605179,
+      "observed_span_ns": 117565381471,
+      "span_occupancy_percent": 4.0921
+    }
+  ],
+  "message_count": 677,
+  "messages": [
+    {
+      "MessageName": "[CBA] (xeh) INFO: [0",
+      "total_ns": "20.062",
+      "null": [
+        "0] PreStart started.",
+        "1940770942"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (settings) INFO: Userconfig: Ignored.",
+      "total_ns": 2024602553
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [0",
+      "total_ns": "20.241",
+      "null": [
+        "0] PreStart finished.",
+        "2120493744"
+      ]
+    },
+    {
+      "MessageName": "Intercept Invoker SQF handler initializing...",
+      "total_ns": 16481209568
+    },
+    {
+      "MessageName": "Intercept Invoker test result: SpyderBlack723 == SpyderBlack723",
+      "total_ns": 16481459239
+    },
+    {
+      "MessageName": "Intercept Invoker initialized.",
+      "total_ns": 16481655739
+    },
+    {
+      "MessageName": "Intercept Pre-Init...",
+      "total_ns": 16481659294
+    },
+    {
+      "MessageName": "Intercept Pre-Init Completed.",
+      "total_ns": 16481668966
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18543",
+      "total_ns": "34.654",
+      "null": [
+        "0] PreInit started. v3.19.0.260808",
+        "16533051067"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (settings) INFO: Reading settings from settings file.",
+      "total_ns": 16632065701
+    },
+    {
+      "MessageName": "[CBA] (settings) INFO: Finished reading settings from settings file.",
+      "total_ns": 16632093478
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18543",
+      "total_ns": "34.819",
+      "null": [
+        "0] PreInit finished.",
+        "16698664171"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18544",
+      "total_ns": "35.03",
+      "null": [
+        "0] PostInit started. MISSIONINIT: missionName=ivcs_task_tests_e8857b2b9cea4cb9a7823c5fe5cfcc72",
+        " missionVersion=12",
+        " worldName=Altis",
+        " isMultiplayer=true",
+        " isServer=true",
+        " isDedicated=true",
+        " CBA_isHeadlessClient=false",
+        " hasInterface=false",
+        " didJIP=false",
+        "16908473762"
+      ]
+    },
+    {
+      "MessageName": "Intercept Post-Init...",
+      "total_ns": 16922725353
+    },
+    {
+      "MessageName": "Intercept Post-Init Finished...",
+      "total_ns": 16922738602
+    },
+    {
+      "MessageName": "[CBA] (versioning) INFO: [18544",
+      "total_ns": "35.048",
+      "null": [
+        "0] VERSIONING:cba=3.19.0.260808",
+        "16926568128"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18544",
+      "total_ns": "35.05",
+      "null": [
+        "0] PostInit finished.",
+        "16928668836"
+      ]
+    },
+    {
+      "MessageName": "[IVCS PERF] ORIGINAL {#line 1 \"mpmissions\\__cur_mp.Altis\\IVCS\\VirtualSpace\\functions\\onFrame.sqf\"",
+      "total_ns": null
+    },
+    {
+      "MessageName": "[] call IVCS_Combat_onFrame;",
+      "total_ns": null
+    },
+    {
+      "MessageName": "[] call IVCS_Ammo_onFrame;",
+      "total_ns": null
+    }
+  ]
+}

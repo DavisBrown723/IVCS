@@ -1,85 +1,52 @@
-params ["_entityID","_waypointID"];
+params ["_entityID", "_waypointID", ["_generation", -1]];
 
-private _entities = IVCS_VirtualSpace_Controller get "entities";
-private _allEntities = _entities get "ALL";
-private _entity = _allEntities get _entityID;
+private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
+if (isNil "_entity") exitWith {};
+private _waypoint = [_entity, _waypointID] call IVCS_VirtualSpace_getEntityWaypoint;
+if (isNil "_waypoint" || { _generation >= 0 && { _generation != (_waypoint get "nativeGeneration") } }) exitWith {};
+private _ignore = _entity get "ignoreWpCallback";
+_entity set ["ignoreWpCallback", ""];
+if (_waypointID == _ignore) exitWith {};
+if ((_entity get "combatID") != "" && {(_entity get "vehiclesInCommandOf") findIf {private _v=[_x] call IVCS_VirtualSpace_getEntity; (_v get "vehicleType")=="helicopter"} == -1}) exitWith {
+    (_entity get "combatWaypointCompletions") pushBackUnique _waypointID;
+};
 
-if (!isnil "_entity") then {
-    private _wpCallbackToIgnore = _entity get "ignoreWpCallback";
-    if (_waypointID != _wpCallbackToIgnore) then {
-        if (_wpCallbackToIgnore != "") then {
-            _entity set ["ignoreWpCallback", ""];
-        };
+if ((_entity get "vehicleType")=="helicopter") then {[_entity,_waypoint] call IVCS_VirtualSpace_onWaypointStarted};
+private _type = _waypoint get "type";
+if (_type == "CYCLE") exitWith {};
 
-        private _waypoint = [_entity,_waypointID] call IVCS_VirtualSpace_getEntityWaypoint;
-        if (!isnil "_waypoint") then {
-            private _waypointType = _waypoint get "type";
-            
-            if (_waypointType != "CYCLE") then {
-                [_waypoint] call IVCS_VirtualSpace_resetEntityWaypoint;
+private _minIndex = _entity get "minWaypointIndex";
+// Advance the cycle cursor before callbacks can suspend the task.
+if (_minIndex != -1) then {
+    private _index = _entity get "currentWaypointIndex";
+    _entity set ["currentWaypointIndex", if (_index == (_entity get "maxWaypointIndex")) then { _minIndex } else { _index + 1 }];
+};
+[_waypoint] call IVCS_VirtualSpace_resetEntityWaypoint;
+{ [_entity, _waypoint] call (compile _x); } forEach (_waypoint get "statements");
+{
+    _x params ["_arguments", "_code"];
+    [_entity, _waypoint, _arguments] call _code;
+} forEach (_waypoint get "callbacks");
 
-                // execute waypoint callbacks
+// A completion callback can switch tasks and detach this waypoint.
+if (isNil { _waypoint get "entity" }) exitWith {
+    if (_minIndex == -1) then { [_entity, _waypoint] call IVCS_VirtualSpace_entityRemoveWaypoint; };
+};
+if (_minIndex == -1) then {
+    // Removal maintains the current index as the next surviving slot.
+    [_entity, _waypoint] call IVCS_VirtualSpace_entityRemoveWaypoint;
+};
 
-                private _waypointStatements = _waypoint get "statements";
-                {
-                    [_entity, _waypoint] call (compile _x);
-                } foreach _waypointStatements;
+if (_type == "LAND" && { !(_entity get "active") } && { (_entity get "waypoints") isEqualTo [] }) then {
+    {
+        private _vehicle = [_x] call IVCS_VirtualSpace_getEntity;
+        _vehicle set ["engineOn", (_waypoint getOrDefault ["landingType", "LAND"]) != "LAND"];
+        private _position = +(_vehicle get "position");
+        _position set [2, 0.2];
+        [_vehicle, _position] call IVCS_VirtualSpace_setEntityPosition;
+    } forEach (_entity get "vehiclesInCommandOf");
 
-                {
-                    _x params ["_arguments", "_code"];
-                    [_entity, _waypoint, _arguments] call _code;
-                } forEach (_waypoint getOrDefault ["callbacks", []]);
-
-                // remove waypoint if not cycling
-
-                private _minWaypointIndex = _entity get "minWaypointIndex";
-                private _maxWaypointIndex = _entity get "maxWaypointIndex";
-
-                if (_minWaypointIndex == -1) then {
-                    [_entity,_waypoint] call IVCS_VirtualSpace_entityRemoveWaypoint;
-                };
-
-                // update current waypoint index
-
-                private _waypoints = _entity get "waypoints";
-                private _currentWaypointIndex = _entity get "currentWaypointIndex";
-                if (_minWaypointIndex == -1) then {
-                    //_currentWaypointIndex = _currentWaypointIndex + 1;
-                    if (_currentWaypointIndex >= count _waypoints) then {
-                        _currentWaypointIndex = 0;
-                    };
-                } else {
-                    // there is a cycle waypoint
-                    if (_currentWaypointIndex == _maxWaypointIndex) then {
-                        _currentWaypointIndex = _minWaypointIndex;
-                    } else {
-                        _currentWaypointIndex = _currentWaypointIndex + 1;
-                    };
-                };
-
-                _entity set ["currentWaypointIndex", _currentWaypointIndex];
-
-                // waypoint-type specific updates
-
-                switch (_waypointType) do {
-                    case "LAND": {
-                        private _active = _entity get "active";
-                        if (!_active && { _waypoints isequalto [] }) then {
-                            private _vehiclesInCommandOf = _entity get "vehiclesInCommandOf";
-                            {
-                                private _vehicleEntity = [_x] call IVCS_VirtualSpace_getEntity;
-                                private _vehicleEntityPosition = _vehicleEntity get "position";
-                                
-                                _vehicleEntity set ["engineOn", (_waypoint getOrDefault ["landingType", "LAND"]) != "LAND"];
-                                _vehicleEntityPosition set [2, 0.2];
-                            } foreach _vehiclesInCommandOf;
-                            private _groundPosition = +(_entity get "position");
-                            _groundPosition set [2, 0.2];
-                            [_entity, _groundPosition] call IVCS_VirtualSpace_setEntityPosition;
-                        };
-                    };
-                };
-            };
-        };
-    };
+    private _position = +(_entity get "position");
+    _position set [2, 0.2];
+    [_entity, _position] call IVCS_VirtualSpace_setEntityPosition;
 };

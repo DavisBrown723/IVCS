@@ -1,10 +1,16 @@
 IVCS_EntityTasks_createTaskTemplate = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskTemplate.sqf";
 IVCS_EntityTasks_createTaskInstance = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createTaskInstance.sqf";
+IVCS_EntityTasks_deactivateTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\deactivateTask.sqf";
+IVCS_EntityTasks_syncActiveTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\syncActiveTask.sqf";
+IVCS_EntityTasks_resumeMovement = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\resumeMovement.sqf";
 IVCS_EntityTasks_finishTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\finishTask.sqf";
 IVCS_EntityTasks_processTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\processTask.sqf";
 IVCS_EntityTasks_cancelTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\cancelTask.sqf";
 IVCS_EntityTasks_replaceTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\replaceTask.sqf";
 IVCS_EntityTasks_addWaypoint = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\addWaypoint.sqf";
+IVCS_EntityTasks_releaseLanding = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\releaseLanding.sqf";
+IVCS_EntityTasks_reserveBoardingSeats = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\reserveBoardingSeats.sqf";
+IVCS_EntityTasks_releaseBoarding = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\releaseBoarding.sqf";
 IVCS_EntityTasks_createLandTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createLandTask.sqf";
 IVCS_EntityTasks_createGetinTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createGetinTask.sqf";
 IVCS_EntityTasks_createMoveTask = compile preprocessFileLineNumbers "IVCS\EntityTasks\functions\createMoveTask.sqf";

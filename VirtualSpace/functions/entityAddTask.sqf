@@ -28,4 +28,5 @@ private _context = _task get "context";
 _context set ["entityID", _entity get "id"];
 _context set ["taskID", _taskID];
 
+[_entity] call IVCS_EntityTasks_syncActiveTask;
 _taskID

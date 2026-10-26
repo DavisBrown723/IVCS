@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "suites": [
+    {
+      "name": "geometry",
+      "passed": 26,
+      "failed": 0,
+      "sqf_script_errors": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a3ec03264faf4c849b252cee45adbf51\\profile\\arma3server_x64_2026-10-13_00-12-03.rpt",
+      "script_sha256": "8ca310d46e56af3c69ff9e93aa5233e21848c61fef5870fb4eb123b7794bc9d6"
+    },
+    {
+      "name": "regressions",
+      "passed": 119,
+      "failed": 0,
+      "sqf_script_errors": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-5d6b2e851a70492fbdf80cb59a85a031\\profile\\arma3server_x64_2026-10-13_00-12-10.rpt",
+      "script_sha256": "eaf5edfd558e5cd7b500a2676af0005df066b2e7ad1c80d4ce00f1f747cb37a5"
+    },
+    {
+      "name": "generated",
+      "passed": 20,
+      "failed": 0,
+      "sqf_script_errors": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b313c8064f1848b99eea67b11bb9583c\\profile\\arma3server_x64_2026-10-13_00-21-44.rpt",
+      "script_sha256": "f50f0f492ddce061c0e1a131c70bb9c5fa8d48f7575f3ffc91d4cbe4847a8e3f"
+    },
+    {
+      "name": "altis_rebuild",
+      "passed": 1,
+      "failed": 0,
+      "sqf_script_errors": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-6ec93d0caacf4f7d84f425ace3cdbfc7\\profile\\arma3server_x64_2026-10-13_00-13-02.rpt",
+      "script_sha256": "76759c39f59beab896d1b2d70245a3cbc6618732e7003aadb51908a1e28a311b"
+    }
+  ],
+  "checks_excluding_rebuild": 165,
+  "protected_production_files_unchanged": 35,
+  "production_output_path_guard": "passed",
+  "sqf_crlf_files": 36,
+  "locations_sha256": "16da0f9fb1328394da0a0c100b0997c235722ae7e1dc575b52394c9c684c2528",
+  "scope": "Native geometry, indexing and preview validation; user visual review remains pending."
+}

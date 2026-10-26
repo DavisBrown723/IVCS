@@ -1,7 +1,11 @@
 param(
     [string]$ArmaDirectory = 'C:\Program Files (x86)\Steam\steamapps\common\Arma 3',
     [string]$FileBank = 'C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FileBank\FileBank.exe',
-    [int]$TimeoutSeconds = 600
+    [int]$TimeoutSeconds = 600,
+    [string]$TestScript = (Join-Path $PSScriptRoot 'run.sqf'),
+    [int]$Port = 2492,
+    [string[]]$ExtraArguments = @(),
+    [switch]$KeepArtifacts
 )
 $ErrorActionPreference = 'Stop'
 $repositoryPath = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..\..')).Path
@@ -14,22 +18,27 @@ $missionPath = Join-Path $runPath 'ivcs_task_tests.Altis'
 $missionsPath = Join-Path $runPath 'mpmissions'
 $profilePath = Join-Path $runPath 'profile'
 $sourcePath = Join-Path $missionPath 'IVCS'
-New-Item -ItemType Directory -Path $sourcePath, $missionsPath, $profilePath | Out-Null
-foreach ($entry in Get-ChildItem -LiteralPath $repositoryPath -Force) {
-    if ($entry.Name -in @('.git', 'tests', '.vscode')) { continue }
-    Copy-Item -LiteralPath $entry.FullName -Destination $sourcePath -Recurse
-}
-foreach ($name in @('mission.sqm', 'init.sqf', 'description.ext')) {
-    Copy-Item -LiteralPath (Join-Path $PSScriptRoot $name) -Destination $missionPath
-}
-Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'run.sqf') -Destination (Join-Path $missionPath 'test.sqf')
-& $FileBank -dst $missionsPath $missionPath | Out-Null
-if ($LASTEXITCODE -ne 0) { throw 'Could not pack test mission.' }
-$missionName = 'ivcs_task_tests_' + [guid]::NewGuid().ToString('N') + '.Altis'
-$installedMissionPath = Join-Path $ArmaDirectory ('MPMissions\' + $missionName + '.pbo')
-if (Test-Path -LiteralPath $installedMissionPath) { throw 'Test mission path already exists.' }
-$configPath = Join-Path $runPath 'server.cfg'
-@'
+$serverProcess = $null
+$installedMissionPath = $null
+$installedMissionOwned = $false
+# Preparation is covered too: failed copies and packing must not leave large artifacts.
+try {
+    New-Item -ItemType Directory -Path $sourcePath, $missionsPath, $profilePath | Out-Null
+    foreach ($entry in Get-ChildItem -LiteralPath $repositoryPath -Force) {
+        if ($entry.Name -in @('.git', 'tests', '.vscode', 'docs')) { continue }
+        Copy-Item -LiteralPath $entry.FullName -Destination $sourcePath -Recurse
+    }
+    foreach ($name in @('mission.sqm', 'init.sqf', 'description.ext')) {
+        Copy-Item -LiteralPath (Join-Path $PSScriptRoot $name) -Destination $missionPath
+    }
+    Copy-Item -LiteralPath $TestScript -Destination (Join-Path $missionPath 'test.sqf')
+    & $FileBank -dst $missionsPath $missionPath | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw 'Could not pack test mission.' }
+    $missionName = 'ivcs_task_tests_' + [guid]::NewGuid().ToString('N') + '.Altis'
+    $installedMissionPath = Join-Path $ArmaDirectory ('MPMissions\' + $missionName + '.pbo')
+    if (Test-Path -LiteralPath $installedMissionPath) { throw 'Test mission path already exists.' }
+    $configPath = Join-Path $runPath 'server.cfg'
+    @'
 hostname="IVCS Tasks local tests";
 password="ivcs-local-test";
 maxPlayers=1;
@@ -41,14 +50,13 @@ class Missions {
     class IVCSTasks { template="ivcs_task_tests.Altis"; difficulty="Regular"; };
 };
 '@ | ForEach-Object { $_.Replace('ivcs_task_tests.Altis', $missionName) } | Set-Content -LiteralPath $configPath -Encoding ascii
-Write-Output ('Test artifacts: ' + $runPath)
-$arguments = @(
-    '-ip=127.0.0.1', '-port=2492', '-world=empty', '-autoInit', '-noSound',
-    ('"-config=' + $configPath + '"'), ('"-profiles=' + $profilePath + '"'),
-    '-name=IVCSTasks'
-)
-$serverProcess = $null
-try {
+    Write-Output ('Test artifacts: ' + $runPath)
+    $arguments = @(
+        '-ip=127.0.0.1', ('-port=' + $Port), '-world=empty', '-autoInit', '-noSound',
+        ('"-config=' + $configPath + '"'), ('"-profiles=' + $profilePath + '"'),
+        '-name=IVCSTasks'
+    ) + $ExtraArguments
+    $installedMissionOwned = $true
     Copy-Item -LiteralPath (Join-Path $missionsPath 'ivcs_task_tests.Altis.pbo') -Destination $installedMissionPath
     $serverProcess = Start-Process -FilePath $serverExecutable -ArgumentList $arguments -WorkingDirectory $ArmaDirectory -WindowStyle Hidden -PassThru
     $deadline = [DateTime]::UtcNow.AddSeconds($TimeoutSeconds)
@@ -73,7 +81,22 @@ try {
         if (!$serverProcess.HasExited) { Stop-Process -Id $serverProcess.Id }
         if (!$serverProcess.WaitForExit(10000)) { throw 'Test server did not exit.' }
     }
-    if (Test-Path -LiteralPath $installedMissionPath) {
+    if ($installedMissionOwned -and (Test-Path -LiteralPath $installedMissionPath)) {
         Remove-Item -LiteralPath $installedMissionPath
+    }
+    if (!$KeepArtifacts) {
+        # Keep RPT and test input for callers such as the map-indexing pipeline.
+        # Runtime copies, compiled packages and engine caches are reproducible.
+        $allowedRoot = [IO.Path]::GetFullPath($runPath).TrimEnd('\') + '\'
+        foreach ($generated in @($sourcePath, $missionsPath, (Join-Path $profilePath 'AnimDataCache'))) {
+            $target = [IO.Path]::GetFullPath($generated)
+            if (!$target.StartsWith($allowedRoot, [StringComparison]::OrdinalIgnoreCase)) { throw 'Artifact cleanup escaped the test directory.' }
+            if (Test-Path -LiteralPath $target) {
+                $resolved = (Resolve-Path -LiteralPath $target).Path
+                if (!$resolved.StartsWith($allowedRoot, [StringComparison]::OrdinalIgnoreCase)) { throw 'Resolved artifact cleanup escaped the test directory.' }
+                if (((Get-Item -LiteralPath $resolved).Attributes -band [IO.FileAttributes]::ReparsePoint) -or @(Get-ChildItem -LiteralPath $resolved -Recurse -Force -Attributes ReparsePoint).Count) { throw 'Artifact cleanup refuses reparse points.' }
+                Remove-Item -LiteralPath $resolved -Recurse -Force
+            }
+        }
     }
 }

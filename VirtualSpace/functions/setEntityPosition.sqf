@@ -1,30 +1,23 @@
-params ["_entity","_position",["_moveObjects", false]];
+params ["_entity", "_position", ["_moveObjects", false]];
 
 private _oldPosition = _entity get "position";
-_entity set ["position", _position];
+if (_oldPosition isNotEqualTo _position) then {
+    _entity set ["position", _position];
+    // Teardown can update metadata after the profile has left the registry.
+    if ((_entity get "id") in (IVCS_VirtualSpace_Controller get "entities" get "ALL")) then {
+        private _grid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
+        [_grid, _oldPosition, _position, _entity] call IVCS_SpacialGrid_move;
+    };
+};
 
-private _entitiesSpacialGrid = IVCS_VirtualSpace_Controller get "entitiesSpacialGrid";
-[_entitiesSpacialGrid, _oldPosition, _position, _entity] call IVCS_SpacialGrid_move;
-
-if (_moveObjects) then {
-    private _active = _entity get "active";
-    if (_active) then {
-        private _entityType = _entity get "entityType";
-        switch (_entityType) do {
-            case "group": {
-                private _units = _entity get "units";
-                {
-                    private _object = _x get "object";
-                    _object setPosATL _position;
-                } foreach _units;
-            };
-            case "vehicle": {
-                private _object = _entity get "object";
-                _object setPosATL _position;
-            };
-            case "uav": {
-
-            };
+if (_moveObjects && { _entity get "active" }) then {
+    switch (_entity get "entityType") do {
+        case "group": {
+            { (_x get "object") setPosATL _position; } forEach (_entity get "units");
+        };
+        case "vehicle";
+        case "uav": {
+            (_entity get "object") setPosATL _position;
         };
     };
 };

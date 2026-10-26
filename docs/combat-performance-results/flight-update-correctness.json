@@ -1,0 +1,30 @@
+{
+  "passed": 180,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "flight-update",
+      "passed": 50,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a527c96ff3bd4b09b573df0aad8da827\\profile\\arma3server_x64_2026-10-25_22-53-19.rpt"
+    },
+    {
+      "suite": "helicopters",
+      "passed": 59,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-bbb2bc3b0fe84d008436a22b3609611e\\profile\\arma3server_x64_2026-10-25_22-53-16.rpt"
+    },
+    {
+      "suite": "helicopter-tactics",
+      "passed": 50,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b5daa84cb3874e2e9578ccff572566b5\\profile\\arma3server_x64_2026-10-25_22-53-18.rpt"
+    },
+    {
+      "suite": "helicopter-review",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-0ea8e24f0fd343a88462b396d4b85f7f\\profile\\arma3server_x64_2026-10-25_22-53-17.rpt"
+    }
+  ]
+}

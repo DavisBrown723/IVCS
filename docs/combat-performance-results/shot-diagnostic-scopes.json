@@ -1,0 +1,608 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-diagnostic-20261025-192726-1ecff375.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 3578181,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 215870312612,
+  "zone_types": 136,
+  "filter": "IVCS_SHOT_",
+  "matching_zone_types": 12,
+  "top_inclusive": [
+    {
+      "name": "IVCS_SHOT_Unit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 612641971,
+      "total_perc": 0.283801,
+      "counts": 4356,
+      "mean_ns": 140643,
+      "min_ns": 5633,
+      "max_ns": 688969,
+      "std_ns": 106043.712675
+    },
+    {
+      "name": "IVCS_SHOT_RecordScan",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 370224610,
+      "total_perc": 0.171503,
+      "counts": 5697,
+      "mean_ns": 64985,
+      "min_ns": 16010,
+      "max_ns": 401327,
+      "std_ns": 55916.511025
+    },
+    {
+      "name": "IVCS_SHOT_WeaponMiss",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 254281375,
+      "total_perc": 0.117794,
+      "counts": 2600,
+      "mean_ns": 97800,
+      "min_ns": 14830,
+      "max_ns": 426341,
+      "std_ns": 63235.360119
+    },
+    {
+      "name": "IVCS_SHOT_WeaponHit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 189606742,
+      "total_perc": 0.087834,
+      "counts": 5038,
+      "mean_ns": 37635,
+      "min_ns": 4254,
+      "max_ns": 327506,
+      "std_ns": 43613.724201
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getWeaponProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 108922410,
+      "total_perc": 0.050457,
+      "counts": 18439,
+      "mean_ns": 5907,
+      "min_ns": 4616,
+      "max_ns": 179960,
+      "std_ns": 2386.984357
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getHitpointLayout",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 20261379,
+      "total_perc": 0.009386,
+      "counts": 1830,
+      "mean_ns": 11071,
+      "min_ns": 8038,
+      "max_ns": 70089,
+      "std_ns": 3710.654459
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_sampleHits",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 17032841,
+      "total_perc": 0.00789,
+      "counts": 675,
+      "mean_ns": 25233,
+      "min_ns": 13083,
+      "max_ns": 71229,
+      "std_ns": 9728.583107
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getShotFactors",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 13278797,
+      "total_perc": 0.006151,
+      "counts": 593,
+      "mean_ns": 22392,
+      "min_ns": 13454,
+      "max_ns": 68277,
+      "std_ns": 6520.444685
+    },
+    {
+      "name": "IVCS_SHOT_Prepare",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 10624263,
+      "total_perc": 0.004922,
+      "counts": 360,
+      "mean_ns": 29511,
+      "min_ns": 18041,
+      "max_ns": 86580,
+      "std_ns": 10080.279188
+    },
+    {
+      "name": "IVCS_SHOT_Firing",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 8490146,
+      "total_perc": 0.003933,
+      "counts": 189,
+      "mean_ns": 44921,
+      "min_ns": 30170,
+      "max_ns": 106511,
+      "std_ns": 13956.919157
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getAmmoProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 4063910,
+      "total_perc": 0.001883,
+      "counts": 360,
+      "mean_ns": 11288,
+      "min_ns": 7710,
+      "max_ns": 22902,
+      "std_ns": 2859.487212
+    },
+    {
+      "name": "IVCS_SHOT_CacheReset",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3097061,
+      "total_perc": 0.001435,
+      "counts": 330,
+      "mean_ns": 9385,
+      "min_ns": 4365,
+      "max_ns": 40016,
+      "std_ns": 4074.566477
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_SHOT_RecordScan",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 359600347,
+      "total_perc": 0.166582,
+      "counts": 5697,
+      "mean_ns": 63121,
+      "min_ns": 16010,
+      "max_ns": 358521,
+      "std_ns": 55947.606081
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getWeaponProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 48539799,
+      "total_perc": 0.022486,
+      "counts": 18439,
+      "mean_ns": 2632,
+      "min_ns": 2115,
+      "max_ns": 128145,
+      "std_ns": 4052.783113
+    },
+    {
+      "name": "IVCS_SHOT_Unit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 48084743,
+      "total_perc": 0.022275,
+      "counts": 4356,
+      "mean_ns": 11038,
+      "min_ns": 5633,
+      "max_ns": 85318,
+      "std_ns": 167471.326929
+    },
+    {
+      "name": "IVCS_SHOT_WeaponHit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 26452113,
+      "total_perc": 0.012254,
+      "counts": 5038,
+      "mean_ns": 5250,
+      "min_ns": 3436,
+      "max_ns": 65734,
+      "std_ns": 54324.70993
+    },
+    {
+      "name": "IVCS_SHOT_WeaponMiss",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 22901408,
+      "total_perc": 0.010609,
+      "counts": 2600,
+      "mean_ns": 8808,
+      "min_ns": 6402,
+      "max_ns": 83530,
+      "std_ns": 109185.292776
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getHitpointLayout",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6999482,
+      "total_perc": 0.003242,
+      "counts": 1830,
+      "mean_ns": 3824,
+      "min_ns": 2808,
+      "max_ns": 15267,
+      "std_ns": 8144.210385
+    },
+    {
+      "name": "IVCS_SHOT_Prepare",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6127981,
+      "total_perc": 0.002839,
+      "counts": 360,
+      "mean_ns": 17022,
+      "min_ns": 9363,
+      "max_ns": 64149,
+      "std_ns": 16063.707614
+    },
+    {
+      "name": "IVCS_SHOT_Firing",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 4637207,
+      "total_perc": 0.002148,
+      "counts": 189,
+      "mean_ns": 24535,
+      "min_ns": 16297,
+      "max_ns": 59562,
+      "std_ns": 24750.997299
+    },
+    {
+      "name": "IVCS_SHOT_CacheReset",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3097061,
+      "total_perc": 0.001435,
+      "counts": 330,
+      "mean_ns": 9385,
+      "min_ns": 4365,
+      "max_ns": 40016,
+      "std_ns": 4074.566477
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getShotFactors",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 2599938,
+      "total_perc": 0.001204,
+      "counts": 593,
+      "mean_ns": 4384,
+      "min_ns": 2620,
+      "max_ns": 24864,
+      "std_ns": 19166.971396
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_sampleHits",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 2292051,
+      "total_perc": 0.001062,
+      "counts": 675,
+      "mean_ns": 3395,
+      "min_ns": 2269,
+      "max_ns": 8424,
+      "std_ns": 23922.537802
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getAmmoProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 1810536,
+      "total_perc": 0.000839,
+      "counts": 360,
+      "mean_ns": 5029,
+      "min_ns": 3589,
+      "max_ns": 9743,
+      "std_ns": 6889.767107
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_SHOT_Unit",
+      "count": 4356,
+      "total_ns": 612641971,
+      "mean_ns": 140643,
+      "p50_ns": 142906,
+      "p90_ns": 284589,
+      "p95_ns": 335134,
+      "p99_ns": 423839,
+      "max_ns": 688969,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228354115,
+      "last_end_ns": 125883473813,
+      "observed_span_ns": 73655119698,
+      "span_occupancy_percent": 0.8318
+    },
+    {
+      "name": "IVCS_SHOT_RecordScan",
+      "count": 5697,
+      "total_ns": 370224610,
+      "mean_ns": 64986,
+      "p50_ns": 39996,
+      "p90_ns": 144193,
+      "p95_ns": 187291,
+      "p99_ns": 235013,
+      "max_ns": 401327,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228531520,
+      "last_end_ns": 125883412770,
+      "observed_span_ns": 73654881250,
+      "span_occupancy_percent": 0.5026
+    },
+    {
+      "name": "IVCS_SHOT_WeaponMiss",
+      "count": 2600,
+      "total_ns": 254281375,
+      "mean_ns": 97801,
+      "p50_ns": 82559,
+      "p90_ns": 201410,
+      "p95_ns": 221726,
+      "p99_ns": 311111,
+      "max_ns": 426341,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228401665,
+      "last_end_ns": 119994210349,
+      "observed_span_ns": 67765808684,
+      "span_occupancy_percent": 0.3752
+    },
+    {
+      "name": "IVCS_SHOT_WeaponHit",
+      "count": 5038,
+      "total_ns": 189606742,
+      "mean_ns": 37635,
+      "p50_ns": 27112,
+      "p90_ns": 132071,
+      "p95_ns": 141820,
+      "p99_ns": 172273,
+      "max_ns": 327506,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228718158,
+      "last_end_ns": 125883418262,
+      "observed_span_ns": 73654700104,
+      "span_occupancy_percent": 0.2574
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getWeaponProfile",
+      "count": 18439,
+      "total_ns": 108922410,
+      "mean_ns": 5907,
+      "p50_ns": 5154,
+      "p90_ns": 7823,
+      "p95_ns": 8985,
+      "p99_ns": 12843,
+      "max_ns": 179960,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 50742083254,
+      "last_end_ns": 125885832271,
+      "observed_span_ns": 75143749017,
+      "span_occupancy_percent": 0.145
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getHitpointLayout",
+      "count": 1830,
+      "total_ns": 20261379,
+      "mean_ns": 11072,
+      "p50_ns": 9652,
+      "p90_ns": 14884,
+      "p95_ns": 17476,
+      "p99_ns": 25548,
+      "max_ns": 70089,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228619812,
+      "last_end_ns": 125884799201,
+      "observed_span_ns": 73656179389,
+      "span_occupancy_percent": 0.0275
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_sampleHits",
+      "count": 675,
+      "total_ns": 17032841,
+      "mean_ns": 25234,
+      "p50_ns": 24156,
+      "p90_ns": 35627,
+      "p95_ns": 43158,
+      "p99_ns": 62179,
+      "max_ns": 71229,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228658096,
+      "last_end_ns": 125884094812,
+      "observed_span_ns": 73655436716,
+      "span_occupancy_percent": 0.0231
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getShotFactors",
+      "count": 593,
+      "total_ns": 13278797,
+      "mean_ns": 22393,
+      "p50_ns": 20889,
+      "p90_ns": 29123,
+      "p95_ns": 35532,
+      "p99_ns": 46698,
+      "max_ns": 68277,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 50742636508,
+      "last_end_ns": 125883747741,
+      "observed_span_ns": 75141111233,
+      "span_occupancy_percent": 0.0177
+    },
+    {
+      "name": "IVCS_SHOT_Prepare",
+      "count": 360,
+      "total_ns": 10624263,
+      "mean_ns": 29512,
+      "p50_ns": 25780,
+      "p90_ns": 42106,
+      "p95_ns": 45887,
+      "p99_ns": 68015,
+      "max_ns": 86580,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228555522,
+      "last_end_ns": 119994201682,
+      "observed_span_ns": 67765646160,
+      "span_occupancy_percent": 0.0157
+    },
+    {
+      "name": "IVCS_SHOT_Firing",
+      "count": 189,
+      "total_ns": 8490146,
+      "mean_ns": 44921,
+      "p50_ns": 41212,
+      "p90_ns": 58292,
+      "p95_ns": 74363,
+      "p99_ns": 102117,
+      "max_ns": 106511,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228641712,
+      "last_end_ns": 125883471356,
+      "observed_span_ns": 73654829644,
+      "span_occupancy_percent": 0.0115
+    },
+    {
+      "name": "IVCS_SHOT_IVCS_Combat_getAmmoProfile",
+      "count": 360,
+      "total_ns": 4063910,
+      "mean_ns": 11289,
+      "p50_ns": 10380,
+      "p90_ns": 15502,
+      "p95_ns": 17664,
+      "p99_ns": 20874,
+      "max_ns": 22902,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228559866,
+      "last_end_ns": 119994179139,
+      "observed_span_ns": 67765619273,
+      "span_occupancy_percent": 0.006
+    },
+    {
+      "name": "IVCS_SHOT_CacheReset",
+      "count": 330,
+      "total_ns": 3097061,
+      "mean_ns": 9385,
+      "p50_ns": 8285,
+      "p90_ns": 14057,
+      "p95_ns": 16730,
+      "p99_ns": 25443,
+      "max_ns": 40016,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 52228339684,
+      "last_end_ns": 116931603177,
+      "observed_span_ns": 64703263493,
+      "span_occupancy_percent": 0.0048
+    }
+  ],
+  "message_count": 2357,
+  "messages": [
+    {
+      "MessageName": "[IVCS TASK TEST] PASS workload contains exactly 20 groups including crews and supporting AA",
+      "total_ns": 51208120988
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=1 mode=heli-infantry-aa groups=20",
+      "total_ns": 53219872365
+    },
+    {
+      "MessageName": "[IVCS PERF] START [1,\"heli-infantry-aa\",20,85,5]",
+      "total_ns": 53219892018
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"reset\",19402,\"e_9\",465.734,true],[\"select\",19402,\"O_soldier_TL_F\",465.734,true,2,0,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53256007657
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19402,\"O_soldier_AAA_F\",465.734,true,3,0,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",8],[\"hgun_Rook40_F\",3],[\"Rangefinder\",0]],[]],[\"reset\",19402,\"e_8\",563.114,false]]",
+      "total_ns": 53256021470
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19402,\"O_soldier_SL_F\",563.114,false,2,9,0,0,0,[[\"arifle_Katiba_ARCO_pointer_F\",6],[\"hgun_Rook40_F\",3]],[]],[\"select\",19402,\"O_soldier_F\",563.114,false,2,13,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53256033746
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19402,\"O_soldier_LAT_F\",563.114,false,3,21,1,11,11,[[\"arifle_Katiba_ACO_F\",6],[\"launch_RPG32_F\",12],[\"hgun_Rook40_F\",3]],[]],[\"select\",19402,\"O_soldier_M_F\",563.114,false,2,13,0,0,0,[[\"srifle_DMR_01_DMS_BI_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53256047104
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19402,\"O_soldier_TL_F\",563.114,false,2,20,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]],[\"select\",19402,\"O_soldier_AR_F\",563.114,false,2,7,0,0,0,[[\"LMG_Zafir_pointer_F\",4],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53256056145
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19402,\"O_soldier_A_F\",563.114,false,2,21,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",18],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53256062433
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"reset\",19403,\"e_15\",461.27,true],[\"select\",19403,\"O_soldier_TL_F\",461.27,true,2,0,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53291419933
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19403,\"O_soldier_AAA_F\",461.27,true,3,0,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",8],[\"hgun_Rook40_F\",3],[\"Rangefinder\",0]],[]],[\"reset\",19403,\"e_14\",558.598,false]]",
+      "total_ns": 53291430601
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19403,\"O_soldier_SL_F\",558.598,false,2,9,0,0,0,[[\"arifle_Katiba_ARCO_pointer_F\",6],[\"hgun_Rook40_F\",3]],[]],[\"select\",19403,\"O_soldier_F\",558.598,false,2,13,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53291443074
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19403,\"O_soldier_LAT_F\",558.598,false,3,21,1,11,11,[[\"arifle_Katiba_ACO_F\",6],[\"launch_RPG32_F\",12],[\"hgun_Rook40_F\",3]],[]],[\"select\",19403,\"O_soldier_M_F\",558.598,false,2,13,0,0,0,[[\"srifle_DMR_01_DMS_BI_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53291455998
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19403,\"O_soldier_TL_F\",558.598,false,2,20,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]],[\"select\",19403,\"O_soldier_AR_F\",558.598,false,2,7,0,0,0,[[\"LMG_Zafir_pointer_F\",4],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53291465856
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19403,\"O_soldier_A_F\",558.598,false,2,21,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",18],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53291471759
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"reset\",19404,\"e_21\",462.773,true],[\"select\",19404,\"O_soldier_TL_F\",462.773,true,2,0,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53329101297
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19404,\"O_soldier_AAA_F\",462.773,true,3,0,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",8],[\"hgun_Rook40_F\",3],[\"Rangefinder\",0]],[]],[\"reset\",19404,\"e_20\",560.118,false]]",
+      "total_ns": 53329110859
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19404,\"O_soldier_SL_F\",560.118,false,2,9,0,0,0,[[\"arifle_Katiba_ARCO_pointer_F\",6],[\"hgun_Rook40_F\",3]],[]],[\"select\",19404,\"O_soldier_F\",560.118,false,2,13,0,0,0,[[\"arifle_Katiba_ACO_pointer_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53329122922
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19404,\"O_soldier_LAT_F\",560.118,false,3,21,1,11,11,[[\"arifle_Katiba_ACO_F\",6],[\"launch_RPG32_F\",12],[\"hgun_Rook40_F\",3]],[]],[\"select\",19404,\"O_soldier_M_F\",560.118,false,2,13,0,0,0,[[\"srifle_DMR_01_DMS_BI_F\",10],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53329135176
+    },
+    {
+      "MessageName": "IVCS SHOT WORK [[\"select\",19404,\"O_soldier_TL_F\",560.118,false,2,20,0,0,0,[[\"arifle_Katiba_GL_ARCO_pointer_F\",17],[\"hgun_Rook40_F\",3]],[]],[\"select\",19404,\"O_soldier_AR_F\",560.118,false,2,7,0,0,0,[[\"LMG_Zafir_pointer_F\",4],[\"hgun_Rook40_F\",3]],[]]]",
+      "total_ns": 53329145378
+    }
+  ],
+  "message_parser_note": "Message names can contain unquoted commas; split the native CSV at its final comma."
+}

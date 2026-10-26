@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25",
+  "function": "IVCS_Combat_getVehicleShot",
+  "baseline_sha256": "682e47e54247279bc83fd9cd89fb8240e8fab17c9546500fee681141e7dac959",
+  "optimized_sha256": "2c98d08ba26d1952adf54aa953c4eb25bec85dd2ee604e3696d4ec749d3b2c25",
+  "groups": 20,
+  "engagements": 5,
+  "units": 85,
+  "entities": 30,
+  "acc_time": 1,
+  "window_seconds": 35,
+  "warmup_seconds": 2,
+  "frame_budget_ms": 3,
+  "engagements_per_frame": 8,
+  "entity_visits_per_frame": 10,
+  "ammo_search_budget_ms": 1,
+  "step_seconds": 1,
+  "diagnostic_counters_enabled_for_comparison": false,
+  "trials": [
+    {
+      "trial": 1,
+      "version": "before",
+      "seed_pair": 1
+    },
+    {
+      "trial": 2,
+      "version": "after",
+      "seed_pair": 1
+    },
+    {
+      "trial": 3,
+      "version": "after",
+      "seed_pair": 2
+    },
+    {
+      "trial": 4,
+      "version": "before",
+      "seed_pair": 2
+    }
+  ],
+  "correctness_checks_passed": 977,
+  "comparison_validity_checks_passed": 72,
+  "diagnostic_validity_checks_passed": 18,
+  "unprofiled_measured_frames": 3859,
+  "profiled_rpt_frames": 3908,
+  "precise_selected_trials": [
+    3,
+    4
+  ],
+  "precise_frames": 1955,
+  "precise_exclusion_reason": "Capture connection followed the first window BEGIN; retain only the complete matched seed pair.",
+  "whole_ivcs_p99_reduction_percent": 10.818475916966142,
+  "sources_verified_unchanged_after_measurement": true
+}

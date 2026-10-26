@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "generatedAtUTC": "2026-10-15T02:01:11.636901+00:00",
+  "scope": "Consolidated-core containment without object-distance limits; independent support reassessment; clearer map clusters and handles",
+  "entryPoint": "IVCS/Locations/Indexing/run.ps1",
+  "output": "IVCS\\Locations\\Indexing\\output\\altis",
+  "locationIndexVersion": 9.0,
+  "locationVariant": "containment-cores-v4",
+  "pythonTests": 106,
+  "pythonLog": "IVCS\\Locations\\Indexing\\review\\python-containment.log",
+  "nativeChecks": {
+    "locations": {
+      "passed": 120,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2767a3ef51c8439cbedeaf40f886536b\\profile\\arma3server_x64_2026-10-14_20-52-36.rpt"
+    },
+    "spatialMerges": {
+      "passed": 27,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f252ef7d5dab4c9ebe74b18a37ffe5cf\\profile\\arma3server_x64_2026-10-14_20-52-36.rpt"
+    },
+    "settlementPorts": {
+      "passed": 15,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-3cd3612421824375aabb32de56980af2\\profile\\arma3server_x64_2026-10-14_20-53-35.rpt"
+    },
+    "generatedDataAndDemo": {
+      "passed": 57,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-6064e8109016447285fed2893492d9dd\\profile\\arma3server_x64_2026-10-14_20-58-08.rpt"
+    },
+    "fullLocationRebuild": {
+      "passed": 1,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8932587d0db14223ade13d95cc9c5300\\profile\\arma3server_x64_2026-10-14_20-52-39.rpt"
+    }
+  },
+  "nativeRegressionAssertions": 219,
+  "locationProcessingSeconds": 245.632,
+  "roadProcessingSeconds": 10.253213899999999,
+  "summary": {
+    "roadSections": 34625,
+    "mappedSections": 33733,
+    "unavailableGeometry": 892,
+    "connections": 35391,
+    "acceptedConnections": 33979,
+    "connectionEvidence": {
+      "ordinary-reciprocal": 33979,
+      "extended-only": 1412
+    },
+    "nodes": 3785,
+    "edges": 4031,
+    "components": 60,
+    "junctions": 1016,
+    "deadEnds": 562,
+    "isolatedSections": 0,
+    "bridgeSections": 40,
+    "roadTypes": {
+      "TRACK": 26823,
+      "MAIN ROAD": 2061,
+      "ROAD": 4849,
+      "HIDE": 892
+    },
+    "roadLength2dKm": 732.3104506038085,
+    "locations": 265,
+    "accessCandidates": 1786,
+    "locationsWithAccess": 261,
+    "locationsWithoutInlets": 59,
+    "interpolatedInlets": 3,
+    "zeroLengthSections": 892,
+    "longOrdinaryLinks": 0,
+    "ambiguousGeometries": 0,
+    "boundaryInlets": 801,
+    "fallbackCandidates": 985,
+    "locationsWithFallback": 55,
+    "locationsWithoutCandidates": 4,
+    "strongFallbacks": 107,
+    "secondaryFallbacks": 878,
+    "routingNodes": 4814,
+    "routingEdges": 5060,
+    "corridorRelations": 10980,
+    "routingCorridorRelations": 14275,
+    "baselineConnections": 25973
+  },
+  "datasets": {
+    "roadDatasetId": "402c7bf5fcd71d0dd5fd8ed0e2a019312fd3ecd1b0286fab069b945efecb71c3",
+    "locationDatasetId": "ab6c276aa442aa1ee85738ac9a40612067bb271f4697cef04a0fb7873a87aa86",
+    "attachmentDatasetId": "da4b94d9b072c2b2b8683eebd8d0c4fb13ca3b1f8cc2549325782e1d19a66d9f",
+    "preprocessingDatasetId": "de16e42d30fb2bf8fb0960fd61722a59e7c35e262313327193c428d1319b8458",
+    "runtimeDatasetId": "7128a4b5e94c1aefa7653965d2dc593ef077998a60cfd5e71ebd34bf6f4a4b5e"
+  },
+  "completeOutputHashesVerified": true,
+  "nativeSourceHashesMatchCurrentCode": true,
+  "sqfFilesCRLF": 22,
+  "objectiveGraphFilesUnchanged": 34,
+  "allPreviousSourceComponentsRetained": true,
+  "comparison": {
+    "report": "IVCS\\Locations\\Indexing\\review\\containment-merging.md",
+    "data": "IVCS\\Locations\\Indexing\\review\\containment-merging.json",
+    "beforeLocations": 268,
+    "afterLocations": 265,
+    "absorbedPreviousIds": 3,
+    "airportObjectCount": 1610.0,
+    "airportFormerBaseOwners": {
+      "altis_base_90": "altis_airfield_169",
+      "altis_base_132": "altis_base_132"
+    }
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8767/#5.00/14647.7/16551.5",
+    "servedDataMatchesPublishedFile": true,
+    "onlineBasemapVerified": true,
+    "airportObjects": 1610,
+    "airportBoundaryInlets": 10,
+    "unselectedFootprintsVisuallyVerified": true,
+    "enlargedHandleOuterRingSelectionVerified": true
+  },
+  "baseline": "IVCS\\Locations\\Indexing\\baseline\\containment-before",
+  "limitations": [
+    "The northern airport base is not fully contained: its military core extends about 128 m beyond the consolidated core footprint, exceeding the 100 m boundary margin.",
+    "Displayed footprints include accepted support; support does not expand core merge eligibility.",
+    "Road access points remain geometric candidates; vehicle traversal has not been assessed."
+  ]
+}

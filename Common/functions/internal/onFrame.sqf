@@ -1,4 +1,4 @@
-if (!isGamePaused) then {
+if (!IVCS_SimulationPaused) then {
     IVCS_CurrentFrame = IVCS_CurrentFrame + 1;
     if (IVCS_CurrentFrame > IVCS_FrameCap) then {
         IVCS_CurrentFrame = 1;

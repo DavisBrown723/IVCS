@@ -1,0 +1,408 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-helicopters-20261025-155147-5319dd49.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 11195832,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 256000000000,
+  "zone_types": 2337,
+  "filter": "IVCS_PERF_",
+  "matching_zone_types": 6,
+  "top_inclusive": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 18511955098,
+      "total_perc": 4.892724,
+      "counts": 8132,
+      "mean_ns": 2276433,
+      "min_ns": 292287,
+      "max_ns": 14832182,
+      "std_ns": 1761402.957858
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 11703317514,
+      "total_perc": 3.093196,
+      "counts": 8132,
+      "mean_ns": 1439168,
+      "min_ns": 21279,
+      "max_ns": 7613228,
+      "std_ns": 954975.275056
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6026366522,
+      "total_perc": 1.592773,
+      "counts": 8132,
+      "mean_ns": 741068,
+      "min_ns": 35058,
+      "max_ns": 9238093,
+      "std_ns": 1425389.369132
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3394250197,
+      "total_perc": 0.897103,
+      "counts": 1090,
+      "mean_ns": 3113991,
+      "min_ns": 1454286,
+      "max_ns": 8033928,
+      "std_ns": 1003763.088548
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 263229606,
+      "total_perc": 0.069572,
+      "counts": 8132,
+      "mean_ns": 32369,
+      "min_ns": 13708,
+      "max_ns": 792206,
+      "std_ns": 25176.972411
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 126331749,
+      "total_perc": 0.03339,
+      "counts": 8132,
+      "mean_ns": 15535,
+      "min_ns": 8937,
+      "max_ns": 844387,
+      "std_ns": 17314.589217
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 206684227,
+      "total_perc": 0.054627,
+      "counts": 8132,
+      "mean_ns": 25416,
+      "min_ns": 11880,
+      "max_ns": 1042932,
+      "std_ns": 2858363.54749
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 82854027,
+      "total_perc": 0.021898,
+      "counts": 8132,
+      "mean_ns": 10188,
+      "min_ns": 5406,
+      "max_ns": 921229,
+      "std_ns": 1601869.658671
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 73056119,
+      "total_perc": 0.019309,
+      "counts": 8132,
+      "mean_ns": 8983,
+      "min_ns": 4701,
+      "max_ns": 338117,
+      "std_ns": 1719784.766711
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 53260173,
+      "total_perc": 0.014077,
+      "counts": 8132,
+      "mean_ns": 6549,
+      "min_ns": 3538,
+      "max_ns": 670616,
+      "std_ns": 19507.83489
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 50133248,
+      "total_perc": 0.01325,
+      "counts": 8132,
+      "mean_ns": 6164,
+      "min_ns": 3773,
+      "max_ns": 237916,
+      "std_ns": 36341.408759
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 8687436,
+      "total_perc": 0.002296,
+      "counts": 1090,
+      "mean_ns": 7970,
+      "min_ns": 3793,
+      "max_ns": 537816,
+      "std_ns": 3265542.183569
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "count": 8132,
+      "total_ns": 18511955098,
+      "mean_ns": 2276433,
+      "p50_ns": 1562156,
+      "p90_ns": 4888738,
+      "p95_ns": 6256063,
+      "p99_ns": 8368177,
+      "max_ns": 14832182,
+      "over_1ms": 7160,
+      "over_5ms": 767,
+      "over_10ms": 28,
+      "first_start_ns": 53648387916,
+      "last_end_ns": 354361527508,
+      "observed_span_ns": 300713139592,
+      "span_occupancy_percent": 6.156
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "count": 8132,
+      "total_ns": 11703317514,
+      "mean_ns": 1439168,
+      "p50_ns": 1099564,
+      "p90_ns": 2743807,
+      "p95_ns": 3530828,
+      "p99_ns": 5080802,
+      "max_ns": 7613228,
+      "over_1ms": 4826,
+      "over_5ms": 87,
+      "over_10ms": 0,
+      "first_start_ns": 53648479832,
+      "last_end_ns": 354361480950,
+      "observed_span_ns": 300713001118,
+      "span_occupancy_percent": 3.8919
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "count": 8132,
+      "total_ns": 6026366522,
+      "mean_ns": 741068,
+      "p50_ns": 253578,
+      "p90_ns": 3181712,
+      "p95_ns": 4570106,
+      "p99_ns": 6178229,
+      "max_ns": 9238093,
+      "over_1ms": 993,
+      "over_5ms": 301,
+      "over_10ms": 0,
+      "first_start_ns": 53648404318,
+      "last_end_ns": 354360646357,
+      "observed_span_ns": 300712242039,
+      "span_occupancy_percent": 2.004
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "count": 1090,
+      "total_ns": 3394250197,
+      "mean_ns": 3113991,
+      "p50_ns": 2963976,
+      "p90_ns": 4432833,
+      "p95_ns": 4901752,
+      "p99_ns": 6004858,
+      "max_ns": 8033928,
+      "over_1ms": 1090,
+      "over_5ms": 49,
+      "over_10ms": 0,
+      "first_start_ns": 92278503263,
+      "last_end_ns": 316901072847,
+      "observed_span_ns": 224622569584,
+      "span_occupancy_percent": 1.5111
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "count": 8132,
+      "total_ns": 263229606,
+      "mean_ns": 32370,
+      "p50_ns": 28788,
+      "p90_ns": 47675,
+      "p95_ns": 60318,
+      "p99_ns": 110123,
+      "max_ns": 792206,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 53650472937,
+      "last_end_ns": 354361517830,
+      "observed_span_ns": 300711044893,
+      "span_occupancy_percent": 0.0875
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "count": 8132,
+      "total_ns": 126331749,
+      "mean_ns": 15535,
+      "p50_ns": 12515,
+      "p90_ns": 20776,
+      "p95_ns": 25706,
+      "p99_ns": 57579,
+      "max_ns": 844387,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 53648466144,
+      "last_end_ns": 354360660523,
+      "observed_span_ns": 300712194379,
+      "span_occupancy_percent": 0.042
+    }
+  ],
+  "message_count": 1666,
+  "messages": [
+    {
+      "MessageName": "Intercept Invoker SQF handler initializing...",
+      "total_ns": 19479088798
+    },
+    {
+      "MessageName": "Intercept Invoker test result: SpyderBlack723 == SpyderBlack723",
+      "total_ns": 19479430043
+    },
+    {
+      "MessageName": "Intercept Invoker initialized.",
+      "total_ns": 19479656912
+    },
+    {
+      "MessageName": "Intercept Pre-Init...",
+      "total_ns": 19479660868
+    },
+    {
+      "MessageName": "Intercept Pre-Init Completed.",
+      "total_ns": 19479676185
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18397",
+      "total_ns": "29.316",
+      "null": [
+        "0] PreInit started. v3.19.0.260808",
+        "19564838927"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (settings) INFO: Reading settings from settings file.",
+      "total_ns": 19698310074
+    },
+    {
+      "MessageName": "[CBA] (settings) INFO: Finished reading settings from settings file.",
+      "total_ns": 19698350921
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18397",
+      "total_ns": "29.547",
+      "null": [
+        "0] PreInit finished.",
+        "19795241036"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18398",
+      "total_ns": "29.706",
+      "null": [
+        "0] PostInit started. MISSIONINIT: missionName=ivcs_task_tests_55b0ea26fed44ad193b1f7b76806b1f8",
+        " missionVersion=12",
+        " worldName=Altis",
+        " isMultiplayer=true",
+        " isServer=true",
+        " isDedicated=true",
+        " CBA_isHeadlessClient=false",
+        " hasInterface=false",
+        " didJIP=false",
+        "19954716633"
+      ]
+    },
+    {
+      "MessageName": "Intercept Post-Init...",
+      "total_ns": 19977022572
+    },
+    {
+      "MessageName": "Intercept Post-Init Finished...",
+      "total_ns": 19977041491
+    },
+    {
+      "MessageName": "[CBA] (versioning) INFO: [18398",
+      "total_ns": "29.736",
+      "null": [
+        "0] VERSIONING:cba=3.19.0.260808",
+        "19984482592"
+      ]
+    },
+    {
+      "MessageName": "[CBA] (xeh) INFO: [18398",
+      "total_ns": "29.739",
+      "null": [
+        "0] PostInit finished.",
+        "19987726352"
+      ]
+    },
+    {
+      "MessageName": "[IVCS PERF] CONFIG [35",
+      "total_ns": 2,
+      "null": [
+        "2",
+        "[20]",
+        "[\"Arma 3\"",
+        "Arma3",
+        "222",
+        "154126",
+        "Stable",
+        "true",
+        "Windows",
+        "x64",
+        "profiling]",
+        "1",
+        "3",
+        "8",
+        "1",
+        "2]",
+        "22783937964"
+      ]
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS workload contains exactly 20 groups including crews and supporting AA",
+      "total_ns": 53578275789
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=1 mode=heli-idle groups=20",
+      "total_ns": 55630866443
+    },
+    {
+      "MessageName": "[IVCS PERF] START [1",
+      "total_ns": "heli-idle",
+      "null": [
+        "20",
+        "85",
+        "0]",
+        "55630871679"
+      ]
+    },
+    {
+      "MessageName": "IVCS PERF END trial=1 mode=heli-idle groups=20",
+      "total_ns": 90662270141
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS benchmark stays entirely virtual",
+      "total_ns": 90662326390
+    }
+  ]
+}

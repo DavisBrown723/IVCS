@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-14",
+  "simulation_speed": 1,
+  "findings": [
+    "Spent virtual magazines were restored as live empty cargo.",
+    "Native requests approached/collected before checking receiving capacity.",
+    "Reload ownership was released during the native magazine/animation visibility gap, allowing a second request for the same rifle."
+  ],
+  "before_empty_magazine_probe": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-49a7ac0a87e94cf1a86a723dd860e4c2\\profile\\arma3server_x64_2026-10-14_16-21-22.rpt",
+    "results": [
+      {
+        "class": "B_Soldier_F",
+        "legacy_extra_empty": 0,
+        "loaded_rounds": 30,
+        "pending_requests": 0,
+        "transfers": 1,
+        "attempts": 1,
+        "empty_magazines": 10
+      },
+      {
+        "class": "B_Soldier_TL_F",
+        "legacy_extra_empty": 0,
+        "loaded_rounds": 30,
+        "pending_requests": 0,
+        "transfers": 1,
+        "attempts": 1,
+        "empty_magazines": 6
+      },
+      {
+        "class": "B_Soldier_F",
+        "legacy_extra_empty": 40,
+        "loaded_rounds": 0,
+        "pending_requests": 0,
+        "transfers": 0,
+        "attempts": 2,
+        "empty_magazines": 18
+      }
+    ]
+  },
+  "before_reload_gap_probe": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-953977413a5240acb42aa3926956e03e\\profile\\arma3server_x64_2026-10-14_16-34-02.rpt",
+    "states": [
+      "16:34:23 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=0.0019989 state=[[[\"\"approaching\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],0,1,[\"\"\"\",\"\"\"\",\"\"\"\",\"\"\"\",0,-1,-1],true]",
+      "16:34:23 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=0.322001 state=[[[\"\"approaching\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],0,1,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:24 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=1.098 state=[[[\"\"collecting\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],0,1,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:26 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=3.199 state=[[[\"\"reloading\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],1,1,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:27 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=3.644 state=[[[\"\"approaching\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],1,2,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:27 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=3.754 state=[[[\"\"collecting\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],1,2,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:29 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=5.853 state=[[[\"\"reloading\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\"]],2,2,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"\"\",0,-1,0],true]",
+      "16:34:34 \"[IVCS AMMO PROBE] STATE class=O_Soldier_TL_F extra=0 elapsed=11.16 state=[[],2,2,[\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"arifle_Katiba_GL_ARCO_pointer_F\"\",\"\"Single\"\",\"\"30Rnd_65x39_caseless_green\"\",30,0,0],true]"
+    ]
+  },
+  "after_focused_results": [
+    "16:37:24 \"[IVCS HANDOFF AMMO] class=B_Soldier_F legacyEmpty=0 transfers=1 attempts=1 ammo=29 fired=1\"",
+    "16:37:30 \"[IVCS HANDOFF AMMO] class=B_Soldier_TL_F legacyEmpty=0 transfers=1 attempts=1 ammo=29 fired=1\"",
+    "16:37:36 \"[IVCS HANDOFF AMMO] class=B_soldier_AR_F legacyEmpty=0 transfers=1 attempts=1 ammo=99 fired=1\"",
+    "16:37:45 \"[IVCS HANDOFF AMMO] class=O_Soldier_TL_F legacyEmpty=0 transfers=1 attempts=1 ammo=29 fired=1\"",
+    "16:37:55 \"[IVCS HANDOFF AMMO] class=O_Soldier_AR_F legacyEmpty=0 transfers=1 attempts=1 ammo=149 fired=1\"",
+    "16:38:01 \"[IVCS HANDOFF AMMO] class=B_Soldier_F legacyEmpty=40 transfers=1 attempts=1 ammo=29 fired=1\""
+  ],
+  "verification": [
+    {
+      "name": "tests/combat/handoff-ammo.sqf",
+      "passed": 53,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-727873f16d134c528de29c44f4e8cfa2\\profile\\arma3server_x64_2026-10-14_16-36-55.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-727873f16d134c528de29c44f4e8cfa2\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/aggregation.sqf",
+      "passed": 109,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2ca637ccbc7049798eb3f08cdc615cec\\profile\\arma3server_x64_2026-10-14_16-28-20.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2ca637ccbc7049798eb3f08cdc615cec\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/run.sqf",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-cd7cdf5a1951484a856cec74c6606515\\profile\\arma3server_x64_2026-10-14_16-28-47.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-cd7cdf5a1951484a856cec74c6606515\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/ammo-sharing.sqf",
+      "passed": 46,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-84f097c3a36140e6898eb5575f57f9b6\\profile\\arma3server_x64_2026-10-14_16-38-06.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-84f097c3a36140e6898eb5575f57f9b6\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/resumable-sharing.sqf",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-34f0f250268d4bd393d00a8a76cf7a84\\profile\\arma3server_x64_2026-10-14_16-38-50.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-34f0f250268d4bd393d00a8a76cf7a84\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/arrival-sharing.sqf",
+      "passed": 59,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ee8a666fde1643ed86ad2d1e22dcf3dd\\profile\\arma3server_x64_2026-10-14_16-39-16.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ee8a666fde1643ed86ad2d1e22dcf3dd\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/ammo-loadout-check.sqf",
+      "passed": 93,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-c28b8d42a98b4063bc9d608b4a024e59\\profile\\arma3server_x64_2026-10-14_16-31-45.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-c28b8d42a98b4063bc9d608b4a024e59\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/virtualization/run.sqf",
+      "passed": 96,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-57548f5349b94b4b86235fa4cd0d77f2\\profile\\arma3server_x64_2026-10-14_16-32-14.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-57548f5349b94b4b86235fa4cd0d77f2\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/prepared-shots.sqf",
+      "passed": 160,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-bc3a3399fe1e4befab5548758634de61\\profile\\arma3server_x64_2026-10-14_16-32-47.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-bc3a3399fe1e4befab5548758634de61\\ivcs_task_tests.Altis\\IVCS"
+    },
+    {
+      "name": "tests/combat/scheduling.sqf",
+      "passed": 12,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2bdcd8963678447fa54506548b819337\\profile\\arma3server_x64_2026-10-14_16-33-14.rpt",
+      "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2bdcd8963678447fa54506548b819337\\ivcs_task_tests.Altis\\IVCS"
+    }
+  ],
+  "passed": 720,
+  "failed": 0,
+  "production_sources": [
+    {
+      "path": "VirtualSpace/functions/combat/step.sqf",
+      "sha256": "4c22e73845904263d4cbecb01566c5f2b8cdcd0210e752979a49dfb3685390e7",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/getPreparedShot.sqf",
+      "sha256": "d914b68fab130a41831751c7e451f1d5bf91ceae1dee6b908ac08cd4c7c9bab9",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/entities/group/spawn.sqf",
+      "sha256": "29c5b56cadcdbfd98e279dbf712e11541cc4c5b26d75bd5427c9b4d6d38233d7",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/advanceSearch.sqf",
+      "sha256": "1b608ad541f70d536ebefc00c0aad1f2796217912f08ad2aa45356f5d7853a0f",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/updateRequests.sqf",
+      "sha256": "14e4e75d40c41e095dc59153d57350906dc6b22b2cfa74044bb07b7ef83e377e",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/reloadRequest.sqf",
+      "sha256": "53a65ff0f1ea30bfd3099e7923b0d60d6c3a372a6d4e8c5101be3712f96f000d",
+      "focused_test_copy_identical": true,
+      "crlf": true
+    }
+  ],
+  "calibration": "16:29:47 \"[IVCS TASK TEST] CALIBRATION n=20 meanSimulationSeconds=166.15 min=90 max=259 completed=20 accuracy=1.1\"",
+  "notes": [
+    "Rifle/carried-round results are observed native data; firing readiness is confirmed by Fired events following forceWeaponFire.",
+    "The intermediate expanded test failed three OPFOR-grenadier checks and prompted the independent reload-gap reproduction; its final rerun passes.",
+    "After the final reload-only correction, focused handoff and native sharing/search/arrival suites were rerun; earlier unchanged firing, importer and virtualization suites are retained.",
+    "No frame budgets, clock scaling, accuracy, cadence, ammunition compatibility or donor reserve rules were changed."
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "method": "Two matched 30-second windows/version, ABBA, paired seeds, warmup 2 seconds, 20 stock groups at 200m; all phase boundaries and frame counts validated.",
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-140255-36fa277d.tracy",
+  "capture": {
+    "file_bytes": 3770644,
+    "format_version": "0.12.4",
+    "compression": "Zstd",
+    "streams": 4,
+    "recorder_elapsed_seconds": 205.4,
+    "trace_timeline_seconds": 244.913885901,
+    "environment": [
+      "OS: Windows 10.0.19045",
+      "CPU: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+      "CPU cores: 16",
+      "RAM: 32689 MB"
+    ]
+  },
+  "versions": {
+    "before": {
+      "trials": [
+        1,
+        4
+      ],
+      "frames": 1672,
+      "metrics": {
+        "full": {
+          "count": 1672,
+          "total_ms": 2008.895334,
+          "mean_ms": 1.2014924246411482,
+          "p50_ms": 0.7285364999999999,
+          "p90_ms": 3.162799900000001,
+          "p95_ms": 4.065804349999999,
+          "p99_ms": 5.050605719999999,
+          "max_ms": 5.72534,
+          "over_1ms": 347,
+          "over_5ms": 20,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat": {
+          "count": 1672,
+          "total_ms": 1374.486718999999,
+          "mean_ms": 0.8220614348086125,
+          "p50_ms": 0.354352,
+          "p90_ms": 2.777585000000001,
+          "p95_ms": 3.691818749999999,
+          "p99_ms": 4.6560459399999985,
+          "max_ms": 5.282547,
+          "over_1ms": 300,
+          "over_5ms": 7,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "AmmoNeedsScan": {
+          "count": 1672,
+          "total_ms": 270.083041,
+          "mean_ms": 0.16153291925837318,
+          "p50_ms": 0.0,
+          "p90_ms": 0.8170224000000036,
+          "p95_ms": 1.403794149999999,
+          "p99_ms": 2.33192895,
+          "max_ms": 2.609233,
+          "over_1ms": 124,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_other": {
+          "count": 1672,
+          "total_ms": 731.4226719999997,
+          "mean_ms": 0.43745375119617225,
+          "p50_ms": 0.354352,
+          "p90_ms": 0.6858421000000003,
+          "p95_ms": 0.9991124499999993,
+          "p99_ms": 1.32528904,
+          "max_ms": 2.658595,
+          "over_1ms": 84,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "operations": {
+        "IVCS_OP_AmmoNeedsScan": {
+          "count": 1200,
+          "total_ms": 270.0830409999998,
+          "mean_ms": 0.22506920083333332,
+          "p50_ms": 0.222381,
+          "p90_ms": 0.2499586,
+          "p95_ms": 0.25945375,
+          "p99_ms": 0.30336303,
+          "max_ms": 1.362723,
+          "over_1ms": 1,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_OP_UnitAmmoNeed": {
+          "count": 9208,
+          "total_ms": 214.2494119999999,
+          "mean_ms": 0.02326774674196351,
+          "p50_ms": 0.022341,
+          "p90_ms": 0.0259283,
+          "p95_ms": 0.02794965,
+          "p99_ms": 0.03645495000000001,
+          "max_ms": 0.268662,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_frames": [
+        {
+          "start_ns": 117580328281,
+          "costs_ms": {
+            "full": 5.72534,
+            "combat": 5.282547,
+            "IVCS_PERF_AmmoQueue_Frame": 0.010576,
+            "IVCS_PERF_Entities_Frame": 0.369864,
+            "IVCS_PERF_Spawner_Frame": 0.028779,
+            "ShotPreparation": 4.131656,
+            "DamageApplication": 0.226475,
+            "CasualtyCleanup": 0.048383,
+            "AmmoNeedsScan": 0.0,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.876033,
+            "frame_other": 0.033574
+          },
+          "steps": 5,
+          "largest_exchange_ms": 1.04594,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 107175852792,
+          "costs_ms": {
+            "full": 5.662248,
+            "combat": 5.225019,
+            "IVCS_PERF_AmmoQueue_Frame": 0.011976,
+            "IVCS_PERF_Entities_Frame": 0.353902,
+            "IVCS_PERF_Spawner_Frame": 0.029258,
+            "ShotPreparation": 2.685233,
+            "DamageApplication": 0.112486,
+            "CasualtyCleanup": 0.035248,
+            "AmmoNeedsScan": 1.631897,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.760155,
+            "frame_other": 0.042093
+          },
+          "steps": 3,
+          "largest_exchange_ms": 1.156019,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 227481265937,
+          "costs_ms": {
+            "full": 5.526815,
+            "combat": 5.170765,
+            "IVCS_PERF_AmmoQueue_Frame": 0.010572,
+            "IVCS_PERF_Entities_Frame": 0.293658,
+            "IVCS_PERF_Spawner_Frame": 0.021744,
+            "ShotPreparation": 2.630648,
+            "DamageApplication": 0.007726,
+            "CasualtyCleanup": 0.039042,
+            "AmmoNeedsScan": 1.698907,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.794442,
+            "frame_other": 0.030076
+          },
+          "steps": 4,
+          "largest_exchange_ms": 0.736156,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 208450810656,
+          "costs_ms": {
+            "full": 5.467193,
+            "combat": 5.069094,
+            "IVCS_PERF_AmmoQueue_Frame": 0.012283,
+            "IVCS_PERF_Entities_Frame": 0.297032,
+            "IVCS_PERF_Spawner_Frame": 0.023447,
+            "ShotPreparation": 3.296048,
+            "DamageApplication": 0.052809,
+            "CasualtyCleanup": 0.011766,
+            "AmmoNeedsScan": 0.521491,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 1.18698,
+            "frame_other": 0.065337
+          },
+          "steps": 1,
+          "largest_exchange_ms": 3.556499,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 115136014201,
+          "costs_ms": {
+            "full": 5.43219,
+            "combat": 5.069981,
+            "IVCS_PERF_AmmoQueue_Frame": 0.011151,
+            "IVCS_PERF_Entities_Frame": 0.296308,
+            "IVCS_PERF_Spawner_Frame": 0.023192,
+            "ShotPreparation": 2.753944,
+            "DamageApplication": 0.179897,
+            "CasualtyCleanup": 0.031335,
+            "AmmoNeedsScan": 1.418523,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.686282,
+            "frame_other": 0.031558
+          },
+          "steps": 3,
+          "largest_exchange_ms": 1.152134,
+          "largest_donor_slice_ms": 0
+        }
+      ]
+    },
+    "after": {
+      "trials": [
+        2,
+        3
+      ],
+      "frames": 1673,
+      "metrics": {
+        "full": {
+          "count": 1673,
+          "total_ms": 2064.3485740000006,
+          "mean_ms": 1.2339202474596533,
+          "p50_ms": 0.697577,
+          "p90_ms": 3.0989771999999998,
+          "p95_ms": 3.7419577999999944,
+          "p99_ms": 4.458082559999999,
+          "max_ms": 5.448842,
+          "over_1ms": 481,
+          "over_5ms": 1,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat": {
+          "count": 1673,
+          "total_ms": 1435.895547,
+          "mean_ms": 0.8582758798565452,
+          "p50_ms": 0.31829,
+          "p90_ms": 2.7261202,
+          "p95_ms": 3.3390343999999965,
+          "p99_ms": 4.09758252,
+          "max_ms": 5.024642,
+          "over_1ms": 355,
+          "over_5ms": 1,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "AmmoNeedsScan": {
+          "count": 1673,
+          "total_ms": 312.53987000000035,
+          "mean_ms": 0.1868140286909743,
+          "p50_ms": 0.0,
+          "p90_ms": 0.9083586,
+          "p95_ms": 1.2179741999999998,
+          "p99_ms": 1.7103079199999995,
+          "max_ms": 2.320208,
+          "over_1ms": 135,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_other": {
+          "count": 1673,
+          "total_ms": 757.8702570000004,
+          "mean_ms": 0.45300075134488943,
+          "p50_ms": 0.31829,
+          "p90_ms": 0.837253,
+          "p95_ms": 1.1992003999999992,
+          "p99_ms": 1.3663207599999998,
+          "max_ms": 1.877327,
+          "over_1ms": 110,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "operations": {
+        "IVCS_OP_AmmoNeedsScan": {
+          "count": 2400,
+          "total_ms": 312.53987000000035,
+          "mean_ms": 0.13022494583333333,
+          "p50_ms": 0.1297395,
+          "p90_ms": 0.15483799999999998,
+          "p95_ms": 0.15906479999999998,
+          "p99_ms": 0.18229317999999997,
+          "max_ms": 0.67345,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_OP_UnitAmmoNeed": {
+          "count": 9208,
+          "total_ms": 212.07122000000047,
+          "mean_ms": 0.023031192441355344,
+          "p50_ms": 0.0217975,
+          "p90_ms": 0.025184300000000003,
+          "p95_ms": 0.031193799999999987,
+          "p99_ms": 0.037782390000000006,
+          "max_ms": 0.166289,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_frames": [
+        {
+          "start_ns": 164619594102,
+          "costs_ms": {
+            "full": 5.448842,
+            "combat": 5.024642,
+            "IVCS_PERF_AmmoQueue_Frame": 0.0098,
+            "IVCS_PERF_Entities_Frame": 0.35738,
+            "IVCS_PERF_Spawner_Frame": 0.023402,
+            "ShotPreparation": 2.95141,
+            "DamageApplication": 0.100677,
+            "CasualtyCleanup": 0.040673,
+            "AmmoNeedsScan": 1.07331,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.858572,
+            "frame_other": 0.033618
+          },
+          "steps": 4,
+          "largest_exchange_ms": 0.858047,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 152093396496,
+          "costs_ms": {
+            "full": 4.894787,
+            "combat": 4.537583,
+            "IVCS_PERF_AmmoQueue_Frame": 0.011226,
+            "IVCS_PERF_Entities_Frame": 0.297632,
+            "IVCS_PERF_Spawner_Frame": 0.017092,
+            "ShotPreparation": 3.442378,
+            "DamageApplication": 0.183346,
+            "CasualtyCleanup": 0.049359,
+            "AmmoNeedsScan": 0.0,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.8625,
+            "frame_other": 0.031254
+          },
+          "steps": 5,
+          "largest_exchange_ms": 0.777731,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 178000526553,
+          "costs_ms": {
+            "full": 4.777851,
+            "combat": 4.325221,
+            "IVCS_PERF_AmmoQueue_Frame": 0.009735,
+            "IVCS_PERF_Entities_Frame": 0.339477,
+            "IVCS_PERF_Spawner_Frame": 0.014065,
+            "ShotPreparation": 2.911558,
+            "DamageApplication": 0.129492,
+            "CasualtyCleanup": 0.034216,
+            "AmmoNeedsScan": 0.283464,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.966491,
+            "frame_other": 0.089353
+          },
+          "steps": 1,
+          "largest_exchange_ms": 3.170551,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 160563371997,
+          "costs_ms": {
+            "full": 4.775596,
+            "combat": 4.425085,
+            "IVCS_PERF_AmmoQueue_Frame": 0.009994,
+            "IVCS_PERF_Entities_Frame": 0.29779,
+            "IVCS_PERF_Spawner_Frame": 0.012933,
+            "ShotPreparation": 2.202995,
+            "DamageApplication": 0.054828,
+            "CasualtyCleanup": 0.028576,
+            "AmmoNeedsScan": 1.293914,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.844772,
+            "frame_other": 0.029794
+          },
+          "steps": 3,
+          "largest_exchange_ms": 0.852807,
+          "largest_donor_slice_ms": 0
+        },
+        {
+          "start_ns": 145608885523,
+          "costs_ms": {
+            "full": 4.72741,
+            "combat": 4.36287,
+            "IVCS_PERF_AmmoQueue_Frame": 0.009378,
+            "IVCS_PERF_Entities_Frame": 0.302028,
+            "IVCS_PERF_Spawner_Frame": 0.021562,
+            "ShotPreparation": 2.56404,
+            "DamageApplication": 0.222825,
+            "CasualtyCleanup": 0.075358,
+            "AmmoNeedsScan": 0.786571,
+            "PendingRequests": 0.0,
+            "DonorSlice": 0.0,
+            "combat_other": 0.714076,
+            "frame_other": 0.031572
+          },
+          "steps": 3,
+          "largest_exchange_ms": 1.091976,
+          "largest_donor_slice_ms": 0
+        }
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "before_trial": 1,
+      "after_trial": 2,
+      "before_p99_ms": 5.144464699999999,
+      "after_p99_ms": 4.4832968
+    },
+    {
+      "before_trial": 4,
+      "after_trial": 3,
+      "before_p99_ms": 4.9080817,
+      "after_p99_ms": 4.448859349999999
+    }
+  ],
+  "whole_frame_p99_reduction_percent": 11.731724724693017,
+  "scan_slice_p99_reduction_percent": 39.909230205143984
+}

@@ -1,0 +1,19 @@
+{
+  "TracePath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-combat-20261012-195702-0c69aa4c.tracy",
+  "StdoutPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-combat-20261012-195702-0c69aa4c.stdout.log",
+  "StderrPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-combat-20261012-195702-0c69aa4c.stderr.log",
+  "RecorderProcessId": 69948,
+  "ServerProcessId": 122132,
+  "Port": 8086,
+  "Seconds": 180,
+  "Status": "Saved",
+  "StartedAt": "2026-10-12T19:57:03.2927808-05:00",
+  "SaveVerified": true,
+  "ActualRecordedSeconds": 116,
+  "TraceBytes": 2767818,
+  "CapturedMeasuredPhases": [
+    "combat-40",
+    "idle-80",
+    "combat-80"
+  ]
+}

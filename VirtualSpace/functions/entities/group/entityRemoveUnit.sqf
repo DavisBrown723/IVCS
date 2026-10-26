@@ -6,6 +6,7 @@ if (_unitID isequaltype createhashmap) then {
 
 private _entityUnits = _entity get "units";
 private _unitToDeleteIndex = _entityUnits findIf {(_x get "id") == _unitID};
+if (_unitToDeleteIndex == -1) exitWith {};
 private _unit = _entityUnits select _unitToDeleteIndex;
 
 [_entity, _unit] call IVCS_VirtualSpace_Group_onUnitLeaveVehicle;

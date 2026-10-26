@@ -8,13 +8,13 @@ if (
     _dontRestrict || {
         _argX >= (_bounds select 0) &&
         {_argY >= (_bounds select 1)} &&
-        {_argX <= (_bounds select 2)} &&
-        {_argY <= (_bounds select 3)}
+        {_argX < (_bounds select 2)} &&
+        {_argY < (_bounds select 3)}
     }
 ) then {
     private _origin = _grid get "origin";
-    _argX = _argX + (abs (_origin select 0));
-    _argY = _argY + (abs (_origin select 1));
+    _argX = _argX - (_origin select 0);
+    _argY = _argY - (_origin select 1);
 
     private _cellSize = _grid get "cellSize";
     [

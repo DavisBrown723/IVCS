@@ -15,12 +15,12 @@ if (_entitiesToSimulate isequalto []) then {
 private _entitiesSimulateThisFrame = _entitiesToSimulate select [0, _simulationChunkSize];
 _entitiesToSimulate deleteRange [0, _simulationChunkSize];
 
-private _currTickTime = diag_ticktime;
+private _currTickTime = IVCS_SimulationTime;
 {
     private _entity = _allEntities get _x;
     if (!isnil "_entity") then {
         private _timeLastUpdate = _entity get "timeLastUpdate";
-        private _timeElapsed = (_currTickTime - _timeLastUpdate) * accTime;
+        private _timeElapsed = _currTickTime - _timeLastUpdate;
 
         private _updateFunc = missionnamespace getvariable (_entity get "update");
         [_entity, _timeElapsed] call _updateFunc;

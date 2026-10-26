@@ -47,6 +47,7 @@ if (_active) then {
 
 private _groupEntityID = _groupEntity get "id";
 _vehicleEntity set ["commandingEntity", _groupEntityID];
+_vehicleEntity set ["side",_groupEntity get "side"];
 
 _vehiclesInCommandOf pushback _vehicleEntityID;
 

@@ -6,7 +6,7 @@
     "GET IN",
     [
         ["start", [
-            ["onEnter", { _this set ["startedAt", time]; }],
+            ["onEnter", { _this set ["startedAt", IVCS_SimulationTime]; }],
             ["onUpdate", {
                 private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
                 if (isNil "_vehicle" || { !((_vehicle get "entityType") in ["vehicle", "uav"]) }) exitWith { "failed" };
@@ -23,7 +23,7 @@
             }],
             ["onUpdate", {
                 if (isNil { [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity }) exitWith { "failed" };
-                if (time - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
+                if (IVCS_SimulationTime - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
                 if ((_this get "waypoints") findIf { _x getOrDefault ["pathFailed", false] } != -1) exitWith { "failed" };
                 if (_this get "waypointComplete") then { "waiting" } else { "" }
             }]
@@ -32,7 +32,7 @@
             ["onUpdate", {
                 private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
                 if (isNil "_vehicle") exitWith { "failed" };
-                if (time - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
+                if (IVCS_SimulationTime - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
                 private _position = _vehicle get "position";
                 if (_vehicle get "active") then {
                     private _object = _vehicle get "object";
@@ -53,7 +53,7 @@
             ["onUpdate", {
                 private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
                 if (isNil "_vehicle") exitWith { "failed" };
-                if (time - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
+                if (IVCS_SimulationTime - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
                 private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
                 private _position = +(_vehicle get "position");
                 if (_vehicle get "active") then {
@@ -69,7 +69,7 @@
                 private _last = if (_owned isEqualTo []) then { createHashMap } else { _owned select (count _owned - 1) };
                 if (_last getOrDefault ["pathFailed", false]) exitWith { "failed" };
                 if (_owned isEqualTo [] || { _this get "waypointComplete" } || { (_last get "position") distance2D _position > 10 }) then {
-                    { [_entity, _x] call IVCS_VirtualSpace_entityRemoveWaypoint; } forEach _owned;
+                    { [_entity, _x] call IVCS_VirtualSpace_entityRemoveWaypoint; } forEach (_owned select [0]);
                     _owned resize 0;
                     [_this, _position] call IVCS_EntityTasks_addWaypoint;
                 };
@@ -78,41 +78,13 @@
         ]],
         ["boarding", [
             ["onEnter", {
-                private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
-                private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
-                if (isNil "_vehicle") exitWith { _this set ["boardingFailed", true]; };
-                private _units = _entity get "units";
-                private _vehicleID = _this get "vehicleID";
-                private _alreadyAssigned = _units findIf {
-                    private _assignment = _x get "vehicleAssignment";
-                    _assignment isEqualTo [] || { (_assignment select 0) != _vehicleID }
-                } == -1;
-                if (_alreadyAssigned) exitWith {};
-                private _unseated = [_entity] call IVCS_VirtualSpace_Group_getUnseatedUnits;
-                private _empty = [_vehicle, true] call IVCS_VirtualSpace_Vehicle_getEmptySeats;
-                private _capacity = 0;
-                { _capacity = _capacity + count (_x select 1); } forEach _empty;
-                if (count _unseated != count _units || { _capacity < count _units }) exitWith {
-                    _this set ["boardingFailed", true];
-                };
-                if (_entity get "active" && { !(_vehicle get "active") }) then {
-                    [_vehicle] call IVCS_VirtualSpace_Vehicle_spawn;
-                };
-                _this set ["reservedVehicle", _vehicle];
-                _this set ["reservedUnits", _unseated];
-                _this set ["cargoLinks", _entity get "vehiclesInCargoOf"];
-                if (_entity get "active" && { _entity getOrDefault ["movementStopped", false] }) then {
-                    private _group = _entity get "group";
-                    (units _group) doFollow (leader _group);
-                    _entity set ["movementStopped", false];
-                };
-                [_entity, _vehicle] call IVCS_VirtualSpace_Group_assignAsVehicleCargo;
+                _this call IVCS_EntityTasks_reserveBoardingSeats;
             }],
             ["onUpdate", {
                 if (_this get "boardingFailed") exitWith { "failed" };
                 private _vehicle = [_this get "vehicleID"] call IVCS_VirtualSpace_getEntity;
                 if (isNil "_vehicle") exitWith { "failed" };
-                if (time - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
+                if (IVCS_SimulationTime - (_this get "startedAt") > (_this get "timeout")) exitWith { "failed" };
                 private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
                 private _units = _entity get "units";
                 private _object = _vehicle get "object";
@@ -137,38 +109,26 @@
         ["smoke", objNull], ["signalSent", false]
     ],
     {
-        if (!isNull (_this get "smoke")) then { deleteVehicle (_this get "smoke"); };
-        _this set ["smoke", objNull];
-        if ((_this get "result") != "completed") then {
-            private _reserved = _this get "reservedUnits";
-            private _vehicle = _this get "reservedVehicle";
-            if (_reserved isNotEqualTo []) then {
-                private _vehicleID = _this get "vehicleID";
-                private _unitsToRelease = [];
-                {
-                    private _assignment = _x get "vehicleAssignment";
-                    if (_assignment isNotEqualTo [] && { (_assignment select 0) == _vehicleID }) then {
-                        (_assignment select 1) set [1, ""];
-                        _x set ["vehicleAssignment", []];
-                        private _object = _x get "object";
-                        if (!isNull _object && { alive _object }) then { _unitsToRelease pushBack _object; };
-                    };
-                } forEach _reserved;
-                private _links = _this get "cargoLinks";
-                private _index = _links find _vehicleID;
-                if (_index != -1) then { _links deleteAt _index; };
-                private _cargo = _vehicle get "entitiesInCargo";
-                _index = _cargo find (_this get "entityID");
-                if (_index != -1) then { _cargo deleteAt _index; };
-                {
-                    unassignVehicle _x;
-                    [_x] orderGetIn false;
-                    if (vehicle _x == (_vehicle get "object")) then { moveOut _x; };
-                } forEach _unitsToRelease;
+        _this call IVCS_EntityTasks_releaseBoarding;
+    },
+    {
+        if (_this getOrDefault ["boardingSuspended", false]) then {
+            private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
+            private _task = [_entity, _this get "taskID"] call IVCS_VirtualSpace_getEntityTask;
+            // The group may have moved away. Approach again before reserving seats.
+            _task set ["currentState", "approaching"];
+            _task set ["stateEntered", false];
+            _this set ["boardingSuspended", false];
+        };
+    },
+    {
+        private _entity = [_this get "entityID"] call IVCS_VirtualSpace_getEntity;
+        if (!isNil "_entity") then {
+            private _task = [_entity, _this get "taskID"] call IVCS_VirtualSpace_getEntityTask;
+            if (!isNil "_task" && { (_task get "currentState") == "boarding" }) then {
+                _this set ["boardingSuspended", true];
             };
         };
-        (_this get "reservedUnits") resize 0;
-        _this set ["reservedVehicle", createHashMap];
-        _this set ["cargoLinks", []];
+        _this call IVCS_EntityTasks_releaseBoarding;
     }
 ] call IVCS_EntityTasks_createTaskTemplate;

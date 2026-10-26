@@ -1,0 +1,7 @@
+{
+  "passed": 9,
+  "failed": 0,
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-06019eb3d24a4670af517d97e626ea4c\\profile\\arma3server_x64_2026-10-25_23-03-48.rpt",
+  "excluded_from_performance_comparison": true,
+  "note": "Five-second workload verifies detailed scopes on the final implementation; no recorder was started."
+}

@@ -1,0 +1,198 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\vehicle-expansion-20261025-001505.tracy",
+  "metadata": {
+    "file_bytes": 2720282,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "validity_checks": {
+    "passed": 44,
+    "failed": 0
+  },
+  "complete_windows": 8,
+  "note": "Precise Tracy wall times for instrumented IVCS work, not the full Arma frame. Two 12-second windows per mode, reverse trial order; default production budgets. Baseline comparison swaps four resolver functions and shares current metadata/scheduler.",
+  "results": [
+    {
+      "mode": "vehicle-after",
+      "engagements": 20,
+      "attacking_groups": 20,
+      "crew_groups": 20,
+      "units": 200,
+      "metrics": {
+        "full": {
+          "count": 669,
+          "mean_ms": 1.4242535246636772,
+          "p50_ms": 0.746674,
+          "p90_ms": 3.5790952000000003,
+          "p95_ms": 4.142747600000001,
+          "p99_ms": 4.665230240000001,
+          "max_ms": 5.258667,
+          "over_1ms": 209,
+          "over_5ms": 1,
+          "over_10ms": 0
+        },
+        "combat": {
+          "count": 669,
+          "mean_ms": 1.042171754857997,
+          "p50_ms": 0.384123,
+          "p90_ms": 3.1787702,
+          "p95_ms": 3.7988706,
+          "p99_ms": 4.191238760000003,
+          "max_ms": 4.918481,
+          "over_1ms": 182,
+          "over_5ms": 0,
+          "over_10ms": 0
+        },
+        "IVCS_PERF_Entities_Frame": {
+          "count": 669,
+          "mean_ms": 0.29971426606875934,
+          "p50_ms": 0.27889,
+          "p90_ms": 0.3126292,
+          "p95_ms": 0.3521056,
+          "p99_ms": 0.8772727600000032,
+          "max_ms": 2.037206,
+          "over_1ms": 5,
+          "over_5ms": 0,
+          "over_10ms": 0
+        }
+      }
+    },
+    {
+      "mode": "vehicle-before",
+      "engagements": 20,
+      "attacking_groups": 20,
+      "crew_groups": 20,
+      "units": 200,
+      "metrics": {
+        "full": {
+          "count": 668,
+          "mean_ms": 1.358246624251497,
+          "p50_ms": 0.666401,
+          "p90_ms": 3.5145361000000004,
+          "p95_ms": 4.1758967,
+          "p99_ms": 4.3890483300000005,
+          "max_ms": 5.367775,
+          "over_1ms": 191,
+          "over_5ms": 1,
+          "over_10ms": 0
+        },
+        "combat": {
+          "count": 668,
+          "mean_ms": 0.9704573622754491,
+          "p50_ms": 0.298709,
+          "p90_ms": 3.139325700000002,
+          "p95_ms": 3.83956235,
+          "p99_ms": 4.018929320000001,
+          "max_ms": 4.661155,
+          "over_1ms": 178,
+          "over_5ms": 0,
+          "over_10ms": 0
+        },
+        "IVCS_PERF_Entities_Frame": {
+          "count": 668,
+          "mean_ms": 0.30291439820359284,
+          "p50_ms": 0.2765835,
+          "p90_ms": 0.32058210000000004,
+          "p95_ms": 0.36620649999999977,
+          "p99_ms": 1.011467140000007,
+          "max_ms": 1.479939,
+          "over_1ms": 7,
+          "over_5ms": 0,
+          "over_10ms": 0
+        }
+      }
+    },
+    {
+      "mode": "vehicle-shortage-after",
+      "engagements": 20,
+      "attacking_groups": 20,
+      "crew_groups": 20,
+      "units": 200,
+      "metrics": {
+        "full": {
+          "count": 669,
+          "mean_ms": 1.6921347324364724,
+          "p50_ms": 0.782768,
+          "p90_ms": 4.106523000000001,
+          "p95_ms": 4.3592544,
+          "p99_ms": 4.626802200000007,
+          "max_ms": 5.69932,
+          "over_1ms": 291,
+          "over_5ms": 4,
+          "over_10ms": 0
+        },
+        "combat": {
+          "count": 669,
+          "mean_ms": 1.307598360239163,
+          "p50_ms": 0.404986,
+          "p90_ms": 3.751746400000001,
+          "p95_ms": 4.013369,
+          "p99_ms": 4.2729804400000075,
+          "max_ms": 5.272518,
+          "over_1ms": 265,
+          "over_5ms": 2,
+          "over_10ms": 0
+        },
+        "IVCS_PERF_Entities_Frame": {
+          "count": 669,
+          "mean_ms": 0.30309706278026904,
+          "p50_ms": 0.279173,
+          "p90_ms": 0.3128908,
+          "p95_ms": 0.35691140000000005,
+          "p99_ms": 1.1792598000000045,
+          "max_ms": 1.875357,
+          "over_1ms": 9,
+          "over_5ms": 0,
+          "over_10ms": 0
+        }
+      }
+    },
+    {
+      "mode": "vehicle-shortage-before",
+      "engagements": 20,
+      "attacking_groups": 20,
+      "crew_groups": 20,
+      "units": 200,
+      "metrics": {
+        "full": {
+          "count": 668,
+          "mean_ms": 1.6437657155688623,
+          "p50_ms": 0.7556750000000001,
+          "p90_ms": 4.0031028,
+          "p95_ms": 4.296533299999999,
+          "p99_ms": 4.546637990000002,
+          "max_ms": 5.482797,
+          "over_1ms": 308,
+          "over_5ms": 2,
+          "over_10ms": 0
+        },
+        "combat": {
+          "count": 668,
+          "mean_ms": 1.2567521571856288,
+          "p50_ms": 0.34923150000000003,
+          "p90_ms": 3.6377723,
+          "p95_ms": 3.93675235,
+          "p99_ms": 4.191150450000002,
+          "max_ms": 5.066026,
+          "over_1ms": 263,
+          "over_5ms": 1,
+          "over_10ms": 0
+        },
+        "IVCS_PERF_Entities_Frame": {
+          "count": 668,
+          "mean_ms": 0.30288769461077847,
+          "p50_ms": 0.281148,
+          "p90_ms": 0.3129726,
+          "p95_ms": 0.3448206999999999,
+          "p99_ms": 0.9398279600000061,
+          "max_ms": 2.596875,
+          "over_1ms": 7,
+          "over_5ms": 0,
+          "over_10ms": 0
+        }
+      }
+    }
+  ],
+  "source": "vehicle-expanded-operations-summary.json"
+}

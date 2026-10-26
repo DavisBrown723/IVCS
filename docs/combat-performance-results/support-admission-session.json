@@ -1,0 +1,16 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-support-admission-20261025-214824-383de9f2.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-support-admission-20261025-214824-383de9f2.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-support-admission-20261025-214824-383de9f2.stderr.log",
+  "recorder_pid": 60928,
+  "server_pid": 48872,
+  "server_command_line": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b1771cf070bc45518bed3935e2eacd44\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b1771cf070bc45518bed3935e2eacd44\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "duration_seconds": 240,
+  "started_at": "2026-10-25T21:48:26.8765436-05:00",
+  "connected": true,
+  "status": "Saved",
+  "benchmark": "ivcs-tasks-b1771cf070bc45518bed3935e2eacd44",
+  "note": "The client-only capture helper cannot select this server; listener identity and absence of an existing connection were explicitly verified.",
+  "saved_bytes": 6143736,
+  "recorder_log": "Connecting to 127.0.0.1:8086...\r\nTimer resolution: 4 ns\r\n\r\nFrames: 6591\r\nTime span: 4:00.2\r\nZones: 942,016\r\nElapsed time: 4:00.1\r\nSaving trace... done!\r\nTrace size 5998.25 KB (24.68% ratio)\r\n"
+}

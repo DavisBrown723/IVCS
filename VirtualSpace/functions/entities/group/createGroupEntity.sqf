@@ -1,13 +1,14 @@
 params ["_side","_faction","_position","_units"];
 
 private _groupEntity = createHashMapFromArray [
-    ["timeLastUpdate", diag_tickTime],
+    ["timeLastUpdate", IVCS_SimulationTime],
     ["delayedInitComplete", false],
 
     ["entityType", "group"],
     ["vehicleType", "group"],
     ["class", ""],
     ["active", false],
+    ["simulationTransition", false],
     ["position", _position],
     ["side", _side],
     ["faction", _faction],
@@ -25,11 +26,21 @@ private _groupEntity = createHashMapFromArray [
     ["ignoreWpCallback", ""],
 
     ["tasks", []],
+    ["taskTransition", false],
 
-    ["currentEngagementTask", ""],
+    ["ammoRequests", []],
+    ["ammoSearch", []],
+    ["ammoNextScan", 0],
+    ["ammoTransfers", 0],
+    ["combatID", ""],
+    ["combatCooldowns",createHashMap],
+    ["combatStartedAt", 0],
+    ["combatWaypointCompletions", []],
+    ["airDefense",[]], ["airDefenseStances",[]], ["airDefenseDestination",[]],
+    ["airWaypointSettings",["YELLOW","AWARE","NORMAL"]],
+    ["nextCombatScan", 0],
     ["pathfindingStrategy", "man"],
 
-    ["reactToContact", "IVCS_VirtualSpace_Group_onContactSimple"],
 
     ["update", "IVCS_VirtualSpace_Group_update"],
     ["spawn", "IVCS_VirtualSpace_Group_spawn"],

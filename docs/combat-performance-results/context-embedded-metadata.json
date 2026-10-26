@@ -1,0 +1,21 @@
+{
+  "format_version": "0.12.4",
+  "container": "Tracy",
+  "compression": "Zstd",
+  "streams": 4,
+  "file_bytes": 18010485,
+  "embedded_strings": [
+    "tracy",
+    "D!8N",
+    "GenuineIntel",
+    "arma3server_x64.exe @ 2026-10-13 00:15:46",
+    "arma3server_x64.exe",
+    "OS: Windows 10.0.19045",
+    "Compiler: MSVC 1944",
+    "User: spyde@DESKTOP-T32H6E3",
+    "Arch: x64",
+    "CPU: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "CPU cores: 16",
+    "RAM: 32689 MB"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-10-12T19:50:09.9705182-05:00",
+  "processor": {
+    "Name": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "operatingSystem": {
+    "Caption": "Microsoft Windows 10 Home",
+    "Version": "10.0.19045",
+    "TotalVisibleMemorySize": 33474244
+  },
+  "clientArmaProcesses": []
+}

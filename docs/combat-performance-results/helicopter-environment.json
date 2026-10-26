@@ -1,0 +1,19 @@
+{
+  "capturedAt": "2026-10-25T15:42:24.4238716-05:00",
+  "processor": {
+    "Name": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "operatingSystem": {
+    "Caption": "Microsoft Windows 10 Home",
+    "Version": "10.0.19045",
+    "TotalVisibleMemorySize": 33474244
+  },
+  "armaProcesses": [
+    {
+      "ProcessName": "arma3server_x64",
+      "Id": 45216
+    }
+  ]
+}

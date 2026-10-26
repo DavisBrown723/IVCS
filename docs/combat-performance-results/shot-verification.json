@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-13",
+  "suites": [
+    {
+      "name": "shot-work",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-373b567969484b4eabe9dfef64c58b6b\\profile\\arma3server_x64_2026-10-13_13-00-55.rpt",
+      "passed": 280,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "shot-preprocessing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-aee5d092e1624166b63b2415e568352e\\profile\\arma3server_x64_2026-10-13_13-16-44.rpt",
+      "passed": 40,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "ammo-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-82b6591951ed446095d71086fbbf5e57\\profile\\arma3server_x64_2026-10-13_13-17-03.rpt",
+      "passed": 45,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "scheduling",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d8d5d746958144059f440b3e2849eb4c\\profile\\arma3server_x64_2026-10-13_13-17-42.rpt",
+      "passed": 12,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "run",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-90d63cc765d048438b816294cd584fc5\\profile\\arma3server_x64_2026-10-13_13-18-05.rpt",
+      "passed": 71,
+      "failed": 0,
+      "script_errors": false
+    }
+  ],
+  "passed": 448,
+  "failed": 0,
+  "golden_rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a21775c1717345cbbc05dbc332f3980f\\profile\\arma3server_x64_2026-10-13_11-15-35.rpt",
+  "seeded_outcomes_identical": true,
+  "seeded_outcomes": {
+    "1": [
+      176.5,
+      1040,
+      58,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "2": [
+      110.5,
+      701,
+      40,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "3": [
+      178.5,
+      774,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "4": [
+      176.5,
+      801,
+      49,
+      11,
+      0,
+      5,
+      "finished"
+    ],
+    "5": [
+      134.5,
+      754,
+      44,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "6": [
+      202.5,
+      987,
+      54,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "7": [
+      140.5,
+      777,
+      44,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "8": [
+      242.5,
+      1327,
+      60,
+      12,
+      0,
+      4,
+      "finished"
+    ],
+    "9": [
+      132,
+      705,
+      46,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "10": [
+      176.5,
+      779,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "11": [
+      202.5,
+      1192,
+      57,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "12": [
+      161.5,
+      876,
+      48,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "13": [
+      132,
+      748,
+      44,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "14": [
+      202.5,
+      1142,
+      60,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "15": [
+      155.5,
+      770,
+      36,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "16": [
+      112.5,
+      743,
+      45,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "17": [
+      116.5,
+      717,
+      38,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "18": [
+      298,
+      1379,
+      61,
+      13,
+      3,
+      0,
+      "finished"
+    ],
+    "19": [
+      215,
+      1178,
+      62,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "20": [
+      142.5,
+      871,
+      51,
+      8,
+      0,
+      8,
+      "finished"
+    ]
+  },
+  "mean_engagement_seconds": 170.45,
+  "source_hashes_sha256": {
+    "VirtualSpace/functions/combat/getShot.sqf": "d4c47b9f91f28994e752f099f62ed6aa25a11c2c2b6a69c7e836c95be2a8a370",
+    "VirtualSpace/functions/combat/step.sqf": "852ad1e47b8ad8f9c5f0804d56676c666ebe51dc4d8f25119eb4623bce3c2f02",
+    "tests/combat/context-scopes.sqf": "7eed59ef3f8aac63eaafdcd75847e54c4f7b9b91273f4dfe9f0b04728418d006",
+    "tests/combat/shot-work.sqf": "e5c7b89bdb1f7c241aa79943a5a61e6052c50776169b363ba57766118d60d8ab",
+    "tests/combat/shot-performance.ps1": "8aa3ec5d815eb0fb77af815b50944d2edc4efb6cb79391fb7a00e97615d67876",
+    "tests/combat/analyze-operations.py": "077701e4238346631ecbad7f6a9b50782f6120489e39f2515d103ebde669d16e"
+  },
+  "profiled_sources_match_final": true,
+  "baseline_directory": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\combat-before-20261013",
+  "baseline_hashes_sha256": {
+    "getShot.sqf": "0786e1910760d97308e978cd4b9da02697feeda3582b53ee40712e901b3bd54d",
+    "step.sqf": "676e9dd6aba4029473c2d2a1b703c4ad62dd9a05756aeb2589a3b7d95709ebce"
+  },
+  "budgets_unchanged": {
+    "combat_ms": 3,
+    "search_ms": 1,
+    "donors_per_slice": 2,
+    "engagements_per_frame": 8
+  },
+  "trace_save_verified": {
+    "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-131119-d95de04e.tracy",
+    "stdout_save_done": true,
+    "stderr_empty": true,
+    "bytes": 3443256
+  },
+  "comparison_limits": [
+    "Normal mod-free p99 remains about 4 ms; shortage p99 about 5 ms.",
+    "Precise 10.2% p99 reduction is one complete paired profiler window/version, trials 3 and 4.",
+    "First before profiler phase was partially missed and excluded.",
+    "A separate road-extraction server was active during measurements and left untouched.",
+    "The first mod-free run ended without DONE and is excluded; a profile setup with unequal scopes was stopped before recording and excluded."
+  ],
+  "review": [
+    "Mutable magazine records and rounds stay current; misses resolve new classes.",
+    "Exact seeded outcomes, RNG draw order, negative delay carry, simultaneous firing, arm injuries and cache invalidation preserved.",
+    "Nested factor keys preserve weapon and ammo distinction without per-shot serialization.",
+    "Required cache-miss fallback checks retained; no production assertion guards introduced.",
+    "Counter context anchor updated to follow batched writes.",
+    "All changed SQF is CRLF."
+  ],
+  "context_smoke_test": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-96cf05728e684bb2a3fbb884cfbd8883\\profile\\arma3server_x64_2026-10-13_13-21-22.rpt",
+    "passed": 5,
+    "failed": 0,
+    "method": "Existing 20-group ContextScopes/OperationScopes benchmark, one 5-second window; verifies transformed source compiles, executes and completes."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-selection-20261025-194244-fb6e8c38.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-selection-20261025-194244-fb6e8c38.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-selection-20261025-194244-fb6e8c38.stderr.log",
+  "recorder_pid": 57908,
+  "server_pid": 35080,
+  "server_command_line": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d659e3c86d4f42a1a6434e42110a66f0\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d659e3c86d4f42a1a6434e42110a66f0\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "duration_seconds": 210,
+  "started_at": "2026-10-25T19:42:46.917129-05:00",
+  "connected": true,
+  "status": "Saved",
+  "benchmark": "ivcs-tasks-d659e3c86d4f42a1a6434e42110a66f0",
+  "note": "The client-only capture helper cannot select this owned server; identity and lack of an existing connection were verified explicitly.",
+  "saved_bytes": 5785284,
+  "recorder_log": "Connecting to 127.0.0.1:8086...\r\nTimer resolution: 4 ns\r\n\r\nFrames: 5394\r\nTime span: 3:13\r\nZones: 882,867\r\nElapsed time: 3:13\r\nSaving trace... done!\r\nTrace size 5648.29 KB (24.79% ratio)\r\n"
+}

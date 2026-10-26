@@ -1,3 +1,5 @@
+// Path failure deadlines are gameplay time; paused missions cannot expire a request.
+if (IVCS_SimulationPaused) exitWith {};
 private _requestQueue = IVCS_Paths_Generator get "requestQueue";
 private _currentRequest = IVCS_Paths_Generator get "currentRequest";
 private _pathGenerationInProgress = _currentRequest isnotequalto [];
@@ -5,7 +7,7 @@ private _pathGenerationInProgress = _currentRequest isnotequalto [];
 if (!_pathGenerationInProgress) then {
     if (_requestQueue isnotequalto []) then {
         private _request = _requestQueue deleteat 0;
-        _request set [7, diag_tickTime];
+        _request set [7, IVCS_SimulationTime];
 
         IVCS_Paths_Generator set ["currentRequest", _request];
 
@@ -35,7 +37,7 @@ if (!_pathGenerationInProgress) then {
     };
 } else {
     private _timeStarted = _currentRequest select 7;
-    if (diag_tickTime - _timeStarted > 10) then {
+    if (IVCS_SimulationTime - _timeStarted > 10) then {
         [objNull, []] call IVCS_Paths_onPathGenerated;
     };
 };

@@ -1,0 +1,650 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-entity-diagnostic-20261025-220825-bac9e0ee.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 4786695,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 207658425287,
+  "zone_types": 147,
+  "filter": "IVCS_ENTITY_",
+  "matching_zone_types": 13,
+  "top_inclusive": [
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Group_update",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 2000814180,
+      "total_perc": 0.963512,
+      "counts": 13594,
+      "mean_ns": 147183,
+      "min_ns": 43205,
+      "max_ns": 718194,
+      "std_ns": 105193.775152
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 284480241,
+      "total_perc": 0.136994,
+      "counts": 16631,
+      "mean_ns": 17105,
+      "min_ns": 3784,
+      "max_ns": 328701,
+      "std_ns": 27136.267146
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 256003638,
+      "total_perc": 0.123281,
+      "counts": 6796,
+      "mean_ns": 37669,
+      "min_ns": 28052,
+      "max_ns": 155703,
+      "std_ns": 12997.245006
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 241684913,
+      "total_perc": 0.116386,
+      "counts": 13594,
+      "mean_ns": 17778,
+      "min_ns": 13674,
+      "max_ns": 120500,
+      "std_ns": 4883.16371
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntity",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 239361943,
+      "total_perc": 0.115267,
+      "counts": 52551,
+      "mean_ns": 4554,
+      "min_ns": 3292,
+      "max_ns": 103552,
+      "std_ns": 1660.120734
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_SpacialGrid_move",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 181589433,
+      "total_perc": 0.087446,
+      "counts": 2954,
+      "mean_ns": 61472,
+      "min_ns": 48052,
+      "max_ns": 302703,
+      "std_ns": 11975.342877
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 136588517,
+      "total_perc": 0.065776,
+      "counts": 4246,
+      "mean_ns": 32168,
+      "min_ns": 23755,
+      "max_ns": 129334,
+      "std_ns": 6626.415406
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getWeaponProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 100781543,
+      "total_perc": 0.048532,
+      "counts": 18473,
+      "mean_ns": 5455,
+      "min_ns": 4560,
+      "max_ns": 35520,
+      "std_ns": 1132.258414
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 98031000,
+      "total_perc": 0.047208,
+      "counts": 27188,
+      "mean_ns": 3605,
+      "min_ns": 2766,
+      "max_ns": 130058,
+      "std_ns": 1619.93567
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 92653962,
+      "total_perc": 0.044618,
+      "counts": 4124,
+      "mean_ns": 22467,
+      "min_ns": 18227,
+      "max_ns": 191607,
+      "std_ns": 4942.473096
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getVehicleProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 63541017,
+      "total_perc": 0.030599,
+      "counts": 9118,
+      "mean_ns": 6968,
+      "min_ns": 4708,
+      "max_ns": 49049,
+      "std_ns": 1631.296455
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 49453405,
+      "total_perc": 0.023815,
+      "counts": 8380,
+      "mean_ns": 5901,
+      "min_ns": 4449,
+      "max_ns": 102556,
+      "std_ns": 2272.880032
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_isInfantry",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 45597084,
+      "total_perc": 0.021958,
+      "counts": 3171,
+      "mean_ns": 14379,
+      "min_ns": 9726,
+      "max_ns": 97079,
+      "std_ns": 2898.32607
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntity",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 96275896,
+      "total_perc": 0.046363,
+      "counts": 52551,
+      "mean_ns": 1832,
+      "min_ns": 1305,
+      "max_ns": 98172,
+      "std_ns": 3189.052441
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 47914898,
+      "total_perc": 0.023074,
+      "counts": 27188,
+      "mean_ns": 1762,
+      "min_ns": 1386,
+      "max_ns": 90408,
+      "std_ns": 2454.269992
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getWeaponProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 44366250,
+      "total_perc": 0.021365,
+      "counts": 18473,
+      "mean_ns": 2401,
+      "min_ns": 2017,
+      "max_ns": 21054,
+      "std_ns": 3257.786946
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 31710673,
+      "total_perc": 0.015271,
+      "counts": 16631,
+      "mean_ns": 1906,
+      "min_ns": 1484,
+      "max_ns": 95143,
+      "std_ns": 31103.267617
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getVehicleProfile",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 27773301,
+      "total_perc": 0.013375,
+      "counts": 9118,
+      "mean_ns": 3045,
+      "min_ns": 1873,
+      "max_ns": 44657,
+      "std_ns": 4249.540112
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Group_update",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 25837558,
+      "total_perc": 0.012442,
+      "counts": 13594,
+      "mean_ns": 1900,
+      "min_ns": 1476,
+      "max_ns": 68211,
+      "std_ns": 179372.836411
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 24274200,
+      "total_perc": 0.011689,
+      "counts": 13594,
+      "mean_ns": 1785,
+      "min_ns": 1411,
+      "max_ns": 36777,
+      "std_ns": 16723.20312
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 19694427,
+      "total_perc": 0.009484,
+      "counts": 8380,
+      "mean_ns": 2350,
+      "min_ns": 1720,
+      "max_ns": 91020,
+      "std_ns": 4216.592644
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 13567100,
+      "total_perc": 0.006533,
+      "counts": 6796,
+      "mean_ns": 1996,
+      "min_ns": 1473,
+      "max_ns": 26474,
+      "std_ns": 37970.14988
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 11235788,
+      "total_perc": 0.005411,
+      "counts": 4124,
+      "mean_ns": 2724,
+      "min_ns": 1850,
+      "max_ns": 23637,
+      "std_ns": 20354.585377
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 11160776,
+      "total_perc": 0.005375,
+      "counts": 4246,
+      "mean_ns": 2628,
+      "min_ns": 1640,
+      "max_ns": 26582,
+      "std_ns": 30278.225285
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_isInfantry",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 7150217,
+      "total_perc": 0.003443,
+      "counts": 3171,
+      "mean_ns": 2254,
+      "min_ns": 1472,
+      "max_ns": 81664,
+      "std_ns": 12468.843159
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_SpacialGrid_move",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6838377,
+      "total_perc": 0.003293,
+      "counts": 2954,
+      "mean_ns": 2314,
+      "min_ns": 1646,
+      "max_ns": 52448,
+      "std_ns": 60368.110789
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Group_update",
+      "count": 13594,
+      "total_ns": 2000814180,
+      "mean_ns": 147184,
+      "p50_ns": 98370,
+      "p90_ns": 300253,
+      "p95_ns": 332257,
+      "p99_ns": 421765,
+      "max_ns": 718194,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75383843698,
+      "last_end_ns": 149861898835,
+      "observed_span_ns": 74478055137,
+      "span_occupancy_percent": 2.6864
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition",
+      "count": 16631,
+      "total_ns": 284480241,
+      "mean_ns": 17105,
+      "p50_ns": 4516,
+      "p90_ns": 70141,
+      "p95_ns": 78620,
+      "p99_ns": 91269,
+      "max_ns": 328701,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384244706,
+      "last_end_ns": 149861774158,
+      "observed_span_ns": 74477529452,
+      "span_occupancy_percent": 0.382
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_Vehicle_update",
+      "count": 6796,
+      "total_ns": 256003638,
+      "mean_ns": 37670,
+      "p50_ns": 33022,
+      "p90_ns": 47374,
+      "p95_ns": 70355,
+      "p99_ns": 92606,
+      "max_ns": 155703,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384192390,
+      "last_end_ns": 149861777088,
+      "observed_span_ns": 74477584698,
+      "span_occupancy_percent": 0.3437
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_EntityTasks_syncActiveTask",
+      "count": 13594,
+      "total_ns": 241684913,
+      "mean_ns": 17779,
+      "p50_ns": 15832,
+      "p90_ns": 24591,
+      "p95_ns": 26464,
+      "p99_ns": 34687,
+      "max_ns": 120500,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75383940023,
+      "last_end_ns": 149861888859,
+      "observed_span_ns": 74477948836,
+      "span_occupancy_percent": 0.3245
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntity",
+      "count": 52551,
+      "total_ns": 239361943,
+      "mean_ns": 4555,
+      "p50_ns": 4073,
+      "p90_ns": 6299,
+      "p95_ns": 7226,
+      "p99_ns": 9361,
+      "max_ns": 103552,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 74708652393,
+      "last_end_ns": 149861870113,
+      "observed_span_ns": 75153217720,
+      "span_occupancy_percent": 0.3185
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_SpacialGrid_move",
+      "count": 2954,
+      "total_ns": 181589433,
+      "mean_ns": 61472,
+      "p50_ns": 63226,
+      "p90_ns": 70451,
+      "p95_ns": 76505,
+      "p99_ns": 105561,
+      "max_ns": 302703,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384509667,
+      "last_end_ns": 140154815252,
+      "observed_span_ns": 64770305585,
+      "span_occupancy_percent": 0.2804
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy",
+      "count": 4246,
+      "total_ns": 136588517,
+      "mean_ns": 32169,
+      "p50_ns": 32498,
+      "p90_ns": 38091,
+      "p95_ns": 41674,
+      "p99_ns": 58321,
+      "max_ns": 129334,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384338046,
+      "last_end_ns": 149861020390,
+      "observed_span_ns": 74476682344,
+      "span_occupancy_percent": 0.1834
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getWeaponProfile",
+      "count": 18473,
+      "total_ns": 100781543,
+      "mean_ns": 5456,
+      "p50_ns": 5008,
+      "p90_ns": 6463,
+      "p95_ns": 8001,
+      "p99_ns": 9317,
+      "max_ns": 35520,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 74995589049,
+      "last_end_ns": 149861694893,
+      "observed_span_ns": 74866105844,
+      "span_occupancy_percent": 0.1346
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getCurrentEntityTask",
+      "count": 27188,
+      "total_ns": 98031000,
+      "mean_ns": 3606,
+      "p50_ns": 3341,
+      "p90_ns": 4701,
+      "p95_ns": 5489,
+      "p99_ns": 6867,
+      "max_ns": 130058,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75383952776,
+      "last_end_ns": 149861893804,
+      "observed_span_ns": 74477941028,
+      "span_occupancy_percent": 0.1316
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea",
+      "count": 4124,
+      "total_ns": 92653962,
+      "mean_ns": 22467,
+      "p50_ns": 22311,
+      "p90_ns": 25350,
+      "p95_ns": 27127,
+      "p99_ns": 36760,
+      "max_ns": 191607,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384393600,
+      "last_end_ns": 149861063868,
+      "observed_span_ns": 74476670268,
+      "span_occupancy_percent": 0.1244
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_getVehicleProfile",
+      "count": 9118,
+      "total_ns": 63541017,
+      "mean_ns": 6969,
+      "p50_ns": 6699,
+      "p90_ns": 8284,
+      "p95_ns": 8965,
+      "p99_ns": 12254,
+      "max_ns": 49049,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 74995830430,
+      "last_end_ns": 149860974293,
+      "observed_span_ns": 74865143863,
+      "span_occupancy_percent": 0.0849
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint",
+      "count": 8380,
+      "total_ns": 49453405,
+      "mean_ns": 5901,
+      "p50_ns": 5256,
+      "p90_ns": 7738,
+      "p95_ns": 8131,
+      "p99_ns": 11352,
+      "max_ns": 102556,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 75384355285,
+      "last_end_ns": 149861060009,
+      "observed_span_ns": 74476704724,
+      "span_occupancy_percent": 0.0664
+    },
+    {
+      "name": "IVCS_ENTITY_IVCS_Combat_isInfantry",
+      "count": 3171,
+      "total_ns": 45597084,
+      "mean_ns": 14379,
+      "p50_ns": 14471,
+      "p90_ns": 16298,
+      "p95_ns": 17724,
+      "p99_ns": 25036,
+      "max_ns": 97079,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 74995479569,
+      "last_end_ns": 149861475606,
+      "observed_span_ns": 74865996037,
+      "span_occupancy_percent": 0.0609
+    }
+  ],
+  "message_count": 417,
+  "messages": [
+    {
+      "MessageName": "[IVCS TASK TEST] PASS workload contains exactly 20 groups including crews and supporting AA",
+      "total_ns": 75347885809
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=1 mode=heli-infantry-aa groups=20",
+      "total_ns": 77356846077
+    },
+    {
+      "MessageName": "[IVCS PERF] START [1,\"heli-infantry-aa\",20,85,5]",
+      "total_ns": 77356861139
+    },
+    {
+      "MessageName": "IVCS PERF END trial=1 mode=heli-infantry-aa groups=20",
+      "total_ns": 112376165039
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS benchmark stays entirely virtual",
+      "total_ns": 112376227105
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS measurement records at least 100 real frames",
+      "total_ns": 112376245409
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS test-only immortality retains the entire roster",
+      "total_ns": 112376251113
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS all expected engagements survive the window",
+      "total_ns": 112376256651
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS helicopters fire during the measurement window",
+      "total_ns": 112376264501
+    },
+    {
+      "MessageName": "[IVCS PERF] PROGRESS [1,\"heli-infantry-aa\",20,34,36,35.018,1,35.019]",
+      "total_ns": 112376284393
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS frame budget keeps combat within one resolution interval plus scheduling slack",
+      "total_ns": 112376292604
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS all ten AA supporters remain reserved and both support categories fire",
+      "total_ns": 112376300636
+    },
+    {
+      "MessageName": "[IVCS HELI PERF] WORK [1,\"heli-infantry-aa\",20,5,10,[406,54,1588,0],30,85]",
+      "total_ns": 112376309281
+    },
+    {
+      "MessageName": "[IVCS PERF] PHASE [1,\"heli-infantry-aa\",20,966,35.019,85,85,2075,790,0]",
+      "total_ns": 112376316003
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.0289993,20218,4.99725,36.0031,1,3.9978,0,0.999451,0],[0.0649948,20219,4.00543,35.9955,1,3.00598,0,0.999451,0],[0.100998,20220,3.9978,36.0031,1,2.99835,0,0.999451,0],[0.137001,20221,1.9989,36.0031,0,0,0,1.9989,0],[0.173996,20222,0.999451,36.9949,0,0,0,0.999451,0]]",
+      "total_ns": 112376340282
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.210999,20223,1.9989,37.0026,0,0,0,1.9989,0],[0.248001,20224,1.9989,37.0026,0,0,0,1.9989,0],[0.284996,20225,1.9989,36.9949,0,0,0,1.9989,0],[0.321999,20226,1.9989,37.0026,0,0,0,1.9989,0],[0.359001,20227,0.999451,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 112376358636
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.395996,20228,0.999451,36.9949,0,0,0,0.999451,0],[0.431,20229,2.99835,35.0037,0,0,0,1.9989,0],[0.466995,20230,2.00653,35.9955,0,0,0,2.00653,0],[0.503998,20231,0.999451,37.0026,0,0,0,0.999451,0],[0.541,20232,1.9989,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 112376376121
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.577995,20233,1.9989,36.9949,0,0,0,1.9989,0],[0.614998,20234,0.999451,37.0026,0,0,0,0.999451,0],[0.652,20235,0.999451,37.0026,0,0,0,0.999451,0],[0.688995,20236,1.9989,36.9949,0,0,0,1.9989,0],[0.725998,20237,0.999451,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 112376391168
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.763,20238,1.9989,37.0026,0,0,0,1.9989,0],[0.799995,20239,1.9989,36.9949,0,0,0,1.9989,0],[0.836998,20240,0.999451,37.0026,0,0,0,0.999451,0],[0.872002,20241,0.999451,35.0037,0,0,0,0.999451,0],[0.907997,20242,0.999451,35.9955,0,0,0,0.999451,0]]",
+      "total_ns": 112376405867
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.944,20243,0.999451,36.0031,0,0,0,0.999451,0],[0.979996,20244,1.9989,35.9955,0,0,0,1.9989,0],[1.015,20245,6.99615,35.0037,2,5.9967,0,0.999451,0],[1.05,20246,5.00488,34.996,1,4.00543,0,0.999451,0],[1.086,20247,6.99615,36.0031,2,4.99725,0,0.999451,0]]",
+      "total_ns": 112376422143
+    }
+  ],
+  "message_parser_note": "Split at final comma; exporter message text is not CSV quoted. Recorder span is authoritative, not exporter aggregate percentage duration."
+}

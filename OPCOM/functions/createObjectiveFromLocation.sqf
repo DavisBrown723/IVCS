@@ -1,8 +1,8 @@
 params ["_location"];
 
-private _type = _location getvariable "type";
-private _position = _location getvariable "position";
-private _size = _location getvariable "size";
+private _type = if (_location isEqualType createHashMap) then { _location get "type" } else { _location getVariable "type" };
+private _position = if (_location isEqualType createHashMap) then { _location get "position" } else { _location getVariable "position" };
+private _size = if (_location isEqualType createHashMap) then { _location get "size" } else { _location getVariable "size" };
 
 private _objective = [] call CBA_fnc_createNamespace;
 _objective setvariable ["id", ""];

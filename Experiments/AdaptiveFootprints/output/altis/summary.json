@@ -1,0 +1,75 @@
+{
+  "world": "Altis",
+  "status": "isolated unreviewed experiment",
+  "index_version": 6,
+  "variant": "adaptive-footprints-v1",
+  "scanned_objects": 673914,
+  "locations": 280,
+  "categories": {
+    "base": 42,
+    "factory": 29,
+    "fuel": 9,
+    "hospital": 1,
+    "port": 22,
+    "power": 55,
+    "radiotower": 14,
+    "town": 108
+  },
+  "shapes": {
+    "circle": 218,
+    "rectangle": 62
+  },
+  "secondary_role_sites": {
+    "air": 8,
+    "heli": 12,
+    "radar": 4
+  },
+  "added_ids": [],
+  "removed_ids": [],
+  "changed_semantic_records": 1,
+  "unchanged_for_all_common_sites": {
+    "type": true,
+    "types": true,
+    "components": true,
+    "militaryBuildings": true,
+    "militaryBuildingCounts": true
+  },
+  "main_airport": {
+    "id": "altis_airfield_169",
+    "baseline_radius_m": 1124.57446289,
+    "footprint": [
+      "rectangle",
+      [
+        14647.68945312,
+        16551.49804688,
+        0.0
+      ],
+      [
+        385.31866455,
+        1065.75463867
+      ],
+      43.11985016
+    ],
+    "dimensions_m": [
+      770.6373291,
+      2131.50927734
+    ],
+    "baseline_area_m2": 3973070.8265030715,
+    "adaptive_area_m2": 1642620.6164411688,
+    "area_reduction_percent": 58.65614563214485,
+    "objects_before": 1580.0,
+    "objects_after": 1580.0
+  },
+  "nearby_base": {
+    "id": "altis_base_90",
+    "objects_before": 246.0,
+    "objects_after": 76.0,
+    "explanation": "Only runway air-role annotations change; military buildings, core components and roles remain unchanged."
+  },
+  "sha256": {
+    "baseline_locations": "4383b3ea1b77ef287b26688fda56575b7d4770d37247b617be4ddaaf389f6824",
+    "adaptive_locations": "16da0f9fb1328394da0a0c100b0997c235722ae7e1dc575b52394c9c684c2528",
+    "adaptive_settings": "de17eebb4748e204f05e976edd4b19bd3602397c7bae70f733b25bedbd309e84",
+    "inventory": "28fb7b0d9892214ebeb0b971802a684899df2d58a836cd03815b7cceab93e21f"
+  }
+}

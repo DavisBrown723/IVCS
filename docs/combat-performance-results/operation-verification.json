@@ -1,0 +1,27 @@
+{
+  "production_sources_unchanged": true,
+  "prior_source_manifest": "C:\\Users\\spyde\\Documents\\Arma 3 - Other Profiles\\SpyderBlack723\\missions\\x\\IVCS\\IVCS\\docs\\combat-performance-results\\shot-resumable-verification.json",
+  "instrumented_combat_checks": {
+    "passed": 71,
+    "failed": 0,
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-133e54c125ed472aa8fbecb0392138a5\\profile\\arma3server_x64_2026-10-12_23-34-41.rpt"
+  },
+  "seeded_outcomes_identical": true,
+  "calibration_mean_seconds": 170.45,
+  "benchmark_checks": {
+    "passed": 33,
+    "failed": 0
+  },
+  "benchmark_file_sha256": {
+    "tests/combat/performance.ps1": "d29614c5c9e0690dc52cb351606de65a80829b6525378326e9f7239c1def58c3",
+    "tests/combat/performance.sqf": "1bee213621d0ca10270528f6b624531234b253aa46031205fafec4a23d794662",
+    "tests/combat/operation-scopes.sqf": "b3dd56dddfe1af5efc9b72ad9b30d78eaa0d8f2ddcc79f78db4e7c02287e0a86",
+    "tests/combat/analyze-operations.py": "e2fc6361fdedb19ba3c676588937241d6e8be69b01fec07645607d62a7f2d666"
+  },
+  "sqf_crlf": true,
+  "rejected_run": {
+    "artifact_directory": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-48a1738ba90a4cc8ac3aa53109d4b28c",
+    "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261012-233043-f4019e93.tracy",
+    "reason": "Benchmark timing blocks were initially code literals instead of executed calls; six combat-activity checks failed. All timings from this run are excluded."
+  }
+}

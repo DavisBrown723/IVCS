@@ -46,8 +46,9 @@ private _invalid = ["INVALID", [], "missing"] call IVCS_EntityTasks_createTaskTe
 
 private _grid = [[0, 0], worldSize, 1000] call IVCS_SpacialGrid_create;
 IVCS_VirtualSpace_Controller = createHashMapFromArray [
+    ["combat", [] call IVCS_Combat_createController],
     ["debug", false], ["nextEntityID", 0], ["nextWaypointId", 0],
-    ["entities", createHashMapFromArray [["ALL", createHashMap]]],
+    ["entities", createHashMapFromArray [["ALL", createHashMap], ["active", []], ["inactive", []]]],
     ["entitiesSpacialGrid", _grid]
 ];
 IVCS_Common_WeaponInfo = createHashMap;
@@ -58,10 +59,7 @@ IVCS_Common_WeaponAliases = createHashMap;
 IVCS_Paths_Generator = [] call IVCS_Paths_createGenerator;
 private _createGroup = {
     params ["_position"];
-    private _unit = createHashMapFromArray [
-        ["id", "u_0"], ["class", "C_man_1"], ["object", objNull],
-        ["damage", 0], ["vehicleAssignment", []], ["weapons", []]
-    ];
+    private _unit = ["C_man_1", "u_0"] call IVCS_VirtualSpace_Group_createUnit;
     ["WEST", "BLU_F", _position, [_unit]] call IVCS_VirtualSpace_Group_createEntity
 };
 private _cleanGroup = {
@@ -250,13 +248,17 @@ private _unrelated = [[14550, 16240, 0]] call IVCS_VirtualSpace_createEntityWayp
 [_entity, _alreadyThere] call IVCS_EntityTasks_processTask;
 [_entity, _alreadyThere] call IVCS_EntityTasks_processTask;
 [([_entity] call IVCS_VirtualSpace_getCurrentEntityTask) isEqualTo _following, "following task preserved"] call _assert;
-[_unrelated in (_entity get "waypoints"), "unrelated waypoints preserved"] call _assert;
+[!(_unrelated in (_entity get "waypoints")) && { isNil { _unrelated get "entity" } }, "standalone waypoints wait in their own task"] call _assert;
 [_entity, _following] call IVCS_EntityTasks_processTask;
 [_entity, _following] call IVCS_EntityTasks_processTask;
-[(_entity get "tasks") isEqualTo [], "following task completes"] call _assert;
+[(_following get "status") == "completed" && { _unrelated in (_entity get "waypoints") }, "following task completes and activates standalone sequence"] call _assert;
 [_entity, _unrelated] call IVCS_VirtualSpace_entityRemoveWaypoint;
 [_entity, _unrelated] call IVCS_VirtualSpace_entityRemoveWaypoint;
 [(_entity get "waypoints") isEqualTo [], "waypoint removal idempotent"] call _assert;
+private _sequence = [_entity] call IVCS_VirtualSpace_getCurrentEntityTask;
+[_entity, _sequence] call IVCS_EntityTasks_processTask;
+[_entity, _sequence] call IVCS_EntityTasks_processTask;
+[(_entity get "tasks") isEqualTo [], "empty standalone sequence completes"] call _assert;
 [_entity] call _cleanGroup;
 
 private _entity = [[14500, 16250, 0]] call _createGroup;
@@ -604,10 +606,7 @@ private _reserved = ((_entity get "units") select 0) get "vehicleAssignment";
 {
     private _removeOwner = _x;
     private _entity = [[14500, 16290, 0]] call _createGroup;
-    (_entity get "units") pushBack createHashMapFromArray [
-        ["id", "u_1"], ["class", "C_man_1"], ["object", objNull], ["damage", 0],
-        ["vehicleAssignment", []], ["weapons", []]
-    ];
+    (_entity get "units") pushBack (["C_man_1", "u_1"] call IVCS_VirtualSpace_Group_createUnit);
     private _vehicle = ["C_Van_01_transport_F", [14503, 16290, 0]] call _createVehicle;
     [_entity] call IVCS_VirtualSpace_Group_spawn;
     [_vehicle] call IVCS_VirtualSpace_Vehicle_spawn;

@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-10-25T22:29:45.3399314-05:00",
+  "processor": {
+    "Name": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16,
+    "MaxClockSpeed": 2904
+  },
+  "operatingSystem": {
+    "Caption": "Microsoft Windows 10 Home",
+    "Version": "10.0.19045",
+    "TotalVisibleMemorySize": 33474244
+  },
+  "benchmarkServer": {
+    "ProcessId": 62520,
+    "CommandLine": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e52d395e67b94c628dd5a0b987b04338\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e52d395e67b94c628dd5a0b987b04338\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\""
+  },
+  "remainingOwnedServers": [],
+  "remainingRecorder": []
+}

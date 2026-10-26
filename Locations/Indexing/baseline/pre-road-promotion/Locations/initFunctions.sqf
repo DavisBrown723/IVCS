@@ -1,0 +1,14 @@
+IVCS_Locations_parseAliveMapData = compile preprocessFileLineNumbers "IVCS\Locations\functions\parseAliveMapData.sqf";
+IVCS_Locations_createLocation = compile preprocessFileLineNumbers "IVCS\Locations\functions\createLocation.sqf";
+IVCS_Locations_createLocationsFromMarkers = compile preprocessFileLineNumbers "IVCS\Locations\functions\createLocationsFromMarkers.sqf";
+IVCS_Locations_exportLocationsMapData = compile preprocessFileLineNumbers "IVCS\Locations\functions\exportLocationsMapData.sqf";
+IVCS_Locations_loadLocationsMapData = compile preprocessFileLineNumbers "IVCS\Locations\functions\loadLocationsMapData.sqf";
+IVCS_Locations_getLocationsInMarker = compile preprocessFileLineNumbers "IVCS\Locations\functions\getLocationsInMarker.sqf";
+IVCS_Locations_indexSettings = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\settings.sqf";
+IVCS_Locations_indexClassify = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\classify.sqf";
+IVCS_Locations_indexScan = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\scan.sqf";
+IVCS_Locations_indexBuild = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\build.sqf";
+IVCS_Locations_indexPreview = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\preview.sqf";
+IVCS_Locations_serializeMapValue = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\serialize.sqf";
+IVCS_Locations_indexNearWater = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\nearWater.sqf";
+IVCS_Locations_indexRefine = compile preprocessFileLineNumbers "IVCS\Locations\Indexing\refine.sqf";

@@ -1,0 +1,18 @@
+{
+  "format_version": "0.12.4",
+  "embedded_strings": [
+    "tracy",
+    "GenuineIntel",
+    "arma3server_x64.exe @ 2026-10-12 23:36:30",
+    "arma3server_x64.exeN",
+    "OS: Windows 10.0.19045",
+    "Compiler: MSVC 1944",
+    "User: spyde@DESKTOP-T32H6E3",
+    "Arch: x64",
+    "CPU: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "CPU cores: 16",
+    "RAM: 32689 MB"
+  ],
+  "first_block_bytes": 65536,
+  "decoder": "C:\\Program Files\\Git\\mingw64\\bin\\libzstd.dll"
+}

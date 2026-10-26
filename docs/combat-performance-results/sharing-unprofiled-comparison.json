@@ -1,0 +1,162 @@
+{
+  "source": "sharing-unprofiled-summary.json",
+  "validity_checks": {
+    "passed": 48,
+    "failed": 0
+  },
+  "eligible_for_performance_comparison": true,
+  "window_seconds": 10,
+  "trial_versions": {
+    "1": "before",
+    "2": "after",
+    "3": "after",
+    "4": "before"
+  },
+  "budgets": {
+    "combat_ms": 3,
+    "search_ms": 1,
+    "donor_inventory_quota": 2
+  },
+  "results": [
+    {
+      "groups": 20,
+      "version": "before",
+      "frames": 568,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 568,
+          "total_ms": 1102.973745000003,
+          "mean_ms": 1.941855184859155,
+          "p50_ms": 1.9989,
+          "p90_ms": 3.99971,
+          "p95_ms": 4.99725,
+          "p99_ms": 5.9967,
+          "max_ms": 9.99832,
+          "over_1ms": 347,
+          "over_5ms": 10,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 568,
+          "total_ms": 782.0071500000023,
+          "mean_ms": 1.3767731514084507,
+          "p50_ms": 0.999451,
+          "p90_ms": 3.9978,
+          "p95_ms": 3.99971,
+          "p99_ms": 4.99916,
+          "max_ms": 7.99942,
+          "over_1ms": 226,
+          "over_5ms": 5,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      }
+    },
+    {
+      "groups": 20,
+      "version": "after",
+      "frames": 569,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 569,
+          "total_ms": 1140.9069400000037,
+          "mean_ms": 2.0051088576449914,
+          "p50_ms": 1.9989,
+          "p90_ms": 3.9978,
+          "p95_ms": 4.99725,
+          "p99_ms": 5.9967,
+          "max_ms": 11.0016,
+          "over_1ms": 335,
+          "over_5ms": 19,
+          "over_10ms": 1,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 569,
+          "total_ms": 771.9648340000023,
+          "mean_ms": 1.356704453427065,
+          "p50_ms": 0.999451,
+          "p90_ms": 3.9978,
+          "p95_ms": 4.00162,
+          "p99_ms": 5.00488,
+          "max_ms": 10.0021,
+          "over_1ms": 194,
+          "over_5ms": 11,
+          "over_10ms": 1,
+          "over_16_67ms": 0
+        }
+      }
+    },
+    {
+      "groups": 80,
+      "version": "before",
+      "frames": 573,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 573,
+          "total_ms": 2236.1119699999977,
+          "mean_ms": 3.9024641710296684,
+          "p50_ms": 3.9978,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00488,
+          "p99_ms": 9.277031199999973,
+          "max_ms": 13.0005,
+          "over_1ms": 542,
+          "over_5ms": 82,
+          "over_10ms": 6,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 573,
+          "total_ms": 2068.0593160000008,
+          "mean_ms": 3.6091785619546246,
+          "p50_ms": 3.9978,
+          "p90_ms": 4.99725,
+          "p95_ms": 5.00107,
+          "p99_ms": 7.555844799999946,
+          "max_ms": 12.001,
+          "over_1ms": 521,
+          "over_5ms": 46,
+          "over_10ms": 5,
+          "over_16_67ms": 0
+        }
+      }
+    },
+    {
+      "groups": 80,
+      "version": "after",
+      "frames": 572,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 572,
+          "total_ms": 2164.0161620000017,
+          "mean_ms": 3.7832450384615384,
+          "p50_ms": 3.9978,
+          "p90_ms": 5.00107,
+          "p95_ms": 6.00052,
+          "p99_ms": 8.293073399999964,
+          "max_ms": 12.001,
+          "over_1ms": 517,
+          "over_5ms": 84,
+          "over_10ms": 3,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 572,
+          "total_ms": 1977.0083590000022,
+          "mean_ms": 3.45630831993007,
+          "p50_ms": 3.9978,
+          "p90_ms": 4.99725,
+          "p95_ms": 5.00107,
+          "p99_ms": 7.292515599999963,
+          "max_ms": 9.99451,
+          "over_1ms": 499,
+          "over_5ms": 51,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      }
+    }
+  ]
+}

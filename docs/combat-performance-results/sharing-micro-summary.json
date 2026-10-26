@@ -1,0 +1,2722 @@
+{
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8b2701c5f45a4908bd4d11db26b6571e\\profile\\arma3server_x64_2026-10-13_11-13-57.rpt",
+  "profiler_mods": false,
+  "units": 16,
+  "trials": 4,
+  "iterations": {
+    "SURPLUS": 200,
+    "SNAPSHOT": 200,
+    "NEEDS": 500
+  },
+  "method": "Unscheduled batches, alternating version order; stock BLU_F and OPF_F squads; fresh live inventory reads with immutable class caches warm. Each sample is elapsed batch time divided by repetitions.",
+  "comparisons": [
+    {
+      "operation": "SURPLUS",
+      "before_ms": 0.134844628125,
+      "after_ms": 0.1033599859375,
+      "reduction_percent": 23.34882940855009
+    },
+    {
+      "operation": "SNAPSHOT",
+      "before_ms": 0.0481253,
+      "after_ms": 0.03898463125,
+      "reduction_percent": 18.99347900168935
+    },
+    {
+      "operation": "NEEDS",
+      "before_ms": 0.02678116875,
+      "after_ms": 0.0210314265625,
+      "reduction_percent": 21.46934751493995
+    }
+  ],
+  "samples": [
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.110002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.079999
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0220013
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0179996
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.110002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0400019
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0199986
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.13
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0949955
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0449991
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0400019
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0340004
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0259991
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.134997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.079999
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0400019
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0179996
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.155001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.125003
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0449991
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0220013
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0179996
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0400019
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.239997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.184999
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0649977
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0549984
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0220013
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0160007
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.090003
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0299978
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0240021
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.114994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0799942
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.124998
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.135002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.110006
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0259972
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.149994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0900078
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.165005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.124998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0750065
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0549984
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0160027
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.270004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.199995
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 1,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.105
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0400009
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.095005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.119991
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.105
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.125008
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0320015
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0419998
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0999928
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.100002
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.135002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.150003
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0650024
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0949955
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0549984
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0419998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.185003
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.235004
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0599957
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0750065
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.095005
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0900078
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.120001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.135002
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.109997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.038002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.175009
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.144997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0259972
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.105
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.109997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0400009
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.135002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.150003
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0750065
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.205002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.245008
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0599957
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0649929
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.095005
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0220032
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 2,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0240021
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.125008
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.115004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0239983
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.139999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0949955
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.105
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0749969
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0340004
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.160007
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.120001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.115004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0599976
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.234995
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.185003
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0550079
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.144997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0749969
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0159988
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.115004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0319977
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.125008
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0800037
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0340004
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.139999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.109997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0340004
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.115004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.160007
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.120001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.135002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0549984
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.264997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.205002
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0650024
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0599957
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0240021
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 3,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.124998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.120001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.100002
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.124998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0199966
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0800037
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.100002
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.120001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.149994
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0450039
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0550079
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0220032
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0259972
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0650024
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0949955
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0299931
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0449944
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0359993
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0439987
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.189991
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.235004
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0599957
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0650024
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0900078
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "B_medic_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0949955
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.109997
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_SL_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.110006
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "after",
+      "mean_ms": 0.0159988
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.110006
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.139999
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0400066
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "after",
+      "mean_ms": 0.0200005
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_LAT_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0899982
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.114994
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.0499916
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_M_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.130005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.155001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0399971
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "after",
+      "mean_ms": 0.0219994
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_TL_F",
+      "version": "before",
+      "mean_ms": 0.0340004
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0549984
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0750065
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.0349998
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "after",
+      "mean_ms": 0.0180016
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_AR_F",
+      "version": "before",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.200005
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.249996
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0600052
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0649929
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "after",
+      "mean_ms": 0.0179977
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_soldier_A_F",
+      "version": "before",
+      "mean_ms": 0.0279999
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0699997
+    },
+    {
+      "operation": "SURPLUS",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.085001
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.0300026
+    },
+    {
+      "operation": "SNAPSHOT",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0500011
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "after",
+      "mean_ms": 0.026001
+    },
+    {
+      "operation": "NEEDS",
+      "trial": 4,
+      "unit_class": "O_medic_F",
+      "version": "before",
+      "mean_ms": 0.0219994
+    }
+  ]
+}

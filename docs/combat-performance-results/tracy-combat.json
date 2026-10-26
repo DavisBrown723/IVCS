@@ -1,0 +1,62 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-combat-20261012-195702-0c69aa4c.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 2767818,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 228205029155,
+  "zone_types": 44,
+  "filter": "IVCS_PERF_Combat_Frame",
+  "matching_zone_types": 1,
+  "top_inclusive": [
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 4222185960,
+      "total_perc": 1.850173,
+      "counts": 1923,
+      "mean_ns": 2195624,
+      "min_ns": 14243,
+      "max_ns": 43238619,
+      "std_ns": 4543713.827203
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 18740699,
+      "total_perc": 0.008212,
+      "counts": 1923,
+      "mean_ns": 9745,
+      "min_ns": 4219,
+      "max_ns": 51225,
+      "std_ns": 5042409.208497
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "count": 1923,
+      "total_ns": 4222185960,
+      "mean_ns": 2195625,
+      "p50_ns": 528038,
+      "p90_ns": 10185812,
+      "p95_ns": 12567943,
+      "p99_ns": 21781718,
+      "max_ns": 43238619,
+      "over_1ms": 574,
+      "over_5ms": 219,
+      "over_10ms": 195,
+      "first_start_ns": 112232730633,
+      "last_end_ns": 182307446813,
+      "observed_span_ns": 70074716180,
+      "span_occupancy_percent": 6.0253
+    }
+  ]
+}

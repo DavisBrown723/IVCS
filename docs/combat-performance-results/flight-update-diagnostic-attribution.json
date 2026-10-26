@@ -1,0 +1,788 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-flight-diagnostic-20261025-223846-f9cc342f.tracy",
+  "diagnostic_only": true,
+  "stage_totals_ms": {
+    "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 71.99873999999994,
+    "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 108.73324799999982,
+    "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 23.45778500000002,
+    "IVCS_ENTITY_IVCS_SpacialGrid_move": 31.26581800000001,
+    "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 42.02706900000008,
+    "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 39.60069200000001,
+    "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 67.01554500000006,
+    "IVCS_FLIGHT_AreaCheck": 15.512574000000006,
+    "IVCS_FLIGHT_Evasion": 5.781645000000004,
+    "IVCS_FLIGHT_GridFind": 0.3998170000000001,
+    "IVCS_FLIGHT_Health": 86.38734300000012,
+    "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 5.455945999999999,
+    "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 12.124324999999992,
+    "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 9.783272000000006,
+    "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 14.769401000000002,
+    "IVCS_FLIGHT_Integrate": 41.06968700000004,
+    "IVCS_FLIGHT_Leash": 21.242088999999957,
+    "IVCS_HELI_IVCS_Combat_getHelicopterPass": 41.16887000000009
+  },
+  "other": {
+    "count": 3220,
+    "total_ms": 187.9841609999998,
+    "mean_ms": 0.058380174223602484,
+    "p50_ms": 0.0571555,
+    "p90_ms": 0.0675686,
+    "p95_ms": 0.0782441999999999,
+    "p99_ms": 0.11974683999999994,
+    "max_ms": 0.7529009999999999,
+    "over_1ms": 0,
+    "over_5ms": 0,
+    "over_10ms": 0,
+    "over_16_67ms": 0
+  },
+  "disjoint_stage_names": [
+    "IVCS_FLIGHT_Health",
+    "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy",
+    "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea",
+    "IVCS_FLIGHT_Evasion",
+    "IVCS_FLIGHT_AreaCheck",
+    "IVCS_HELI_IVCS_Combat_getHelicopterPass",
+    "IVCS_FLIGHT_Destination",
+    "IVCS_FLIGHT_Leash",
+    "IVCS_FLIGHT_Integrate",
+    "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition"
+  ],
+  "note": "Nested helper totals overlap. Other subtracts only the listed disjoint stages.",
+  "frames": 1932,
+  "unmatched_frames": 0,
+  "helicopter_calls": 3220,
+  "motion_rows": 3220,
+  "stationary_calls": 2991,
+  "hold_calls": 2298,
+  "evading_calls": 3220,
+  "grid_rows": 2603,
+  "grid_cells": {
+    "count": 2603,
+    "mean_entries": 5.8797541298501725,
+    "p50_entries": 5.0,
+    "p95_entries": 10.0,
+    "max_entries": 10
+  },
+  "grid_find_misses": 0,
+  "total": {
+    "count": 3220,
+    "total_ms": 646.8939019999984,
+    "mean_ms": 0.20089872732919256,
+    "p50_ms": 0.189444,
+    "p90_ms": 0.28400129999999996,
+    "p95_ms": 0.34652905,
+    "p99_ms": 0.4120730399999998,
+    "max_ms": 1.331051,
+    "over_1ms": 1,
+    "over_5ms": 0,
+    "over_10ms": 0,
+    "over_16_67ms": 0
+  },
+  "worst_helicopter_calls": [
+    {
+      "start_ns": 134632374809,
+      "frame_start_ns": 134624664071,
+      "total_ms": 1.331051,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.169242,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.048566,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.07146,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.08249899999999999,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.03422,
+        "IVCS_FLIGHT_Evasion": 0.036757,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.126897,
+        "IVCS_FLIGHT_AreaCheck": 0.013996,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.032938,
+        "IVCS_FLIGHT_Leash": 0.06793,
+        "IVCS_FLIGHT_Integrate": 0.038189,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.020741000000000002
+      },
+      "motion": [
+        "move",
+        21810,
+        "e_48",
+        0.110001,
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.7529009999999999
+    },
+    {
+      "start_ns": 134551999231,
+      "frame_start_ns": 134550985398,
+      "total_ms": 0.971376,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.052516,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.013782,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.101059,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.028273,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.035091,
+        "IVCS_FLIGHT_Evasion": 0.004573,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.048649,
+        "IVCS_FLIGHT_AreaCheck": 0.029763,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.035804,
+        "IVCS_FLIGHT_Leash": 0.015124,
+        "IVCS_FLIGHT_Integrate": 0.03252,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.022260000000000002
+      },
+      "motion": [
+        "move",
+        21808,
+        "e_30",
+        0.109009,
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.629108
+    },
+    {
+      "start_ns": 134188512792,
+      "frame_start_ns": 134187864121,
+      "total_ms": 0.685571,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.088414,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.017673,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.266544,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.027059,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.098277,
+        "IVCS_FLIGHT_Evasion": 0.004848,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.049008,
+        "IVCS_FLIGHT_AreaCheck": 0.011634,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.030233,
+        "IVCS_FLIGHT_Leash": 0.016199,
+        "IVCS_FLIGHT_Integrate": 0.030789,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.022278
+      },
+      "motion": [
+        "move",
+        21798,
+        "e_54",
+        0.109009,
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.165624
+    },
+    {
+      "start_ns": 116961293788,
+      "frame_start_ns": 116960330619,
+      "total_ms": 0.664205,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.031815,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.007987,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.037997,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.012509,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.013868,
+        "IVCS_FLIGHT_Evasion": 0.001826,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.023215,
+        "IVCS_FLIGHT_AreaCheck": 0.006974,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.023733,
+        "IVCS_FLIGHT_Leash": 0.013151,
+        "IVCS_FLIGHT_Integrate": 0.224391,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.220709,
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": 0.184064,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 0.083722,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 0.05984899999999999,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 0.029169,
+        "IVCS_FLIGHT_GridFind": 0.002167,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 0.073999
+      },
+      "motion": [
+        "move",
+        21322,
+        "e_30",
+        0.104004,
+        [
+          15058.9,
+          16281,
+          100
+        ],
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        75.4436,
+        [
+          6.73288,
+          -57.6079,
+          0
+        ],
+        false,
+        false,
+        true
+      ],
+      "other_ms": 0.08039399999999997
+    },
+    {
+      "start_ns": 134294241931,
+      "frame_start_ns": 134293620714,
+      "total_ms": 0.539432,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.064771,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.016981,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.080209,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.027525,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.026708,
+        "IVCS_FLIGHT_Evasion": 0.00414,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.054916,
+        "IVCS_FLIGHT_AreaCheck": 0.012298,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.031219,
+        "IVCS_FLIGHT_Leash": 0.019731,
+        "IVCS_FLIGHT_Integrate": 0.033758,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.087736
+      },
+      "motion": [
+        "move",
+        21801,
+        "e_54",
+        0.106003,
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.15065400000000007
+    },
+    {
+      "start_ns": 78408676813,
+      "frame_start_ns": 78404611615,
+      "total_ms": 0.536129,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.025736,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.005588,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.045535,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.019881999999999997,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.016397000000000002,
+        "IVCS_FLIGHT_Evasion": 0.002855,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.032704,
+        "IVCS_FLIGHT_AreaCheck": 0.008129,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.021521,
+        "IVCS_FLIGHT_Leash": 0.011334,
+        "IVCS_FLIGHT_Integrate": 0.029208,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.262608,
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": 0.223319,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 0.112472,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 0.06984,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 0.040251,
+        "IVCS_FLIGHT_GridFind": 0.002836,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 0.08204499999999999
+      },
+      "motion": [
+        "move",
+        20260,
+        "e_24",
+        0.109001,
+        [
+          15044.5,
+          16349.8,
+          100
+        ],
+        [
+          15067.1,
+          16204.3,
+          100
+        ],
+        147.238,
+        [
+          8.89088,
+          -57.3145,
+          0
+        ],
+        false,
+        false,
+        true
+      ],
+      "other_ms": 0.09649899999999995
+    },
+    {
+      "start_ns": 134517239227,
+      "frame_start_ns": 134514945130,
+      "total_ms": 0.521566,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.105711,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.016471,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.074617,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.020215,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.024766999999999997,
+        "IVCS_FLIGHT_Evasion": 0.004017,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.042913,
+        "IVCS_FLIGHT_AreaCheck": 0.010738,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.027801,
+        "IVCS_FLIGHT_Leash": 0.030519,
+        "IVCS_FLIGHT_Integrate": 0.053678,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.019178
+      },
+      "motion": [
+        "move",
+        21807,
+        "e_48",
+        0.106003,
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.15239399999999992
+    },
+    {
+      "start_ns": 134152734356,
+      "frame_start_ns": 134150794241,
+      "total_ms": 0.519997,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.094775,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.030601,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.142089,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.066262,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.022549,
+        "IVCS_FLIGHT_Evasion": 0.003511,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.036544,
+        "IVCS_FLIGHT_AreaCheck": 0.008959,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.044624,
+        "IVCS_FLIGHT_Leash": 0.015471,
+        "IVCS_FLIGHT_Integrate": 0.03434,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.018397999999999998
+      },
+      "motion": [
+        "move",
+        21797,
+        "e_42",
+        0.109009,
+        [
+          15067.5,
+          16205.6,
+          100
+        ],
+        [
+          15067.5,
+          16205.6,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.12128600000000012
+    },
+    {
+      "start_ns": 118264887383,
+      "frame_start_ns": 118264544958,
+      "total_ms": 0.515829,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.041399,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.011841,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.056876,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.020984999999999997,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.020434,
+        "IVCS_FLIGHT_Evasion": 0.003325,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.036467,
+        "IVCS_FLIGHT_AreaCheck": 0.009701,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.02219,
+        "IVCS_FLIGHT_Leash": 0.012883,
+        "IVCS_FLIGHT_Integrate": 0.025689,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.204279,
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": 0.169035,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 0.090111,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 0.058069,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 0.024780999999999997,
+        "IVCS_FLIGHT_GridFind": 0.001804,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 0.054738999999999996
+      },
+      "motion": [
+        "move",
+        21358,
+        "e_30",
+        0.111,
+        [
+          15067.7,
+          16206.2,
+          100
+        ],
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        0.159287,
+        [
+          0.167159,
+          -1.42525,
+          0
+        ],
+        false,
+        false,
+        true
+      ],
+      "other_ms": 0.10302
+    },
+    {
+      "start_ns": 134734789163,
+      "frame_start_ns": 134734107666,
+      "total_ms": 0.510476,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.082209,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.017091,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.087629,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.041051000000000004,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.030357,
+        "IVCS_FLIGHT_Evasion": 0.006669,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.050177,
+        "IVCS_FLIGHT_AreaCheck": 0.012537,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.027724,
+        "IVCS_FLIGHT_Leash": 0.016376,
+        "IVCS_FLIGHT_Integrate": 0.029757,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.022907
+      },
+      "motion": [
+        "move",
+        21813,
+        "e_54",
+        0.110001,
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.17449100000000006
+    },
+    {
+      "start_ns": 134443435255,
+      "frame_start_ns": 134442877497,
+      "total_ms": 0.510009,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.05317,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.014174,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.065755,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.056998,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.026608,
+        "IVCS_FLIGHT_Evasion": 0.003799,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.070766,
+        "IVCS_FLIGHT_AreaCheck": 0.010946,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.025226,
+        "IVCS_FLIGHT_Leash": 0.013372,
+        "IVCS_FLIGHT_Integrate": 0.034571,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.022166
+      },
+      "motion": [
+        "move",
+        21805,
+        "e_30",
+        0.106995,
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.21023800000000004
+    },
+    {
+      "start_ns": 80524884922,
+      "frame_start_ns": 80524091287,
+      "total_ms": 0.484788,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.029441,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.009111,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.03622,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.013425,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.013072,
+        "IVCS_FLIGHT_Evasion": 0.001635,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.023489,
+        "IVCS_FLIGHT_AreaCheck": 0.004673,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.012664,
+        "IVCS_FLIGHT_Leash": 0.00654,
+        "IVCS_FLIGHT_Integrate": 0.01507,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.294543,
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": 0.269421,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 0.063457,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 0.042216000000000004,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 0.136694,
+        "IVCS_FLIGHT_GridFind": 0.001653,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 0.165953
+      },
+      "motion": [
+        "move",
+        20318,
+        "e_18",
+        0.107994,
+        [
+          15064.9,
+          16223.6,
+          100
+        ],
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        18.6113,
+        [
+          7.81837,
+          -57.4706,
+          0
+        ],
+        false,
+        false,
+        true
+      ],
+      "other_ms": 0.06051300000000004
+    },
+    {
+      "start_ns": 134336789738,
+      "frame_start_ns": 134336170466,
+      "total_ms": 0.482028,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.105476,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.015206,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.078144,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.020121,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.02579,
+        "IVCS_FLIGHT_Evasion": 0.004271,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.041985,
+        "IVCS_FLIGHT_AreaCheck": 0.012658,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.029572,
+        "IVCS_FLIGHT_Leash": 0.016385,
+        "IVCS_FLIGHT_Integrate": 0.036049,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.021187
+      },
+      "motion": [
+        "move",
+        21802,
+        "e_30",
+        0.112991,
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        [
+          15067.7,
+          16206,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.136301
+    },
+    {
+      "start_ns": 78878530311,
+      "frame_start_ns": 78877877289,
+      "total_ms": 0.471238,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.029229,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.007912,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.040361,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.012638,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.103308,
+        "IVCS_FLIGHT_Evasion": 0.00164,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.114707,
+        "IVCS_FLIGHT_AreaCheck": 0.006456,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.01459,
+        "IVCS_FLIGHT_Leash": 0.007555,
+        "IVCS_FLIGHT_Integrate": 0.017018,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.17491,
+        "IVCS_ENTITY_IVCS_SpacialGrid_move": 0.14724500000000001,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_remove": 0.072729,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_positionToCoords": 0.046748,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_coordsToCell": 0.02511,
+        "IVCS_FLIGHT_GridFind": 0.002235,
+        "IVCS_FLIGHT_IVCS_SpacialGrid_insert": 0.053198
+      },
+      "motion": [
+        "move",
+        20273,
+        "e_18",
+        0.111,
+        [
+          15052,
+          16318.4,
+          100
+        ],
+        [
+          15067.4,
+          16205.2,
+          100
+        ],
+        114.31,
+        [
+          7.81454,
+          -57.4711,
+          0
+        ],
+        false,
+        false,
+        true
+      ],
+      "other_ms": 0.064772
+    },
+    {
+      "start_ns": 135706848542,
+      "frame_start_ns": 135706406677,
+      "total_ms": 0.454205,
+      "operations_ms": {
+        "IVCS_FLIGHT_Health": 0.042484,
+        "IVCS_ENTITY_IVCS_Combat_getVehicleProfile": 0.011491,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterPolicy": 0.111961,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntity": 0.040854,
+        "IVCS_ENTITY_IVCS_VirtualSpace_getEntityCurrentWaypoint": 0.032812999999999995,
+        "IVCS_FLIGHT_Evasion": 0.005538,
+        "IVCS_ENTITY_IVCS_Combat_getHelicopterAttackArea": 0.052636,
+        "IVCS_FLIGHT_AreaCheck": 0.013171,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.034865,
+        "IVCS_FLIGHT_Leash": 0.013507,
+        "IVCS_FLIGHT_Integrate": 0.025312,
+        "IVCS_ENTITY_IVCS_VirtualSpace_setEntityPosition": 0.016096
+      },
+      "motion": [
+        "move",
+        21840,
+        "e_54",
+        0.108002,
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        [
+          15066.9,
+          16203.9,
+          100
+        ],
+        0,
+        [
+          0,
+          0,
+          0
+        ],
+        true,
+        true,
+        true
+      ],
+      "other_ms": 0.13863500000000006
+    }
+  ]
+}

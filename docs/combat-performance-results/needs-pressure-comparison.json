@@ -1,0 +1,282 @@
+{
+  "label": "needs-pressure",
+  "method": "ABBA; paired seeds; unchanged combat/search budgets and donor quotas",
+  "workloads": [
+    {
+      "mode": "ammo-pressure",
+      "groups": 20,
+      "versions": {
+        "before": {
+          "trials": [
+            1,
+            4
+          ],
+          "frames": 558,
+          "steps": 405,
+          "metrics": {
+            "ivcs_ms": {
+              "count": 558,
+              "total_ms": 497.00160200000084,
+              "mean_ms": 0.8906838745519713,
+              "p50_ms": 0.0,
+              "p90_ms": 3.00026,
+              "p95_ms": 3.9978,
+              "p99_ms": 4.99725,
+              "max_ms": 5.9967,
+              "over_1ms": 141,
+              "over_5ms": 2,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "combat_ms": {
+              "count": 558,
+              "total_ms": 372.03018900000006,
+              "mean_ms": 0.6667207688172043,
+              "p50_ms": 0.0,
+              "p90_ms": 3.00026,
+              "p95_ms": 3.00598,
+              "p99_ms": 4.00543,
+              "max_ms": 4.99916,
+              "over_1ms": 125,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "entities_ms": {
+              "count": 558,
+              "total_ms": 92.96612199999983,
+              "mean_ms": 0.1666059534050179,
+              "p50_ms": 0.0,
+              "p90_ms": 0.999451,
+              "p95_ms": 0.999451,
+              "p99_ms": 1.00136,
+              "max_ms": 2.00081,
+              "over_1ms": 9,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "ammo_queue_ms": {
+              "count": 558,
+              "total_ms": 0.999451,
+              "mean_ms": 0.0017911308243727599,
+              "p50_ms": 0.0,
+              "p90_ms": 0.0,
+              "p95_ms": 0.0,
+              "p99_ms": 0.0,
+              "max_ms": 0.999451,
+              "over_1ms": 0,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            }
+          }
+        },
+        "after": {
+          "trials": [
+            2,
+            3
+          ],
+          "frames": 559,
+          "steps": 400,
+          "metrics": {
+            "ivcs_ms": {
+              "count": 559,
+              "total_ms": 536.0372890000003,
+              "mean_ms": 0.9589218050089445,
+              "p50_ms": 0.0,
+              "p90_ms": 2.99835,
+              "p95_ms": 3.9978,
+              "p99_ms": 4.421994399999959,
+              "max_ms": 5.9967,
+              "over_1ms": 168,
+              "over_5ms": 1,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "combat_ms": {
+              "count": 559,
+              "total_ms": 408.012263,
+              "mean_ms": 0.7298967137745974,
+              "p50_ms": 0.0,
+              "p90_ms": 2.99835,
+              "p95_ms": 3.1051620000000226,
+              "p99_ms": 3.9978,
+              "max_ms": 5.9967,
+              "over_1ms": 136,
+              "over_5ms": 1,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "entities_ms": {
+              "count": 559,
+              "total_ms": 101.00938899999984,
+              "mean_ms": 0.18069658139534883,
+              "p50_ms": 0.0,
+              "p90_ms": 0.999451,
+              "p95_ms": 0.999451,
+              "p99_ms": 1.9989,
+              "max_ms": 2.00272,
+              "over_1ms": 15,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "ammo_queue_ms": {
+              "count": 559,
+              "total_ms": 0.999451,
+              "mean_ms": 0.001787926654740608,
+              "p50_ms": 0.0,
+              "p90_ms": 0.0,
+              "p95_ms": 0.0,
+              "p99_ms": 0.0,
+              "max_ms": 0.999451,
+              "over_1ms": 0,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "mode": "ammo-pressure",
+      "groups": 80,
+      "versions": {
+        "before": {
+          "trials": [
+            1,
+            4
+          ],
+          "frames": 564,
+          "steps": 1591,
+          "metrics": {
+            "ivcs_ms": {
+              "count": 564,
+              "total_ms": 1435.1041749999988,
+              "mean_ms": 2.5445109485815602,
+              "p50_ms": 3.00217,
+              "p90_ms": 4.00543,
+              "p95_ms": 4.99725,
+              "p99_ms": 5.00488,
+              "max_ms": 6.99997,
+              "over_1ms": 384,
+              "over_5ms": 14,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "combat_ms": {
+              "count": 564,
+              "total_ms": 1313.113980000001,
+              "mean_ms": 2.3282162765957444,
+              "p50_ms": 3.00217,
+              "p90_ms": 4.00162,
+              "p95_ms": 4.00543,
+              "p99_ms": 5.00107,
+              "max_ms": 6.99615,
+              "over_1ms": 369,
+              "over_5ms": 7,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "entities_ms": {
+              "count": 564,
+              "total_ms": 92.99855999999988,
+              "mean_ms": 0.16489106382978724,
+              "p50_ms": 0.0,
+              "p90_ms": 0.999451,
+              "p95_ms": 0.999451,
+              "p99_ms": 1.00327,
+              "max_ms": 2.00653,
+              "over_1ms": 11,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "ammo_queue_ms": {
+              "count": 564,
+              "total_ms": 2.998353,
+              "mean_ms": 0.005316228723404255,
+              "p50_ms": 0.0,
+              "p90_ms": 0.0,
+              "p95_ms": 0.0,
+              "p99_ms": 0.0,
+              "max_ms": 0.999451,
+              "over_1ms": 0,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            }
+          }
+        },
+        "after": {
+          "trials": [
+            2,
+            3
+          ],
+          "frames": 564,
+          "steps": 1606,
+          "metrics": {
+            "ivcs_ms": {
+              "count": 564,
+              "total_ms": 1522.0601100000033,
+              "mean_ms": 2.698688138297872,
+              "p50_ms": 3.00217,
+              "p90_ms": 4.004287,
+              "p95_ms": 4.99725,
+              "p99_ms": 5.00107,
+              "max_ms": 6.00433,
+              "over_1ms": 441,
+              "over_5ms": 15,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "combat_ms": {
+              "count": 564,
+              "total_ms": 1393.0432610000014,
+              "mean_ms": 2.469934859929078,
+              "p50_ms": 3.00217,
+              "p90_ms": 3.9978,
+              "p95_ms": 4.00162,
+              "p99_ms": 4.99725,
+              "max_ms": 5.00488,
+              "over_1ms": 397,
+              "over_5ms": 5,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "entities_ms": {
+              "count": 564,
+              "total_ms": 105.0263329999998,
+              "mean_ms": 0.1862169024822695,
+              "p50_ms": 0.0,
+              "p90_ms": 0.999451,
+              "p95_ms": 0.999451,
+              "p99_ms": 1.0046797,
+              "max_ms": 1.9989,
+              "over_1ms": 20,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            },
+            "ammo_queue_ms": {
+              "count": 564,
+              "total_ms": 2.998353,
+              "mean_ms": 0.005316228723404255,
+              "p50_ms": 0.0,
+              "p90_ms": 0.0,
+              "p95_ms": 0.0,
+              "p99_ms": 0.0,
+              "max_ms": 0.999451,
+              "over_1ms": 0,
+              "over_5ms": 0,
+              "over_10ms": 0,
+              "over_16_67ms": 0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

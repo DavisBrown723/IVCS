@@ -1,0 +1,157 @@
+waitUntil {time>0};
+call compile preprocessFileLineNumbers "IVCS\initFunctions.sqf";
+call compile preprocessFileLineNumbers "IVCS\EntityTasks\startup.sqf";
+IVCS_Common_WeaponInfo=createHashMap;IVCS_Common_MagazineInfo=createHashMap;IVCS_Common_AmmoInfo=createHashMap;IVCS_Common_UnitInfo=createHashMap;IVCS_Common_WeaponAliases=createHashMap;
+IVCS_Common_VehicleConfigInventories=createHashMap;IVCS_Common_VehicleTurrets=[] call IVCS_Common_getAllVehicleTurretsFromConfig;
+IVCS_Paths_Generator=createHashMapFromArray [["requestQueue",[]],["currentRequest",[]]];
+IVCS_VirtualSpace_Controller=[false] call IVCS_VirtualSpace_createController;
+removeMissionEventHandler ["EachFrame",IVCS_VirtualSpace_Controller get "onFrameHandlerID"];
+west setFriend [east,0];east setFriend [west,0];
+private _passed=0;private _failed=0;
+private _assert={params ["_ok","_label"];if (_ok) then {_passed=_passed+1} else {_failed=_failed+1};diag_log format ["[IVCS TASK TEST] %1 %2",if (_ok) then {"PASS"} else {"FAIL"},_label]};
+private _combat=IVCS_VirtualSpace_Controller get "combat";
+private _make={params [["_class","O_Soldier_F"],["_side","EAST"],["_count",4],["_pos",[14500,16400,0]]];private _units=[];for "_i" from 0 to (_count-1) do {_units pushBack ([_class,format ["u%1",_i]] call IVCS_VirtualSpace_Group_createUnit)};[_side,"OPF_F",+_pos,_units] call IVCS_VirtualSpace_Group_createEntity};
+private _heli={params [["_class","B_Heli_Attack_01_dynamicLoadout_F"],["_pos",[15100,16400,100]]];private _v=[_class,+_pos] call IVCS_VirtualSpace_Vehicle_createEntity;private _count=0;{if ((_x select 0)!="Cargo") then {_count=_count+count (_x select 1)}} forEach (_v get "seats");private _crew=["B_helicrew_F","WEST",_count,+_pos] call _make;[_crew,_v] call IVCS_VirtualSpace_Group_assignVehicle;[_v,_crew]};
+private _order={params ["_crew",["_role","ATTACK"],["_mode","YELLOW"],["_behavior","AWARE"]];private _wp=[[16000,16400,0],"MOVE",[["airAttackCenter",[14500,16400,0]],["airCombatRole",_role],["combatMode",_mode],["behavior",_behavior]]] call IVCS_VirtualSpace_createEntityWaypoint;[_crew,_wp] call IVCS_VirtualSpace_entityAddWaypoint;_wp};
+private _clean={{if (!isNil {[_x get "id"] call IVCS_VirtualSpace_getEntity}) then {if (_x get "active") then {[_x] call (missionNamespace getVariable (_x get "despawn"))};[_x] call IVCS_VirtualSpace_unregisterEntity}} forEach _this};
+
+
+private _reference={
+    params ["_group","_target"];
+    private _range=(_group get "position") distance (_target get "position");
+    private _profile=[_target get "class"] call IVCS_Combat_getVehicleProfile;
+    private _cache=createHashMap;
+    (_group get "units") findIf {
+        private _unit=_x;private _live=true;
+        if (_group get "active") then {
+            private _object=_unit get "object";_live=alive _object;
+            _unit=+_unit;_unit set ["weapons",[_object] call IVCS_Common_getUnitObjectLoadoutInfo];
+        };
+        _live && {([_unit,_cache,_profile,_range,true] call IVCS_Combat_getVehicleShot) isNotEqualTo []}
+    } != -1
+};
+private _same={
+    params ["_g","_h","_label"];
+    private _expected=[_g,_h] call _reference;
+    [([_g,_h,true] call IVCS_Combat_canShootHelicopter) isEqualTo _expected,_label] call _assert;
+};
+private _pair=[] call _heli;_pair params ["_h","_crew"];
+{
+    private _class=_x;
+    private _g=[_class,"EAST",1,[14500,16400,0]] call _make;
+    {
+        [_h,[14500+_x,16400,0]] call IVCS_VirtualSpace_setEntityPosition;
+        [_g,_h,format ["AA capability matches firing selection: %1 at %2m",_class,_x]] call _same;
+    } forEach [0,1,10,100,300,750,751];
+    [_g] call _clean;
+} forEach ["O_Soldier_F","O_Soldier_AA_F","O_Soldier_AT_F","O_Soldier_LAT_F","B_Soldier_AA_F","B_Soldier_AT_F","B_Soldier_LAT_F","O_Soldier_GL_F"];
+private _aa=["O_Soldier_AA_F","EAST",1,[14500,16400,0]] call _make;
+private _unit=_aa get "units" select 0;
+private _launcher=(_unit get "weapons") select {([_x select 0] call IVCS_Combat_getWeaponProfile) get "launcher"} select 0;
+private _mag=(_launcher select 1) select 0;
+private _magClass=_mag select 0;
+private _rounds=_launcher select 1;
+_rounds resize 0;_rounds pushBack _mag;
+[_h,[14600,16400,0]] call IVCS_VirtualSpace_setEntityPosition;
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"loaded compatible AA remains available"] call _assert;
+private _stored=str (_unit get "weapons");
+private _selector=IVCS_Combat_getVehicleShot;private _calls=0;
+IVCS_Combat_getVehicleShot={_calls=_calls+1;_this call _selector};
+[_aa,_h,true] call IVCS_Combat_canShootHelicopter;IVCS_Combat_getVehicleShot=_selector;
+[_calls==0,"AA capability never builds full shot data"] call _assert;
+[_stored isEqualTo str (_unit get "weapons"),"capability checks do not consume or rewrite magazines"] call _assert;
+_mag set [1,0];
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"emptying the last magazine is visible immediately"] call _assert;
+_mag set [1,1];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"refilling a magazine is visible immediately"] call _assert;
+_mag set [0,"Titan_AT"];
+[_aa,_h,"incompatible ammunition agrees with the firing selector"] call _same;
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"a cached AA weapon cannot use incompatible magazines"] call _assert;
+_mag set [0,_magClass];
+_rounds resize 0;(_unit get "magazineCargo") pushBack [_magClass,1,[]];
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"cargo alone does not become an equipped launcher magazine"] call _assert;
+_rounds pushBack [_magClass,1,[]];
+private _weapons=+(_unit get "weapons");_unit set ["weapons",[]];
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"removing the launcher immediately removes AA capability"] call _assert;
+_unit set ["weapons",_weapons];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"replacing the launcher immediately restores AA capability"] call _assert;
+// Warm readiness uses immutable class profiles directly; a new weapon still initializes lazily.
+private _profileCalls=0;private _profileFunction=IVCS_Combat_getWeaponProfile;
+IVCS_Combat_getWeaponProfile={_profileCalls=_profileCalls+1;_this call _profileFunction};
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"warm virtual AA readiness still finds usable rounds"] call _assert;
+[_profileCalls==0,"warm virtual readiness avoids profile helper calls for every weapon"] call _assert;
+IVCS_Combat_WeaponProfiles deleteAt (_launcher select 0);
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"new AA weapon profile initializes on demand"] call _assert;
+[_profileCalls==1,"cold readiness initializes only the missing weapon profile"] call _assert;
+IVCS_Combat_getWeaponProfile=_profileFunction;
+private _rifle=["O_Soldier_F","rifle"] call IVCS_VirtualSpace_Group_createUnit;
+private _second=["O_Soldier_AA_F","second-aa"] call IVCS_VirtualSpace_Group_createUnit;
+_aa set ["units",[_rifle,_unit,_second]];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"readiness locates AA behind a rifleman"] call _assert;
+[(_aa get "antiAirShooterIndex")==1,"successful AA index becomes a search hint"] call _assert;
+// A rifleman's cached weapon profile is intentionally removed: a warm hint need not visit it.
+private _rifleClass=(_rifle get "weapons" select 0) select 0;
+private _rifleProfile=IVCS_Combat_WeaponProfiles deleteAt _rifleClass;
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"warm hint revalidates the current AA unit"] call _assert;
+[isNil {IVCS_Combat_WeaponProfiles get _rifleClass},"warm hint avoids revisiting preceding riflemen"] call _assert;
+IVCS_Combat_WeaponProfiles set [_rifleClass,_rifleProfile];
+_unit set ["weapons",[]];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"failed hint falls through to a different armed unit immediately"] call _assert;
+[(_aa get "antiAirShooterIndex")==2,"fallback updates the hint to the new shooter"] call _assert;
+_aa set ["units",[_second,_rifle]];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"removing units and an out-of-range hint still finds AA"] call _assert;
+_aa set ["units",[_rifle,_second]];
+[[_aa,_h,true] call IVCS_Combat_canShootHelicopter,"reordering the roster revalidates the hinted slot"] call _assert;
+_aa set ["units",[_rifle]];
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"removing the final AA unit cannot leave stale capability"] call _assert;
+_aa set ["units",[]];
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"empty rosters return false without an index error"] call _assert;
+_unit set ["weapons",_weapons];_aa set ["units",[_unit]];
+private _fuse=([_magClass] call IVCS_Combat_getAmmoProfile) get "fuseDistance";
+{
+    [_h,[14500+_x,16400,0]] call IVCS_VirtualSpace_setEntityPosition;
+    [_aa,_h,format ["AA capability preserves fuse threshold at %1m",_x]] call _same;
+} forEach [(_fuse-0.01) max 0,_fuse,_fuse+0.01];
+_combat set ["helicopterInfantryRange",100];
+[_h,[14601,16400,0]] call IVCS_VirtualSpace_setEntityPosition;
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"changed engagement range applies immediately"] call _assert;
+_combat set ["helicopterInfantryRange",750];
+private _v=["O_Truck_03_transport_F",[14500,16400,0]] call IVCS_VirtualSpace_Vehicle_createEntity;
+[_aa,_v] call IVCS_VirtualSpace_Group_assignVehicle;
+[_h,[14600,16400,0]] call IVCS_VirtualSpace_setEntityPosition;
+[_aa,_h,"land crew dismount eligibility matches the firing selector"] call _same;
+_combat set ["autoDismount",false];
+[_aa,_h,"enclosed crew eligibility matches the firing selector"] call _same;
+_combat set ["autoDismount",true];
+[_v,[14500,16400,100]] call IVCS_VirtualSpace_setEntityPosition;
+[_aa,_h,"airborne crew eligibility matches the firing selector"] call _same;
+[_aa,_v] call IVCS_VirtualSpace_Group_unassignVehicle;
+[_v] call _clean;
+[_aa] call IVCS_VirtualSpace_Group_spawn;
+private _object=_unit get "object";_object disableAI "ALL";
+[_aa,_h,"native loaded AA agrees with actual firing eligibility"] call _same;
+private _loadout=getUnitLoadout _object;
+{_object removeMagazines (_x select 0)} forEach (magazinesAmmoFull [_object,true]);
+_object setAmmo [secondaryWeapon _object,0];
+[_aa,_h,"native empty loaded magazines agree with firing eligibility"] call _same;
+[!([_aa,_h,true] call IVCS_Combat_canShootHelicopter),"native AA reads current rounds immediately"] call _assert;
+_object setUnitLoadout _loadout;
+[_aa,_h,"native resupply agrees with firing eligibility"] call _same;
+removeAllWeapons _object;
+[_aa,_h,"native weapon removal agrees with firing eligibility"] call _same;
+[_aa,_h,_crew] call _clean;
+// Withdrawal still responds on the very next entity update after the last AA round is lost.
+_combat set ["accuracyScale",0];
+_pair=[] call _heli;_pair params ["_h","_crew"];[_crew] call _order;
+_aa=["O_Soldier_AA_F","EAST",1,[14500,16400,0]] call _make;
+private _e=[_aa,_h] call IVCS_Combat_start;
+[_aa,_h,IVCS_SimulationTime-4] call IVCS_Combat_markInfantryAirThreat;
+[_aa,+((_aa get "airDefense") select 2)] call IVCS_VirtualSpace_setEntityPosition;
+[_aa,0] call IVCS_Combat_updateAirDefense;
+[(_e get "mode")=="virtual","retreated infantry with usable AA retains combat"] call _assert;
+{{(_x select 1) resize 0} forEach (_x get "weapons")} forEach (_aa get "units");
+[_aa,0] call IVCS_Combat_updateAirDefense;
+[(_e get "mode")=="finished" && {(_e get "reason")=="withdrawal"},"last-round loss triggers withdrawal on the next update without a cache timeout"] call _assert;
+[_aa,_h,_crew] call _clean;
+[count (_combat get "engagements")==0,"AA readiness fixtures leave no engagement reservations"] call _assert;
+diag_log format ["[IVCS TASK TEST] DONE passed=%1 failed=%2",_passed,_failed];

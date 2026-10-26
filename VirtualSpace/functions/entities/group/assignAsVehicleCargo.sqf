@@ -51,6 +51,7 @@ _vehicleEntitiesInCargo pushback _groupEntityID;
 _vehiclesInCargoOf pushback _vehicleEntityID;
 
 private _vehicleEntityPosition = _vehicleEntity get "position";
-[_groupEntity,_vehicleEntityPosition] call IVCS_VirtualSpace_setEntityPosition;
+[_groupEntity, +_vehicleEntityPosition] call IVCS_VirtualSpace_setEntityPosition;
 
+[_groupEntity] call IVCS_VirtualSpace_Group_calculateSpeed;
 [_vehicleEntity] call IVCS_VirtualSpace_Vehicle_updateDebugMarkerColor;

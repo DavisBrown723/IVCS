@@ -1,7 +1,7 @@
 /*
     Context accepts named pairs or a HashMap. Mutable defaults and overrides
     are copied per instance; templates and state callback code remain shared.
-    entityID, taskID, and waypoints are reserved for the task processor.
+    entityID, taskID, waypoints, pausedAt, and activatedAt are reserved for the task processor.
     Enqueue the returned instance with IVCS_VirtualSpace_entityAddTask.
 */
 params ["_templateName", ["_instanceContext", []]];
@@ -24,6 +24,8 @@ _context = +_context;
 
 private _waypoints = [];
 _context set ["waypoints", _waypoints];
+_context set ["pausedAt", -1];
+_context set ["activatedAt", -1];
 createHashMapFromArray [
     ["name", _template get "name"],
     ["template", _template],

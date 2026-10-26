@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "generatedAtUTC": "2026-10-14T22:49:23.147485+00:00",
+  "scope": "Road indexing and latest adaptive location rules promoted into normal offline indexing",
+  "entryPoint": "IVCS/Locations/Indexing/run.ps1",
+  "output": "IVCS/Locations/Indexing/output/altis",
+  "pythonTests": 101,
+  "nativeChecks": {
+    "footprints": {
+      "passed": 26,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-9b88d69b7b5441aebc7da063d7a8c97b\\profile\\arma3server_x64_2026-10-14_17-40-40.rpt"
+    },
+    "locations": {
+      "passed": 120,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-218537d71aec44bb9385948f464f8267\\profile\\arma3server_x64_2026-10-14_17-46-18.rpt"
+    },
+    "settlementPorts": {
+      "passed": 15,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f57771faa70f4ecf972c2677179a0cd5\\profile\\arma3server_x64_2026-10-14_17-43-58.rpt"
+    },
+    "generatedDataAndDemo": {
+      "passed": 57,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-bbd387c264c14601a2b1f41bd1a81468\\profile\\arma3server_x64_2026-10-14_17-46-54.rpt"
+    },
+    "roadExtractionProbe": {
+      "passed": 1,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-fd4872c2200841238649b4313865c9a5\\profile\\arma3server_x64_2026-10-14_17-44-50.rpt"
+    },
+    "fullLocationRebuild": {
+      "passed": 1,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8a3775f022f44429b41cf0d56270bd6d\\profile\\arma3server_x64_2026-10-14_17-40-56.rpt"
+    }
+  },
+  "nativeRegressionAssertions": 218,
+  "locationProcessingSeconds": 216.542,
+  "roadProcessingSeconds": 11.6891031,
+  "summary": {
+    "roadSections": 34625,
+    "mappedSections": 33733,
+    "unavailableGeometry": 892,
+    "connections": 35391,
+    "acceptedConnections": 33979,
+    "connectionEvidence": {
+      "ordinary-reciprocal": 33979,
+      "extended-only": 1412
+    },
+    "nodes": 3785,
+    "edges": 4031,
+    "components": 60,
+    "junctions": 1016,
+    "deadEnds": 562,
+    "isolatedSections": 0,
+    "bridgeSections": 40,
+    "roadTypes": {
+      "TRACK": 26823,
+      "MAIN ROAD": 2061,
+      "ROAD": 4849,
+      "HIDE": 892
+    },
+    "roadLength2dKm": 732.3104506038085,
+    "locations": 278,
+    "accessCandidates": 1869,
+    "locationsWithAccess": 274,
+    "locationsWithoutInlets": 60,
+    "interpolatedInlets": 3,
+    "zeroLengthSections": 892,
+    "longOrdinaryLinks": 0,
+    "ambiguousGeometries": 0,
+    "boundaryInlets": 827,
+    "fallbackCandidates": 1042,
+    "locationsWithFallback": 56,
+    "locationsWithoutCandidates": 4,
+    "strongFallbacks": 113,
+    "secondaryFallbacks": 929,
+    "routingNodes": 4842,
+    "routingEdges": 5088,
+    "corridorRelations": 11418,
+    "routingCorridorRelations": 14967,
+    "baselineConnections": 30689
+  },
+  "preservedDatasetIdentities": {
+    "roadDatasetId": "402c7bf5fcd71d0dd5fd8ed0e2a019312fd3ecd1b0286fab069b945efecb71c3",
+    "locationDatasetId": "657a9b931894ff4df96f1b93c89d840490e784e5d4adf11d94c293930478ef7a",
+    "attachmentDatasetId": "543ffed50c71c277484777eeed33b8d2756766c65929161fdd8731674c54918c",
+    "preprocessingDatasetId": "7e12fcc77ee9b99f0fab2fff23a5b45dc5afc80dcdb1c23c7d44c48d1b94da2a",
+    "runtimeDatasetId": "7afe3f40373ee0cf903fcc240dfe88d04bbd713a1cf8556318df8f8935295238"
+  },
+  "completeOutputHashesVerified": true,
+  "sqfFilesCRLF": 43,
+  "noExperimentalCodeDependencies": true,
+  "objectiveGraphFilesUnchanged": 34,
+  "browser": {
+    "url": "http://127.0.0.1:8767",
+    "productionServerVerified": true,
+    "servedDataMatchesPublishedFile": true,
+    "doridaInlets": 8,
+    "onlineBasemapVerified": true,
+    "header": "ALTIS / MAP INDEX"
+  },
+  "limitations": [
+    "Offline authoring only; no SQF road runtime loader or new Commander behavior",
+    "Inlets and fallback gaps remain geometric candidates, not verified vehicle entrances",
+    "Runner and basemap currently target Altis"
+  ],
+  "previousOutput": "output/.previous-altis-7e9e34194f5841439312e08d4fa9f9d8"
+}

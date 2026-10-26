@@ -1,0 +1,22 @@
+IVCS_Ammo_WeaponProfiles = createHashMap;
+IVCS_Ammo_getWeaponProfile = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\getWeaponProfile.sqf";
+IVCS_Ammo_getNeededWeapons = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\getNeededWeapons.sqf";
+IVCS_Ammo_onFrame = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\onFrame.sqf";
+IVCS_Ammo_reloadRequest = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\reloadRequest.sqf";
+IVCS_Ammo_approach = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\approach.sqf";
+IVCS_Ammo_createSettings = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\createSettings.sqf";
+IVCS_Ammo_snapshot = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\snapshot.sqf";
+IVCS_Ammo_sameToken = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\sameToken.sqf";
+IVCS_Ammo_getReservedMagazine = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\getReservedMagazine.sqf";
+IVCS_Ammo_surplus = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\surplus.sqf";
+IVCS_Ammo_releaseRequest = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\releaseRequest.sqf";
+IVCS_Ammo_cancelGroup = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\cancelGroup.sqf";
+IVCS_Ammo_transfer = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\transfer.sqf";
+IVCS_Ammo_updateGroup = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\updateGroup.sqf";
+
+IVCS_Ammo_isEligible = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\isEligible.sqf";
+IVCS_Ammo_updateRequests = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\updateRequests.sqf";
+IVCS_Ammo_createRequest = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\createRequest.sqf";
+IVCS_Ammo_scanNeeds = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\scanNeeds.sqf";
+IVCS_Ammo_advanceSearch = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\advanceSearch.sqf";
+IVCS_Ammo_searchOnFrame = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\ammo\searchOnFrame.sqf";

@@ -1,0 +1,54 @@
+{
+  "passed": 1112,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "resolution",
+      "passed": 762,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-536ae637bd5d4ffc91be93f745dda0ec\\profile\\arma3server_x64_2026-10-25_23-25-33.rpt"
+    },
+    {
+      "suite": "combat",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-4980ce0ad8d34ffda5dccac22c43d096\\profile\\arma3server_x64_2026-10-25_23-26-20.rpt"
+    },
+    {
+      "suite": "vehicles",
+      "passed": 58,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-24f036ea94014092a5f51e566a12c616\\profile\\arma3server_x64_2026-10-25_23-26-21.rpt"
+    },
+    {
+      "suite": "vehicle-return-fire",
+      "passed": 43,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-7a79d365d88a484e823d2617caad6f32\\profile\\arma3server_x64_2026-10-25_23-26-22.rpt"
+    },
+    {
+      "suite": "aa-readiness",
+      "passed": 95,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-025a037ebbf1460498f379000158c21d\\profile\\arma3server_x64_2026-10-25_23-27-07.rpt"
+    },
+    {
+      "suite": "scheduling",
+      "passed": 12,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a726c0c66b294825ac6b7a90b72d1f5a\\profile\\arma3server_x64_2026-10-25_23-27-09.rpt"
+    },
+    {
+      "suite": "helicopter-tactics",
+      "passed": 50,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-24218350e7764cd79727f0408a3e11a4\\profile\\arma3server_x64_2026-10-25_23-27-08.rpt"
+    },
+    {
+      "suite": "helicopter-review",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-950538761e3b44c8b3309cc380e32efe\\profile\\arma3server_x64_2026-10-25_23-27-08.rpt"
+    }
+  ]
+}

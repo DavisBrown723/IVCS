@@ -1,0 +1,50 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-comparison-20261025-233246-b72b7651.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-comparison-20261025-233246-b72b7651.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-comparison-20261025-233246-b72b7651.stderr.log",
+  "recorderPid": 67808,
+  "serverPid": 61060,
+  "serverCommandLine": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8ce3561aec894e2c93ef4d2b08518635\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8ce3561aec894e2c93ef4d2b08518635\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "seconds": 240,
+  "benchmarkRoot": "C:/Users/spyde/AppData/Local/Temp/ivcs-tasks-8ce3561aec894e2c93ef4d2b08518635",
+  "connected": true,
+  "created": "2026-10-25T23:32:48.6232638-05:00",
+  "saved": true,
+  "trace_bytes": 5608426,
+  "save_log": "Connecting to 127.0.0.1:8086...\nTimer resolution: 4 ns\n\nFrames: 6638\nTime span: 4:00.2\nZones: 865,959\nElapsed time: 4:00.1\nSaving trace... done!\nTrace size 5475.61 KB (24.47% ratio)\n",
+  "message_count": 836,
+  "boundaries": [
+    {
+      "MessageName": "IVCS PERF BEGIN trial=1 mode=before-heli-infantry-aa groups=20",
+      "total_ns": 78192071853
+    },
+    {
+      "MessageName": "IVCS PERF END trial=1 mode=before-heli-infantry-aa groups=20",
+      "total_ns": 113220095515
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=2 mode=after-heli-infantry-aa groups=20",
+      "total_ns": 115752869779
+    },
+    {
+      "MessageName": "IVCS PERF END trial=2 mode=after-heli-infantry-aa groups=20",
+      "total_ns": 150780346671
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=3 mode=after-heli-infantry-aa groups=20",
+      "total_ns": 153265356005
+    },
+    {
+      "MessageName": "IVCS PERF END trial=3 mode=after-heli-infantry-aa groups=20",
+      "total_ns": 188268747491
+    },
+    {
+      "MessageName": "IVCS PERF BEGIN trial=4 mode=before-heli-infantry-aa groups=20",
+      "total_ns": 190793931444
+    },
+    {
+      "MessageName": "IVCS PERF END trial=4 mode=before-heli-infantry-aa groups=20",
+      "total_ns": 225806973205
+    }
+  ]
+}

@@ -3,12 +3,12 @@ params ["_position", ["_type", "MOVE"], ["_options", []]];
 
 private _waypoint = createHashMapFromArray [
     ["speed", "UNCHANGED"], ["completionRadius", -1], ["behavior", "UNCHANGED"],
-    ["formation", "NO CHANGE"], ["combatMode", "NO CHANGE"],
+    ["airCombatRole", "TRANSPORT"], ["airAttackCenter",[]], ["airAttackRadius",-1], ["formation", "NO CHANGE"], ["combatMode", "NO CHANGE"],
     ["statements", []], ["callbacks", []], ["attachedVehicle", ""],
     ["timeout", []], ["description", ""]
 ];
 _waypoint merge [createHashMapFromArray _options, true];
-{ _waypoint set [_x, toUpper (_waypoint get _x)]; } forEach ["speed", "behavior", "formation", "combatMode"];
+{ _waypoint set [_x, toUpper (_waypoint get _x)]; } forEach ["speed", "behavior", "formation", "combatMode", "airCombatRole"];
 
 private _waypointIDNum = IVCS_VirtualSpace_Controller get "nextWaypointId";
 IVCS_VirtualSpace_Controller set ["nextWaypointId", _waypointIDNum + 1];
@@ -18,6 +18,9 @@ _waypoint set ["name", format ["wp_%1", _waypointIDNum]];
 _waypoint set ["initialized", false];
 _waypoint set ["movePoints", []];
 _waypoint set ["pathGenerationRequestID", ""];
+_waypoint set ["pathGeneration", 0];
+_waypoint set ["nativeGeneration", 0];
+_waypoint deleteAt "taskID";
 _waypoint deleteAt "entity";
 
 _waypoint

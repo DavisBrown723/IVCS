@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "nativeExtraction": "Altis dedicated server completed, 34625 captured sections, no SQF script errors",
+  "pythonTests": 97,
+  "javascriptSyntax": "passed",
+  "protectedIndexingFilesUnchanged": 79,
+  "sqfFilesCRLF": 12,
+  "launcher": "Fresh start, reuse and stop verified on 8768; no game process launched for viewing",
+  "http": "Index, notes and JavaScript return 200; traversal and directory listing return 404",
+  "browser": "Viewer dataset and notes regenerated; display projection parsed by tests. UI logic unchanged; earlier preview is historical.",
+  "limitations": [
+    "Saved footprint crossings are not verified compound gates",
+    "Fallback gaps are unassessed for water, slope, fences and vehicle traversal; approach heights unknown",
+    "Routing anchors and graph distances approximate section-centre geometry; connector errors exported separately",
+    "Baseline connection table is sparse; complete runtime adjacency retains alternatives",
+    "Airport/town bridge-closure acceptance scenario is a synthetic fixture",
+    "Arma runtime loader and Commander integration are not implemented",
+    "High-resolution basemap tiles load online"
+  ],
+  "attachmentVersion": "boundary-inlets-1+nearby-approaches-1",
+  "roadAndLocationDatasetsUnchanged": false,
+  "inlets": 827,
+  "sitesWithInlets": 218,
+  "interpolatedInlets": 3,
+  "dorida": {
+    "locationId": "altis_town_5090",
+    "oldNearbyPoints": 9,
+    "newBoundaryInlets": 8
+  },
+  "generatedAtUTC": "2026-10-14T05:54:34.831818+00:00",
+  "preprocessingVersion": "strategic-access-3",
+  "attachmentDatasetId": "543ffed50c71c277484777eeed33b8d2756766c65929161fdd8731674c54918c",
+  "preprocessingDatasetId": "7e12fcc77ee9b99f0fab2fff23a5b45dc5afc80dcdb1c23c7d44c48d1b94da2a",
+  "runtimeDatasetId": "7afe3f40373ee0cf903fcc240dfe88d04bbd713a1cf8556318df8f8935295238",
+  "runtimeBytes": 7224671,
+  "buildSeconds": 9.9808031,
+  "fallbackCandidates": 1042,
+  "sitesWithFallback": 56,
+  "sitesWithoutAutomaticCandidates": 4,
+  "baselineConnections": 30689,
+  "routingNodes": 4842,
+  "routingEdges": 5088,
+  "previousBoundaryOnlyCoverage": {
+    "sitesWithNearbyRoadsOnly": 47,
+    "sitesWithoutNearbyRoads": 13
+  },
+  "manifestSchemaVersion": 4,
+  "runtimeSchemaVersion": 2,
+  "routingCorridorRelations": 14967,
+  "sourceRoadLocationAttachmentDependenciesUnchanged": false,
+  "splitIntervalsComparedWithAllAuthoringIntervals": true,
+  "allCandidatesRetained": true,
+  "maximumSiteCandidates": 76,
+  "runtimeQueries": {
+    "seed": 42,
+    "queries": 100,
+    "outcomes": {
+      "found": 89,
+      "disconnected-road-networks": 11
+    },
+    "seconds": 0.5758084000000001
+  },
+  "savedRegression": {
+    "routingEdgeId": "d000000",
+    "locationId": "altis_town_267",
+    "insideIntervalsM": [],
+    "relation": "bypasses",
+    "nearestFootprintGapM": 84.98792620625669
+  },
+  "nativeSettlementPortTests": 15,
+  "nativeLocationIntegrityChecks": 1,
+  "nativeSettlementPortTestArtifacts": "C:/Users/spyde/AppData/Local/Temp/ivcs-tasks-4eff8bf1fefe413393e2d4e8ac3a988d",
+  "nativeLocationRebuildRPT": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-840aec6a1e304227bc674003fc07264e\\profile\\arma3server_x64_2026-10-14_00-44-26.rpt",
+  "nativeLocationObjects": 673914,
+  "nativeLocationBuildSeconds": 217.389,
+  "freshTerrainExtractionRequired": false,
+  "locationIndexVersion": 7,
+  "locationVariant": "adaptive-footprints-settlement-ports-v2",
+  "objectiveGraphFilesAudited": 34,
+  "objectiveGraphChangedFiles": [],
+  "sourceRoadDatasetUnchanged": true,
+  "locationAndDependentDatasetsRegenerated": true,
+  "runtimeRoutingCoreBytes": 2265294,
+  "doridaTriangle": {
+    "altis_power_1145 / altis_town_5090": {
+      "connections": 32,
+      "shortestRoadM": 104.2071863050358
+    },
+    "altis_power_1145 / altis_town_5229": {
+      "connections": 8,
+      "shortestRoadM": 944.3839524487439
+    },
+    "altis_town_5090 / altis_town_5229": {
+      "connections": 2,
+      "shortestRoadM": 1273.0953879906103
+    }
+  },
+  "settlementPortAbsorption": {
+    "beforeLocations": 280,
+    "afterLocations": 278,
+    "newlyAbsorbedPorts": [
+      {
+        "portId": "altis_port_38",
+        "settlementId": "altis_town_23",
+        "previousPortObjectCount": 68.0,
+        "portComponent": [
+          "altis_port_38",
+          "port",
+          67.0
+        ]
+      },
+      {
+        "portId": "altis_port_195",
+        "settlementId": "altis_town_3310",
+        "previousPortObjectCount": 51.0,
+        "portComponent": [
+          "altis_port_195",
+          "port",
+          50.0
+        ]
+      },
+      {
+        "portId": "altis_port_291",
+        "settlementId": "altis_town_4303",
+        "previousPortObjectCount": 87.0,
+        "portComponent": [
+          "altis_port_291",
+          "port",
+          82.0
+        ]
+      }
+    ],
+    "standalonePortIds": [
+      "altis_port_0",
+      "altis_port_73",
+      "altis_port_129",
+      "altis_port_169",
+      "altis_port_178",
+      "altis_port_245",
+      "altis_port_252",
+      "altis_port_334",
+      "altis_port_382",
+      "altis_port_387",
+      "altis_port_441",
+      "altis_port_448",
+      "altis_port_453",
+      "altis_port_465",
+      "altis_port_468",
+      "altis_port_470",
+      "altis_port_474",
+      "altis_port_489",
+      "altis_port_501"
+    ],
+    "changedSemanticLocationIds": [
+      "altis_town_23",
+      "altis_town_3310",
+      "altis_town_4303"
+    ],
+    "removedLocationIds": [
+      "altis_port_195",
+      "altis_port_291",
+      "altis_port_38"
+    ],
+    "addedLocationIds": [
+      "altis_base_220"
+    ],
+    "portEvidenceBefore": 503.0,
+    "portEvidenceAfter": 503.0,
+    "previousLocationDatasetId": "77aa516b6082762c390a297c686f04e4bf364e57c42878b080e2a73d59cd0663",
+    "locationDatasetId": "657a9b931894ff4df96f1b93c89d840490e784e5d4adf11d94c293930478ef7a",
+    "settings": "Settlement port count cap removed; existing 100 m link, 250 m whole-child and rectangle margin policies preserved."
+  },
+  "roadDatasetId": "402c7bf5fcd71d0dd5fd8ed0e2a019312fd3ecd1b0286fab069b945efecb71c3",
+  "locationDatasetId": "657a9b931894ff4df96f1b93c89d840490e784e5d4adf11d94c293930478ef7a",
+  "compactCoordinatesMatchAllAuthoringAttachments": true,
+  "schema2HistoricalCorrectedFalseSourceEdgeJoins": 824,
+  "historicalPreview": "output/altis/dorida-routing-preview.jpg"
+}

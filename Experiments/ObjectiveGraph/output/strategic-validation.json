@@ -1,0 +1,19 @@
+{
+  "included": 542,
+  "total": 734,
+  "rejectedExample": {
+    "included": false,
+    "reasons": [
+      "footprint separation",
+      "route distance",
+      "road detour"
+    ],
+    "roadDistanceM": 8665.14985708018,
+    "totalDistanceM": 8665.667103710146,
+    "gapM": 3506.723209096383,
+    "directRoadEndpointDistanceM": 3661.973638640563,
+    "detourRatio": 2.366251292922182
+  },
+  "proximityPreserved": true,
+  "runtimeUnchanged": true
+}

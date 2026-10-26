@@ -4,7 +4,7 @@
     onUpdate returns the next state name, or nil/"" to remain in this state.
     Callbacks receive the instance's context HashMap as _this.
 */
-params ["_name", "_stateDefinitions", "_initialStateName", ["_defaultContext", []], ["_onFinish", {}]];
+params ["_name", "_stateDefinitions", "_initialStateName", ["_defaultContext", []], ["_onFinish", {}], ["_onActivate", {}], ["_onDeactivate", {}]];
 
 private _states = createHashMap;
 {
@@ -33,7 +33,9 @@ private _template = createHashMapFromArray [
     ["context", +_defaults],
     ["states", _states],
     ["initialState", _initialStateName],
-    ["onFinish", _onFinish]
+    ["onFinish", _onFinish],
+    ["onActivate", _onActivate],
+    ["onDeactivate", _onDeactivate]
 ];
 IVCS_EntityTasks_TaskTemplates set [toUpper _name, _template];
 _template

@@ -2,7 +2,8 @@ params ["_entity"];
 
 private _assignedVehicles = _entity get "vehiclesInCommandOf";
 if (_assignedVehicles isequalto []) exitwith {
-    "man";
+    _entity set ["pathfindingStrategy", "man"];
+    "man"
 };
 
 // pick most-strict pathfinding strategy

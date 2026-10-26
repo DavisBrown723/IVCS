@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-12",
+  "suites": [
+    {
+      "suite": "shot-preprocessing",
+      "passed": 40,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e3ee76f5396c4d0c849dd2925cf94baa\\profile\\arma3server_x64_2026-10-12_21-57-58.rpt",
+      "script_errors": false
+    },
+    {
+      "suite": "scheduling",
+      "passed": 12,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-7120ccb95a41415088923222740d679f\\profile\\arma3server_x64_2026-10-12_22-07-21.rpt",
+      "script_errors": false
+    },
+    {
+      "suite": "ammo-sharing",
+      "passed": 45,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f993ecc4916e4b0baaae82dce82e2a2a\\profile\\arma3server_x64_2026-10-12_22-06-48.rpt",
+      "script_errors": false
+    },
+    {
+      "suite": "virtualization",
+      "passed": 96,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a294611c745f4f45979ceba97dc17582\\profile\\arma3server_x64_2026-10-12_21-59-11.rpt",
+      "script_errors": false
+    },
+    {
+      "suite": "combat",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8796f03dc2cd478797716031331bf9fb\\profile\\arma3server_x64_2026-10-12_22-19-58.rpt",
+      "script_errors": false
+    },
+    {
+      "suite": "resumable-sharing",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-5a5062003af749c2a26c267522ad4fe3\\profile\\arma3server_x64_2026-10-12_22-23-52.rpt",
+      "script_errors": false
+    }
+  ],
+  "total_passed": 285,
+  "seeded_calibration_mean_seconds": 170.45,
+  "calibration_outcomes_match_previous_20_seeds": true,
+  "source_sha256": {
+    "VirtualSpace/ammoFunctions.sqf": "7ff89ca0a389234962e3b6df7a52119b21fb0883634c23c84915313e77347f6d",
+    "VirtualSpace/combatFunctions.sqf": "986181eabbb9c7c8c317c87e577a446cc3ee33f6c9cb9e026c08e0e620f705e6",
+    "VirtualSpace/functions/ammo/advanceSearch.sqf": "1278c9deafad902c5171b2216f0fa5681916ba61c83dae5837729bb5d0654117",
+    "VirtualSpace/functions/ammo/approach.sqf": "2b48348be5a47292e6eb63057db14e4156637d0bcfc4d2007c34410a228e6f5c",
+    "VirtualSpace/functions/ammo/cancelGroup.sqf": "abef4bc30d93c5e0a6b8a73ff8015c508f38623ce6ae73c74aeb7d09bb448830",
+    "VirtualSpace/functions/ammo/createRequest.sqf": "6303dbfa0b072c3ebaa4de3c69cec6aac366367922613b05836296d8d397da14",
+    "VirtualSpace/functions/ammo/createSettings.sqf": "27e75091479cd582a7b3d61f883d1ace1444d88c1e06d54aaaf8f434f7e348a2",
+    "VirtualSpace/functions/ammo/getNeededWeapons.sqf": "860946dce63bf612a4fbd2c23f0a7d1fcd1035f7d908bb6f4a511332d8bb9b85",
+    "VirtualSpace/functions/ammo/getWeaponProfile.sqf": "c36901983a68d8a57b52aa9a0005aa4185deb9b95d4c5b870bfc4f3c02fc59bc",
+    "VirtualSpace/functions/ammo/isEligible.sqf": "1e37233a05ddd6cfdf1bc91b16172d7c766c7a1a25ab61ca1cdcaa0334aebde1",
+    "VirtualSpace/functions/ammo/onFrame.sqf": "bd9cb3ccc3cb1d9048faaca2d84d00d0e53d9352d085bc5cf7e8e2465a280b26",
+    "VirtualSpace/functions/ammo/releaseRequest.sqf": "eb17698fb1680df322647ba6cf3af5a71474a6ace49b8bbdfff7f80cf2c90ab9",
+    "VirtualSpace/functions/ammo/reloadRequest.sqf": "7b306323262015999d01c8f81f2dbc85bd235e182c00a0cb0ef65d771228ed06",
+    "VirtualSpace/functions/ammo/sameToken.sqf": "aa74d76b40d0b983f4ed96db3ef5414dd92f6ccb5feb86f493cbbe68b92f5629",
+    "VirtualSpace/functions/ammo/searchOnFrame.sqf": "d70f899e49ae6a9d97c5a3e28cdda15541cc29800bcfe9e5fc7b92166c91eb16",
+    "VirtualSpace/functions/ammo/snapshot.sqf": "db8a36491aeeaa1028d82fb7a9e6812cc5fcaed664ea39d9ae3112783fd39652",
+    "VirtualSpace/functions/ammo/surplus.sqf": "84f0dea1d66a654d4bc00e6614e39b3c63228ef0f796b6e337b1865616c5ed86",
+    "VirtualSpace/functions/ammo/transfer.sqf": "83383ab886f94c7bebbdaea31e91102e3b1b3280701a8c148fe22698a7e03777",
+    "VirtualSpace/functions/ammo/updateGroup.sqf": "5a993f4d8cbfcad1c8105f85ced33002b648eebc7f9a7433603fdb00a47a184d",
+    "VirtualSpace/functions/ammo/updateRequests.sqf": "b6b1fc0d69eb7bedb99de5db577fb76394c0ab506d387486ff9dff953d4e24e9",
+    "VirtualSpace/functions/combat/accuracy.sqf": "f428a016937c1400d576b5360abecab23c45a664b4ccd1b34b8a7a9704e71255",
+    "VirtualSpace/functions/combat/canSee.sqf": "e135a8a2254782e8e921c9405e89225b005a11aaf2966cd0e7ae6e6e81eeeac0",
+    "VirtualSpace/functions/combat/createController.sqf": "58a775c9b2de2a008d8bde832bcdbcfc7ae2a1d51b72ffcd927f191d3b36bec4",
+    "VirtualSpace/functions/combat/damageUnit.sqf": "5a81882f46586ea23de16829ca6be7e479557fdf0d70d7ad189783f0f80d82b4",
+    "VirtualSpace/functions/combat/findTarget.sqf": "292b7dc6efc90508399e9dad3af8b4c742018e4279991c237eb2d867c61e7f4a",
+    "VirtualSpace/functions/combat/finish.sqf": "2748eda1b4bc72c7d8123317abfe3eb55a9ae5f9c53112cab99baa83d8eac9c3",
+    "VirtualSpace/functions/combat/getAmmoProfile.sqf": "01d2103481826f821505277725b43026b692ce2c53b36ee4662a3a01834d4ed0",
+    "VirtualSpace/functions/combat/getHitpointLayout.sqf": "f98fc9a624873604ee0ed0fe4b4f73e78716696cd2bace64e0d512735d87cf04",
+    "VirtualSpace/functions/combat/getImpactSpeed.sqf": "b6f6ccf9d4b7fc1e1f8a51fd9d5b77109a2fa12aa33c72a4f255fc7749e922a0",
+    "VirtualSpace/functions/combat/getProtection.sqf": "dc79d8af736c6da8849760d012ddb9b1a36618e5b0a4aabbd1b431c703a6394f",
+    "VirtualSpace/functions/combat/getShot.sqf": "0786e1910760d97308e978cd4b9da02697feeda3582b53ee40712e901b3bd54d",
+    "VirtualSpace/functions/combat/getShotFactors.sqf": "e19e45cd0eb44194487289e4ea60f0de1009d5a5dd7a4bc0e4fd77f09287fafb",
+    "VirtualSpace/functions/combat/getSpawnPartners.sqf": "10c167c8e9b93e0713a75d966bd3320748f10b58a64d4115bd17f589f2a34c77",
+    "VirtualSpace/functions/combat/getUnitProfile.sqf": "c204b7907168aafe14a7546c9f5dda0b2470658cbf4b22fbb584ebfe0509a9a0",
+    "VirtualSpace/functions/combat/getWeaponProfile.sqf": "62c4aa0f699be652032be1f8eec32eaf7f966ed689d3f6012e9684b43671fbc5",
+    "VirtualSpace/functions/combat/isInfantry.sqf": "ccf40d091355370239bdaaea8bd7efd2dbeb86ef7c2b0165193e3a6002cb90e5",
+    "VirtualSpace/functions/combat/onDespawn.sqf": "1a965896464f30ba6d81088a2999abc1601c562d3b2daefcdeb0b3916729612b",
+    "VirtualSpace/functions/combat/onFrame.sqf": "b5cb2e2bcc7cc11bd4d1f78075437befff7513660c428208b560e34de28777c2",
+    "VirtualSpace/functions/combat/onSpawn.sqf": "684e6f5cf9346dd57db4af2ccf228e4d659de3ec959bd930c881a8ce0014ac1a",
+    "VirtualSpace/functions/combat/random.sqf": "42171a393a2b84a8dcf4f51e57e37b028cffa9d0433172d9d9d6de3565f6d0ff",
+    "VirtualSpace/functions/combat/start.sqf": "0170721aeff55dfb96aae3d824dd5ba7c157f63cce28a2fdbedf17909061f5b1",
+    "VirtualSpace/functions/combat/step.sqf": "676e9dd6aba4029473c2d2a1b703c4ad62dd9a05756aeb2589a3b7d95709ebce",
+    "VirtualSpace/functions/combat/update.sqf": "3af0bdbc754a33f39ac2bef2729accc15b132db7654790b442f181d0aff2e754",
+    "VirtualSpace/functions/entities/group/createEntityUnit.sqf": "35f0ec4e3c94462a1342ab4addf417ba3d0fff9efec2d2551d8555ff2663aeaa",
+    "VirtualSpace/functions/entities/group/createGroupEntity.sqf": "b9ec47a2f6c872a4b6c3fa7ba2ad6f1bb52ac7f222a38eb0e7c1b049562d6081",
+    "VirtualSpace/functions/entities/group/despawn.sqf": "66ba3f7e4c5bd69866ce3a9bdc0bba548d95e7d46bd72db6b38973fc73f38b44"
+  },
+  "notes": [
+    "Suites ran sequentially; virtualization and shot tests predate only the final queue/waiting/virtual-eligibility changes, whose targeted regressions and native sharing passed subsequently.",
+    "One isolated native reload failure was followed by reload-phase and collection ordering fixes and passing live reruns.",
+    "The experimental 2 ms frame budget was rejected for lag and insufficient forced transfers at 80 groups."
+  ]
+}

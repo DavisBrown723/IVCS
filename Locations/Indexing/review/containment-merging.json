@@ -1,0 +1,1090 @@
+{
+  "beforeLocations": 268,
+  "afterLocations": 265,
+  "beforeTypes": {
+    "town": 109,
+    "base": 42,
+    "radiotower": 14,
+    "power": 52,
+    "port": 18,
+    "fuel": 8,
+    "factory": 24,
+    "hospital": 1
+  },
+  "afterTypes": {
+    "town": 109,
+    "base": 42,
+    "radiotower": 13,
+    "power": 51,
+    "port": 18,
+    "fuel": 7,
+    "factory": 24,
+    "hospital": 1
+  },
+  "changedSemanticLocationIds": [
+    "altis_airfield_169",
+    "altis_factory_196"
+  ],
+  "removedLocationIds": [
+    "altis_fuel_52",
+    "altis_power_194",
+    "altis_radiotower_22"
+  ],
+  "addedLocationIds": [],
+  "preservedPreviousPrimaryComponents": 268,
+  "changes": [
+    {
+      "previousId": "altis_radiotower_22",
+      "previousType": "radiotower",
+      "previousObjects": 2.0,
+      "currentId": "altis_airfield_169",
+      "currentType": "base",
+      "currentObjects": 1610.0,
+      "area": "Terminal",
+      "status": "absorbed",
+      "previousRoles": [
+        "radiotower"
+      ],
+      "currentRoles": [
+        "air",
+        "base",
+        "factory",
+        "fuel",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "position": [
+        14710.16699219,
+        16462.89257812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_radiotower_22": "altis_airfield_169"
+      }
+    },
+    {
+      "previousId": "altis_power_194",
+      "previousType": "power",
+      "previousObjects": 4.0,
+      "currentId": "altis_factory_196",
+      "currentType": "factory",
+      "currentObjects": 36.0,
+      "area": "Agios Dionysios",
+      "status": "absorbed",
+      "previousRoles": [
+        "power"
+      ],
+      "currentRoles": [
+        "factory",
+        "power",
+        "town"
+      ],
+      "position": [
+        9574.70996094,
+        15148.47363281,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_power_194": "altis_factory_196"
+      }
+    },
+    {
+      "previousId": "altis_airfield_169",
+      "previousType": "base",
+      "previousObjects": 1602.0,
+      "currentId": "altis_airfield_169",
+      "currentType": "base",
+      "currentObjects": 1610.0,
+      "area": "Terminal",
+      "status": "changed",
+      "previousRoles": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "currentRoles": [
+        "air",
+        "base",
+        "factory",
+        "fuel",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "position": [
+        14710.16699219,
+        16462.89257812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_airfield_169": "altis_airfield_169",
+        "altis_base_129": "altis_airfield_169",
+        "altis_base_90": "altis_airfield_169",
+        "altis_factory_306": "altis_airfield_169",
+        "altis_factory_350": "altis_airfield_169",
+        "altis_power_358": "altis_airfield_169",
+        "altis_power_359": "altis_airfield_169",
+        "altis_power_366": "altis_airfield_169",
+        "altis_power_369": "altis_airfield_169",
+        "altis_power_372": "altis_airfield_169",
+        "altis_power_373": "altis_airfield_169",
+        "altis_power_374": "altis_airfield_169",
+        "altis_radiotower_24": "altis_airfield_169"
+      }
+    },
+    {
+      "previousId": "altis_fuel_52",
+      "previousType": "fuel",
+      "previousObjects": 5.0,
+      "currentId": "altis_airfield_169",
+      "currentType": "base",
+      "currentObjects": 1610.0,
+      "area": "airbase",
+      "status": "absorbed",
+      "previousRoles": [
+        "fuel"
+      ],
+      "currentRoles": [
+        "air",
+        "base",
+        "factory",
+        "fuel",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "position": [
+        14710.16699219,
+        16462.89257812,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_fuel_52": "altis_airfield_169"
+      }
+    },
+    {
+      "previousId": "altis_factory_196",
+      "previousType": "factory",
+      "previousObjects": 32.0,
+      "currentId": "altis_factory_196",
+      "currentType": "factory",
+      "currentObjects": 36.0,
+      "area": "Agios Dionysios",
+      "status": "changed",
+      "previousRoles": [
+        "factory",
+        "power",
+        "town"
+      ],
+      "currentRoles": [
+        "factory",
+        "power",
+        "town"
+      ],
+      "position": [
+        9574.70996094,
+        15148.47363281,
+        0.0
+      ],
+      "sourceComponentOwners": {
+        "altis_factory_196": "altis_factory_196",
+        "altis_power_196": "altis_factory_196",
+        "altis_town_2595": "altis_factory_196"
+      }
+    }
+  ],
+  "newSites": [],
+  "airport": {
+    "before": {
+      "components": [
+        [
+          "altis_airfield_169",
+          "airfield",
+          1547.0
+        ],
+        [
+          "altis_base_129",
+          "base",
+          2.0
+        ],
+        [
+          "altis_base_90",
+          "base",
+          22.0
+        ],
+        [
+          "altis_factory_306",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_factory_350",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_power_358",
+          "power",
+          6.0
+        ],
+        [
+          "altis_power_359",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_366",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_369",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_372",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_373",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_374",
+          "power",
+          13.0
+        ],
+        [
+          "altis_radiotower_24",
+          "radiotower",
+          1.0
+        ]
+      ],
+      "footprint": [
+        "rectangle",
+        [
+          14647.68945312,
+          16551.5,
+          0.0
+        ],
+        [
+          385.31866455,
+          1065.75463867
+        ],
+        43.11985016
+      ],
+      "id": "altis_airfield_169",
+      "indexVariant": "spatial-compounds-v3",
+      "indexVersion": 8.0,
+      "militaryBuildingCounts": [
+        [
+          "barracks",
+          12.0
+        ],
+        [
+          "fortification",
+          2.0
+        ]
+      ],
+      "militaryBuildings": [
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14126.5,
+            16249.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14130.70019531,
+            16261.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14136.09960938,
+            16274.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14137.40039062,
+            16251.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.40039062,
+            16262.70019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.59960938,
+            16286.40039062,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14157.70019531,
+            16305.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14179.20019531,
+            16325.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14183.90039062,
+            16226.29980469,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14190.59960938,
+            16240.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14198.5,
+            16256.5,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14199.79980469,
+            16397.40039062,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14485.79980469,
+            16331.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14906.79980469,
+            17159.40039062,
+            0.0
+          ]
+        ]
+      ],
+      "models": [
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_curve_f.p3d",
+          31.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_square_f.p3d",
+          497.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_triangle_f.p3d",
+          12.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_green_f.p3d",
+          262.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_red_f.p3d",
+          84.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_yellow_f.p3d",
+          50.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight.p3d",
+          156.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight_3_f.p3d",
+          24.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight.p3d",
+          133.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight_blue_f.p3d",
+          267.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_2.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_3.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_4.p3d",
+          4.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_center_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_left_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_right_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_tower_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\hangar_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smallfactory_f.p3d",
+          5.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smalltank_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_transformer_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_big_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_small_f.p3d",
+          7.0
+        ],
+        [
+          "a3\\structures_f\\ind\\solarpowerplant\\spp_transformer_f.p3d",
+          16.0
+        ],
+        [
+          "a3\\structures_f\\ind\\transmitter_tower\\communication_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          10.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_hq_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\offices\\miloffices_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\radar\\radar_small_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\tenthangar\\tenthangar_v1_f.p3d",
+          7.0
+        ]
+      ],
+      "objectCount": 1602.0,
+      "position": [
+        14711.72851562,
+        16462.00390625,
+        0.0
+      ],
+      "reviewed": false,
+      "size": 1193.95092773,
+      "source": "terrain-index",
+      "type": "base",
+      "typeCounts": [
+        [
+          "air",
+          1547.0
+        ],
+        [
+          "base",
+          1564.0
+        ],
+        [
+          "factory",
+          10.0
+        ],
+        [
+          "power",
+          26.0
+        ],
+        [
+          "radar",
+          2.0
+        ],
+        [
+          "radiotower",
+          1.0
+        ]
+      ],
+      "types": [
+        "air",
+        "base",
+        "factory",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "world": "Altis"
+    },
+    "after": {
+      "components": [
+        [
+          "altis_airfield_169",
+          "airfield",
+          1547.0
+        ],
+        [
+          "altis_base_129",
+          "base",
+          2.0
+        ],
+        [
+          "altis_base_90",
+          "base",
+          22.0
+        ],
+        [
+          "altis_factory_306",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_factory_350",
+          "factory",
+          5.0
+        ],
+        [
+          "altis_fuel_52",
+          "fuel",
+          5.0
+        ],
+        [
+          "altis_power_358",
+          "power",
+          6.0
+        ],
+        [
+          "altis_power_359",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_366",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_369",
+          "power",
+          2.0
+        ],
+        [
+          "altis_power_372",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_373",
+          "power",
+          1.0
+        ],
+        [
+          "altis_power_374",
+          "power",
+          13.0
+        ],
+        [
+          "altis_power_746",
+          "power",
+          1.0
+        ],
+        [
+          "altis_radiotower_22",
+          "radiotower",
+          2.0
+        ],
+        [
+          "altis_radiotower_24",
+          "radiotower",
+          1.0
+        ]
+      ],
+      "footprint": [
+        "rectangle",
+        [
+          14645.12304688,
+          16554.5,
+          0.0
+        ],
+        [
+          405.88555908,
+          1048.30126953
+        ],
+        47.56111526
+      ],
+      "id": "altis_airfield_169",
+      "indexVariant": "containment-cores-v4",
+      "indexVersion": 9.0,
+      "militaryBuildingCounts": [
+        [
+          "barracks",
+          12.0
+        ],
+        [
+          "fortification",
+          2.0
+        ]
+      ],
+      "militaryBuildings": [
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14126.5,
+            16249.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14130.70019531,
+            16261.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14136.09960938,
+            16274.59960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14137.40039062,
+            16251.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.40039062,
+            16262.70019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14143.59960938,
+            16286.40039062,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14157.70019531,
+            16305.0,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14179.20019531,
+            16325.09960938,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14183.90039062,
+            16226.29980469,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14190.59960938,
+            16240.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_cargo_house_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          [
+            14198.5,
+            16256.5,
+            0.0
+          ]
+        ],
+        [
+          "fortification",
+          "land_cargo_patrol_v1_f",
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          [
+            14199.79980469,
+            16397.40039062,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14485.79980469,
+            16331.20019531,
+            0.0
+          ]
+        ],
+        [
+          "barracks",
+          "land_i_barracks_v2_f",
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          [
+            14906.79980469,
+            17159.40039062,
+            0.0
+          ]
+        ]
+      ],
+      "models": [
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_curve_f.p3d",
+          31.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_square_f.p3d",
+          497.0
+        ],
+        [
+          "a3\\roads_f\\runway\\invisibleroadway_triangle_f.p3d",
+          12.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_green_f.p3d",
+          262.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_red_f.p3d",
+          84.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\flush_light_yellow_f.p3d",
+          50.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight.p3d",
+          156.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\naviglight_3_f.p3d",
+          24.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight.p3d",
+          133.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_edgelight_blue_f.p3d",
+          267.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_2.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_3.p3d",
+          4.0
+        ],
+        [
+          "a3\\roads_f\\runway\\runwaylights\\runway_papi_4.p3d",
+          4.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_center_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_left_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_right_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\airport_tower_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\airport\\hangar_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smallfactory_f.p3d",
+          5.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_smalltank_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\dieselpowerplant\\dp_transformer_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\fuelstation_small\\fs_feed_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\fuelstation_small\\fs_price_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\ind\\fuelstation_small\\fs_roof_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\fuelstation_small\\fs_sign_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_big_f.p3d",
+          3.0
+        ],
+        [
+          "a3\\structures_f\\ind\\shed\\shed_small_f.p3d",
+          7.0
+        ],
+        [
+          "a3\\structures_f\\ind\\solarpowerplant\\spp_transformer_f.p3d",
+          17.0
+        ],
+        [
+          "a3\\structures_f\\ind\\transmitter_tower\\communication_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\transmitter_tower\\ttowersmall_1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\ind\\transmitter_tower\\ttowersmall_2_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\barracks\\i_barracks_v2_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_house_v1_f.p3d",
+          10.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_hq_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\cargo\\cargo_patrol_v1_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\offices\\miloffices_v1_f.p3d",
+          1.0
+        ],
+        [
+          "a3\\structures_f\\mil\\radar\\radar_small_f.p3d",
+          2.0
+        ],
+        [
+          "a3\\structures_f\\mil\\tenthangar\\tenthangar_v1_f.p3d",
+          7.0
+        ]
+      ],
+      "objectCount": 1610.0,
+      "position": [
+        14710.16699219,
+        16462.89257812,
+        0.0
+      ],
+      "reviewed": false,
+      "size": 1181.42944336,
+      "source": "terrain-index",
+      "type": "base",
+      "typeCounts": [
+        [
+          "air",
+          1547.0
+        ],
+        [
+          "base",
+          1564.0
+        ],
+        [
+          "factory",
+          10.0
+        ],
+        [
+          "fuel",
+          5.0
+        ],
+        [
+          "power",
+          27.0
+        ],
+        [
+          "radar",
+          2.0
+        ],
+        [
+          "radiotower",
+          3.0
+        ]
+      ],
+      "types": [
+        "air",
+        "base",
+        "factory",
+        "fuel",
+        "power",
+        "radar",
+        "radiotower"
+      ],
+      "world": "Altis"
+    },
+    "formerBaseOwners": {
+      "altis_base_90": "altis_airfield_169",
+      "altis_base_132": "altis_base_132"
+    },
+    "northernComponentOwners": {
+      "altis_base_132": "altis_base_132",
+      "altis_fuel_64": "altis_base_132",
+      "altis_power_551": "altis_base_132",
+      "altis_radiotower_27": "altis_base_132"
+    }
+  },
+  "locationDatasetId": "ab6c276aa442aa1ee85738ac9a40612067bb271f4697cef04a0fb7873a87aa86"
+}

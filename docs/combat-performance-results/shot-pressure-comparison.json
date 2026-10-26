@@ -1,0 +1,107 @@
+{
+  "method": "ABBA paired seed mod-free 20-group forced ammo shortages, unchanged budgets, 10 seconds per window",
+  "versions": {
+    "before": {
+      "trials": [
+        1,
+        4
+      ],
+      "frames": 558,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 558,
+          "total_ms": 522.0166560000007,
+          "mean_ms": 0.9355137204301075,
+          "p50_ms": 0.0,
+          "p90_ms": 3.00026,
+          "p95_ms": 3.99971,
+          "p99_ms": 4.99916,
+          "max_ms": 6.99997,
+          "over_1ms": 157,
+          "over_5ms": 4,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 558,
+          "total_ms": 399.0193139999997,
+          "mean_ms": 0.7150883763440861,
+          "p50_ms": 0.0,
+          "p90_ms": 3.00026,
+          "p95_ms": 3.00217,
+          "p99_ms": 4.9980713,
+          "max_ms": 6.99997,
+          "over_1ms": 130,
+          "over_5ms": 3,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 558,
+          "total_ms": 88.98358699999986,
+          "mean_ms": 0.15946879390681004,
+          "p50_ms": 0.0,
+          "p90_ms": 0.999451,
+          "p95_ms": 0.999451,
+          "p99_ms": 1.00136,
+          "max_ms": 1.00708,
+          "over_1ms": 12,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      }
+    },
+    "after": {
+      "trials": [
+        2,
+        3
+      ],
+      "frames": 558,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 558,
+          "total_ms": 527.0158550000004,
+          "mean_ms": 0.944472858422939,
+          "p50_ms": 0.0,
+          "p90_ms": 3.00217,
+          "p95_ms": 3.9978,
+          "p99_ms": 5.00107,
+          "max_ms": 6.00052,
+          "over_1ms": 154,
+          "over_5ms": 9,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_ms": {
+          "count": 558,
+          "total_ms": 377.0295270000002,
+          "mean_ms": 0.6756801559139785,
+          "p50_ms": 0.0,
+          "p90_ms": 3.00026,
+          "p95_ms": 3.9978,
+          "p99_ms": 5.00107,
+          "max_ms": 6.00052,
+          "over_1ms": 120,
+          "over_5ms": 7,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 558,
+          "total_ms": 119.9837499999998,
+          "mean_ms": 0.21502464157706094,
+          "p50_ms": 0.0,
+          "p90_ms": 0.999451,
+          "p95_ms": 0.999451,
+          "p99_ms": 1.9989,
+          "max_ms": 2.00272,
+          "over_1ms": 20,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "functions": [
+    {
+      "function": "IVCS_Combat_updateHelicopter",
+      "path": "VirtualSpace/functions/combat/updateHelicopter.sqf",
+      "baseline_sha256": "f6713ffad6e103785b026d27c5e5b8a8900e047b189929f6ee0d34c2d4c2f5ed",
+      "optimized_sha256": "0f1724877474f9d85a4d9be97388731d9ac265ce9fbf26848df15d726e2d2ed9"
+    },
+    {
+      "function": "IVCS_Combat_getHelicopterPolicy",
+      "path": "VirtualSpace/functions/combat/getHelicopterPolicy.sqf",
+      "baseline_sha256": "3ab2d4ea46fade05c0b9b07c4d3b04190c484c783ff8c97c5c671b2ecdc7f311",
+      "optimized_sha256": "4320f586dfc8323071718074d37b6f023047ac191811182b7b923accb33caed0"
+    },
+    {
+      "function": "IVCS_Combat_getHelicopterAttackArea",
+      "path": "VirtualSpace/functions/combat/getHelicopterAttackArea.sqf",
+      "baseline_sha256": "b77456fa8443b71edec33e9495861763632f79a880a232fffb7c29ceec53c271",
+      "optimized_sha256": "f14ccaf64a1b6543494224ba3baae23365dd4f5971b82deae60e8378416fafcf"
+    }
+  ],
+  "groups": 20,
+  "engagements": 5,
+  "units": 85,
+  "entities": 30,
+  "acc_time": 1,
+  "window_seconds": 35,
+  "warmup_seconds": 2,
+  "frame_budget_ms": 3,
+  "engagements_per_frame": 8,
+  "entity_visits_per_frame": 10,
+  "ammo_search_budget_ms": 1,
+  "step_seconds": 1,
+  "scan_interval_seconds": 1,
+  "correctness_checks_passed": 180,
+  "diagnostic_workload_checks_passed": 18,
+  "trials": [
+    {
+      "trial": 1,
+      "version": "before",
+      "seed_pair": 1
+    },
+    {
+      "trial": 2,
+      "version": "after",
+      "seed_pair": 1
+    },
+    {
+      "trial": 3,
+      "version": "after",
+      "seed_pair": 2
+    },
+    {
+      "trial": 4,
+      "version": "before",
+      "seed_pair": 2
+    }
+  ],
+  "unprofiled_measured_frames": 3834,
+  "precise_measured_frames": 3854,
+  "performance_validity_checks_passed": 72,
+  "excluded_precise_windows": [],
+  "whole_ivcs_p99_reduction_percent": 1.0894194289091441,
+  "entity_update_p99_reduction_percent": 3.2236503541807737,
+  "helicopter_update_mean_reduction_percent": 15.902748727986216,
+  "helicopter_update_p99_reduction_percent": 6.499132451150491,
+  "sources_verified_unchanged_after_measurement": true,
+  "note": "Whole-frame p99 changes are small and mixed across seed pairs; unprofiled results do not establish a whole-frame p99 improvement."
+}

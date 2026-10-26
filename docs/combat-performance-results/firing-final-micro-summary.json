@@ -1,0 +1,29 @@
+{
+  "method": "Eight alternating trials/version, 100 ready 16-shooter exchanges/sample; zero accuracy isolates firing work.",
+  "samples_ms": {
+    "before": [
+      0.549984,
+      0.549984,
+      0.549984,
+      0.559998,
+      0.550003,
+      0.539989,
+      0.549984,
+      0.549984
+    ],
+    "after": [
+      0.489998,
+      0.480003,
+      0.489998,
+      0.489998,
+      0.490017,
+      0.480003,
+      0.480003,
+      0.489998
+    ]
+  },
+  "mean_ms": {
+    "before": 0.54998875,
+    "after": 0.48625225
+  }
+}

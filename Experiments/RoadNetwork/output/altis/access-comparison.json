@@ -1,0 +1,1966 @@
+{
+  "previousMethod": "nearby distance/sector samples",
+  "currentMethod": "boundary-inlets-1",
+  "sites": [
+    {
+      "locationId": "altis_airfield_0",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_airfield_169",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_airfield_1716",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_airfield_1817",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_airfield_57",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_114",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_132",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_164",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_215",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_225",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_227",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_229",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_23",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_26",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_287",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_291",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_296",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 48.656421591633844
+    },
+    {
+      "locationId": "altis_base_30",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_302",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_base_304",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_305",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 23.077003541866933
+    },
+    {
+      "locationId": "altis_base_313",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_34",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_342",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 20.665299391643423
+    },
+    {
+      "locationId": "altis_base_344",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 86.6845640799079
+    },
+    {
+      "locationId": "altis_base_348",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_361",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_38",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_41",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_44",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_base_48",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_5",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_55",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 45.67779267225504
+    },
+    {
+      "locationId": "altis_base_59",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 120.61272446009741
+    },
+    {
+      "locationId": "altis_base_62",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_67",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 118.89851684623876
+    },
+    {
+      "locationId": "altis_base_79",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 105.32284406471562
+    },
+    {
+      "locationId": "altis_base_8",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_81",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_83",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_90",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_base_99",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_1",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 4.7874240801096795
+    },
+    {
+      "locationId": "altis_factory_123",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_134",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_138",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_179",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_factory_183",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_190",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_196",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_228",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_26",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_265",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_266",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_313",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_355",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_41",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_428",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_43",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_435",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_452",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_470",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_477",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_485",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_506",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_54",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_590",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_626",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_7",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_72",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_factory_73",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_105",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_18",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_23",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_39",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_44",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_52",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_68",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_76",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_fuel_83",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_hospital_0",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_0",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_129",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 32.328007857278145
+    },
+    {
+      "locationId": "altis_port_169",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_178",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_195",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_245",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 1.8288024561466396
+    },
+    {
+      "locationId": "altis_port_252",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_291",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 10,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_334",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_38",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 10,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_382",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 74.4484073573601
+    },
+    {
+      "locationId": "altis_port_387",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_441",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_448",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 65.84476442595451
+    },
+    {
+      "locationId": "altis_port_453",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_465",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 57.29911478306661
+    },
+    {
+      "locationId": "altis_port_468",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 22.181523597605253
+    },
+    {
+      "locationId": "altis_port_470",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_474",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_489",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_port_501",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 91.85967135618807
+    },
+    {
+      "locationId": "altis_port_73",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_0",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_102",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_106",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 40.097146965373874
+    },
+    {
+      "locationId": "altis_power_1076",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1079",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 106.76029366366988
+    },
+    {
+      "locationId": "altis_power_1116",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1119",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1124",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1137",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1140",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 139.11242429594355
+    },
+    {
+      "locationId": "altis_power_1145",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 36.204285164626015
+    },
+    {
+      "locationId": "altis_power_1148",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_1153",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1155",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1189",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_125",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_127",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 129.45504841938794
+    },
+    {
+      "locationId": "altis_power_131",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_1331",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_134",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 146.17172229238452
+    },
+    {
+      "locationId": "altis_power_136",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1389",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 57.72328299021059
+    },
+    {
+      "locationId": "altis_power_1394",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1402",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_1405",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 27.69569379073371
+    },
+    {
+      "locationId": "altis_power_1413",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1437",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1541",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1545",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_1550",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 69.34880599103485
+    },
+    {
+      "locationId": "altis_power_187",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_194",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_200",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_207",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_213",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_220",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 55.02568057197331
+    },
+    {
+      "locationId": "altis_power_307",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_33",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 35.7970217174868
+    },
+    {
+      "locationId": "altis_power_332",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 74.83964059665178
+    },
+    {
+      "locationId": "altis_power_339",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_347",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_35",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 113.84848619215204
+    },
+    {
+      "locationId": "altis_power_353",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 46.7646630610427
+    },
+    {
+      "locationId": "altis_power_38",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_386",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_419",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 5.170399750026115
+    },
+    {
+      "locationId": "altis_power_45",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_47",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_power_50",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_52",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 5.748224613515881
+    },
+    {
+      "locationId": "altis_power_61",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 17.65180605075142
+    },
+    {
+      "locationId": "altis_power_79",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 17.113692074327503
+    },
+    {
+      "locationId": "altis_power_83",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_915",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_power_93",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_radiotower_0",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 88.21027132026094
+    },
+    {
+      "locationId": "altis_radiotower_11",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 36.809193114148826
+    },
+    {
+      "locationId": "altis_radiotower_12",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_radiotower_17",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_radiotower_18",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_radiotower_22",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_radiotower_25",
+      "oldNearbyPoints": 1,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 149.61136249066683
+    },
+    {
+      "locationId": "altis_radiotower_36",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 116.3374765875826
+    },
+    {
+      "locationId": "altis_radiotower_37",
+      "oldNearbyPoints": 2,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_radiotower_38",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 5.622508748680665
+    },
+    {
+      "locationId": "altis_radiotower_40",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_radiotower_42",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 33.14192515547105
+    },
+    {
+      "locationId": "altis_radiotower_45",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 52.829356718352344
+    },
+    {
+      "locationId": "altis_radiotower_46",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1016",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1052",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1068",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1152",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1176",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1274",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1309",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1344",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1367",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1394",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1567",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1740",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1818",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1832",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 10,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1887",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_1964",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2040",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2067",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2157",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2216",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_223",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 12,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_23",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2432",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2500",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_255",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_259",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2630",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_267",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2692",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2721",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2760",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2809",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2836",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2853",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2974",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_2980",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3059",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3149",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3197",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3202",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3302",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3310",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3550",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3559",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3657",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 54.226914189075785
+    },
+    {
+      "locationId": "altis_town_3707",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 9,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_3905",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 9,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4012",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4080",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 108.80724100154667
+    },
+    {
+      "locationId": "altis_town_4117",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 126.58331265185548
+    },
+    {
+      "locationId": "altis_town_4156",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4194",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4303",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4321",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 6,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4661",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4686",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4705",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4730",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 9,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4909",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4913",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 9,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_4994",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 110.25725023036654
+    },
+    {
+      "locationId": "altis_town_50",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5068",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5090",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5204",
+      "oldNearbyPoints": 0,
+      "newBoundaryInlets": 0,
+      "status": "no-nearby-roads",
+      "nearestRoadGapM": null
+    },
+    {
+      "locationId": "altis_town_5229",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5265",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5318",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_534",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5382",
+      "oldNearbyPoints": 11,
+      "newBoundaryInlets": 9,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5427",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 66.16097569166797
+    },
+    {
+      "locationId": "altis_town_5457",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5465",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5477",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5612",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5767",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 12,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5826",
+      "oldNearbyPoints": 3,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5872",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5884",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 0,
+      "status": "nearby-roads-only",
+      "nearestRoadGapM": 100.77214691590362
+    },
+    {
+      "locationId": "altis_town_5907",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 1,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5932",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_5973",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6062",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6064",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6065",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6071",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6123",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6170",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6211",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6213",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6265",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6283",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6297",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6319",
+      "oldNearbyPoints": 5,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6339",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 11,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_644",
+      "oldNearbyPoints": 8,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6543",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6565",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6578",
+      "oldNearbyPoints": 12,
+      "newBoundaryInlets": 13,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_66",
+      "oldNearbyPoints": 4,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6603",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 5,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6607",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_6714",
+      "oldNearbyPoints": 7,
+      "newBoundaryInlets": 4,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_685",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 8,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_686",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 3,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_889",
+      "oldNearbyPoints": 9,
+      "newBoundaryInlets": 7,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_921",
+      "oldNearbyPoints": 6,
+      "newBoundaryInlets": 2,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    },
+    {
+      "locationId": "altis_town_929",
+      "oldNearbyPoints": 10,
+      "newBoundaryInlets": 10,
+      "status": "boundary-inlets",
+      "nearestRoadGapM": 0.0
+    }
+  ]
+}

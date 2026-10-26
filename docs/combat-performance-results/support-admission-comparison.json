@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-25",
+  "function": "IVCS_Combat_findTarget",
+  "baseline_sha256": "0c1efde25fa3b62afdb727aee97026019bcdab67a2b319fd471b8ef46754b530",
+  "optimized_sha256": "0ee039407c38e88800d570d207f02d2b7a66b46b7a6228387a0b5eea5337a60d",
+  "groups": 20,
+  "engagements": 5,
+  "units": 85,
+  "entities": 30,
+  "acc_time": 1,
+  "window_seconds": 35,
+  "warmup_seconds": 2,
+  "frame_budget_ms": 3,
+  "engagements_per_frame": 8,
+  "entity_visits_per_frame": 10,
+  "ammo_search_budget_ms": 1,
+  "step_seconds": 1,
+  "scan_interval_seconds": 1,
+  "correctness_checks_passed": 191,
+  "trials": [
+    {
+      "trial": 1,
+      "version": "before",
+      "seed_pair": 1
+    },
+    {
+      "trial": 2,
+      "version": "after",
+      "seed_pair": 1
+    },
+    {
+      "trial": 3,
+      "version": "after",
+      "seed_pair": 2
+    },
+    {
+      "trial": 4,
+      "version": "before",
+      "seed_pair": 2
+    }
+  ],
+  "unprofiled_measured_frames": 3843,
+  "precise_measured_frames": 3849,
+  "performance_validity_checks_passed": 72,
+  "precise_trial_count_per_version": 2,
+  "excluded_precise_windows": [],
+  "rejected_admission_calls_before": 5120,
+  "rejected_admission_calls_after": 0,
+  "max_rejected_admissions_per_frame_before": 36,
+  "whole_ivcs_p99_reduction_percent": 7.197502698841573,
+  "entity_update_p99_reduction_percent": 56.34169110152918,
+  "sources_verified_unchanged_after_measurement": true
+}

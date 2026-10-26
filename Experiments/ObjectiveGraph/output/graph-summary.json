@@ -1,0 +1,33 @@
+{
+  "strategicRouteCandidates": 7541,
+  "strategicEnvelope": {
+    "maximumGapM": 5000,
+    "maximumRouteM": 10000
+  },
+  "proximityCandidates": 2276,
+  "defaultProximityM": 1000,
+  "objectives": 278,
+  "objectiveLinks": 1130,
+  "attachments": 1869,
+  "runtimeSHA256": "fdaf4e7798cf3c3fafcce084de30d06535575719b9be96dac03f7b645a7df8dc",
+  "dependencies": {
+    "roadDatasetId": "402c7bf5fcd71d0dd5fd8ed0e2a019312fd3ecd1b0286fab069b945efecb71c3",
+    "locationDatasetId": "657a9b931894ff4df96f1b93c89d840490e784e5d4adf11d94c293930478ef7a",
+    "attachmentDatasetId": "543ffed50c71c277484777eeed33b8d2756766c65929161fdd8731674c54918c",
+    "preprocessingVersion": "strategic-access-3",
+    "settings": {
+      "bypassBandM": 500.0,
+      "anchorMergeToleranceM": 1e-07,
+      "anchorMetric": "source-constrained-section-centre-3d",
+      "baselinePolicy": "record-attachments-stop-at-boundary-inlets",
+      "corridorMetric": "split-edge-local-3d-offsets"
+    },
+    "preprocessingDatasetId": "7e12fcc77ee9b99f0fab2fff23a5b45dc5afc80dcdb1c23c7d44c48d1b94da2a"
+  },
+  "accessCounts": {
+    "inlet": 218,
+    "strong": 47,
+    "secondary": 9,
+    "none": 4
+  }
+}

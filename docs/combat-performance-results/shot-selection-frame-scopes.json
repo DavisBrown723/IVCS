@@ -1,0 +1,356 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-selection-20261025-194244-fb6e8c38.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 5785284,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 246658845454,
+  "zone_types": 120,
+  "filter": "IVCS_PERF_",
+  "matching_zone_types": 6,
+  "top_inclusive": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 8601297679,
+      "total_perc": 3.487123,
+      "counts": 3912,
+      "mean_ns": 2198695,
+      "min_ns": 315270,
+      "max_ns": 17111539,
+      "std_ns": 1665818.063688
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 4832457385,
+      "total_perc": 1.959167,
+      "counts": 3912,
+      "mean_ns": 1235290,
+      "min_ns": 27094,
+      "max_ns": 15791221,
+      "std_ns": 834823.20627
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 3378197524,
+      "total_perc": 1.369583,
+      "counts": 3912,
+      "mean_ns": 863547,
+      "min_ns": 181002,
+      "max_ns": 10930600,
+      "std_ns": 1425757.474901
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 1665408881,
+      "total_perc": 0.675187,
+      "counts": 689,
+      "mean_ns": 2417139,
+      "min_ns": 1195808,
+      "max_ns": 7859884,
+      "std_ns": 709106.786776
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 93345916,
+      "total_perc": 0.037844,
+      "counts": 3912,
+      "mean_ns": 23861,
+      "min_ns": 13566,
+      "max_ns": 322457,
+      "std_ns": 9846.941793
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 60405361,
+      "total_perc": 0.024489,
+      "counts": 3912,
+      "mean_ns": 15441,
+      "min_ns": 9253,
+      "max_ns": 89451,
+      "std_ns": 12469.035903
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 84360071,
+      "total_perc": 0.034201,
+      "counts": 3912,
+      "mean_ns": 21564,
+      "min_ns": 11975,
+      "max_ns": 149379,
+      "std_ns": 2741544.147695
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 37540992,
+      "total_perc": 0.01522,
+      "counts": 3912,
+      "mean_ns": 9596,
+      "min_ns": 5426,
+      "max_ns": 63555,
+      "std_ns": 1661987.926937
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 26689010,
+      "total_perc": 0.01082,
+      "counts": 3912,
+      "mean_ns": 6822,
+      "min_ns": 3926,
+      "max_ns": 65410,
+      "std_ns": 15158.61988
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 26293818,
+      "total_perc": 0.01066,
+      "counts": 3912,
+      "mean_ns": 6721,
+      "min_ns": 4491,
+      "max_ns": 86833,
+      "std_ns": 1485496.324814
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 18867519,
+      "total_perc": 0.007649,
+      "counts": 3912,
+      "mean_ns": 4822,
+      "min_ns": 3864,
+      "max_ns": 127557,
+      "std_ns": 21437.230754
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 6410801,
+      "total_perc": 0.002599,
+      "counts": 689,
+      "mean_ns": 9304,
+      "min_ns": 5011,
+      "max_ns": 52332,
+      "std_ns": 2511758.236229
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_PERF_VirtualSpace_Frame",
+      "count": 3912,
+      "total_ns": 8601297679,
+      "mean_ns": 2198696,
+      "p50_ns": 1265960,
+      "p90_ns": 4593642,
+      "p95_ns": 5902732,
+      "p99_ns": 7361479,
+      "max_ns": 17111539,
+      "over_1ms": 3637,
+      "over_5ms": 313,
+      "over_10ms": 3,
+      "first_start_ns": 53656775167,
+      "last_end_ns": 195361003592,
+      "observed_span_ns": 141704228425,
+      "span_occupancy_percent": 6.0699
+    },
+    {
+      "name": "IVCS_PERF_Entities_Frame",
+      "count": 3912,
+      "total_ns": 4832457385,
+      "mean_ns": 1235291,
+      "p50_ns": 908954,
+      "p90_ns": 2717050,
+      "p95_ns": 3022777,
+      "p99_ns": 3740498,
+      "max_ns": 15791221,
+      "over_1ms": 1296,
+      "over_5ms": 17,
+      "over_10ms": 2,
+      "first_start_ns": 53660533759,
+      "last_end_ns": 195360970896,
+      "observed_span_ns": 141700437137,
+      "span_occupancy_percent": 3.4103
+    },
+    {
+      "name": "IVCS_PERF_Combat_Frame",
+      "count": 3912,
+      "total_ns": 3378197524,
+      "mean_ns": 863547,
+      "p50_ns": 206400,
+      "p90_ns": 3310432,
+      "p95_ns": 4469518,
+      "p99_ns": 6204250,
+      "max_ns": 10930600,
+      "over_1ms": 827,
+      "over_5ms": 135,
+      "over_10ms": 1,
+      "first_start_ns": 53656793272,
+      "last_end_ns": 195360220356,
+      "observed_span_ns": 141703427084,
+      "span_occupancy_percent": 2.384
+    },
+    {
+      "name": "IVCS_PERF_Combat_Step",
+      "count": 689,
+      "total_ns": 1665408881,
+      "mean_ns": 2417139,
+      "p50_ns": 2373287,
+      "p90_ns": 3185293,
+      "p95_ns": 3532204,
+      "p99_ns": 4864924,
+      "max_ns": 7859884,
+      "over_1ms": 689,
+      "over_5ms": 6,
+      "over_10ms": 0,
+      "first_start_ns": 53656986615,
+      "last_end_ns": 195359855136,
+      "observed_span_ns": 141702868521,
+      "span_occupancy_percent": 1.1753
+    },
+    {
+      "name": "IVCS_PERF_Spawner_Frame",
+      "count": 3912,
+      "total_ns": 93345916,
+      "mean_ns": 23861,
+      "p50_ns": 24608,
+      "p90_ns": 28937,
+      "p95_ns": 29895,
+      "p99_ns": 39865,
+      "max_ns": 322457,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 53661273327,
+      "last_end_ns": 195360994884,
+      "observed_span_ns": 141699721557,
+      "span_occupancy_percent": 0.0659
+    },
+    {
+      "name": "IVCS_PERF_AmmoQueue_Frame",
+      "count": 3912,
+      "total_ns": 60405361,
+      "mean_ns": 15441,
+      "p50_ns": 10700,
+      "p90_ns": 44020,
+      "p95_ns": 46993,
+      "p99_ns": 61695,
+      "max_ns": 89451,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 53660518659,
+      "last_end_ns": 195360236824,
+      "observed_span_ns": 141699718165,
+      "span_occupancy_percent": 0.0426
+    }
+  ],
+  "message_count": 841,
+  "messages": [
+    {
+      "MessageName": "IVCS PERF END trial=1 mode=before-heli-infantry-aa groups=20",
+      "total_ns": 82549815718
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS benchmark stays entirely virtual",
+      "total_ns": 82549880111
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS measurement records at least 100 real frames",
+      "total_ns": 82549890794
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS test-only immortality retains the entire roster",
+      "total_ns": 82549895858
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS all expected engagements survive the window",
+      "total_ns": 82549901689
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS helicopters fire during the measurement window",
+      "total_ns": 82549909117
+    },
+    {
+      "MessageName": "[IVCS PERF] PROGRESS [1,\"before-heli-infantry-aa\",20,34,35,35.01,1,35.008]",
+      "total_ns": 82549928524
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS frame budget keeps combat within one resolution interval plus scheduling slack",
+      "total_ns": 82549946662
+    },
+    {
+      "MessageName": "[IVCS TASK TEST] PASS all ten AA supporters remain reserved and both support categories fire",
+      "total_ns": 82549956433
+    },
+    {
+      "MessageName": "[IVCS HELI PERF] WORK [1,\"before-heli-infantry-aa\",20,5,10,[399,52,1578,0],30,85]",
+      "total_ns": 82549964708
+    },
+    {
+      "MessageName": "[IVCS PERF] PHASE [1,\"before-heli-infantry-aa\",20,973,35.008,85,85,2055,784,0]",
+      "total_ns": 82549972134
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.0279999,19423,7.99942,35.9993,2,6.99997,0,0,0],[0.0639992,19424,4.00162,35.9993,1,4.00162,0,0,0],[0.0999985,19425,1.00327,35.9993,0,0,0,1.00327,0],[0.137001,19426,0.999451,37.0026,0,0,0,0.999451,0],[0.174,19427,0.999451,36.9987,0,0,0,0.999451,0]]",
+      "total_ns": 82549995374
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.210999,19428,3.00217,36.9987,0,0,0,3.00217,0],[0.247002,19429,2.99835,36.0031,0,0,0,1.9989,0.999451],[0.283001,19430,2.99835,35.9993,0,0,0,2.99835,0],[0.319,19431,0.999451,35.9993,0,0,0,0.999451,0],[0.355999,19432,0.999451,36.9987,0,0,0,0.999451,0]]",
+      "total_ns": 82550012450
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.393002,19433,0.999451,37.0026,0,0,0,0.999451,0],[0.43,19434,0.999451,36.9987,0,0,0,0.999451,0],[0.466999,19435,0.999451,36.9987,0,0,0,0.999451,0],[0.502998,19436,1.00327,35.9993,0,0,0,1.00327,0],[0.540001,19437,0.999451,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 82550027739
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.577,19438,0.999451,36.9987,0,0,0,0.999451,0],[0.613998,19439,1.00327,36.9987,0,0,0,1.00327,0],[0.651001,19440,0.999451,37.0026,0,0,0,0.999451,0],[0.688,19441,0.999451,36.9987,0,0,0,0.999451,0],[0.724998,19442,1.00327,36.9987,0,0,0,1.00327,0]]",
+      "total_ns": 82550042617
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.762001,19443,0.999451,37.0026,0,0,0,0.999451,0],[0.799,19444,0.999451,36.9987,0,0,0,0.999451,0],[0.835999,19445,1.00327,36.9987,0,0,0,1.00327,0],[0.873001,19446,0.999451,37.0026,0,0,0,0.999451,0],[0.91,19447,0.999451,36.9987,0,0,0,0.999451,0]]",
+      "total_ns": 82550057349
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[0.946999,19448,1.00327,36.9987,0,0,0,1.00327,0],[0.984001,19449,4.99725,37.0026,1,3.9978,0,0.999451,0],[1.02,19450,3.9978,35.9993,1,3.9978,0,0,0],[1.056,19451,4.00162,35.9993,1,4.00162,0,0,0],[1.092,19452,5.00107,35.9993,1,4.00162,0,0.999451,0]]",
+      "total_ns": 82550073814
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[1.128,19453,4.00162,35.9993,1,3.00217,0,0.999451,0],[1.164,19454,0.999451,36.0031,0,0,0,0.999451,0],[1.201,19455,0.999451,36.9987,0,0,0,0.999451,0],[1.238,19456,0.999451,36.9987,0,0,0,0.999451,0],[1.275,19457,0.999451,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 82550088695
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[1.312,19458,2.99835,36.9987,0,0,0,2.99835,0],[1.348,19459,3.00217,35.9993,0,0,0,3.00217,0],[1.384,19460,3.00217,35.9993,0,0,0,3.00217,0],[1.42,19461,1.00327,35.9993,0,0,0,1.00327,0],[1.457,19462,0.999451,37.0026,0,0,0,0.999451,0]]",
+      "total_ns": 82550105170
+    },
+    {
+      "MessageName": "[IVCS PERF] ROWS [[1.494,19463,0.999451,36.9987,0,0,0,0.999451,0],[1.531,19464,1.00327,36.9987,0,0,0,1.00327,0],[1.568,19465,0.999451,37.0026,0,0,0,0.999451,0],[1.605,19466,0.999451,36.9987,0,0,0,0.999451,0],[1.641,19467,0.999451,35.9993,0,0,0,0.999451,0]]",
+      "total_ns": 82550120756
+    }
+  ],
+  "message_parser_note": "Message names can contain unquoted commas; split the native CSV at its final comma."
+}

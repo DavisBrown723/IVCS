@@ -1,0 +1,1493 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-entity-update-comparison-20261025-222254-1e6de6ce.tracy",
+  "note": "Inclusive nested costs; helper metrics are restricted to entity frames and must not be summed with parents.",
+  "results": [
+    {
+      "trial": 1,
+      "mode": "before-heli-infantry-aa",
+      "frames": 974,
+      "entity": {
+        "count": 974,
+        "total_ms": 940.7799479999993,
+        "mean_ms": 0.9658931704312115,
+        "p50_ms": 0.935311,
+        "p90_ms": 1.1665586000000001,
+        "p95_ms": 1.261454999999999,
+        "p99_ms": 1.55282621,
+        "max_ms": 2.392663,
+        "over_1ms": 288,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 467,
+          "total_ms": 71.18481400000002,
+          "mean_ms": 0.1524300085653105,
+          "p50_ms": 0.151735,
+          "p90_ms": 0.1610436,
+          "p95_ms": 0.17200739999999998,
+          "p99_ms": 0.24520459999999983,
+          "max_ms": 0.581195,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9740,
+          "total_ms": 77.45526599999987,
+          "mean_ms": 0.007952286036960986,
+          "p50_ms": 0.004918,
+          "p90_ms": 0.008463100000000001,
+          "p95_ms": 0.03635644999999999,
+          "p99_ms": 0.05759090000000005,
+          "max_ms": 0.149638,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1623,
+          "total_ms": 19.584699000000004,
+          "mean_ms": 0.012066974121996303,
+          "p50_ms": 0.012188,
+          "p90_ms": 0.0135816,
+          "p95_ms": 0.014478699999999994,
+          "p99_ms": 0.02285392,
+          "max_ms": 0.060574,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6494,
+          "total_ms": 224.8709659999991,
+          "mean_ms": 0.03462749707422236,
+          "p50_ms": 0.0042214999999999996,
+          "p90_ms": 0.1113232,
+          "p95_ms": 0.18660989999999983,
+          "p99_ms": 0.22202308999999995,
+          "max_ms": 0.80472,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1623,
+          "total_ms": 253.42616799999973,
+          "mean_ms": 0.15614674553296365,
+          "p50_ms": 0.15415,
+          "p90_ms": 0.20301979999999994,
+          "p95_ms": 0.2525202,
+          "p99_ms": 0.299685,
+          "max_ms": 0.433285,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 106464879127,
+          "entity_ms": 2.392663,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.719022,
+              "max_ms": 0.581195
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.158217,
+              "max_ms": 0.058484
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.022745,
+              "max_ms": 0.01221
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 1.043307,
+              "max_ms": 0.80472
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.283813,
+              "max_ms": 0.158667
+            }
+          }
+        },
+        {
+          "start_ns": 98467758745,
+          "entity_ms": 1.909031,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.10927200000000001,
+              "max_ms": 0.026154
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.046554,
+              "max_ms": 0.024397
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.43401900000000004,
+              "max_ms": 0.22274
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.6207130000000001,
+              "max_ms": 0.35723
+            }
+          }
+        },
+        {
+          "start_ns": 108404389932,
+          "entity_ms": 1.701282,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.311747,
+              "max_ms": 0.158673
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.37739100000000003,
+              "max_ms": 0.088634
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.023745000000000002,
+              "max_ms": 0.013084
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.433595,
+              "max_ms": 0.207447
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.362884,
+              "max_ms": 0.219793
+            }
+          }
+        },
+        {
+          "start_ns": 98359493580,
+          "entity_ms": 1.669743,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.091079,
+              "max_ms": 0.011534
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.041795,
+              "max_ms": 0.023086
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.393545,
+              "max_ms": 0.197701
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.516626,
+              "max_ms": 0.284925
+            }
+          }
+        },
+        {
+          "start_ns": 78000232926,
+          "entity_ms": 1.621913,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.079598,
+              "max_ms": 0.01132
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.038468,
+              "max_ms": 0.020248
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.059485,
+              "max_ms": 0.012057
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.8504309999999999,
+              "max_ms": 0.433285
+            }
+          }
+        },
+        {
+          "start_ns": 103623837021,
+          "entity_ms": 1.610601,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.291145,
+              "max_ms": 0.153763
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.09534300000000002,
+              "max_ms": 0.0507
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.014657,
+              "max_ms": 0.014657
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.448789,
+              "max_ms": 0.203852
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.178124,
+              "max_ms": 0.178124
+            }
+          }
+        },
+        {
+          "start_ns": 98289300997,
+          "entity_ms": 1.583922,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.08123699999999999,
+              "max_ms": 0.012216
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.044335,
+              "max_ms": 0.023194
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.229594,
+              "max_ms": 0.196924
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.6244989999999999,
+              "max_ms": 0.346761
+            }
+          }
+        },
+        {
+          "start_ns": 101926351906,
+          "entity_ms": 1.581935,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.29852100000000004,
+              "max_ms": 0.156485
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.32534899999999994,
+              "max_ms": 0.077729
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.022276999999999998,
+              "max_ms": 0.012452
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.5483950000000001,
+              "max_ms": 0.283177
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.276651,
+              "max_ms": 0.155917
+            }
+          }
+        },
+        {
+          "start_ns": 77168876129,
+          "entity_ms": 1.556417,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.27012400000000003,
+              "max_ms": 0.063089
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.025925,
+              "max_ms": 0.014585
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.07576600000000001,
+              "max_ms": 0.043993
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.5793980000000001,
+              "max_ms": 0.330363
+            }
+          }
+        },
+        {
+          "start_ns": 92752086102,
+          "entity_ms": 1.553865,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07304999999999999,
+              "max_ms": 0.009282
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.042046,
+              "max_ms": 0.022253
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.384505,
+              "max_ms": 0.199342
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.514737,
+              "max_ms": 0.277334
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "mode": "after-heli-infantry-aa",
+      "frames": 972,
+      "entity": {
+        "count": 972,
+        "total_ms": 880.3869689999991,
+        "mean_ms": 0.9057479104938272,
+        "p50_ms": 0.8662065,
+        "p90_ms": 1.0902888,
+        "p95_ms": 1.1892242499999996,
+        "p99_ms": 1.338265889999999,
+        "max_ms": 2.794504,
+        "over_1ms": 275,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 469,
+          "total_ms": 15.987891000000012,
+          "mean_ms": 0.03408931982942431,
+          "p50_ms": 0.035894,
+          "p90_ms": 0.0385402,
+          "p95_ms": 0.039351,
+          "p99_ms": 0.06784379999999997,
+          "max_ms": 0.08419,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9720,
+          "total_ms": 76.17816299999966,
+          "mean_ms": 0.007837259567901234,
+          "p50_ms": 0.004848,
+          "p90_ms": 0.008438300000000001,
+          "p95_ms": 0.03618024999999999,
+          "p99_ms": 0.050653809999999994,
+          "max_ms": 0.088146,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1620,
+          "total_ms": 20.04446599999997,
+          "mean_ms": 0.012373127160493828,
+          "p50_ms": 0.012528000000000001,
+          "p90_ms": 0.014236300000000002,
+          "p95_ms": 0.016117299999999998,
+          "p99_ms": 0.022902559999999995,
+          "max_ms": 0.054837,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6480,
+          "total_ms": 160.8706270000005,
+          "mean_ms": 0.02482571404320988,
+          "p50_ms": 0.00435,
+          "p90_ms": 0.0950263,
+          "p95_ms": 0.09982299999999998,
+          "p99_ms": 0.11163814,
+          "max_ms": 0.198112,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1620,
+          "total_ms": 263.88539099999997,
+          "mean_ms": 0.16289221666666667,
+          "p50_ms": 0.161945,
+          "p90_ms": 0.2156659,
+          "p95_ms": 0.25503514999999993,
+          "p99_ms": 0.30024723999999997,
+          "max_ms": 0.587621,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 149031814962,
+          "entity_ms": 2.794504,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 1,
+              "total_ms": 0.038104,
+              "max_ms": 0.038104
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.21786999999999998,
+              "max_ms": 0.061401
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.047636,
+              "max_ms": 0.037194
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.203027,
+              "max_ms": 0.088908
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.8879539999999999,
+              "max_ms": 0.587621
+            }
+          }
+        },
+        {
+          "start_ns": 117688199063,
+          "entity_ms": 1.879791,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.162674,
+              "max_ms": 0.032285
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.024137,
+              "max_ms": 0.013974
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.16800800000000002,
+              "max_ms": 0.101793
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.30203800000000003,
+              "max_ms": 0.179391
+            }
+          }
+        },
+        {
+          "start_ns": 148238432360,
+          "entity_ms": 1.513607,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 1,
+              "total_ms": 0.056243,
+              "max_ms": 0.056243
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.476243,
+              "max_ms": 0.085451
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.022611,
+              "max_ms": 0.022611
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.188301,
+              "max_ms": 0.149371
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.281613,
+              "max_ms": 0.281613
+            }
+          }
+        },
+        {
+          "start_ns": 138585972803,
+          "entity_ms": 1.510417,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.32314699999999996,
+              "max_ms": 0.081429
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.028512000000000003,
+              "max_ms": 0.015147
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.294892,
+              "max_ms": 0.107664
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.431942,
+              "max_ms": 0.266463
+            }
+          }
+        },
+        {
+          "start_ns": 116968585128,
+          "entity_ms": 1.457323,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.286057,
+              "max_ms": 0.051115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.024132,
+              "max_ms": 0.013436
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.265899,
+              "max_ms": 0.086583
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.518474,
+              "max_ms": 0.287015
+            }
+          }
+        },
+        {
+          "start_ns": 134197030519,
+          "entity_ms": 1.441981,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.43402799999999997,
+              "max_ms": 0.087839
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.025082,
+              "max_ms": 0.025082
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.154786,
+              "max_ms": 0.118373
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.294526,
+              "max_ms": 0.294526
+            }
+          }
+        },
+        {
+          "start_ns": 132100215363,
+          "entity_ms": 1.394457,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.301535,
+              "max_ms": 0.05572
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.027292000000000004,
+              "max_ms": 0.015727
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.313022,
+              "max_ms": 0.109643
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.353271,
+              "max_ms": 0.210729
+            }
+          }
+        },
+        {
+          "start_ns": 139664755516,
+          "entity_ms": 1.379312,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.094889,
+              "max_ms": 0.038589
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.277281,
+              "max_ms": 0.052202
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.025099,
+              "max_ms": 0.014568
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.408939,
+              "max_ms": 0.15206
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.304912,
+              "max_ms": 0.179484
+            }
+          }
+        },
+        {
+          "start_ns": 137293330990,
+          "entity_ms": 1.36175,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.06358199999999999,
+              "max_ms": 0.011248
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.034835000000000005,
+              "max_ms": 0.023827
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.36883699999999997,
+              "max_ms": 0.166227
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.429134,
+              "max_ms": 0.285812
+            }
+          }
+        },
+        {
+          "start_ns": 145828895160,
+          "entity_ms": 1.355335,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 3,
+              "total_ms": 0.125472,
+              "max_ms": 0.066071
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.07047799999999999,
+              "max_ms": 0.011176
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.034817,
+              "max_ms": 0.022676
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.314977,
+              "max_ms": 0.148043
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.42559600000000003,
+              "max_ms": 0.285349
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "mode": "after-heli-infantry-aa",
+      "frames": 973,
+      "entity": {
+        "count": 973,
+        "total_ms": 882.0577769999999,
+        "mean_ms": 0.9065342004110997,
+        "p50_ms": 0.872419,
+        "p90_ms": 1.0764898,
+        "p95_ms": 1.1741283999999998,
+        "p99_ms": 1.3551229599999992,
+        "max_ms": 2.877853,
+        "over_1ms": 161,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 467,
+          "total_ms": 16.569316,
+          "mean_ms": 0.03548033404710921,
+          "p50_ms": 0.035928,
+          "p90_ms": 0.0416436,
+          "p95_ms": 0.043055699999999995,
+          "p99_ms": 0.0748629199999999,
+          "max_ms": 0.083486,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9730,
+          "total_ms": 76.37442000000014,
+          "mean_ms": 0.007849375128468655,
+          "p50_ms": 0.0049045,
+          "p90_ms": 0.008623400000000005,
+          "p95_ms": 0.0358821,
+          "p99_ms": 0.04997835999999981,
+          "max_ms": 0.103372,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1621,
+          "total_ms": 19.733427999999993,
+          "mean_ms": 0.012173613818630476,
+          "p50_ms": 0.012217,
+          "p90_ms": 0.013918,
+          "p95_ms": 0.014948,
+          "p99_ms": 0.021557199999999988,
+          "max_ms": 0.062478,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6486,
+          "total_ms": 166.77846000000034,
+          "mean_ms": 0.02571360777058279,
+          "p50_ms": 0.004222,
+          "p90_ms": 0.0969245,
+          "p95_ms": 0.1020265,
+          "p99_ms": 0.12659925,
+          "max_ms": 0.201191,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1621,
+          "total_ms": 258.7052550000001,
+          "mean_ms": 0.15959608574953735,
+          "p50_ms": 0.153822,
+          "p90_ms": 0.208804,
+          "p95_ms": 0.245211,
+          "p99_ms": 0.300605,
+          "max_ms": 1.266862,
+          "over_1ms": 1,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 153974991673,
+          "entity_ms": 2.877853,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.15217599999999998,
+              "max_ms": 0.037392
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.073156,
+              "max_ms": 0.062478
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.10708899999999999,
+              "max_ms": 0.031673
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 1.555143,
+              "max_ms": 1.266862
+            }
+          }
+        },
+        {
+          "start_ns": 153472746235,
+          "entity_ms": 2.008592,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.22586699999999998,
+              "max_ms": 0.04066
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.013196,
+              "max_ms": 0.013196
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.161015,
+              "max_ms": 0.054791
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.284178,
+              "max_ms": 0.284178
+            }
+          }
+        },
+        {
+          "start_ns": 184682613412,
+          "entity_ms": 1.759923,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.133648,
+              "max_ms": 0.07955
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.483738,
+              "max_ms": 0.078807
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.027419,
+              "max_ms": 0.027419
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.34949800000000003,
+              "max_ms": 0.192001
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.29565,
+              "max_ms": 0.29565
+            }
+          }
+        },
+        {
+          "start_ns": 152641131417,
+          "entity_ms": 1.61242,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.08773,
+              "max_ms": 0.030482
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.028825,
+              "max_ms": 0.016863
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.050044,
+              "max_ms": 0.012143
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.8211740000000001,
+              "max_ms": 0.432716
+            }
+          }
+        },
+        {
+          "start_ns": 168500340389,
+          "entity_ms": 1.571186,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.08095900000000002,
+              "max_ms": 0.012303
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.040667999999999996,
+              "max_ms": 0.022306
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.335584,
+              "max_ms": 0.16813
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.518917,
+              "max_ms": 0.290178
+            }
+          }
+        },
+        {
+          "start_ns": 153648100406,
+          "entity_ms": 1.485029,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.065909,
+              "max_ms": 0.01189
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.041241,
+              "max_ms": 0.020916
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.044886,
+              "max_ms": 0.011308
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.8535729999999999,
+              "max_ms": 0.465657
+            }
+          }
+        },
+        {
+          "start_ns": 172043544372,
+          "entity_ms": 1.432091,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.085535,
+              "max_ms": 0.0115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.024298,
+              "max_ms": 0.024298
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.356455,
+              "max_ms": 0.182631
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.314899,
+              "max_ms": 0.314899
+            }
+          }
+        },
+        {
+          "start_ns": 154364075171,
+          "entity_ms": 1.42597,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.29998600000000003,
+              "max_ms": 0.049375
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.02776,
+              "max_ms": 0.017451
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.19591599999999998,
+              "max_ms": 0.085982
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.5356890000000001,
+              "max_ms": 0.312325
+            }
+          }
+        },
+        {
+          "start_ns": 177052578712,
+          "entity_ms": 1.407512,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.159278,
+              "max_ms": 0.08175
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.34261199999999997,
+              "max_ms": 0.075946
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.020848,
+              "max_ms": 0.010921
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 7,
+              "total_ms": 0.388641,
+              "max_ms": 0.189562
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.266999,
+              "max_ms": 0.143018
+            }
+          }
+        },
+        {
+          "start_ns": 152271946433,
+          "entity_ms": 1.376854,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.47734200000000004,
+              "max_ms": 0.091655
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 1,
+              "total_ms": 0.014608,
+              "max_ms": 0.014608
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.051590000000000004,
+              "max_ms": 0.01889
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 1,
+              "total_ms": 0.295657,
+              "max_ms": 0.295657
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 4,
+      "mode": "before-heli-infantry-aa",
+      "frames": 972,
+      "entity": {
+        "count": 972,
+        "total_ms": 935.9391229999992,
+        "mean_ms": 0.9629003323045268,
+        "p50_ms": 0.949558,
+        "p90_ms": 1.1765202,
+        "p95_ms": 1.2551303999999999,
+        "p99_ms": 1.4501813699999997,
+        "max_ms": 1.647779,
+        "over_1ms": 327,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+          "count": 468,
+          "total_ms": 69.70082299999999,
+          "mean_ms": 0.14893338247863247,
+          "p50_ms": 0.1511785,
+          "p90_ms": 0.157723,
+          "p95_ms": 0.16353849999999998,
+          "p99_ms": 0.2112252799999999,
+          "max_ms": 0.27443,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_findTarget": {
+          "count": 9720,
+          "total_ms": 75.7785849999998,
+          "mean_ms": 0.007796150720164609,
+          "p50_ms": 0.004878,
+          "p90_ms": 0.0085371,
+          "p95_ms": 0.03629849999999999,
+          "p99_ms": 0.04936246999999996,
+          "max_ms": 0.09695,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 1620,
+          "total_ms": 19.880276,
+          "mean_ms": 0.012271775308641975,
+          "p50_ms": 0.012286,
+          "p90_ms": 0.0140591,
+          "p95_ms": 0.015241099999999997,
+          "p99_ms": 0.02119036,
+          "max_ms": 0.0632,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+          "count": 6480,
+          "total_ms": 218.31759199999956,
+          "mean_ms": 0.033690986419753086,
+          "p50_ms": 0.004256,
+          "p90_ms": 0.10768460000000002,
+          "p95_ms": 0.18041729999999995,
+          "p99_ms": 0.21328394,
+          "max_ms": 0.338752,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+          "count": 1620,
+          "total_ms": 263.7962929999998,
+          "mean_ms": 0.16283721790123457,
+          "p50_ms": 0.156616,
+          "p90_ms": 0.21680140000000003,
+          "p95_ms": 0.24804534999999997,
+          "p99_ms": 0.30610744,
+          "max_ms": 0.447673,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst_entity_frames": [
+        {
+          "start_ns": 206361206076,
+          "entity_ms": 1.647779,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.09058100000000001,
+              "max_ms": 0.013519
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.043857,
+              "max_ms": 0.024511
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.36022,
+              "max_ms": 0.18676
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.541447,
+              "max_ms": 0.314352
+            }
+          }
+        },
+        {
+          "start_ns": 202508523204,
+          "entity_ms": 1.621369,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.054776000000000005,
+              "max_ms": 0.007569
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.054651000000000005,
+              "max_ms": 0.038718
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.27673000000000003,
+              "max_ms": 0.141551
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.825534,
+              "max_ms": 0.447673
+            }
+          }
+        },
+        {
+          "start_ns": 218939668304,
+          "entity_ms": 1.586156,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.38127,
+              "max_ms": 0.225556
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.3407629999999999,
+              "max_ms": 0.065164
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.023405,
+              "max_ms": 0.013033
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.5153849999999999,
+              "max_ms": 0.269443
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.290709,
+              "max_ms": 0.162575
+            }
+          }
+        },
+        {
+          "start_ns": 214142024892,
+          "entity_ms": 1.569125,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.083531,
+              "max_ms": 0.011571
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.042609999999999995,
+              "max_ms": 0.022777
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.354684,
+              "max_ms": 0.178556
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.509762,
+              "max_ms": 0.286333
+            }
+          }
+        },
+        {
+          "start_ns": 214613475302,
+          "entity_ms": 1.555287,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.283246,
+              "max_ms": 0.14772
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.29971000000000003,
+              "max_ms": 0.045545
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.022938,
+              "max_ms": 0.012174
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.515932,
+              "max_ms": 0.25931
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.344838,
+              "max_ms": 0.220475
+            }
+          }
+        },
+        {
+          "start_ns": 213093369901,
+          "entity_ms": 1.522385,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.08072499999999999,
+              "max_ms": 0.022521
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.034214,
+              "max_ms": 0.021717
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.389994,
+              "max_ms": 0.201396
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.44744000000000006,
+              "max_ms": 0.297426
+            }
+          }
+        },
+        {
+          "start_ns": 214679771685,
+          "entity_ms": 1.476605,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.292841,
+              "max_ms": 0.154387
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.281964,
+              "max_ms": 0.049292
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.024568,
+              "max_ms": 0.013706
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 6,
+              "total_ms": 0.513972,
+              "max_ms": 0.266586
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.30528,
+              "max_ms": 0.17609
+            }
+          }
+        },
+        {
+          "start_ns": 191896003750,
+          "entity_ms": 1.475964,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.349656,
+              "max_ms": 0.07934
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.023030000000000002,
+              "max_ms": 0.013039
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.24908999999999998,
+              "max_ms": 0.115035
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.473981,
+              "max_ms": 0.255484
+            }
+          }
+        },
+        {
+          "start_ns": 214823238348,
+          "entity_ms": 1.458652,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.295732,
+              "max_ms": 0.156427
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.061882,
+              "max_ms": 0.009026
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.022573,
+              "max_ms": 0.012556
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.613688,
+              "max_ms": 0.338752
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.278489,
+              "max_ms": 0.156362
+            }
+          }
+        },
+        {
+          "start_ns": 220015630797,
+          "entity_ms": 1.456609,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canShootHelicopter": {
+              "calls": 2,
+              "total_ms": 0.295854,
+              "max_ms": 0.154725
+            },
+            "IVCS_HELI_IVCS_Combat_findTarget": {
+              "calls": 10,
+              "total_ms": 0.322014,
+              "max_ms": 0.067606
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "calls": 2,
+              "total_ms": 0.025251000000000003,
+              "max_ms": 0.013509
+            },
+            "IVCS_HELI_IVCS_Combat_updateAirDefense": {
+              "calls": 8,
+              "total_ms": 0.42238,
+              "max_ms": 0.21023
+            },
+            "IVCS_HELI_IVCS_Combat_updateHelicopter": {
+              "calls": 2,
+              "total_ms": 0.30165200000000003,
+              "max_ms": 0.167766
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

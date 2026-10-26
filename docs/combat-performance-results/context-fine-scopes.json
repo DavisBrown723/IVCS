@@ -1,0 +1,146 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\arma-20261013-001603-18bbe244.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 18010485,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 335949138957,
+  "zone_types": 94,
+  "filter": "IVCS_CASE_",
+  "matching_zone_types": 3,
+  "top_inclusive": [
+    {
+      "name": "IVCS_CASE_NeedOwnRecords",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 778554595,
+      "total_perc": 0.231748,
+      "counts": 192870,
+      "mean_ns": 4036,
+      "min_ns": 3299,
+      "max_ns": 178001,
+      "std_ns": 1445.871503
+    },
+    {
+      "name": "IVCS_CASE_WeaponProfileHit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 285466035,
+      "total_perc": 0.084973,
+      "counts": 218539,
+      "mean_ns": 1306,
+      "min_ns": 1057,
+      "max_ns": 43255,
+      "std_ns": 458.655541
+    },
+    {
+      "name": "IVCS_CASE_NeedFallback",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 33682295,
+      "total_perc": 0.010026,
+      "counts": 1775,
+      "mean_ns": 18975,
+      "min_ns": 15940,
+      "max_ns": 79765,
+      "std_ns": 3027.718332
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_CASE_NeedOwnRecords",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 778554595,
+      "total_perc": 0.231748,
+      "counts": 192870,
+      "mean_ns": 4036,
+      "min_ns": 3299,
+      "max_ns": 178001,
+      "std_ns": 1445.871503
+    },
+    {
+      "name": "IVCS_CASE_WeaponProfileHit",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 285466035,
+      "total_perc": 0.084973,
+      "counts": 218539,
+      "mean_ns": 1306,
+      "min_ns": 1057,
+      "max_ns": 43255,
+      "std_ns": 458.655541
+    },
+    {
+      "name": "IVCS_CASE_NeedFallback",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 33682295,
+      "total_perc": 0.010026,
+      "counts": 1775,
+      "mean_ns": 18975,
+      "min_ns": 15940,
+      "max_ns": 79765,
+      "std_ns": 3027.718332
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_CASE_NeedOwnRecords",
+      "count": 192870,
+      "total_ns": 778554595,
+      "mean_ns": 4037,
+      "p50_ns": 3835,
+      "p90_ns": 4535,
+      "p95_ns": 5151,
+      "p99_ns": 7110,
+      "max_ns": 178001,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 51949395729,
+      "last_end_ns": 314587141282,
+      "observed_span_ns": 262637745553,
+      "span_occupancy_percent": 0.2964
+    },
+    {
+      "name": "IVCS_CASE_WeaponProfileHit",
+      "count": 218539,
+      "total_ns": 285466035,
+      "mean_ns": 1306,
+      "p50_ns": 1238,
+      "p90_ns": 1400,
+      "p95_ns": 1670,
+      "p99_ns": 3018,
+      "max_ns": 43255,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 51949388136,
+      "last_end_ns": 314587131028,
+      "observed_span_ns": 262637742892,
+      "span_occupancy_percent": 0.1087
+    },
+    {
+      "name": "IVCS_CASE_NeedFallback",
+      "count": 1775,
+      "total_ns": 33682295,
+      "mean_ns": 18976,
+      "p50_ns": 18042,
+      "p90_ns": 21641,
+      "p95_ns": 22169,
+      "p99_ns": 30784,
+      "max_ns": 79765,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 119491879946,
+      "last_end_ns": 235443409033,
+      "observed_span_ns": 115951529087,
+      "span_occupancy_percent": 0.029
+    }
+  ]
+}

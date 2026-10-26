@@ -36,7 +36,9 @@ _waypoint setWaypointCombatMode _combatMode;
 _waypoint setWaypointBehaviour _behavior;
 
 private _entityID = _entity get "id";
-_waypoint setWaypointStatements ["true", format ["['%1', '%2'] call IVCS_VirtualSpace_onWaypointCompleted", _entityID, _name]];
+private _generation = (_entityWaypoint get "nativeGeneration") + 1;
+_entityWaypoint set ["nativeGeneration", _generation];
+_waypoint setWaypointStatements ["true", format ["['%1', '%2', %3] call IVCS_VirtualSpace_onWaypointCompleted", _entityID, _name, _generation]];
 
 if (_attachedVehicle != "") then {
 

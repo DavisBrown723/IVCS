@@ -1,3 +1,6 @@
+call compile preprocessFileLineNumbers "IVCS\VirtualSpace\ammoFunctions.sqf";
+call compile preprocessFileLineNumbers "IVCS\VirtualSpace\combatFunctions.sqf";
+
 // entity functions
 
 IVCS_VirtualSpace_createController = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\createController.sqf";
@@ -13,6 +16,7 @@ IVCS_VirtualSpace_countUnitsAssignedToVehicle = compile preprocessFileLineNumber
 IVCS_VirtualSpace_getNearEntities = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\getNearEntities.sqf";
 IVCS_VirtualSpace_getSideKnownTargets = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\getSideKnownTargets.sqf";
 IVCS_VirtualSpace_setEntityPosition = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\setEntityPosition.sqf";
+IVCS_VirtualSpace_setEntityActive = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\setEntityActive.sqf";
 IVCS_VirtualSpace_getCurrentEntityTask = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\getCurrentEntityTask.sqf";
 IVCS_VirtualSpace_getEntityTask = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\getEntityTask.sqf";
 IVCS_VirtualSpace_createEntitySpawnerFSM = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\createEntitySpawnerFSM.sqf";
@@ -48,12 +52,9 @@ IVCS_VirtualSpace_Group_getUnseatedUnits = compile preprocessFileLineNumbers "IV
 IVCS_VirtualSpace_Group_assignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\assignVehicle.sqf";
 IVCS_VirtualSpace_Group_assignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\assignAsVehicleCargo.sqf";
 IVCS_VirtualSpace_Group_unassignVehicle = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\unassignVehicle.sqf";
+IVCS_VirtualSpace_Group_releaseVehicleAssignments = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\releaseVehicleAssignments.sqf";
 IVCS_VirtualSpace_Group_unassignAsVehicleCargo = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\unassignAsVehicleCargo.sqf";
 IVCS_VirtualSpace_Group_getVehicleAssignmentType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getVehicleAssignmentType.sqf";
-IVCS_VirtualSpace_Group_canEngageEntity = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\canEngageEntity.sqf";
-IVCS_VirtualSpace_Group_getEngagementCapabilities = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getEngagementCapabilities.sqf";
-IVCS_VirtualSpace_Group_getFunctionalEntityType = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getFunctionalEntityType.sqf";
-IVCS_VirtualSpace_Group_onContactSimple = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\onContactSimple.sqf";
 IVCS_VirtualSpace_Group_onWaypointPathGenerated = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\onWaypointPathGenerated.sqf";
 IVCS_VirtualSpace_Group_entityAddUnits = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\entityAddUnits.sqf";
 IVCS_VirtualSpace_Group_getUnit = compile preprocessFileLineNumbers "IVCS\VirtualSpace\functions\entities\group\getEntityUnit.sqf";

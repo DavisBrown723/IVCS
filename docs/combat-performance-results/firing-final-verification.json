@@ -1,0 +1,240 @@
+{
+  "passed": 504,
+  "failed": 0,
+  "suites": [
+    {
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f55ba4b7694c482eaca91ae2cc3b191a\\profile\\arma3server_x64_2026-10-13_14-56-08.rpt",
+      "passed": 376,
+      "failed": 0
+    },
+    {
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b547d16b0f3a4b24b478b5cc8dee8df9\\profile\\arma3server_x64_2026-10-13_14-56-37.rpt",
+      "passed": 40,
+      "failed": 0
+    },
+    {
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-453c431c604847d488075edad6132620\\profile\\arma3server_x64_2026-10-13_14-56-59.rpt",
+      "passed": 71,
+      "failed": 0
+    },
+    {
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ab4dd0505cdb43dd8c29c6b7860f8771\\profile\\arma3server_x64_2026-10-13_14-58-08.rpt",
+      "passed": 12,
+      "failed": 0
+    }
+  ],
+  "context_smoke_rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-8dd08bc7467247eaa5467665f365e4b1\\profile\\arma3server_x64_2026-10-13_15-08-03.rpt",
+  "seeded_outcomes_identical": true,
+  "seeded_outcomes": {
+    "1": [
+      176.5,
+      1040,
+      58,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "2": [
+      110.5,
+      701,
+      40,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "3": [
+      178.5,
+      774,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "4": [
+      176.5,
+      801,
+      49,
+      11,
+      0,
+      5,
+      "finished"
+    ],
+    "5": [
+      134.5,
+      754,
+      44,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "6": [
+      202.5,
+      987,
+      54,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "7": [
+      140.5,
+      777,
+      44,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "8": [
+      242.5,
+      1327,
+      60,
+      12,
+      0,
+      4,
+      "finished"
+    ],
+    "9": [
+      132,
+      705,
+      46,
+      10,
+      0,
+      6,
+      "finished"
+    ],
+    "10": [
+      176.5,
+      779,
+      48,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "11": [
+      202.5,
+      1192,
+      57,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "12": [
+      161.5,
+      876,
+      48,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "13": [
+      132,
+      748,
+      44,
+      9,
+      0,
+      7,
+      "finished"
+    ],
+    "14": [
+      202.5,
+      1142,
+      60,
+      10,
+      6,
+      0,
+      "finished"
+    ],
+    "15": [
+      155.5,
+      770,
+      36,
+      11,
+      5,
+      0,
+      "finished"
+    ],
+    "16": [
+      112.5,
+      743,
+      45,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "17": [
+      116.5,
+      717,
+      38,
+      8,
+      8,
+      0,
+      "finished"
+    ],
+    "18": [
+      298,
+      1379,
+      61,
+      13,
+      3,
+      0,
+      "finished"
+    ],
+    "19": [
+      215,
+      1178,
+      62,
+      9,
+      7,
+      0,
+      "finished"
+    ],
+    "20": [
+      142.5,
+      871,
+      51,
+      8,
+      0,
+      8,
+      "finished"
+    ]
+  },
+  "mean_engagement_seconds": 170.45,
+  "profiled_sources_match_final": true,
+  "source_hashes_sha256": {
+    "VirtualSpace/functions/combat/step.sqf": "8f21f92f2bfcc001cf7a514bcdbaece7ff85b18b3d1c1c9aa42549ede092a375",
+    "VirtualSpace/functions/combat/getShot.sqf": "0171aac3817226b3278425922d0b6a35d73aa83c45d103f079e4d81c54fa48b4",
+    "VirtualSpace/functions/combat/getPreparedShot.sqf": "393a0f9578d8d63f4fbac5ac501bbfb995285c7c595c66c1f0ca73e2257198f9",
+    "VirtualSpace/combatFunctions.sqf": "05e6f9d5f67afff3e45870858ab1504937371f4e8d00378386da0918f3cd7da2",
+    "VirtualSpace/functions/entities/group/createEntityUnit.sqf": "c709dee27d582a77e6ac67fcb1f2e9e03bd07401a76696d072921b75c8554590"
+  },
+  "baseline_directory": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\precompute-before-20261013",
+  "capture_save_verified": true,
+  "workload_checks": {
+    "profiled": 20,
+    "mod_free_normal": 20,
+    "mod_free_shortage": 24
+  },
+  "review": [
+    "Prepared cache contains only class metadata and factors; no ammunition records or injury values are cached.",
+    "Current rounds, weapon/magazine edits, transfers and ordering remain live inputs.",
+    "Exact range, accuracy scale, cadence and tick changes rebuild prepared entries; reload delay stays live.",
+    "Fresh arm damage and validated hitpoint layout are retained in the hot formula.",
+    "Floating operation and RNG draw order, ammo identity and simultaneous damage resolution match baseline.",
+    "Required cache-miss adapters remain; no production assertion guards added.",
+    "Profiling scopes cover equivalent accuracy work and retain legacy resolver compatibility.",
+    "All changed SQF uses CRLF."
+  ],
+  "corrected_findings": [
+    "Updated context factor-miss hook for the prepared resolver and verified both instrumentation modes."
+  ],
+  "performance_limit": "No reliable whole-IVCS p99 reduction. Initial preprocessing-only ABBA/BAAB failed to reproduce its first apparent gain; final firing CPU improves but whole-frame tail remains flat."
+}

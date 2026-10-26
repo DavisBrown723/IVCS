@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "objectivePolicyCostsCompared": 5560,
+  "pathsAndFootprintOverlapsChecked": 396,
+  "origins": 10,
+  "policies": 2,
+  "sourceRuntimeSHA256": "fdaf4e7798cf3c3fafcce084de30d06535575719b9be96dac03f7b645a7df8dc"
+}

@@ -1,0 +1,201 @@
+{
+  "source": "aggregation-pressure-frames.csv",
+  "before_trials": [
+    1,
+    4
+  ],
+  "after_trials": [
+    2,
+    3
+  ],
+  "timer": "Arma diag_tickTime, approximately 1 ms resolution",
+  "note": "Quantized p99 is descriptive; no sub-millisecond precision is implied.",
+  "before": {
+    "step_seconds": 0.5,
+    "frames": 560,
+    "steps": 402,
+    "metrics": {
+      "ivcs_ms": {
+        "count": 560,
+        "total_ms": 494.9646840000007,
+        "mean_ms": 0.883865507142857,
+        "p50_ms": 0.0,
+        "p90_ms": 3.00026,
+        "p95_ms": 3.00026,
+        "p99_ms": 3.9985831,
+        "max_ms": 4.99916,
+        "over_1ms": 166,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "combat_ms": {
+        "count": 560,
+        "total_ms": 380.97768099999996,
+        "mean_ms": 0.6803172875,
+        "p50_ms": 0.0,
+        "p90_ms": 2.99835,
+        "p95_ms": 3.00026,
+        "p99_ms": 3.9978,
+        "max_ms": 4.99916,
+        "over_1ms": 135,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "ammo_queue_ms": {
+        "count": 560,
+        "total_ms": 0.999451,
+        "mean_ms": 0.0017847339285714285,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "max_ms": 0.999451,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "entities_ms": {
+        "count": 560,
+        "total_ms": 80.98416399999994,
+        "mean_ms": 0.14461457857142856,
+        "p50_ms": 0.0,
+        "p90_ms": 0.999451,
+        "p95_ms": 0.999451,
+        "p99_ms": 1.00136,
+        "max_ms": 1.9989,
+        "over_1ms": 15,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "spawner_ms": {
+        "count": 560,
+        "total_ms": 24.999639000000005,
+        "mean_ms": 0.0446422125,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 1.00023369,
+        "max_ms": 1.00327,
+        "over_1ms": 6,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  },
+  "after": {
+    "step_seconds": 1,
+    "frames": 559,
+    "steps": 199,
+    "metrics": {
+      "ivcs_ms": {
+        "count": 559,
+        "total_ms": 470.05674700000026,
+        "mean_ms": 0.8408886350626118,
+        "p50_ms": 0.0,
+        "p90_ms": 2.99835,
+        "p95_ms": 3.9978,
+        "p99_ms": 4.99725,
+        "max_ms": 5.00107,
+        "over_1ms": 154,
+        "over_5ms": 3,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "combat_ms": {
+        "count": 559,
+        "total_ms": 349.0391989999998,
+        "mean_ms": 0.6243992826475849,
+        "p50_ms": 0.0,
+        "p90_ms": 2.99835,
+        "p95_ms": 3.00217,
+        "p99_ms": 4.00162,
+        "max_ms": 5.00107,
+        "over_1ms": 123,
+        "over_5ms": 1,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "ammo_queue_ms": {
+        "count": 559,
+        "total_ms": 0.0,
+        "mean_ms": 0.0,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "max_ms": 0.0,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "entities_ms": {
+        "count": 559,
+        "total_ms": 89.00651199999989,
+        "mean_ms": 0.15922452951699465,
+        "p50_ms": 0.0,
+        "p90_ms": 0.999451,
+        "p95_ms": 0.999451,
+        "p99_ms": 1.00327,
+        "max_ms": 1.9989,
+        "over_1ms": 16,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "spawner_ms": {
+        "count": 559,
+        "total_ms": 27.00618100000001,
+        "mean_ms": 0.0483115939177102,
+        "p50_ms": 0.0,
+        "p90_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 1.0002527799999998,
+        "max_ms": 1.00327,
+        "over_1ms": 6,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  },
+  "sharing_trials": [
+    {
+      "trial": 1,
+      "step_seconds": 0.5,
+      "pending_searches": 0,
+      "pending_requests": 0,
+      "transfers": 20,
+      "forced_unresolved": 0
+    },
+    {
+      "trial": 2,
+      "step_seconds": 1,
+      "pending_searches": 16,
+      "pending_requests": 0,
+      "transfers": 18,
+      "forced_unresolved": 0
+    },
+    {
+      "trial": 3,
+      "step_seconds": 1,
+      "pending_searches": 10,
+      "pending_requests": 0,
+      "transfers": 20,
+      "forced_unresolved": 0
+    },
+    {
+      "trial": 4,
+      "step_seconds": 0.5,
+      "pending_searches": 0,
+      "pending_requests": 0,
+      "transfers": 19,
+      "forced_unresolved": 1
+    }
+  ]
+}

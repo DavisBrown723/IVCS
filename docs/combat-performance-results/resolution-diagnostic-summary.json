@@ -1,0 +1,249 @@
+{
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ab6df2d1e8a54cf7b641767a6d34ebc3\\profile\\arma3server_x64_2026-10-25_23-12-00.rpt",
+  "label": "resolution-diagnostic",
+  "config": [
+    35,
+    2,
+    2,
+    [
+      20
+    ],
+    [
+      "Arma 3",
+      "Arma3",
+      222,
+      154126,
+      "Stable",
+      true,
+      "Windows",
+      "x64",
+      "profiling"
+    ],
+    1,
+    3,
+    8,
+    1,
+    2
+  ],
+  "diagnostic": false,
+  "eligible_for_performance_comparison": true,
+  "validity_checks": {
+    "passed": 18,
+    "failed": 0
+  },
+  "failure_labels": [],
+  "results": [
+    {
+      "mode": "heli-infantry-aa",
+      "groups": 20,
+      "engagements": 5,
+      "frames": 1932,
+      "trial_count": 2,
+      "units_at_window_start": [
+        85,
+        85
+      ],
+      "units_at_window_end": [
+        85,
+        85
+      ],
+      "shots": 4170,
+      "hits": 1576,
+      "ammo_transfers": 0,
+      "steps": 351,
+      "step_frames": 254,
+      "measured_fps": 27.583449930041976,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 1932,
+          "total_ms": 3160.9946689999765,
+          "mean_ms": 1.6361256050724635,
+          "p50_ms": 0.999451,
+          "p90_ms": 3.9978,
+          "p95_ms": 5.9967,
+          "p99_ms": 7.00378,
+          "max_ms": 8.00323,
+          "over_1ms": 832,
+          "over_5ms": 116,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "frame_interval_ms": {
+          "count": 1932,
+          "total_ms": 70046.02360000016,
+          "mean_ms": 36.25570579710145,
+          "p50_ms": 36.0031,
+          "p90_ms": 37.0026,
+          "p95_ms": 37.0026,
+          "p99_ms": 38.002,
+          "max_ms": 39.0015,
+          "over_1ms": 1932,
+          "over_5ms": 1932,
+          "over_10ms": 1932,
+          "over_16_67ms": 1932
+        },
+        "combat_ms": {
+          "count": 1932,
+          "total_ms": 1188.926017,
+          "mean_ms": 0.615386137163561,
+          "p50_ms": 0.0,
+          "p90_ms": 3.00598,
+          "p95_ms": 4.98962,
+          "p99_ms": 5.9967,
+          "max_ms": 7.00378,
+          "over_1ms": 273,
+          "over_5ms": 56,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ammo_queue_ms": {
+          "count": 1932,
+          "total_ms": 12.992861,
+          "mean_ms": 0.006725083333333333,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.0,
+          "max_ms": 1.00708,
+          "over_1ms": 2,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 1932,
+          "total_ms": 1910.0570950000629,
+          "mean_ms": 0.988642388716356,
+          "p50_ms": 0.999451,
+          "p90_ms": 1.00708,
+          "p95_ms": 1.9989,
+          "p99_ms": 1.9989,
+          "max_ms": 2.01416,
+          "over_1ms": 557,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "spawner_ms": {
+          "count": 1932,
+          "total_ms": 26.031495000000003,
+          "mean_ms": 0.013473858695652173,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.999451,
+          "max_ms": 1.00708,
+          "over_1ms": 11,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ivcs_busy_ms": {
+          "count": 254,
+          "total_ms": 1300.9865400000012,
+          "mean_ms": 5.121994251968504,
+          "p50_ms": 4.99725,
+          "p90_ms": 6.99615,
+          "p95_ms": 7.00378,
+          "p99_ms": 8.00323,
+          "max_ms": 8.00323,
+          "over_1ms": 254,
+          "over_5ms": 116,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_busy_ms": {
+          "count": 254,
+          "total_ms": 1082.9460799999995,
+          "mean_ms": 4.263567244094488,
+          "p50_ms": 3.9978,
+          "p90_ms": 5.9967,
+          "p95_ms": 6.00433,
+          "p99_ms": 7.00378,
+          "max_ms": 7.00378,
+          "over_1ms": 254,
+          "over_5ms": 56,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "trials": [
+        {
+          "trial": 1,
+          "mode": "heli-infantry-aa",
+          "groups": 20,
+          "expected_frames": 966,
+          "seconds": 35.022,
+          "start_units": 85,
+          "end_units": 85,
+          "shots": 2096,
+          "hits": 793,
+          "ammo_transfers": 0,
+          "combat_progress": {
+            "min_seconds": 34,
+            "max_seconds": 36,
+            "simulation_seconds": 35.023,
+            "wall_seconds": 35.022,
+            "step_seconds": 1
+          },
+          "progress_valid": true,
+          "workload": {
+            "engagements": 5,
+            "supporters": 10,
+            "helicopter_shots": 415,
+            "infantry_aa_shots": 56,
+            "vehicle_aa_shots": 1597,
+            "primary_vehicle_shots": 0,
+            "entities": 30,
+            "units": 85
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "heli-infantry-aa",
+          "groups": 20,
+          "expected_frames": 966,
+          "seconds": 35.02,
+          "start_units": 85,
+          "end_units": 85,
+          "shots": 2074,
+          "hits": 783,
+          "ammo_transfers": 0,
+          "combat_progress": {
+            "min_seconds": 35,
+            "max_seconds": 35,
+            "simulation_seconds": 35.023,
+            "wall_seconds": 35.02,
+            "step_seconds": 1
+          },
+          "progress_valid": true,
+          "workload": {
+            "engagements": 5,
+            "supporters": 10,
+            "helicopter_shots": 405,
+            "infantry_aa_shots": 54,
+            "vehicle_aa_shots": 1588,
+            "primary_vehicle_shots": 0,
+            "entities": 30,
+            "units": 85
+          }
+        }
+      ],
+      "supporters": 10,
+      "role_shots": {
+        "helicopter_shots": 820,
+        "infantry_aa_shots": 110,
+        "vehicle_aa_shots": 3185,
+        "primary_vehicle_shots": 0
+      }
+    }
+  ],
+  "workload_notes": [
+    "20 total groups including helicopter crews, infantry AA teams, and AA vehicle crews; five engagements.",
+    "Virtual only, production budgets, real movement, visibility, damage and ammunition selection.",
+    "Test-only immortality restores vehicle health after real damage calculations and prevents unit removals; restoration overhead is included.",
+    "Infantry target squads replace one member with organic AA; each infantry launcher carries 12 magazines to sustain the load.",
+    "Co-located virtual battle cells create a dense-frontline scan workload; a 600 m waypoint attack radius sustains infantry contact; weapon ranges stay at production defaults.",
+    "Startup, setup and teardown are excluded; timing runs are sequential and use the production frame budgets."
+  ]
+}

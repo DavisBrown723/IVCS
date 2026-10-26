@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-14",
+  "public_variables": [
+    "IVCS_SimulationTime",
+    "IVCS_SimulationPaused"
+  ],
+  "semantics": "Unpaused diag_tickTime deltas multiplied by accTime; elapsed time starts at zero; paused frames advance the raw baseline only.",
+  "checks": [
+    {
+      "name": "tests/combat/run.sqf 2026-10-14T15:52:02",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2f5cac4d027243409c56ef4b6b7f80f0\\profile\\arma3server_x64_2026-10-14_15-52-06.rpt"
+    },
+    {
+      "name": "tests/combat/aggregation.sqf 2026-10-14T15:53:10",
+      "passed": 109,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-cde2eec2eade4d2995fc3f9ed06937cc\\profile\\arma3server_x64_2026-10-14_15-53-14.rpt"
+    },
+    {
+      "name": "tests/combat/scheduling.sqf 2026-10-14T15:53:38",
+      "passed": 12,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-effc466fc7fd45f0ae50272b33f788a3\\profile\\arma3server_x64_2026-10-14_15-53-42.rpt"
+    },
+    {
+      "name": "tests/combat/ammo-sharing.sqf 2026-10-14T15:54:05",
+      "passed": 45,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-dd2960f012ad4019b8aa50ca03c0ed22\\profile\\arma3server_x64_2026-10-14_15-54-08.rpt"
+    },
+    {
+      "name": "tests/combat/resumable-sharing.sqf 2026-10-14T15:54:57",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-586a2330642f48b88b7ef77519bde7db\\profile\\arma3server_x64_2026-10-14_15-55-01.rpt"
+    },
+    {
+      "name": "tests/combat/needs-scan.sqf 2026-10-14T15:55:27",
+      "passed": 28,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d185725de94c41b8b85b261ae70a270c\\profile\\arma3server_x64_2026-10-14_15-55-30.rpt"
+    },
+    {
+      "name": "tests/combat/arrival-sharing.sqf 2026-10-14T15:55:55",
+      "passed": 59,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-38abc9096df542feb567991dc48e7503\\profile\\arma3server_x64_2026-10-14_15-55-59.rpt"
+    },
+    {
+      "name": "tests/tasks/activation.sqf 2026-10-14T15:56:22",
+      "passed": 88,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-c71be7f3ec2d49978b1010049d23e1c8\\profile\\arma3server_x64_2026-10-14_15-56-26.rpt"
+    },
+    {
+      "name": "full task regression with sufficient native-flight timeout",
+      "passed": 211,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-233ef2d10dff49a8ba97481303b0a005\\profile\\arma3server_x64_2026-10-14_16-01-26.rpt"
+    },
+    {
+      "name": "virtualization regression",
+      "passed": 96,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-325cc81029484d35973dcfc75e631f3e\\profile\\arma3server_x64_2026-10-14_16-08-58.rpt"
+    },
+    {
+      "name": "normal startup and combat demo regression",
+      "passed": 11,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b993687ecf1141239cb5658c6b3ecf4a\\profile\\arma3server_x64_2026-10-14_16-09-32.rpt"
+    },
+    {
+      "name": "clock integration",
+      "passed": 30,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f5f98521a06d49ec9223ac338abdd277\\profile\\arma3server_x64_2026-10-14_15-54-21.rpt"
+    },
+    {
+      "name": "normal and forced-shortage smoke",
+      "passed": 11,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f0d4efdeca5b431690503e55bceb5763\\profile\\arma3server_x64_2026-10-14_16-12-47.rpt"
+    }
+  ],
+  "passed": 792,
+  "failed": 0,
+  "excluded_incomplete_attempts": [
+    {
+      "name": "tests/tasks/run.sqf 2026-10-14T15:57:18",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e1e9a2060cb64bcda5e12d7f5a40e31d\\profile\\arma3server_x64_2026-10-14_15-57-21.rpt",
+      "reason": "Runner timeout (initial full task attempt)"
+    },
+    {
+      "name": "benchmark smoke with complete sharing-delay window",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2d2ac7a0cf954c798609e5c44ee1fb17\\profile\\arma3server_x64_2026-10-14_16-10-25.rpt",
+      "reason": "Profiler-only syntax in the old vanilla benchmark loader; corrected and rerun"
+    }
+  ],
+  "source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f0d4efdeca5b431690503e55bceb5763\\ivcs_task_tests.Altis\\IVCS",
+  "production_source_checks": [
+    {
+      "path": "startup.sqf",
+      "sha256": "2a2b79916dec248a88f8b402bd57e3dcba5b2c7dc86930a8a7caa16babbe8238",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Common/initFunctions.sqf",
+      "sha256": "90f984bcd00f83205a2ef540b2dcc3a6e6cb3f23aed1a5e784dc8a8c84b588da",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Common/functions/internal/startSimulationClock.sqf",
+      "sha256": "646032f07ba7fab517e6748ec864244ef102f38ce76581b5da57107bff297308",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Common/functions/internal/updateSimulationTime.sqf",
+      "sha256": "43aae8c3c889d7934b377ad0830348613a6e0b455b4229f9c3aa6a5a28f163dc",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Common/functions/internal/onFrame.sqf",
+      "sha256": "86b5553b06c168a882a512426413fb95055d58886e41f42251d82b16e9057372",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/simulateEntities.sqf",
+      "sha256": "dbf64434f08cbf3423979cb14cfc9e22091308c64f78b77efafe7b41a06d5b32",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/onFrame.sqf",
+      "sha256": "ab8f7c11d880d8725ce81a79fa0cf76dbb65309dae706acda0e06c2d79d8373c",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/entities/group/createGroupEntity.sqf",
+      "sha256": "b58eaf23618f019c911f5da2a8839a6bd72f3ac5068e9a7634be5f2941c062e3",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/entities/vehicle/createVehicleEntity.sqf",
+      "sha256": "e60af281c5d6ad6473e53d86d0c897edda32bd8510b6ec116657640002eff7ce",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Paths/functions/onFrame.sqf",
+      "sha256": "5302c136c17ee8d86c53eb463b094af289b2b43b070e71e910c8ffd14402298c",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "EntityTasks/functions/syncActiveTask.sqf",
+      "sha256": "1a18ad1ae27a2cf97a288f5b9211ad37d7ea1a96f029686d0aadc113c4df3dcc",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "EntityTasks/functions/deactivateTask.sqf",
+      "sha256": "e3f64cbf79fa2bbc1f8a290e36ae7b32a656978df825a92bf3336f65ce4c265b",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "EntityTasks/functions/tasks/landTask.sqf",
+      "sha256": "dd1fcbeeb6e18be583a03e4fe41647060755c599e331788d9bcf045eaa711057",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "EntityTasks/functions/tasks/getinTask.sqf",
+      "sha256": "f82c6402d66b9c07f18c0d5d94c3fb71324f95ec00e031c3dca21c90f4bc8263",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Execution/functions/executeAfterSeconds.sqf",
+      "sha256": "ef8a55e55c5d2c1bafcfccd94f503063b458909c6769011482d0f7f406a095de",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Execution/functions/executeEverySeconds.sqf",
+      "sha256": "117539a1fc272ba74bf6b3f1643c71e16c00ca6f947b6a60af09bac7d30e119b",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "Execution/functions/onFrame.sqf",
+      "sha256": "d4700d1695fb116421eefae37305ac2164caa754ad03758c5dc7ac859cbd4fd5",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/createController.sqf",
+      "sha256": "dea073fba0f9f940c4e30d11ce7bd42365eeb234343d0a3689f756835dc62023",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/onFrame.sqf",
+      "sha256": "520466d1725c36d919a3b5a8a54ea3adccec5cee1b05c94721214a60965f6f05",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/start.sqf",
+      "sha256": "2188c7703547ac73888fcfea6435097f2e20a7f7223fe821316dda82f6e0e951",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/update.sqf",
+      "sha256": "5aac9510f7106d736c07316d638a4e4b294de18dd3d79e4e34d18caae585d888",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/onSpawn.sqf",
+      "sha256": "3a86e4f58a832549964e7ae6ff7dc500ca21b54606622fb20b4d024512eac05f",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/onDespawn.sqf",
+      "sha256": "f1d6d71d92a65f50f769ba31f0f644fb39ee2dc22b08241b2b49b9bc96785c56",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/finish.sqf",
+      "sha256": "b939e0413a4b434dc19f0f60034eea48252bef266e9e768c4722827c716df439",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/findTarget.sqf",
+      "sha256": "52e892a95ee198fb06373c491142c45180a855b0c286a188a7a6d1b81ebf0261",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/onFrame.sqf",
+      "sha256": "31ed95e43c818b38d91cfccb28ad63c286efc97a2bafba4054d6a751c839eb1f",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/searchOnFrame.sqf",
+      "sha256": "19ef2ebb55cf12ecc8738cd23afd8ab01c9a8348f238f8ad61751464725cd15e",
+      "crlf": true,
+      "smoke_source_identical": true
+    },
+    {
+      "path": "VirtualSpace/functions/ammo/updateGroup.sqf",
+      "sha256": "582e09a97c5b82a0f6b256743d3210d68ad0efae4f3ee79d66d3be18876a6040",
+      "crlf": true,
+      "smoke_source_identical": true
+    }
+  ],
+  "review_fixes": [
+    "One initialization guard prevents duplicate clock handlers or time resets.",
+    "Movement integrates acceleration once per frame instead of multiplying a sparse update interval by the latest speed.",
+    "Combat reads the shared clock; its duplicate clock/lastFrame fields are removed.",
+    "Task suspension and combat pause offsets use the same epoch as task deadlines.",
+    "Path request failure deadlines cannot expire during a pause.",
+    "Vanilla benchmark generation removes literal profiler-only syntax before Arma parses it.",
+    "Performance validation records simulation and wall seconds separately, retaining legacy log support."
+  ],
+  "test_scope": "The dedicated-server accumulator tests inject pause and 5x samples into the production function; real frame sampling is tested at the server acceleration. This is not a native multiplayer pause or observed 5x client run.",
+  "smoke_purpose": "Clock progress and ammo-throughput validity; no before/after performance claim."
+}

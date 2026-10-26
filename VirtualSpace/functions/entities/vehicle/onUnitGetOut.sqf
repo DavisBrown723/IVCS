@@ -2,6 +2,8 @@ params ["_vehicle", "_role", "_unit", "_turret"];
 
 private _unitID = _unit getvariable "unitID";
 private _entityID = _unit getvariable "entityID";
+// Native vehicle events also include occupants outside the virtualization system.
+if (isNil "_entityID" || { isNil "_unitID" }) exitWith {};
 
 private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 if (isNil "_entity") exitWith {};

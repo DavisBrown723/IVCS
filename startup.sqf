@@ -1,3 +1,5 @@
+// Initialize on every machine before registering gameplay frame handlers.
+[] call IVCS_Common_startSimulationClock;
 if (isserver) then {
     call compile preprocessFileLineNumbers "IVCS\Common\startup.sqf";
     call compile preprocessFileLineNumbers "IVCS\Execution\startup.sqf";

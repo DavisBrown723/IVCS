@@ -1,0 +1,16 @@
+{
+  "method": "Main-road centres intersect the overview brown-road mask with 1-pixel tolerance",
+  "mainRoadSections": 2061,
+  "fractionMatching": 0.9941775836972343,
+  "projection": {
+    "provider": "Arma3Map / jetelain",
+    "copyright": "Bohemia Interactive",
+    "url": "https://jetelain.github.io/Arma3Map/altis.html",
+    "tileUrl": "https://jetelain.github.io/Arma3Map/maps/altis/{z}/{x}/{y}.png",
+    "tileSize": 212,
+    "factorX": 0.006839,
+    "factorY": 0.006836,
+    "maxNativeZoom": 6
+  },
+  "caveat": "A coarse independent alignment check, not a survey-accuracy measurement."
+}

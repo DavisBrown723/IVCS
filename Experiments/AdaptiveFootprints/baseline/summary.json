@@ -1,0 +1,68 @@
+{
+  "world": "Altis",
+  "status": "unreviewed candidates",
+  "index_version": 6,
+  "scanned_objects": 673914,
+  "class_model_identities": 788,
+  "untagged_objects": 661945,
+  "rejected_inland_port_objects": 8,
+  "locations": 280,
+  "categories": {
+    "base": 42,
+    "factory": 29,
+    "fuel": 9,
+    "hospital": 1,
+    "port": 22,
+    "power": 55,
+    "radiotower": 14,
+    "town": 108
+  },
+  "mixed_compounds": 57,
+  "validation": {
+    "regression_checks_passed": 120,
+    "saved_artifact_checks_passed": 57,
+    "script_errors": 0,
+    "sqf_line_endings": "CRLF",
+    "fuel_objects_preserved": 113,
+    "wind_turbines_excluded": 128,
+    "native_fortification_models_verified": 5,
+    "small_piers_excluded": 18,
+    "military_airfields": 5,
+    "port_objects_preserved": 503
+  },
+  "verified_examples": {
+    "paros": "No inland port at [20942.27,16992.13].",
+    "chalkeia": "The 7-object fuel component is absorbed into the 88-object settlement, producing a 95-object town with a fuel role.",
+    "athira": "The 46-object industrial compound reports 29 industrial, 2 power and 15 housing objects, with no military secondary role. The separate town retains its 163 settlement objects and absorbs a 7-object fuel station; the western 6-object base remains independent.",
+    "power": "No standalone power location contains fewer than 2 objects. All 128 wind turbines remain inventoried but supply no site evidence; 55 power sites remain.",
+    "radar_base": "The northeastern military base includes its two radar domes and nearby two-object power site.",
+    "radio_heli_base": "The small military base near [12495.8,15195.9] includes its radio site and helipad.",
+    "military_buildings": "The northeastern radar base records one cargo accommodation building as barracks and one guard post as fortification; its radar and power structures belong to neither subtype.",
+    "ports": "Eight settlements and two military bases own secondary port roles. All 503 accepted coastal port objects are preserved exactly once. The eighteen Land_Pier_small_F objects supply no site evidence.",
+    "airfields": "All five Altis airfields export as primary base with secondary air, military marker styling, and support absorption. Legacy airfield demo filters resolve the air role."
+  },
+  "settings_sha256": "9c94d4e71a48d4138043096e11b400bf37803feb7260f8c55a6ff4b75d0980d2",
+  "locations_sha256": "4383b3ea1b77ef287b26688fda56575b7d4770d37247b617be4ddaaf389f6824",
+  "secondary_role_sites": {
+    "radar": 4,
+    "heli": 12,
+    "air": 8
+  },
+  "fuel_site_owners": {
+    "base": 2,
+    "fuel": 9,
+    "town": 13
+  },
+  "military_buildings": {
+    "sites_with_military_role": 44,
+    "barracks": 176,
+    "fortification": 84,
+    "unique_buildings": 260
+  },
+  "port_site_owners": {
+    "base": 2,
+    "factory": 1,
+    "port": 22,
+    "town": 8
+  }
+}

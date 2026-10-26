@@ -1,0 +1,490 @@
+{
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-28c4210241414968a1754d867ac07b17\\profile\\arma3server_x64_2026-10-12_21-26-29.rpt",
+  "label": "optimized-pressure",
+  "config": [
+    10,
+    2,
+    1,
+    [
+      20,
+      40,
+      80
+    ],
+    [
+      "Arma 3",
+      "Arma3",
+      222,
+      154103,
+      "Stable",
+      false,
+      "Windows",
+      "x64",
+      "profiling"
+    ],
+    1,
+    3,
+    8
+  ],
+  "validity_checks": {
+    "passed": 15,
+    "failed": 0
+  },
+  "results": [
+    {
+      "mode": "ammo-pressure",
+      "groups": 20,
+      "engagements": 10,
+      "frames": 279,
+      "trial_count": 1,
+      "units_at_window_start": [
+        160
+      ],
+      "units_at_window_end": [
+        157
+      ],
+      "shots": 928,
+      "hits": 48,
+      "ammo_transfers": 20,
+      "steps": 204,
+      "step_frames": 85,
+      "measured_fps": 27.80546143113414,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 279,
+          "total_ms": 365.0208520000004,
+          "mean_ms": 1.3083184659498208,
+          "p50_ms": 0.999451,
+          "p90_ms": 3.99971,
+          "p95_ms": 4.99916,
+          "p99_ms": 5.00107,
+          "max_ms": 5.00107,
+          "over_1ms": 106,
+          "over_5ms": 10,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "frame_interval_ms": {
+          "count": 279,
+          "total_ms": 10031.997399999991,
+          "mean_ms": 35.95697992831541,
+          "p50_ms": 35.9993,
+          "p90_ms": 37.0007,
+          "p95_ms": 37.0007,
+          "p99_ms": 38.0001,
+          "max_ms": 38.0001,
+          "over_1ms": 279,
+          "over_5ms": 279,
+          "over_10ms": 279,
+          "over_16_67ms": 279
+        },
+        "combat_ms": {
+          "count": 279,
+          "total_ms": 282.0168099999999,
+          "mean_ms": 1.0108129390681004,
+          "p50_ms": 0.0,
+          "p90_ms": 3.99971,
+          "p95_ms": 3.99971,
+          "p99_ms": 4.99916,
+          "max_ms": 5.00107,
+          "over_1ms": 85,
+          "over_5ms": 1,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ammo_queue_ms": {
+          "count": 279,
+          "total_ms": 0,
+          "mean_ms": 0.0,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.0,
+          "max_ms": 0,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 279,
+          "total_ms": 58.004425,
+          "mean_ms": 0.20790116487455196,
+          "p50_ms": 0.0,
+          "p90_ms": 0.999451,
+          "p95_ms": 1.00136,
+          "p99_ms": 1.2208187999999704,
+          "max_ms": 2.00081,
+          "over_1ms": 20,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "spawner_ms": {
+          "count": 279,
+          "total_ms": 21.999376000000005,
+          "mean_ms": 0.07885081003584228,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.999451,
+          "p99_ms": 1.00136,
+          "max_ms": 1.00136,
+          "over_1ms": 6,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ivcs_busy_ms": {
+          "count": 85,
+          "total_ms": 292.01130499999994,
+          "mean_ms": 3.4354271176470585,
+          "p50_ms": 3.00026,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 5.00107,
+          "max_ms": 5.00107,
+          "over_1ms": 80,
+          "over_5ms": 10,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_busy_ms": {
+          "count": 85,
+          "total_ms": 271.0113949999999,
+          "mean_ms": 3.1883693529411765,
+          "p50_ms": 3.00026,
+          "p90_ms": 4.00162,
+          "p95_ms": 4.00162,
+          "p99_ms": 4.9994656,
+          "max_ms": 5.00107,
+          "over_1ms": 79,
+          "over_5ms": 1,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "trials": [
+        {
+          "trial": 1,
+          "mode": "ammo-pressure",
+          "groups": 20,
+          "expected_frames": 279,
+          "seconds": 10.034,
+          "start_units": 160,
+          "end_units": 157,
+          "shots": 928,
+          "hits": 48,
+          "ammo_transfers": 20,
+          "combat_progress": {
+            "min_seconds": 10,
+            "max_seconds": 10.5,
+            "wall_seconds": 10.034
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ammo-pressure",
+      "groups": 40,
+      "engagements": 20,
+      "frames": 279,
+      "trial_count": 1,
+      "units_at_window_start": [
+        319
+      ],
+      "units_at_window_end": [
+        311
+      ],
+      "shots": 1852,
+      "hits": 96,
+      "ammo_transfers": 38,
+      "steps": 404,
+      "step_frames": 145,
+      "measured_fps": 27.835977252319665,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 279,
+          "total_ms": 622.997380000001,
+          "mean_ms": 2.232965519713262,
+          "p50_ms": 1.9989,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 5.220108599999971,
+          "max_ms": 6.00052,
+          "over_1ms": 145,
+          "over_5ms": 32,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "frame_interval_ms": {
+          "count": 279,
+          "total_ms": 10019.996799999992,
+          "mean_ms": 35.913967025089605,
+          "p50_ms": 35.9993,
+          "p90_ms": 37.0007,
+          "p95_ms": 37.0026,
+          "p99_ms": 37.0026,
+          "max_ms": 37.0026,
+          "over_1ms": 279,
+          "over_5ms": 279,
+          "over_10ms": 279,
+          "over_16_67ms": 279
+        },
+        "combat_ms": {
+          "count": 279,
+          "total_ms": 527.0100309999999,
+          "mean_ms": 1.888924842293907,
+          "p50_ms": 0.999451,
+          "p90_ms": 4.00162,
+          "p95_ms": 4.99916,
+          "p99_ms": 5.00107,
+          "max_ms": 5.00107,
+          "over_1ms": 139,
+          "over_5ms": 11,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ammo_queue_ms": {
+          "count": 279,
+          "total_ms": 0.999451,
+          "mean_ms": 0.0035822616487455198,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.0,
+          "max_ms": 0.999451,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 279,
+          "total_ms": 78.99099599999994,
+          "mean_ms": 0.28312184946236557,
+          "p50_ms": 0.0,
+          "p90_ms": 0.999451,
+          "p95_ms": 0.999451,
+          "p99_ms": 1.00327,
+          "max_ms": 1.9989,
+          "over_1ms": 12,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "spawner_ms": {
+          "count": 279,
+          "total_ms": 11.99914,
+          "mean_ms": 0.04300767025089606,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.999451,
+          "max_ms": 1.00327,
+          "over_1ms": 2,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ivcs_busy_ms": {
+          "count": 145,
+          "total_ms": 571.0144740000001,
+          "mean_ms": 3.9380308551724132,
+          "p50_ms": 3.99971,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 5.9988392,
+          "max_ms": 6.00052,
+          "over_1ms": 141,
+          "over_5ms": 32,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_busy_ms": {
+          "count": 145,
+          "total_ms": 522.0127759999998,
+          "mean_ms": 3.600088110344828,
+          "p50_ms": 3.99971,
+          "p90_ms": 4.998396,
+          "p95_ms": 5.00107,
+          "p99_ms": 5.00107,
+          "max_ms": 5.00107,
+          "over_1ms": 139,
+          "over_5ms": 11,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "trials": [
+        {
+          "trial": 1,
+          "mode": "ammo-pressure",
+          "groups": 40,
+          "expected_frames": 279,
+          "seconds": 10.023,
+          "start_units": 319,
+          "end_units": 311,
+          "shots": 1852,
+          "hits": 96,
+          "ammo_transfers": 38,
+          "combat_progress": {
+            "min_seconds": 10,
+            "max_seconds": 10.5,
+            "wall_seconds": 10.023
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ammo-pressure",
+      "groups": 80,
+      "engagements": 40,
+      "frames": 282,
+      "trial_count": 1,
+      "units_at_window_start": [
+        637
+      ],
+      "units_at_window_end": [
+        623
+      ],
+      "shots": 3674,
+      "hits": 196,
+      "ammo_transfers": 77,
+      "steps": 796,
+      "step_frames": 272,
+      "measured_fps": 28.17182817182817,
+      "metrics": {
+        "ivcs_ms": {
+          "count": 282,
+          "total_ms": 1129.001721000001,
+          "mean_ms": 4.0035522021276595,
+          "p50_ms": 4.00162,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 6.99997,
+          "max_ms": 7.99942,
+          "over_1ms": 264,
+          "over_5ms": 72,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "frame_interval_ms": {
+          "count": 282,
+          "total_ms": 10010.996599999991,
+          "mean_ms": 35.49998794326241,
+          "p50_ms": 35.9993,
+          "p90_ms": 36.0031,
+          "p95_ms": 36.9987,
+          "p99_ms": 37.0026,
+          "max_ms": 38.002,
+          "over_1ms": 282,
+          "over_5ms": 282,
+          "over_10ms": 282,
+          "over_16_67ms": 282
+        },
+        "combat_ms": {
+          "count": 282,
+          "total_ms": 1043.018461,
+          "mean_ms": 3.698647024822695,
+          "p50_ms": 3.9978,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 6.99997,
+          "max_ms": 6.99997,
+          "over_1ms": 262,
+          "over_5ms": 37,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ammo_queue_ms": {
+          "count": 282,
+          "total_ms": 4.997255,
+          "mean_ms": 0.017720762411347516,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.999451,
+          "max_ms": 0.999451,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "entities_ms": {
+          "count": 282,
+          "total_ms": 71.98338599999998,
+          "mean_ms": 0.25526023404255316,
+          "p50_ms": 0.0,
+          "p90_ms": 0.999451,
+          "p95_ms": 0.999451,
+          "p99_ms": 1.00327,
+          "max_ms": 1.00327,
+          "over_1ms": 6,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "spawner_ms": {
+          "count": 282,
+          "total_ms": 6.004344000000001,
+          "mean_ms": 0.021292,
+          "p50_ms": 0.0,
+          "p90_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.999451,
+          "max_ms": 1.00327,
+          "over_1ms": 2,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "ivcs_busy_ms": {
+          "count": 272,
+          "total_ms": 1126.0033680000013,
+          "mean_ms": 4.139718264705882,
+          "p50_ms": 4.00162,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.449103499999989,
+          "p99_ms": 6.99997,
+          "max_ms": 7.99942,
+          "over_1ms": 264,
+          "over_5ms": 72,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "combat_busy_ms": {
+          "count": 272,
+          "total_ms": 1042.01901,
+          "mean_ms": 3.830952242647059,
+          "p50_ms": 3.9978,
+          "p90_ms": 5.00107,
+          "p95_ms": 5.00107,
+          "p99_ms": 6.99997,
+          "max_ms": 6.99997,
+          "over_1ms": 262,
+          "over_5ms": 37,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "trials": [
+        {
+          "trial": 1,
+          "mode": "ammo-pressure",
+          "groups": 80,
+          "expected_frames": 282,
+          "seconds": 10.01,
+          "start_units": 637,
+          "end_units": 623,
+          "shots": 3674,
+          "hits": 196,
+          "ammo_transfers": 77,
+          "combat_progress": {
+            "min_seconds": 9.5,
+            "max_seconds": 10.5,
+            "wall_seconds": 10.01
+          }
+        }
+      ]
+    }
+  ]
+}

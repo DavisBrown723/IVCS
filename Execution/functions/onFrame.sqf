@@ -1,4 +1,4 @@
-if (isGamePaused) exitwith {};
+if (IVCS_SimulationPaused) exitwith {};
 
 
 
@@ -12,7 +12,7 @@ if (!_waitAndExecuteListSorted) then {
     _waitAndExecuteListSorted = true;
 };
 
-private _time = time;
+private _time = IVCS_SimulationTime;
 private _keepExecuting = false;
 
 {

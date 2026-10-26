@@ -1,0 +1,98 @@
+# Road indexing
+
+Road indexing is part of the normal `IVCS/Locations/Indexing/run.ps1` build. This directory contains the production road authoring implementation, graph query reference, regression fixtures and browser viewer. Its input is the location file generated earlier in the same normal build. The original experiments remain frozen comparison snapshots.
+
+## View the saved result
+
+Double-click **Open map.cmd**, or run `.\start-map.ps1`. Open **http://127.0.0.1:8767**. Python 3.9+ is required (already installed here); Arma is not launched. The launcher reuses this viewer if already running and otherwise starts a hidden, loopback-only server. Use `.\stop-map.ps1` to stop it, or `-Port 8768` on both scripts if the default port is occupied.
+
+Scroll to zoom; drag to pan. Use Airport, Athira, Kavala, Bridge, Dorida inlets, Dorida fallback or Whole island. Dorida inlets selects the town and numbers its eight perimeter crossings. Click a numbered marker or its sidebar button, then Zoom to inlet for a close view. Search town names, location IDs, road IDs (for example `r015377`), or `14000,18710` world coordinates. Click a road to inspect its evidence or highlight its connected network. Click a large blue site handle to show its numbered attachments. Unselected footprints have blue fill and a white-cased outline; the selected site is amber. Handles stay above roads and inlets, and hovering identifies the site before selection. Dorida fallback selects a nearby power site with a 36 m strong approach and secondary approaches. Select a baseline road connection in the sidebar to draw its road path; Frame connection includes both endpoints. Teal is road travel; dashed approach lines are unassessed off-road gaps. Layers include road classes, connected networks, junctions/dead ends, bridges, diagnostic extended connections and saved location footprints. The URL fragment preserves the viewed position and zoom.
+
+The detailed topographic basemap loads tiles from [Arma3Map](https://jetelain.github.io/Arma3Map/altis.html) (terrain copyright Bohemia Interactive). High-detail tiles require internet access. A bundled 1696-pixel island overview remains available offline, with the full local road overlay. Maximum native detail is zoom 6; zooms 7-9 enlarge those tiles. All graph data and Leaflet assets stay local; the server exposes only the viewer directory. No map data is uploaded.
+
+## Current Altis snapshot
+
+- 34,625 native sections returned; 33,733 with usable endpoint geometry, approximately 732.3 km of endpoint chords.
+- 892 HIDE/airport surface objects have unavailable endpoints. They remain in diagnostics and are excluded from routing and access candidates.
+- 33,979 ordinary links, 1,412 additional extended-only pairs kept as diagnostics.
+- 3,785 retained section-centre nodes, 4,031 compressed edges, 60 connected networks.
+- 1,016 junction sections, 562 dead-end sections, 40 bridge sections (not necessarily 40 distinct bridges).
+- 801 boundary inlets across 206 of 265 sites, including Dorida's eight. Three crossings use ordinary-link gap interpolation. No inlet cap or sector quota is applied.
+- 985 fallback approaches at 55 of the remaining 59 sites: 107 strong and 878 secondary. Four sites have no candidate within 500 m; they remain in the export with unknown accessibility.
+- 1,786 resolved routing anchors; 4,814 routing nodes and 5,060 split edges.
+- 10,980 source-corridor relationships, 14,275 precise split-edge geographic relationships and 25,973 baseline attachment connections.
+- Runtime schema 2 package: 6,664,546 bytes (6.36 MiB). The routing core without the baseline path catalogue is 2,194,370 bytes (2.09 MiB). This road preprocessing/export build took 10.3 seconds.
+
+## Rebuild without an LLM
+
+Run `IVCS/Locations/Indexing/run.ps1` from the workspace root. `-InventoryPath IVCS/Locations/Indexing/output/altis/objects.sqf` reuses the object inventory; `-RescanRoads` refreshes the road capture. Locations are always rebuilt first. Full road outputs are published under `Indexing/output/altis/roads`, and the viewer projection under `Indexing/output/altis/viewer`.
+
+The Python stage also accepts `--locations`, `--capture` (or `--rpt`), `--output`, and `--viewer-directory` for explicit authoring builds. Use the normal PowerShell entry point to validate and publish a complete dataset. The supplied runner and basemap are Altis-specific; another terrain requires the matching native mission, location inventory and georeferenced basemap. No LLM is required.
+
+## Data and boundaries
+
+1. `extract.sqf` observes native `nearRoads`, ordinary/extended `roadsConnectedTo` and `getRoadInfo`. Output is a chunked RPT stream.
+2. `index.py` creates stable per-snapshot road IDs, an undirected physical graph, connected components, compressed chains. The pure `access.py` module identifies boundary inlets, `fallback.py` adds typed off-road candidates, and `preprocess.py` resolves routing anchors, corridors, baseline connections and compact runtime data.
+3. `viewer/` reads the published compact display projection of those outputs. Full-precision JSON remains under `../output/altis/roads/`.
+
+`roads.json` preserves section endpoints, source positions, ASL deck heights, ordinary and extended observations, attributes and graph references. `graph.json` stores nodes, edges, components and connection evidence. `locations.json` is the regenerated location snapshot; `../review/containment-merging.json` records absorption changes against the preserved pre-change production snapshot. `attachments.json` links sites to nearby road sections; `access-coverage.json` records inlet counts, interpolation evidence and sites with nearby roads but no boundary crossing. `manifest.json` identifies schema, source engine, settings, methods and SHA-256 dataset dependencies. The new authoring outputs are `routing-anchors.json`, `routing-graph.json`, `corridors.json`, `routing-corridors.json`, `objective-connections.json` and `accessibility.json`. `runtime.json` contains compact adjacency, physical distances, attributes, attachment references, baseline connections and accessibility measurements for all 265 sites.
+
+Graph nodes are retained road-section centres. Edges preserve distances and reachability in the original centre-to-centre graph; they are not exact lane geometry or guaranteed vehicle routes. Ordinary observations are treated as undirected potential physical links. An asymmetric observation is not interpreted as a one-way restriction. Geometric crossings alone do not add connections, and extended-only links are not promoted into routes. Bridge metadata can omit width.
+
+Access version **boundary-inlets-1** intersects every observed road-section chord with the saved circle or rotated rectangle. A crossing requires road geometry on both the outside and inside. A through-road contributes two inlets, even when both endpoints are outside. Roads entirely inside, nearby parallel roads and tangencies do not create inlets.
+
+Only coincident contacts (within 5 cm horizontally and 50 cm vertically) supported by the same road or an ordinary engine connection are combined. Nearby independent roads remain separate, including roads belonging to the same island-wide network. There is no compass-sector quota, 65 m spacing rule or 12-inlet cap. Gaps between ordinary-connected sections use a closest-chord connector and are labelled as interpolation; extended-only evidence never creates these connectors.
+
+Each attachment includes the boundary position, all contributing road IDs, source segment parameters, interior/exterior samples, inward orientation and graph references. Marker numbers run clockwise for each site. The legacy `graphRefs` still refer to source section centres. The matching record in `routing-anchors.json` resolves each physical departure onto a source-supported node or edge offset. Projection is restricted to ordinary links adjacent to the source section, or the source pair for interpolated crossings. Junction attachments retain the junction node and all branches. The derived graph splits edges at those offsets without changing source graph distances. Projection errors and geometry-to-anchor connector lengths remain explicit approximations. Inlet records remain candidates for physical entrance/vehicle access; gates, fences, slopes, water and vertical separation from the site are unassessed. No saved footprint or road is changed.
+
+Fallback version **nearby-approaches-1** runs only for sites without boundary inlets. It measures the shortest horizontal road-chord-to-footprint gap. Up to 150 m inclusive is strong; more than 150 m through 500 m inclusive is secondary. Both tiers are retained. Selection uses contiguous runs on compressed corridors, divided by tier and coverage, with distinct local closest approaches along curved corridors. Flat distance plateaus contribute one sample. Junctions, attribute changes and separate networks retain alternatives; there is no island-component or compass-sector quota. These candidates are deliberately conservative and may still need feasibility filtering.
+
+Configure thresholds with `python index.py --strong-gap 150 --maximum-gap 500`. Additional selection settings live in `FALLBACK_SETTINGS`. Departures retain measured road ASL; footprint approaches are 2D with unknown height. A zero gap can mean an internal road without an exterior inlet. `approachPathLengthM: null` means no approach path was assessed. No terrain-water, slope, fence or vehicle test is inferred from distance.
+
+Preprocessing version **strategic-access-3** supplies geographic corridor relationships (`enters`, `traverses`, `within`, `bypasses`). The full source-corridor records remain in `corridors.json`. `routing-corridors.json` clips their interior intervals to each split routing edge and recomputes the nearest footprint gap on that portion. Runtime consumers join geographic records by split edge index, never by source edge alone. Interior intervals are distances from the split edge's from-node along its 3D centreline. Empty intervals, including boundary-only contact, do not count as interior overlap. These measurements describe approximate graph geometry relative to the saved footprint. A bypass relationship means a nearby corridor stays outside that footprint; it does not establish tactical utility, control or a complete alternative journey.
+
+Baseline discovery records connections to every reached attachment, then continues along physical road edges past **fallback-only** nodes. A non-origin node with any genuine boundary inlet stops expansion, including a **mixed** node with both an inlet and a fallback. The origin always expands. `baselineNodeKinds` exposes these distinctions without changing the existing node/edge array layouts. They include paths between inlets of the same site with their actual costs. Every record includes endpoint attachment IDs, network identity, oriented split-edge references, road distance, two off-road gaps and two anchor connectors. The table is bounded by genuine inlet nodes, not an exhaustive list of objective pairs or alternative paths. Fallbacks no longer hide farther endpoints; useful alternatives are not capped to recover the old file size. The current spatial location build contains 25,973 records. Intermediate fallback gaps and connector costs are never added to a road path: only its two selected endpoints contribute approach costs. Dorida–Chalkeia now has two direct baseline attachment routes, with the shortest road distance 1,273.095 m. Dorida–Power/Dorida and Chalkeia–Power/Dorida also remain present. The complete routing adjacency preserves junctions, parallel paths and bypasses for queries. **Never merge attachments into a free objective transit node**, and never use off-road fallback lines to join road components.
+
+`accessibility.json` reports road classes, component IDs, counts and gap measurements independently of connection costs. Independent-route counts and goal-relevance scores remain unknown rather than invented. Current ownership, threat, vehicle policy, destruction and bridge availability are runtime inputs.
+
+`runtime_query.py` demonstrates bounded searches against only `runtime.json`. It supports source-edge closures, bridge-section closures, road-class weights and off-road weights, keeping physical distances separate from policy cost. For example:
+
+```powershell
+python runtime_query.py altis_power_1145-nearby-002 altis_town_5090-inlet-003
+```
+
+The indexing module supplies JSON and a reference query implementation; an Arma loader, Analysis/Commander integration, approach feasibility and executable vehicle movement remain future work. The viewer draws saved baseline routes, not tactical navigation.
+
+Previous versions remain under `baseline/nearby-access-v1`, `baseline/boundary-inlets-v1`, `baseline/runtime-v1` and `baseline/nonstopping-fallbacks-before`. Road identity is unchanged. Location, attachment, preprocessing and runtime identities were regenerated. The location variant is `containment-cores-v4` (index version 9); preprocessing is `strategic-access-3`. Manifest schema 4 and runtime schema 2 remain compatible; the new node-kind lookup is additive. Derived identities include road/location/attachment dependencies, preprocessing settings and the metric. Runtime cost changes do not rewrite physical datasets.
+
+## Location containment and support
+
+`../` owns the production classifier, adaptive geometry, settings and location builder. Road indexing consumes its published location records. All support and compound passes now use spatial relationships and compatible types without object-count caps or count ratios. General hosts must have at least the child's current core footprint area; airfields take priority, then larger original areas and stable IDs. Explicit support relationships keep their direction and do not require area dominance.
+
+Containment uses the consolidated host core footprint, refitted after each core merge. Distance checks retain the original host members. All child members inside its footprint are sufficient spatial evidence, regardless of distance to individual host objects. Boundary overlap requires every member within the existing 100 m margin and nearest original members within 100 m. Disjoint nearby sites retain the 100 m nearest-member and 250 m whole-core bounds, plus the rectangular margin. Typed support is reserved without attaching it, core sites consolidate, and support is reassessed against surviving consolidated cores. Rejected support cannot veto core merging or expand the host footprint for later eligibility. Coastal checks, small-pier exclusion and contextual industrial housing remain intact.
+
+[The current review](../review/containment-merging.md) links to every affected site. The airport review tracks both military cores and the independent reassessment of their support. Core footprints consolidate before support is reassigned; support cannot block a core merge or expand its eligibility geometry. The airport now contains 1,610 objects, including newly absorbed fuel and terminal radio sites. The northern military core extends about 128 m beyond the consolidated core footprint, so it remains separate under the 100 m overlap margin. Prior source components remain traceable, including the three settlement-owned ports near Kavala, Neochori and Pyrgos. All accepted port and fuel evidence is retained. The preserved pre-change dataset is in `../baseline/containment-before`.
+
+## Runtime schema 2 integration
+
+Schema 1 discarded corridor intervals and associated locations with entire source edges. It must not be interpreted as schema 2. `runtime_query.py` rejects old packages explicitly. In the saved correction example, `d000000` ends at source offset 889.284 m while `altis_town_267` begins at 986.565 m. The new row has no interior interval and reports an 84.988 m nearby gap. Positive overlap survives on the later split edge.
+
+| Runtime field | Contract |
+| --- | --- |
+| `corridors` | `[locationIndex, routingEdgeIndex, relation, gapM, insideIntervalsM]`. The edge index addresses `edges`, not `sourceEdgeIds`. Intervals are local 3D offsets in the edge's from-to direction. |
+| `corridorsByEdge` | Direct edge-index lookup of corridor row indices. `route_geography` consumes only rows belonging to traversed edges and reverses offsets when travel direction is reversed. |
+| `attachmentGeometry` | Parallel to `attachments`: `[roadDepartureASL, projectedAnchorASL, footprintApproach2D, footprintApproachHeightStatus, vehicleTraversalStatus]`. XY approach points never silently acquire zero elevation. |
+| `attachmentIndexById` | Direct attachment ID lookup for routing and execution handoff. |
+| `locationIndexById` / `attachmentsByLocation` | Direct per-location candidate lookup, sorted by off-road gap, anchor connector and ID. All candidates are retained; four locations have empty lists. |
+
+`find_route` now returns `endpointApproaches` with coordinates, gap, connector length and uncertainty, plus `geography` containing actual interior overlap and separate nearby-outside evidence. Overlap excludes off-road gaps and anchor approximation connectors. Nearby-outside evidence is geographic only; it does not establish a complete alternate journey, tactical influence or control. The browser still renders authoring geometry and has no schema-1 corridor consumer to migrate.
+
+Use `candidate_indices(package, location_id)` for the complete small per-site list. Optional kind, tier, maximum-gap and limit arguments provide a caller-selected geometric shortlist without altering the exported alternatives. `attachment_details(package, attachment_id)` provides execution coordinates without loading raw roads. The largest site still has 76 fallback candidates; mobility and threat filtering belong to runtime Analysis, not an arbitrary authoring cap.
+
+## Validation
+
+The Python checks under `tests/` cover source topology, raw-versus-compressed distances, all observed Altis endpoint transitions, unchanged Dorida inlets, fallback thresholds and plateaus, source-constrained anchors, junctions and overpasses, same-edge costs, disconnected networks, a same-site external detour, and bridge-closure alternatives. Saved baseline paths are reconstructed and checked, source lengths survive splitting, all indexed sites survive the runtime export, dependency identities are checked, and runtime policy changes leave physical measurements intact. Schema 2 tests compare every exported interval with the full authoring intervals, cover all current source/split interval mappings and the preserved `d000000`/`altis_town_267` example, check positive/reversed intervals, compare all coordinate lookups to source data, and run 100 seeded runtime-only queries. New checks validate the actual Dorida triangle, fallback-only and mixed-node stopping, endpoint-only costs, non-bridging sites, retained standalone ports, and consistency of all regenerated dependencies. The native settlement-port suite passes 15 checks, and the full native inventory rebuild passes its catalog/output integrity check. The airport/town/bypass closure case is a synthetic topology fixture; actual Altis vehicle traversal remains untested.
+
+`../validation.json` records promotion checks. `../output/altis/index.json` records the completed build and all output hashes. Historical baselines remain under `baseline/` for regression tests. All SQF files use CRLF.
+
+Leaflet 1.9.4 is bundled under its BSD-2-Clause license in `viewer/vendor/LICENSE.txt`. The published basemap's original coordinate scale is preserved; no road geometry is shifted to fit imagery.

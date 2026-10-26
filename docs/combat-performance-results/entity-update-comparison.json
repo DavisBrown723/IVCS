@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-25",
+  "function": "IVCS_Combat_canShootHelicopter",
+  "baseline_sha256": "fd66ef1a9d9a2d7e99601e8d5f7aef8633cc16b77b3864df87f56620ea40330a",
+  "optimized_sha256": "4855da1bd8170e91f9341905658c9dc58908f8e51d7256cda1095090cac259fc",
+  "groups": 20,
+  "engagements": 5,
+  "units": 85,
+  "entities": 30,
+  "acc_time": 1,
+  "window_seconds": 35,
+  "warmup_seconds": 2,
+  "frame_budget_ms": 3,
+  "engagements_per_frame": 8,
+  "entity_visits_per_frame": 10,
+  "ammo_search_budget_ms": 1,
+  "step_seconds": 1,
+  "scan_interval_seconds": 1,
+  "correctness_checks_passed": 225,
+  "trials": [
+    {
+      "trial": 1,
+      "version": "before",
+      "seed_pair": 1
+    },
+    {
+      "trial": 2,
+      "version": "after",
+      "seed_pair": 1
+    },
+    {
+      "trial": 3,
+      "version": "after",
+      "seed_pair": 2
+    },
+    {
+      "trial": 4,
+      "version": "before",
+      "seed_pair": 2
+    }
+  ],
+  "unprofiled_measured_frames": 3816,
+  "precise_measured_frames": 3891,
+  "performance_validity_checks_passed": 72,
+  "precise_trial_count_per_version": 2,
+  "excluded_precise_windows": [],
+  "whole_ivcs_p99_reduction_percent": 2.4252568566915267,
+  "entity_update_p99_reduction_percent": 9.803769016336405,
+  "readiness_mean_reduction_percent": 76.91572799632654,
+  "readiness_p99_reduction_percent": 68.30080846875273,
+  "sources_verified_unchanged_after_measurement": true
+}

@@ -17,6 +17,13 @@ private _states = [
         private _activeEntityIDs = _this get "activeEntityIDs";
         private _entitiesInSpawnRange = _this get "entitiesInSpawnRange";
 
+        // A directly engaged opponent stays spawned with any in-range participant.
+        {
+            private _entity = [_x] call IVCS_VirtualSpace_getEntity;
+            if (!isNil "_entity" && { (_entity get "combatID") != "" }) then {
+                { _entitiesInSpawnRange pushBackUnique (_x get "id"); } forEach ([_entity] call IVCS_Combat_getSpawnPartners);
+            };
+        } forEach +_entitiesInSpawnRange;
         private _profilesToDespawn = _activeEntityIDs - _entitiesInSpawnRange;
         _this set ["despawnQueue", _profilesToDespawn];
 
@@ -25,7 +32,7 @@ private _states = [
         _this set ["spawnQueue", _entitiesStillInSpawnRange];
 
         _this set ["entitiesInSpawnRange", []];
-    }, ["Finished"]] call IVCS_FSM_createState,
+    }, ["LoopDone"]] call IVCS_FSM_createState,
 
     ["CheckSpawnRadius",{
         private _spawnSources = _this get "spawnSources";
@@ -35,10 +42,8 @@ private _states = [
         private _spawnQueue = _this get "spawnQueue";
         private _entitiesInSpawnRange = _this get "entitiesInSpawnRange";
 
-        //private _spawnRadius = 1500;
-        //private _despawnRadius = 1700;
-        private _spawnRadius = 25;
-        private _despawnRadius = 25;
+        private _spawnRadius = _this get "spawnRadius";
+        private _despawnRadius = _this get "despawnRadius";
         private _nearEntities = [_spawnPosition, _despawnRadius] call IVCS_VirtualSpace_getNearEntities;
         {
             private _id = _x get "id";
@@ -64,30 +69,25 @@ private _states = [
             private _entityID = _spawnQueue deleteat 0;
             private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
 
-            private _spawnFnc = missionnamespace getvariable (_entity get "spawn");
-            [_entity] call _spawnFnc;
-
-            private _activeEntityIDs = _this get "activeEntityIDs";
-            private _entityID = _entity get "id";
-            _activeEntityIDs pushback _entityID;
-
-            private _inactiveEntityIDs = _this get "inactiveEntityIDs";
-            _inactiveEntityIDs deleteat (_inactiveEntityIDs find _entityID);
+            // Queued entities can disappear or be spawned by a connected group.
+            if (!isNil "_entity" && { !(_entity get "active") }) then {
+                [_entity] call (missionNamespace getVariable (_entity get "spawn"));
+            };
         };
 
         if !(_despawnQueue isequalto []) then {
             private _entityID = _despawnQueue deleteat 0;
             private _entity = [_entityID] call IVCS_VirtualSpace_getEntity;
-            if (!isnil "_entity") then {
-                private _despawnFunc = missionnamespace getvariable (_entity get "despawn");
-                [_entity] call _despawnFunc;
-
-                private _inactiveEntityIDs = _this get "inactiveEntityIDs";
-                private _entityID = _entity get "id";
-                _inactiveEntityIDs pushback _entityID;
-
-                private _activeEntityIDs = _this get "activeEntityIDs";
-                _activeEntityIDs deleteat (_activeEntityIDs find _entityID);
+            if (!isNil "_entity" && { _entity get "active" }) then {
+                // A stale queue must not despawn a newly spawned opponent whose
+                // partner is still near a player/UAV.
+                private _sources = allPlayers + (allUnitsUAV select { isUavConnected _x });
+                private _partners = [_entity] call IVCS_Combat_getSpawnPartners;
+                private _inRange = _partners findIf {
+                    private _position = _x get "position";
+                    _sources findIf { _position distance2D getPos _x <= (_this get "despawnRadius") } != -1
+                } != -1;
+                if (!_inRange) then { [_entity] call (missionNamespace getVariable (_entity get "despawn")); };
             };
         };
     }, ["Finished"]] call IVCS_FSM_createState
@@ -110,6 +110,7 @@ private _conditions = [
     "EntitySpawner",
     "LoopStart",
     [
+        ["spawnRadius", 200], ["despawnRadius", 200],
         ["spawnSources", []],
         ["spawnQueue", []],
         ["despawnQueue", []],

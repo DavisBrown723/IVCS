@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-13",
+  "production_sources_unchanged": true,
+  "production_manifest": "C:\\Users\\spyde\\Documents\\Arma 3 - Other Profiles\\SpyderBlack723\\missions\\x\\IVCS\\IVCS\\docs\\combat-performance-results\\shot-resumable-verification.json",
+  "combat_regression": {
+    "passed": 71,
+    "failed": 0,
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-611e7f0d104b4269b63297645c134dc4\\profile\\arma3server_x64_2026-10-13_00-12-36.rpt",
+    "context_enabled": true,
+    "seeded_outcomes_identical": true,
+    "calibration_mean_seconds": 170.45
+  },
+  "main_capture": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-9233e2c4f07a4e578eb8c2838f93aff5\\profile\\arma3server_x64_2026-10-13_00-15-40.rpt",
+    "checks": {
+      "passed": 42,
+      "failed": 2
+    },
+    "diagnostic": true,
+    "eligible_for_performance_comparison": false,
+    "frames": 6715,
+    "slow_frames": 3392,
+    "slow_contexts": 3389
+  },
+  "final_collector_validation": {
+    "checks": {
+      "passed": 10,
+      "failed": 0
+    },
+    "frames": 281,
+    "slow_frames": 114,
+    "slow_contexts": 114,
+    "benchmark_summary": "context-validation-summary.json",
+    "source_snapshot": "context-validation-source.json"
+  },
+  "final_file_sha256": {
+    "tests/combat/performance.ps1": "7f55bc0fc1e71597d60efa6ca8c3f7bcfb814a8351dc70f92ea295956ad28489",
+    "tests/combat/performance.sqf": "e713b91155db5177273a390bf991c79fcb8ac8ad17d24098c1bb2e5a4c4107f0",
+    "tests/combat/operation-scopes.sqf": "f5c8ea0faf3c067539141a9e8e3992af83d490ab653abf2a4a2a7d2218131d2c",
+    "tests/combat/context-scopes.sqf": "410effa4c02c95451539d49c73630df3fb0f04f97e3156320fa7f82cb8c1c171",
+    "tests/combat/analyze-performance.py": "22a571b2715b86bb26a5fc589ca2781999188cba453e0a8b0b3ddfa32b278a9f",
+    "tests/combat/analyze-operations.py": "47e645d0d5c2edd61a90435b1dae2e1f7cf1543e0cb32a76968b54ed059bbe77",
+    "tests/combat/analyze-situations.py": "b2beee96d965fc9bdaa4a940c2b9aad04dba061959c6e597a71fde07bb45e15c"
+  },
+  "sqf_crlf": true,
+  "notes": [
+    "Long contextual capture is diagnostic: two normal-80 progress checks fail by 0.034/0.005 seconds beyond the one-second limit; budget remains 3ms.",
+    "The long capture used a coarse >=2ms output filter; three precise slow frames lack context and are listed. Final collector emits all frame contexts.",
+    "Final capture verifies complete context/flush logging. The final subsequent edit removes the benchmark first-frame RPT diagnostic from the timed handler, with no combat/sharing changes.",
+    "Earlier validation failed during SQF preprocessing (ivcs-tasks-440e9887e7a3442fb68fa152200e6610). Comment anchors were replaced with code anchors.",
+    "An earlier heavier contextual run (ivcs-tasks-24af645132f64897a7181be44f1d6ce0, trace arma-20261013-000822-cef8a4c8) failed normal-80 progress and was stopped. It is excluded.",
+    "Diagnostic parser permits only progress-check failures; sharing failures, script errors, incomplete runs, and broken samples still reject attribution."
+  ]
+}

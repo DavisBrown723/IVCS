@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-25",
+  "baseline_sha256": "72a7d88ff47b98679a0b0a45c2e4aa7f4f0216c1ae963a976f6d3d6b01be11a0",
+  "optimized_sha256": "fd66ef1a9d9a2d7e99601e8d5f7aef8633cc16b77b3864df87f56620ea40330a",
+  "changed_production_files": [
+    "VirtualSpace/functions/combat/canShootHelicopter.sqf",
+    "VirtualSpace/functions/combat/getWeaponProfile.sqf"
+  ],
+  "group_count": 20,
+  "engagement_count": 5,
+  "acc_time": 1,
+  "window_seconds": 35,
+  "warmup_seconds": 2,
+  "frame_budget_ms": 3,
+  "engagements_per_frame": 8,
+  "ammo_search_budget_ms": 1,
+  "entity_visits_per_frame": 10,
+  "combat_step_seconds": 1,
+  "trials": [
+    {
+      "trial": 1,
+      "version": "before",
+      "seed_pair": 1
+    },
+    {
+      "trial": 2,
+      "version": "after",
+      "seed_pair": 1
+    },
+    {
+      "trial": 3,
+      "version": "after",
+      "seed_pair": 2
+    },
+    {
+      "trial": 4,
+      "version": "before",
+      "seed_pair": 2
+    }
+  ],
+  "notes": [
+    "Only the AA predicate is swapped between before and after windows; immutable profile metadata is prewarmed for both outside measurement.",
+    "Scenario order reverses on even trials. Each version receives two windows of each scenario, and percentiles pool individual frames.",
+    "Source manifest scope matches all 256 production SQF files from the preceding benchmark."
+  ],
+  "unprofiled_frames": 7744,
+  "precise_frames": 7763,
+  "correctness_checks_passed": 211,
+  "performance_validity_checks_passed": 136,
+  "sources_verified_unchanged_after_measurement": true
+}

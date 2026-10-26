@@ -1,0 +1,112 @@
+{
+  "suites": [
+    {
+      "name": "aggregation",
+      "passed": 109,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-1732c7c048a54d3cb6f3565f70f30b89\\profile\\arma3server_x64_2026-10-13_15-53-49.rpt"
+    },
+    {
+      "name": "shot-preprocessing",
+      "passed": 40,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-6ffdd3e769d248a99dd54c3f2462e757\\profile\\arma3server_x64_2026-10-13_15-42-02.rpt"
+    },
+    {
+      "name": "scheduling",
+      "passed": 12,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ee4f49a1f82545bb97cc594843e9d7d9\\profile\\arma3server_x64_2026-10-13_15-42-27.rpt"
+    },
+    {
+      "name": "combat",
+      "passed": 71,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-f6b84ac9e8ec43a78932596d3c341423\\profile\\arma3server_x64_2026-10-13_15-48-36.rpt"
+    },
+    {
+      "name": "ammo-sharing",
+      "passed": 45,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-410ceb74b54b4e88b364f762512c3069\\profile\\arma3server_x64_2026-10-13_15-49-36.rpt"
+    },
+    {
+      "name": "resumable-sharing",
+      "passed": 21,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-e3287b31fd5b482fa1b38fe161807c7b\\profile\\arma3server_x64_2026-10-13_15-50-16.rpt"
+    },
+    {
+      "name": "live-movement",
+      "passed": 10,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d0f8d6e929ed4161b5cae53183efd03c\\profile\\arma3server_x64_2026-10-13_15-54-11.rpt"
+    },
+    {
+      "name": "prepared-shots",
+      "passed": 160,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-34da0b6edacc474889df169c8c9db6ab\\profile\\arma3server_x64_2026-10-13_15-54-55.rpt"
+    },
+    {
+      "name": "operation-context",
+      "passed": 5,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-493956dc19074d14a8217dcfac2f5390\\profile\\arma3server_x64_2026-10-13_16-04-49.rpt"
+    }
+  ],
+  "total_passed": 473,
+  "total_failed": 0,
+  "review_fixes": [
+    "Flush recorded combat debt atomically before marking a group as spawning, preventing scheduled-script interleaving.",
+    "Skip native creation for a combat group killed during the flush; retain ordinary empty noncombat group creation.",
+    "Check native ammunition totals by class because the engine selects its loaded magazine.",
+    "Keep firing cadence minimum independent of the one-second resolution."
+  ],
+  "calibration": "15:49:31 \"[IVCS TASK TEST] CALIBRATION n=20 meanWallSeconds=166.15 min=90 max=259 completed=20 accuracy=1.1\"",
+  "profiled_source_snapshot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d0fcc87f08894858846217fd17210086\\ivcs_task_tests.Altis\\IVCS",
+  "production_sources": [
+    {
+      "path": "VirtualSpace/functions/combat/createController.sqf",
+      "sha256": "47298840f08c2ea14ebac3f641ac5826674b15fb14ec47e904f3fd9ad7a6f818",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/step.sqf",
+      "sha256": "055df28485f7bed76143a0f7d4bd6d845bca8df4c780d3d9f515b4e54beb9b3e",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/getPreparedShot.sqf",
+      "sha256": "c787e1649956a9ea0f8725a38a7b4c90f412b7d850e91331e2766cd8052092ce",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/sampleHits.sqf",
+      "sha256": "c1bdc1fd0f1045002412928fc986ef022706fa16beb9ed7629aabb104e168640",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/combat/flushPending.sqf",
+      "sha256": "5239e3be05605c09f6c1d25a26829798533f9bff8aad208e8f1305b6f2085809",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/combatFunctions.sqf",
+      "sha256": "c8a4aa91420b0ea88c03919c679ccb8a48475506a40d9485089cd4a3aa1f37ac",
+      "profiled_copy_identical": true,
+      "crlf": true
+    },
+    {
+      "path": "VirtualSpace/functions/entities/group/spawn.sqf",
+      "sha256": "5d74c5ebec86d381309987ddfb3ef823c33486f44cb366ca90db0c40c0034ef7",
+      "profiled_copy_identical": true,
+      "crlf": true
+    }
+  ]
+}

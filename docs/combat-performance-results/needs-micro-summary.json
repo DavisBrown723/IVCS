@@ -1,0 +1,233 @@
+{
+  "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-129e8db60f294843a983a1b3a0dcbe19\\profile\\arma3server_x64_2026-10-13_13-53-24.rpt",
+  "method": "Stock supplied 8-unit BLU_F/OPF_F groups, 8 trials alternating version order, 200 complete synchronous scans/sample; eligibility, scan bookkeeping and current-inventory checks included.",
+  "validity_checks": {
+    "passed": 28,
+    "failed": 0
+  },
+  "metrics": {
+    "before": {
+      "count": 16,
+      "total_ms": 3.1150070000000003,
+      "mean_ms": 0.19468793750000002,
+      "p50_ms": 0.194998,
+      "p90_ms": 0.195007,
+      "p95_ms": 0.195007,
+      "p99_ms": 0.195007,
+      "max_ms": 0.195007,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "after": {
+      "count": 16,
+      "total_ms": 3.285008999999999,
+      "mean_ms": 0.2053130625,
+      "p50_ms": 0.205002,
+      "p90_ms": 0.205002,
+      "p95_ms": 0.20625125,
+      "p99_ms": 0.20924945,
+      "max_ms": 0.209999,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    }
+  },
+  "samples": [
+    [
+      1,
+      "WEST",
+      "before",
+      0.194998
+    ],
+    [
+      1,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      1,
+      "EAST",
+      "before",
+      0.194998
+    ],
+    [
+      1,
+      "EAST",
+      "after",
+      0.205002
+    ],
+    [
+      2,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      2,
+      "WEST",
+      "before",
+      0.195007
+    ],
+    [
+      2,
+      "EAST",
+      "after",
+      0.205002
+    ],
+    [
+      2,
+      "EAST",
+      "before",
+      0.190001
+    ],
+    [
+      3,
+      "WEST",
+      "before",
+      0.195007
+    ],
+    [
+      3,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      3,
+      "EAST",
+      "before",
+      0.195007
+    ],
+    [
+      3,
+      "EAST",
+      "after",
+      0.205002
+    ],
+    [
+      4,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      4,
+      "WEST",
+      "before",
+      0.194998
+    ],
+    [
+      4,
+      "EAST",
+      "after",
+      0.204992
+    ],
+    [
+      4,
+      "EAST",
+      "before",
+      0.194998
+    ],
+    [
+      5,
+      "WEST",
+      "before",
+      0.195007
+    ],
+    [
+      5,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      5,
+      "EAST",
+      "before",
+      0.194998
+    ],
+    [
+      5,
+      "EAST",
+      "after",
+      0.205002
+    ],
+    [
+      6,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      6,
+      "WEST",
+      "before",
+      0.194998
+    ],
+    [
+      6,
+      "EAST",
+      "after",
+      0.209999
+    ],
+    [
+      6,
+      "EAST",
+      "before",
+      0.194998
+    ],
+    [
+      7,
+      "WEST",
+      "before",
+      0.194998
+    ],
+    [
+      7,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      7,
+      "EAST",
+      "before",
+      0.194998
+    ],
+    [
+      7,
+      "EAST",
+      "after",
+      0.204992
+    ],
+    [
+      8,
+      "WEST",
+      "after",
+      0.205002
+    ],
+    [
+      8,
+      "WEST",
+      "before",
+      0.194998
+    ],
+    [
+      8,
+      "EAST",
+      "after",
+      0.205002
+    ],
+    [
+      8,
+      "EAST",
+      "before",
+      0.194998
+    ]
+  ],
+  "mean_change_percent": 5.4575158258071355
+}

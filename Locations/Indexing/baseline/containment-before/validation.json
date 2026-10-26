@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "generatedAtUTC": "2026-10-15T01:07:45.352383+00:00",
+  "scope": "Remove count-based merge limits; use valid category cores, compatible site types and original spatial relationships",
+  "entryPoint": "IVCS\\Locations\\Indexing\\run.ps1",
+  "output": "IVCS\\Locations\\Indexing\\output\\altis",
+  "locationIndexVersion": 8,
+  "locationVariant": "spatial-compounds-v3",
+  "pythonTests": 105,
+  "pythonLog": "IVCS\\Locations\\Indexing\\review\\python-final.log",
+  "nativeChecks": {
+    "locations": {
+      "passed": 120,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-adcdf8cc406f42048bdb32c2837fcf8f\\profile\\arma3server_x64_2026-10-14_19-57-31.rpt"
+    },
+    "spatialMerges": {
+      "passed": 16,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-52983a402fc2434293081194cbe1e79f\\profile\\arma3server_x64_2026-10-14_19-56-54.rpt"
+    },
+    "settlementPorts": {
+      "passed": 15,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-93ed00682f30403aa3b53255ee8fd2fb\\profile\\arma3server_x64_2026-10-14_19-49-18.rpt"
+    },
+    "generatedDataAndDemo": {
+      "passed": 57,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-7016ef7489944569ab448a33bf407760\\profile\\arma3server_x64_2026-10-14_20-05-34.rpt"
+    },
+    "fullLocationRebuild": {
+      "passed": 1,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-422a21f7248c460d88587175fe995fa8\\profile\\arma3server_x64_2026-10-14_19-57-20.rpt"
+    }
+  },
+  "nativeRegressionAssertions": 208,
+  "locationProcessingSeconds": 372.559,
+  "roadProcessingSeconds": 20.333067,
+  "summary": {
+    "roadSections": 34625,
+    "mappedSections": 33733,
+    "unavailableGeometry": 892,
+    "connections": 35391,
+    "acceptedConnections": 33979,
+    "connectionEvidence": {
+      "ordinary-reciprocal": 33979,
+      "extended-only": 1412
+    },
+    "nodes": 3785,
+    "edges": 4031,
+    "components": 60,
+    "junctions": 1016,
+    "deadEnds": 562,
+    "isolatedSections": 0,
+    "bridgeSections": 40,
+    "roadTypes": {
+      "TRACK": 26823,
+      "MAIN ROAD": 2061,
+      "ROAD": 4849,
+      "HIDE": 892
+    },
+    "roadLength2dKm": 732.3104506038085,
+    "locations": 268,
+    "accessCandidates": 1789,
+    "locationsWithAccess": 264,
+    "locationsWithoutInlets": 59,
+    "interpolatedInlets": 3,
+    "zeroLengthSections": 892,
+    "longOrdinaryLinks": 0,
+    "ambiguousGeometries": 0,
+    "boundaryInlets": 804,
+    "fallbackCandidates": 985,
+    "locationsWithFallback": 55,
+    "locationsWithoutCandidates": 4,
+    "strongFallbacks": 107,
+    "secondaryFallbacks": 878,
+    "routingNodes": 4816,
+    "routingEdges": 5062,
+    "corridorRelations": 11056,
+    "routingCorridorRelations": 14366,
+    "baselineConnections": 25980
+  },
+  "datasets": {
+    "roadDatasetId": "402c7bf5fcd71d0dd5fd8ed0e2a019312fd3ecd1b0286fab069b945efecb71c3",
+    "locationDatasetId": "f86c54200a6562fdecede38d92e40db4db86e9aa603dcd096709e5f9734c0338",
+    "attachmentDatasetId": "3916c6056c52208fb340f36768ff644edbb6c41e1cb4b3d919c21381f4619ce9",
+    "preprocessingDatasetId": "473184c005f3b42d5f11dd220f5e5f50b84ec9cac337790a4a9ebfc3aa436241",
+    "runtimeDatasetId": "68ad7ffa0be9fd96a0791fa51c75a7844e3f13b6dc9d586f3e7f5a05ed6732d7"
+  },
+  "completeOutputHashesVerified": true,
+  "nativeSourceHashesMatchCurrentCode": true,
+  "sqfFilesCRLF": 33,
+  "objectiveGraphFilesUnchanged": 34,
+  "unchangedGeometryValidation": {
+    "passed": 26,
+    "failed": 0,
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-9b88d69b7b5441aebc7da063d7a8c97b\\profile\\arma3server_x64_2026-10-14_17-40-40.rpt"
+  },
+  "comparison": {
+    "report": "IVCS\\Locations\\Indexing\\review\\spatial-merging.md",
+    "data": "IVCS\\Locations\\Indexing\\review\\spatial-merging.json",
+    "beforeLocations": 278,
+    "afterLocations": 268,
+    "absorbedPreviousIds": 15,
+    "newPrimaryIds": 5,
+    "changedSurvivingIds": 16,
+    "airportObjectCount": 1602.0,
+    "airportFormerBaseOwners": {
+      "altis_base_90": "altis_airfield_169",
+      "altis_base_132": "altis_base_132"
+    }
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8767/#5.00/14647.7/16551.5",
+    "servedDataMatchesPublishedFile": true,
+    "onlineBasemapVerified": true,
+    "airportObjects": 1602,
+    "airportBoundaryInlets": 7
+  },
+  "baseline": "IVCS\\Locations\\Indexing\\baseline\\spatial-merging-before",
+  "limitations": [
+    "The northern airport base remains independent because owned support extends beyond the 250 m whole-component distance bound.",
+    "Road access points remain geometric candidates; vehicle traversal has not been assessed."
+  ]
+}

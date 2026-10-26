@@ -1,0 +1,16 @@
+{
+  "TracePath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-helicopters-20261025-155147-5319dd49.tracy",
+  "StdoutPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-helicopters-20261025-155147-5319dd49.stdout.log",
+  "StderrPath": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-helicopters-20261025-155147-5319dd49.stderr.log",
+  "RecorderProcessId": 40660,
+  "ServerProcessId": 55508,
+  "Port": 8086,
+  "Seconds": 360,
+  "Status": "Saved",
+  "StartedAt": "2026-10-25T15:51:48.0773894-05:00",
+  "ListenerVerified": true,
+  "Note": "Standard capture helper only accepts arma3_x64; the isolated server listener and absence of an existing connection were verified explicitly.",
+  "SaveVerified": true,
+  "TraceBytes": 11195832,
+  "ActualRecordedSeconds": 360.2
+}

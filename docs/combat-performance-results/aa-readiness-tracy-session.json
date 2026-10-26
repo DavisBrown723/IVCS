@@ -1,0 +1,16 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-aa-readiness-20261025-162529-fa881753.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-aa-readiness-20261025-162529-fa881753.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-aa-readiness-20261025-162529-fa881753.stderr.log",
+  "recorder_pid": 54964,
+  "server_pid": 54388,
+  "server_command_line": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-4b0b8aad3b6947a09a5e1a4338a42dbe\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-4b0b8aad3b6947a09a5e1a4338a42dbe\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "duration_seconds": 360,
+  "started_at": "2026-10-25T16:25:31.4691442-05:00",
+  "connected": true,
+  "status": "Saved",
+  "note": "The stock helper rejects server executables; endpoint identity was explicitly verified against the owned benchmark GUID before launching the same bundled recorder.",
+  "saved_verified_at": "2026-10-25T16:31:56.8466999-05:00",
+  "saved_bytes": 11549635,
+  "recorder_log": "Connecting to 127.0.0.1:8086...\r\nTimer resolution: 4 ns\r\n\r\nFrames: 9981\r\nTime span: 6:00.1\r\nZones: 1,760,681\r\nElapsed time: 6:00.1\r\nSaving trace... done!\r\nTrace size 11.01 MB (24.84% ratio)\r\n"
+}

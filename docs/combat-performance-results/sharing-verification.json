@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-13",
+  "suites": [
+    {
+      "name": "run",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a21775c1717345cbbc05dbc332f3980f\\profile\\arma3server_x64_2026-10-13_11-15-35.rpt",
+      "mtime": 1791908222.0911937,
+      "passed": 71,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "arrival-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-1bf0ce9a688742d8aa7bbcda3f6fdf1b\\profile\\arma3server_x64_2026-10-13_10-55-11.rpt",
+      "mtime": 1791906926.2306693,
+      "passed": 59,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "scheduling",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-962c2222207b423fb0b40b0570a79d74\\profile\\arma3server_x64_2026-10-13_11-15-18.rpt",
+      "mtime": 1791908133.2892232,
+      "passed": 12,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "ammo-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-84cc606f3b8c48a8b2482831451dcff3\\profile\\arma3server_x64_2026-10-13_11-14-27.rpt",
+      "mtime": 1791908098.5636497,
+      "passed": 45,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "resumable-sharing",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a9800979219d4433b3d2ed4791b0da88\\profile\\arma3server_x64_2026-10-13_11-15-01.rpt",
+      "mtime": 1791908116.5385783,
+      "passed": 21,
+      "failed": 0,
+      "script_errors": false
+    },
+    {
+      "name": "sharing-work",
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-b398d013b4ac48079531e966a4c4a563\\profile\\arma3server_x64_2026-10-13_11-10-11.rpt",
+      "mtime": 1791907826.4107654,
+      "passed": 197,
+      "failed": 0,
+      "script_errors": false
+    }
+  ],
+  "passed": 405,
+  "failed": 0,
+  "seeded_outcomes_identical": true,
+  "calibration_mean_seconds": 170.45,
+  "unprofiled_workload": {
+    "passed": 48,
+    "failed": 0,
+    "summary": "sharing-unprofiled-summary.json"
+  },
+  "source_sha256": {
+    "VirtualSpace/functions/ammo/surplus.sqf": "ac43e8bb5669dc0ddb08b4664145846aeecd9383967125d7ac6c73be29be6545",
+    "VirtualSpace/functions/ammo/snapshot.sqf": "e0dd66479ee9f04c77a69d364bec706112f79eec515a627e105aa20f8659469b",
+    "VirtualSpace/functions/ammo/getNeededWeapons.sqf": "e87dc6e47974a11a9a57285d2adb93ebb38e74e064efd87d29fddb5e91b77fe3",
+    "VirtualSpace/functions/ammo/advanceSearch.sqf": "275e4f45dd40ca8b0638c021fb202e8ab4cfac04b91938d7c0f117947d3fcf1b",
+    "VirtualSpace/functions/ammo/updateRequests.sqf": "680573a8c038a648a242950bdc258500ae06edc1b3a494dc59da04aff787afd2",
+    "VirtualSpace/functions/ammo/updateGroup.sqf": "5a993f4d8cbfcad1c8105f85ced33002b648eebc7f9a7433603fdb00a47a184d",
+    "VirtualSpace/functions/ammo/createSettings.sqf": "27e75091479cd582a7b3d61f883d1ace1444d88c1e06d54aaaf8f434f7e348a2",
+    "tests/combat/context-scopes.sqf": "cf0f956f33254122da7c151bb306d2f39f22b37b7ba2855357fcfe4c0676daec",
+    "tests/combat/sharing-work.sqf": "b0f047ea94b2a06258b96625b55fcc0ec7cae346c4641a03bc972348ee879d9f",
+    "tests/combat/sharing-micro.sqf": "be2885c5eece0506604b19440ff940f6242c2643b625ad8099be3efddd0078e2",
+    "tests/combat/arrival-sharing.sqf": "127044e0942c763f748437d8afbe523728f908e922cf6bf30807f3dbaceea0cc",
+    "tests/combat/resumable-sharing.sqf": "e9042c5407b8b81679d96eec217eb9dca917c229b280a43abb5c32b990ce1756",
+    "tests/combat/ammo-sharing.sqf": "ceb27fb1f8dba9757365e47aa3211771b31fbec1b9eb6e32e994ed1e04ab7382",
+    "tests/combat/sharing-performance.ps1": "6027803efa30f37e8ff6d825c2ba45b839b7823b464bba744c63f5cc6f634e31"
+  },
+  "sqf_crlf": true,
+  "baseline_directory": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\sharing-before-20261013",
+  "notes": [
+    "Original 3 ms combat allowance, 1 ms search allowance, and two-inspection donor quota remain unchanged.",
+    "Full queue deferral, a one-inspection inline continuation, and a 2 ms search allowance were trialed but rejected after strict 10-second sharing checks failed; failed runs are not comparison evidence.",
+    "Class aggregation was slower in the stock microbenchmark and replaced with a simpler reserve pass.",
+    "Winner inspection counts toward the donor quota; batch calls still drain deterministically.",
+    "Virtual collection uses scheduled arrival plus its full collection delay, eliminating additional poll-induced delay; live collection timing remains unchanged."
+  ]
+}

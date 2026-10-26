@@ -1,0 +1,24 @@
+{
+  "functions": [
+    [
+      "getVehicleShot.sqf",
+      "IVCS_Combat_getVehicleShot"
+    ],
+    [
+      "damageCrew.sqf",
+      "IVCS_Combat_damageCrew"
+    ],
+    [
+      "damageVehicle.sqf",
+      "IVCS_Combat_damageVehicle"
+    ],
+    [
+      "update.sqf",
+      "IVCS_Combat_update"
+    ]
+  ],
+  "getVehicleShot.sqf": "2c98d08ba26d1952adf54aa953c4eb25bec85dd2ee604e3696d4ec749d3b2c25",
+  "damageCrew.sqf": "0ebd441ed495ddf6e3fd11fe30dfa804b036822856113122d317b262510ba595",
+  "damageVehicle.sqf": "0c799e386ddf518f1d368ff59881442a40069a8b98ae7f2ce9752824c08a734e",
+  "update.sqf": "6d3e2a4f2800dfce5528ec625c01039c205a14f671cffc58452c063b5b20ddb3"
+}

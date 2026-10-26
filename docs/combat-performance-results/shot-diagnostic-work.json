@@ -1,0 +1,2780 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-shot-diagnostic-20261025-192726-1ecff375.tracy",
+  "diagnostic_only": true,
+  "frames": 1933,
+  "resets": 306,
+  "firing_loops": 159,
+  "selection_by_class": {
+    "O_soldier_TL_F support": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 0,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_AAA_F support": {
+      "calls": 351,
+      "weapons": 1053,
+      "records": 0,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_SL_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 3159,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 4563,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_LAT_F primary": {
+      "calls": 351,
+      "weapons": 1053,
+      "records": 7371,
+      "prepare_misses": 268,
+      "prepare_hits": 3944,
+      "negative_hits": 3944,
+      "selected": 0
+    },
+    "O_soldier_M_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 4563,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_TL_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 7020,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_AR_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 2457,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_A_F primary": {
+      "calls": 351,
+      "weapons": 702,
+      "records": 7371,
+      "prepare_misses": 0,
+      "prepare_hits": 0,
+      "negative_hits": 0,
+      "selected": 0
+    },
+    "O_soldier_AA_F support": {
+      "calls": 106,
+      "weapons": 212,
+      "records": 106,
+      "prepare_misses": 10,
+      "prepare_hits": 96,
+      "negative_hits": 0,
+      "selected": 106
+    },
+    "O_Soldier_AA_F primary": {
+      "calls": 53,
+      "weapons": 106,
+      "records": 371,
+      "prepare_misses": 50,
+      "prepare_hits": 3,
+      "negative_hits": 0,
+      "selected": 53
+    }
+  },
+  "worst_frames": [
+    {
+      "frame": {
+        "start_ns": 111604606076,
+        "costs_ms": {
+          "full": 11.545123,
+          "combat": 1.048755,
+          "IVCS_PERF_AmmoQueue_Frame": 0.047344,
+          "IVCS_PERF_Entities_Frame": 10.330909,
+          "IVCS_PERF_Spawner_Frame": 0.030285,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 1.048755,
+          "frame_other": 0.08783
+        },
+        "steps": 0,
+        "largest_exchange_ms": 0,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 1.048755,
+        "IVCS_PERF_Entities_Frame": 10.330909,
+        "IVCS_PERF_AmmoQueue_Frame": 0.047344,
+        "IVCS_PERF_VirtualSpace_Frame": 11.545123,
+        "IVCS_PERF_Spawner_Frame": 0.030285,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 1.470053,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.12040200000000001,
+        "IVCS_HELI_IVCS_Combat_joinHelicopterSupport": 2.863979,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.9929129999999999
+      },
+      "work": []
+    },
+    {
+      "frame": {
+        "start_ns": 75373476686,
+        "costs_ms": {
+          "full": 10.900098,
+          "combat": 6.841245,
+          "IVCS_PERF_AmmoQueue_Frame": 0.019684,
+          "IVCS_PERF_Entities_Frame": 3.931692,
+          "IVCS_PERF_Spawner_Frame": 0.045117,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 6.841245,
+          "frame_other": 0.06236
+        },
+        "steps": 1,
+        "largest_exchange_ms": 5.25182,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 6.841245,
+        "IVCS_PERF_Entities_Frame": 3.931692,
+        "IVCS_PERF_AmmoQueue_Frame": 0.019684,
+        "IVCS_PERF_VirtualSpace_Frame": 10.900098,
+        "IVCS_PERF_Spawner_Frame": 0.045117,
+        "IVCS_PERF_Combat_Step": 5.25182,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.525292,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.412234,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.089954,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.6463769999999998,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 0.7004380000000001,
+        "IVCS_HELI_IVCS_Combat_joinHelicopterSupport": 1.154208,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.154687,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.626902,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.334737,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.26547599999999993,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 5.190831,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.370107,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.045681,
+        "IVCS_SHOT_WeaponHit": 0.581587,
+        "IVCS_SHOT_WeaponMiss": 1.3278210000000001,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.09469599999999999,
+        "IVCS_SHOT_Prepare": 0.052516,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.08691200000000002,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.020132,
+        "IVCS_SHOT_Unit": 2.5461649999999993,
+        "IVCS_SHOT_CacheReset": 0.016761,
+        "IVCS_SHOT_RecordScan": 1.6068559999999996,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.052818
+      },
+      "work": [
+        [
+          "select",
+          20008,
+          "O_soldier_TL_F",
+          515.723,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_AAA_F",
+          515.723,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          20008,
+          "e_26",
+          689.359,
+          false
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_SL_F",
+          689.359,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_F",
+          689.359,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_LAT_F",
+          689.359,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_M_F",
+          689.359,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_TL_F",
+          689.359,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_AR_F",
+          689.359,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20008,
+          "O_soldier_A_F",
+          689.359,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 65368340567,
+        "costs_ms": {
+          "full": 9.892269,
+          "combat": 8.126131,
+          "IVCS_PERF_AmmoQueue_Frame": 0.027062,
+          "IVCS_PERF_Entities_Frame": 1.636146,
+          "IVCS_PERF_Spawner_Frame": 0.036462,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 8.126131,
+          "frame_other": 0.066468
+        },
+        "steps": 1,
+        "largest_exchange_ms": 6.159786,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 8.126131,
+        "IVCS_PERF_Entities_Frame": 1.636146,
+        "IVCS_PERF_AmmoQueue_Frame": 0.027062,
+        "IVCS_PERF_VirtualSpace_Frame": 9.892269,
+        "IVCS_PERF_Spawner_Frame": 0.036462,
+        "IVCS_PERF_Combat_Step": 6.159786,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.45623400000000003,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.371129,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.10791899999999999,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.955439,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 1.141218,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.17672500000000002,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.730292,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.665035,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.44495999999999997,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 6.094326,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.355024,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.034798,
+        "IVCS_SHOT_WeaponHit": 0.647162,
+        "IVCS_SHOT_WeaponMiss": 1.508391,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.111719,
+        "IVCS_SHOT_Prepare": 0.048524,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.112009,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.021431,
+        "IVCS_SHOT_Unit": 2.9153800000000003,
+        "IVCS_SHOT_CacheReset": 0.026186,
+        "IVCS_SHOT_RecordScan": 1.804116,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.071229
+      },
+      "work": [
+        [
+          "select",
+          19734,
+          "O_soldier_TL_F",
+          515.723,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_AAA_F",
+          515.723,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19734,
+          "e_26",
+          648.795,
+          false
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_SL_F",
+          648.795,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_F",
+          648.795,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_LAT_F",
+          648.795,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_M_F",
+          648.795,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_TL_F",
+          648.795,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_AR_F",
+          648.795,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_A_F",
+          648.795,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 91968872794,
+        "costs_ms": {
+          "full": 9.834624,
+          "combat": 8.84694,
+          "IVCS_PERF_AmmoQueue_Frame": 0.009701,
+          "IVCS_PERF_Entities_Frame": 0.876929,
+          "IVCS_PERF_Spawner_Frame": 0.027604,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 8.84694,
+          "frame_other": 0.07345
+        },
+        "steps": 1,
+        "largest_exchange_ms": 5.201667,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 8.84694,
+        "IVCS_PERF_Entities_Frame": 0.876929,
+        "IVCS_PERF_AmmoQueue_Frame": 0.009701,
+        "IVCS_PERF_VirtualSpace_Frame": 9.834624,
+        "IVCS_PERF_Spawner_Frame": 0.027604,
+        "IVCS_PERF_Combat_Step": 5.201667,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.455361,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.42852,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.037942000000000004,
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": 0.339597,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.4916539999999996,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 0.7834,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.280735,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.456665,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.203422,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.038898,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 5.041941,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.23461100000000001,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.067949,
+        "IVCS_SHOT_WeaponHit": 0.32391800000000004,
+        "IVCS_SHOT_WeaponMiss": 1.3158770000000002,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.36223599999999995,
+        "IVCS_SHOT_Prepare": 0.021839,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.065199,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.009312,
+        "IVCS_SHOT_Unit": 2.5141839999999998,
+        "IVCS_SHOT_CacheReset": 0.047241000000000005,
+        "IVCS_SHOT_RecordScan": 0.90438,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.03596
+      },
+      "work": [
+        [
+          "reset",
+          20464,
+          "e_57",
+          478.284,
+          true
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_TL_F",
+          478.284,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_AAA_F",
+          478.284,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          20464,
+          "e_56",
+          574.004,
+          false
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_SL_F",
+          574.004,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_F",
+          574.004,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_LAT_F",
+          574.004,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_M_F",
+          574.004,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_TL_F",
+          574.004,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_AR_F",
+          574.004,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20464,
+          "O_soldier_A_F",
+          574.004,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 75337232652,
+        "costs_ms": {
+          "full": 9.813045,
+          "combat": 6.34262,
+          "IVCS_PERF_AmmoQueue_Frame": 0.01578,
+          "IVCS_PERF_Entities_Frame": 3.362392,
+          "IVCS_PERF_Spawner_Frame": 0.031783,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 6.34262,
+          "frame_other": 0.06047
+        },
+        "steps": 1,
+        "largest_exchange_ms": 5.476966,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 6.34262,
+        "IVCS_PERF_Entities_Frame": 3.362392,
+        "IVCS_PERF_AmmoQueue_Frame": 0.01578,
+        "IVCS_PERF_VirtualSpace_Frame": 9.813045,
+        "IVCS_PERF_Spawner_Frame": 0.031783,
+        "IVCS_PERF_Combat_Step": 5.476966,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.357055,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.38846400000000003,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.073844,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.7232480000000003,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 0.767002,
+        "IVCS_HELI_IVCS_Combat_joinHelicopterSupport": 1.033457,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.15926400000000002,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.635982,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.417653,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.329228,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 5.387718,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.374871,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.040627,
+        "IVCS_SHOT_WeaponHit": 0.5806150000000001,
+        "IVCS_SHOT_WeaponMiss": 1.384501,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.09715800000000002,
+        "IVCS_SHOT_Prepare": 0.044274,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.056233000000000005,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.017804,
+        "IVCS_SHOT_Unit": 2.642465,
+        "IVCS_SHOT_CacheReset": 0.017422,
+        "IVCS_SHOT_RecordScan": 1.653816,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.069267
+      },
+      "work": [
+        [
+          "select",
+          20007,
+          "O_soldier_TL_F",
+          515.663,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_AAA_F",
+          515.663,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          20007,
+          "e_20",
+          689.395,
+          false
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_SL_F",
+          689.395,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_F",
+          689.395,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_LAT_F",
+          689.395,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_M_F",
+          689.395,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_TL_F",
+          689.395,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_AR_F",
+          689.395,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          20007,
+          "O_soldier_A_F",
+          689.395,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    }
+  ],
+  "worst_exchanges": [
+    {
+      "frame": {
+        "start_ns": 58317053688,
+        "costs_ms": {
+          "full": 8.948526,
+          "combat": 7.945371,
+          "IVCS_PERF_AmmoQueue_Frame": 0.013901,
+          "IVCS_PERF_Entities_Frame": 0.878724,
+          "IVCS_PERF_Spawner_Frame": 0.056956,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 7.945371,
+          "frame_other": 0.053574
+        },
+        "steps": 1,
+        "largest_exchange_ms": 7.14026,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 7.945371,
+        "IVCS_PERF_Entities_Frame": 0.878724,
+        "IVCS_PERF_AmmoQueue_Frame": 0.013901,
+        "IVCS_PERF_VirtualSpace_Frame": 8.948526,
+        "IVCS_PERF_Spawner_Frame": 0.056956,
+        "IVCS_PERF_Combat_Step": 7.14026,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.177694,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.469113,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.042378,
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": 0.505567,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 5.322239,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 1.02847,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.17009399999999997,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.597855,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 3.161743,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.23472700000000002,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 7.066176,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.399151,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.060566,
+        "IVCS_SHOT_WeaponHit": 0.6674059999999999,
+        "IVCS_SHOT_WeaponMiss": 1.860159,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.16214800000000001,
+        "IVCS_SHOT_Prepare": 0.21041400000000002,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.16462100000000002,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.055762000000000006,
+        "IVCS_SHOT_Unit": 3.819518,
+        "IVCS_SHOT_Firing": 0.279089,
+        "IVCS_SHOT_CacheReset": 0.016184,
+        "IVCS_SHOT_RecordScan": 2.0035040000000004,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.192856
+      },
+      "work": [
+        [
+          "select",
+          19541,
+          "O_soldier_TL_F",
+          515.663,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_AA_F",
+          515.663,
+          true,
+          2,
+          1,
+          1,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_C_ACO_pointer_F",
+              6
+            ],
+            [
+              "launch_O_Titan_F",
+              11
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          [
+            "launch_O_Titan_F",
+            "Titan_AA",
+            1
+          ]
+        ],
+        [
+          "fire",
+          19541,
+          "O_soldier_AA_F",
+          1,
+          1,
+          3.1,
+          5.2
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_AA_F",
+          515.663,
+          true,
+          2,
+          1,
+          0,
+          1,
+          0,
+          [
+            [
+              "arifle_Katiba_C_ACO_pointer_F",
+              6
+            ],
+            [
+              "launch_O_Titan_F",
+              11
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          [
+            "launch_O_Titan_F",
+            "Titan_AA",
+            1
+          ]
+        ],
+        [
+          "fire",
+          19541,
+          "O_soldier_AA_F",
+          1,
+          0,
+          3.1,
+          5.2
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_AAA_F",
+          515.663,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19541,
+          "e_20",
+          620.006,
+          false
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_SL_F",
+          620.006,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_F",
+          620.006,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_LAT_F",
+          620.006,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_M_F",
+          620.006,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_TL_F",
+          620.006,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_AR_F",
+          620.006,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_soldier_A_F",
+          620.006,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19541,
+          "O_Soldier_AA_F",
+          620.006,
+          false,
+          2,
+          7,
+          1,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_C_ACO_pointer_F",
+              6
+            ],
+            [
+              "launch_O_Titan_F",
+              11
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          [
+            "launch_O_Titan_F",
+            "Titan_AA",
+            1
+          ]
+        ],
+        [
+          "fire",
+          19541,
+          "O_Soldier_AA_F",
+          1,
+          1,
+          3.1,
+          5.2
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 69267893479,
+        "costs_ms": {
+          "full": 8.573397,
+          "combat": 7.399514,
+          "IVCS_PERF_AmmoQueue_Frame": 0.024026,
+          "IVCS_PERF_Entities_Frame": 1.028627,
+          "IVCS_PERF_Spawner_Frame": 0.061668,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 7.399514,
+          "frame_other": 0.059562
+        },
+        "steps": 1,
+        "largest_exchange_ms": 6.479904,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 7.399514,
+        "IVCS_PERF_Entities_Frame": 1.028627,
+        "IVCS_PERF_AmmoQueue_Frame": 0.024026,
+        "IVCS_PERF_VirtualSpace_Frame": 8.573397,
+        "IVCS_PERF_Spawner_Frame": 0.061668,
+        "IVCS_PERF_Combat_Step": 6.479904,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.217628,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.42383699999999996,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.06393399999999999,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 4.112324,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 1.4306860000000001,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.155953,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.631671,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.7432930000000004,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.28603599999999996,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 6.432757,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.36367799999999995,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.047408,
+        "IVCS_SHOT_WeaponHit": 0.677671,
+        "IVCS_SHOT_WeaponMiss": 1.5490750000000002,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.12085199999999999,
+        "IVCS_SHOT_Prepare": 0.050345,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.105197,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.020725,
+        "IVCS_SHOT_Unit": 2.993498,
+        "IVCS_SHOT_CacheReset": 0.018768,
+        "IVCS_SHOT_RecordScan": 1.8475370000000002,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.069194
+      },
+      "work": [
+        [
+          "select",
+          19841,
+          "O_soldier_TL_F",
+          515.605,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_AAA_F",
+          515.605,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19841,
+          "e_8",
+          664.396,
+          false
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_SL_F",
+          664.396,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_F",
+          664.396,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_LAT_F",
+          664.396,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_M_F",
+          664.396,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_TL_F",
+          664.396,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_AR_F",
+          664.396,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19841,
+          "O_soldier_A_F",
+          664.396,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 69340068388,
+        "costs_ms": {
+          "full": 9.127144,
+          "combat": 7.362873,
+          "IVCS_PERF_AmmoQueue_Frame": 0.024805,
+          "IVCS_PERF_Entities_Frame": 1.625155,
+          "IVCS_PERF_Spawner_Frame": 0.045172,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 7.362873,
+          "frame_other": 0.069139
+        },
+        "steps": 1,
+        "largest_exchange_ms": 6.19504,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 7.362873,
+        "IVCS_PERF_Entities_Frame": 1.625155,
+        "IVCS_PERF_AmmoQueue_Frame": 0.024805,
+        "IVCS_PERF_VirtualSpace_Frame": 9.127144,
+        "IVCS_PERF_Spawner_Frame": 0.045172,
+        "IVCS_PERF_Combat_Step": 6.19504,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.571458,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.27765,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.096278,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.343827,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 2.130916,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.124108,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.409465,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.095297,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.26542899999999997,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 6.123465,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.33286,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.030198,
+        "IVCS_SHOT_WeaponHit": 0.566635,
+        "IVCS_SHOT_WeaponMiss": 1.133905,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.090715,
+        "IVCS_SHOT_Prepare": 0.029936,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.180257,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.012969,
+        "IVCS_SHOT_Unit": 2.287207,
+        "IVCS_SHOT_CacheReset": 0.01087,
+        "IVCS_SHOT_RecordScan": 1.421035,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.043182
+      },
+      "work": [
+        [
+          "select",
+          19843,
+          "O_soldier_TL_F",
+          515.663,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_AAA_F",
+          515.663,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19843,
+          "e_20",
+          664.815,
+          false
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_SL_F",
+          664.815,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_F",
+          664.815,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_LAT_F",
+          664.815,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_M_F",
+          664.815,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_TL_F",
+          664.815,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_AR_F",
+          664.815,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19843,
+          "O_soldier_A_F",
+          664.815,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 65368340567,
+        "costs_ms": {
+          "full": 9.892269,
+          "combat": 8.126131,
+          "IVCS_PERF_AmmoQueue_Frame": 0.027062,
+          "IVCS_PERF_Entities_Frame": 1.636146,
+          "IVCS_PERF_Spawner_Frame": 0.036462,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 8.126131,
+          "frame_other": 0.066468
+        },
+        "steps": 1,
+        "largest_exchange_ms": 6.159786,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 8.126131,
+        "IVCS_PERF_Entities_Frame": 1.636146,
+        "IVCS_PERF_AmmoQueue_Frame": 0.027062,
+        "IVCS_PERF_VirtualSpace_Frame": 9.892269,
+        "IVCS_PERF_Spawner_Frame": 0.036462,
+        "IVCS_PERF_Combat_Step": 6.159786,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.45623400000000003,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.371129,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.10791899999999999,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 3.955439,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 1.141218,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.17672500000000002,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.730292,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.665035,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.44495999999999997,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 6.094326,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.355024,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.034798,
+        "IVCS_SHOT_WeaponHit": 0.647162,
+        "IVCS_SHOT_WeaponMiss": 1.508391,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.111719,
+        "IVCS_SHOT_Prepare": 0.048524,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.112009,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.021431,
+        "IVCS_SHOT_Unit": 2.9153800000000003,
+        "IVCS_SHOT_CacheReset": 0.026186,
+        "IVCS_SHOT_RecordScan": 1.804116,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.071229
+      },
+      "work": [
+        [
+          "select",
+          19734,
+          "O_soldier_TL_F",
+          515.723,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_AAA_F",
+          515.723,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19734,
+          "e_26",
+          648.795,
+          false
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_SL_F",
+          648.795,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_F",
+          648.795,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_LAT_F",
+          648.795,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_M_F",
+          648.795,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_TL_F",
+          648.795,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_AR_F",
+          648.795,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19734,
+          "O_soldier_A_F",
+          648.795,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "frame": {
+        "start_ns": 55321910925,
+        "costs_ms": {
+          "full": 8.547958,
+          "combat": 6.989238,
+          "IVCS_PERF_AmmoQueue_Frame": 0.019761,
+          "IVCS_PERF_Entities_Frame": 1.435515,
+          "IVCS_PERF_Spawner_Frame": 0.050193,
+          "ShotPreparation": 0.0,
+          "DamageApplication": 0.0,
+          "CasualtyCleanup": 0.0,
+          "AmmoNeedsScan": 0.0,
+          "PendingRequests": 0.0,
+          "DonorSlice": 0.0,
+          "combat_other": 6.989238,
+          "frame_other": 0.053251
+        },
+        "steps": 1,
+        "largest_exchange_ms": 5.912571,
+        "largest_donor_slice_ms": 0
+      },
+      "operation_ms": {
+        "IVCS_PERF_Combat_Frame": 6.989238,
+        "IVCS_PERF_Entities_Frame": 1.435515,
+        "IVCS_PERF_AmmoQueue_Frame": 0.019761,
+        "IVCS_PERF_VirtualSpace_Frame": 8.547958,
+        "IVCS_PERF_Spawner_Frame": 0.050193,
+        "IVCS_PERF_Combat_Step": 5.912571,
+        "IVCS_HELI_IVCS_Combat_updateHelicopter": 0.598871,
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": 0.876258,
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": 0.071546,
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": 0.743676,
+        "IVCS_HELI_IVCS_Combat_stepVehicle": 4.35362,
+        "IVCS_HELI_IVCS_Combat_damageVehicle": 0.39868800000000004,
+        "IVCS_HELI_IVCS_Combat_canSee": 0.166399,
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": 0.863765,
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": 2.360341,
+        "IVCS_HELI_IVCS_Combat_updateAirDefense": 0.221905,
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": 5.836716,
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": 0.493741,
+        "IVCS_SHOT_IVCS_Combat_getShotFactors": 0.139794,
+        "IVCS_SHOT_WeaponHit": 0.522086,
+        "IVCS_SHOT_WeaponMiss": 1.4153520000000002,
+        "IVCS_SHOT_IVCS_Combat_getWeaponProfile": 0.14111200000000002,
+        "IVCS_SHOT_Prepare": 0.047173,
+        "IVCS_SHOT_IVCS_Combat_getHitpointLayout": 0.063936,
+        "IVCS_SHOT_IVCS_Combat_getAmmoProfile": 0.019176,
+        "IVCS_SHOT_Unit": 2.5661750000000003,
+        "IVCS_SHOT_CacheReset": 0.035074,
+        "IVCS_SHOT_RecordScan": 1.5673559999999997,
+        "IVCS_SHOT_IVCS_Combat_sampleHits": 0.088946
+      },
+      "work": [
+        [
+          "reset",
+          19459,
+          "e_21",
+          506.507,
+          true
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_TL_F",
+          506.507,
+          true,
+          2,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_AAA_F",
+          506.507,
+          true,
+          3,
+          0,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              8
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ],
+            [
+              "Rangefinder",
+              0
+            ]
+          ],
+          []
+        ],
+        [
+          "reset",
+          19459,
+          "e_20",
+          599.922,
+          false
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_SL_F",
+          599.922,
+          false,
+          2,
+          9,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ARCO_pointer_F",
+              6
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_F",
+          599.922,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_LAT_F",
+          599.922,
+          false,
+          3,
+          21,
+          1,
+          11,
+          11,
+          [
+            [
+              "arifle_Katiba_ACO_F",
+              6
+            ],
+            [
+              "launch_RPG32_F",
+              12
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_M_F",
+          599.922,
+          false,
+          2,
+          13,
+          0,
+          0,
+          0,
+          [
+            [
+              "srifle_DMR_01_DMS_BI_F",
+              10
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_TL_F",
+          599.922,
+          false,
+          2,
+          20,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_GL_ARCO_pointer_F",
+              17
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_AR_F",
+          599.922,
+          false,
+          2,
+          7,
+          0,
+          0,
+          0,
+          [
+            [
+              "LMG_Zafir_pointer_F",
+              4
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ],
+        [
+          "select",
+          19459,
+          "O_soldier_A_F",
+          599.922,
+          false,
+          2,
+          21,
+          0,
+          0,
+          0,
+          [
+            [
+              "arifle_Katiba_ACO_pointer_F",
+              18
+            ],
+            [
+              "hgun_Rook40_F",
+              3
+            ]
+          ],
+          []
+        ]
+      ]
+    }
+  ]
+}

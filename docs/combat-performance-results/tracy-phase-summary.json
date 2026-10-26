@@ -1,0 +1,310 @@
+[
+  {
+    "trial": 1,
+    "mode": "combat",
+    "groups": 40,
+    "begin_ns": 116957912082,
+    "end_ns": 136974903528,
+    "metrics": {
+      "IVCS_PERF_VirtualSpace_Frame": {
+        "count": 560,
+        "total_ms": 1689.4888049999997,
+        "mean_ms": 3.016944294642857,
+        "p50_ms": 1.150901,
+        "p90_ms": 8.381981200000025,
+        "p95_ms": 12.698962349999997,
+        "p99_ms": 21.9814366,
+        "max_ms": 24.935347,
+        "over_1ms": 324,
+        "over_5ms": 77,
+        "over_10ms": 55,
+        "over_16_67ms": 10
+      },
+      "IVCS_PERF_Combat_Frame": {
+        "count": 560,
+        "total_ms": 1442.8081409999977,
+        "mean_ms": 2.5764431089285713,
+        "p50_ms": 0.6685385,
+        "p90_ms": 7.968027600000026,
+        "p95_ms": 12.363976499999998,
+        "p99_ms": 21.633943489999997,
+        "max_ms": 24.532327,
+        "over_1ms": 230,
+        "over_5ms": 76,
+        "over_10ms": 55,
+        "over_16_67ms": 10
+      },
+      "IVCS_PERF_Combat_Step": {
+        "count": 808,
+        "total_ms": 380.3117220000005,
+        "mean_ms": 0.4706828242574257,
+        "p50_ms": 0.2175685,
+        "p90_ms": 1.3545415,
+        "p95_ms": 1.4105640000000002,
+        "p99_ms": 1.706718459999999,
+        "max_ms": 3.592967,
+        "over_1ms": 208,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "IVCS_PERF_Entities_Frame": {
+        "count": 560,
+        "total_ms": 201.27082900000005,
+        "mean_ms": 0.3594121946428571,
+        "p50_ms": 0.29908250000000003,
+        "p90_ms": 0.45789710000000006,
+        "p95_ms": 0.6137250999999994,
+        "p99_ms": 1.1046899999999988,
+        "max_ms": 1.650525,
+        "over_1ms": 9,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    "worst_frames": [
+      {
+        "time_in_phase_seconds": 0.488607262,
+        "ivcs_ms": 24.935347,
+        "combat_ms": 24.532327,
+        "step_ms": 13.202655,
+        "steps": 8,
+        "ammo_update_ms": 10.346994
+      },
+      {
+        "time_in_phase_seconds": 4.511046477,
+        "ivcs_ms": 24.09177,
+        "combat_ms": 23.660817,
+        "step_ms": 12.681254,
+        "steps": 8,
+        "ammo_update_ms": 9.981608000000001
+      },
+      {
+        "time_in_phase_seconds": 8.476230693,
+        "ivcs_ms": 23.700725,
+        "combat_ms": 23.310389,
+        "step_ms": 12.310130000000001,
+        "steps": 8,
+        "ammo_update_ms": 10.042077
+      },
+      {
+        "time_in_phase_seconds": 6.495375697,
+        "ivcs_ms": 23.001031,
+        "combat_ms": 22.600966,
+        "step_ms": 11.538915999999999,
+        "steps": 8,
+        "ammo_update_ms": 10.013406000000002
+      },
+      {
+        "time_in_phase_seconds": 2.533730046,
+        "ivcs_ms": 22.293703,
+        "combat_ms": 21.947597,
+        "step_ms": 11.309655,
+        "steps": 8,
+        "ammo_update_ms": 10.042653999999999
+      }
+    ]
+  },
+  {
+    "trial": 1,
+    "mode": "idle",
+    "groups": 80,
+    "begin_ns": 139486926602,
+    "end_ns": 159500864041,
+    "metrics": {
+      "IVCS_PERF_VirtualSpace_Frame": {
+        "count": 565,
+        "total_ms": 1774.8738800000006,
+        "mean_ms": 3.1413696991150446,
+        "p50_ms": 1.702122,
+        "p90_ms": 8.1185642,
+        "p95_ms": 9.247177399999995,
+        "p99_ms": 11.406388320000008,
+        "max_ms": 14.278889,
+        "over_1ms": 305,
+        "over_5ms": 144,
+        "over_10ms": 17,
+        "over_16_67ms": 0
+      },
+      "IVCS_PERF_Combat_Frame": {
+        "count": 565,
+        "total_ms": 21.484678000000006,
+        "mean_ms": 0.038025978761061945,
+        "p50_ms": 0.022245,
+        "p90_ms": 0.07869419999999999,
+        "p95_ms": 0.08124459999999999,
+        "p99_ms": 0.09975380000000007,
+        "max_ms": 0.117937,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "IVCS_PERF_Combat_Step": null,
+      "IVCS_PERF_Entities_Frame": {
+        "count": 565,
+        "total_ms": 1697.5253380000008,
+        "mean_ms": 3.004469624778761,
+        "p50_ms": 1.425006,
+        "p90_ms": 7.956937200000002,
+        "p95_ms": 9.162632599999995,
+        "p99_ms": 11.31605848000001,
+        "max_ms": 14.148066,
+        "over_1ms": 292,
+        "over_5ms": 144,
+        "over_10ms": 14,
+        "over_16_67ms": 0
+      }
+    },
+    "worst_frames": [
+      {
+        "time_in_phase_seconds": 8.477843019,
+        "ivcs_ms": 14.278889,
+        "combat_ms": 0.029399,
+        "step_ms": 0,
+        "steps": 0,
+        "ammo_update_ms": 13.255432
+      },
+      {
+        "time_in_phase_seconds": 16.438907485,
+        "ivcs_ms": 13.845933,
+        "combat_ms": 0.032596,
+        "step_ms": 0,
+        "steps": 0,
+        "ammo_update_ms": 12.860096000000002
+      },
+      {
+        "time_in_phase_seconds": 1.647470178,
+        "ivcs_ms": 12.723418,
+        "combat_ms": 0.026869,
+        "step_ms": 0,
+        "steps": 0,
+        "ammo_update_ms": 11.803752999999999
+      },
+      {
+        "time_in_phase_seconds": 7.453077858,
+        "ivcs_ms": 12.500787,
+        "combat_ms": 0.026514,
+        "step_ms": 0,
+        "steps": 0,
+        "ammo_update_ms": 11.596007
+      },
+      {
+        "time_in_phase_seconds": 11.805527102,
+        "ivcs_ms": 11.949683,
+        "combat_ms": 0.040155,
+        "step_ms": 0,
+        "steps": 0,
+        "ammo_update_ms": 11.101215
+      }
+    ]
+  },
+  {
+    "trial": 1,
+    "mode": "combat",
+    "groups": 80,
+    "begin_ns": 162287570035,
+    "end_ns": 182307793699,
+    "metrics": {
+      "IVCS_PERF_VirtualSpace_Frame": {
+        "count": 563,
+        "total_ms": 2607.6514550000024,
+        "mean_ms": 4.631707735346359,
+        "p50_ms": 1.548078,
+        "p90_ms": 13.2435112,
+        "p95_ms": 15.6296138,
+        "p99_ms": 22.722645939999996,
+        "max_ms": 43.828346,
+        "over_1ms": 379,
+        "over_5ms": 130,
+        "over_10ms": 125,
+        "over_16_67ms": 26
+      },
+      "IVCS_PERF_Combat_Frame": {
+        "count": 563,
+        "total_ms": 2370.9123800000007,
+        "mean_ms": 4.211212042628775,
+        "p50_ms": 1.169727,
+        "p90_ms": 12.8550304,
+        "p95_ms": 15.2200779,
+        "p99_ms": 22.342061559999998,
+        "max_ms": 43.238619,
+        "over_1ms": 289,
+        "over_5ms": 126,
+        "over_10ms": 125,
+        "over_16_67ms": 26
+      },
+      "IVCS_PERF_Combat_Step": {
+        "count": 1600,
+        "total_ms": 764.2150390000008,
+        "mean_ms": 0.477634399375,
+        "p50_ms": 0.21639049999999999,
+        "p90_ms": 1.3669550000000001,
+        "p95_ms": 1.4488363,
+        "p99_ms": 1.7459608599999998,
+        "max_ms": 3.9016,
+        "over_1ms": 414,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "IVCS_PERF_Entities_Frame": {
+        "count": 563,
+        "total_ms": 192.17503500000004,
+        "mean_ms": 0.3413410923623446,
+        "p50_ms": 0.298564,
+        "p90_ms": 0.43424660000000004,
+        "p95_ms": 0.4708164,
+        "p99_ms": 1.0309223,
+        "max_ms": 1.421816,
+        "over_1ms": 7,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    "worst_frames": [
+      {
+        "time_in_phase_seconds": 12.494190071,
+        "ivcs_ms": 43.828346,
+        "combat_ms": 43.238619,
+        "step_ms": 6.565522999999999,
+        "steps": 8,
+        "ammo_update_ms": 34.46800100000001
+      },
+      {
+        "time_in_phase_seconds": 4.518542203,
+        "ivcs_ms": 25.251408,
+        "combat_ms": 24.865267,
+        "step_ms": 13.784544000000002,
+        "steps": 8,
+        "ammo_update_ms": 10.103356999999999
+      },
+      {
+        "time_in_phase_seconds": 2.512683909,
+        "ivcs_ms": 23.931328,
+        "combat_ms": 23.568802,
+        "step_ms": 11.882146,
+        "steps": 8,
+        "ammo_update_ms": 10.987684999999999
+      },
+      {
+        "time_in_phase_seconds": 2.581829749,
+        "ivcs_ms": 23.650819,
+        "combat_ms": 23.257004,
+        "step_ms": 12.149435,
+        "steps": 8,
+        "ammo_update_ms": 10.147222999999999
+      },
+      {
+        "time_in_phase_seconds": 6.504761401,
+        "ivcs_ms": 23.070548,
+        "combat_ms": 22.677431,
+        "step_ms": 11.705267999999998,
+        "steps": 8,
+        "ammo_update_ms": 10.01799
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "passed": 977,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "selection",
+      "passed": 812,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-ab8eb98951ce4a30a9f8401cac1a74c8\\profile\\arma3server_x64_2026-10-25_19-40-57.rpt"
+    },
+    {
+      "suite": "vehicles",
+      "passed": 58,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-2d9550db89534d14a43c04fb2c887069\\profile\\arma3server_x64_2026-10-25_19-35-46.rpt"
+    },
+    {
+      "suite": "vehicle-expansion",
+      "passed": 57,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-a1a984271f54449390cb77d9939c540f\\profile\\arma3server_x64_2026-10-25_19-35-47.rpt"
+    },
+    {
+      "suite": "helicopter-tactics",
+      "passed": 50,
+      "failed": 0,
+      "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-d4f561e0e1ef4268813ba05a0e894bf0\\profile\\arma3server_x64_2026-10-25_19-35-47.rpt"
+    }
+  ]
+}

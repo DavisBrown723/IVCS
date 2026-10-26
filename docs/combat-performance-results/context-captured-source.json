@@ -1,0 +1,6 @@
+{
+  "tests/combat/performance.sqf": "8084a4e37cc4e6281a15b6f6f4700d8cbc15be1630121c2fca220e3623f63d2b",
+  "tests/combat/performance.ps1": "7f55bc0fc1e71597d60efa6ca8c3f7bcfb814a8351dc70f92ea295956ad28489",
+  "tests/combat/context-scopes.sqf": "410effa4c02c95451539d49c73630df3fb0f04f97e3156320fa7f82cb8c1c171",
+  "tests/combat/operation-scopes.sqf": "f5c8ea0faf3c067539141a9e8e3992af83d490ab653abf2a4a2a7d2218131d2c"
+}
