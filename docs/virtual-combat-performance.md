@@ -1,5 +1,87 @@
 # Virtual combat performance
 
+## Timing reliability investigation - 26 October 2026
+
+**Concurrent trace analysis is a confirmed source of timing variability.** Identical-code controls also exposed trial-order effects and unequal compilation paths in the comparison harness. Those measurement problems are now addressed; no production combat code, budgets or cadence changed in this investigation.
+
+Two final fresh-process controls, using the **same function object** under both labels and opposite trial orders, give whole-IVCS p99 **6.055 and 6.040 ms**. Pooling all **7,668 frames** gives **6.045 ms**, with a **95% one-second block-bootstrap sampling interval of 5.945-6.153 ms**. This is a qualified reference for this workload and host, not a universal gameplay bound. A previous 0.08 ms apparent improvement is smaller than the remaining uncertainty.
+
+### Confirmed interference, and what remains unknown
+
+A fixed-work arithmetic probe and an allocation probe run immediately after the measured IVCS root closes. In an uninterrupted quiet control, arithmetic means stay at **0.0566-0.0574 ms** and allocation means at **0.0252-0.0256 ms**. Entity means also remain steady. Probe costs are outside the measured root; these diagnostic captures are explicitly ineligible for optimization comparisons.
+
+In a separate causal test, the exact same source runs quiet, with an ordinary saved-trace analyzer active for two windows, and quiet again. The analyzer completes **40 successful passes** and stops before the final window. Nothing in Arma is changed between windows.
+
+| Window | Host condition | Entity mean ms | Entity p99 ms | Arithmetic p99 ms | Allocation p99 ms |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 1 | Quiet | 0.858 | 1.208 | 0.0697 | 0.0317 |
+| 2 | Analysis active | 0.887 | 1.500 | 0.0845 | 0.0418 |
+| 3 | Analysis active | 0.905 | 1.552 | 0.0933 | 0.0435 |
+| 4 | Quiet again | 0.856 | 1.250 | 0.0691 | 0.0282 |
+
+Entity p99 increases roughly **22-26%** relative to the adjacent quiet windows; fixed-work probes slow too, then recover. Host CPU utility rises from roughly **17% to 30-32%**, while processor performance remains around **158% of base** during the loaded windows. This establishes interference from concurrent analysis, without establishing whether scheduling, cache contention or another mechanism dominates each spike.
+
+This does **not fully explain the older 50-80% broad slowdowns**. One-hertz host counters cannot identify individual preemptions, and a kernel CPU recording was unavailable: WPR CPU.light failed with **0xc5585011**, requiring a system profiling policy unavailable to this session. No OS policy, power plan, affinity or priority was changed. Background-process names alone are not treated as causal evidence. Invalid process-instance samples are rejected using PID continuity and physical CPU bounds.
+
+### Other measurement problems found
+
+The old comparison compiled baseline text inline but used a preprocessed function for the current version. Identical source hashes therefore did not imply identical compilation paths. Earlier same-source ABBA controls still showed apparent label advantages. Reversing order in the fourth legacy run nearly erased that difference (**5.981 versus 5.978 ms p99**), supporting order effects as a contributor. It does not prove that compilation alone caused the drift.
+
+Identical-code controls now swap the **same already compiled object**. Real A/B comparisons compile both source versions through the same inline path. Logs identify the selected compilation mode. A short real A/B smoke against the archived exchange baseline passes **36/36 checks**, including firing and both AA support categories; its five-second windows are not used for p99 conclusions.
+
+A separate manual recorder launch missed the first BEGIN boundary. That trace is retained, explicitly incomplete and excluded from the reference. The startup helper now refuses a late attach, and the controller connects automatically before measured windows. Earlier complete comparisons had all their boundaries, so this startup race does not explain their timing variation.
+
+### Final controls and uncertainty
+
+Both final runs retain all frames, pass **72/72 workload checks**, contain all eight BEGIN/END boundaries, and preserve the 20-group roster and AA activity. There is no detailed instrumentation or fixed-work probe in these final timings.
+
+| Run | Order | Frames | Whole-IVCS p99 ms | p99 sampling interval ms | Entity mean max/min | Identical-label p99 difference interval ms |
+| --- | --- | ---: | ---: | --- | ---: | --- |
+| Final 1 | ABBA | 3,835 | 6.055 | 5.930-6.212 | 1.020 | -0.378 to +0.064 |
+| Final 2 | BAAB | 3,833 | 6.040 | 5.860-6.167 | 1.006 | -0.272 to +0.272 |
+
+Both identical-label difference intervals include zero. The unchanged entity-stage mean varies by **2.0%** within the first run and **0.6%** within the second, below the predeclared **10% drift threshold**. The runs' absolute entity means still differ by approximately **8%** between processes: residual host/process variability remains, even though the whole-frame p99 estimates agree closely.
+
+The pooled whole-IVCS mean is **1.510 ms**, p95 **4.643 ms**, maximum **7.972 ms**; **291 frames exceed 5 ms**, none exceed 10 ms. No samples are clipped or trimmed. Root costs include standard profiler and test-restoration overhead. This dedicated-server fixture measures around **27.4 frames/s**; frame-rate changes alter the mix of idle and due-combat frames and must be reported in future comparisons.
+
+Intervals use **5,000 stratified one-second block-bootstrap repetitions**, retaining within-second frame clusters and pairing selected block indices within each same-seed comparison. Tiny final partial blocks merge into the preceding block; every frame remains represented. Per-capture seeds are deterministic and independent of report ordering. These are sampling intervals, not guarantees against systematic drift. The drift gate alone is insufficient: a legacy same-source run passed it yet produced an apparently significant false label advantage.
+
+The four earlier source-identical controls used the old mixed compilation paths and remain audit evidence, not the final reference:
+
+| Run | Order | Frames | Whole-IVCS p99 ms | Entity mean max/min | Drift gate |
+| --- | --- | ---: | ---: | ---: | --- |
+| Legacy 1 | ABBA | 3,831 | 6.335 | 1.177 | Fail |
+| Legacy 2 | ABBA | 3,839 | 6.107 | 1.029 | Pass |
+| Legacy 3 | ABBA | 3,837 | 6.042 | 1.009 | Pass |
+| Legacy 4 | BAAB | 3,837 | 5.988 | 1.150 | Fail |
+
+The legacy all-run report retains runs 1-3; their pooled p99 is **6.159 ms**, with a failed drift gate. A separately labeled legacy passing subset gave **6.070 ms**. Neither subset replaces the post-fix final reference. Legacy run 4 retains its **12.030 ms maximum** and its failed gate. The incomplete manual capture is retained separately.
+
+### Reproducible protocol
+
+Run from the repository root, with other development analysis and builds idle:
+
+    ./tests/combat/run-timing-validation.ps1 -Runs 2
+
+The controller uses a unique label by default, two fresh servers, ABBA then BAAB order, paired seeds, four 35-second windows per server, two-second warmup, and automated 240-second Tracy captures. It validates the identical-control source hash before launch. After future production changes, refresh timing-control-baseline/stepVehicle.sqf and its manifest hash before establishing a new control reference.
+
+The 20-group helicopter runner and repository analyzer commands share a process-lifetime exclusive timing lease: neither can overlap the other. External trace decoding is wrapped in that same lease. **6/6 cross-process checks pass**, including abnormal-process-exit recovery. Unrelated applications can still introduce interference; the lease is not a system-wide isolation mechanism. The explicit interference-test bypass is reserved for the causal diagnostic.
+
+Analysis starts only after the server exits. Missing boundaries, workload failures and detailed diagnostics cannot qualify; the controller retains completed reports and exits with a quality failure when the drift gate fails. Compare changes using matched compilation, both orders, repeated fresh processes, unchanged-stage controls and uncertainty on raw pooled frame samples. Do not average per-run percentiles or claim small gains from one pair. Extend the run count when the proposed gain remains within control uncertainty.
+
+Workload stays at **five engagements, ten AA supporters, 85 units and 30 entities**; accTime **1**, **3 ms soft combat budget**, **eight engagement visits**, **ten entity visits**, **1 ms ammo-search budget**, and **one-second combat/discovery intervals**. Production ranges, 100 m altitude, 600 m attack areas, compatible ammunition and identical test-only immortality remain unchanged. This is virtual server script cost, not native AI/rendering or client FPS.
+
+### Evidence and verification
+
+All **256 production source hashes** match the preceding exchange manifest. New/edited SQF files use CRLF. Python syntax checks pass for 14 analyzers/helpers and PowerShell parsing passes for all six affected/new scripts. No production optimization was attempted.
+
+Final traces save normally at **240.1 seconds**, **821,111 / 821,908 zones**, with **4 ns timers**, Tracy/Zstd and four streams. Recorder spans define duration; exported aggregate percentages are not used to infer elapsed time. Session files preserve exact sizes, command lines and save logs. Inclusive and self scope summaries remain separate; nested costs must not be summed. Raw traces, messages, exports, host BLGs and logs remain outside Git at the paths in session evidence.
+
+- [Final confidence and raw-sample methodology](combat-performance-results/timing-final-confidence.json), [first final precise results](combat-performance-results/timing-final-1-precise-summary.json), [second final precise results](combat-performance-results/timing-final-2-precise-summary.json), [first session](combat-performance-results/timing-final-1-session.json), and [second session](combat-performance-results/timing-final-2-session.json).
+- [Quiet diagnostic](combat-performance-results/timing-control-attribution.json), [controlled interference](combat-performance-results/timing-interference-attribution.json), [quiet session](combat-performance-results/timing-control-session.json), [interference session](combat-performance-results/timing-interference-session.json), and [incomplete capture](combat-performance-results/timing-incomplete-session.json).
+- [Legacy all-run confidence](combat-performance-results/timing-validation-all.json), [legacy passing subset](combat-performance-results/timing-validation-reference.json), [legacy reversed-order control](combat-performance-results/timing-validated-confidence.json), [host audit](combat-performance-results/timing-validation-host.json), and [source hashes](combat-performance-results/timing-source-manifest.json).
+- [Protocol and verification summary](combat-performance-results/timing-methodology.json), [guard checks](combat-performance-results/timing-guard-tests.json), [compilation smoke](combat-performance-results/timing-comparison-smoke-summary.json), [controller](../tests/combat/run-timing-validation.ps1), [uncertainty analyzer](../tests/combat/analyze-timing-validation.py), and [clock/host correlation](../tests/combat/analyze-timing-control.py).
+
 ## Remaining slow exchanges - 26 October 2026
 
 The resolver now skips helicopter firing eligibility during intervals containing only repositioning. It removes unused station scans and shot preparation, with all budgets and simulation work intervals unchanged. **The measurements do not establish a reliable p99 reduction:** the first precise run regresses, a steadier repeat improves modestly, and pooling both runs retains a regression. Both runs and every complete window are retained.

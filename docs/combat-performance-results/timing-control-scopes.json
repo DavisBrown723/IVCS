@@ -1,0 +1,104 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-control-20261026-011929-7cbe9996.tracy",
+  "exporter": "C:\\Users\\spyde\\.codex\\skills\\read-tracy\\bin\\tracy-csvexport.exe",
+  "metadata": {
+    "file_bytes": 5468442,
+    "compression": "Zstd",
+    "container": "Tracy",
+    "streams": 4
+  },
+  "capture_duration_ns": 256875285974,
+  "zone_types": 134,
+  "filter": "IVCS_CLOCK_",
+  "matching_zone_types": 2,
+  "top_inclusive": [
+    {
+      "name": "IVCS_CLOCK_Arithmetic",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 217399729,
+      "total_perc": 0.084632,
+      "counts": 3822,
+      "mean_ns": 56881,
+      "min_ns": 52969,
+      "max_ns": 177076,
+      "std_ns": 7409.680202
+    },
+    {
+      "name": "IVCS_CLOCK_Allocation",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 97339204,
+      "total_perc": 0.037894,
+      "counts": 3822,
+      "mean_ns": 25468,
+      "min_ns": 22874,
+      "max_ns": 160421,
+      "std_ns": 4474.930704
+    }
+  ],
+  "top_self": [
+    {
+      "name": "IVCS_CLOCK_Arithmetic",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 217399729,
+      "total_perc": 0.084632,
+      "counts": 3822,
+      "mean_ns": 56881,
+      "min_ns": 52969,
+      "max_ns": 177076,
+      "std_ns": 7409.680202
+    },
+    {
+      "name": "IVCS_CLOCK_Allocation",
+      "src_file": "scriptProfiler.cpp",
+      "src_line": 211,
+      "total_ns": 97339204,
+      "total_perc": 0.037894,
+      "counts": 3822,
+      "mean_ns": 25468,
+      "min_ns": 22874,
+      "max_ns": 160421,
+      "std_ns": 4474.930704
+    }
+  ],
+  "distributions": [
+    {
+      "name": "IVCS_CLOCK_Arithmetic",
+      "count": 3822,
+      "total_ns": 217399729,
+      "mean_ns": 56881,
+      "p50_ns": 55162,
+      "p90_ns": 57373,
+      "p95_ns": 65035,
+      "p99_ns": 94196,
+      "max_ns": 177076,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 77945397143,
+      "last_end_ns": 225510517130,
+      "observed_span_ns": 147565119987,
+      "span_occupancy_percent": 0.1473
+    },
+    {
+      "name": "IVCS_CLOCK_Allocation",
+      "count": 3822,
+      "total_ns": 97339204,
+      "mean_ns": 25468,
+      "p50_ns": 24582,
+      "p90_ns": 25611,
+      "p95_ns": 29342,
+      "p99_ns": 44350,
+      "max_ns": 160421,
+      "over_1ms": 0,
+      "over_5ms": 0,
+      "over_10ms": 0,
+      "first_start_ns": 77945453158,
+      "last_end_ns": 225510544224,
+      "observed_span_ns": 147565091066,
+      "span_occupancy_percent": 0.066
+    }
+  ]
+}

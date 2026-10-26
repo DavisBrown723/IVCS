@@ -9,6 +9,10 @@ import statistics
 from collections import defaultdict
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 COLUMNS = ['relative_seconds', 'frame', 'ivcs_ms', 'frame_interval_ms', 'steps',
            'combat_ms', 'ammo_queue_ms', 'entities_ms', 'spawner_ms']
 
@@ -121,7 +125,7 @@ def main():
                    trials=[{k:v for k,v in member.items() if k!='rows'} for member in members])
         results.append(entry)
     args.output.mkdir(parents=True,exist_ok=True)
-    instrumented=bool(re.search(r'\[IVCS PERF\] (?:RESOLUTION|EXCHANGE)_SCOPES installed',log_text))
+    instrumented=bool(re.search(r'\[IVCS PERF\] (?:(?:RESOLUTION|EXCHANGE)_SCOPES|CLOCK_CANARIES) installed',log_text))
     report=dict(rpt=str(args.rpt.resolve()),label=args.label,config=config,diagnostic=args.diagnostic or instrumented,
                 eligible_for_performance_comparison=not (args.diagnostic or instrumented) and int(done[1])==0,
                 validity_checks=dict(passed=int(done[0]),failed=int(done[1])),failure_labels=failure_labels,results=results)

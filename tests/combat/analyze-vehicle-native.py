@@ -2,6 +2,10 @@
 import argparse, ast, collections, json, re
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 def rows(path, marker):
     result=[]
     for line in path.read_text(errors="replace").splitlines():

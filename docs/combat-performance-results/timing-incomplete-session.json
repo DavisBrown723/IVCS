@@ -1,0 +1,29 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validation-1-20261026-014106-fcb645a9.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validation-1-20261026-014106-fcb645a9.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validation-1-20261026-014106-fcb645a9.stderr.log",
+  "recorderPid": 68876,
+  "serverPid": 57668,
+  "serverCommandLine": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-70551fd88d014ea398b475c14523bfab\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-70551fd88d014ea398b475c14523bfab\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "seconds": 240,
+  "benchmarkRoot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-70551fd88d014ea398b475c14523bfab",
+  "connected": true,
+  "created": "2026-10-26T01:41:09.1794051-05:00",
+  "saved": true,
+  "file_bytes": 4499561,
+  "save_log": "Connecting to 127.0.0.1:8086...\nTimer resolution: 5 ns\n\nFrames: 5133\nTime span: 3:07.9\nZones: 692,251\nElapsed time: 3:07.9\nSaving trace... done!\nTrace size 4393 KB (24.49% ratio)\n",
+  "eligible_for_performance_comparison": false,
+  "reason": "Recorder connected after first BEGIN; incomplete window coverage.",
+  "boundaries": [
+    "IVCS PERF END trial=1 mode=before-heli-infantry-aa groups=20",
+    "IVCS PERF BEGIN trial=2 mode=after-heli-infantry-aa groups=20",
+    "IVCS PERF END trial=2 mode=after-heli-infantry-aa groups=20",
+    "IVCS PERF BEGIN trial=3 mode=after-heli-infantry-aa groups=20",
+    "IVCS PERF END trial=3 mode=after-heli-infantry-aa groups=20",
+    "IVCS PERF BEGIN trial=4 mode=before-heli-infantry-aa groups=20",
+    "IVCS PERF END trial=4 mode=before-heli-infantry-aa groups=20"
+  ],
+  "recorder_time_span_seconds": 187.9,
+  "timer_resolution_ns": 5,
+  "zone_count": 692251
+}

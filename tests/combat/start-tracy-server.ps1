@@ -11,6 +11,7 @@ do {
     Start-Sleep -Milliseconds 500
 } while ((Get-Date) -lt $deadline)
 if (!$content -or $content -notmatch '\[IVCS PERF\] CONFIG') {throw 'Benchmark not ready'}
+if ($content -match '\[IVCS PERF\] START') {throw 'Capture startup missed the first measured window; reject this run.'}
 $listeners=@(Get-NetTCPConnection -State Listen -LocalPort 8086 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique)
 if ($listeners.Count -ne 1) {throw 'Expected one local Tracy listener'}
 $server=Get-CimInstance Win32_Process -Filter "ProcessId=$($listeners[0])"

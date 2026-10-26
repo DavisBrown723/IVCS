@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-10-26T02:47:43.5371051-05:00",
+  "processor": {
+    "Name": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16,
+    "MaxClockSpeed": 2904
+  },
+  "operatingSystem": {
+    "Caption": "Microsoft Windows 10 Home",
+    "Version": "10.0.19045"
+  },
+  "powerScheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+  "remainingOwnedServers": [],
+  "remainingRecorders": []
+}

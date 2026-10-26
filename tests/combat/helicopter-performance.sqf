@@ -183,7 +183,7 @@ sleep (missionNamespace getVariable ["IVCS_Perf_StartupDelay",0]);
 private _baselines=missionNamespace getVariable ["IVCS_HeliPerf_Baselines",[]];
 private _compare=_baselines isNotEqualTo [];
 private _versions=_baselines apply {
-    _x params ["_function","_baseline"];
+    _x params ["_function","_baseline",["_compiledCurrent",{}]];
     private _scoped="IVCS_HeliPerf_ScopeOriginal_"+_function;
     // Preserve identical test-only restoration and shot accounting around both versions.
     private _destination=switch (_function) do {
@@ -191,10 +191,16 @@ private _versions=_baselines apply {
         case "IVCS_Combat_stepVehicle":{"IVCS_HeliPerf_Infantry"};
         default {if (_profiling && {!isNil {missionNamespace getVariable _scoped}}) then {_scoped} else {_function}};
     };
-    [_destination,_baseline,missionNamespace getVariable _destination]
+    private _actual=missionNamespace getVariable _destination;
+    private _current=if (count _x>=3) then {_compiledCurrent} else {_actual};
+    if (missionNamespace getVariable ["IVCS_HeliPerf_IdenticalControl",false]) then {
+        _baseline=_actual;_current=_actual;
+    };
+    [_destination,_baseline,_current]
 };
+diag_log format ["[IVCS PERF] COMPILATION %1",[if (missionNamespace getVariable ["IVCS_HeliPerf_IdenticalControl",false]) then {"same-object"} else {if (_compare) then {"matched-inline"} else {"production"}}]];
 for "_trial" from 1 to _trials do {
-    private _before=_compare && {_trial in [1,4]};
+    private _before=_compare && {if (missionNamespace getVariable ["IVCS_HeliPerf_ReverseOrder",false]) then {_trial in [2,3]} else {_trial in [1,4]}};
     private _seedTrial=if (_compare) then {ceil (_trial/2)} else {_trial};
     if (_compare) then {{missionNamespace setVariable [_x select 0,_x select (if (_before) then {1} else {2})]} forEach _versions};
     private _phases=+_modes;if (_trial mod 2==0) then {reverse _phases};

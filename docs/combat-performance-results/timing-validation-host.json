@@ -1,0 +1,97 @@
+{
+  "note": "1 Hz counters; measured-window alignment uses RPT wall-clock seconds (approximately one-second precision). Invalid fields remain absent, not zero. Process-instance CPU samples require PID continuity in causal attribution.",
+  "runs": [
+    {
+      "label": "timing-validated-2",
+      "raw_csv": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-timing-controller-9eb3b8baac9f4744a73be8af60081aaf\\timing-validated-2\\host\\host.csv",
+      "counter_quality": {
+        "counterErrorCount": 244,
+        "finishedUtc": "2026-10-26T06:57:47.6733381Z"
+      },
+      "phases": [
+        {
+          "trial": 1,
+          "samples": 35,
+          "cpu_performance_mean": 155.1015954380206,
+          "cpu_performance_min": 112.08881558411832,
+          "cpu_performance_max": 158.02331018397436,
+          "cpu_utility_mean": 15.26283002679534,
+          "queue_max": 1.0
+        },
+        {
+          "trial": 2,
+          "samples": 35,
+          "cpu_performance_mean": 155.56548579749116,
+          "cpu_performance_min": 121.37010680271156,
+          "cpu_performance_max": 158.0264514584993,
+          "cpu_utility_mean": 15.671827270695283,
+          "queue_max": 0.0
+        },
+        {
+          "trial": 3,
+          "samples": 34,
+          "cpu_performance_mean": 156.80898761126227,
+          "cpu_performance_min": 150.08817067559872,
+          "cpu_performance_max": 158.01701734646574,
+          "cpu_utility_mean": 16.074045411711577,
+          "queue_max": 0.0
+        },
+        {
+          "trial": 4,
+          "samples": 34,
+          "cpu_performance_mean": 153.05136571265422,
+          "cpu_performance_min": 97.16821931323035,
+          "cpu_performance_max": 158.03264066915702,
+          "cpu_utility_mean": 15.031488612315298,
+          "queue_max": 0.0
+        }
+      ]
+    },
+    {
+      "label": "timing-validated-3",
+      "raw_csv": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-timing-controller-83c82ca1a63f4ee6b48cf8d590431a66\\timing-validated-3\\host\\host.csv",
+      "counter_quality": {
+        "counterErrorCount": 232,
+        "finishedUtc": "2026-10-26T07:04:36.5356493Z"
+      },
+      "phases": [
+        {
+          "trial": 1,
+          "samples": 34,
+          "cpu_performance_mean": 155.58073764201325,
+          "cpu_performance_min": 133.56197454306508,
+          "cpu_performance_max": 158.0567689700561,
+          "cpu_utility_mean": 15.320456207174674,
+          "queue_max": 0.0
+        },
+        {
+          "trial": 2,
+          "samples": 35,
+          "cpu_performance_mean": 156.2563163444451,
+          "cpu_performance_min": 142.91655768356233,
+          "cpu_performance_max": 158.15554858657447,
+          "cpu_utility_mean": 15.735630295715465,
+          "queue_max": 0.0
+        },
+        {
+          "trial": 3,
+          "samples": 34,
+          "cpu_performance_mean": 155.80098861643202,
+          "cpu_performance_min": 133.69538673239418,
+          "cpu_performance_max": 158.06301245500964,
+          "cpu_utility_mean": 15.223641105349841,
+          "queue_max": 0.0
+        },
+        {
+          "trial": 4,
+          "samples": 34,
+          "cpu_performance_mean": 156.47041451438028,
+          "cpu_performance_min": 145.75588269563744,
+          "cpu_performance_max": 158.09455247948483,
+          "cpu_utility_mean": 15.562389610659721,
+          "queue_max": 0.0
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,10 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 # These scopes do not overlap each other. Their inner helper scopes are diagnostic only.
 BLOCKS = ('ShotPreparation', 'DamageApplication', 'CasualtyCleanup',
           'AmmoNeedsScan', 'PendingRequests', 'DonorSlice')

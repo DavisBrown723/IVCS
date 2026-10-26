@@ -2,6 +2,10 @@
 import argparse,bisect,collections,csv,importlib.util,json
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('operations',type=Path);p.add_argument('messages',type=Path);p.add_argument('--output',type=Path,required=True)

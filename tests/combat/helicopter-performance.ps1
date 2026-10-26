@@ -11,6 +11,8 @@ param(
     [switch]$FlightDiagnostics,
     [switch]$ResolutionDiagnostics,
     [switch]$ExchangeDiagnostics,
+    [switch]$TimingCanaries,
+    [switch]$ReverseComparison,
     [switch]$ProfilerMarkers,
     [int]$StartupDelaySeconds=0,
     [int]$PostDelaySeconds=0,
@@ -18,11 +20,16 @@ param(
     [string[]]$ExtraArguments=@()
 )
 $ErrorActionPreference='Stop'
+$timingMutex=[Threading.Mutex]::new($false,'Local\IVCS_Combat_Timing')
+try {$timingOwned=$timingMutex.WaitOne(0)} catch [Threading.AbandonedMutexException] {$timingOwned=$true}
+if (!$timingOwned) {$timingMutex.Dispose();throw 'Another IVCS benchmark or analysis is active.'}
+try {
 $allowed=@('heli-idle','heli-infantry','heli-infantry-aa','heli-vehicle-aa')
 foreach ($mode in $Modes) { if ($mode -notin $allowed) { throw "Unknown scenario: $mode" } }
 $profile=if ($ProfilerMarkers) {'true'} else {'false'}
 $modeArray='["'+($Modes -join '","')+'"]'
 $header="IVCS_Perf_Profiler=$profile; IVCS_Perf_Seconds=$Seconds; IVCS_Perf_Trials=$Trials; IVCS_Perf_Warmup=$WarmupSeconds; IVCS_HeliPerf_Modes=$modeArray; IVCS_Perf_StartupDelay=$StartupDelaySeconds; IVCS_Perf_PostDelay=$PostDelaySeconds;`r`n"
+$header+='IVCS_HeliPerf_ReverseOrder=' + $(if ($ReverseComparison) {'true'} else {'false'})+';'+[Environment]::NewLine
 if (@(@($BaselineDirectory,$ShotBaselineDirectory,$AdmissionBaselineDirectory) | Where-Object {$_}).Count -gt 1) {throw 'Select one comparison baseline.'}
 if ($BaselineDirectory -or $ShotBaselineDirectory -or $AdmissionBaselineDirectory) {
     if ($Trials -ne 4) {throw 'Comparison requires four ABBA trials.'}
@@ -42,9 +49,13 @@ if ($BaselineDirectory -or $ShotBaselineDirectory -or $AdmissionBaselineDirector
         $baselinePath=Join-Path $directory $file
         if ((Get-FileHash -LiteralPath $baselinePath -Algorithm SHA256).Hash -ne $manifest.$file) {throw 'Comparison baseline hash mismatch.'}
         $baseline=[IO.File]::ReadAllText($baselinePath).Replace("'","''")
-        $overrides+="['$function',compile '$baseline']"
+        $livePath=Join-Path $PSScriptRoot ('../../VirtualSpace/functions/combat/'+$file)
+        $current=[IO.File]::ReadAllText($livePath).Replace("'","''")
+        if ($manifest.identical_code_control -and (Get-FileHash -LiteralPath $livePath -Algorithm SHA256).Hash -ne $manifest.$file) {throw 'Identical-code baseline does not match current source.'}
+        $overrides+="['$function',compile '$baseline',compile '$current']"
     }
     $header+='IVCS_HeliPerf_Baselines=['+($overrides -join ',')+'];'+[Environment]::NewLine
+    $header+='IVCS_HeliPerf_IdenticalControl='+$(if ($manifest.identical_code_control) {'true'} else {'false'})+';'+[Environment]::NewLine
 }
 $source=[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'helicopter-performance.sqf'))
 if (!$ProfilerMarkers) {
@@ -108,8 +119,17 @@ IVCS_VirtualSpace_onFrame={
     if (!$source.Contains($anchor)) {throw 'Resolution diagnostic frame anchor changed.'}
     $source=$source.Replace($anchor,$flush+[Environment]::NewLine+$anchor)
 }
+if ($TimingCanaries) {
+    if (!$ProfilerMarkers -or $ShotDiagnostics -or $EntityDiagnostics -or $FlightDiagnostics -or $ResolutionDiagnostics -or $ExchangeDiagnostics) {throw 'Timing canaries require a standalone profiler control.'}
+    $anchor='IVCS_VirtualSpace_Controller = [false] call IVCS_VirtualSpace_createController;'
+    $canaries=[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'timing-canaries.sqf'))
+    if (!$source.Contains($anchor)) {throw 'Timing canary frame anchor changed.'}
+    $source=$source.Replace($anchor,$canaries+[Environment]::NewLine+$anchor)
+}
 $script=Join-Path ([IO.Path]::GetTempPath()) ('ivcs-helicopter-performance-'+[guid]::NewGuid().ToString('N')+'.sqf')
 [IO.File]::WriteAllText($script,($header+$source -replace '\r?\n',"`r`n"),[Text.UTF8Encoding]::new($false))
 try {
     & (Join-Path $PSScriptRoot '..\tasks\run.ps1') -TestScript $script -Port $Port -TimeoutSeconds 900 -ExtraArguments $ExtraArguments
 } finally { Remove-Item -LiteralPath $script -ErrorAction SilentlyContinue }
+
+} finally {if ($timingOwned) {$timingMutex.ReleaseMutex()};$timingMutex.Dispose()}

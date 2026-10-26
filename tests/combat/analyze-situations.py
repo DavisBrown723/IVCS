@@ -10,6 +10,10 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 SCHEMA = {
     'Scheduler': ['engagement_queue','search_queue','budget_ms','search_first'],
     'ShotPreparation': ['engagement','units_a','units_b','elapsed','range','shots','hits','factor_misses'],

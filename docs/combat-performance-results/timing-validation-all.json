@@ -1,0 +1,542 @@
+{
+  "method": "Stratified one-second block bootstrap; tiny final partial blocks merge into the preceding block. All frame samples retained. Paired A/A differences share selected block indices within each seed pair.",
+  "repetitions": 5000,
+  "seed": 20261026,
+  "production_changes": false,
+  "runs": [
+    {
+      "operations": "docs\\combat-performance-results\\timing-validated-1-operations-summary.json",
+      "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validated-1-20261026-014641-38ac3581.tracy",
+      "bootstrap_seed": 13280179258334842195,
+      "frames": 3831,
+      "full": {
+        "count": 3831,
+        "total_ms": 6280.888954000003,
+        "mean_ms": 1.6394907214826415,
+        "p50_ms": 1.193227,
+        "p90_ms": 3.569719,
+        "p95_ms": 4.857813999999999,
+        "p99_ms": 6.334570299999988,
+        "max_ms": 7.562906,
+        "over_1ms": 3489,
+        "over_5ms": 175,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "p99_block_bootstrap_95ci_ms": [
+        6.171384411499998,
+        6.422977
+      ],
+      "phases": [
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "frames": 957,
+          "blocks": 35,
+          "full": {
+            "count": 957,
+            "total_ms": 1719.3117710000004,
+            "mean_ms": 1.7965640240334377,
+            "p50_ms": 1.290932,
+            "p90_ms": 4.095703799999999,
+            "p95_ms": 5.4492194,
+            "p99_ms": 6.741435319999999,
+            "max_ms": 7.562906,
+            "over_1ms": 955,
+            "over_5ms": 63,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 957,
+            "total_ms": 942.911512,
+            "mean_ms": 0.9852784869383491,
+            "p50_ms": 0.933706,
+            "p90_ms": 1.2216627999999998,
+            "p95_ms": 1.3971403999999998,
+            "p99_ms": 1.6620266399999994,
+            "max_ms": 2.489163,
+            "over_1ms": 298,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "frames": 957,
+          "blocks": 35,
+          "full": {
+            "count": 957,
+            "total_ms": 1663.366991000003,
+            "mean_ms": 1.7381055287356322,
+            "p50_ms": 1.303444,
+            "p90_ms": 3.8350372,
+            "p95_ms": 4.946445399999999,
+            "p99_ms": 6.413610439999999,
+            "max_ms": 7.495771,
+            "over_1ms": 916,
+            "over_5ms": 45,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 957,
+            "total_ms": 920.9187720000002,
+            "mean_ms": 0.9622975673981191,
+            "p50_ms": 0.915432,
+            "p90_ms": 1.2067823999999998,
+            "p95_ms": 1.3684919999999992,
+            "p99_ms": 1.7425163999999984,
+            "max_ms": 2.045955,
+            "over_1ms": 349,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "frames": 960,
+          "blocks": 35,
+          "full": {
+            "count": 960,
+            "total_ms": 1455.4503240000013,
+            "mean_ms": 1.5160940875,
+            "p50_ms": 1.103869,
+            "p90_ms": 3.4200635000000004,
+            "p95_ms": 4.53087825,
+            "p99_ms": 6.121832159999999,
+            "max_ms": 7.070683,
+            "over_1ms": 869,
+            "over_5ms": 28,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 960,
+            "total_ms": 803.5734409999993,
+            "mean_ms": 0.8370556677083333,
+            "p50_ms": 0.807866,
+            "p90_ms": 0.9757037000000001,
+            "p95_ms": 1.0614364499999998,
+            "p99_ms": 1.3205228999999983,
+            "max_ms": 3.704518,
+            "over_1ms": 76,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "frames": 957,
+          "blocks": 35,
+          "full": {
+            "count": 957,
+            "total_ms": 1442.7598679999999,
+            "mean_ms": 1.5075860689655174,
+            "p50_ms": 1.126253,
+            "p90_ms": 3.397137999999999,
+            "p95_ms": 4.743488999999998,
+            "p99_ms": 6.1400541199999985,
+            "max_ms": 6.598819,
+            "over_1ms": 749,
+            "over_5ms": 39,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 957,
+            "total_ms": 803.3975420000004,
+            "mean_ms": 0.8394958641588297,
+            "p50_ms": 0.85007,
+            "p90_ms": 1.012041,
+            "p95_ms": 1.0904156,
+            "p99_ms": 1.3236593599999957,
+            "max_ms": 1.945567,
+            "over_1ms": 99,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        }
+      ],
+      "unchanged_entity_mean_ratio": 1.177076417911148,
+      "aa_p99_difference_95ci_ms": [
+        -0.4587690000000002,
+        0.05154399999999981
+      ],
+      "stationarity_gate_passed": false,
+      "control_source_sha256": "b823b3954ac1e4f5f587fba3e30d676e57a8b012be53ed1368e0c94d9b3f17cf"
+    },
+    {
+      "operations": "docs\\combat-performance-results\\timing-validated-2-operations-summary.json",
+      "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validated-2-20261026-015334-f7dce4c6.tracy",
+      "bootstrap_seed": 13853532034475659996,
+      "frames": 3839,
+      "full": {
+        "count": 3839,
+        "total_ms": 5898.379926000005,
+        "mean_ms": 1.5364365527481114,
+        "p50_ms": 1.128292,
+        "p90_ms": 3.4681174000000006,
+        "p95_ms": 4.6443407,
+        "p99_ms": 6.106675199999996,
+        "max_ms": 7.806311,
+        "over_1ms": 3287,
+        "over_5ms": 141,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "p99_block_bootstrap_95ci_ms": [
+        5.9539085049999985,
+        6.28790446225
+      ],
+      "phases": [
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "frames": 960,
+          "blocks": 35,
+          "full": {
+            "count": 960,
+            "total_ms": 1474.0970409999984,
+            "mean_ms": 1.5355177510416667,
+            "p50_ms": 1.1058365000000001,
+            "p90_ms": 3.4102331000000006,
+            "p95_ms": 4.7006572,
+            "p99_ms": 6.0738555,
+            "max_ms": 7.166831,
+            "over_1ms": 896,
+            "over_5ms": 40,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 960,
+            "total_ms": 834.8129360000003,
+            "mean_ms": 0.8695968083333334,
+            "p50_ms": 0.8194725,
+            "p90_ms": 1.0396798,
+            "p95_ms": 1.11427035,
+            "p99_ms": 1.618017879999996,
+            "max_ms": 2.67342,
+            "over_1ms": 116,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "frames": 959,
+          "blocks": 35,
+          "full": {
+            "count": 959,
+            "total_ms": 1463.8635939999983,
+            "mean_ms": 1.5264479603753909,
+            "p50_ms": 1.151549,
+            "p90_ms": 3.349381000000003,
+            "p95_ms": 4.641338299999999,
+            "p99_ms": 6.19048094,
+            "max_ms": 7.806311,
+            "over_1ms": 733,
+            "over_5ms": 36,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 959,
+            "total_ms": 823.524414,
+            "mean_ms": 0.8587324442127215,
+            "p50_ms": 0.811873,
+            "p90_ms": 1.0167522,
+            "p95_ms": 1.1235585,
+            "p99_ms": 1.3013608399999994,
+            "max_ms": 3.240926,
+            "over_1ms": 123,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "frames": 957,
+          "blocks": 35,
+          "full": {
+            "count": 957,
+            "total_ms": 1452.7822129999988,
+            "mean_ms": 1.5180587387669802,
+            "p50_ms": 1.11516,
+            "p90_ms": 3.4765966,
+            "p95_ms": 4.572566799999998,
+            "p99_ms": 5.842196239999991,
+            "max_ms": 7.101029,
+            "over_1ms": 899,
+            "over_5ms": 31,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 957,
+            "total_ms": 815.632931,
+            "mean_ms": 0.8522810146290491,
+            "p50_ms": 0.821494,
+            "p90_ms": 0.9956193999999999,
+            "p95_ms": 1.0643843999999998,
+            "p99_ms": 1.2030192799999992,
+            "max_ms": 1.85883,
+            "over_1ms": 90,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "frames": 963,
+          "blocks": 35,
+          "full": {
+            "count": 963,
+            "total_ms": 1507.6370780000004,
+            "mean_ms": 1.5655629055036344,
+            "p50_ms": 1.146881,
+            "p90_ms": 3.4999902000000005,
+            "p95_ms": 4.5802731,
+            "p99_ms": 6.1317407600000005,
+            "max_ms": 7.311133,
+            "over_1ms": 759,
+            "over_5ms": 34,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 963,
+            "total_ms": 844.9549949999998,
+            "mean_ms": 0.8774195171339565,
+            "p50_ms": 0.878659,
+            "p90_ms": 1.0673258,
+            "p95_ms": 1.1531354,
+            "p99_ms": 1.7438631199999999,
+            "max_ms": 2.519084,
+            "over_1ms": 123,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        }
+      ],
+      "unchanged_entity_mean_ratio": 1.029495556129276,
+      "aa_p99_difference_95ci_ms": [
+        -0.35909881325000703,
+        0.17698687699999882
+      ],
+      "stationarity_gate_passed": true,
+      "control_source_sha256": "b823b3954ac1e4f5f587fba3e30d676e57a8b012be53ed1368e0c94d9b3f17cf"
+    },
+    {
+      "operations": "docs\\combat-performance-results\\timing-validated-3-operations-summary.json",
+      "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-validated-3-20261026-020023-1af94b4d.tracy",
+      "bootstrap_seed": 10359472345443274952,
+      "frames": 3837,
+      "full": {
+        "count": 3837,
+        "total_ms": 5725.869658000002,
+        "mean_ms": 1.492277732082356,
+        "p50_ms": 1.094694,
+        "p90_ms": 3.3893236000000004,
+        "p95_ms": 4.6644618,
+        "p99_ms": 6.041803079999999,
+        "max_ms": 8.008643,
+        "over_1ms": 2944,
+        "over_5ms": 140,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "p99_block_bootstrap_95ci_ms": [
+        5.899802,
+        6.116749
+      ],
+      "phases": [
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "frames": 958,
+          "blocks": 35,
+          "full": {
+            "count": 958,
+            "total_ms": 1430.2829580000007,
+            "mean_ms": 1.4929884739039665,
+            "p50_ms": 1.0748995,
+            "p90_ms": 3.3441549000000044,
+            "p95_ms": 4.816208949999999,
+            "p99_ms": 6.11338885,
+            "max_ms": 7.375068,
+            "over_1ms": 750,
+            "over_5ms": 43,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 958,
+            "total_ms": 795.7368280000007,
+            "mean_ms": 0.8306229937369519,
+            "p50_ms": 0.794396,
+            "p90_ms": 0.9721972,
+            "p95_ms": 1.04573715,
+            "p99_ms": 1.2247916499999958,
+            "max_ms": 3.051488,
+            "over_1ms": 85,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "frames": 960,
+          "blocks": 35,
+          "full": {
+            "count": 960,
+            "total_ms": 1425.6271240000008,
+            "mean_ms": 1.4850282541666668,
+            "p50_ms": 1.124956,
+            "p90_ms": 3.3607384000000002,
+            "p95_ms": 4.6591592,
+            "p99_ms": 5.831956609999997,
+            "max_ms": 7.184654,
+            "over_1ms": 689,
+            "over_5ms": 33,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 960,
+            "total_ms": 794.4241200000007,
+            "mean_ms": 0.827525125,
+            "p50_ms": 0.7893455,
+            "p90_ms": 0.9712757000000001,
+            "p95_ms": 1.05814255,
+            "p99_ms": 1.1617951299999998,
+            "max_ms": 2.903004,
+            "over_1ms": 68,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "frames": 959,
+          "blocks": 35,
+          "full": {
+            "count": 959,
+            "total_ms": 1436.4641660000013,
+            "mean_ms": 1.4978771282586028,
+            "p50_ms": 1.080993,
+            "p90_ms": 3.4428546000000004,
+            "p95_ms": 4.649941399999997,
+            "p99_ms": 5.935591039999997,
+            "max_ms": 7.286171,
+            "over_1ms": 764,
+            "over_5ms": 28,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 959,
+            "total_ms": 796.9383139999997,
+            "mean_ms": 0.8310097122002086,
+            "p50_ms": 0.792677,
+            "p90_ms": 0.9754626000000001,
+            "p95_ms": 1.0551776,
+            "p99_ms": 1.2220712999999996,
+            "max_ms": 2.528727,
+            "over_1ms": 67,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "frames": 960,
+          "blocks": 35,
+          "full": {
+            "count": 960,
+            "total_ms": 1433.4954100000027,
+            "mean_ms": 1.4932243854166667,
+            "p50_ms": 1.107581,
+            "p90_ms": 3.3538229000000004,
+            "p95_ms": 4.523158349999998,
+            "p99_ms": 6.033311399999998,
+            "max_ms": 8.008643,
+            "over_1ms": 741,
+            "over_5ms": 36,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          },
+          "entity": {
+            "count": 960,
+            "total_ms": 801.6753480000002,
+            "mean_ms": 0.8350784875,
+            "p50_ms": 0.8465135,
+            "p90_ms": 0.9816844000000001,
+            "p95_ms": 1.0870231,
+            "p99_ms": 1.2087137299999997,
+            "max_ms": 3.868553,
+            "over_1ms": 86,
+            "over_5ms": 0,
+            "over_10ms": 0,
+            "over_16_67ms": 0
+          }
+        }
+      ],
+      "unchanged_entity_mean_ratio": 1.009127653374875,
+      "aa_p99_difference_95ci_ms": [
+        -0.40611114999999887,
+        -0.009634006750000255
+      ],
+      "stationarity_gate_passed": true,
+      "control_source_sha256": "b823b3954ac1e4f5f587fba3e30d676e57a8b012be53ed1368e0c94d9b3f17cf"
+    }
+  ],
+  "pooled": {
+    "frames": 11507,
+    "full": {
+      "count": 11507,
+      "total_ms": 17905.138538000007,
+      "mean_ms": 1.5560214250456244,
+      "p50_ms": 1.133225,
+      "p90_ms": 3.476521399999999,
+      "p95_ms": 4.728696199999995,
+      "p99_ms": 6.158563840000001,
+      "max_ms": 8.008643,
+      "over_1ms": 9720,
+      "over_5ms": 456,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "p99_block_bootstrap_95ci_ms": [
+      6.079178,
+      6.254087
+    ]
+  },
+  "stationarity_gate": {
+    "maximum_unchanged_stage_mean_ratio": 1.1,
+    "passed": false
+  },
+  "note": "Confidence intervals quantify sampled-run uncertainty, not a universal gameplay bound. A/A differences should not be mistaken for optimization effects.",
+  "reference_status": "Legacy mixed-compilation controls 1-3; audit only. Superseded by timing-final-confidence.json."
+}

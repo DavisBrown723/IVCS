@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-26",
+  "production_changes": false,
+  "production_hashes_verified": 256,
+  "confirmed_contributor": "Concurrent ordinary trace analysis raises unchanged-stage and fixed-work tails, with recovery after it stops.",
+  "unproven": "The historical largest slowdowns are not fully attributed; 1 Hz counters cannot identify individual preemptions.",
+  "measurement_fixes": [
+    "Exclusive benchmark/analysis lifetime lease",
+    "Automatic recorder startup before measured windows",
+    "Strict complete-window attribution",
+    "Same-object identical controls",
+    "Matched-inline real A/B compilation",
+    "ABBA/BAAB fresh-process counterbalancing",
+    "Drift gate plus raw-frame block bootstrap"
+  ],
+  "final_reference": {
+    "frames": 7668,
+    "full": {
+      "count": 7668,
+      "total_ms": 11579.10926600002,
+      "mean_ms": 1.5100559814814813,
+      "p50_ms": 1.121588,
+      "p90_ms": 3.3574893,
+      "p95_ms": 4.6430454999999995,
+      "p99_ms": 6.045477039999999,
+      "max_ms": 7.97218,
+      "over_1ms": 6211,
+      "over_5ms": 291,
+      "over_10ms": 0,
+      "over_16_67ms": 0
+    },
+    "p99_block_bootstrap_95ci_ms": [
+      5.94473,
+      6.152714
+    ]
+  },
+  "final_stationarity": {
+    "maximum_unchanged_stage_mean_ratio": 1.1,
+    "passed": true
+  },
+  "final_runs": [
+    {
+      "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-final-1-20261026-023259-70c5a2c4.tracy",
+      "frames": 3835,
+      "full": {
+        "count": 3835,
+        "total_ms": 5993.818251000005,
+        "mean_ms": 1.5629252284224249,
+        "p50_ms": 1.172782,
+        "p90_ms": 3.4166696,
+        "p95_ms": 4.687511,
+        "p99_ms": 6.055241639999999,
+        "max_ms": 7.97218,
+        "over_1ms": 3521,
+        "over_5ms": 148,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "p99_block_bootstrap_95ci_ms": [
+        5.930429,
+        6.212406
+      ],
+      "aa_p99_difference_95ci_ms": [
+        -0.3780476199999976,
+        0.06354640174999947
+      ],
+      "unchanged_entity_mean_ratio": 1.0203229618605516
+    },
+    {
+      "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-timing-final-2-20261026-023801-9dd63ff2.tracy",
+      "frames": 3833,
+      "full": {
+        "count": 3833,
+        "total_ms": 5585.291014999998,
+        "mean_ms": 1.4571591481867987,
+        "p50_ms": 1.072701,
+        "p90_ms": 3.298518000000007,
+        "p95_ms": 4.561007399999999,
+        "p99_ms": 6.040093359999999,
+        "max_ms": 6.990199,
+        "over_1ms": 2690,
+        "over_5ms": 143,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "p99_block_bootstrap_95ci_ms": [
+        5.8600223962500015,
+        6.166826960000001
+      ],
+      "aa_p99_difference_95ci_ms": [
+        -0.27234876999999913,
+        0.27163938774999974
+      ],
+      "unchanged_entity_mean_ratio": 1.006175144997763
+    }
+  ],
+  "diagnostic_workload_checks": [
+    {
+      "passed": 36,
+      "failed": 0
+    },
+    {
+      "passed": 36,
+      "failed": 0
+    }
+  ],
+  "compilation_smoke": {
+    "rpt": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-7788206a5e1d4b699175162a680c4b15\\profile\\arma3server_x64_2026-10-26_02-43-26.rpt",
+    "validity_checks": {
+      "passed": 36,
+      "failed": 0
+    },
+    "compilation": "matched-inline",
+    "eligible_for_p99_claim": false
+  },
+  "lease_checks": {
+    "passed": 6,
+    "failed": 0,
+    "artifactDirectory": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-timing-guard-a818d19d8bbf40119b19e6afac7ffe00"
+  },
+  "python_syntax_files": 14,
+  "powershell_syntax_files": 6,
+  "sqf_crlf_verified": 3,
+  "wpr": {
+    "available": false,
+    "error": "0xc5585011",
+    "policy_changed": false
+  },
+  "quality_limits": [
+    "Sampling interval excludes unmeasured systematic host drift",
+    "Drift gate alone is insufficient",
+    "Unrelated programs are not blocked",
+    "Approximate 27.4 FPS dedicated-server fixture; not client FPS",
+    "No clipping or per-frame sample exclusions"
+  ]
+}

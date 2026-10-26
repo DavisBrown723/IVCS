@@ -2,6 +2,10 @@
 import argparse,bisect,csv,json,importlib.util
 from collections import defaultdict
 from pathlib import Path
+
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('operations',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
 r=json.loads(a.operations.read_text());events=[]
 for path in r['event_sources']:

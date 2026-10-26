@@ -4,6 +4,10 @@ import importlib.util
 import json
 from pathlib import Path
 
+from timing_guard import assert_benchmark_idle
+assert_benchmark_idle()
+
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
