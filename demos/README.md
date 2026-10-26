@@ -1,5 +1,27 @@
 # IVCS demos
 
+## Attack helicopter combat demo
+
+With IVCS running, execute this on the server:
+
+```sqf
+[] execVM "IVCS\demos\attack-helicopter-combat.sqf";
+```
+
+This creates a virtual BLU_F attack helicopter with its crew and a virtual OPF_F infantry squad. The helicopter receives an attack waypoint centered on the infantry group, causing virtual air-to-ground combat to commence. The target defaults to 400 m ahead of the observing player. An explicit target position and helicopter approach heading can be supplied:
+
+```sqf
+[[14500,16400,0],90] execVM "IVCS\demos\attack-helicopter-combat.sqf";
+```
+
+Blue and red map markers show the combatants and whether they are virtual or live. Rerunning replaces only the previous attack-helicopter demo entities and markers. To remove them:
+
+```sqf
+[] execVM "IVCS\demos\stop-attack-helicopter-combat.sqf";
+```
+
+The server-side entity IDs are available in `IVCS_Demo_AttackHelicopterCombatIDs` for inspection.
+
 ## Infantry combat demo
 
 With IVCS running, execute this in the debug console using **Local Exec** in single player or **Server Exec** in multiplayer:
