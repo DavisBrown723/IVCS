@@ -1,0 +1,202 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-comparison-20261025-233246-b72b7651.tracy",
+  "phases": [
+    {
+      "trial": 1,
+      "mode": "before-heli-infantry-aa",
+      "exchanges": {
+        "count": 176,
+        "total_ms": 344.11710500000004,
+        "mean_ms": 1.9552108238636363,
+        "p50_ms": 1.921169,
+        "p90_ms": 2.340968,
+        "p95_ms": 2.504603,
+        "p99_ms": 2.851502,
+        "max_ms": 3.059143,
+        "over_1ms": 176,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 2,
+      "mode": "after-heli-infantry-aa",
+      "exchanges": {
+        "count": 177,
+        "total_ms": 323.8000990000001,
+        "mean_ms": 1.82937909039548,
+        "p50_ms": 1.765737,
+        "p90_ms": 2.2404718000000003,
+        "p95_ms": 2.3832034,
+        "p99_ms": 3.357430560000005,
+        "max_ms": 5.562464,
+        "over_1ms": 177,
+        "over_5ms": 1,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 3,
+      "mode": "after-heli-infantry-aa",
+      "exchanges": {
+        "count": 175,
+        "total_ms": 315.927014,
+        "mean_ms": 1.8052972228571427,
+        "p50_ms": 1.756096,
+        "p90_ms": 2.263772,
+        "p95_ms": 2.4138840999999998,
+        "p99_ms": 2.59416488,
+        "max_ms": 3.035341,
+        "over_1ms": 175,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 4,
+      "mode": "before-heli-infantry-aa",
+      "exchanges": {
+        "count": 175,
+        "total_ms": 348.922995,
+        "mean_ms": 1.9938456857142859,
+        "p50_ms": 1.921307,
+        "p90_ms": 2.4530302,
+        "p95_ms": 2.6310842,
+        "p99_ms": 2.855400919999997,
+        "max_ms": 3.264875,
+        "over_1ms": 175,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  ],
+  "pooled": {
+    "after-heli-infantry-aa": {
+      "exchanges": {
+        "count": 352,
+        "total_ms": 639.7271129999998,
+        "mean_ms": 1.8174065710227274,
+        "p50_ms": 1.7589035,
+        "p90_ms": 2.2648241000000002,
+        "p95_ms": 2.4046608999999997,
+        "p99_ms": 3.0417698,
+        "max_ms": 5.562464,
+        "over_1ms": 352,
+        "over_5ms": 1,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "top_five": [
+        {
+          "trial": 2,
+          "offset_seconds": 5.060514814,
+          "ms": 5.562464,
+          "vehicle_damage_calls": 8,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 2,
+          "offset_seconds": 5.096076913,
+          "ms": 3.786902,
+          "vehicle_damage_calls": 6,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 2,
+          "offset_seconds": 34.985153353,
+          "ms": 3.221808,
+          "vehicle_damage_calls": 7,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 2,
+          "offset_seconds": 20.029799774,
+          "ms": 3.048461,
+          "vehicle_damage_calls": 6,
+          "infantry_selection_calls": 9,
+          "station_calls": 2
+        },
+        {
+          "trial": 3,
+          "offset_seconds": 11.089803511,
+          "ms": 3.035341,
+          "vehicle_damage_calls": 9,
+          "infantry_selection_calls": 12,
+          "station_calls": 2
+        }
+      ]
+    },
+    "before-heli-infantry-aa": {
+      "exchanges": {
+        "count": 351,
+        "total_ms": 693.0400999999998,
+        "mean_ms": 1.9744732193732195,
+        "p50_ms": 1.921307,
+        "p90_ms": 2.41823,
+        "p95_ms": 2.612869,
+        "p99_ms": 2.863246,
+        "max_ms": 3.264875,
+        "over_1ms": 351,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "top_five": [
+        {
+          "trial": 4,
+          "offset_seconds": 5.021886499,
+          "ms": 3.264875,
+          "vehicle_damage_calls": 6,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 4,
+          "offset_seconds": 4.003720794,
+          "ms": 3.110806,
+          "vehicle_damage_calls": 4,
+          "infantry_selection_calls": 9,
+          "station_calls": 3
+        },
+        {
+          "trial": 1,
+          "offset_seconds": 5.033131667,
+          "ms": 3.059143,
+          "vehicle_damage_calls": 8,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 1,
+          "offset_seconds": 4.996976946,
+          "ms": 2.886734,
+          "vehicle_damage_calls": 6,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        },
+        {
+          "trial": 1,
+          "offset_seconds": 34.986916446,
+          "ms": 2.839758,
+          "vehicle_damage_calls": 7,
+          "infantry_selection_calls": 12,
+          "station_calls": 3
+        }
+      ]
+    }
+  },
+  "observations": [
+    "Pooled exchange p99 increases from 2.863246 to 3.04176969 ms, but pairs disagree: 2.851502 -> 3.35743056 and 2.85540092 -> 2.59416488.",
+    "Two slow exchanges occur 35.56 ms apart in the first optimized window, with 8 and 6 vehicle damage calls; baseline examples have the same counts.",
+    "The first optimized exchange has elevated visibility, weapon/station selection and surrounding loop time, rather than one large new child call.",
+    "The trace supports clustered timing variability and expensive existing firing/damage work; it does not establish OS scheduling, GC, or a deterministic regression caused by the previous change.",
+    "All original samples are retained; diagnostic instrumentation is not used for before/after performance claims."
+  ]
+}

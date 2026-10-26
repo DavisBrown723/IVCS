@@ -1,0 +1,19 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-exchange-repeat-20261026-010226-30cbf499.tracy",
+  "stdout": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-exchange-repeat-20261026-010226-30cbf499.stdout.log",
+  "stderr": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-exchange-repeat-20261026-010226-30cbf499.stderr.log",
+  "recorderPid": 53236,
+  "serverPid": 66540,
+  "serverCommandLine": "\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Arma 3\\arma3server_x64.exe\" -ip=127.0.0.1 -port=2502 -world=empty -autoInit -noSound \"-config=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-fa9a3f007a7240efb5012183636dda13\\server.cfg\" \"-profiles=C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-fa9a3f007a7240efb5012183636dda13\\profile\" -name=IVCSTasks -noPause \"-mod=!Workshop\\@CBA_A3;!Workshop\\@Intercept Minimal Dev;!Workshop\\@Arma Script Profiler\"",
+  "seconds": 240,
+  "benchmarkRoot": "C:\\Users\\spyde\\AppData\\Local\\Temp\\ivcs-tasks-fa9a3f007a7240efb5012183636dda13",
+  "connected": true,
+  "created": "2026-10-26T01:02:28.8391494-05:00",
+  "saved": true,
+  "file_bytes": 5366521,
+  "save_log": "Connecting to 127.0.0.1:8086...\nTimer resolution: 4 ns\n\nFrames: 6573\nTime span: 4:00.1\nZones: 829,000\nElapsed time: 4:00.1\nSaving trace... done!\nTrace size 5239.43 KB (24.45% ratio)\n",
+  "recorder_time_span_seconds": 240.1,
+  "elapsed_seconds": 240.1,
+  "zone_count": 829000,
+  "timer_resolution_ns": 4
+}

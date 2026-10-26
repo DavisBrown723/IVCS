@@ -10,6 +10,7 @@ param(
     [switch]$EntityDiagnostics,
     [switch]$FlightDiagnostics,
     [switch]$ResolutionDiagnostics,
+    [switch]$ExchangeDiagnostics,
     [switch]$ProfilerMarkers,
     [int]$StartupDelaySeconds=0,
     [int]$PostDelaySeconds=0,
@@ -89,9 +90,11 @@ IVCS_VirtualSpace_onFrame={
     if (!$source.Contains($anchor)) {throw 'Flight diagnostic frame anchor changed.'}
     $source=$source.Replace($anchor,$flush+[Environment]::NewLine+$anchor)
 }
-if ($ResolutionDiagnostics) {
+if ($ResolutionDiagnostics -or $ExchangeDiagnostics) {
     if (!$ProfilerMarkers -or $ShotDiagnostics -or $EntityDiagnostics -or $FlightDiagnostics -or $BaselineDirectory -or $ShotBaselineDirectory -or $AdmissionBaselineDirectory) {throw 'Resolution diagnostics require standalone profiler run.'}
-    $diagnostics=[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'resolution-scopes.sqf')).Replace("'","''")
+    $diagnostics=[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'resolution-scopes.sqf'))
+    if ($ExchangeDiagnostics) {$diagnostics+=[Environment]::NewLine+[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'exchange-scopes.sqf'))}
+    $diagnostics=$diagnostics.Replace("'","''")
     $header+="IVCS_Perf_InstallOperationScopes=compile '$diagnostics';"+[Environment]::NewLine
     $anchor='IVCS_VirtualSpace_Controller = [false] call IVCS_VirtualSpace_createController;'
     $flush='IVCS_ResolutionDiag_Frame=IVCS_VirtualSpace_onFrame;

@@ -1,0 +1,5924 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-exchange-repeat-20261026-010226-30cbf499.tracy",
+  "diagnostic": false,
+  "exchange_samples": "docs\\combat-performance-results\\exchange-repeat-attribution.csv",
+  "note": "Inclusive child scopes overlap. Exchange context retains seeds and actual shot/hit deltas; no timing samples are excluded.",
+  "phases": [
+    {
+      "trial": 1,
+      "mode": "before-heli-infantry-aa",
+      "exchanges": {
+        "count": 175,
+        "total_ms": 319.0156990000001,
+        "mean_ms": 1.8229468514285714,
+        "p50_ms": 1.765719,
+        "p90_ms": 2.2886425999999997,
+        "p95_ms": 2.4183698,
+        "p99_ms": 2.7594884799999986,
+        "max_ms": 2.89264,
+        "over_1ms": 175,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+          "count": 175,
+          "total_ms": 52.97338700000004,
+          "mean_ms": 0.3027050685714286,
+          "p50_ms": 0.307335,
+          "p90_ms": 0.3293606,
+          "p95_ms": 0.3405252999999998,
+          "p99_ms": 0.39169232,
+          "max_ms": 0.452604,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "count": 525,
+          "total_ms": 9.133442999999993,
+          "mean_ms": 0.017397034285714284,
+          "p50_ms": 0.016896,
+          "p90_ms": 0.018484,
+          "p95_ms": 0.019916599999999986,
+          "p99_ms": 0.030958999999999993,
+          "max_ms": 0.075069,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "count": 792,
+          "total_ms": 45.24951400000002,
+          "mean_ms": 0.057133224747474745,
+          "p50_ms": 0.060149,
+          "p90_ms": 0.0922363,
+          "p95_ms": 0.10162629999999999,
+          "p99_ms": 0.11542137000000002,
+          "max_ms": 0.179165,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "count": 792,
+          "total_ms": 82.87708000000003,
+          "mean_ms": 0.10464277777777779,
+          "p50_ms": 0.100898,
+          "p90_ms": 0.1459633,
+          "p95_ms": 0.15696619999999997,
+          "p99_ms": 0.19693582000000004,
+          "max_ms": 0.250311,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 350,
+          "total_ms": 7.471760000000004,
+          "mean_ms": 0.021347885714285714,
+          "p50_ms": 0.021587500000000003,
+          "p90_ms": 0.022522499999999997,
+          "p95_ms": 0.0230714,
+          "p99_ms": 0.02686774999999999,
+          "max_ms": 0.040857,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 175,
+          "total_ms": 3.2893079999999992,
+          "mean_ms": 0.018796045714285715,
+          "p50_ms": 0.019045,
+          "p90_ms": 0.0207486,
+          "p95_ms": 0.021651399999999987,
+          "p99_ms": 0.025029739999999998,
+          "max_ms": 0.0253,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "count": 405,
+          "total_ms": 11.078397000000002,
+          "mean_ms": 0.02735406666666667,
+          "p50_ms": 0.025601,
+          "p90_ms": 0.0328976,
+          "p95_ms": 0.033465199999999994,
+          "p99_ms": 0.035872999999999995,
+          "max_ms": 0.045699,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "count": 405,
+          "total_ms": 37.62285700000002,
+          "mean_ms": 0.09289594320987656,
+          "p50_ms": 0.103712,
+          "p90_ms": 0.1329786,
+          "p95_ms": 0.16101179999999973,
+          "p99_ms": 0.20719792,
+          "max_ms": 0.235142,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "count": 405,
+          "total_ms": 32.01077500000002,
+          "mean_ms": 0.07903895061728396,
+          "p50_ms": 0.0741,
+          "p90_ms": 0.095699,
+          "p95_ms": 0.09863399999999997,
+          "p99_ms": 0.1215737599999999,
+          "max_ms": 0.277483,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "count": 1656,
+          "total_ms": 30.94988499999997,
+          "mean_ms": 0.018689544082125604,
+          "p50_ms": 0.0154305,
+          "p90_ms": 0.023143999999999998,
+          "p95_ms": 0.0411795,
+          "p99_ms": 0.08367445000000001,
+          "max_ms": 0.152487,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "count": 175,
+          "total_ms": 313.8370459999999,
+          "mean_ms": 1.7933545485714284,
+          "p50_ms": 1.739718,
+          "p90_ms": 2.2573924,
+          "p95_ms": 2.3728110999999994,
+          "p99_ms": 2.716457839999999,
+          "max_ms": 2.864731,
+          "over_1ms": 175,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "count": 175,
+          "total_ms": 49.97485100000004,
+          "mean_ms": 0.28557057714285716,
+          "p50_ms": 0.277854,
+          "p90_ms": 0.3659106,
+          "p95_ms": 0.4305547999999999,
+          "p99_ms": 0.48102932000000004,
+          "max_ms": 0.515584,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "count": 55,
+          "total_ms": 18.244079000000003,
+          "mean_ms": 0.33171052727272726,
+          "p50_ms": 0.339942,
+          "p90_ms": 0.363664,
+          "p95_ms": 0.3704625,
+          "p99_ms": 0.44778888,
+          "max_ms": 0.459441,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "count": 350,
+          "total_ms": 156.82231800000005,
+          "mean_ms": 0.4480637657142857,
+          "p50_ms": 0.558845,
+          "p90_ms": 0.9280133,
+          "p95_ms": 0.9876838,
+          "p99_ms": 1.2185561299999996,
+          "max_ms": 1.324576,
+          "over_1ms": 12,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst": [
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82266868413,
+          "offset_seconds": 5.03590384,
+          "ms": 2.89264,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.316555,
+              "max_ms": 0.316555
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051637,
+              "max_ms": 0.017329
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.48755,
+              "max_ms": 0.104873
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8706069999999999,
+              "max_ms": 0.177955
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.044213,
+              "max_ms": 0.022287
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.01994,
+              "max_ms": 0.01994
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08521700000000001,
+              "max_ms": 0.03343
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.291415,
+              "max_ms": 0.123168
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.240454,
+              "max_ms": 0.097534
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.377173,
+              "max_ms": 0.101243
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.864731,
+              "max_ms": 2.864731
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.287079,
+              "max_ms": 0.287079
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.361971,
+              "max_ms": 0.361971
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.628737,
+              "max_ms": 1.234463
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 80257467677,
+          "offset_seconds": 3.026503104,
+          "ms": 2.886656,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.452604,
+              "max_ms": 0.452604
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.074514,
+              "max_ms": 0.031588
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.332125,
+              "max_ms": 0.101485
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.597774,
+              "max_ms": 0.167115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.056433,
+              "max_ms": 0.032115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.025004,
+              "max_ms": 0.025004
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.109179,
+              "max_ms": 0.045699
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.518723,
+              "max_ms": 0.230665
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.318983,
+              "max_ms": 0.130377
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.19145100000000004,
+              "max_ms": 0.030651
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.805505,
+              "max_ms": 2.805505
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.515584,
+              "max_ms": 0.515584
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.437863,
+              "max_ms": 0.437863
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.482496,
+              "max_ms": 1.324576
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82338944735,
+          "offset_seconds": 5.107980162,
+          "ms": 2.714808,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.31065,
+              "max_ms": 0.31065
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.052598000000000006,
+              "max_ms": 0.018484
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.39323800000000003,
+              "max_ms": 0.074509
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.7597250000000001,
+              "max_ms": 0.192195
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.044622999999999996,
+              "max_ms": 0.022664
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019606,
+              "max_ms": 0.019606
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081942,
+              "max_ms": 0.031988
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.277608,
+              "max_ms": 0.119717
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23460000000000003,
+              "max_ms": 0.092397
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.371715,
+              "max_ms": 0.099409
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.685171,
+              "max_ms": 2.685171
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.264497,
+              "max_ms": 0.264497
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.344899,
+              "max_ms": 0.344899
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.629011,
+              "max_ms": 1.234762
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 112229804082,
+          "offset_seconds": 34.998839509,
+          "ms": 2.698339,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.316215,
+              "max_ms": 0.316215
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.054383999999999995,
+              "max_ms": 0.019281
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.398058,
+              "max_ms": 0.087117
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.834811,
+              "max_ms": 0.224742
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.042620000000000005,
+              "max_ms": 0.021693
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019416,
+              "max_ms": 0.019416
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081958,
+              "max_ms": 0.032543
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.22842,
+              "max_ms": 0.128186
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23225500000000002,
+              "max_ms": 0.091582
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.30178,
+              "max_ms": 0.05928
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.661577,
+              "max_ms": 2.661577
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.281698,
+              "max_ms": 0.281698
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.285002,
+              "max_ms": 0.285002
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.3718130000000002,
+              "max_ms": 1.007397
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82230676670,
+          "offset_seconds": 4.999712097,
+          "ms": 2.665529,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.322537,
+              "max_ms": 0.322537
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.05394199999999999,
+              "max_ms": 0.019967
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.328561,
+              "max_ms": 0.096322
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.5091060000000001,
+              "max_ms": 0.146446
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043651999999999996,
+              "max_ms": 0.021889
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020901,
+              "max_ms": 0.020901
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083623,
+              "max_ms": 0.033075
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.294257,
+              "max_ms": 0.130448
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23568099999999997,
+              "max_ms": 0.094608
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.498163,
+              "max_ms": 0.152487
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.63712,
+              "max_ms": 2.63712
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.267856,
+              "max_ms": 0.267856
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.350571,
+              "max_ms": 0.350571
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.8619620000000001,
+              "max_ms": 1.280898
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82303536231,
+          "offset_seconds": 5.072571658,
+          "ms": 2.654165,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.309442,
+              "max_ms": 0.309442
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050979,
+              "max_ms": 0.017094
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.35661,
+              "max_ms": 0.076112
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.7017359999999999,
+              "max_ms": 0.117735
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043572,
+              "max_ms": 0.021802
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019542,
+              "max_ms": 0.019542
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.082714,
+              "max_ms": 0.032628
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.278878,
+              "max_ms": 0.121639
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.227931,
+              "max_ms": 0.089188
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.369657,
+              "max_ms": 0.099167
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.626095,
+              "max_ms": 2.626095
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.270821,
+              "max_ms": 0.270821
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.349132,
+              "max_ms": 0.349132
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.587923,
+              "max_ms": 1.202
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 88248565066,
+          "offset_seconds": 11.017600493,
+          "ms": 2.561432,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.325858,
+              "max_ms": 0.325858
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.053294999999999995,
+              "max_ms": 0.018187
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.466964,
+              "max_ms": 0.082399
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.9453419999999999,
+              "max_ms": 0.144605
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.04259,
+              "max_ms": 0.021799
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018812,
+              "max_ms": 0.018812
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.057854,
+              "max_ms": 0.032103
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.188855,
+              "max_ms": 0.136238
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.165483,
+              "max_ms": 0.09207
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.34884000000000004,
+              "max_ms": 0.083281
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.530106,
+              "max_ms": 2.530106
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.286578,
+              "max_ms": 0.286578
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.230404,
+              "max_ms": 0.87971
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 78317466599,
+          "offset_seconds": 1.086502026,
+          "ms": 2.461945,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.320498,
+              "max_ms": 0.320498
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.063114,
+              "max_ms": 0.027067
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.286704,
+              "max_ms": 0.107397
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.5607340000000001,
+              "max_ms": 0.197389
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.050445,
+              "max_ms": 0.02737
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020363,
+              "max_ms": 0.020363
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.090387,
+              "max_ms": 0.0339
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.454447,
+              "max_ms": 0.235142
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.248712,
+              "max_ms": 0.096345
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.172567,
+              "max_ms": 0.037271
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.417432,
+              "max_ms": 2.417432
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.480839,
+              "max_ms": 0.480839
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.355407,
+              "max_ms": 0.355407
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.196743,
+              "max_ms": 1.007353
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 100274166290,
+          "offset_seconds": 23.043201717,
+          "ms": 2.427803,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.31524,
+              "max_ms": 0.31524
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.05695,
+              "max_ms": 0.022405
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.376931,
+              "max_ms": 0.072275
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.802667,
+              "max_ms": 0.118194
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043173,
+              "max_ms": 0.021712
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018898,
+              "max_ms": 0.018898
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.056774,
+              "max_ms": 0.031755
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.17286100000000001,
+              "max_ms": 0.120079
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.164695,
+              "max_ms": 0.092574
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.33977099999999993,
+              "max_ms": 0.084061
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.395307,
+              "max_ms": 2.395307
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.280206,
+              "max_ms": 0.280206
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.10813,
+              "max_ms": 0.756773
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 80292933926,
+          "offset_seconds": 3.061969353,
+          "ms": 2.414327,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.364478,
+              "max_ms": 0.364478
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.066914,
+              "max_ms": 0.031103
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.293423,
+              "max_ms": 0.0865
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.524195,
+              "max_ms": 0.125379
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.044597,
+              "max_ms": 0.023168
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019339,
+              "max_ms": 0.019339
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.084177,
+              "max_ms": 0.032406
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.472592,
+              "max_ms": 0.197522
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.258123,
+              "max_ms": 0.095699
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.153139,
+              "max_ms": 0.025367
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.36317,
+              "max_ms": 2.36317
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.445887,
+              "max_ms": 0.445887
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.368034,
+              "max_ms": 0.368034
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.2100060000000001,
+              "max_ms": 1.053012
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "mode": "after-heli-infantry-aa",
+      "exchanges": {
+        "count": 176,
+        "total_ms": 287.94707400000004,
+        "mean_ms": 1.6360629204545454,
+        "p50_ms": 1.553485,
+        "p90_ms": 2.195963,
+        "p95_ms": 2.3841722499999998,
+        "p99_ms": 2.626104,
+        "max_ms": 2.868544,
+        "over_1ms": 173,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+          "count": 56,
+          "total_ms": 16.304526,
+          "mean_ms": 0.29115225,
+          "p50_ms": 0.291957,
+          "p90_ms": 0.31275949999999997,
+          "p95_ms": 0.31653425,
+          "p99_ms": 0.3221152,
+          "max_ms": 0.325534,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "count": 528,
+          "total_ms": 9.114208,
+          "mean_ms": 0.017261757575757576,
+          "p50_ms": 0.0169965,
+          "p90_ms": 0.0186358,
+          "p95_ms": 0.01958225,
+          "p99_ms": 0.02552549,
+          "max_ms": 0.02985,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "count": 799,
+          "total_ms": 45.938525,
+          "mean_ms": 0.05749502503128911,
+          "p50_ms": 0.06041,
+          "p90_ms": 0.093928,
+          "p95_ms": 0.1033057999999999,
+          "p99_ms": 0.11727859999999998,
+          "max_ms": 0.217096,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "count": 799,
+          "total_ms": 84.25493799999995,
+          "mean_ms": 0.10545048560700876,
+          "p50_ms": 0.10063,
+          "p90_ms": 0.14840060000000002,
+          "p95_ms": 0.16444779999999998,
+          "p99_ms": 0.19504469999999993,
+          "max_ms": 0.318468,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 232,
+          "total_ms": 5.482115999999997,
+          "mean_ms": 0.023629810344827588,
+          "p50_ms": 0.0242975,
+          "p90_ms": 0.0266296,
+          "p95_ms": 0.02804505,
+          "p99_ms": 0.03274347,
+          "max_ms": 0.034252,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 176,
+          "total_ms": 3.2848569999999975,
+          "mean_ms": 0.01866396022727273,
+          "p50_ms": 0.018763000000000002,
+          "p90_ms": 0.020181499999999998,
+          "p95_ms": 0.02082825,
+          "p99_ms": 0.02450525,
+          "max_ms": 0.032783,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "count": 288,
+          "total_ms": 8.138841999999997,
+          "mean_ms": 0.028259868055555557,
+          "p50_ms": 0.0270725,
+          "p90_ms": 0.0332799,
+          "p95_ms": 0.0339748,
+          "p99_ms": 0.03501562,
+          "max_ms": 0.035609,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "count": 288,
+          "total_ms": 23.349948,
+          "mean_ms": 0.08107620833333334,
+          "p50_ms": 0.0559775,
+          "p90_ms": 0.1267502,
+          "p95_ms": 0.17413039999999996,
+          "p99_ms": 0.19843383,
+          "max_ms": 0.213897,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "count": 288,
+          "total_ms": 23.584103999999986,
+          "mean_ms": 0.08188925,
+          "p50_ms": 0.07815749999999999,
+          "p90_ms": 0.09686510000000001,
+          "p95_ms": 0.09973024999999998,
+          "p99_ms": 0.11676845999999999,
+          "max_ms": 0.144423,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "count": 1668,
+          "total_ms": 31.387685999999967,
+          "mean_ms": 0.018817557553956834,
+          "p50_ms": 0.0159655,
+          "p90_ms": 0.023038999999999997,
+          "p95_ms": 0.041686299999999024,
+          "p99_ms": 0.08357970999999996,
+          "max_ms": 0.104792,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "count": 176,
+          "total_ms": 282.927924,
+          "mean_ms": 1.6075450227272727,
+          "p50_ms": 1.5212059999999998,
+          "p90_ms": 2.1656505,
+          "p95_ms": 2.3507369999999996,
+          "p99_ms": 2.58830525,
+          "max_ms": 2.833217,
+          "over_1ms": 171,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "count": 176,
+          "total_ms": 50.714606999999994,
+          "mean_ms": 0.28815117613636365,
+          "p50_ms": 0.28147350000000004,
+          "p90_ms": 0.357336,
+          "p95_ms": 0.4305485,
+          "p99_ms": 0.44975550000000003,
+          "max_ms": 0.461299,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "count": 56,
+          "total_ms": 18.658586,
+          "mean_ms": 0.3331890357142857,
+          "p50_ms": 0.34066450000000004,
+          "p90_ms": 0.367858,
+          "p95_ms": 0.37693550000000003,
+          "p99_ms": 0.4389264500000003,
+          "max_ms": 0.499867,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "count": 352,
+          "total_ms": 124.08850300000009,
+          "mean_ms": 0.35252415625,
+          "p50_ms": 0.3026185,
+          "p90_ms": 0.9454094000000001,
+          "p95_ms": 0.99275375,
+          "p99_ms": 1.21004025,
+          "max_ms": 1.273147,
+          "over_1ms": 16,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst": [
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119750241523,
+          "offset_seconds": 4.994213731,
+          "ms": 2.868544,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.304828,
+              "max_ms": 0.304828
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051399,
+              "max_ms": 0.017846
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.48197100000000004,
+              "max_ms": 0.103203
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8585599999999999,
+              "max_ms": 0.167458
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043356000000000006,
+              "max_ms": 0.025787
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019058,
+              "max_ms": 0.019058
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080085,
+              "max_ms": 0.031897
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.27745699999999995,
+              "max_ms": 0.122343
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23289500000000002,
+              "max_ms": 0.090528
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.3773080000000001,
+              "max_ms": 0.100303
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.833217,
+              "max_ms": 2.833217
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.275173,
+              "max_ms": 0.275173
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.342275,
+              "max_ms": 0.342275
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.624816,
+              "max_ms": 1.219335
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119821670692,
+          "offset_seconds": 5.0656429,
+          "ms": 2.653146,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.289369,
+              "max_ms": 0.289369
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051101999999999995,
+              "max_ms": 0.017119
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.376888,
+              "max_ms": 0.074099
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.7275180000000001,
+              "max_ms": 0.175783
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.045107999999999995,
+              "max_ms": 0.02712
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019315,
+              "max_ms": 0.019315
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.079598,
+              "max_ms": 0.031001
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.276996,
+              "max_ms": 0.119621
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.229502,
+              "max_ms": 0.09059
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.366973,
+              "max_ms": 0.097031
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.625626,
+              "max_ms": 2.625626
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.262528,
+              "max_ms": 0.262528
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.345916,
+              "max_ms": 0.345916
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.613566,
+              "max_ms": 1.229833
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119857158119,
+          "offset_seconds": 5.101130327,
+          "ms": 2.61709,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.291559,
+              "max_ms": 0.291559
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.053385999999999996,
+              "max_ms": 0.018694
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.386084,
+              "max_ms": 0.139757
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.639901,
+              "max_ms": 0.227403
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046523999999999996,
+              "max_ms": 0.025807
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.01913,
+              "max_ms": 0.01913
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083402,
+              "max_ms": 0.030811
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.281364,
+              "max_ms": 0.120287
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.232559,
+              "max_ms": 0.092357
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.374023,
+              "max_ms": 0.10126
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.575865,
+              "max_ms": 2.575865
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.259374,
+              "max_ms": 0.259374
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.372063,
+              "max_ms": 0.372063
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.665945,
+              "max_ms": 1.273147
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 149782616809,
+          "offset_seconds": 35.026589017,
+          "ms": 2.527878,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.313834,
+              "max_ms": 0.313834
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.054492,
+              "max_ms": 0.019001
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.33888,
+              "max_ms": 0.098204
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.631207,
+              "max_ms": 0.166609
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.058735,
+              "max_ms": 0.033383
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019149,
+              "max_ms": 0.019149
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080999,
+              "max_ms": 0.032082
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.236049,
+              "max_ms": 0.126254
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.234749,
+              "max_ms": 0.094929
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.32158099999999995,
+              "max_ms": 0.062676
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.497635,
+              "max_ms": 2.497635
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.2839,
+              "max_ms": 0.2839
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.283963,
+              "max_ms": 0.283963
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.585351,
+              "max_ms": 1.20111
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 120738745424,
+          "offset_seconds": 5.982717632,
+          "ms": 2.525006,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.291481,
+              "max_ms": 0.291481
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.055398,
+              "max_ms": 0.020055
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.50035,
+              "max_ms": 0.092514
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.893164,
+              "max_ms": 0.212259
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043387999999999996,
+              "max_ms": 0.025483
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.023185,
+              "max_ms": 0.023185
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083764,
+              "max_ms": 0.032606
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.281237,
+              "max_ms": 0.122325
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.25872799999999996,
+              "max_ms": 0.118808
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.148558,
+              "max_ms": 0.023357
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.497419,
+              "max_ms": 2.497419
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.32406,
+              "max_ms": 0.32406
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.347324,
+              "max_ms": 0.347324
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.108264,
+              "max_ms": 0.982528
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 149785594372,
+          "offset_seconds": 35.02956658,
+          "ms": 2.513297,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.287023,
+              "max_ms": 0.287023
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.048937999999999995,
+              "max_ms": 0.016927
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.41913900000000004,
+              "max_ms": 0.104903
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.80721,
+              "max_ms": 0.149544
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043771000000000004,
+              "max_ms": 0.022086
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.017188,
+              "max_ms": 0.017188
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.074468,
+              "max_ms": 0.025737
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.213071,
+              "max_ms": 0.119936
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.21323299999999998,
+              "max_ms": 0.075917
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.276368,
+              "max_ms": 0.046017
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.488875,
+              "max_ms": 2.488875
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.246848,
+              "max_ms": 0.246848
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.280427,
+              "max_ms": 0.280427
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.425615,
+              "max_ms": 1.127402
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119787660547,
+          "offset_seconds": 5.031632755,
+          "ms": 2.480379,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.264485,
+              "max_ms": 0.264485
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.048734,
+              "max_ms": 0.016698
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.351702,
+              "max_ms": 0.076391
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.692523,
+              "max_ms": 0.117743
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.039356,
+              "max_ms": 0.021791
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.016455,
+              "max_ms": 0.016455
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.073598,
+              "max_ms": 0.025814
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.252471,
+              "max_ms": 0.102681
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.213006,
+              "max_ms": 0.076045
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.34066399999999997,
+              "max_ms": 0.078039
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.456054,
+              "max_ms": 2.456054
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.240603,
+              "max_ms": 0.240603
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.331966,
+              "max_ms": 0.331966
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.448341,
+              "max_ms": 1.118054
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 149747634769,
+          "offset_seconds": 34.991606977,
+          "ms": 2.46352,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.302617,
+              "max_ms": 0.302617
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.05151699999999999,
+              "max_ms": 0.018129
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.36797900000000006,
+              "max_ms": 0.110431
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.640922,
+              "max_ms": 0.185987
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046888,
+              "max_ms": 0.024916
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019789,
+              "max_ms": 0.019789
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080348,
+              "max_ms": 0.031414
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.225916,
+              "max_ms": 0.127246
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.239923,
+              "max_ms": 0.092549
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.303218,
+              "max_ms": 0.058616
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.433877,
+              "max_ms": 2.433877
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.271526,
+              "max_ms": 0.271526
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.290117,
+              "max_ms": 0.290117
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.3686960000000001,
+              "max_ms": 1.023951
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 116762964516,
+          "offset_seconds": 2.006936724,
+          "ms": 2.414608,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.297641,
+              "max_ms": 0.297641
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.065874,
+              "max_ms": 0.029546
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.341481,
+              "max_ms": 0.095949
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.5605650000000001,
+              "max_ms": 0.14921
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.04394,
+              "max_ms": 0.025633
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019483,
+              "max_ms": 0.019483
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.086217,
+              "max_ms": 0.03444
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.431251,
+              "max_ms": 0.204767
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.24231599999999998,
+              "max_ms": 0.096877
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.15776799999999996,
+              "max_ms": 0.028079
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.378259,
+              "max_ms": 2.378259
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.460071,
+              "max_ms": 0.460071
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.365008,
+              "max_ms": 0.365008
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.1620879999999998,
+              "max_ms": 1.009842
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 115736545424,
+          "offset_seconds": 0.980517632,
+          "ms": 2.374027,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.319318,
+              "max_ms": 0.319318
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.056232000000000004,
+              "max_ms": 0.020971
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.29382,
+              "max_ms": 0.110242
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.5610729999999999,
+              "max_ms": 0.190155
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.042341,
+              "max_ms": 0.024761
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019466,
+              "max_ms": 0.019466
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083319,
+              "max_ms": 0.033414
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.45143799999999995,
+              "max_ms": 0.200427
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.259493,
+              "max_ms": 0.097171
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.152585,
+              "max_ms": 0.026193
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.341563,
+              "max_ms": 2.341563
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.446317,
+              "max_ms": 0.446317
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.389066,
+              "max_ms": 0.389066
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.179532,
+              "max_ms": 1.046529
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "mode": "after-heli-infantry-aa",
+      "exchanges": {
+        "count": 175,
+        "total_ms": 284.70156300000014,
+        "mean_ms": 1.6268660742857144,
+        "p50_ms": 1.50349,
+        "p90_ms": 2.2064026,
+        "p95_ms": 2.4903855,
+        "p99_ms": 2.647433159999999,
+        "max_ms": 3.067832,
+        "over_1ms": 169,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+          "count": 55,
+          "total_ms": 16.228261000000003,
+          "mean_ms": 0.2950592909090909,
+          "p50_ms": 0.295607,
+          "p90_ms": 0.308693,
+          "p95_ms": 0.31984989999999996,
+          "p99_ms": 0.34009912000000003,
+          "max_ms": 0.351559,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "count": 525,
+          "total_ms": 9.099139999999991,
+          "mean_ms": 0.01733169523809524,
+          "p50_ms": 0.016881,
+          "p90_ms": 0.018427199999999998,
+          "p95_ms": 0.0201886,
+          "p99_ms": 0.026162919999999996,
+          "max_ms": 0.098106,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "count": 791,
+          "total_ms": 44.79801200000002,
+          "mean_ms": 0.056634654867256634,
+          "p50_ms": 0.060005,
+          "p90_ms": 0.09354,
+          "p95_ms": 0.0985305,
+          "p99_ms": 0.1171504,
+          "max_ms": 0.199237,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "count": 791,
+          "total_ms": 83.07799400000003,
+          "mean_ms": 0.10502906953223767,
+          "p50_ms": 0.100981,
+          "p90_ms": 0.147348,
+          "p95_ms": 0.161095,
+          "p99_ms": 0.20678790000000005,
+          "max_ms": 0.254426,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 230,
+          "total_ms": 5.583550000000002,
+          "mean_ms": 0.024276304347826086,
+          "p50_ms": 0.0241105,
+          "p90_ms": 0.0279891,
+          "p95_ms": 0.0294817,
+          "p99_ms": 0.03578934000000002,
+          "max_ms": 0.03873,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 175,
+          "total_ms": 3.4159189999999997,
+          "mean_ms": 0.019519537142857143,
+          "p50_ms": 0.018947,
+          "p90_ms": 0.0209438,
+          "p95_ms": 0.022862299999999995,
+          "p99_ms": 0.028417599999999956,
+          "max_ms": 0.137412,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "count": 285,
+          "total_ms": 8.031664,
+          "mean_ms": 0.028181277192982454,
+          "p50_ms": 0.026853,
+          "p90_ms": 0.0329042,
+          "p95_ms": 0.0336898,
+          "p99_ms": 0.035781520000000004,
+          "max_ms": 0.039853,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "count": 285,
+          "total_ms": 23.404527999999992,
+          "mean_ms": 0.08212115087719297,
+          "p50_ms": 0.056119,
+          "p90_ms": 0.1265222,
+          "p95_ms": 0.1886382000000002,
+          "p99_ms": 0.19740828000000002,
+          "max_ms": 0.217708,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "count": 285,
+          "total_ms": 23.39670800000001,
+          "mean_ms": 0.08209371228070175,
+          "p50_ms": 0.077509,
+          "p90_ms": 0.0970784,
+          "p95_ms": 0.0995906,
+          "p99_ms": 0.12027112000000008,
+          "max_ms": 0.260874,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "count": 1653,
+          "total_ms": 30.638497999999952,
+          "mean_ms": 0.01853508650937689,
+          "p50_ms": 0.015527,
+          "p90_ms": 0.0225274,
+          "p95_ms": 0.028247799999999827,
+          "p99_ms": 0.08355372,
+          "max_ms": 0.102303,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "count": 175,
+          "total_ms": 279.5844389999999,
+          "mean_ms": 1.5976253657142856,
+          "p50_ms": 1.47929,
+          "p90_ms": 2.1743628,
+          "p95_ms": 2.4552481,
+          "p99_ms": 2.615188099999999,
+          "max_ms": 3.020475,
+          "over_1ms": 168,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "count": 175,
+          "total_ms": 50.42172100000005,
+          "mean_ms": 0.28812412,
+          "p50_ms": 0.281592,
+          "p90_ms": 0.3649846,
+          "p95_ms": 0.43403369999999997,
+          "p99_ms": 0.45487427999999996,
+          "max_ms": 0.470409,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "count": 55,
+          "total_ms": 18.628434,
+          "mean_ms": 0.33869879999999997,
+          "p50_ms": 0.345816,
+          "p90_ms": 0.3678034,
+          "p95_ms": 0.39377989999999996,
+          "p99_ms": 0.47693776000000004,
+          "max_ms": 0.478993,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "count": 350,
+          "total_ms": 121.61178300000009,
+          "mean_ms": 0.3474622371428572,
+          "p50_ms": 0.30179599999999995,
+          "p90_ms": 0.9387592,
+          "p95_ms": 0.9962003,
+          "p99_ms": 1.12312812,
+          "max_ms": 1.299882,
+          "over_1ms": 16,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst": [
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 187268851365,
+          "offset_seconds": 35.004984329,
+          "ms": 3.067832,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.330337,
+              "max_ms": 0.330337
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.061966999999999994,
+              "max_ms": 0.025351
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.4774250000000001,
+              "max_ms": 0.166392
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.925677,
+              "max_ms": 0.230528
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.056132,
+              "max_ms": 0.03292
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020975,
+              "max_ms": 0.020975
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08984299999999999,
+              "max_ms": 0.035766
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.257672,
+              "max_ms": 0.136929
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.247918,
+              "max_ms": 0.100959
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.338245,
+              "max_ms": 0.074714
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 3.020475,
+              "max_ms": 3.020475
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.299551,
+              "max_ms": 0.299551
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.404086,
+              "max_ms": 0.404086
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.594947,
+              "max_ms": 1.20075
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157301977090,
+          "offset_seconds": 5.038110054,
+          "ms": 2.72274,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.351559,
+              "max_ms": 0.351559
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051008,
+              "max_ms": 0.017266
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.30737299999999995,
+              "max_ms": 0.094153
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.57026,
+              "max_ms": 0.155053
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046123,
+              "max_ms": 0.023811
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018947,
+              "max_ms": 0.018947
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080178,
+              "max_ms": 0.031137
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.286222,
+              "max_ms": 0.126797
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.281232,
+              "max_ms": 0.12286
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.36854700000000007,
+              "max_ms": 0.099355
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.693839,
+              "max_ms": 2.693839
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.270151,
+              "max_ms": 0.270151
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.478993,
+              "max_ms": 0.478993
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.696206,
+              "max_ms": 1.299882
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 154268025036,
+          "offset_seconds": 2.004158,
+          "ms": 2.620974,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.29771,
+              "max_ms": 0.29771
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051178999999999995,
+              "max_ms": 0.017668
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.49727099999999996,
+              "max_ms": 0.095642
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.847655,
+              "max_ms": 0.15834
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046617,
+              "max_ms": 0.024926
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019289,
+              "max_ms": 0.019289
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081911,
+              "max_ms": 0.032209
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.41856000000000004,
+              "max_ms": 0.196171
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.24533,
+              "max_ms": 0.101547
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.14966,
+              "max_ms": 0.023175
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.587554,
+              "max_ms": 2.587554
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.451425,
+              "max_ms": 0.451425
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.372227,
+              "max_ms": 0.372227
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.126328,
+              "max_ms": 1.001739
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 155399196171,
+          "offset_seconds": 3.135329135,
+          "ms": 2.55476,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.30527,
+              "max_ms": 0.30527
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051546999999999996,
+              "max_ms": 0.017842
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.42622899999999997,
+              "max_ms": 0.093807
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.750001,
+              "max_ms": 0.140511
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.048475000000000004,
+              "max_ms": 0.025072
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.021807,
+              "max_ms": 0.021807
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08286199999999999,
+              "max_ms": 0.033172
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.445651,
+              "max_ms": 0.217708
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23612499999999997,
+              "max_ms": 0.09372
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.149841,
+              "max_ms": 0.023931
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.525893,
+              "max_ms": 2.525893
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.470409,
+              "max_ms": 0.470409
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.356143,
+              "max_ms": 0.356143
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.124295,
+              "max_ms": 1.000474
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157268709720,
+          "offset_seconds": 5.004842684,
+          "ms": 2.535692,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.275287,
+              "max_ms": 0.275287
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.049262,
+              "max_ms": 0.016717
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.349858,
+              "max_ms": 0.071954
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.742054,
+              "max_ms": 0.137842
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043436,
+              "max_ms": 0.021968
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.016563,
+              "max_ms": 0.016563
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.074772,
+              "max_ms": 0.026294
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.259131,
+              "max_ms": 0.107346
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.21151600000000004,
+              "max_ms": 0.074606
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.34084299999999995,
+              "max_ms": 0.078638
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.511668,
+              "max_ms": 2.511668
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.237286,
+              "max_ms": 0.237286
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.330549,
+              "max_ms": 0.330549
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.4589750000000001,
+              "max_ms": 1.123477
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 153358677269,
+          "offset_seconds": 1.094810233,
+          "ms": 2.533866,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.295576,
+              "max_ms": 0.295576
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050367999999999996,
+              "max_ms": 0.017272
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.417429,
+              "max_ms": 0.096268
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.7439060000000001,
+              "max_ms": 0.137657
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.059742,
+              "max_ms": 0.037758
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.027141,
+              "max_ms": 0.027141
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.09075,
+              "max_ms": 0.039762
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.416021,
+              "max_ms": 0.1949
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.24272499999999997,
+              "max_ms": 0.098058
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.150178,
+              "max_ms": 0.023003
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.503096,
+              "max_ms": 2.503096
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.437346,
+              "max_ms": 0.437346
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.35999,
+              "max_ms": 0.35999
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.1508099999999999,
+              "max_ms": 1.027142
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157338742826,
+          "offset_seconds": 5.07487579,
+          "ms": 2.497377,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.294147,
+              "max_ms": 0.294147
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051212999999999995,
+              "max_ms": 0.017376
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.33422799999999997,
+              "max_ms": 0.094244
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.567744,
+              "max_ms": 0.145847
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046378,
+              "max_ms": 0.025027
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019819,
+              "max_ms": 0.019819
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08265700000000001,
+              "max_ms": 0.031646
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.280874,
+              "max_ms": 0.122708
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.228823,
+              "max_ms": 0.091354
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.372329,
+              "max_ms": 0.099163
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.469595,
+              "max_ms": 2.469595
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.263854,
+              "max_ms": 0.263854
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.351995,
+              "max_ms": 0.351995
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.4931670000000001,
+              "max_ms": 1.104405
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157265775541,
+          "offset_seconds": 5.001908505,
+          "ms": 2.493907,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.302056,
+              "max_ms": 0.302056
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.058887999999999996,
+              "max_ms": 0.02437
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.21794,
+              "max_ms": 0.065127
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.49415499999999996,
+              "max_ms": 0.103976
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.052192,
+              "max_ms": 0.030222
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019331,
+              "max_ms": 0.019331
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.079222,
+              "max_ms": 0.030216
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.282652,
+              "max_ms": 0.123858
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.230346,
+              "max_ms": 0.091549
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.383545,
+              "max_ms": 0.102303
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.46112,
+              "max_ms": 2.46112
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.271215,
+              "max_ms": 0.271215
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.347354,
+              "max_ms": 0.347354
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.5253999999999999,
+              "max_ms": 1.115657
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 155292459118,
+          "offset_seconds": 3.028592082,
+          "ms": 2.493203,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.30023,
+              "max_ms": 0.30023
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.053562,
+              "max_ms": 0.018937
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.3682039999999999,
+              "max_ms": 0.086473
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.67283,
+              "max_ms": 0.140915
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.048119999999999996,
+              "max_ms": 0.025894
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.01981,
+              "max_ms": 0.01981
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08400099999999999,
+              "max_ms": 0.032522
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.422041,
+              "max_ms": 0.201161
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23776,
+              "max_ms": 0.096149
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.15377299999999997,
+              "max_ms": 0.025502
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.454019,
+              "max_ms": 2.454019
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.459224,
+              "max_ms": 0.459224
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.349468,
+              "max_ms": 0.349468
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.150003,
+              "max_ms": 0.988275
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 155327463712,
+          "offset_seconds": 3.063596676,
+          "ms": 2.489178,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.29732,
+              "max_ms": 0.29732
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.063913,
+              "max_ms": 0.02658
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.260355,
+              "max_ms": 0.098183
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.5720170000000001,
+              "max_ms": 0.173814
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047505,
+              "max_ms": 0.024572
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019846,
+              "max_ms": 0.019846
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08221300000000001,
+              "max_ms": 0.032861
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.42269599999999996,
+              "max_ms": 0.198066
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.237717,
+              "max_ms": 0.09743
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.151311,
+              "max_ms": 0.024305
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.458116,
+              "max_ms": 2.458116
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.453346,
+              "max_ms": 0.453346
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.475187,
+              "max_ms": 0.475187
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.260582,
+              "max_ms": 1.122765
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 4,
+      "mode": "before-heli-infantry-aa",
+      "exchanges": {
+        "count": 176,
+        "total_ms": 324.3131410000001,
+        "mean_ms": 1.8426883011363635,
+        "p50_ms": 1.7798295,
+        "p90_ms": 2.323403,
+        "p95_ms": 2.4464315,
+        "p99_ms": 2.5851015,
+        "max_ms": 2.800154,
+        "over_1ms": 176,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "operations": {
+        "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+          "count": 176,
+          "total_ms": 54.59983299999999,
+          "mean_ms": 0.31022632386363636,
+          "p50_ms": 0.3144345,
+          "p90_ms": 0.3343655,
+          "p95_ms": 0.33911025,
+          "p99_ms": 0.411333,
+          "max_ms": 0.422735,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_canSee": {
+          "count": 528,
+          "total_ms": 9.101322999999997,
+          "mean_ms": 0.017237354166666666,
+          "p50_ms": 0.0168845,
+          "p90_ms": 0.0183547,
+          "p95_ms": 0.0198599,
+          "p99_ms": 0.026173380000000003,
+          "max_ms": 0.040903,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageCrew": {
+          "count": 784,
+          "total_ms": 45.086529,
+          "mean_ms": 0.057508327806122445,
+          "p50_ms": 0.0605165,
+          "p90_ms": 0.0947712,
+          "p95_ms": 0.10506319999999991,
+          "p99_ms": 0.116575,
+          "max_ms": 0.124697,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_damageVehicle": {
+          "count": 784,
+          "total_ms": 83.91787699999999,
+          "mean_ms": 0.10703810841836735,
+          "p50_ms": 0.101937,
+          "p90_ms": 0.1500004,
+          "p95_ms": 0.16452899999999981,
+          "p99_ms": 0.20856396999999982,
+          "max_ms": 0.257264,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+          "count": 352,
+          "total_ms": 8.477028999999993,
+          "mean_ms": 0.02408246875,
+          "p50_ms": 0.022470999999999998,
+          "p90_ms": 0.0269687,
+          "p95_ms": 0.029447049999999975,
+          "p99_ms": 0.036790070000000036,
+          "max_ms": 0.052643,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+          "count": 176,
+          "total_ms": 3.370574,
+          "mean_ms": 0.019150988636363636,
+          "p50_ms": 0.019189499999999998,
+          "p90_ms": 0.021206500000000003,
+          "p95_ms": 0.02282775,
+          "p99_ms": 0.025105,
+          "max_ms": 0.032063,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+          "count": 408,
+          "total_ms": 11.262785,
+          "mean_ms": 0.02760486519607843,
+          "p50_ms": 0.025717,
+          "p90_ms": 0.0327343,
+          "p95_ms": 0.03356275,
+          "p99_ms": 0.03644145000000001,
+          "max_ms": 0.066797,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "count": 408,
+          "total_ms": 38.126584,
+          "mean_ms": 0.09344750980392157,
+          "p50_ms": 0.10623550000000001,
+          "p90_ms": 0.12939160000000002,
+          "p95_ms": 0.1529205999999998,
+          "p99_ms": 0.20051826,
+          "max_ms": 0.250238,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "count": 408,
+          "total_ms": 32.426857,
+          "mean_ms": 0.07947759068627451,
+          "p50_ms": 0.07449,
+          "p90_ms": 0.0952278,
+          "p95_ms": 0.09950854999999999,
+          "p99_ms": 0.10911215000000002,
+          "max_ms": 0.181516,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+          "count": 1668,
+          "total_ms": 31.470055999999996,
+          "mean_ms": 0.01886694004796163,
+          "p50_ms": 0.0155995,
+          "p90_ms": 0.0232607,
+          "p95_ms": 0.0447419,
+          "p99_ms": 0.08391259999999999,
+          "max_ms": 0.116649,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+          "count": 176,
+          "total_ms": 319.344567,
+          "mean_ms": 1.8144577670454545,
+          "p50_ms": 1.750113,
+          "p90_ms": 2.2953645,
+          "p95_ms": 2.416226,
+          "p99_ms": 2.5570797499999998,
+          "max_ms": 2.757685,
+          "over_1ms": 176,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+          "count": 176,
+          "total_ms": 50.835284,
+          "mean_ms": 0.2888368409090909,
+          "p50_ms": 0.28122650000000005,
+          "p90_ms": 0.365981,
+          "p95_ms": 0.43376325,
+          "p99_ms": 0.47263425000000003,
+          "max_ms": 0.525796,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+          "count": 56,
+          "total_ms": 18.739707,
+          "mean_ms": 0.334637625,
+          "p50_ms": 0.3447545,
+          "p90_ms": 0.3593525,
+          "p95_ms": 0.39303875,
+          "p99_ms": 0.4745672,
+          "max_ms": 0.474763,
+          "over_1ms": 0,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        },
+        "IVCS_HELI_IVCS_Combat_stepVehicle": {
+          "count": 352,
+          "total_ms": 159.87514399999995,
+          "mean_ms": 0.45419075000000003,
+          "p50_ms": 0.4866705,
+          "p90_ms": 0.9383508000000002,
+          "p95_ms": 0.99556185,
+          "p99_ms": 1.12774,
+          "max_ms": 1.343423,
+          "over_1ms": 15,
+          "over_5ms": 0,
+          "over_10ms": 0,
+          "over_16_67ms": 0
+        }
+      },
+      "worst": [
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 192790590737,
+          "offset_seconds": 2.996965062,
+          "ms": 2.800154,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.338833,
+              "max_ms": 0.338833
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.072737,
+              "max_ms": 0.027279
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.47480599999999995,
+              "max_ms": 0.123725
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.788749,
+              "max_ms": 0.216265
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.053487,
+              "max_ms": 0.030602
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020551,
+              "max_ms": 0.020551
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.086797,
+              "max_ms": 0.033009
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.491798,
+              "max_ms": 0.250238
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.270588,
+              "max_ms": 0.115313
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.17148200000000002,
+              "max_ms": 0.035803
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.757685,
+              "max_ms": 2.757685
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.525796,
+              "max_ms": 0.525796
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.38232,
+              "max_ms": 0.38232
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.246452,
+              "max_ms": 1.055678
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 194822321943,
+          "offset_seconds": 5.028696268,
+          "ms": 2.76453,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.340223,
+              "max_ms": 0.340223
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051096,
+              "max_ms": 0.017991
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.297782,
+              "max_ms": 0.094782
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.5623199999999999,
+              "max_ms": 0.154905
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.057098,
+              "max_ms": 0.035152
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020395,
+              "max_ms": 0.020395
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.084291,
+              "max_ms": 0.034653
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.28637199999999996,
+              "max_ms": 0.124915
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.234684,
+              "max_ms": 0.090944
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.3910620000000001,
+              "max_ms": 0.102483
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.737679,
+              "max_ms": 2.737679
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.273879,
+              "max_ms": 0.273879
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.474763,
+              "max_ms": 0.474763
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.748198,
+              "max_ms": 1.343423
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 212845622086,
+          "offset_seconds": 23.051996411,
+          "ms": 2.525292,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.318897,
+              "max_ms": 0.318897
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051805,
+              "max_ms": 0.017452
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.47665,
+              "max_ms": 0.105874
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8675229999999999,
+              "max_ms": 0.148427
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.077648,
+              "max_ms": 0.052643
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.032063,
+              "max_ms": 0.032063
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.060995,
+              "max_ms": 0.033
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.178461,
+              "max_ms": 0.124624
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.166073,
+              "max_ms": 0.092966
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.340812,
+              "max_ms": 0.086766
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.49688,
+              "max_ms": 2.49688
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.289996,
+              "max_ms": 0.289996
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.164433,
+              "max_ms": 0.82336
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 200828194212,
+          "offset_seconds": 11.034568537,
+          "ms": 2.490569,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.319954,
+              "max_ms": 0.319954
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050732,
+              "max_ms": 0.017095
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.43520499999999995,
+              "max_ms": 0.088125
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.9132300000000001,
+              "max_ms": 0.143208
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047782000000000005,
+              "max_ms": 0.025446
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019411,
+              "max_ms": 0.019411
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.058946,
+              "max_ms": 0.03452
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.17432199999999998,
+              "max_ms": 0.12065
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.16167,
+              "max_ms": 0.090977
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.33211,
+              "max_ms": 0.082357
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.462883,
+              "max_ms": 2.462883
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.277712,
+              "max_ms": 0.277712
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.103182,
+              "max_ms": 0.756665
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 218785980145,
+          "offset_seconds": 28.99235447,
+          "ms": 2.489419,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.317688,
+              "max_ms": 0.317688
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.052879,
+              "max_ms": 0.017857
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.4632780000000001,
+              "max_ms": 0.094878
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.8829930000000001,
+              "max_ms": 0.146224
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047738,
+              "max_ms": 0.02592
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018571,
+              "max_ms": 0.018571
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.058105000000000004,
+              "max_ms": 0.032783
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.179697,
+              "max_ms": 0.125551
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.166961,
+              "max_ms": 0.094379
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.339436,
+              "max_ms": 0.08527
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.461104,
+              "max_ms": 2.461104
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.290399,
+              "max_ms": 0.290399
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.105116,
+              "max_ms": 0.759461
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 224808832765,
+          "offset_seconds": 35.01520709,
+          "ms": 2.47985,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.323665,
+              "max_ms": 0.323665
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051849,
+              "max_ms": 0.017662
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.404755,
+              "max_ms": 0.111582
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.658363,
+              "max_ms": 0.166521
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.048288,
+              "max_ms": 0.025752
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019561,
+              "max_ms": 0.019561
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.082339,
+              "max_ms": 0.031713
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.236945,
+              "max_ms": 0.132326
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.231373,
+              "max_ms": 0.090663
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.30105000000000004,
+              "max_ms": 0.058778
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.450154,
+              "max_ms": 2.450154
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.278159,
+              "max_ms": 0.278159
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.291551,
+              "max_ms": 0.291551
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.359577,
+              "max_ms": 1.026369
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 206863773245,
+          "offset_seconds": 17.07014757,
+          "ms": 2.47685,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.326354,
+              "max_ms": 0.326354
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.056251999999999996,
+              "max_ms": 0.020966
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.502834,
+              "max_ms": 0.096734
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.829461,
+              "max_ms": 0.149873
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.04985,
+              "max_ms": 0.026577
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018959,
+              "max_ms": 0.018959
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.06016199999999999,
+              "max_ms": 0.032518
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.18260300000000002,
+              "max_ms": 0.126928
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.17144,
+              "max_ms": 0.09427
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.35051799999999994,
+              "max_ms": 0.086441
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.439025,
+              "max_ms": 2.439025
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.287216,
+              "max_ms": 0.287216
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.137029,
+              "max_ms": 0.778148
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 194894670349,
+          "offset_seconds": 5.101044674,
+          "ms": 2.456378,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.319123,
+              "max_ms": 0.319123
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.049499,
+              "max_ms": 0.016725
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.217052,
+              "max_ms": 0.065178
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.49366699999999997,
+              "max_ms": 0.10267
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.059713,
+              "max_ms": 0.03441
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019312,
+              "max_ms": 0.019312
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.082242,
+              "max_ms": 0.031986
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.294624,
+              "max_ms": 0.128333
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23364999999999997,
+              "max_ms": 0.09193
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.37135,
+              "max_ms": 0.098837
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.428017,
+              "max_ms": 2.428017
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.272921,
+              "max_ms": 0.272921
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.357592,
+              "max_ms": 0.357592
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.511013,
+              "max_ms": 1.133605
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 190774481291,
+          "offset_seconds": 0.980855616,
+          "ms": 2.450699,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.302463,
+              "max_ms": 0.302463
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.049719,
+              "max_ms": 0.017158
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.41138300000000005,
+              "max_ms": 0.094866
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.733168,
+              "max_ms": 0.135869
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047445,
+              "max_ms": 0.025921
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019084,
+              "max_ms": 0.019084
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.07966,
+              "max_ms": 0.031353
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.412678,
+              "max_ms": 0.194514
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23425,
+              "max_ms": 0.092612
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.149007,
+              "max_ms": 0.023064
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.422388,
+              "max_ms": 2.422388
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.434583,
+              "max_ms": 0.434583
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.346914,
+              "max_ms": 0.346914
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.0862020000000001,
+              "max_ms": 0.959864
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 195764599759,
+          "offset_seconds": 5.970974084,
+          "ms": 2.445009,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.332606,
+              "max_ms": 0.332606
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.055887,
+              "max_ms": 0.020919
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.41512899999999997,
+              "max_ms": 0.111734
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.636995,
+              "max_ms": 0.15689
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.048488,
+              "max_ms": 0.026268
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.023477,
+              "max_ms": 0.023477
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.088943,
+              "max_ms": 0.033838
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.308299,
+              "max_ms": 0.129086
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.35152,
+              "max_ms": 0.181516
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.154604,
+              "max_ms": 0.02393
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.414172,
+              "max_ms": 2.414172
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.396451,
+              "max_ms": 0.396451
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.425195,
+              "max_ms": 0.425195
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.220005,
+              "max_ms": 1.098257
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pooled": {
+    "after-heli-infantry-aa": {
+      "exchanges": {
+        "count": 351,
+        "total_ms": 572.6486369999998,
+        "mean_ms": 1.6314775982905982,
+        "p50_ms": 1.535625,
+        "p90_ms": 2.208683,
+        "p95_ms": 2.439064,
+        "p99_ms": 2.63706,
+        "max_ms": 3.067832,
+        "over_1ms": 342,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "worst": [
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 187268851365,
+          "offset_seconds": 35.004984329,
+          "ms": 3.067832,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.330337,
+              "max_ms": 0.330337
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.061966999999999994,
+              "max_ms": 0.025351
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.4774250000000001,
+              "max_ms": 0.166392
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.925677,
+              "max_ms": 0.230528
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.056132,
+              "max_ms": 0.03292
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020975,
+              "max_ms": 0.020975
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08984299999999999,
+              "max_ms": 0.035766
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.257672,
+              "max_ms": 0.136929
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.247918,
+              "max_ms": 0.100959
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.338245,
+              "max_ms": 0.074714
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 3.020475,
+              "max_ms": 3.020475
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.299551,
+              "max_ms": 0.299551
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.404086,
+              "max_ms": 0.404086
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.594947,
+              "max_ms": 1.20075
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119750241523,
+          "offset_seconds": 4.994213731,
+          "ms": 2.868544,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.304828,
+              "max_ms": 0.304828
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051399,
+              "max_ms": 0.017846
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.48197100000000004,
+              "max_ms": 0.103203
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8585599999999999,
+              "max_ms": 0.167458
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043356000000000006,
+              "max_ms": 0.025787
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019058,
+              "max_ms": 0.019058
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080085,
+              "max_ms": 0.031897
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.27745699999999995,
+              "max_ms": 0.122343
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23289500000000002,
+              "max_ms": 0.090528
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.3773080000000001,
+              "max_ms": 0.100303
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.833217,
+              "max_ms": 2.833217
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.275173,
+              "max_ms": 0.275173
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.342275,
+              "max_ms": 0.342275
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.624816,
+              "max_ms": 1.219335
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157301977090,
+          "offset_seconds": 5.038110054,
+          "ms": 2.72274,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.351559,
+              "max_ms": 0.351559
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051008,
+              "max_ms": 0.017266
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.30737299999999995,
+              "max_ms": 0.094153
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.57026,
+              "max_ms": 0.155053
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046123,
+              "max_ms": 0.023811
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018947,
+              "max_ms": 0.018947
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080178,
+              "max_ms": 0.031137
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.286222,
+              "max_ms": 0.126797
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.281232,
+              "max_ms": 0.12286
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.36854700000000007,
+              "max_ms": 0.099355
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.693839,
+              "max_ms": 2.693839
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.270151,
+              "max_ms": 0.270151
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.478993,
+              "max_ms": 0.478993
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.696206,
+              "max_ms": 1.299882
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119821670692,
+          "offset_seconds": 5.0656429,
+          "ms": 2.653146,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.289369,
+              "max_ms": 0.289369
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051101999999999995,
+              "max_ms": 0.017119
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.376888,
+              "max_ms": 0.074099
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.7275180000000001,
+              "max_ms": 0.175783
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.045107999999999995,
+              "max_ms": 0.02712
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019315,
+              "max_ms": 0.019315
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.079598,
+              "max_ms": 0.031001
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.276996,
+              "max_ms": 0.119621
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.229502,
+              "max_ms": 0.09059
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.366973,
+              "max_ms": 0.097031
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.625626,
+              "max_ms": 2.625626
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.262528,
+              "max_ms": 0.262528
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.345916,
+              "max_ms": 0.345916
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.613566,
+              "max_ms": 1.229833
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 154268025036,
+          "offset_seconds": 2.004158,
+          "ms": 2.620974,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.29771,
+              "max_ms": 0.29771
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051178999999999995,
+              "max_ms": 0.017668
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.49727099999999996,
+              "max_ms": 0.095642
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.847655,
+              "max_ms": 0.15834
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046617,
+              "max_ms": 0.024926
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019289,
+              "max_ms": 0.019289
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081911,
+              "max_ms": 0.032209
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.41856000000000004,
+              "max_ms": 0.196171
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.24533,
+              "max_ms": 0.101547
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.14966,
+              "max_ms": 0.023175
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.587554,
+              "max_ms": 2.587554
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.451425,
+              "max_ms": 0.451425
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.372227,
+              "max_ms": 0.372227
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.126328,
+              "max_ms": 1.001739
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 119857158119,
+          "offset_seconds": 5.101130327,
+          "ms": 2.61709,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.291559,
+              "max_ms": 0.291559
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.053385999999999996,
+              "max_ms": 0.018694
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.386084,
+              "max_ms": 0.139757
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.639901,
+              "max_ms": 0.227403
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.046523999999999996,
+              "max_ms": 0.025807
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.01913,
+              "max_ms": 0.01913
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083402,
+              "max_ms": 0.030811
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.281364,
+              "max_ms": 0.120287
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.232559,
+              "max_ms": 0.092357
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.374023,
+              "max_ms": 0.10126
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.575865,
+              "max_ms": 2.575865
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.259374,
+              "max_ms": 0.259374
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.372063,
+              "max_ms": 0.372063
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.665945,
+              "max_ms": 1.273147
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 155399196171,
+          "offset_seconds": 3.135329135,
+          "ms": 2.55476,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.30527,
+              "max_ms": 0.30527
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051546999999999996,
+              "max_ms": 0.017842
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.42622899999999997,
+              "max_ms": 0.093807
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.750001,
+              "max_ms": 0.140511
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.048475000000000004,
+              "max_ms": 0.025072
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.021807,
+              "max_ms": 0.021807
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08286199999999999,
+              "max_ms": 0.033172
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.445651,
+              "max_ms": 0.217708
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23612499999999997,
+              "max_ms": 0.09372
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.149841,
+              "max_ms": 0.023931
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.525893,
+              "max_ms": 2.525893
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.470409,
+              "max_ms": 0.470409
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.356143,
+              "max_ms": 0.356143
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.124295,
+              "max_ms": 1.000474
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 157268709720,
+          "offset_seconds": 5.004842684,
+          "ms": 2.535692,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.275287,
+              "max_ms": 0.275287
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.049262,
+              "max_ms": 0.016717
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.349858,
+              "max_ms": 0.071954
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.742054,
+              "max_ms": 0.137842
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043436,
+              "max_ms": 0.021968
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.016563,
+              "max_ms": 0.016563
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.074772,
+              "max_ms": 0.026294
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.259131,
+              "max_ms": 0.107346
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.21151600000000004,
+              "max_ms": 0.074606
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.34084299999999995,
+              "max_ms": 0.078638
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.511668,
+              "max_ms": 2.511668
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.237286,
+              "max_ms": 0.237286
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.330549,
+              "max_ms": 0.330549
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.4589750000000001,
+              "max_ms": 1.123477
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 153358677269,
+          "offset_seconds": 1.094810233,
+          "ms": 2.533866,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.295576,
+              "max_ms": 0.295576
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050367999999999996,
+              "max_ms": 0.017272
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.417429,
+              "max_ms": 0.096268
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.7439060000000001,
+              "max_ms": 0.137657
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.059742,
+              "max_ms": 0.037758
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.027141,
+              "max_ms": 0.027141
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.09075,
+              "max_ms": 0.039762
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.416021,
+              "max_ms": 0.1949
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.24272499999999997,
+              "max_ms": 0.098058
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.150178,
+              "max_ms": 0.023003
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.503096,
+              "max_ms": 2.503096
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.437346,
+              "max_ms": 0.437346
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.35999,
+              "max_ms": 0.35999
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.1508099999999999,
+              "max_ms": 1.027142
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 149782616809,
+          "offset_seconds": 35.026589017,
+          "ms": 2.527878,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.313834,
+              "max_ms": 0.313834
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.054492,
+              "max_ms": 0.019001
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.33888,
+              "max_ms": 0.098204
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.631207,
+              "max_ms": 0.166609
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.058735,
+              "max_ms": 0.033383
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019149,
+              "max_ms": 0.019149
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.080999,
+              "max_ms": 0.032082
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.236049,
+              "max_ms": 0.126254
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.234749,
+              "max_ms": 0.094929
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.32158099999999995,
+              "max_ms": 0.062676
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.497635,
+              "max_ms": 2.497635
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.2839,
+              "max_ms": 0.2839
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.283963,
+              "max_ms": 0.283963
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.585351,
+              "max_ms": 1.20111
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 120738745424,
+          "offset_seconds": 5.982717632,
+          "ms": 2.525006,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.291481,
+              "max_ms": 0.291481
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.055398,
+              "max_ms": 0.020055
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.50035,
+              "max_ms": 0.092514
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.893164,
+              "max_ms": 0.212259
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043387999999999996,
+              "max_ms": 0.025483
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.023185,
+              "max_ms": 0.023185
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083764,
+              "max_ms": 0.032606
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.281237,
+              "max_ms": 0.122325
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.25872799999999996,
+              "max_ms": 0.118808
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.148558,
+              "max_ms": 0.023357
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.497419,
+              "max_ms": 2.497419
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.32406,
+              "max_ms": 0.32406
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.347324,
+              "max_ms": 0.347324
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.108264,
+              "max_ms": 0.982528
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "mode": "after-heli-infantry-aa",
+          "start_ns": 149785594372,
+          "offset_seconds": 35.02956658,
+          "ms": 2.513297,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.287023,
+              "max_ms": 0.287023
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.048937999999999995,
+              "max_ms": 0.016927
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.41913900000000004,
+              "max_ms": 0.104903
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.80721,
+              "max_ms": 0.149544
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043771000000000004,
+              "max_ms": 0.022086
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.017188,
+              "max_ms": 0.017188
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.074468,
+              "max_ms": 0.025737
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.213071,
+              "max_ms": 0.119936
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.21323299999999998,
+              "max_ms": 0.075917
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.276368,
+              "max_ms": 0.046017
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.488875,
+              "max_ms": 2.488875
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.246848,
+              "max_ms": 0.246848
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.280427,
+              "max_ms": 0.280427
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.425615,
+              "max_ms": 1.127402
+            }
+          }
+        }
+      ]
+    },
+    "before-heli-infantry-aa": {
+      "exchanges": {
+        "count": 351,
+        "total_ms": 643.3288400000001,
+        "mean_ms": 1.832845698005698,
+        "p50_ms": 1.772878,
+        "p90_ms": 2.302895,
+        "p95_ms": 2.436406,
+        "p99_ms": 2.739669,
+        "max_ms": 2.89264,
+        "over_1ms": 351,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "worst": [
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82266868413,
+          "offset_seconds": 5.03590384,
+          "ms": 2.89264,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.316555,
+              "max_ms": 0.316555
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051637,
+              "max_ms": 0.017329
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.48755,
+              "max_ms": 0.104873
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8706069999999999,
+              "max_ms": 0.177955
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.044213,
+              "max_ms": 0.022287
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.01994,
+              "max_ms": 0.01994
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.08521700000000001,
+              "max_ms": 0.03343
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.291415,
+              "max_ms": 0.123168
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.240454,
+              "max_ms": 0.097534
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.377173,
+              "max_ms": 0.101243
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.864731,
+              "max_ms": 2.864731
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.287079,
+              "max_ms": 0.287079
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.361971,
+              "max_ms": 0.361971
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.628737,
+              "max_ms": 1.234463
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 80257467677,
+          "offset_seconds": 3.026503104,
+          "ms": 2.886656,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.452604,
+              "max_ms": 0.452604
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.074514,
+              "max_ms": 0.031588
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.332125,
+              "max_ms": 0.101485
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.597774,
+              "max_ms": 0.167115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.056433,
+              "max_ms": 0.032115
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.025004,
+              "max_ms": 0.025004
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.109179,
+              "max_ms": 0.045699
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.518723,
+              "max_ms": 0.230665
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.318983,
+              "max_ms": 0.130377
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.19145100000000004,
+              "max_ms": 0.030651
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.805505,
+              "max_ms": 2.805505
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.515584,
+              "max_ms": 0.515584
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.437863,
+              "max_ms": 0.437863
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.482496,
+              "max_ms": 1.324576
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 192790590737,
+          "offset_seconds": 2.996965062,
+          "ms": 2.800154,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.338833,
+              "max_ms": 0.338833
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.072737,
+              "max_ms": 0.027279
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 5,
+              "total_ms": 0.47480599999999995,
+              "max_ms": 0.123725
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 5,
+              "total_ms": 0.788749,
+              "max_ms": 0.216265
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.053487,
+              "max_ms": 0.030602
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020551,
+              "max_ms": 0.020551
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.086797,
+              "max_ms": 0.033009
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.491798,
+              "max_ms": 0.250238
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.270588,
+              "max_ms": 0.115313
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 9,
+              "total_ms": 0.17148200000000002,
+              "max_ms": 0.035803
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.757685,
+              "max_ms": 2.757685
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.525796,
+              "max_ms": 0.525796
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.38232,
+              "max_ms": 0.38232
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.246452,
+              "max_ms": 1.055678
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 194822321943,
+          "offset_seconds": 5.028696268,
+          "ms": 2.76453,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.340223,
+              "max_ms": 0.340223
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051096,
+              "max_ms": 0.017991
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.297782,
+              "max_ms": 0.094782
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.5623199999999999,
+              "max_ms": 0.154905
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.057098,
+              "max_ms": 0.035152
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020395,
+              "max_ms": 0.020395
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.084291,
+              "max_ms": 0.034653
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.28637199999999996,
+              "max_ms": 0.124915
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.234684,
+              "max_ms": 0.090944
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.3910620000000001,
+              "max_ms": 0.102483
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.737679,
+              "max_ms": 2.737679
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.273879,
+              "max_ms": 0.273879
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.474763,
+              "max_ms": 0.474763
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.748198,
+              "max_ms": 1.343423
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82338944735,
+          "offset_seconds": 5.107980162,
+          "ms": 2.714808,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.31065,
+              "max_ms": 0.31065
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.052598000000000006,
+              "max_ms": 0.018484
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 6,
+              "total_ms": 0.39323800000000003,
+              "max_ms": 0.074509
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 6,
+              "total_ms": 0.7597250000000001,
+              "max_ms": 0.192195
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.044622999999999996,
+              "max_ms": 0.022664
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019606,
+              "max_ms": 0.019606
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081942,
+              "max_ms": 0.031988
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.277608,
+              "max_ms": 0.119717
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23460000000000003,
+              "max_ms": 0.092397
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.371715,
+              "max_ms": 0.099409
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.685171,
+              "max_ms": 2.685171
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.264497,
+              "max_ms": 0.264497
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.344899,
+              "max_ms": 0.344899
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.629011,
+              "max_ms": 1.234762
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 112229804082,
+          "offset_seconds": 34.998839509,
+          "ms": 2.698339,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.316215,
+              "max_ms": 0.316215
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.054383999999999995,
+              "max_ms": 0.019281
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 7,
+              "total_ms": 0.398058,
+              "max_ms": 0.087117
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 7,
+              "total_ms": 0.834811,
+              "max_ms": 0.224742
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.042620000000000005,
+              "max_ms": 0.021693
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019416,
+              "max_ms": 0.019416
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.081958,
+              "max_ms": 0.032543
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.22842,
+              "max_ms": 0.128186
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23225500000000002,
+              "max_ms": 0.091582
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.30178,
+              "max_ms": 0.05928
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.661577,
+              "max_ms": 2.661577
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.281698,
+              "max_ms": 0.281698
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.285002,
+              "max_ms": 0.285002
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.3718130000000002,
+              "max_ms": 1.007397
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82230676670,
+          "offset_seconds": 4.999712097,
+          "ms": 2.665529,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.322537,
+              "max_ms": 0.322537
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.05394199999999999,
+              "max_ms": 0.019967
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 4,
+              "total_ms": 0.328561,
+              "max_ms": 0.096322
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 4,
+              "total_ms": 0.5091060000000001,
+              "max_ms": 0.146446
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043651999999999996,
+              "max_ms": 0.021889
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.020901,
+              "max_ms": 0.020901
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.083623,
+              "max_ms": 0.033075
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.294257,
+              "max_ms": 0.130448
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.23568099999999997,
+              "max_ms": 0.094608
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.498163,
+              "max_ms": 0.152487
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.63712,
+              "max_ms": 2.63712
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.267856,
+              "max_ms": 0.267856
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.350571,
+              "max_ms": 0.350571
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.8619620000000001,
+              "max_ms": 1.280898
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 82303536231,
+          "offset_seconds": 5.072571658,
+          "ms": 2.654165,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.309442,
+              "max_ms": 0.309442
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050979,
+              "max_ms": 0.017094
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.35661,
+              "max_ms": 0.076112
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.7017359999999999,
+              "max_ms": 0.117735
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.043572,
+              "max_ms": 0.021802
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019542,
+              "max_ms": 0.019542
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 3,
+              "total_ms": 0.082714,
+              "max_ms": 0.032628
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 3,
+              "total_ms": 0.278878,
+              "max_ms": 0.121639
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 3,
+              "total_ms": 0.227931,
+              "max_ms": 0.089188
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.369657,
+              "max_ms": 0.099167
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.626095,
+              "max_ms": 2.626095
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.270821,
+              "max_ms": 0.270821
+            },
+            "IVCS_HELI_IVCS_Combat_stepReturnFire": {
+              "count": 1,
+              "total_ms": 0.349132,
+              "max_ms": 0.349132
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.587923,
+              "max_ms": 1.202
+            }
+          }
+        },
+        {
+          "trial": 1,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 88248565066,
+          "offset_seconds": 11.017600493,
+          "ms": 2.561432,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.325858,
+              "max_ms": 0.325858
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.053294999999999995,
+              "max_ms": 0.018187
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.466964,
+              "max_ms": 0.082399
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.9453419999999999,
+              "max_ms": 0.144605
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.04259,
+              "max_ms": 0.021799
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018812,
+              "max_ms": 0.018812
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.057854,
+              "max_ms": 0.032103
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.188855,
+              "max_ms": 0.136238
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.165483,
+              "max_ms": 0.09207
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.34884000000000004,
+              "max_ms": 0.083281
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.530106,
+              "max_ms": 2.530106
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.286578,
+              "max_ms": 0.286578
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.230404,
+              "max_ms": 0.87971
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 212845622086,
+          "offset_seconds": 23.051996411,
+          "ms": 2.525292,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.318897,
+              "max_ms": 0.318897
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.051805,
+              "max_ms": 0.017452
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 8,
+              "total_ms": 0.47665,
+              "max_ms": 0.105874
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 8,
+              "total_ms": 0.8675229999999999,
+              "max_ms": 0.148427
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.077648,
+              "max_ms": 0.052643
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.032063,
+              "max_ms": 0.032063
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.060995,
+              "max_ms": 0.033
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.178461,
+              "max_ms": 0.124624
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.166073,
+              "max_ms": 0.092966
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.340812,
+              "max_ms": 0.086766
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.49688,
+              "max_ms": 2.49688
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.289996,
+              "max_ms": 0.289996
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.164433,
+              "max_ms": 0.82336
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 200828194212,
+          "offset_seconds": 11.034568537,
+          "ms": 2.490569,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.319954,
+              "max_ms": 0.319954
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.050732,
+              "max_ms": 0.017095
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.43520499999999995,
+              "max_ms": 0.088125
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.9132300000000001,
+              "max_ms": 0.143208
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047782000000000005,
+              "max_ms": 0.025446
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.019411,
+              "max_ms": 0.019411
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.058946,
+              "max_ms": 0.03452
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.17432199999999998,
+              "max_ms": 0.12065
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.16167,
+              "max_ms": 0.090977
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.33211,
+              "max_ms": 0.082357
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.462883,
+              "max_ms": 2.462883
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.277712,
+              "max_ms": 0.277712
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.103182,
+              "max_ms": 0.756665
+            }
+          }
+        },
+        {
+          "trial": 4,
+          "mode": "before-heli-infantry-aa",
+          "start_ns": 218785980145,
+          "offset_seconds": 28.99235447,
+          "ms": 2.489419,
+          "operations": {
+            "IVCS_HELI_IVCS_Combat_canHelicopterFire": {
+              "count": 1,
+              "total_ms": 0.317688,
+              "max_ms": 0.317688
+            },
+            "IVCS_HELI_IVCS_Combat_canSee": {
+              "count": 3,
+              "total_ms": 0.052879,
+              "max_ms": 0.017857
+            },
+            "IVCS_HELI_IVCS_Combat_damageCrew": {
+              "count": 9,
+              "total_ms": 0.4632780000000001,
+              "max_ms": 0.094878
+            },
+            "IVCS_HELI_IVCS_Combat_damageVehicle": {
+              "count": 9,
+              "total_ms": 0.8829930000000001,
+              "max_ms": 0.146224
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterAttackArea": {
+              "count": 2,
+              "total_ms": 0.047738,
+              "max_ms": 0.02592
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPass": {
+              "count": 1,
+              "total_ms": 0.018571,
+              "max_ms": 0.018571
+            },
+            "IVCS_HELI_IVCS_Combat_getHelicopterPolicy": {
+              "count": 2,
+              "total_ms": 0.058105000000000004,
+              "max_ms": 0.032783
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+              "count": 2,
+              "total_ms": 0.179697,
+              "max_ms": 0.125551
+            },
+            "IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+              "count": 2,
+              "total_ms": 0.166961,
+              "max_ms": 0.094379
+            },
+            "IVCS_HELI_IVCS_Combat_getVehicleShot": {
+              "count": 12,
+              "total_ms": 0.339436,
+              "max_ms": 0.08527
+            },
+            "IVCS_HELI_IVCS_Combat_stepHelicopter": {
+              "count": 1,
+              "total_ms": 2.461104,
+              "max_ms": 2.461104
+            },
+            "IVCS_HELI_IVCS_Combat_stepMountedVehicle": {
+              "count": 1,
+              "total_ms": 0.290399,
+              "max_ms": 0.290399
+            },
+            "IVCS_HELI_IVCS_Combat_stepVehicle": {
+              "count": 2,
+              "total_ms": 1.105116,
+              "max_ms": 0.759461
+            }
+          }
+        }
+      ]
+    }
+  }
+}

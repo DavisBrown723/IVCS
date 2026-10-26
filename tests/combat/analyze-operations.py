@@ -144,7 +144,7 @@ def main():
                            worst_frames=tail[:5],frame_attribution=breakdown))
     args.output.mkdir(parents=True,exist_ok=True)
     report=dict(selected_trials=args.trials,excluded_trace_windows=excluded,trace=str(args.trace.resolve()),event_sources=event_sources,benchmark_summary=str(args.benchmark_summary.resolve()),
-                validity_checks=benchmark['validity_checks'],diagnostic=args.diagnostic,
+                validity_checks=benchmark['validity_checks'],diagnostic=args.diagnostic or benchmark.get('diagnostic',False),
                 eligible_for_performance_comparison=not args.diagnostic and benchmark.get('eligible_for_performance_comparison',True),metadata=reader.capture_metadata(args.trace),
                 note='Inclusive per-call timings; parent and child scopes overlap. Tail attribution uses disjoint combat blocks.',
                 phases=phases)

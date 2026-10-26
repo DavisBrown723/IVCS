@@ -1,0 +1,68 @@
+{
+  "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-exchange-diagnostic-20261026-004025-088345cc.tracy",
+  "note": "Preflight station/shot scopes are outside actual mounted/return-fire steps. They are disjoint lower bounds; permission, target, policy and area checks add further work. In this loaded ATTACK workload, 240 exchanges have no firing segment.",
+  "phases": [
+    {
+      "trial": 1,
+      "exchanges": 175,
+      "without_return_fire": 120,
+      "unused_preflight_children": {
+        "active_IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 55,
+          "total_ms": 5.536946999999999,
+          "mean_ms": 0.10067176363636361,
+          "max_ms": 0.173675
+        },
+        "active_IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 55,
+          "total_ms": 8.675522,
+          "mean_ms": 0.15773676363636366,
+          "max_ms": 0.366261
+        },
+        "inactive_IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 120,
+          "total_ms": 12.849532,
+          "mean_ms": 0.10707943333333333,
+          "max_ms": 0.239547
+        },
+        "inactive_IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 120,
+          "total_ms": 21.01778599999999,
+          "mean_ms": 0.17514821666666658,
+          "max_ms": 0.366669
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "exchanges": 174,
+      "without_return_fire": 120,
+      "unused_preflight_children": {
+        "active_IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 54,
+          "total_ms": 5.788247999999999,
+          "mean_ms": 0.10718977777777777,
+          "max_ms": 0.198757
+        },
+        "active_IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 54,
+          "total_ms": 9.091393,
+          "mean_ms": 0.16835912962962962,
+          "max_ms": 0.488681
+        },
+        "inactive_IVCS_HELI_IVCS_Combat_getReturnFireStations": {
+          "calls": 120,
+          "total_ms": 11.666115999999999,
+          "mean_ms": 0.09721763333333332,
+          "max_ms": 0.194022
+        },
+        "inactive_IVCS_HELI_IVCS_Combat_getReturnFireShot": {
+          "calls": 120,
+          "total_ms": 18.175223000000006,
+          "mean_ms": 0.15146019166666672,
+          "max_ms": 0.277718
+        }
+      }
+    }
+  ]
+}

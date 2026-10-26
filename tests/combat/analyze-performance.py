@@ -121,8 +121,9 @@ def main():
                    trials=[{k:v for k,v in member.items() if k!='rows'} for member in members])
         results.append(entry)
     args.output.mkdir(parents=True,exist_ok=True)
-    report=dict(rpt=str(args.rpt.resolve()),label=args.label,config=config,diagnostic=args.diagnostic,
-                eligible_for_performance_comparison=not args.diagnostic and int(done[1])==0,
+    instrumented=bool(re.search(r'\[IVCS PERF\] (?:RESOLUTION|EXCHANGE)_SCOPES installed',log_text))
+    report=dict(rpt=str(args.rpt.resolve()),label=args.label,config=config,diagnostic=args.diagnostic or instrumented,
+                eligible_for_performance_comparison=not (args.diagnostic or instrumented) and int(done[1])==0,
                 validity_checks=dict(passed=int(done[0]),failed=int(done[1])),failure_labels=failure_labels,results=results)
     (args.output/(args.label+'-summary.json')).write_text(json.dumps(report,indent=2)+'\n')
     with (args.output/(args.label+'-frames.csv')).open('w',newline='') as handle:

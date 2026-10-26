@@ -1,0 +1,9 @@
+{
+  "functions": [
+    [
+      "stepVehicle.sqf",
+      "IVCS_Combat_stepVehicle"
+    ]
+  ],
+  "stepVehicle.sqf": "6eda5624b5cefba7e3ecd203609f719904a4c22086495731889712c29e940122"
+}

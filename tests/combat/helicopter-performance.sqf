@@ -153,7 +153,7 @@ if (_profiling) then {
         private _saved="IVCS_HeliPerf_ScopeOriginal_"+_x;
         missionNamespace setVariable [_saved,missionNamespace getVariable _x];
         missionNamespace setVariable [_x,compile format ["private _scope=createProfileScope %1;_this call %2",str ("IVCS_HELI_"+_x),_saved]];
-    } forEach ["IVCS_Combat_update","IVCS_Combat_damageCrew","IVCS_Combat_getHelicopterPolicy","IVCS_Combat_getHelicopterAttackArea","IVCS_Combat_findTarget","IVCS_Combat_stepHelicopter","IVCS_Combat_stepVehicle","IVCS_Combat_stepMountedVehicle","IVCS_Combat_updateHelicopter","IVCS_Combat_updateAirDefense","IVCS_Combat_getHelicopterPass","IVCS_Combat_canSee","IVCS_Combat_canShootHelicopter","IVCS_Combat_joinHelicopterSupport","IVCS_Combat_getVehicleShot","IVCS_Combat_damageVehicle"];
+    } forEach ["IVCS_Combat_canHelicopterFire","IVCS_Combat_update","IVCS_Combat_damageCrew","IVCS_Combat_getHelicopterPolicy","IVCS_Combat_getHelicopterAttackArea","IVCS_Combat_findTarget","IVCS_Combat_stepHelicopter","IVCS_Combat_stepVehicle","IVCS_Combat_stepMountedVehicle","IVCS_Combat_updateHelicopter","IVCS_Combat_updateAirDefense","IVCS_Combat_getHelicopterPass","IVCS_Combat_canSee","IVCS_Combat_canShootHelicopter","IVCS_Combat_joinHelicopterSupport","IVCS_Combat_getVehicleShot","IVCS_Combat_damageVehicle"];
 };
 private _make={
     params ["_classes","_side","_pos"];
@@ -185,9 +185,11 @@ private _compare=_baselines isNotEqualTo [];
 private _versions=_baselines apply {
     _x params ["_function","_baseline"];
     private _scoped="IVCS_HeliPerf_ScopeOriginal_"+_function;
-    // Keep the test-only health restoration identical when comparing damage code.
-    private _destination=if (_function=="IVCS_Combat_damageVehicle") then {"IVCS_HeliPerf_RealDamage"} else {
-        if (_profiling && {!isNil {missionNamespace getVariable _scoped}}) then {_scoped} else {_function}
+    // Preserve identical test-only restoration and shot accounting around both versions.
+    private _destination=switch (_function) do {
+        case "IVCS_Combat_damageVehicle":{"IVCS_HeliPerf_RealDamage"};
+        case "IVCS_Combat_stepVehicle":{"IVCS_HeliPerf_Infantry"};
+        default {if (_profiling && {!isNil {missionNamespace getVariable _scoped}}) then {_scoped} else {_function}};
     };
     [_destination,_baseline,missionNamespace getVariable _destination]
 };

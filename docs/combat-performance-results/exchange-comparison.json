@@ -1,0 +1,54 @@
+{
+  "production_changes": {
+    "VirtualSpace/functions/combat/stepVehicle.sqf": {
+      "before": "6eda5624b5cefba7e3ecd203609f719904a4c22086495731889712c29e940122",
+      "after": "b823b3954ac1e4f5f587fba3e30d676e57a8b012be53ed1368e0c94d9b3f17cf"
+    }
+  },
+  "baseline_manifest": "tests/combat/exchange-baseline/manifest.json",
+  "configuration": {
+    "total_groups": 20,
+    "engagements": 5,
+    "supporters": 10,
+    "units": 85,
+    "entities": 30,
+    "seconds_per_window": 35,
+    "warmup_seconds": 2,
+    "trials_per_run": 4,
+    "order": [
+      "before",
+      "after",
+      "after",
+      "before"
+    ],
+    "paired_seeds": true,
+    "accTime": 1,
+    "combat_budget_ms": 3,
+    "engagement_visits": 8,
+    "entity_visits": 10,
+    "ammo_budget_ms": 1,
+    "resolution_seconds": 1,
+    "discovery_seconds": 1
+  },
+  "prior_tail": "exchange-prior-tail.json",
+  "diagnostic": "exchange-diagnostic-attribution.json",
+  "bottleneck": "exchange-diagnostic-bottleneck.json",
+  "precise_runs": [
+    "exchange-profiled-precise-summary.json",
+    "exchange-repeat-precise-summary.json"
+  ],
+  "pooled_precise": "exchange-pooled-precise-summary.json",
+  "unprofiled": "exchange-unprofiled-summary.json",
+  "correctness": "exchange-correctness.json",
+  "validity_passed": 108,
+  "validity_failed": 0,
+  "measured_frames": 11530,
+  "conclusion": "Unused work removed and mean costs improve in the unprofiled and steadier repeat run. The first precise run regresses, pooled results regress, and no reliable p99 improvement is established.",
+  "caveats": [
+    "Retain all complete windows from both precise runs, including slow samples; no trial exclusions or percentile averaging.",
+    "First precise run has large simultaneous changes in untouched entity stages. System scheduling, GC and host interference are possible causes but unproven.",
+    "Repeat performs no analysis jobs during timed windows, but does not control all host activity or isolate the cause of variability.",
+    "Test-only immortality restoration remains identical in both versions; shot accounting remains outside the function swap.",
+    "Detailed diagnostic markers are excluded from comparison. Raw traces/events/messages remain outside Git."
+  ]
+}

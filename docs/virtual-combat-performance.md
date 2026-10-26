@@ -1,5 +1,73 @@
 # Virtual combat performance
 
+## Remaining slow exchanges - 26 October 2026
+
+The resolver now skips helicopter firing eligibility during intervals containing only repositioning. It removes unused station scans and shot preparation, with all budgets and simulation work intervals unchanged. **The measurements do not establish a reliable p99 reduction:** the first precise run regresses, a steadier repeat improves modestly, and pooling both runs retains a regression. Both runs and every complete window are retained.
+
+### Why the preceding exchange p99 increased
+
+The previous capture's pooled exchange p99 was 2.863 -> 3.042 ms. Its paired results disagree: **2.852 -> 3.357 ms**, then **2.855 -> 2.594 ms**. In the first optimized window, the two largest exchanges occur only **35.56 ms apart**, taking 5.562 and 3.787 ms. They apply eight and six vehicle damage calls, respectively, comparable to baseline examples. Visibility, station selection, weapon selection and surrounding loop work all become slower together. A small exchange pool makes a few such events influential at p99.
+
+The evidence identifies a localized timing cluster and costly existing firing/damage work; it does not establish a deterministic regression caused by the earlier selector changes. OS scheduling, garbage collection and host interference remain unproven explanations.
+
+### New instrumentation and measured bottleneck
+
+New test-only scopes split station/operator visits, infantry firing attempts, per-impact application, crew owners and calibrated/fallback hull damage. Buffered exchange context includes the seed, engagement, step time and shot/hit counters before and after resolution; factor-cache misses and turret preparation context retain range and record counts. Serialization occurs after the measured root closes.
+
+The diagnostic covers **1,923 measured frames**, **349 exchanges**, **1,572 vehicle impacts**, and passes **18/18 workload checks**. Of these exchanges, **240 have no helicopter return-fire step**. Each nevertheless performs a helicopter firing-eligibility query, rebuilding a temporary selector cache even though its result is discarded during repositioning.
+
+The station and selector calls within those unused queries cost **24.516 ms + 39.193 ms = 63.709 ms** across the windows. Those two scopes are disjoint lower bounds: policy, target and area checks add more work. They exclude actual AA firing and actual helicopter return fire. Mounted weapons and crew damage remain substantial, nested costs rather than additional independent totals.
+
+Only production stepVehicle changes: it computes firing segments first, then performs canHelicopterFire if any segment is active. Reposition-only segments retain the existing timer advancement. Boundary-spanning and multi-pass intervals still resolve each segment's actual duration, with one permission check per call. Transport behavior, hold-fire, ammunition checks, injuries, damage order, seeded draws and native ownership remain intact. No persistent readiness cache, approximation, event cap, cadence change or reduced frame budget is introduced.
+
+### Matched 20-group measurements
+
+The workload retains **20 groups, five simultaneous engagements, ten AA supporters, 85 units and 30 entities**, including the existing dense-frontline helicopter/infantry/AA cells. Production ranges, 100 m flight altitude, 600 m attack areas, supplied launcher magazines and test-only immortality remain unchanged. Actual damage runs before identical health restoration. The harness preserves infantry shot accounting around both function versions.
+
+Each comparison uses four 35-second windows in before/after/after/before order, paired seeds and two-second warmup, at accTime = 1. Budgets remain **3 ms soft combat, eight engagement visits, ten entity visits and 1 ms ammo search**, with one-second resolution/discovery. Detailed diagnostics are excluded; identical standard scopes include the eligibility query in both versions. No windows are excluded and percentiles use individual samples.
+
+| Run | Precise milliseconds | Before | After |
+| --- | --- | --- | --- |
+| First precise run | Whole-IVCS p99 | 7.206 | 8.085 |
+| First precise run | Combat-frame p99 | 5.896 | 6.169 |
+| First precise run | Exchange mean | 2.306 | 2.622 |
+| First precise run | Exchange p99 | 4.699 | 5.199 |
+| First precise run | Exchange maximum | 4.898 | 6.200 |
+| Repeat | Whole-IVCS p99 | 6.245 | 6.165 |
+| Repeat | Combat-frame p99 | 5.282 | 5.192 |
+| Repeat | Exchange mean | 1.833 | 1.631 |
+| Repeat | Exchange p99 | 2.740 | 2.637 |
+| Repeat | Exchange maximum | 2.893 | 3.068 |
+
+The first precise run records **1,924 / 1,936 frames**. Unchanged entity-stage mean rises **1.169 -> 1.399 ms**, with p99 **2.193 -> 2.611 ms**. Its baseline first/fourth-window exchange means also differ substantially, **2.682 versus 1.933 ms**. This broad variation prevents attributing the p99 regression to the one changed branch. Its worst optimized whole frame is **11.672 ms**, including 8.929 ms combat and 2.554 ms entities; its largest individual exchange is 6.200 ms. These samples remain in the results.
+
+The repeat records **1,921 / 1,920 frames**, with no analysis jobs run during its timed windows. Entity means are steadier at **0.888 / 0.885 ms**. Exchange mean falls **11.0%**, exchange p99 **3.7%**, and whole-IVCS p99 **1.3%**. The repeat's paired whole-frame p99 values disagree slightly: **6.205 -> 6.228 ms**, then **6.327 -> 6.124 ms**. Paired exchange p99 values are **2.760 -> 2.626 ms** and **2.585 -> 2.647 ms**. This is a modest pooled improvement within the repeat, not a consistent win in every pair.
+
+In the repeat, firing-eligibility calls fall **351 -> 111**, inclusive total **107.573 -> 32.533 ms**. Station and selector calls each fall **813 -> 573**, removing exactly 240 queries. All 351 exchanges still execute. Helicopter/infantry-AA/vehicle-AA shots are **819/110/3,184 before**, **820/108/3,183 after**, retaining the firing workload and compatible ammunition consumption. Combat advances 34-36 seconds over approximately 35 simulation seconds. All rosters, engagements and supporters survive; no ammo transfers occur.
+
+Pooling **all 7,701 precise frame samples** gives whole-IVCS p99 **6.804 -> 7.414 ms**, combat-frame p99 **5.704 -> 5.737 ms**, and exchange p99 **4.407 -> 5.029 ms** across 700/702 exchanges. These pooled regressions are retained. There is no reliable overall p99 reduction to claim from the present measurements.
+
+The separate unprofiled ABBA run contains **3,829 frames**. Whole-IVCS mean falls **1.373 -> 1.327 ms**, combat mean **0.425 -> 0.381 ms**, while coarse-clock whole-IVCS p99 remains **5.005 ms** on both versions. Whole-frame p95 increases **4.002 -> 4.301 ms**. All three comparisons pass **108/108 workload checks across 11,530 frames**. The older approximately 6 ms unprofiled measurement is a different run and is not used as this change's baseline.
+
+### Review, limits and evidence
+
+**341/341 correctness checks pass:** 98 focused exchange checks, 59 helicopter, 50 tactics, 21 helicopter review, 43 ground return-fire, 12 scheduling and 58 ground vehicle checks. The focused fixture compares full seeded state with the archived function across 23 firing-boundary, long-interval, transport, threat, hold-fire, area, ammunition, reload, disabled-crew and AA cases. Repositioning performs no firing query while retaining identical delays, ammunition, hitpoints, casualties, counters and seeds. Review found no additional required changes or assertion guards. A separate final-source detailed-instrumentation smoke passes **9/9 checks** after all timing runs finish.
+
+All 256 production source hashes remain fixed through measurement; only stepVehicle differs from the preceding source manifest. The baseline is hash-verified, and all SQF writes use CRLF. Detailed instrumented logs are now explicitly marked ineligible for performance comparisons by the analyzers.
+
+The diagnostic trace saves normally at **150.1 seconds**, **551,448 zones**, **3,659,717 bytes**; first comparison **240.1 seconds**, **829,186 zones**, **5,873,407 bytes**; repeat **240.1 seconds**, **829,000 zones**, **5,366,521 bytes**. All use Tracy/Zstd, four streams and a 4 ns timer. Recorder spans define duration; aggregate exporter percentages do not. Embedded environment strings are unavailable from the compressed-header reader; separate environment/session evidence records Windows 10, i7-10700F and Arma 2.22 build 154126. Raw captures, messages and event exports remain outside Git. Owned test servers and recorders exit normally.
+
+The repeat's worst optimized whole frame is **7.031 ms**, with **6.042 ms combat** and two exchanges. Its largest exchange is **3.068 ms**. Active firing still runs an eligibility selector before the actual firing selector; sharing current station/preparation results within that call is a further candidate. Per-hit vehicle/crew work remains significant. Neither opportunity has been changed speculatively in this iteration.
+
+These are server IVCS script costs for a sustained virtual workload with test-only immortality, rather than native AI/rendering or a client FPS forecast. The work removes measured redundant preparation; transient timing variability and the whole-frame tail remain unresolved.
+
+- [Production resolver](../VirtualSpace/functions/combat/stepVehicle.sqf), [archived baseline](../tests/combat/exchange-baseline/stepVehicle.sqf), [focused fixture](../tests/combat/exchange.sqf), and [fixture runner](../tests/combat/exchange.ps1).
+- [Detailed scopes](../tests/combat/exchange-scopes.sqf), [exchange analyzer](../tests/combat/analyze-exchange-tracy.py), [benchmark runner](../tests/combat/helicopter-performance.ps1), and [owned-server recorder helper](../tests/combat/start-tracy-server.ps1).
+- [Configuration/conclusion](combat-performance-results/exchange-comparison.json), [source hashes](combat-performance-results/exchange-source-manifest.json), [correctness](combat-performance-results/exchange-correctness.json), [instrumentation smoke](combat-performance-results/exchange-instrumentation-smoke.json), and [environment](combat-performance-results/exchange-environment.json).
+- [Prior tail analysis](combat-performance-results/exchange-prior-tail.json), [prior exchange attribution](combat-performance-results/exchange-prior-attribution.json), [diagnostic attribution](combat-performance-results/exchange-diagnostic-attribution.json), [unused-preflight attribution](combat-performance-results/exchange-diagnostic-bottleneck.json), [diagnostic inclusive/self scopes](combat-performance-results/exchange-diagnostic-scopes.json), and [diagnostic session](combat-performance-results/exchange-diagnostic-session.json).
+- [First precise results](combat-performance-results/exchange-profiled-precise-summary.json), [first exchange attribution](combat-performance-results/exchange-profiled-attribution.json), [first frame inclusive/self scopes](combat-performance-results/exchange-frame-scopes.json), and [first capture session](combat-performance-results/exchange-session.json).
+- [Repeat precise results](combat-performance-results/exchange-repeat-precise-summary.json), [repeat exchange attribution](combat-performance-results/exchange-repeat-attribution.json), [repeat frame inclusive/self scopes](combat-performance-results/exchange-repeat-frame-scopes.json), [repeat capture session](combat-performance-results/exchange-repeat-session.json), [all-sample pooled results](combat-performance-results/exchange-pooled-precise-summary.json), and [unprofiled results](combat-performance-results/exchange-unprofiled-summary.json).
+
 ## Combat resolution - 25 October 2026
 
 Combat resolution instrumentation identified repeated infantry weapon-selection setup, vehicle crew-damage preparation and engagement registry lookups. Four production functions now avoid that work. Budgets, resolution intervals, weapon ranges, damage probabilities and ammunition consumption remain unchanged.

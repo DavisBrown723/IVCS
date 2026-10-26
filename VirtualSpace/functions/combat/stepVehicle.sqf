@@ -75,9 +75,10 @@ if (_supportOnly) exitWith {_hits};
 if ((_vehicle get "vehicleType")!="helicopter") then {
     [_engagement,_infantry,_vehicle,_range,_dt] call IVCS_Combat_stepReturnFire;
 } else {
-    private _allowed=[_infantry,_vehicle] call IVCS_Combat_canHelicopterFire;
     private _passes=(([_vehicle] call IVCS_Combat_getHelicopterPolicy) select 2) && {[_vehicle,_infantry] call IVCS_Combat_inHelicopterAttackArea};
     private _segments=if (_passes) then {([_engagement,_dt,_engagement get "stepTime"] call IVCS_Combat_getHelicopterPass) select 3} else {[[true,_dt]]};
+    // Reposition-only intervals advance delays without preparing unused firing eligibility.
+    private _allowed=(_segments findIf {_x select 0} != -1) && {[_infantry,_vehicle] call IVCS_Combat_canHelicopterFire};
     {
         _x params ["_active","_duration"];
         if (_active && {_allowed}) then {[_engagement,_infantry,_vehicle,_range,_duration] call IVCS_Combat_stepReturnFire} else {
