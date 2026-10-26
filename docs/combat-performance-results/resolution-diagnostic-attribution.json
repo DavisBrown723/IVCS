@@ -2,6 +2,72 @@
   "trace": "C:\\Users\\spyde\\.codex\\skills\\capture-tracy\\captures\\ivcs-resolution-diagnostic-20261025-231234-2436eda9.tracy",
   "diagnostic_only": true,
   "frames": 1932,
+  "phase_updates": [
+    {
+      "trial": 1,
+      "mode": "heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4292,
+        "total_ms": 128.38398300000006,
+        "mean_ms": 0.029912391192917054,
+        "p50_ms": 0.024244500000000002,
+        "p90_ms": 0.044730900000000004,
+        "p95_ms": 0.05087805,
+        "p99_ms": 0.06853621,
+        "max_ms": 0.161387,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 176,
+        "total_ms": 91.84340200000001,
+        "mean_ms": 0.5218375113636363,
+        "p50_ms": 0.519709,
+        "p90_ms": 0.576379,
+        "p95_ms": 0.6169169999999999,
+        "p99_ms": 0.7181275,
+        "max_ms": 0.830368,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    },
+    {
+      "trial": 2,
+      "mode": "heli-infantry-aa",
+      "updates_without_steps": {
+        "count": 4215,
+        "total_ms": 125.65332900000016,
+        "mean_ms": 0.02981099145907473,
+        "p50_ms": 0.024483,
+        "p90_ms": 0.044422,
+        "p95_ms": 0.04983529999999999,
+        "p99_ms": 0.06679077999999994,
+        "max_ms": 0.131134,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      },
+      "outside_step_in_due_updates": {
+        "count": 175,
+        "total_ms": 93.053564,
+        "mean_ms": 0.5317346514285713,
+        "p50_ms": 0.524357,
+        "p90_ms": 0.5974198,
+        "p95_ms": 0.6448801999999997,
+        "p99_ms": 0.8159121399999997,
+        "max_ms": 0.846636,
+        "over_1ms": 0,
+        "over_5ms": 0,
+        "over_10ms": 0,
+        "over_16_67ms": 0
+      }
+    }
+  ],
   "note": "Named inclusive helpers overlap. Context is for the entire frame, which may contain multiple exchanges.",
   "combat_operations": {
     "IVCS_HELI_IVCS_Combat_canSee": {

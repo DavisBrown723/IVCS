@@ -1,5 +1,95 @@
 # Virtual combat performance
 
+## Combat resolution - 25 October 2026
+
+Combat resolution instrumentation identified repeated infantry weapon-selection setup, vehicle crew-damage preparation and engagement registry lookups. Four production functions now avoid that work. Budgets, resolution intervals, weapon ranges, damage probabilities and ammunition consumption remain unchanged.
+
+### Instrumentation and fixes
+
+The detailed diagnostic records **1,932 measured frames**, **351 complete exchanges** and **18/18 passing workload checks**. It separates infantry shooters, mounted stations, turret magazine preparation, damage application, occupants, body-hit selection, splash geometry and due versus idle engagement updates. Numeric context is buffered and serialized after the measured frame scope closes.
+
+| Selected diagnostic operations inside combat | Calls | Inclusive total ms |
+| --- | ---: | ---: |
+| Infantry shooter visits | 4212 | 164.283 |
+| Infantry weapon selection | 3324 | 115.068 |
+| Vehicle damage, including crew and test restoration | 1574 | 227.380 |
+| Crew damage | 1574 | 131.849 |
+| Ammo group updates | 702 | 120.015 |
+| Turret shot selection | 813 | 96.607 |
+| Return-fire station lookup | 813 | 82.018 |
+
+These rows overlap: crew damage is included in vehicle damage, and weapon/damage work is included in shooter visits. They must not be summed. Turret selection visits 1,164 weapons and 2,568 magazine records, with 571 preparation misses and 1,053 negative records (including both newly prepared and cached results). The largest diagnostic exchange is 3.708 ms; the largest whole frame is 8.125 ms.
+
+The production changes are:
+
+- getVehicleShot filters immutable AA weapon capabilities before allocating selection state when distant or AA-only air fire excludes other weapons. Current magazine records, rounds, mounting, range and fuse checks still run for candidates. The close-range utility path remains available through exactly 35 m. No inventory or readiness cache is introduced.
+- damageVehicle passes its existing vehicle profile to damageCrew. The latter keeps the existing five-argument call valid, avoids owner deduplication when there is no cargo, and retrieves body weights only when an occupant actually suffers injury. Seeded random draws, owner order, casualties and hitpoints match the archived implementation.
+- update reads the entity registry once and uses direct lookups for primary groups and supporters. Existing missing-entity, transition, contact, pending-time and timeout checks remain intact. Idle polls are still performed.
+
+The pre-change versions of all four functions are archived together in tests/combat/resolution-baseline. Review found no further required correctness changes or assertion guards to remove.
+
+### Matched 20-group results
+
+Both comparisons use **20 total groups, five engagements, ten AA supporters, 85 units and 30 entities**, with the existing dense-frontline helicopter/infantry/AA workload. Four 35-second windows run before/after/after/before, with paired seeds and two-second warmup. Startup, setup and teardown are excluded. The harness swaps all four functions together outside timed frames; baseline vehicle damage remains underneath the same test-only immortality wrapper.
+
+**No budgets are lowered:** 3 ms soft combat budget, eight engagement visits, ten entity visits, 1 ms ammo-search allowance, one-second resolution and one-second discovery. accTime = 1. Detailed resolution diagnostics are disabled for comparison; standard scopes are identical across versions.
+
+All four precise windows have complete BEGIN/END boundaries and exact RPT frame-count matches, with **1,940 before / 1,937 after frames** and no exclusions. Individual samples are pooled, rather than averaging trial percentiles.
+
+| Precise milliseconds per real server frame | Before | After |
+| --- | --- | --- |
+| Whole-IVCS mean | 1.587 | 1.523 |
+| Whole-IVCS p95 | 5.113 | 4.976 |
+| Whole-IVCS p99 | 6.460 | 6.226 |
+| Whole-IVCS maximum | 7.351 | 7.609 |
+| Combat frame mean | 0.683 | 0.621 |
+| Combat frame p95 | 4.375 | 4.091 |
+| Combat frame p99 | 5.459 | 5.206 |
+| Combat frame maximum | 6.291 | 6.793 |
+
+Whole-IVCS pooled p99 falls **3.6%** and combat-frame p99 **4.6%**. Paired whole-frame p99 values are **6.503 -> 6.302 ms** and **6.236 -> 6.147 ms**: both improve in this run. Combat-frame mean falls **9.1%**, and whole-IVCS mean **4.1%**.
+
+| Operation, complete precise windows | Calls before / after | Mean ms before / after | p99 ms before / after | Maximum ms before / after |
+| --- | --- | --- | --- | --- |
+| Infantry weapon selection | 3324 / 3330 | 0.0339 / 0.0193 | 0.0861 / 0.0851 | 0.1929 / 0.2163 |
+| Crew damage | 1587 / 1592 | 0.0635 / 0.0577 | 0.1173 / 0.1211 | 0.1643 / 0.2024 |
+| Vehicle damage (includes crew and test restoration) | 1587 / 1592 | 0.1124 / 0.1071 | 0.2039 / 0.2047 | 0.3111 / 0.3148 |
+| Complete exchange | 351 / 352 | 1.9745 / 1.8174 | 2.8632 / 3.0418 | 3.2649 / 5.5625 |
+
+Mean infantry weapon-selection cost falls **43.2%**, crew damage **9.2%**, and complete exchanges **8.0%**. Per-exchange p99 and maximum increase, so these results do not establish that every exchange or spike is cheaper. Idle engagement polling means fall from 0.0283/0.0279 ms in baseline windows to 0.0209/0.0211 ms after; time outside resolution in due updates remains approximately 0.45-0.48 ms.
+
+| Unprofiled milliseconds per real server frame | Before | After |
+| --- | --- | --- |
+| Whole-IVCS mean | 1.399 | 1.348 |
+| Whole-IVCS p95 | 4.990 | 4.005 |
+| Whole-IVCS p99 | 5.997 | 5.997 |
+| Whole-IVCS maximum | 12.009 | 8.003 |
+
+The unprofiled comparison contains **3,863 frames** and uses an approximately 1 ms clock. Mean and p95 improve, while p99 remains approximately **6 ms**. The precise result is a modest measured improvement, with no unprofiled p99 improvement resolved by the coarse clock. Together both comparisons pass **72/72 workload checks across 7,740 measured frames**.
+
+All rosters, five engagements and ten supporters survive. Combat advances 34-36 seconds over approximately 35 simulation seconds. Precise before/after shot totals are **820/827 helicopter**, **110/108 infantry AA** and **3,187/3,194 AA vehicle** shots. Unprofiled totals are **797/827**, **104/112** and **3,156/3,194** respectively. Window-boundary and scheduling differences remain visible; no ammunition transfers occur. Precise frame exchange counts are retained in the comparison JSON: baseline windows have 231 active frames with 351 exchanges, optimized windows 225 active frames with 352 exchanges, including one three-exchange frame. The unchanged soft budget can admit additional exchanges when earlier work completes sooner.
+
+### Remaining tail and validation
+
+The worst optimized whole frame is **7.609 ms**, with **6.793 ms combat**, **0.732 ms entities** and one **5.562 ms exchange**. That exchange includes two infantry-versus-vehicle directions totaling 3.766 ms, 12 weapon selections totaling 0.767 ms, eight vehicle damage calls totaling 1.079 ms (including 0.521 ms crew damage), a mounted-station step of 0.578 ms and a return-fire step of 0.733 ms. These nested measurements overlap. Elevated costs span several operations; this trace does not isolate the transient to a single command.
+
+The optimized exchange p99 is **3.042 ms**, versus **2.863 ms** before, despite the lower exchange mean. The optimized whole-frame maximum is also higher, **7.609 versus 7.351 ms**. These samples are retained, and neither version exceeds 10 or 16.67 ms. Combat resolution remains the dominant frame tail. Further work should separate repeated station/selection preparation and per-occupant damage loops under heavier firing events, without assuming that a single elevated call explains the entire transient.
+
+**1,112/1,112 engine correctness checks pass** across focused resolution (762), core combat (71), ground vehicles (58), return fire (43), AA readiness (95), scheduling (12), helicopter tactics (50) and helicopter review (21). Differential tests cover stock rifle/AA/AT/LAT/GL loadouts, ground and air targets, close-range boundaries, cold/warm caches, live ammunition and weapon changes, and seeded crew damage across cargo/duplicate owners/lethal and nonlethal outcomes. The existing 20-seed infantry calibration remains 178.1 simulation seconds on average. A separate final-source instrumentation smoke passes **9/9 checks**, after timing runs finish.
+
+All 256 production source hashes remain unchanged through measurement. Archived baselines match the preceding flight-update source manifest. All SQF writes use CRLF.
+
+Both traces saved normally: the diagnostic spans **150.2 seconds** (150.1 elapsed), **497,640 zones**, **3,289,357 bytes**; comparison spans **240.2 seconds** (240.1 elapsed), **865,959 zones**, **5,608,426 bytes**. Both use Tracy/Zstd, four streams and a 4 ns timer. Recorder spans define duration; exporter aggregate-percent duration estimates are not used. Environment/session evidence records Windows 10, i7-10700F, Arma 2.22 build 154126 and accTime = 1. Raw captures/events/messages stay outside Git. Owned servers and recorders exited normally.
+
+These are server-side IVCS script costs with virtual groups and test-only immortality, whose restoration overhead is included identically. They do not measure native AI/rendering, client FPS, forced ammunition shortages, or every helicopter mission profile.
+
+- [Shot selection](../VirtualSpace/functions/combat/getVehicleShot.sqf), [crew damage](../VirtualSpace/functions/combat/damageCrew.sqf), [vehicle damage](../VirtualSpace/functions/combat/damageVehicle.sqf), and [engagement update](../VirtualSpace/functions/combat/update.sqf).
+- [Detailed scopes](../tests/combat/resolution-scopes.sqf), [context analyzer](../tests/combat/analyze-resolution-tracy.py), [focused fixture](../tests/combat/resolution.sqf), and [runner](../tests/combat/resolution.ps1).
+- [Configuration and comparison](combat-performance-results/resolution-comparison.json), [source hashes](combat-performance-results/resolution-source-manifest.json), [correctness](combat-performance-results/resolution-correctness.json), [instrumentation smoke](combat-performance-results/resolution-instrumentation-smoke.json), and [environment](combat-performance-results/resolution-environment.json).
+- [Diagnostic attribution](combat-performance-results/resolution-diagnostic-attribution.json), [diagnostic inclusive/self scopes](combat-performance-results/resolution-diagnostic-scopes.json), and [diagnostic session](combat-performance-results/resolution-diagnostic-session.json).
+- [Unprofiled results](combat-performance-results/resolution-unprofiled-summary.json), [unprofiled samples](combat-performance-results/resolution-unprofiled-frames.csv), [precise pooled results](combat-performance-results/resolution-profiled-precise-summary.json), and [precise workload validation](combat-performance-results/resolution-profiled-summary.json).
+- [Per-window operations](combat-performance-results/resolution-profiled-operations-summary.json), [remaining exchange attribution](combat-performance-results/resolution-profiled-resolution-attribution.json), [remaining entity maxima](combat-performance-results/resolution-profiled-attribution.json), [frame inclusive/self scopes](combat-performance-results/resolution-frame-scopes.json), and [capture session](combat-performance-results/resolution-session.json).
+
 ## Helicopter flight updates - 25 October 2026
 
 Helicopter updates now share one current crew/waypoint lookup between flight policy and attack-area validation. Virtual evasion skips offensive-pass queries whose result is unused, and aircraft already at their destination skip velocity integration and their own no-op position write. Crew positions are still synchronized. Position copying moves into the forced-descent branch, where mutation requires a separate array.

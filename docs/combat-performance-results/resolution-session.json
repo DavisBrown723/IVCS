@@ -46,5 +46,9 @@
       "MessageName": "IVCS PERF END trial=4 mode=before-heli-infantry-aa groups=20",
       "total_ns": 225806973205
     }
-  ]
+  ],
+  "recorder_time_span_seconds": 240.2,
+  "elapsed_seconds": 240.1,
+  "timer_resolution_ns": 4,
+  "zone_count": 865959
 }

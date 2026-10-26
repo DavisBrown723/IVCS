@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "project_id": "ivcs",
+  "base_branch": "development",
+  "execution": {
+    "max_feature_implementations": 1
+  },
+  "review": {
+    "required": [
+      "specification",
+      "correctness"
+    ],
+    "max_repair_cycles": 3
+  },
+  "merge": {
+    "approval": "required",
+    "strategy": "merge_commit",
+    "publish_remote": false
+  },
+  "quota": {
+    "reserve_percent": 20
+  },
+  "checks": [
+    {
+      "id": "ivcs-manual",
+      "adapter": "manual",
+      "steps": [
+        "Load the exact candidate commit in a disposable IVCS mission/profile and execute the ticket scenario.",
+        "Verify every acceptance criterion against the candidate, including the expected virtual-combat behavior for a combat demo; inspect script errors."
+      ],
+      "expected": [
+        "The candidate scenario initializes without script errors using its documented launch steps.",
+        "All ticket acceptance criteria pass with explicit observed results; unanswered steps remain pending."
+      ],
+      "expected_cases": [
+        "candidate-scenario",
+        "ticket-acceptance"
+      ],
+      "minimum_cases": 2
+    }
+  ]
+}

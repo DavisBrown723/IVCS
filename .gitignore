@@ -1,0 +1,14 @@
+# Keep local runtime state and regenerated caches outside the source baseline.
+__pycache__/
+*.py[cod]
+*.log
+*.rpt
+*.tracy
+*.dmp
+*.bidmp
+.env
+.env.*
+.graphflow/
+*.db
+*.db-shm
+*.db-wal

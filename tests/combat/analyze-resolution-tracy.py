@@ -64,7 +64,7 @@ def main():
             if nested:due_overhead.append((e['duration']-sum(s['duration'] for s in nested))/1e6)
             else:idle.append(e['duration']/1e6)
         phase_updates.append(dict(trial=phase['trial'],mode=phase['mode'],updates_without_steps=base.distribution(idle),outside_step_in_due_updates=base.distribution(due_overhead)))
-    result=dict(trace=o['trace'],diagnostic_only=o.get('diagnostic',False),frames=len(frames),phase_updates=phase_updates,note='Named inclusive helpers overlap. Context is for the entire frame, which may contain multiple exchanges.',
+    result=dict(trace=o['trace'],diagnostic_only=bool(rows) or o.get('diagnostic',False),frames=len(frames),phase_updates=phase_updates,note='Named inclusive helpers overlap. Context is for the entire frame, which may contain multiple exchanges.',
         combat_operations={n:base.distribution(v) for n,v in sorted(operations.items())},
         updates_with_steps=base.distribution(due),updates_without_steps=base.distribution(no_step),outside_step_in_due_updates=base.distribution(outside),
         turret_selection=dict(calls=len(shots),weapons=sum(x[5] for x in shots),records=sum(x[6] for x in shots),preparation_misses=sum(x[7] for x in shots),negative_records=sum(x[8] for x in shots),selected=[dict(weapon=k[0],magazine=k[1],calls=v) for k,v in sorted(selected.items())]),
